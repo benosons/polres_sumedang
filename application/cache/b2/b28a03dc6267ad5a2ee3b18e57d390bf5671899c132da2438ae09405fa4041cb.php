@@ -40,15 +40,30 @@ class __TwigTemplate_12cc0647c2973c7e9d9d347380a5c601d1b2c3997475b121bf8b22efcec
     <!-- Google font-->
     <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800\" rel=\"stylesheet\">
     <!-- Required Fremwork -->
-    <link rel=\"stylesheet\" type=\"text/css\" href=\"assets/admin/bower_components/bootstrap/dist/css/bootstrap.min.css\">
+    <link rel=\"stylesheet\" type=\"text/css\" href=\"";
+        // line 25
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "assets/admin/bower_components/bootstrap/dist/css/bootstrap.min.css\">
     <!-- themify-icons line icon -->
-    <link rel=\"stylesheet\" type=\"text/css\" href=\"assets/admin/icon/themify-icons/themify-icons.css\">
+    <link rel=\"stylesheet\" type=\"text/css\" href=\"";
+        // line 27
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "assets/admin/icon/themify-icons/themify-icons.css\">
     <!-- ico font -->
-    <link rel=\"stylesheet\" type=\"text/css\" href=\"assets/admin/icon/icofont/css/icofont.css\">
+    <link rel=\"stylesheet\" type=\"text/css\" href=\"";
+        // line 29
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "assets/admin/icon/icofont/css/icofont.css\">
     <!-- Style.css -->
-    <link rel=\"stylesheet\" type=\"text/css\" href=\"assets/admin/css/style.css\">
+    <link rel=\"stylesheet\" type=\"text/css\" href=\"";
+        // line 31
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "assets/admin/css/style.css\">
     <!-- color .css -->
-    <link rel=\"stylesheet\" type=\"text/css\" href=\"assets/admin/css/color/color-1.css\" id=\"color\"/>
+    <link rel=\"stylesheet\" type=\"text/css\" href=\"";
+        // line 33
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "assets/admin/css/color/color-1.css\" id=\"color\"/>
 </head>
 
 <body class=\"fix-menu\">
@@ -61,7 +76,10 @@ class __TwigTemplate_12cc0647c2973c7e9d9d347380a5c601d1b2c3997475b121bf8b22efcec
                     <div class=\"login-card card-block auth-body\">
                         <form class=\"md-float-material\" action=\"auth\" method=\"post\">
                             <div class=\"text-center\">
-                                <img src=\"assets/admin/images/auth/logo.png\" alt=\"logo.png\">
+                                <img src=\"";
+        // line 46
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "assets/admin/images/auth/logo.png\" alt=\"logo.png\">
                             </div>
                             <div class=\"auth-box\">
                                 <div class=\"row m-b-20\">
@@ -104,7 +122,10 @@ class __TwigTemplate_12cc0647c2973c7e9d9d347380a5c601d1b2c3997475b121bf8b22efcec
                                         <p class=\"text-inverse text-left\"><b>Your Autentification Team</b></p>
                                     </div>
                                     <div class=\"col-md-2\">
-                                        <img src=\"assets/admin/images/auth/Logo-small-bottom.png\" alt=\"small-logo.png\">
+                                        <img src=\"";
+        // line 89
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "assets/admin/images/auth/Logo-small-bottom.png\" alt=\"small-logo.png\">
                                     </div>
                                 </div>
 
@@ -165,24 +186,63 @@ class __TwigTemplate_12cc0647c2973c7e9d9d347380a5c601d1b2c3997475b121bf8b22efcec
 <![endif]-->
     <!-- Warning Section Ends -->
     <!-- Required Jquery -->
-    <script type=\"text/javascript\" src=\"assets/admin/bower_components/jquery/dist/jquery.min.js\"></script>
-<script type=\"text/javascript\" src=\"assets/admin/bower_components/jquery-ui/jquery-ui.min.js\"></script>
-    <script type=\"text/javascript\" src=\"assets/admin/bower_components/tether/dist/js/tether.min.js\"></script>
-    <script type=\"text/javascript\" src=\"assets/admin/bower_components/bootstrap/dist/js/bootstrap.min.js\"></script>
+    <script type=\"text/javascript\" src=\"";
+        // line 150
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "assets/admin/bower_components/jquery/dist/jquery.min.js\"></script>
+    <script type=\"text/javascript\" src=\"";
+        // line 151
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "assets/admin/bower_components/jquery-ui/jquery-ui.min.js\"></script>
+    <script type=\"text/javascript\" src=\"";
+        // line 152
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "assets/admin/bower_components/tether/dist/js/tether.min.js\"></script>
+    <script type=\"text/javascript\" src=\"";
+        // line 153
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "assets/admin/bower_components/bootstrap/dist/js/bootstrap.min.js\"></script>
     <!-- jquery slimscroll js -->
-    <script type=\"text/javascript\" src=\"assets/admin/bower_components/jquery-slimscroll/jquery.slimscroll.js\"></script>
+    <script type=\"text/javascript\" src=\"";
+        // line 155
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "assets/admin/bower_components/jquery-slimscroll/jquery.slimscroll.js\"></script>
     <!-- modernizr js -->
-    <script type=\"text/javascript\" src=\"assets/admin/bower_components/modernizr/modernizr.js\"></script>
-    <script type=\"text/javascript\" src=\"assets/admin/bower_components/modernizr/feature-detects/css-scrollbars.js\"></script>
+    <script type=\"text/javascript\" src=\"";
+        // line 157
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "assets/admin/bower_components/modernizr/modernizr.js\"></script>
+    <script type=\"text/javascript\" src=\"";
+        // line 158
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "assets/admin/bower_components/modernizr/feature-detects/css-scrollbars.js\"></script>
     <!-- i18next.min.js -->
-    <script type=\"text/javascript\" src=\"assets/admin/bower_components/i18next/i18next.min.js\"></script>
-    <script type=\"text/javascript\" src=\"assets/admin/bower_components/i18next-xhr-backend/i18nextXHRBackend.min.js\"></script>
-    <script type=\"text/javascript\" src=\"assets/admin/bower_components/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js\"></script>
-    <script type=\"text/javascript\" src=\"assets/admin/bower_components/jquery-i18next/jquery-i18next.min.js\"></script>
+    <script type=\"text/javascript\" src=\"";
+        // line 160
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "assets/admin/bower_components/i18next/i18next.min.js\"></script>
+    <script type=\"text/javascript\" src=\"";
+        // line 161
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "assets/admin/bower_components/i18next-xhr-backend/i18nextXHRBackend.min.js\"></script>
+    <script type=\"text/javascript\" src=\"";
+        // line 162
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "assets/admin/bower_components/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js\"></script>
+    <script type=\"text/javascript\" src=\"";
+        // line 163
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "assets/admin/bower_components/jquery-i18next/jquery-i18next.min.js\"></script>
     <!-- Custom js -->
-    <script type=\"text/javascript\" src=\"assets/admin/js/script.js\"></script>
-    <!---- color js --->
-    <script type=\"text/javascript\" src=\"assets/admin/js/common-pages.js\"></script>
+    <script type=\"text/javascript\" src=\"";
+        // line 165
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "assets/admin/js/script.js\"></script>
+    <!-- color js --->
+    <script type=\"text/javascript\" src=\"";
+        // line 167
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "assets/admin/js/common-pages.js\"></script>
 </body>
 
 </html>
@@ -194,9 +254,14 @@ class __TwigTemplate_12cc0647c2973c7e9d9d347380a5c601d1b2c3997475b121bf8b22efcec
         return "auth/login.html";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  19 => 1,);
+        return array (  244 => 167,  239 => 165,  234 => 163,  230 => 162,  226 => 161,  222 => 160,  217 => 158,  213 => 157,  208 => 155,  203 => 153,  199 => 152,  195 => 151,  191 => 150,  127 => 89,  81 => 46,  65 => 33,  60 => 31,  55 => 29,  50 => 27,  45 => 25,  19 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -223,15 +288,15 @@ class __TwigTemplate_12cc0647c2973c7e9d9d347380a5c601d1b2c3997475b121bf8b22efcec
 /*     <!-- Google font-->*/
 /*     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">*/
 /*     <!-- Required Fremwork -->*/
-/*     <link rel="stylesheet" type="text/css" href="assets/admin/bower_components/bootstrap/dist/css/bootstrap.min.css">*/
+/*     <link rel="stylesheet" type="text/css" href="{{baseURL}}assets/admin/bower_components/bootstrap/dist/css/bootstrap.min.css">*/
 /*     <!-- themify-icons line icon -->*/
-/*     <link rel="stylesheet" type="text/css" href="assets/admin/icon/themify-icons/themify-icons.css">*/
+/*     <link rel="stylesheet" type="text/css" href="{{baseURL}}assets/admin/icon/themify-icons/themify-icons.css">*/
 /*     <!-- ico font -->*/
-/*     <link rel="stylesheet" type="text/css" href="assets/admin/icon/icofont/css/icofont.css">*/
+/*     <link rel="stylesheet" type="text/css" href="{{baseURL}}assets/admin/icon/icofont/css/icofont.css">*/
 /*     <!-- Style.css -->*/
-/*     <link rel="stylesheet" type="text/css" href="assets/admin/css/style.css">*/
+/*     <link rel="stylesheet" type="text/css" href="{{baseURL}}assets/admin/css/style.css">*/
 /*     <!-- color .css -->*/
-/*     <link rel="stylesheet" type="text/css" href="assets/admin/css/color/color-1.css" id="color"/>*/
+/*     <link rel="stylesheet" type="text/css" href="{{baseURL}}assets/admin/css/color/color-1.css" id="color"/>*/
 /* </head>*/
 /* */
 /* <body class="fix-menu">*/
@@ -244,7 +309,7 @@ class __TwigTemplate_12cc0647c2973c7e9d9d347380a5c601d1b2c3997475b121bf8b22efcec
 /*                     <div class="login-card card-block auth-body">*/
 /*                         <form class="md-float-material" action="auth" method="post">*/
 /*                             <div class="text-center">*/
-/*                                 <img src="assets/admin/images/auth/logo.png" alt="logo.png">*/
+/*                                 <img src="{{baseURL}}assets/admin/images/auth/logo.png" alt="logo.png">*/
 /*                             </div>*/
 /*                             <div class="auth-box">*/
 /*                                 <div class="row m-b-20">*/
@@ -287,7 +352,7 @@ class __TwigTemplate_12cc0647c2973c7e9d9d347380a5c601d1b2c3997475b121bf8b22efcec
 /*                                         <p class="text-inverse text-left"><b>Your Autentification Team</b></p>*/
 /*                                     </div>*/
 /*                                     <div class="col-md-2">*/
-/*                                         <img src="assets/admin/images/auth/Logo-small-bottom.png" alt="small-logo.png">*/
+/*                                         <img src="{{baseURL}}assets/admin/images/auth/Logo-small-bottom.png" alt="small-logo.png">*/
 /*                                     </div>*/
 /*                                 </div>*/
 /* */
@@ -348,24 +413,24 @@ class __TwigTemplate_12cc0647c2973c7e9d9d347380a5c601d1b2c3997475b121bf8b22efcec
 /* <![endif]-->*/
 /*     <!-- Warning Section Ends -->*/
 /*     <!-- Required Jquery -->*/
-/*     <script type="text/javascript" src="assets/admin/bower_components/jquery/dist/jquery.min.js"></script>*/
-/* <script type="text/javascript" src="assets/admin/bower_components/jquery-ui/jquery-ui.min.js"></script>*/
-/*     <script type="text/javascript" src="assets/admin/bower_components/tether/dist/js/tether.min.js"></script>*/
-/*     <script type="text/javascript" src="assets/admin/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>*/
+/*     <script type="text/javascript" src="{{baseURL}}assets/admin/bower_components/jquery/dist/jquery.min.js"></script>*/
+/*     <script type="text/javascript" src="{{baseURL}}assets/admin/bower_components/jquery-ui/jquery-ui.min.js"></script>*/
+/*     <script type="text/javascript" src="{{baseURL}}assets/admin/bower_components/tether/dist/js/tether.min.js"></script>*/
+/*     <script type="text/javascript" src="{{baseURL}}assets/admin/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>*/
 /*     <!-- jquery slimscroll js -->*/
-/*     <script type="text/javascript" src="assets/admin/bower_components/jquery-slimscroll/jquery.slimscroll.js"></script>*/
+/*     <script type="text/javascript" src="{{baseURL}}assets/admin/bower_components/jquery-slimscroll/jquery.slimscroll.js"></script>*/
 /*     <!-- modernizr js -->*/
-/*     <script type="text/javascript" src="assets/admin/bower_components/modernizr/modernizr.js"></script>*/
-/*     <script type="text/javascript" src="assets/admin/bower_components/modernizr/feature-detects/css-scrollbars.js"></script>*/
+/*     <script type="text/javascript" src="{{baseURL}}assets/admin/bower_components/modernizr/modernizr.js"></script>*/
+/*     <script type="text/javascript" src="{{baseURL}}assets/admin/bower_components/modernizr/feature-detects/css-scrollbars.js"></script>*/
 /*     <!-- i18next.min.js -->*/
-/*     <script type="text/javascript" src="assets/admin/bower_components/i18next/i18next.min.js"></script>*/
-/*     <script type="text/javascript" src="assets/admin/bower_components/i18next-xhr-backend/i18nextXHRBackend.min.js"></script>*/
-/*     <script type="text/javascript" src="assets/admin/bower_components/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js"></script>*/
-/*     <script type="text/javascript" src="assets/admin/bower_components/jquery-i18next/jquery-i18next.min.js"></script>*/
+/*     <script type="text/javascript" src="{{baseURL}}assets/admin/bower_components/i18next/i18next.min.js"></script>*/
+/*     <script type="text/javascript" src="{{baseURL}}assets/admin/bower_components/i18next-xhr-backend/i18nextXHRBackend.min.js"></script>*/
+/*     <script type="text/javascript" src="{{baseURL}}assets/admin/bower_components/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js"></script>*/
+/*     <script type="text/javascript" src="{{baseURL}}assets/admin/bower_components/jquery-i18next/jquery-i18next.min.js"></script>*/
 /*     <!-- Custom js -->*/
-/*     <script type="text/javascript" src="assets/admin/js/script.js"></script>*/
-/*     <!---- color js --->*/
-/*     <script type="text/javascript" src="assets/admin/js/common-pages.js"></script>*/
+/*     <script type="text/javascript" src="{{baseURL}}assets/admin/js/script.js"></script>*/
+/*     <!-- color js --->*/
+/*     <script type="text/javascript" src="{{baseURL}}assets/admin/js/common-pages.js"></script>*/
 /* </body>*/
 /* */
 /* </html>*/

@@ -11,15 +11,18 @@ class View extends \CodeIgniter\Controller
   {
       $this->session = session();
       $this->logged = $this->session->get('logged_in');
+			$this->data = array(
+				'version' => \CodeIgniter\CodeIgniter::CI_VERSION,
+				'baseURL' => BASE,
+			);
   }
 
 	public function index()
 	{
+
+
 			helper('form');
-			$data = array(
-				'version' => \CodeIgniter\CodeIgniter::CI_VERSION,
-			);
-			return \Twig::instance()->display('users/index.html', $data);
+			return \Twig::instance()->display('users/index.html', $this->data);
 	}
 
 	public function login()
