@@ -35,8 +35,10 @@
  * @since	Version 3.0.0
  * @filesource
  */
-
+use Closure;
 use CodeIgniter\DatabaseException;
+use CodeIgniter\Database\Exceptions\DataException;
+
 
 /**
  * Class BaseBuilder
@@ -215,11 +217,14 @@ class BaseBuilder
 
 		$this->from($tableName);
 
-		if (count($options))
+		if (! empty($options))
 		{
 			foreach ($options as $key => $value)
 			{
-				$this->$key = $value;
+				if (property_exists($this, $key))
+				{
+					$this->$key = $value;
+				}
 			}
 		}
 	}

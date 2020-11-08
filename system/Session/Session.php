@@ -215,7 +215,7 @@ class Session implements SessionInterface
 			unset($_COOKIE[$this->sessionCookieName]);
 		}
 
-		session_start();
+		// session_start();
 
 		// Is session ID auto-regeneration configured? (ignoring ajax requests)
 		if ((empty($_SERVER['HTTP_X_REQUESTED_WITH']) ||
@@ -312,12 +312,12 @@ class Session implements SessionInterface
 		}
 
 		// Security is king
-		ini_set('session.use_trans_sid', 0);
-		ini_set('session.use_strict_mode', 1);
-		ini_set('session.use_cookies', 1);
-		ini_set('session.use_only_cookies', 1);
-		ini_set('session.hash_function', 1);
-		ini_set('session.hash_bits_per_character', 4);
+		// ini_set('session.use_trans_sid', 0);
+		// ini_set('session.use_strict_mode', 1);
+		// ini_set('session.use_cookies', 1);
+		// ini_set('session.use_only_cookies', 1);
+		// ini_set('session.hash_function', 1);
+		// ini_set('session.hash_bits_per_character', 4);
 	}
 
 	//--------------------------------------------------------------------

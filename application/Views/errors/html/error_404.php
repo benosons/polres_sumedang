@@ -7,7 +7,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<title>404 Page Not Found</title>
 
 	<style>
-	div.logo {
+	/* div.logo {
 		height: 200px;
 		width: 155px;
 		display: inline-block;
@@ -16,7 +16,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		top: 2rem;
 		left: 50%;
 		margin-left: -73px;
-	}
+	} */
 	body {
 		height: 100%;
 		background: #fafafa;
