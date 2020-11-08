@@ -43,27 +43,27 @@ class __TwigTemplate_12cc0647c2973c7e9d9d347380a5c601d1b2c3997475b121bf8b22efcec
     <link rel=\"stylesheet\" type=\"text/css\" href=\"";
         // line 25
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "assets/admin/bower_components/bootstrap/dist/css/bootstrap.min.css\">
+        echo "/assets/admin/bower_components/bootstrap/dist/css/bootstrap.min.css\">
     <!-- themify-icons line icon -->
     <link rel=\"stylesheet\" type=\"text/css\" href=\"";
         // line 27
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "assets/admin/icon/themify-icons/themify-icons.css\">
+        echo "/assets/admin/icon/themify-icons/themify-icons.css\">
     <!-- ico font -->
     <link rel=\"stylesheet\" type=\"text/css\" href=\"";
         // line 29
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "assets/admin/icon/icofont/css/icofont.css\">
+        echo "/assets/admin/icon/icofont/css/icofont.css\">
     <!-- Style.css -->
     <link rel=\"stylesheet\" type=\"text/css\" href=\"";
         // line 31
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "assets/admin/css/style.css\">
+        echo "/assets/admin/css/style.css\">
     <!-- color .css -->
     <link rel=\"stylesheet\" type=\"text/css\" href=\"";
         // line 33
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "assets/admin/css/color/color-1.css\" id=\"color\"/>
+        echo "/assets/admin/css/color/color-1.css\" id=\"color\"/>
 </head>
 
 <body class=\"fix-menu\">
@@ -189,60 +189,60 @@ class __TwigTemplate_12cc0647c2973c7e9d9d347380a5c601d1b2c3997475b121bf8b22efcec
     <script type=\"text/javascript\" src=\"";
         // line 150
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "assets/admin/bower_components/jquery/dist/jquery.min.js\"></script>
+        echo "/assets/admin/bower_components/jquery/dist/jquery.min.js\"></script>
     <script type=\"text/javascript\" src=\"";
         // line 151
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "assets/admin/bower_components/jquery-ui/jquery-ui.min.js\"></script>
+        echo "/assets/admin/bower_components/jquery-ui/jquery-ui.min.js\"></script>
     <script type=\"text/javascript\" src=\"";
         // line 152
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "assets/admin/bower_components/tether/dist/js/tether.min.js\"></script>
+        echo "/assets/admin/bower_components/tether/dist/js/tether.min.js\"></script>
     <script type=\"text/javascript\" src=\"";
         // line 153
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "assets/admin/bower_components/bootstrap/dist/js/bootstrap.min.js\"></script>
+        echo "/assets/admin/bower_components/bootstrap/dist/js/bootstrap.min.js\"></script>
     <!-- jquery slimscroll js -->
     <script type=\"text/javascript\" src=\"";
         // line 155
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "assets/admin/bower_components/jquery-slimscroll/jquery.slimscroll.js\"></script>
+        echo "/assets/admin/bower_components/jquery-slimscroll/jquery.slimscroll.js\"></script>
     <!-- modernizr js -->
     <script type=\"text/javascript\" src=\"";
         // line 157
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "assets/admin/bower_components/modernizr/modernizr.js\"></script>
+        echo "/assets/admin/bower_components/modernizr/modernizr.js\"></script>
     <script type=\"text/javascript\" src=\"";
         // line 158
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "assets/admin/bower_components/modernizr/feature-detects/css-scrollbars.js\"></script>
+        echo "/assets/admin/bower_components/modernizr/feature-detects/css-scrollbars.js\"></script>
     <!-- i18next.min.js -->
     <script type=\"text/javascript\" src=\"";
         // line 160
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "assets/admin/bower_components/i18next/i18next.min.js\"></script>
+        echo "/assets/admin/bower_components/i18next/i18next.min.js\"></script>
     <script type=\"text/javascript\" src=\"";
         // line 161
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "assets/admin/bower_components/i18next-xhr-backend/i18nextXHRBackend.min.js\"></script>
+        echo "/assets/admin/bower_components/i18next-xhr-backend/i18nextXHRBackend.min.js\"></script>
     <script type=\"text/javascript\" src=\"";
         // line 162
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "assets/admin/bower_components/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js\"></script>
+        echo "/assets/admin/bower_components/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js\"></script>
     <script type=\"text/javascript\" src=\"";
         // line 163
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "assets/admin/bower_components/jquery-i18next/jquery-i18next.min.js\"></script>
+        echo "/assets/admin/bower_components/jquery-i18next/jquery-i18next.min.js\"></script>
     <!-- Custom js -->
     <script type=\"text/javascript\" src=\"";
         // line 165
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "assets/admin/js/script.js\"></script>
+        echo "/assets/admin/js/script.js\"></script>
     <!-- color js --->
     <script type=\"text/javascript\" src=\"";
         // line 167
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "assets/admin/js/common-pages.js\"></script>
+        echo "/assets/admin/js/common-pages.js\"></script>
 </body>
 
 </html>
@@ -288,15 +288,15 @@ class __TwigTemplate_12cc0647c2973c7e9d9d347380a5c601d1b2c3997475b121bf8b22efcec
 /*     <!-- Google font-->*/
 /*     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">*/
 /*     <!-- Required Fremwork -->*/
-/*     <link rel="stylesheet" type="text/css" href="{{baseURL}}assets/admin/bower_components/bootstrap/dist/css/bootstrap.min.css">*/
+/*     <link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/admin/bower_components/bootstrap/dist/css/bootstrap.min.css">*/
 /*     <!-- themify-icons line icon -->*/
-/*     <link rel="stylesheet" type="text/css" href="{{baseURL}}assets/admin/icon/themify-icons/themify-icons.css">*/
+/*     <link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/admin/icon/themify-icons/themify-icons.css">*/
 /*     <!-- ico font -->*/
-/*     <link rel="stylesheet" type="text/css" href="{{baseURL}}assets/admin/icon/icofont/css/icofont.css">*/
+/*     <link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/admin/icon/icofont/css/icofont.css">*/
 /*     <!-- Style.css -->*/
-/*     <link rel="stylesheet" type="text/css" href="{{baseURL}}assets/admin/css/style.css">*/
+/*     <link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/admin/css/style.css">*/
 /*     <!-- color .css -->*/
-/*     <link rel="stylesheet" type="text/css" href="{{baseURL}}assets/admin/css/color/color-1.css" id="color"/>*/
+/*     <link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/admin/css/color/color-1.css" id="color"/>*/
 /* </head>*/
 /* */
 /* <body class="fix-menu">*/
@@ -413,24 +413,24 @@ class __TwigTemplate_12cc0647c2973c7e9d9d347380a5c601d1b2c3997475b121bf8b22efcec
 /* <![endif]-->*/
 /*     <!-- Warning Section Ends -->*/
 /*     <!-- Required Jquery -->*/
-/*     <script type="text/javascript" src="{{baseURL}}assets/admin/bower_components/jquery/dist/jquery.min.js"></script>*/
-/*     <script type="text/javascript" src="{{baseURL}}assets/admin/bower_components/jquery-ui/jquery-ui.min.js"></script>*/
-/*     <script type="text/javascript" src="{{baseURL}}assets/admin/bower_components/tether/dist/js/tether.min.js"></script>*/
-/*     <script type="text/javascript" src="{{baseURL}}assets/admin/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>*/
+/*     <script type="text/javascript" src="{{baseURL}}/assets/admin/bower_components/jquery/dist/jquery.min.js"></script>*/
+/*     <script type="text/javascript" src="{{baseURL}}/assets/admin/bower_components/jquery-ui/jquery-ui.min.js"></script>*/
+/*     <script type="text/javascript" src="{{baseURL}}/assets/admin/bower_components/tether/dist/js/tether.min.js"></script>*/
+/*     <script type="text/javascript" src="{{baseURL}}/assets/admin/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>*/
 /*     <!-- jquery slimscroll js -->*/
-/*     <script type="text/javascript" src="{{baseURL}}assets/admin/bower_components/jquery-slimscroll/jquery.slimscroll.js"></script>*/
+/*     <script type="text/javascript" src="{{baseURL}}/assets/admin/bower_components/jquery-slimscroll/jquery.slimscroll.js"></script>*/
 /*     <!-- modernizr js -->*/
-/*     <script type="text/javascript" src="{{baseURL}}assets/admin/bower_components/modernizr/modernizr.js"></script>*/
-/*     <script type="text/javascript" src="{{baseURL}}assets/admin/bower_components/modernizr/feature-detects/css-scrollbars.js"></script>*/
+/*     <script type="text/javascript" src="{{baseURL}}/assets/admin/bower_components/modernizr/modernizr.js"></script>*/
+/*     <script type="text/javascript" src="{{baseURL}}/assets/admin/bower_components/modernizr/feature-detects/css-scrollbars.js"></script>*/
 /*     <!-- i18next.min.js -->*/
-/*     <script type="text/javascript" src="{{baseURL}}assets/admin/bower_components/i18next/i18next.min.js"></script>*/
-/*     <script type="text/javascript" src="{{baseURL}}assets/admin/bower_components/i18next-xhr-backend/i18nextXHRBackend.min.js"></script>*/
-/*     <script type="text/javascript" src="{{baseURL}}assets/admin/bower_components/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js"></script>*/
-/*     <script type="text/javascript" src="{{baseURL}}assets/admin/bower_components/jquery-i18next/jquery-i18next.min.js"></script>*/
+/*     <script type="text/javascript" src="{{baseURL}}/assets/admin/bower_components/i18next/i18next.min.js"></script>*/
+/*     <script type="text/javascript" src="{{baseURL}}/assets/admin/bower_components/i18next-xhr-backend/i18nextXHRBackend.min.js"></script>*/
+/*     <script type="text/javascript" src="{{baseURL}}/assets/admin/bower_components/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js"></script>*/
+/*     <script type="text/javascript" src="{{baseURL}}/assets/admin/bower_components/jquery-i18next/jquery-i18next.min.js"></script>*/
 /*     <!-- Custom js -->*/
-/*     <script type="text/javascript" src="{{baseURL}}assets/admin/js/script.js"></script>*/
+/*     <script type="text/javascript" src="{{baseURL}}/assets/admin/js/script.js"></script>*/
 /*     <!-- color js --->*/
-/*     <script type="text/javascript" src="{{baseURL}}assets/admin/js/common-pages.js"></script>*/
+/*     <script type="text/javascript" src="{{baseURL}}/assets/admin/js/common-pages.js"></script>*/
 /* </body>*/
 /* */
 /* </html>*/
