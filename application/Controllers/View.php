@@ -32,10 +32,7 @@ class View extends \CodeIgniter\Controller
 			return redirect('dashboard');
 		}else{
 			helper('form');
-			$data = array(
-				'version' => \CodeIgniter\CodeIgniter::CI_VERSION,
-			);
-			return \Twig::instance()->display('auth/login.html', $data);
+			return \Twig::instance()->display('auth/login.html', $this->data);
 		}
 	}
 
@@ -45,10 +42,7 @@ class View extends \CodeIgniter\Controller
 			return redirect('dashboard');
 		}else{
 			helper('form');
-			$data = array(
-				'version' => \CodeIgniter\CodeIgniter::CI_VERSION,
-			);
-			return \Twig::instance()->display('auth/register.html', $data);
+			return \Twig::instance()->display('auth/register.html', $this->data);
 		}
 	}
 
@@ -57,10 +51,7 @@ class View extends \CodeIgniter\Controller
 
 			if($this->logged){
 				helper('form');
-				$data = array(
-					'version' => \CodeIgniter\CodeIgniter::CI_VERSION,
-				);
-				return \Twig::instance()->display('admin/index.html', $data);
+				return \Twig::instance()->display('admin/index.html', $this->data);
 			}else{
 				return redirect('login');
 			}
