@@ -4,3 +4,5 @@ RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteCond %{SCRIPT_FILENAME} !-f
 RewriteRule ^ index.php [L]
 RewriteRule !^(public/|index\.php) [NC,F]
+
+SetEnv CI_ENV development
