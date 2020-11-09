@@ -63,7 +63,7 @@
 	 * be found under application/Config/Boot or the system
 	 * will stop execution.
 	 */
-	
+
 	if (file_exists(APPPATH.'Config/Boot/'.ENVIRONMENT.'.php'))
 	{
 		require APPPATH.'Config/Boot/'.ENVIRONMENT.'.php';
@@ -93,10 +93,10 @@
 
 	// Load environment settings from .env files
 	// into $_SERVER and $_ENV
-	// require BASEPATH.'Config/DotEnv.php';
-	// $env = new CodeIgniter\Config\DotEnv(APPPATH);
-	// $env->load();
-	// unset($env);
+	require BASEPATH.'Config/DotEnv.php';
+	$env = new CodeIgniter\Config\DotEnv(APPPATH);
+	$env->load();
+	unset($env);
 
 	/*
 	 * ------------------------------------------------------
