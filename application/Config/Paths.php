@@ -9,10 +9,10 @@
  * All paths are relative to the project's root folder.
  */
 
-	$system_directory = '\system';
-	$application_directory = '\application';
-	$writable_directory = '\writable';
-	$tests_directory = '\tests';
+	$system_directory = 'system';
+	$application_directory = 'application';
+	$writable_directory = 'writable';
+	$tests_directory = 'tests';
 
 	// --------------------------------------------------------------------
 	// END OF USER CONFIGURABLE SETTINGS.  DO NOT EDIT BELOW THIS LINE
@@ -36,18 +36,18 @@
 	define('SELF', pathinfo(__FILE__, PATHINFO_BASENAME));
 
 	// Path to the system folder
-	define('BASEPATH', realpath(FCPATH).$system_directory.DIRECTORY_SEPARATOR);
+	define('BASEPATH', realpath(FCPATH).DIRECTORY_SEPARATOR.$system_directory.DIRECTORY_SEPARATOR);
 
 	// Path to the front controller (this file)
 
 	// Path to the writable directory.
-	define('WRITEPATH', realpath(FCPATH).$writable_directory.DIRECTORY_SEPARATOR);
+	define('WRITEPATH', realpath(FCPATH).DIRECTORY_SEPARATOR.$writable_directory.DIRECTORY_SEPARATOR);
 
 	// The path to the "application" folder
-	define('APPPATH', realpath(FCPATH).$application_directory.DIRECTORY_SEPARATOR);
+	define('APPPATH', realpath(FCPATH).DIRECTORY_SEPARATOR.$application_directory.DIRECTORY_SEPARATOR);
 
 	// The path to the "tests" directory
-	define('TESTPATH', realpath(FCPATH).$tests_directory.DIRECTORY_SEPARATOR);
+	define('TESTPATH', realpath(FCPATH).DIRECTORY_SEPARATOR.$tests_directory.DIRECTORY_SEPARATOR);
 
 	/*
 	 *---------------------------------------------------------------
