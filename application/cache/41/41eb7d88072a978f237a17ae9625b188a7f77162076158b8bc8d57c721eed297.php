@@ -21,7 +21,10 @@ class __TwigTemplate_65d39d51154dedace2a81a6ef745e3c2053b05338d4b8a56facc6d005c8
     <div class=\"pcoded-inner-navbar main-menu\">
         <div class=\"\">
             <div class=\"main-menu-header\">
-                <img class=\"img-40\" src=\"assets/admin/images/user.png\" alt=\"User-Profile-Image\">
+                <img class=\"img-40\" src=\"";
+        // line 6
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/admin/images/user.png\" alt=\"User-Profile-Image\">
                 <div class=\"user-details\">
                     <span>John Doe</span>
                     <span id=\"more-details\">UX Designer<i class=\"ti-angle-down\"></i></span>
@@ -2010,9 +2013,14 @@ class __TwigTemplate_65d39d51154dedace2a81a6ef745e3c2053b05338d4b8a56facc6d005c8
         return "admin/sidebar.html";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  19 => 1,);
+        return array (  26 => 6,  19 => 1,);
     }
 }
 /* <nav class="pcoded-navbar" pcoded-header-position="relative">*/
@@ -2020,7 +2028,7 @@ class __TwigTemplate_65d39d51154dedace2a81a6ef745e3c2053b05338d4b8a56facc6d005c8
 /*     <div class="pcoded-inner-navbar main-menu">*/
 /*         <div class="">*/
 /*             <div class="main-menu-header">*/
-/*                 <img class="img-40" src="assets/admin/images/user.png" alt="User-Profile-Image">*/
+/*                 <img class="img-40" src="{{baseURL}}/assets/admin/images/user.png" alt="User-Profile-Image">*/
 /*                 <div class="user-details">*/
 /*                     <span>John Doe</span>*/
 /*                     <span id="more-details">UX Designer<i class="ti-angle-down"></i></span>*/

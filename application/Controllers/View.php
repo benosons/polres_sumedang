@@ -13,14 +13,13 @@ class View extends \CodeIgniter\Controller
       $this->logged = $this->session->get('logged_in');
 			$this->data = array(
 				'version' => \CodeIgniter\CodeIgniter::CI_VERSION,
-				'baseURL' => BASE,
+				'baseURL' => BASE.'/public',
 			);
   }
 
 	public function index()
 	{
-
-
+			
 			helper('form');
 			return \Twig::instance()->display('users/index.html', $this->data);
 	}
