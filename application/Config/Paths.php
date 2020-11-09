@@ -37,7 +37,7 @@
 
 	// Path to the system folder
 	define('BASEPATH', realpath(FCPATH).$system_directory.DIRECTORY_SEPARATOR);
-	
+
 	// Path to the front controller (this file)
 
 	// Path to the writable directory.
@@ -64,16 +64,16 @@
 	 * will stop execution.
 	 */
 
-	if (file_exists(APPPATH.'Config/Boot/'.ENVIRONMENT.'.php'))
-	{
-		require APPPATH.'Config/Boot/'.ENVIRONMENT.'.php';
-	}
-	else
-	{
-		header('HTTP/1.1 503 Service Unavailable.', true, 503);
-		echo 'The application environment is not set correctly.';
-		exit(1); // EXIT_ERROR
-	}
+	// if (file_exists(APPPATH.'Config/Boot/'.ENVIRONMENT.'.php'))
+	// {
+	// 	require APPPATH.'Config/Boot/'.ENVIRONMENT.'.php';
+	// }
+	// else
+	// {
+	// 	header('HTTP/1.1 503 Service Unavailable.', true, 503);
+	// 	echo 'The application environment is not set correctly.';
+	// 	exit(1); // EXIT_ERROR
+	// }
 
 	/*
 	 * ------------------------------------------------------
