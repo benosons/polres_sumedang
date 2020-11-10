@@ -20,7 +20,7 @@ class __TwigTemplate_12cc0647c2973c7e9d9d347380a5c601d1b2c3997475b121bf8b22efcec
 <html lang=\"en\">
 
 <head>
-    <title>Flat Able - Premium Admin Template by Phoenixcoded</title>
+    <title>Login - Kepolisian Resor Sumedang</title>
     <!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -36,7 +36,10 @@ class __TwigTemplate_12cc0647c2973c7e9d9d347380a5c601d1b2c3997475b121bf8b22efcec
     <meta name=\"author\" content=\"Phoenixcoded\">
     <!-- Favicon icon -->
 
-    <link rel=\"icon\" href=\"assets/admin/images/favicon.ico\" type=\"image/x-icon\">
+    <link rel=\"icon\" href=\"";
+        // line 21
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/users/images/favicon.ico\" type=\"image/x-icon\">
     <!-- Google font-->
     <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800\" rel=\"stylesheet\">
     <!-- Required Fremwork -->
@@ -64,10 +67,29 @@ class __TwigTemplate_12cc0647c2973c7e9d9d347380a5c601d1b2c3997475b121bf8b22efcec
         // line 33
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/css/color/color-1.css\" id=\"color\"/>
+
+    <link rel=\"stylesheet\" type=\"text/css\" href=\"";
+        // line 35
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/auth/css/particles.css\" />
+  <style>
+    .login-mod {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        position: fixed;
+        text-align: center;
+        width: 100%;
+    }
+
+    .form-control:focus {
+        border-color: #f1c40f !important;
+    }
+  </style>
 </head>
 
-<body class=\"fix-menu\">
-    <section class=\"login p-fixed d-flex text-center bg-primary common-img-bg\">
+<body class=\"fix-menu\" id=\"particles-js\">
+    <section class=\"login-mod p-fixed d-flex text-center\" style=\"background-color:none;\">
         <!-- Container-fluid starts -->
         <div class=\"container-fluid\">
             <div class=\"row\">
@@ -77,19 +99,19 @@ class __TwigTemplate_12cc0647c2973c7e9d9d347380a5c601d1b2c3997475b121bf8b22efcec
                         <form class=\"md-float-material\" action=\"auth\" method=\"post\">
                             <div class=\"text-center\">
                                 <img src=\"";
-        // line 46
+        // line 62
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "assets/admin/images/auth/logo.png\" alt=\"logo.png\">
+        echo "/assets/admin/images/auth/logo.png\" alt=\"logo.png\">
                             </div>
                             <div class=\"auth-box\">
                                 <div class=\"row m-b-20\">
                                     <div class=\"col-md-12\">
-                                        <h3 class=\"text-left txt-primary\">Sign In</h3>
+                                        <h3 class=\"text-left txt-primary\">Log In</h3>
                                     </div>
                                 </div>
                                 <hr/>
                                 <div class=\"input-group\">
-                                    <input type=\"email\" name=\"email\" class=\"form-control\" placeholder=\"Masukan Username\">
+                                    <input type=\"email\" name=\"email\" class=\"form-control\" placeholder=\"Masukan Email\">
                                     <span class=\"md-line\"></span>
                                 </div>
                                 <div class=\"input-group\">
@@ -97,8 +119,8 @@ class __TwigTemplate_12cc0647c2973c7e9d9d347380a5c601d1b2c3997475b121bf8b22efcec
                                     <span class=\"md-line\"></span>
                                 </div>
                                 <div class=\"row m-t-25 text-left\">
-                                    <div class=\"col-sm-7 col-xs-12\">
-                                        <div class=\"checkbox-fade fade-in-primary\">
+                                    <div class=\"col-sm-6 col-xs-12\">
+                                        <div class=\"checkbox-fade fade-in-warning\">
                                             <label>
                                                 <input type=\"checkbox\" value=\"\">
                                                 <span class=\"cr\"><i class=\"cr-icon icofont icofont-ui-check txt-primary\"></i></span>
@@ -106,26 +128,25 @@ class __TwigTemplate_12cc0647c2973c7e9d9d347380a5c601d1b2c3997475b121bf8b22efcec
                                             </label>
                                         </div>
                                     </div>
-                                    <div class=\"col-sm-5 col-xs-12 forgot-phone text-right\">
+                                    <!-- <div class=\"col-sm-5 col-xs-12 forgot-phone text-right\">
                                         <a href=\"http://html.phoenixcoded.net/flatable/default/forgot-password.html\" class=\"text-right f-w-600 text-inverse\"> Forgot Your Password?</a>
+                                    </div> -->
+                                    <div class=\"col-sm-6 col-xs-12 forgot-phone text-right\">
+                                        <a href=\"register\" class=\"text-right f-w-600 text-inverse\"> Registrasi User Baru.</a>
                                     </div>
                                 </div>
                                 <div class=\"row m-t-30\">
                                     <div class=\"col-md-12\">
-                                        <button type=\"submit\" class=\"btn btn-primary btn-md btn-block waves-effect text-center m-b-20\">Sign in</button>
+                                        <button type=\"submit\" class=\"btn btn-warning btn-md btn-block waves-effect text-center m-b-20\">Log in</button>
                                     </div>
                                 </div>
                                 <hr/>
                                 <div class=\"row\">
-                                    <div class=\"col-md-10\">
-                                        <p class=\"text-inverse text-left m-b-0\">Thank you and enjoy our website.</p>
-                                        <p class=\"text-inverse text-left\"><b>Your Autentification Team</b></p>
+                                    <div class=\"col-md-12\">
+                                      <img src=\"http://bios-studio.com/wp-content/uploads/2020/07/bios-no-bg-1.png\" alt=\"small-logo.png\" style=\"width: 30px;\">
                                     </div>
-                                    <div class=\"col-md-2\">
-                                        <img src=\"";
-        // line 89
-        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "assets/admin/images/auth/Logo-small-bottom.png\" alt=\"small-logo.png\">
+                                    <div class=\"col-md-12\">
+                                        <span class=\"text-inverse text-center\" style=\"font-size:9px;\" >&copy; Copyright <strong><span><a href=\"http://bios-studio.com/\" target=\"_blank\" style=\"font-size:9px;\">bios-studio</a></span></strong>. All Rights Reserved</span>
                                     </div>
                                 </div>
 
@@ -187,62 +208,69 @@ class __TwigTemplate_12cc0647c2973c7e9d9d347380a5c601d1b2c3997475b121bf8b22efcec
     <!-- Warning Section Ends -->
     <!-- Required Jquery -->
     <script type=\"text/javascript\" src=\"";
-        // line 150
+        // line 168
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/jquery/dist/jquery.min.js\"></script>
     <script type=\"text/javascript\" src=\"";
-        // line 151
+        // line 169
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/jquery-ui/jquery-ui.min.js\"></script>
     <script type=\"text/javascript\" src=\"";
-        // line 152
+        // line 170
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/tether/dist/js/tether.min.js\"></script>
     <script type=\"text/javascript\" src=\"";
-        // line 153
+        // line 171
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/bootstrap/dist/js/bootstrap.min.js\"></script>
     <!-- jquery slimscroll js -->
     <script type=\"text/javascript\" src=\"";
-        // line 155
+        // line 173
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/jquery-slimscroll/jquery.slimscroll.js\"></script>
     <!-- modernizr js -->
     <script type=\"text/javascript\" src=\"";
-        // line 157
+        // line 175
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/modernizr/modernizr.js\"></script>
     <script type=\"text/javascript\" src=\"";
-        // line 158
+        // line 176
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/modernizr/feature-detects/css-scrollbars.js\"></script>
     <!-- i18next.min.js -->
     <script type=\"text/javascript\" src=\"";
-        // line 160
+        // line 178
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/i18next/i18next.min.js\"></script>
     <script type=\"text/javascript\" src=\"";
-        // line 161
+        // line 179
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/i18next-xhr-backend/i18nextXHRBackend.min.js\"></script>
     <script type=\"text/javascript\" src=\"";
-        // line 162
+        // line 180
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js\"></script>
     <script type=\"text/javascript\" src=\"";
-        // line 163
+        // line 181
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/jquery-i18next/jquery-i18next.min.js\"></script>
     <!-- Custom js -->
     <script type=\"text/javascript\" src=\"";
-        // line 165
+        // line 183
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/js/script.js\"></script>
     <!-- color js --->
     <script type=\"text/javascript\" src=\"";
-        // line 167
+        // line 185
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/js/common-pages.js\"></script>
+
+    <script src=\"http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js\"></script> <!-- stats.js lib -->
+    <script src=\"http://threejs.org/examples/js/libs/stats.min.js\"></script>
+    <script src=\"";
+        // line 189
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/auth/js/particles.js\"></script>
 </body>
 
 </html>
@@ -261,14 +289,14 @@ class __TwigTemplate_12cc0647c2973c7e9d9d347380a5c601d1b2c3997475b121bf8b22efcec
 
     public function getDebugInfo()
     {
-        return array (  244 => 167,  239 => 165,  234 => 163,  230 => 162,  226 => 161,  222 => 160,  217 => 158,  213 => 157,  208 => 155,  203 => 153,  199 => 152,  195 => 151,  191 => 150,  127 => 89,  81 => 46,  65 => 33,  60 => 31,  55 => 29,  50 => 27,  45 => 25,  19 => 1,);
+        return array (  272 => 189,  265 => 185,  260 => 183,  255 => 181,  251 => 180,  247 => 179,  243 => 178,  238 => 176,  234 => 175,  229 => 173,  224 => 171,  220 => 170,  216 => 169,  212 => 168,  103 => 62,  73 => 35,  68 => 33,  63 => 31,  58 => 29,  53 => 27,  48 => 25,  41 => 21,  19 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
 /* <html lang="en">*/
 /* */
 /* <head>*/
-/*     <title>Flat Able - Premium Admin Template by Phoenixcoded</title>*/
+/*     <title>Login - Kepolisian Resor Sumedang</title>*/
 /*     <!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->*/
 /*     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->*/
 /*     <!--[if lt IE 9]>*/
@@ -284,7 +312,7 @@ class __TwigTemplate_12cc0647c2973c7e9d9d347380a5c601d1b2c3997475b121bf8b22efcec
 /*     <meta name="author" content="Phoenixcoded">*/
 /*     <!-- Favicon icon -->*/
 /* */
-/*     <link rel="icon" href="assets/admin/images/favicon.ico" type="image/x-icon">*/
+/*     <link rel="icon" href="{{baseURL}}/assets/users/images/favicon.ico" type="image/x-icon">*/
 /*     <!-- Google font-->*/
 /*     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">*/
 /*     <!-- Required Fremwork -->*/
@@ -297,10 +325,26 @@ class __TwigTemplate_12cc0647c2973c7e9d9d347380a5c601d1b2c3997475b121bf8b22efcec
 /*     <link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/admin/css/style.css">*/
 /*     <!-- color .css -->*/
 /*     <link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/admin/css/color/color-1.css" id="color"/>*/
+/* */
+/*     <link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/auth/css/particles.css" />*/
+/*   <style>*/
+/*     .login-mod {*/
+/*         align-items: center;*/
+/*         display: flex;*/
+/*         height: 100%;*/
+/*         position: fixed;*/
+/*         text-align: center;*/
+/*         width: 100%;*/
+/*     }*/
+/* */
+/*     .form-control:focus {*/
+/*         border-color: #f1c40f !important;*/
+/*     }*/
+/*   </style>*/
 /* </head>*/
 /* */
-/* <body class="fix-menu">*/
-/*     <section class="login p-fixed d-flex text-center bg-primary common-img-bg">*/
+/* <body class="fix-menu" id="particles-js">*/
+/*     <section class="login-mod p-fixed d-flex text-center" style="background-color:none;">*/
 /*         <!-- Container-fluid starts -->*/
 /*         <div class="container-fluid">*/
 /*             <div class="row">*/
@@ -309,17 +353,17 @@ class __TwigTemplate_12cc0647c2973c7e9d9d347380a5c601d1b2c3997475b121bf8b22efcec
 /*                     <div class="login-card card-block auth-body">*/
 /*                         <form class="md-float-material" action="auth" method="post">*/
 /*                             <div class="text-center">*/
-/*                                 <img src="{{baseURL}}assets/admin/images/auth/logo.png" alt="logo.png">*/
+/*                                 <img src="{{baseURL}}/assets/admin/images/auth/logo.png" alt="logo.png">*/
 /*                             </div>*/
 /*                             <div class="auth-box">*/
 /*                                 <div class="row m-b-20">*/
 /*                                     <div class="col-md-12">*/
-/*                                         <h3 class="text-left txt-primary">Sign In</h3>*/
+/*                                         <h3 class="text-left txt-primary">Log In</h3>*/
 /*                                     </div>*/
 /*                                 </div>*/
 /*                                 <hr/>*/
 /*                                 <div class="input-group">*/
-/*                                     <input type="email" name="email" class="form-control" placeholder="Masukan Username">*/
+/*                                     <input type="email" name="email" class="form-control" placeholder="Masukan Email">*/
 /*                                     <span class="md-line"></span>*/
 /*                                 </div>*/
 /*                                 <div class="input-group">*/
@@ -327,8 +371,8 @@ class __TwigTemplate_12cc0647c2973c7e9d9d347380a5c601d1b2c3997475b121bf8b22efcec
 /*                                     <span class="md-line"></span>*/
 /*                                 </div>*/
 /*                                 <div class="row m-t-25 text-left">*/
-/*                                     <div class="col-sm-7 col-xs-12">*/
-/*                                         <div class="checkbox-fade fade-in-primary">*/
+/*                                     <div class="col-sm-6 col-xs-12">*/
+/*                                         <div class="checkbox-fade fade-in-warning">*/
 /*                                             <label>*/
 /*                                                 <input type="checkbox" value="">*/
 /*                                                 <span class="cr"><i class="cr-icon icofont icofont-ui-check txt-primary"></i></span>*/
@@ -336,23 +380,25 @@ class __TwigTemplate_12cc0647c2973c7e9d9d347380a5c601d1b2c3997475b121bf8b22efcec
 /*                                             </label>*/
 /*                                         </div>*/
 /*                                     </div>*/
-/*                                     <div class="col-sm-5 col-xs-12 forgot-phone text-right">*/
+/*                                     <!-- <div class="col-sm-5 col-xs-12 forgot-phone text-right">*/
 /*                                         <a href="http://html.phoenixcoded.net/flatable/default/forgot-password.html" class="text-right f-w-600 text-inverse"> Forgot Your Password?</a>*/
+/*                                     </div> -->*/
+/*                                     <div class="col-sm-6 col-xs-12 forgot-phone text-right">*/
+/*                                         <a href="register" class="text-right f-w-600 text-inverse"> Registrasi User Baru.</a>*/
 /*                                     </div>*/
 /*                                 </div>*/
 /*                                 <div class="row m-t-30">*/
 /*                                     <div class="col-md-12">*/
-/*                                         <button type="submit" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20">Sign in</button>*/
+/*                                         <button type="submit" class="btn btn-warning btn-md btn-block waves-effect text-center m-b-20">Log in</button>*/
 /*                                     </div>*/
 /*                                 </div>*/
 /*                                 <hr/>*/
 /*                                 <div class="row">*/
-/*                                     <div class="col-md-10">*/
-/*                                         <p class="text-inverse text-left m-b-0">Thank you and enjoy our website.</p>*/
-/*                                         <p class="text-inverse text-left"><b>Your Autentification Team</b></p>*/
+/*                                     <div class="col-md-12">*/
+/*                                       <img src="http://bios-studio.com/wp-content/uploads/2020/07/bios-no-bg-1.png" alt="small-logo.png" style="width: 30px;">*/
 /*                                     </div>*/
-/*                                     <div class="col-md-2">*/
-/*                                         <img src="{{baseURL}}assets/admin/images/auth/Logo-small-bottom.png" alt="small-logo.png">*/
+/*                                     <div class="col-md-12">*/
+/*                                         <span class="text-inverse text-center" style="font-size:9px;" >&copy; Copyright <strong><span><a href="http://bios-studio.com/" target="_blank" style="font-size:9px;">bios-studio</a></span></strong>. All Rights Reserved</span>*/
 /*                                     </div>*/
 /*                                 </div>*/
 /* */
@@ -431,6 +477,10 @@ class __TwigTemplate_12cc0647c2973c7e9d9d347380a5c601d1b2c3997475b121bf8b22efcec
 /*     <script type="text/javascript" src="{{baseURL}}/assets/admin/js/script.js"></script>*/
 /*     <!-- color js --->*/
 /*     <script type="text/javascript" src="{{baseURL}}/assets/admin/js/common-pages.js"></script>*/
+/* */
+/*     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->*/
+/*     <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>*/
+/*     <script src="{{baseURL}}/assets/auth/js/particles.js"></script>*/
 /* </body>*/
 /* */
 /* </html>*/

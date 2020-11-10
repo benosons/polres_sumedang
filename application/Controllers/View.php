@@ -19,7 +19,13 @@ class View extends \CodeIgniter\Controller
 
 	public function index()
 	{
-			
+
+			return redirect('home');
+	}
+
+	public function home()
+	{
+
 			helper('form');
 			return \Twig::instance()->display('users/index.html', $this->data);
 	}
@@ -52,7 +58,7 @@ class View extends \CodeIgniter\Controller
 				helper('form');
 				return \Twig::instance()->display('admin/index.html', $this->data);
 			}else{
-				return redirect('login');
+				return redirect('home');
 			}
 	}
 

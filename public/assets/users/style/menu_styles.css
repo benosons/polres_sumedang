@@ -12,7 +12,7 @@
 {
 	background-color: #F0F0F0;
 	border-bottom-color: #F0F0F0;
-	border-top-color: #E0E0E0;	
+	border-top-color: #E0E0E0;
 }
 .style_2 .sf-menu>li
 {
@@ -112,8 +112,8 @@
 .style_9.menu_container,
 .style_9 .sf-menu li
 {
-	background-color: #363B40;
-	border-color: #363B40;
+	background-color: #1b1b1b;
+	border-color: #1b1b1b;
 }
 .style_5 .sf-menu a:hover,
 .style_10 .sf-menu a:hover
@@ -128,7 +128,7 @@
 .style_6.menu_container,
 .style_6 .sf-menu li
 {
-	border-bottom-color: #363B40;
+	border-bottom-color: #1b1b1b;
 	border-top: none;
 }
 .style_6.menu_container
@@ -137,14 +137,14 @@
 }
 .style_6 .sf-menu a:hover
 {
-	background-color: #363B40;
+	background-color: #1b1b1b;
 }
 .style_6 .sf-menu li:hover, .style_6 .sf-menu li.selected,
 .style_6 .sf-menu li.submenu:hover,
 .style_6 .sf-menu li:hover a, .style_6 .sf-menu li.selected a,
 .style_6 .sf-menu li.submenu:hover a
 {
-	background-color: #363B40;
+	background-color: #1b1b1b;
 }
 /* --- menu style 7 --- */
 .style_7 .sf-menu a:hover

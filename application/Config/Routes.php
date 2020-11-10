@@ -59,10 +59,13 @@ if (file_exists(BASEPATH.'Config/Routes.php'))
  * only routes that have been defined here will be available.
  */
 $routes->setDefaultNamespace('App\Controllers');
-$routes->setDefaultController('/');
+$routes->setDefaultController('View');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
+// $routes->set404Override(function() {
+// 	echo view('404');die;
+// });
 $routes->setAutoRoute(true);
 
 /**
@@ -74,6 +77,7 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->add('/', 'View::index');
+$routes->add('home', 'View::home');
 $routes->add('dashboard', 'View::dashboard');
 $routes->add('login', 'View::login');
 $routes->add('register', 'View::register');

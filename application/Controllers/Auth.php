@@ -73,7 +73,7 @@ class Auth extends \CodeIgniter\Controller
 	{
 			$session = session();
 			$session->destroy();
-			return redirect('login');
+			return redirect('home');
 	}
 
 }

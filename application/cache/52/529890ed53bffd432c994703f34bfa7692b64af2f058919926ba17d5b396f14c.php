@@ -21,7 +21,7 @@ class __TwigTemplate_6fb10d80c68c7b0fe38d8e75904f2ec0da5848037fad63f9f4fffce08b6
 <html lang=\"en\">
 
 <head>
-    <title>Flat Able - Premium Admin Template by Phoenixcoded</title>
+    <title>Kepolisian Resor Sumedang</title>
     <!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -36,7 +36,10 @@ class __TwigTemplate_6fb10d80c68c7b0fe38d8e75904f2ec0da5848037fad63f9f4fffce08b6
       <meta name=\"keywords\" content=\", Flat ui, Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app\">
       <meta name=\"author\" content=\"Phoenixcoded\">
       <!-- Favicon icon -->
-      <link rel=\"icon\" href=\"assets/admin/images/favicon.ico\" type=\"image/x-icon\">
+      <link rel=\"icon\" href=\"";
+        // line 20
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/users/images/favicon.ico\" type=\"image/x-icon\">
       <!-- Google font-->
       <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800\" rel=\"stylesheet\">
       <!-- Required Fremwork -->
@@ -125,7 +128,7 @@ class __TwigTemplate_6fb10d80c68c7b0fe38d8e75904f2ec0da5848037fad63f9f4fffce08b6
         $this->loadTemplate("admin/navbar.html", "admin/layout.html", 64)->display($context);
         // line 65
         echo "
-            <div class=\"pcoded-main-container\">
+            <div class=\"pcoded-main-container\" style=\"margin-top: 56px;\">
                 <div class=\"pcoded-wrapper\">";
         // line 69
         $this->loadTemplate("admin/sidebar.html", "admin/layout.html", 69)->display($context);
@@ -335,14 +338,14 @@ class __TwigTemplate_6fb10d80c68c7b0fe38d8e75904f2ec0da5848037fad63f9f4fffce08b6
 
     public function getDebugInfo()
     {
-        return array (  322 => 75,  313 => 168,  309 => 167,  305 => 166,  301 => 165,  295 => 162,  291 => 161,  286 => 159,  282 => 158,  278 => 157,  274 => 156,  269 => 154,  265 => 153,  261 => 152,  257 => 151,  252 => 149,  247 => 147,  243 => 146,  238 => 144,  234 => 143,  229 => 141,  224 => 139,  220 => 138,  215 => 136,  210 => 134,  206 => 133,  202 => 132,  198 => 131,  141 => 76,  139 => 75,  133 => 70,  131 => 69,  127 => 65,  125 => 64,  107 => 47,  103 => 46,  99 => 45,  95 => 44,  90 => 42,  85 => 40,  80 => 38,  75 => 36,  70 => 34,  65 => 32,  60 => 30,  55 => 28,  50 => 26,  45 => 24,  20 => 1,);
+        return array (  325 => 75,  316 => 168,  312 => 167,  308 => 166,  304 => 165,  298 => 162,  294 => 161,  289 => 159,  285 => 158,  281 => 157,  277 => 156,  272 => 154,  268 => 153,  264 => 152,  260 => 151,  255 => 149,  250 => 147,  246 => 146,  241 => 144,  237 => 143,  232 => 141,  227 => 139,  223 => 138,  218 => 136,  213 => 134,  209 => 133,  205 => 132,  201 => 131,  144 => 76,  142 => 75,  136 => 70,  134 => 69,  130 => 65,  128 => 64,  110 => 47,  106 => 46,  102 => 45,  98 => 44,  93 => 42,  88 => 40,  83 => 38,  78 => 36,  73 => 34,  68 => 32,  63 => 30,  58 => 28,  53 => 26,  48 => 24,  41 => 20,  20 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
 /* <html lang="en">*/
 /* */
 /* <head>*/
-/*     <title>Flat Able - Premium Admin Template by Phoenixcoded</title>*/
+/*     <title>Kepolisian Resor Sumedang</title>*/
 /*     <!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->*/
 /*     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->*/
 /*     <!--[if lt IE 9]>*/
@@ -357,7 +360,7 @@ class __TwigTemplate_6fb10d80c68c7b0fe38d8e75904f2ec0da5848037fad63f9f4fffce08b6
 /*       <meta name="keywords" content=", Flat ui, Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">*/
 /*       <meta name="author" content="Phoenixcoded">*/
 /*       <!-- Favicon icon -->*/
-/*       <link rel="icon" href="assets/admin/images/favicon.ico" type="image/x-icon">*/
+/*       <link rel="icon" href="{{baseURL}}/assets/users/images/favicon.ico" type="image/x-icon">*/
 /*       <!-- Google font-->*/
 /*       <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">*/
 /*       <!-- Required Fremwork -->*/
@@ -403,7 +406,7 @@ class __TwigTemplate_6fb10d80c68c7b0fe38d8e75904f2ec0da5848037fad63f9f4fffce08b6
 /* */
 /*           {% include "admin/navbar.html" %}*/
 /* */
-/*             <div class="pcoded-main-container">*/
+/*             <div class="pcoded-main-container" style="margin-top: 56px;">*/
 /*                 <div class="pcoded-wrapper">*/
 /* */
 /*                     {% include "admin/sidebar.html" %}*/

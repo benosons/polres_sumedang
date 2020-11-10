@@ -20,7 +20,7 @@ class __TwigTemplate_eb220cae152954f990db1f225de0ec6376a212862b9e7e3c0a23945a64b
         echo "<!DOCTYPE html>
 <html>
 \t<head>
-\t\t<title>Pressroom - Responsive News &amp; Magazine Template</title>
+\t\t<title>Kepolisian Resor Sumedang</title>
 \t\t<!--meta-->
 \t\t<meta charset=\"UTF-8\" />
 \t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1.2\" />
@@ -354,7 +354,7 @@ class __TwigTemplate_eb220cae152954f990db1f225de0ec6376a212862b9e7e3c0a23945a64b
 /* <!DOCTYPE html>*/
 /* <html>*/
 /* 	<head>*/
-/* 		<title>Pressroom - Responsive News &amp; Magazine Template</title>*/
+/* 		<title>Kepolisian Resor Sumedang</title>*/
 /* 		<!--meta-->*/
 /* 		<meta charset="UTF-8" />*/
 /* 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.2" />*/
