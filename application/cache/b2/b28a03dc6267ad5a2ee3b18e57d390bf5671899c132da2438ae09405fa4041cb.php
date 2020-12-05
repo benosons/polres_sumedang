@@ -98,7 +98,10 @@ class __TwigTemplate_12cc0647c2973c7e9d9d347380a5c601d1b2c3997475b121bf8b22efcec
                     <div class=\"login-card card-block auth-body\">
                         <form class=\"md-float-material\" action=\"auth\" method=\"post\">
                             <div class=\"text-center\">
-                                <a href=\"home\"><img src=\"assets/images/polri.png\" alt=\"logo.png\" style=\"width: 100px;\"></a>
+                                <a href=\"home\"><img src=\"";
+        // line 62
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/images/polri.png\" alt=\"logo.png\" style=\"width: 100px;\"></a>
                             </div>
                             <div class=\"auth-box\">
                                 <div class=\"row m-b-20\">
@@ -286,7 +289,7 @@ class __TwigTemplate_12cc0647c2973c7e9d9d347380a5c601d1b2c3997475b121bf8b22efcec
 
     public function getDebugInfo()
     {
-        return array (  269 => 189,  262 => 185,  257 => 183,  252 => 181,  248 => 180,  244 => 179,  240 => 178,  235 => 176,  231 => 175,  226 => 173,  221 => 171,  217 => 170,  213 => 169,  209 => 168,  73 => 35,  68 => 33,  63 => 31,  58 => 29,  53 => 27,  48 => 25,  41 => 21,  19 => 1,);
+        return array (  272 => 189,  265 => 185,  260 => 183,  255 => 181,  251 => 180,  247 => 179,  243 => 178,  238 => 176,  234 => 175,  229 => 173,  224 => 171,  220 => 170,  216 => 169,  212 => 168,  103 => 62,  73 => 35,  68 => 33,  63 => 31,  58 => 29,  53 => 27,  48 => 25,  41 => 21,  19 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -350,7 +353,7 @@ class __TwigTemplate_12cc0647c2973c7e9d9d347380a5c601d1b2c3997475b121bf8b22efcec
 /*                     <div class="login-card card-block auth-body">*/
 /*                         <form class="md-float-material" action="auth" method="post">*/
 /*                             <div class="text-center">*/
-/*                                 <a href="home"><img src="assets/images/polri.png" alt="logo.png" style="width: 100px;"></a>*/
+/*                                 <a href="home"><img src="{{baseURL}}/assets/images/polri.png" alt="logo.png" style="width: 100px;"></a>*/
 /*                             </div>*/
 /*                             <div class="auth-box">*/
 /*                                 <div class="row m-b-20">*/

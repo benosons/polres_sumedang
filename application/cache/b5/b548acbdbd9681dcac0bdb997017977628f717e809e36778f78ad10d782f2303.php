@@ -98,7 +98,10 @@ class __TwigTemplate_14849da401759044f6f95c3daca24a41c87cdfbd9aa7eff34d84fd680ce
                     <div class=\"login-card card-block auth-body\">
                         <form class=\"md-float-material\" action=\"reg\" method=\"post\">
                             <div class=\"text-center\">
-                              <a href=\"home\"><img src=\"assets/images/polri.png\" alt=\"logo.png\" style=\"width: 100px;\"></a>
+                              <a href=\"home\"><img src=\"";
+        // line 62
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/images/polri.png\" alt=\"logo.png\" style=\"width: 100px;\"></a>
                             </div>
                             <div class=\"auth-box\">
                                 <div class=\"row m-b-20\">
@@ -309,7 +312,7 @@ class __TwigTemplate_14849da401759044f6f95c3daca24a41c87cdfbd9aa7eff34d84fd680ce
 
     public function getDebugInfo()
     {
-        return array (  292 => 197,  285 => 193,  280 => 191,  275 => 189,  271 => 188,  267 => 187,  263 => 186,  258 => 184,  254 => 183,  249 => 181,  244 => 179,  240 => 178,  236 => 177,  232 => 176,  218 => 165,  209 => 159,  200 => 153,  191 => 147,  182 => 141,  73 => 35,  68 => 33,  63 => 31,  58 => 29,  53 => 27,  48 => 25,  41 => 21,  19 => 1,);
+        return array (  295 => 197,  288 => 193,  283 => 191,  278 => 189,  274 => 188,  270 => 187,  266 => 186,  261 => 184,  257 => 183,  252 => 181,  247 => 179,  243 => 178,  239 => 177,  235 => 176,  221 => 165,  212 => 159,  203 => 153,  194 => 147,  185 => 141,  103 => 62,  73 => 35,  68 => 33,  63 => 31,  58 => 29,  53 => 27,  48 => 25,  41 => 21,  19 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -373,7 +376,7 @@ class __TwigTemplate_14849da401759044f6f95c3daca24a41c87cdfbd9aa7eff34d84fd680ce
 /*                     <div class="login-card card-block auth-body">*/
 /*                         <form class="md-float-material" action="reg" method="post">*/
 /*                             <div class="text-center">*/
-/*                               <a href="home"><img src="assets/images/polri.png" alt="logo.png" style="width: 100px;"></a>*/
+/*                               <a href="home"><img src="{{baseURL}}/assets/images/polri.png" alt="logo.png" style="width: 100px;"></a>*/
 /*                             </div>*/
 /*                             <div class="auth-box">*/
 /*                                 <div class="row m-b-20">*/
