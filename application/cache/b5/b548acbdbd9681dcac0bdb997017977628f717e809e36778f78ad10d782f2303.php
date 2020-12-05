@@ -39,7 +39,7 @@ class __TwigTemplate_14849da401759044f6f95c3daca24a41c87cdfbd9aa7eff34d84fd680ce
     <link rel=\"icon\" href=\"";
         // line 21
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "/assets/admin/images/favicon.ico\" type=\"image/x-icon\">
+        echo "/assets/users/images/favicon.ico\" type=\"image/x-icon\">
     <!-- Google font-->
     <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800\" rel=\"stylesheet\">
     <!-- Required Fremwork -->
@@ -81,6 +81,10 @@ class __TwigTemplate_14849da401759044f6f95c3daca24a41c87cdfbd9aa7eff34d84fd680ce
           text-align: center;
           width: 100%;
       }
+
+      .form-control:focus {
+          border-color: #f1c40f !important;
+      }
     </style>
 </head>
 
@@ -95,7 +99,7 @@ class __TwigTemplate_14849da401759044f6f95c3daca24a41c87cdfbd9aa7eff34d84fd680ce
                         <form class=\"md-float-material\" action=\"reg\" method=\"post\">
                             <div class=\"text-center\">
                                 <img src=\"";
-        // line 58
+        // line 62
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/images/auth/logo.png\" alt=\"logo.png\">
                             </div>
@@ -179,7 +183,7 @@ class __TwigTemplate_14849da401759044f6f95c3daca24a41c87cdfbd9aa7eff34d84fd680ce
             <li>
                 <a href=\"http://www.google.com/chrome/\">
                     <img src=\"";
-        // line 139
+        // line 143
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/images/browser/chrome.png\" alt=\"Chrome\">
                     <div>Chrome</div>
@@ -188,7 +192,7 @@ class __TwigTemplate_14849da401759044f6f95c3daca24a41c87cdfbd9aa7eff34d84fd680ce
             <li>
                 <a href=\"https://www.mozilla.org/en-US/firefox/new/\">
                     <img src=\"";
-        // line 145
+        // line 149
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/images/browser/firefox.png\" alt=\"Firefox\">
                     <div>Firefox</div>
@@ -197,7 +201,7 @@ class __TwigTemplate_14849da401759044f6f95c3daca24a41c87cdfbd9aa7eff34d84fd680ce
             <li>
                 <a href=\"http://www.opera.com\">
                     <img src=\"";
-        // line 151
+        // line 155
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/images/browser/opera.png\" alt=\"Opera\">
                     <div>Opera</div>
@@ -206,7 +210,7 @@ class __TwigTemplate_14849da401759044f6f95c3daca24a41c87cdfbd9aa7eff34d84fd680ce
             <li>
                 <a href=\"https://www.apple.com/safari/\">
                     <img src=\"";
-        // line 157
+        // line 161
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/images/browser/safari.png\" alt=\"Safari\">
                     <div>Safari</div>
@@ -215,7 +219,7 @@ class __TwigTemplate_14849da401759044f6f95c3daca24a41c87cdfbd9aa7eff34d84fd680ce
             <li>
                 <a href=\"http://windows.microsoft.com/en-us/internet-explorer/download-ie\">
                     <img src=\"";
-        // line 163
+        // line 167
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/images/browser/ie.png\" alt=\"\">
                     <div>IE (9 & above)</div>
@@ -229,67 +233,67 @@ class __TwigTemplate_14849da401759044f6f95c3daca24a41c87cdfbd9aa7eff34d84fd680ce
     <!-- Warning Section Ends -->
     <!-- Required Jquery -->
     <script type=\"text/javascript\" src=\"";
-        // line 174
+        // line 178
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/jquery/dist/jquery.min.js\"></script>
     <script type=\"text/javascript\" src=\"";
-        // line 175
+        // line 179
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/jquery-ui/jquery-ui.min.js\"></script>
     <script type=\"text/javascript\" src=\"";
-        // line 176
+        // line 180
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/tether/dist/js/tether.min.js\"></script>
     <script type=\"text/javascript\" src=\"";
-        // line 177
+        // line 181
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/bootstrap/dist/js/bootstrap.min.js\"></script>
     <!-- jquery slimscroll js -->
     <script type=\"text/javascript\" src=\"";
-        // line 179
+        // line 183
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/jquery-slimscroll/jquery.slimscroll.js\"></script>
     <!-- modernizr js -->
     <script type=\"text/javascript\" src=\"";
-        // line 181
+        // line 185
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/modernizr/modernizr.js\"></script>
     <script type=\"text/javascript\" src=\"";
-        // line 182
+        // line 186
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/modernizr/feature-detects/css-scrollbars.js\"></script>
     <!-- i18next.min.js -->
     <script type=\"text/javascript\" src=\"";
-        // line 184
+        // line 188
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/i18next/i18next.min.js\"></script>
     <script type=\"text/javascript\" src=\"";
-        // line 185
+        // line 189
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/i18next-xhr-backend/i18nextXHRBackend.min.js\"></script>
     <script type=\"text/javascript\" src=\"";
-        // line 186
+        // line 190
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js\"></script>
     <script type=\"text/javascript\" src=\"";
-        // line 187
+        // line 191
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/jquery-i18next/jquery-i18next.min.js\"></script>
     <!-- Custom js -->
     <script type=\"text/javascript\" src=\"";
-        // line 189
+        // line 193
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/js/script.js\"></script>
     <!-- color js --->
     <script type=\"text/javascript\" src=\"";
-        // line 191
+        // line 195
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/js/common-pages.js\"></script>
 
     <script src=\"http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js\"></script> <!-- stats.js lib -->
     <script src=\"http://threejs.org/examples/js/libs/stats.min.js\"></script>
     <script src=\"";
-        // line 195
+        // line 199
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/auth/js/particles.js\"></script>
 </body>
@@ -310,7 +314,7 @@ class __TwigTemplate_14849da401759044f6f95c3daca24a41c87cdfbd9aa7eff34d84fd680ce
 
     public function getDebugInfo()
     {
-        return array (  293 => 195,  286 => 191,  281 => 189,  276 => 187,  272 => 186,  268 => 185,  264 => 184,  259 => 182,  255 => 181,  250 => 179,  245 => 177,  241 => 176,  237 => 175,  233 => 174,  219 => 163,  210 => 157,  201 => 151,  192 => 145,  183 => 139,  99 => 58,  73 => 35,  68 => 33,  63 => 31,  58 => 29,  53 => 27,  48 => 25,  41 => 21,  19 => 1,);
+        return array (  297 => 199,  290 => 195,  285 => 193,  280 => 191,  276 => 190,  272 => 189,  268 => 188,  263 => 186,  259 => 185,  254 => 183,  249 => 181,  245 => 180,  241 => 179,  237 => 178,  223 => 167,  214 => 161,  205 => 155,  196 => 149,  187 => 143,  103 => 62,  73 => 35,  68 => 33,  63 => 31,  58 => 29,  53 => 27,  48 => 25,  41 => 21,  19 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -333,7 +337,7 @@ class __TwigTemplate_14849da401759044f6f95c3daca24a41c87cdfbd9aa7eff34d84fd680ce
 /*     <meta name="author" content="Phoenixcoded">*/
 /*     <!-- Favicon icon -->*/
 /* */
-/*     <link rel="icon" href="{{baseURL}}/assets/admin/images/favicon.ico" type="image/x-icon">*/
+/*     <link rel="icon" href="{{baseURL}}/assets/users/images/favicon.ico" type="image/x-icon">*/
 /*     <!-- Google font-->*/
 /*     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">*/
 /*     <!-- Required Fremwork -->*/
@@ -356,6 +360,10 @@ class __TwigTemplate_14849da401759044f6f95c3daca24a41c87cdfbd9aa7eff34d84fd680ce
 /*           position: fixed;*/
 /*           text-align: center;*/
 /*           width: 100%;*/
+/*       }*/
+/* */
+/*       .form-control:focus {*/
+/*           border-color: #f1c40f !important;*/
 /*       }*/
 /*     </style>*/
 /* </head>*/
