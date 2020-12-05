@@ -52,171 +52,9 @@ class __TwigTemplate_3b96aacfa4941bdc19f17e1b272618bfba30fcc2538054a33f93c0f5bbf
                             <i class=\"ti-fullscreen\"></i>
                         </a>
                     </li>
-                    <li class=\"mega-menu-top\">
-                        <a href=\"index.html#\">
-                            Mega
-                            <i class=\"ti-angle-down\"></i>
-                        </a>
-                        <ul class=\"show-notification row\">
-                            <li class=\"col-sm-3\">
-                                <h6 class=\"mega-menu-title\">Popular Links</h6>
-                                <ul class=\"mega-menu-links\">
-                                    <li><a href=\"form-elements-component.html\">Form Elements</a></li>
-                                    <li><a href=\"button.html\">Buttons</a></li>
-                                    <li><a href=\"map-google.html\">Maps</a></li>
-                                    <li><a href=\"user-card.html\">Contact Cards</a></li>
-                                    <li><a href=\"user-profile.html\">User Information</a></li>
-                                    <li><a href=\"auth-lock-screen.html\">Lock Screen</a></li>
-                                </ul>
-                            </li>
-                            <li class=\"col-sm-3\">
-                                <h6 class=\"mega-menu-title\">Mailbox</h6>
-                                <ul class=\"mega-mailbox\">
-                                    <li>
-                                        <a href=\"index.html#\" class=\"media\">
-                                            <div class=\"media-left\">
-                                                <i class=\"ti-folder\"></i>
-                                            </div>
-                                            <div class=\"media-body\">
-                                                <h5>Data Backup</h5>
-                                                <small class=\"text-muted\">Store your data</small>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href=\"index.html#\" class=\"media\">
-                                            <div class=\"media-left\">
-                                                <i class=\"ti-headphone-alt\"></i>
-                                            </div>
-                                            <div class=\"media-body\">
-                                                <h5>Support</h5>
-                                                <small class=\"text-muted\">24-hour support</small>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href=\"index.html#\" class=\"media\">
-                                            <div class=\"media-left\">
-                                                <i class=\"ti-dropbox\"></i>
-                                            </div>
-                                            <div class=\"media-body\">
-                                                <h5>Drop-box</h5>
-                                                <small class=\"text-muted\">Store large amount of data in one-box only
-                                                </small>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href=\"index.html#\" class=\"media\">
-                                            <div class=\"media-left\">
-                                                <i class=\"ti-location-pin\"></i>
-                                            </div>
-                                            <div class=\"media-body\">
-                                                <h5>Location</h5>
-                                                <small class=\"text-muted\">Find Your Location with ease of use</small>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class=\"col-sm-3\">
-                                <h6 class=\"mega-menu-title\">Gallery</h6>
-                                <div class=\"row m-b-20\">
-                                    <div class=\"col-sm-4\"><img class=\"img-fluid img-thumbnail\" src=\"";
-        // line 104
-        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "/assets/admin/images/mega-menu/01.jpg\" alt=\"Gallery-1\">
-                                    </div>
-                                    <div class=\"col-sm-4\"><img class=\"img-fluid img-thumbnail\" src=\"";
-        // line 106
-        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "/assets/admin/images/mega-menu/02.jpg\" alt=\"Gallery-2\">
-                                    </div>
-                                    <div class=\"col-sm-4\"><img class=\"img-fluid img-thumbnail\" src=\"";
-        // line 108
-        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "/assets/admin/images/mega-menu/03.jpg\" alt=\"Gallery-3\">
-                                    </div>
-                                </div>
-                                <div class=\"row m-b-20\">
-                                    <div class=\"col-sm-4\"><img class=\"img-fluid img-thumbnail\" src=\"";
-        // line 112
-        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "/assets/admin/images/mega-menu/04.jpg\" alt=\"Gallery-4\">
-                                    </div>
-                                    <div class=\"col-sm-4\"><img class=\"img-fluid img-thumbnail\" src=\"";
-        // line 114
-        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "/assets/admin/images/mega-menu/05.jpg\" alt=\"Gallery-5\">
-                                    </div>
-                                    <div class=\"col-sm-4\"><img class=\"img-fluid img-thumbnail\" src=\"";
-        // line 116
-        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "/assets/admin/images/mega-menu/06.jpg\" alt=\"Gallery-6\">
-                                    </div>
-                                </div>
-                                <button class=\"btn btn-primary btn-sm btn-block\">Browse Gallery</button>
-                            </li>
-                            <li class=\"col-sm-3\">
-                                <h6 class=\"mega-menu-title\">Contact Us</h6>
-                                <div class=\"mega-menu-contact\">
-                                    <div class=\"form-group row\">
-                                        <label for=\"example-text-input\" class=\"col-3 col-form-label\">Name</label>
-                                        <div class=\"col-9\">
-                                            <input class=\"form-control\" type=\"text\" placeholder=\"Artisanal kale\" id=\"example-text-input\">
-                                        </div>
-                                    </div>
-                                    <div class=\"form-group row\">
-                                        <label for=\"example-search-input\" class=\"col-3 col-form-label\">Email</label>
-                                        <div class=\"col-9\">
-                                            <input class=\"form-control\" type=\"email\" placeholder=\"Enter your E-mail Id\" id=\"example-search-input\">
-                                        </div>
-                                    </div>
-                                    <div class=\"form-group row\">
-                                        <label for=\"example-search-input\" class=\"col-3 col-form-label\">Contact</label>
-                                        <div class=\"col-9\">
-                                            <input class=\"form-control\" type=\"number\" placeholder=\"+91-9898989898\" id=\"example-search-input\">
-                                        </div>
-                                    </div>
-                                    <div class=\"form-group row\">
-                                        <label for=\"exampleTextarea\" class=\"col-3 col-form-label\">Message</label>
-                                        <div class=\"col-9\">
-                                            <textarea class=\"form-control\" id=\"exampleTextarea\" rows=\"3\"></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
                 </ul>
                 <ul class=\"nav-right\">
-                    <li class=\"header-notification lng-dropdown\">
-                        <a href=\"index.html#\" id=\"dropdown-active-item\">
-                            <i class=\"flag-icon flag-icon-gb m-r-5\"></i> English
-                        </a>
-                        <ul class=\"show-notification\">
-                            <li>
-                                <a href=\"index.html#\" data-lng=\"en\">
-                                    <i class=\"flag-icon flag-icon-gb m-r-5\"></i> English
-                                </a>
-                            </li>
-                            <li>
-                                <a href=\"index.html#\" data-lng=\"es\">
-                                    <i class=\"flag-icon flag-icon-es m-r-5\"></i> Spanish
-                                </a>
-                            </li>
-                            <li>
-                                <a href=\"index.html#\" data-lng=\"pt\">
-                                    <i class=\"flag-icon flag-icon-pt m-r-5\"></i> Portuguese
-                                </a>
-                            </li>
-                            <li>
-                                <a href=\"index.html#\" data-lng=\"fr\">
-                                    <i class=\"flag-icon flag-icon-fr m-r-5\"></i> French
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
+
                     <li class=\"header-notification\">
                         <a href=\"#\">
                             <i class=\"ti-bell\"></i>
@@ -230,7 +68,7 @@ class __TwigTemplate_3b96aacfa4941bdc19f17e1b272618bfba30fcc2538054a33f93c0f5bbf
                             <li>
                                 <div class=\"media\">
                                     <img class=\"d-flex align-self-center\" src=\"";
-        // line 193
+        // line 49
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/images/user.png\" alt=\"Generic placeholder image\">
                                     <div class=\"media-body\">
@@ -243,7 +81,7 @@ class __TwigTemplate_3b96aacfa4941bdc19f17e1b272618bfba30fcc2538054a33f93c0f5bbf
                             <li>
                                 <div class=\"media\">
                                     <img class=\"d-flex align-self-center\" src=\"";
-        // line 203
+        // line 59
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/images/user.png\" alt=\"Generic placeholder image\">
                                     <div class=\"media-body\">
@@ -256,7 +94,7 @@ class __TwigTemplate_3b96aacfa4941bdc19f17e1b272618bfba30fcc2538054a33f93c0f5bbf
                             <li>
                                 <div class=\"media\">
                                     <img class=\"d-flex align-self-center\" src=\"";
-        // line 213
+        // line 69
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/images/user.png\" alt=\"Generic placeholder image\">
                                     <div class=\"media-body\">
@@ -277,10 +115,13 @@ class __TwigTemplate_3b96aacfa4941bdc19f17e1b272618bfba30fcc2538054a33f93c0f5bbf
                     <li class=\"user-profile header-notification\">
                         <a href=\"#\">
                             <img src=\"";
-        // line 231
+        // line 87
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/images/user.png\" alt=\"User-Profile-Image\">
-                            <span>John Doe</span>
+                            <span>";
+        // line 88
+        echo twig_escape_filter($this->env, (isset($context["username"]) ? $context["username"] : null), "html", null, true);
+        echo "</span>
                             <i class=\"ti-angle-down\"></i>
                         </a>
                         <ul class=\"show-notification profile-notification\">
@@ -334,14 +175,14 @@ class __TwigTemplate_3b96aacfa4941bdc19f17e1b272618bfba30fcc2538054a33f93c0f5bbf
                             <h2>Popular</h2>
                             <a class=\"dummy-media-object\" href=\"#\">
                                 <img src=\"";
-        // line 285
+        // line 141
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/images/avatar-1.png\" alt=\"PagePreloadingEffect\" />
                                 <h3>Page Preloading Effect</h3>
                             </a>
                             <a class=\"dummy-media-object\" href=\"#\">
                                 <img src=\"";
-        // line 289
+        // line 145
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/images/avatar-1.png\" alt=\"DraggableDualViewSlideshow\" />
                                 <h3>Draggable Dual-View Slideshow</h3>
@@ -351,14 +192,14 @@ class __TwigTemplate_3b96aacfa4941bdc19f17e1b272618bfba30fcc2538054a33f93c0f5bbf
                             <h2>Recent</h2>
                             <a class=\"dummy-media-object\" href=\"#\">
                                 <img src=\"";
-        // line 296
+        // line 152
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/images/avatar-1.png\" alt=\"TooltipStylesInspiration\" />
                                 <h3>Tooltip Styles Inspiration</h3>
                             </a>
                             <a class=\"dummy-media-object\" href=\"#\">
                                 <img src=\"";
-        // line 300
+        // line 156
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/images/avatar-1.png\" alt=\"NotificationStyles\" />
                                 <h3>Notification Styles Inspiration</h3>
@@ -391,7 +232,7 @@ class __TwigTemplate_3b96aacfa4941bdc19f17e1b272618bfba30fcc2538054a33f93c0f5bbf
                     <div class=\"media userlist-box\" data-id=\"1\" data-status=\"online\" data-username=\"Josephin Doe\" data-toggle=\"tooltip\" data-placement=\"left\" title=\"Josephin Doe\">
                         <a class=\"media-left\" href=\"#\">
                             <img class=\"media-object img-circle\" src=\"";
-        // line 330
+        // line 186
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/images/avatar-1.png\" alt=\"Generic placeholder image\">
                             <div class=\"live-status bg-success\"></div>
@@ -403,7 +244,7 @@ class __TwigTemplate_3b96aacfa4941bdc19f17e1b272618bfba30fcc2538054a33f93c0f5bbf
                     <div class=\"media userlist-box\" data-id=\"2\" data-status=\"online\" data-username=\"Lary Doe\" data-toggle=\"tooltip\" data-placement=\"left\" title=\"Lary Doe\">
                         <a class=\"media-left\" href=\"#\">
                             <img class=\"media-object img-circle\" src=\"";
-        // line 339
+        // line 195
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/images/task/task-u1.jpg\" alt=\"Generic placeholder image\">
                             <div class=\"live-status bg-success\"></div>
@@ -415,7 +256,7 @@ class __TwigTemplate_3b96aacfa4941bdc19f17e1b272618bfba30fcc2538054a33f93c0f5bbf
                     <div class=\"media userlist-box\" data-id=\"3\" data-status=\"online\" data-username=\"Alice\" data-toggle=\"tooltip\" data-placement=\"left\" title=\"Alice\">
                         <a class=\"media-left\" href=\"#\">
                             <img class=\"media-object img-circle\" src=\"";
-        // line 348
+        // line 204
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/images/avatar-2.png\" alt=\"Generic placeholder image\">
                             <div class=\"live-status bg-success\"></div>
@@ -427,7 +268,7 @@ class __TwigTemplate_3b96aacfa4941bdc19f17e1b272618bfba30fcc2538054a33f93c0f5bbf
                     <div class=\"media userlist-box\" data-id=\"4\" data-status=\"online\" data-username=\"Alia\" data-toggle=\"tooltip\" data-placement=\"left\" title=\"Alia\">
                         <a class=\"media-left\" href=\"#\">
                             <img class=\"media-object img-circle\" src=\"";
-        // line 357
+        // line 213
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/images/task/task-u2.jpg\" alt=\"Generic placeholder image\">
                             <div class=\"live-status bg-success\"></div>
@@ -439,7 +280,7 @@ class __TwigTemplate_3b96aacfa4941bdc19f17e1b272618bfba30fcc2538054a33f93c0f5bbf
                     <div class=\"media userlist-box\" data-id=\"5\" data-status=\"online\" data-username=\"Suzen\" data-toggle=\"tooltip\" data-placement=\"left\" title=\"Suzen\">
                         <a class=\"media-left\" href=\"#\">
                             <img class=\"media-object img-circle\" src=\"";
-        // line 366
+        // line 222
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/images/task/task-u3.jpg\" alt=\"Generic placeholder image\">
                             <div class=\"live-status bg-success\"></div>
@@ -451,7 +292,7 @@ class __TwigTemplate_3b96aacfa4941bdc19f17e1b272618bfba30fcc2538054a33f93c0f5bbf
                     <div class=\"media userlist-box\" data-id=\"6\" data-status=\"offline\" data-username=\"Michael Scofield\" data-toggle=\"tooltip\" data-placement=\"left\" title=\"Michael Scofield\">
                         <a class=\"media-left\" href=\"#\">
                             <img class=\"media-object img-circle\" src=\"";
-        // line 375
+        // line 231
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/images/avatar-3.png\" alt=\"Generic placeholder image\">
                             <div class=\"live-status bg-danger\"></div>
@@ -463,7 +304,7 @@ class __TwigTemplate_3b96aacfa4941bdc19f17e1b272618bfba30fcc2538054a33f93c0f5bbf
                     <div class=\"media userlist-box\" data-id=\"7\" data-status=\"online\" data-username=\"Irina Shayk\" data-toggle=\"tooltip\" data-placement=\"left\" title=\"Irina Shayk\">
                         <a class=\"media-left\" href=\"#\">
                             <img class=\"media-object img-circle\" src=\"";
-        // line 384
+        // line 240
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/images/avatar-4.png\" alt=\"Generic placeholder image\">
                             <div class=\"live-status bg-success\"></div>
@@ -475,7 +316,7 @@ class __TwigTemplate_3b96aacfa4941bdc19f17e1b272618bfba30fcc2538054a33f93c0f5bbf
                     <div class=\"media userlist-box\" data-id=\"8\" data-status=\"offline\" data-username=\"Sara Tancredi\" data-toggle=\"tooltip\" data-placement=\"left\" title=\"Sara Tancredi\">
                         <a class=\"media-left\" href=\"#\">
                             <img class=\"media-object img-circle\" src=\"";
-        // line 393
+        // line 249
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/images/avatar-5.png\" alt=\"Generic placeholder image\">
                             <div class=\"live-status bg-danger\"></div>
@@ -487,7 +328,7 @@ class __TwigTemplate_3b96aacfa4941bdc19f17e1b272618bfba30fcc2538054a33f93c0f5bbf
                     <div class=\"media userlist-box\" data-id=\"9\" data-status=\"online\" data-username=\"Samon\" data-toggle=\"tooltip\" data-placement=\"left\" title=\"Samon\">
                         <a class=\"media-left\" href=\"#\">
                             <img class=\"media-object img-circle\" src=\"";
-        // line 402
+        // line 258
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/images/avatar-1.png\" alt=\"Generic placeholder image\">
                             <div class=\"live-status bg-success\"></div>
@@ -499,7 +340,7 @@ class __TwigTemplate_3b96aacfa4941bdc19f17e1b272618bfba30fcc2538054a33f93c0f5bbf
                     <div class=\"media userlist-box\" data-id=\"10\" data-status=\"online\" data-username=\"Daizy Mendize\" data-toggle=\"tooltip\" data-placement=\"left\" title=\"Daizy Mendize\">
                         <a class=\"media-left\" href=\"#\">
                             <img class=\"media-object img-circle\" src=\"";
-        // line 411
+        // line 267
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/images/task/task-u3.jpg\" alt=\"Generic placeholder image\">
                             <div class=\"live-status bg-success\"></div>
@@ -511,7 +352,7 @@ class __TwigTemplate_3b96aacfa4941bdc19f17e1b272618bfba30fcc2538054a33f93c0f5bbf
                     <div class=\"media userlist-box\" data-id=\"11\" data-status=\"offline\" data-username=\"Loren Scofield\" data-toggle=\"tooltip\" data-placement=\"left\" title=\"Loren Scofield\">
                         <a class=\"media-left\" href=\"#\">
                             <img class=\"media-object img-circle\" src=\"";
-        // line 420
+        // line 276
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/images/avatar-3.png\" alt=\"Generic placeholder image\">
                             <div class=\"live-status bg-danger\"></div>
@@ -523,7 +364,7 @@ class __TwigTemplate_3b96aacfa4941bdc19f17e1b272618bfba30fcc2538054a33f93c0f5bbf
                     <div class=\"media userlist-box\" data-id=\"12\" data-status=\"online\" data-username=\"Shayk\" data-toggle=\"tooltip\" data-placement=\"left\" title=\"Shayk\">
                         <a class=\"media-left\" href=\"#\">
                             <img class=\"media-object img-circle\" src=\"";
-        // line 429
+        // line 285
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/images/avatar-4.png\" alt=\"Generic placeholder image\">
                             <div class=\"live-status bg-success\"></div>
@@ -535,7 +376,7 @@ class __TwigTemplate_3b96aacfa4941bdc19f17e1b272618bfba30fcc2538054a33f93c0f5bbf
                     <div class=\"media userlist-box\" data-id=\"13\" data-status=\"offline\" data-username=\"Sara\" data-toggle=\"tooltip\" data-placement=\"left\" title=\"Sara\">
                         <a class=\"media-left\" href=\"#\">
                             <img class=\"media-object img-circle\" src=\"";
-        // line 438
+        // line 294
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/images/task/task-u3.jpg\" alt=\"Generic placeholder image\">
                             <div class=\"live-status bg-danger\"></div>
@@ -547,7 +388,7 @@ class __TwigTemplate_3b96aacfa4941bdc19f17e1b272618bfba30fcc2538054a33f93c0f5bbf
                     <div class=\"media userlist-box\" data-id=\"14\" data-status=\"online\" data-username=\"Doe\" data-toggle=\"tooltip\" data-placement=\"left\" title=\"Doe\">
                         <a class=\"media-left\" href=\"#\">
                             <img class=\"media-object img-circle\" src=\"";
-        // line 447
+        // line 303
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/images/avatar-1.png\" alt=\"Generic placeholder image\">
                             <div class=\"live-status bg-success\"></div>
@@ -559,7 +400,7 @@ class __TwigTemplate_3b96aacfa4941bdc19f17e1b272618bfba30fcc2538054a33f93c0f5bbf
                     <div class=\"media userlist-box\" data-id=\"15\" data-status=\"online\" data-username=\"Lary\" data-toggle=\"tooltip\" data-placement=\"left\" title=\"Lary\">
                         <a class=\"media-left\" href=\"#\">
                             <img class=\"media-object img-circle\" src=\"";
-        // line 456
+        // line 312
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/images/task/task-u1.jpg\" alt=\"Generic placeholder image\">
                             <div class=\"live-status bg-success\"></div>
@@ -583,7 +424,7 @@ class __TwigTemplate_3b96aacfa4941bdc19f17e1b272618bfba30fcc2538054a33f93c0f5bbf
     <div class=\"media chat-messages\">
         <a class=\"media-left photo-table\" href=\"#\">
             <img class=\"media-object img-circle m-t-5\" src=\"";
-        // line 477
+        // line 333
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/images/avatar-1.png\" alt=\"Generic placeholder image\">
         </a>
@@ -604,7 +445,7 @@ class __TwigTemplate_3b96aacfa4941bdc19f17e1b272618bfba30fcc2538054a33f93c0f5bbf
         <div class=\"media-right photo-table\">
             <a href=\"#\">
                 <img class=\"media-object img-circle m-t-5\" src=\"";
-        // line 495
+        // line 351
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/images/avatar-2.png\" alt=\"Generic placeholder image\">
             </a>
@@ -635,7 +476,7 @@ class __TwigTemplate_3b96aacfa4941bdc19f17e1b272618bfba30fcc2538054a33f93c0f5bbf
 
     public function getDebugInfo()
     {
-        return array (  608 => 495,  587 => 477,  563 => 456,  551 => 447,  539 => 438,  527 => 429,  515 => 420,  503 => 411,  491 => 402,  479 => 393,  467 => 384,  455 => 375,  443 => 366,  431 => 357,  419 => 348,  407 => 339,  395 => 330,  362 => 300,  355 => 296,  345 => 289,  338 => 285,  281 => 231,  260 => 213,  247 => 203,  234 => 193,  154 => 116,  149 => 114,  144 => 112,  137 => 108,  132 => 106,  127 => 104,  31 => 11,  19 => 1,);
+        return array (  449 => 351,  428 => 333,  404 => 312,  392 => 303,  380 => 294,  368 => 285,  356 => 276,  344 => 267,  332 => 258,  320 => 249,  308 => 240,  296 => 231,  284 => 222,  272 => 213,  260 => 204,  248 => 195,  236 => 186,  203 => 156,  196 => 152,  186 => 145,  179 => 141,  123 => 88,  119 => 87,  98 => 69,  85 => 59,  72 => 49,  31 => 11,  19 => 1,);
     }
 }
 /* <nav class="navbar header-navbar pcoded-header" pcoded-navbar-position="fixed" header-theme="theme99" style="position: fixed;z-index: 1028;">*/
@@ -671,153 +512,9 @@ class __TwigTemplate_3b96aacfa4941bdc19f17e1b272618bfba30fcc2538054a33f93c0f5bbf
 /*                             <i class="ti-fullscreen"></i>*/
 /*                         </a>*/
 /*                     </li>*/
-/*                     <li class="mega-menu-top">*/
-/*                         <a href="index.html#">*/
-/*                             Mega*/
-/*                             <i class="ti-angle-down"></i>*/
-/*                         </a>*/
-/*                         <ul class="show-notification row">*/
-/*                             <li class="col-sm-3">*/
-/*                                 <h6 class="mega-menu-title">Popular Links</h6>*/
-/*                                 <ul class="mega-menu-links">*/
-/*                                     <li><a href="form-elements-component.html">Form Elements</a></li>*/
-/*                                     <li><a href="button.html">Buttons</a></li>*/
-/*                                     <li><a href="map-google.html">Maps</a></li>*/
-/*                                     <li><a href="user-card.html">Contact Cards</a></li>*/
-/*                                     <li><a href="user-profile.html">User Information</a></li>*/
-/*                                     <li><a href="auth-lock-screen.html">Lock Screen</a></li>*/
-/*                                 </ul>*/
-/*                             </li>*/
-/*                             <li class="col-sm-3">*/
-/*                                 <h6 class="mega-menu-title">Mailbox</h6>*/
-/*                                 <ul class="mega-mailbox">*/
-/*                                     <li>*/
-/*                                         <a href="index.html#" class="media">*/
-/*                                             <div class="media-left">*/
-/*                                                 <i class="ti-folder"></i>*/
-/*                                             </div>*/
-/*                                             <div class="media-body">*/
-/*                                                 <h5>Data Backup</h5>*/
-/*                                                 <small class="text-muted">Store your data</small>*/
-/*                                             </div>*/
-/*                                         </a>*/
-/*                                     </li>*/
-/*                                     <li>*/
-/*                                         <a href="index.html#" class="media">*/
-/*                                             <div class="media-left">*/
-/*                                                 <i class="ti-headphone-alt"></i>*/
-/*                                             </div>*/
-/*                                             <div class="media-body">*/
-/*                                                 <h5>Support</h5>*/
-/*                                                 <small class="text-muted">24-hour support</small>*/
-/*                                             </div>*/
-/*                                         </a>*/
-/*                                     </li>*/
-/*                                     <li>*/
-/*                                         <a href="index.html#" class="media">*/
-/*                                             <div class="media-left">*/
-/*                                                 <i class="ti-dropbox"></i>*/
-/*                                             </div>*/
-/*                                             <div class="media-body">*/
-/*                                                 <h5>Drop-box</h5>*/
-/*                                                 <small class="text-muted">Store large amount of data in one-box only*/
-/*                                                 </small>*/
-/*                                             </div>*/
-/*                                         </a>*/
-/*                                     </li>*/
-/*                                     <li>*/
-/*                                         <a href="index.html#" class="media">*/
-/*                                             <div class="media-left">*/
-/*                                                 <i class="ti-location-pin"></i>*/
-/*                                             </div>*/
-/*                                             <div class="media-body">*/
-/*                                                 <h5>Location</h5>*/
-/*                                                 <small class="text-muted">Find Your Location with ease of use</small>*/
-/*                                             </div>*/
-/*                                         </a>*/
-/*                                     </li>*/
-/*                                 </ul>*/
-/*                             </li>*/
-/*                             <li class="col-sm-3">*/
-/*                                 <h6 class="mega-menu-title">Gallery</h6>*/
-/*                                 <div class="row m-b-20">*/
-/*                                     <div class="col-sm-4"><img class="img-fluid img-thumbnail" src="{{baseURL}}/assets/admin/images/mega-menu/01.jpg" alt="Gallery-1">*/
-/*                                     </div>*/
-/*                                     <div class="col-sm-4"><img class="img-fluid img-thumbnail" src="{{baseURL}}/assets/admin/images/mega-menu/02.jpg" alt="Gallery-2">*/
-/*                                     </div>*/
-/*                                     <div class="col-sm-4"><img class="img-fluid img-thumbnail" src="{{baseURL}}/assets/admin/images/mega-menu/03.jpg" alt="Gallery-3">*/
-/*                                     </div>*/
-/*                                 </div>*/
-/*                                 <div class="row m-b-20">*/
-/*                                     <div class="col-sm-4"><img class="img-fluid img-thumbnail" src="{{baseURL}}/assets/admin/images/mega-menu/04.jpg" alt="Gallery-4">*/
-/*                                     </div>*/
-/*                                     <div class="col-sm-4"><img class="img-fluid img-thumbnail" src="{{baseURL}}/assets/admin/images/mega-menu/05.jpg" alt="Gallery-5">*/
-/*                                     </div>*/
-/*                                     <div class="col-sm-4"><img class="img-fluid img-thumbnail" src="{{baseURL}}/assets/admin/images/mega-menu/06.jpg" alt="Gallery-6">*/
-/*                                     </div>*/
-/*                                 </div>*/
-/*                                 <button class="btn btn-primary btn-sm btn-block">Browse Gallery</button>*/
-/*                             </li>*/
-/*                             <li class="col-sm-3">*/
-/*                                 <h6 class="mega-menu-title">Contact Us</h6>*/
-/*                                 <div class="mega-menu-contact">*/
-/*                                     <div class="form-group row">*/
-/*                                         <label for="example-text-input" class="col-3 col-form-label">Name</label>*/
-/*                                         <div class="col-9">*/
-/*                                             <input class="form-control" type="text" placeholder="Artisanal kale" id="example-text-input">*/
-/*                                         </div>*/
-/*                                     </div>*/
-/*                                     <div class="form-group row">*/
-/*                                         <label for="example-search-input" class="col-3 col-form-label">Email</label>*/
-/*                                         <div class="col-9">*/
-/*                                             <input class="form-control" type="email" placeholder="Enter your E-mail Id" id="example-search-input">*/
-/*                                         </div>*/
-/*                                     </div>*/
-/*                                     <div class="form-group row">*/
-/*                                         <label for="example-search-input" class="col-3 col-form-label">Contact</label>*/
-/*                                         <div class="col-9">*/
-/*                                             <input class="form-control" type="number" placeholder="+91-9898989898" id="example-search-input">*/
-/*                                         </div>*/
-/*                                     </div>*/
-/*                                     <div class="form-group row">*/
-/*                                         <label for="exampleTextarea" class="col-3 col-form-label">Message</label>*/
-/*                                         <div class="col-9">*/
-/*                                             <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>*/
-/*                                         </div>*/
-/*                                     </div>*/
-/*                                 </div>*/
-/*                             </li>*/
-/*                         </ul>*/
-/*                     </li>*/
 /*                 </ul>*/
 /*                 <ul class="nav-right">*/
-/*                     <li class="header-notification lng-dropdown">*/
-/*                         <a href="index.html#" id="dropdown-active-item">*/
-/*                             <i class="flag-icon flag-icon-gb m-r-5"></i> English*/
-/*                         </a>*/
-/*                         <ul class="show-notification">*/
-/*                             <li>*/
-/*                                 <a href="index.html#" data-lng="en">*/
-/*                                     <i class="flag-icon flag-icon-gb m-r-5"></i> English*/
-/*                                 </a>*/
-/*                             </li>*/
-/*                             <li>*/
-/*                                 <a href="index.html#" data-lng="es">*/
-/*                                     <i class="flag-icon flag-icon-es m-r-5"></i> Spanish*/
-/*                                 </a>*/
-/*                             </li>*/
-/*                             <li>*/
-/*                                 <a href="index.html#" data-lng="pt">*/
-/*                                     <i class="flag-icon flag-icon-pt m-r-5"></i> Portuguese*/
-/*                                 </a>*/
-/*                             </li>*/
-/*                             <li>*/
-/*                                 <a href="index.html#" data-lng="fr">*/
-/*                                     <i class="flag-icon flag-icon-fr m-r-5"></i> French*/
-/*                                 </a>*/
-/*                             </li>*/
-/*                         </ul>*/
-/*                     </li>*/
+/* */
 /*                     <li class="header-notification">*/
 /*                         <a href="#">*/
 /*                             <i class="ti-bell"></i>*/
@@ -869,7 +566,7 @@ class __TwigTemplate_3b96aacfa4941bdc19f17e1b272618bfba30fcc2538054a33f93c0f5bbf
 /*                     <li class="user-profile header-notification">*/
 /*                         <a href="#">*/
 /*                             <img src="{{baseURL}}/assets/admin/images/user.png" alt="User-Profile-Image">*/
-/*                             <span>John Doe</span>*/
+/*                             <span>{{username}}</span>*/
 /*                             <i class="ti-angle-down"></i>*/
 /*                         </a>*/
 /*                         <ul class="show-notification profile-notification">*/

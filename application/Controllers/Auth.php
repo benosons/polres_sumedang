@@ -13,9 +13,9 @@ class Auth extends \CodeIgniter\Controller
 			$session = session();
 			$model = new UserModel();
 
-			$email = $this->request->getVar('email');
+			$email = $this->request->getVar('username');
 			$password = $this->request->getVar('password');
-			$data = $model->getWhere(['user_email' => $email])->getRow();
+			$data = $model->getWhere(['user_name' => $email])->getRow();
 
 			if($data){
 					$pass = $data->user_password;
@@ -26,7 +26,8 @@ class Auth extends \CodeIgniter\Controller
 									'user_id'       => $data->user_id,
 									'user_name'     => $data->user_name,
 									'user_email'    => $data->user_email,
-									'logged_in'     => TRUE
+									'logged_in'     => TRUE,
+									'user_role'     => $data->user_role
 							];
 							$session->set($ses_data);
 							return redirect('dashboard');

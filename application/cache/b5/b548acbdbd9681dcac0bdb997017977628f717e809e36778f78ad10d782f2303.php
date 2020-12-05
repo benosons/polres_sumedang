@@ -98,36 +98,33 @@ class __TwigTemplate_14849da401759044f6f95c3daca24a41c87cdfbd9aa7eff34d84fd680ce
                     <div class=\"login-card card-block auth-body\">
                         <form class=\"md-float-material\" action=\"reg\" method=\"post\">
                             <div class=\"text-center\">
-                                <img src=\"";
-        // line 62
-        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "/assets/admin/images/auth/logo.png\" alt=\"logo.png\">
+                              <a href=\"home\"><img src=\"assets/images/polri.png\" alt=\"logo.png\" style=\"width: 100px;\"></a>
                             </div>
                             <div class=\"auth-box\">
                                 <div class=\"row m-b-20\">
                                     <div class=\"col-md-12\">
-                                        <h3 class=\"text-center txt-primary\">Registrasi User Baru.</h3>
+                                        <h3 class=\"text-center txt-primary\">Registrasi User Baru</h3>
                                     </div>
                                 </div>
                                 <hr/>
                                 <div class=\"input-group\">
-                                    <input type=\"text\" name=\"name\" class=\"form-control\" placeholder=\"Choose Username\">
+                                    <input type=\"text\" name=\"name\" class=\"form-control\" placeholder=\"Masukan Username\">
                                     <span class=\"md-line\"></span>
                                 </div>
                                 <div class=\"input-group\">
-                                    <input type=\"email\" name=\"email\" class=\"form-control\" placeholder=\"Your Email Address\">
+                                    <input type=\"email\" name=\"email\" class=\"form-control\" placeholder=\"Masukan Alamat Email\">
                                     <span class=\"md-line\"></span>
                                 </div>
                                 <div class=\"input-group\">
-                                    <input type=\"password\" name=\"password\" class=\"form-control\" placeholder=\"Choose Password\">
+                                    <input type=\"password\" name=\"password\" class=\"form-control\" placeholder=\"Masukan Password\">
                                     <span class=\"md-line\"></span>
                                 </div>
                                 <div class=\"input-group\">
-                                    <input type=\"password\" name=\"confpassword\" class=\"form-control\" placeholder=\"Confirm Password\">
+                                    <input type=\"password\" name=\"confpassword\" class=\"form-control\" placeholder=\"Ulangi Password\">
                                     <span class=\"md-line\"></span>
                                 </div>
                                 <div class=\"row m-t-25 text-left\">
-                                    <div class=\"col-md-12\">
+                                    <!-- <div class=\"col-md-12\">
                                         <div class=\"checkbox-fade fade-in-warning\">
                                             <label>
                                                 <input type=\"checkbox\" value=\"\">
@@ -135,20 +132,18 @@ class __TwigTemplate_14849da401759044f6f95c3daca24a41c87cdfbd9aa7eff34d84fd680ce
                                                 <span class=\"text-inverse\">I read and accept <a href=\"auth-sign-up.html#\">Terms &amp; Conditions.</a></span>
                                             </label>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <div class=\"col-md-12\">
                                         <div class=\"checkbox-fade fade-in-warning\">
                                             <label>
-                                                <input type=\"checkbox\" value=\"\">
-                                                <span class=\"cr\"><i class=\"cr-icon icofont icofont-ui-check txt-primary\"></i></span>
-                                                <span class=\"text-inverse\">Send me the <a href=\"auth-sign-up.html\">Newsletter</a> weekly.</span>
+                                                <span class=\"text-inverse\">Sudah punya akun, silahkan <a href=\"login\">Login</a>.</span>
                                             </label>
                                         </div>
                                     </div>
                                 </div>
                                 <div class=\"row m-t-30\">
                                     <div class=\"col-md-12\">
-                                        <button type=\"submit\" class=\"btn btn-warning btn-md btn-block waves-effect text-center m-b-20\">Registrasi.</button>
+                                        <button type=\"submit\" class=\"btn btn-warning btn-md btn-block waves-effect text-center m-b-20\">Registrasi</button>
                                     </div>
                                 </div>
                                 <hr/>
@@ -183,7 +178,7 @@ class __TwigTemplate_14849da401759044f6f95c3daca24a41c87cdfbd9aa7eff34d84fd680ce
             <li>
                 <a href=\"http://www.google.com/chrome/\">
                     <img src=\"";
-        // line 143
+        // line 141
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/images/browser/chrome.png\" alt=\"Chrome\">
                     <div>Chrome</div>
@@ -192,7 +187,7 @@ class __TwigTemplate_14849da401759044f6f95c3daca24a41c87cdfbd9aa7eff34d84fd680ce
             <li>
                 <a href=\"https://www.mozilla.org/en-US/firefox/new/\">
                     <img src=\"";
-        // line 149
+        // line 147
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/images/browser/firefox.png\" alt=\"Firefox\">
                     <div>Firefox</div>
@@ -201,7 +196,7 @@ class __TwigTemplate_14849da401759044f6f95c3daca24a41c87cdfbd9aa7eff34d84fd680ce
             <li>
                 <a href=\"http://www.opera.com\">
                     <img src=\"";
-        // line 155
+        // line 153
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/images/browser/opera.png\" alt=\"Opera\">
                     <div>Opera</div>
@@ -210,7 +205,7 @@ class __TwigTemplate_14849da401759044f6f95c3daca24a41c87cdfbd9aa7eff34d84fd680ce
             <li>
                 <a href=\"https://www.apple.com/safari/\">
                     <img src=\"";
-        // line 161
+        // line 159
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/images/browser/safari.png\" alt=\"Safari\">
                     <div>Safari</div>
@@ -219,7 +214,7 @@ class __TwigTemplate_14849da401759044f6f95c3daca24a41c87cdfbd9aa7eff34d84fd680ce
             <li>
                 <a href=\"http://windows.microsoft.com/en-us/internet-explorer/download-ie\">
                     <img src=\"";
-        // line 167
+        // line 165
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/images/browser/ie.png\" alt=\"\">
                     <div>IE (9 & above)</div>
@@ -233,67 +228,67 @@ class __TwigTemplate_14849da401759044f6f95c3daca24a41c87cdfbd9aa7eff34d84fd680ce
     <!-- Warning Section Ends -->
     <!-- Required Jquery -->
     <script type=\"text/javascript\" src=\"";
-        // line 178
+        // line 176
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/jquery/dist/jquery.min.js\"></script>
     <script type=\"text/javascript\" src=\"";
-        // line 179
+        // line 177
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/jquery-ui/jquery-ui.min.js\"></script>
     <script type=\"text/javascript\" src=\"";
-        // line 180
+        // line 178
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/tether/dist/js/tether.min.js\"></script>
     <script type=\"text/javascript\" src=\"";
-        // line 181
+        // line 179
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/bootstrap/dist/js/bootstrap.min.js\"></script>
     <!-- jquery slimscroll js -->
     <script type=\"text/javascript\" src=\"";
-        // line 183
+        // line 181
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/jquery-slimscroll/jquery.slimscroll.js\"></script>
     <!-- modernizr js -->
     <script type=\"text/javascript\" src=\"";
-        // line 185
+        // line 183
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/modernizr/modernizr.js\"></script>
     <script type=\"text/javascript\" src=\"";
-        // line 186
+        // line 184
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/modernizr/feature-detects/css-scrollbars.js\"></script>
     <!-- i18next.min.js -->
     <script type=\"text/javascript\" src=\"";
-        // line 188
+        // line 186
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/i18next/i18next.min.js\"></script>
     <script type=\"text/javascript\" src=\"";
-        // line 189
+        // line 187
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/i18next-xhr-backend/i18nextXHRBackend.min.js\"></script>
     <script type=\"text/javascript\" src=\"";
-        // line 190
+        // line 188
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js\"></script>
     <script type=\"text/javascript\" src=\"";
-        // line 191
+        // line 189
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/jquery-i18next/jquery-i18next.min.js\"></script>
     <!-- Custom js -->
     <script type=\"text/javascript\" src=\"";
-        // line 193
+        // line 191
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/js/script.js\"></script>
     <!-- color js --->
     <script type=\"text/javascript\" src=\"";
-        // line 195
+        // line 193
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/js/common-pages.js\"></script>
 
     <script src=\"http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js\"></script> <!-- stats.js lib -->
     <script src=\"http://threejs.org/examples/js/libs/stats.min.js\"></script>
     <script src=\"";
-        // line 199
+        // line 197
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/auth/js/particles.js\"></script>
 </body>
@@ -314,7 +309,7 @@ class __TwigTemplate_14849da401759044f6f95c3daca24a41c87cdfbd9aa7eff34d84fd680ce
 
     public function getDebugInfo()
     {
-        return array (  297 => 199,  290 => 195,  285 => 193,  280 => 191,  276 => 190,  272 => 189,  268 => 188,  263 => 186,  259 => 185,  254 => 183,  249 => 181,  245 => 180,  241 => 179,  237 => 178,  223 => 167,  214 => 161,  205 => 155,  196 => 149,  187 => 143,  103 => 62,  73 => 35,  68 => 33,  63 => 31,  58 => 29,  53 => 27,  48 => 25,  41 => 21,  19 => 1,);
+        return array (  292 => 197,  285 => 193,  280 => 191,  275 => 189,  271 => 188,  267 => 187,  263 => 186,  258 => 184,  254 => 183,  249 => 181,  244 => 179,  240 => 178,  236 => 177,  232 => 176,  218 => 165,  209 => 159,  200 => 153,  191 => 147,  182 => 141,  73 => 35,  68 => 33,  63 => 31,  58 => 29,  53 => 27,  48 => 25,  41 => 21,  19 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -378,33 +373,33 @@ class __TwigTemplate_14849da401759044f6f95c3daca24a41c87cdfbd9aa7eff34d84fd680ce
 /*                     <div class="login-card card-block auth-body">*/
 /*                         <form class="md-float-material" action="reg" method="post">*/
 /*                             <div class="text-center">*/
-/*                                 <img src="{{baseURL}}/assets/admin/images/auth/logo.png" alt="logo.png">*/
+/*                               <a href="home"><img src="assets/images/polri.png" alt="logo.png" style="width: 100px;"></a>*/
 /*                             </div>*/
 /*                             <div class="auth-box">*/
 /*                                 <div class="row m-b-20">*/
 /*                                     <div class="col-md-12">*/
-/*                                         <h3 class="text-center txt-primary">Registrasi User Baru.</h3>*/
+/*                                         <h3 class="text-center txt-primary">Registrasi User Baru</h3>*/
 /*                                     </div>*/
 /*                                 </div>*/
 /*                                 <hr/>*/
 /*                                 <div class="input-group">*/
-/*                                     <input type="text" name="name" class="form-control" placeholder="Choose Username">*/
+/*                                     <input type="text" name="name" class="form-control" placeholder="Masukan Username">*/
 /*                                     <span class="md-line"></span>*/
 /*                                 </div>*/
 /*                                 <div class="input-group">*/
-/*                                     <input type="email" name="email" class="form-control" placeholder="Your Email Address">*/
+/*                                     <input type="email" name="email" class="form-control" placeholder="Masukan Alamat Email">*/
 /*                                     <span class="md-line"></span>*/
 /*                                 </div>*/
 /*                                 <div class="input-group">*/
-/*                                     <input type="password" name="password" class="form-control" placeholder="Choose Password">*/
+/*                                     <input type="password" name="password" class="form-control" placeholder="Masukan Password">*/
 /*                                     <span class="md-line"></span>*/
 /*                                 </div>*/
 /*                                 <div class="input-group">*/
-/*                                     <input type="password" name="confpassword" class="form-control" placeholder="Confirm Password">*/
+/*                                     <input type="password" name="confpassword" class="form-control" placeholder="Ulangi Password">*/
 /*                                     <span class="md-line"></span>*/
 /*                                 </div>*/
 /*                                 <div class="row m-t-25 text-left">*/
-/*                                     <div class="col-md-12">*/
+/*                                     <!-- <div class="col-md-12">*/
 /*                                         <div class="checkbox-fade fade-in-warning">*/
 /*                                             <label>*/
 /*                                                 <input type="checkbox" value="">*/
@@ -412,20 +407,18 @@ class __TwigTemplate_14849da401759044f6f95c3daca24a41c87cdfbd9aa7eff34d84fd680ce
 /*                                                 <span class="text-inverse">I read and accept <a href="auth-sign-up.html#">Terms &amp; Conditions.</a></span>*/
 /*                                             </label>*/
 /*                                         </div>*/
-/*                                     </div>*/
+/*                                     </div> -->*/
 /*                                     <div class="col-md-12">*/
 /*                                         <div class="checkbox-fade fade-in-warning">*/
 /*                                             <label>*/
-/*                                                 <input type="checkbox" value="">*/
-/*                                                 <span class="cr"><i class="cr-icon icofont icofont-ui-check txt-primary"></i></span>*/
-/*                                                 <span class="text-inverse">Send me the <a href="auth-sign-up.html">Newsletter</a> weekly.</span>*/
+/*                                                 <span class="text-inverse">Sudah punya akun, silahkan <a href="login">Login</a>.</span>*/
 /*                                             </label>*/
 /*                                         </div>*/
 /*                                     </div>*/
 /*                                 </div>*/
 /*                                 <div class="row m-t-30">*/
 /*                                     <div class="col-md-12">*/
-/*                                         <button type="submit" class="btn btn-warning btn-md btn-block waves-effect text-center m-b-20">Registrasi.</button>*/
+/*                                         <button type="submit" class="btn btn-warning btn-md btn-block waves-effect text-center m-b-20">Registrasi</button>*/
 /*                                     </div>*/
 /*                                 </div>*/
 /*                                 <hr/>*/

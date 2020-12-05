@@ -1,32 +1,21 @@
 <?php
 
-/* users/index.html */
-class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f4b6e3 extends Twig_Template
+/* users/slider.html */
+class __TwigTemplate_85597598a8a4a200f6bb8bdcd63219a5ef0ddb997288c94500ff78f1836496ec extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
         parent::__construct($env);
 
-        // line 1
-        $this->parent = $this->loadTemplate("users/layout.html", "users/index.html", 1);
-        $this->blocks = array(
-            'content' => array($this, 'block_content'),
-        );
-    }
+        $this->parent = false;
 
-    protected function doGetParent(array $context)
-    {
-        return "users/layout.html";
+        $this->blocks = array(
+        );
     }
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $this->parent->display($context, array_merge($this->blocks, $blocks));
-    }
-
-    public function block_content($context, array $blocks = array())
-    {
-        // line 2
+        // line 1
         echo "<div class=\"page_layout page_margin_top clearfix\">
 \t\t<div class=\"row\">
 \t\t\t<div class=\"column column_2_3\">
@@ -35,7 +24,10 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t<ul class=\"blog column column_1_2\">
 \t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Nuclear Fusion Closer to Becoming a Reality\">
-\t\t\t\t\t\t\t\t<img src='https://humas.polri.go.id/wp-content/uploads/2020/06/IMG-20200601-WA0188.jpg' alt='img'>
+\t\t\t\t\t\t\t\t<img src='";
+        // line 9
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/users/images/samples/330x242/image_01.jpg' alt='img'>
 \t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t\t<h2 class=\"with_number\">
 \t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Nuclear Fusion Closer to Becoming a Reality\">Nuclear Fusion Closer to Becoming a Reality</a>
@@ -52,7 +44,10 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t</li>
 \t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t<a href=\"index.html@page=post_quote.html\" title=\"High Altitudes May Aid Weight Control\">
-\t\t\t\t\t\t\t\t<img src='https://humas.polri.go.id/wp-content/uploads/2020/12/10.jpeg' alt='img'>
+\t\t\t\t\t\t\t\t<img src='";
+        // line 26
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/users/images/samples/330x242/image_02.jpg' alt='img'>
 \t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t\t<h2 class=\"with_number\">
 \t\t\t\t\t\t\t\t<a href=\"index.html@page=post_quote.html\" title=\"High Altitudes May Aid Weight Control\">High Altitudes May Aid Weight Control</a>
@@ -71,7 +66,10 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t<ul class=\"blog column column_1_2\">
 \t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">
-\t\t\t\t\t\t\t\t<img src='https://humas.polri.go.id/wp-content/uploads/2020/08/19-3.jpg' alt='img'>
+\t\t\t\t\t\t\t\t<img src='";
+        // line 45
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/users/images/samples/330x242/image_04.jpg' alt='img'>
 \t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t\t<h2 class=\"with_number\">
 \t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">Built on Brotherhood, Club Lives Up to Name</a>
@@ -89,7 +87,10 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t<a href=\"index.html@page=post_video.html\" title=\"Struggling Nuremberg Sack Coach Verbeek\">
 \t\t\t\t\t\t\t\t<span class=\"icon video\"></span>
-\t\t\t\t\t\t\t\t<img src='https://humas.polri.go.id/wp-content/uploads/2020/07/SMDNG-768x576.jpg' alt='img'>
+\t\t\t\t\t\t\t\t<img src='";
+        // line 63
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/users/images/samples/330x242/image_03.jpg' alt='img'>
 \t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t\t<h2 class=\"with_number\">
 \t\t\t\t\t\t\t\t<a href=\"index.html@page=post_video.html\" title=\"Struggling Nuremberg Sack Coach Verbeek\">Struggling Nuremberg Sack Coach Verbeek</a>
@@ -112,7 +113,10 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t<ul class=\"blog horizontal_carousel autoplay-1 scroll-1 navigation-1 easing-easeInOutQuint duration-750\">
 \t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"New Painkiller Rekindles Addiction Concerns\">
-\t\t\t\t\t\t\t\t\t<img src='https://humas.polri.go.id/wp-content/uploads/2020/06/IMG-20200611-WA0249-1024x682.jpg' alt='img'>
+\t\t\t\t\t\t\t\t\t<img src='";
+        // line 86
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/users/images/samples/330x242/image_08.jpg' alt='img'>
 \t\t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t\t\t<h5><a href=\"index.html@page=post.html\" title=\"New Painkiller Rekindles Addiction Concerns\">New Painkiller Rekindles Addiction Concerns</a></h5>
 \t\t\t\t\t\t\t\t<ul class=\"post_details simple\">
@@ -124,7 +128,10 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t<a href=\"index.html@page=post_soundcloud.html\" title=\"High Altitudes May Aid Weight Control\">
-\t\t\t\t\t\t\t\t\t<img src='https://humas.polri.go.id/wp-content/uploads/2020/06/IMG-20200603-WA0191-1024x498.jpg' alt='img'>
+\t\t\t\t\t\t\t\t\t<img src='";
+        // line 98
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/users/images/samples/330x242/image_01.jpg' alt='img'>
 \t\t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t\t\t<h5><a href=\"index.html@page=post_soundcloud.html\" title=\"High Altitudes May Aid Weight Control\">High Altitudes May Aid Weight Control</a></h5>
 \t\t\t\t\t\t\t\t<ul class=\"post_details simple\">
@@ -137,7 +144,10 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t<a href=\"index.html@page=post_gallery.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">
 \t\t\t\t\t\t\t\t\t<span class=\"icon gallery\"><!--<span class=\"info\">999</span>--></span>
-\t\t\t\t\t\t\t\t\t<img src='https://humas.polri.go.id/wp-content/uploads/2020/04/SMD-10-640x480.jpg' alt='img'>
+\t\t\t\t\t\t\t\t\t<img src='";
+        // line 111
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/users/images/samples/330x242/image_03.jpg' alt='img'>
 \t\t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t\t\t<h5><a href=\"index.html@page=post_gallery.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">Built on Brotherhood, Club Lives Up to Name</a></h5>
 \t\t\t\t\t\t\t\t<ul class=\"post_details simple\">
@@ -149,7 +159,10 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t\t<li class=\"post first\">
 \t\t\t\t\t\t\t\t<a href=\"index.html@page=post_small_image.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">
-\t\t\t\t\t\t\t\t\t<img src='https://humas.polri.go.id/wp-content/uploads/2020/04/IMG-20200419-WA0428-1024x672.jpg' alt='img'>
+\t\t\t\t\t\t\t\t\t<img src='";
+        // line 123
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/users/images/samples/330x242/image_09.jpg' alt='img'>
 \t\t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t\t\t<h5><a href=\"index.html@page=post_small_image.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">Built on Brotherhood, Club Lives Up to Name</a></h5>
 \t\t\t\t\t\t\t\t<ul class=\"post_details simple\">
@@ -169,7 +182,10 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t<a href=\"index.html@page=post_gallery.html\" title=\"High Altitudes May Aid Weight Control\">
 \t\t\t\t\t\t\t\t\t<span class=\"icon gallery\"></span>
-\t\t\t\t\t\t\t\t\t<img src='https://humas.polri.go.id/wp-content/uploads/2020/06/IMG-20200603-WA0191-1024x498.jpg' alt='img'>
+\t\t\t\t\t\t\t\t\t<img src='";
+        // line 143
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/users/images/samples/330x242/image_05.jpg' alt='img'>
 \t\t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t\t\t<h2 class=\"with_number\">
 \t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post_gallery.html\" title=\"High Altitudes May Aid Weight Control\">High Altitudes May Aid Weight Control</a>
@@ -190,7 +206,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Study Linking Illnes and Salt Leaves Researchers Doubtful\">
 \t\t\t\t\t\t\t\t\t\t<img src='";
-        // line 164
+        // line 163
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_02.jpg' alt='img'>
 \t\t\t\t\t\t\t\t\t</a>
@@ -209,7 +225,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Seeking the Right Chemistry, Drug Makers Hunt for Mergers\">
 \t\t\t\t\t\t\t\t\t\t<img src='";
-        // line 180
+        // line 179
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_13.jpg' alt='img'>
 \t\t\t\t\t\t\t\t\t</a>
@@ -229,7 +245,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post_review.html\" title=\"Seeking the Right Chemistry, Drug Makers Hunt for Mergers\">
 \t\t\t\t\t\t\t\t\t\t<span class=\"icon small review\"></span>
 \t\t\t\t\t\t\t\t\t\t<img src='";
-        // line 197
+        // line 196
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_01.jpg' alt='img'>
 \t\t\t\t\t\t\t\t\t</a>
@@ -249,7 +265,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post_gallery.html\" title=\"New Painkiller Rekindles Addiction Concerns\">
 \t\t\t\t\t\t\t\t\t\t<span class=\"icon small gallery\"></span>
 \t\t\t\t\t\t\t\t\t\t<img src='";
-        // line 214
+        // line 213
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_03.jpg' alt='img'>
 \t\t\t\t\t\t\t\t\t</a>
@@ -296,7 +312,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"High Altitudes May Aid Weight Control\">
 \t\t\t\t\t\t\t\t\t\t\t<img src='";
-        // line 258
+        // line 257
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/330x242/image_11.jpg' alt='img'>
 \t\t\t\t\t\t\t\t\t\t</a>
@@ -311,7 +327,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Climate Change Debate While Britain Floods\">
 \t\t\t\t\t\t\t\t\t\t\t<img src='";
-        // line 270
+        // line 269
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/330x242/image_14.jpg' alt='img'>
 \t\t\t\t\t\t\t\t\t\t</a>
@@ -326,7 +342,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post_small_image.html\" title=\"Escape From Planet Earth: The Movie\">
 \t\t\t\t\t\t\t\t\t\t\t<img src='";
-        // line 282
+        // line 281
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/330x242/image_02.jpg' alt='img'>
 \t\t\t\t\t\t\t\t\t\t</a>
@@ -341,7 +357,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t\t\t\t<li class=\"post first\">
 \t\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">
 \t\t\t\t\t\t\t\t\t\t\t<img src='";
-        // line 294
+        // line 293
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/330x242/image_09.jpg' alt='img'>
 \t\t\t\t\t\t\t\t\t\t</a>
@@ -362,7 +378,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"The Public Health Crisis Hiding in Our Food\">
 \t\t\t\t\t\t\t\t\t\t\t<img src='";
-        // line 312
+        // line 311
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/330x242/image_10.jpg' alt='img'>
 \t\t\t\t\t\t\t\t\t\t</a>
@@ -377,7 +393,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Drug Makers Hunt for Mergers\">
 \t\t\t\t\t\t\t\t\t\t\t<img src='";
-        // line 324
+        // line 323
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/330x242/image_07.jpg' alt='img'>
 \t\t\t\t\t\t\t\t\t\t</a>
@@ -392,7 +408,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Escape From Planet Earth: The Movie\">
 \t\t\t\t\t\t\t\t\t\t\t<img src='";
-        // line 336
+        // line 335
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/330x242/image_13.jpg' alt='img'>
 \t\t\t\t\t\t\t\t\t\t</a>
@@ -407,7 +423,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t\t\t\t<li class=\"post first\">
 \t\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post_soundcloud.html\" title=\"High Altitudes May Aid Weight Control\">
 \t\t\t\t\t\t\t\t\t\t\t<img src='";
-        // line 348
+        // line 347
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/330x242/image_05.jpg' alt='img'>
 \t\t\t\t\t\t\t\t\t\t</a>
@@ -428,7 +444,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Escape From Planet Earth: The Movie\">
 \t\t\t\t\t\t\t\t\t\t\t<img src='";
-        // line 366
+        // line 365
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/330x242/image_13.jpg' alt='img'>
 \t\t\t\t\t\t\t\t\t\t</a>
@@ -443,7 +459,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Struggling Nuremberg Sack Coach Verbeek\">
 \t\t\t\t\t\t\t\t\t\t\t<img src='";
-        // line 378
+        // line 377
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/330x242/image_06.jpg' alt='img'>
 \t\t\t\t\t\t\t\t\t\t</a>
@@ -458,7 +474,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post_small_image.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">
 \t\t\t\t\t\t\t\t\t\t\t<img src='";
-        // line 390
+        // line 389
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/330x242/image_03.jpg' alt='img'>
 \t\t\t\t\t\t\t\t\t\t</a>
@@ -473,7 +489,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t\t\t\t<li class=\"post first\">
 \t\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"High Altitudes May Aid Weight Control\">
 \t\t\t\t\t\t\t\t\t\t\t<img src='";
-        // line 402
+        // line 401
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/330x242/image_05.jpg' alt='img'>
 \t\t\t\t\t\t\t\t\t\t</a>
@@ -497,7 +513,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Struggling Nuremberg Sack Coach Verbeek\">
 \t\t\t\t\t\t\t\t\t<img src='";
-        // line 423
+        // line 422
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/330x242/image_06.jpg' alt='img'>
 \t\t\t\t\t\t\t\t</a>
@@ -519,7 +535,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Bayern Says Ties With Rivals Dortmund Have Frozen\">
 \t\t\t\t\t\t\t\t\t<img src='";
-        // line 442
+        // line 441
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_14.jpg' alt='img'>
 \t\t\t\t\t\t\t\t</a>
@@ -538,7 +554,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">
 \t\t\t\t\t\t\t\t\t<img src='";
-        // line 458
+        // line 457
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_12.jpg' alt='img'>
 \t\t\t\t\t\t\t\t</a>
@@ -563,7 +579,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"High Altitudes May Aid Weight Control\">
 \t\t\t\t\t\t\t\t\t<img src='";
-        // line 480
+        // line 479
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/330x242/image_07.jpg' alt='img'>
 \t\t\t\t\t\t\t\t</a>
@@ -585,7 +601,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Bayern Says Ties With Rivals Dortmund Have Frozen\">
 \t\t\t\t\t\t\t\t\t<img src='";
-        // line 499
+        // line 498
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_01.jpg' alt='img'>
 \t\t\t\t\t\t\t\t</a>
@@ -605,7 +621,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t\t\t<a href=\"index.html@page=post_video.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">
 \t\t\t\t\t\t\t\t\t<span class=\"icon small video\"></span>
 \t\t\t\t\t\t\t\t\t<img src='";
-        // line 516
+        // line 515
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_03.jpg' alt='img'>
 \t\t\t\t\t\t\t\t</a>
@@ -633,7 +649,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t<a href=\"index.html@page=post_gallery.html\" title=\"The Public Health Crisis Hiding in Our Food\">
 \t\t\t\t\t\t\t<span class=\"icon gallery\"></span>
 \t\t\t\t\t\t\t<img src='";
-        // line 541
+        // line 540
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/510x187/image_12.jpg' alt='img'>
 \t\t\t\t\t\t</a>
@@ -652,7 +668,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"The Public Health Crisis Hiding in Our Food\">
 \t\t\t\t\t\t\t<img src='";
-        // line 557
+        // line 556
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/510x187/image_01.jpg' alt='img'>
 \t\t\t\t\t\t</a>
@@ -671,7 +687,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"New Painkiller Rekindles Addiction Concerns\">
 \t\t\t\t\t\t\t<img src='";
-        // line 573
+        // line 572
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/510x187/image_14.jpg' alt='img'>
 \t\t\t\t\t\t</a>
@@ -695,7 +711,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t\t<a href=\"index.html@page=post_gallery.html\" title=\"Study Linking Illnes and Salt Leaves Researchers Doubtful\">
 \t\t\t\t\t\t\t\t<span class=\"icon small gallery\"></span>
 \t\t\t\t\t\t\t\t<img src='";
-        // line 594
+        // line 593
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_06.jpg' alt='img'>
 \t\t\t\t\t\t\t</a>
@@ -714,7 +730,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Syrian Civilians Trapped For Months Continue To Be Evacuated\">
 \t\t\t\t\t\t\t\t<img src='";
-        // line 610
+        // line 609
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_12.jpg' alt='img'>
 \t\t\t\t\t\t\t</a>
@@ -733,7 +749,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">
 \t\t\t\t\t\t\t\t<img src='";
-        // line 626
+        // line 625
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_02.jpg' alt='img'>
 \t\t\t\t\t\t\t</a>
@@ -752,7 +768,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Nuclear Fusion Closer to Becoming a Reality\">
 \t\t\t\t\t\t\t\t<img src='";
-        // line 642
+        // line 641
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_13.jpg' alt='img'>
 \t\t\t\t\t\t\t</a>
@@ -790,7 +806,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t<a href=\"index.html@page=post_quote.html\" title=\"Nuclear Fusion Closer to Becoming a Reality\">
 \t\t\t\t\t\t\t\t\t<img src='";
-        // line 677
+        // line 676
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/510x187/image_12.jpg' alt='img'>
 \t\t\t\t\t\t\t\t</a>
@@ -846,7 +862,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Nuclear Fusion Closer to Becoming a Reality\">
 \t\t\t\t\t\t\t\t\t<img src='";
-        // line 730
+        // line 729
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/510x187/image_02.jpg' alt='img'>
 \t\t\t\t\t\t\t\t</a>
@@ -903,7 +919,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t<li class=\"author\">
 \t\t\t\t\t\t<a class=\"thumb\" href=\"index.html@page=author.html\" title=\"Debora Hilton\">
 \t\t\t\t\t\t\t<img src='";
-        // line 784
+        // line 783
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/Team_100x100/image_01.jpg' alt='img'>
 \t\t\t\t\t\t\t<span class=\"number animated_element\" data-value=\"34\"></span>
@@ -916,7 +932,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t<li class=\"author\">
 \t\t\t\t\t\t<a class=\"thumb\" href=\"index.html@page=author.html\" title=\"Anna Shubina\">
 \t\t\t\t\t\t\t<img src='";
-        // line 794
+        // line 793
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/Team_100x100/image_02.jpg' alt='img'>
 \t\t\t\t\t\t\t<span class=\"number animated_element\" data-value=\"25\"></span>
@@ -929,7 +945,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t<li class=\"author\">
 \t\t\t\t\t\t<a class=\"thumb\" href=\"index.html@page=author.html\" title=\"Liam Holden\">
 \t\t\t\t\t\t\t<img src='";
-        // line 804
+        // line 803
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/Team_100x100/image_03.jpg' alt='img'>
 \t\t\t\t\t\t\t<span class=\"number animated_element\" data-value=\"9\"></span>
@@ -942,7 +958,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t<li class=\"author\">
 \t\t\t\t\t\t<a class=\"thumb\" href=\"index.html@page=author.html\" title=\"Heather Dale\">
 \t\t\t\t\t\t\t<img src='";
-        // line 814
+        // line 813
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/Team_100x100/image_04.jpg' alt='img'>
 \t\t\t\t\t\t\t<span class=\"number animated_element\" data-value=\"2\"></span>
@@ -958,7 +974,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Study Linking Illnes and Salt Leaves Researchers Doubtful\">
 \t\t\t\t\t\t\t<img src='";
-        // line 827
+        // line 826
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_09.jpg' alt='img'>
 \t\t\t\t\t\t</a>
@@ -977,7 +993,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Syrian Civilians Trapped For Months Continue To Be Evacuated\">
 \t\t\t\t\t\t\t<img src='";
-        // line 843
+        // line 842
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_12.jpg' alt='img'>
 \t\t\t\t\t\t</a>
@@ -996,7 +1012,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t<a href=\"index.html@page=post_quote.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">
 \t\t\t\t\t\t\t<img src='";
-        // line 859
+        // line 858
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_02.jpg' alt='img'>
 \t\t\t\t\t\t</a>
@@ -1016,7 +1032,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t<a href=\"index.html@page=post_gallery.html\" title=\"Nuclear Fusion Closer to Becoming a Reality\">
 \t\t\t\t\t\t\t<span class=\"icon small gallery\"></span>
 \t\t\t\t\t\t\t<img src='";
-        // line 876
+        // line 875
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_01.jpg' alt='img'>
 \t\t\t\t\t\t</a>
@@ -1036,12 +1052,13 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t<a class=\"more page_margin_top\" href=\"index.html@page=home.html#\">MORE FROM SCIENCE</a>
 \t\t\t</div>
 \t\t</div>
-\t</div>";
+\t</div>
+";
     }
 
     public function getTemplateName()
     {
-        return "users/index.html";
+        return "users/slider.html";
     }
 
     public function isTraitable()
@@ -1051,10 +1068,9 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 
     public function getDebugInfo()
     {
-        return array (  1020 => 876,  1000 => 859,  981 => 843,  962 => 827,  946 => 814,  933 => 804,  920 => 794,  907 => 784,  850 => 730,  794 => 677,  756 => 642,  737 => 626,  718 => 610,  699 => 594,  675 => 573,  656 => 557,  637 => 541,  609 => 516,  589 => 499,  567 => 480,  542 => 458,  523 => 442,  501 => 423,  477 => 402,  462 => 390,  447 => 378,  432 => 366,  411 => 348,  396 => 336,  381 => 324,  366 => 312,  345 => 294,  330 => 282,  315 => 270,  300 => 258,  253 => 214,  233 => 197,  213 => 180,  194 => 164,  30 => 2,  11 => 1,);
+        return array (  1036 => 875,  1016 => 858,  997 => 842,  978 => 826,  962 => 813,  949 => 803,  936 => 793,  923 => 783,  866 => 729,  810 => 676,  772 => 641,  753 => 625,  734 => 609,  715 => 593,  691 => 572,  672 => 556,  653 => 540,  625 => 515,  605 => 498,  583 => 479,  558 => 457,  539 => 441,  517 => 422,  493 => 401,  478 => 389,  463 => 377,  448 => 365,  427 => 347,  412 => 335,  397 => 323,  382 => 311,  361 => 293,  346 => 281,  331 => 269,  316 => 257,  269 => 213,  249 => 196,  229 => 179,  210 => 163,  187 => 143,  164 => 123,  149 => 111,  133 => 98,  118 => 86,  92 => 63,  71 => 45,  49 => 26,  29 => 9,  19 => 1,);
     }
 }
-/* {% extends "users/layout.html" %} {% block content %}*/
 /* <div class="page_layout page_margin_top clearfix">*/
 /* 		<div class="row">*/
 /* 			<div class="column column_2_3">*/
@@ -1063,7 +1079,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 /* 					<ul class="blog column column_1_2">*/
 /* 						<li class="post">*/
 /* 							<a href="index.html@page=post.html" title="Nuclear Fusion Closer to Becoming a Reality">*/
-/* 								<img src='https://humas.polri.go.id/wp-content/uploads/2020/06/IMG-20200601-WA0188.jpg' alt='img'>*/
+/* 								<img src='{{baseURL}}/assets/users/images/samples/330x242/image_01.jpg' alt='img'>*/
 /* 							</a>*/
 /* 							<h2 class="with_number">*/
 /* 								<a href="index.html@page=post.html" title="Nuclear Fusion Closer to Becoming a Reality">Nuclear Fusion Closer to Becoming a Reality</a>*/
@@ -1080,7 +1096,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 /* 						</li>*/
 /* 						<li class="post">*/
 /* 							<a href="index.html@page=post_quote.html" title="High Altitudes May Aid Weight Control">*/
-/* 								<img src='https://humas.polri.go.id/wp-content/uploads/2020/12/10.jpeg' alt='img'>*/
+/* 								<img src='{{baseURL}}/assets/users/images/samples/330x242/image_02.jpg' alt='img'>*/
 /* 							</a>*/
 /* 							<h2 class="with_number">*/
 /* 								<a href="index.html@page=post_quote.html" title="High Altitudes May Aid Weight Control">High Altitudes May Aid Weight Control</a>*/
@@ -1099,7 +1115,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 /* 					<ul class="blog column column_1_2">*/
 /* 						<li class="post">*/
 /* 							<a href="index.html@page=post.html" title="Built on Brotherhood, Club Lives Up to Name">*/
-/* 								<img src='https://humas.polri.go.id/wp-content/uploads/2020/08/19-3.jpg' alt='img'>*/
+/* 								<img src='{{baseURL}}/assets/users/images/samples/330x242/image_04.jpg' alt='img'>*/
 /* 							</a>*/
 /* 							<h2 class="with_number">*/
 /* 								<a href="index.html@page=post.html" title="Built on Brotherhood, Club Lives Up to Name">Built on Brotherhood, Club Lives Up to Name</a>*/
@@ -1117,7 +1133,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 /* 						<li class="post">*/
 /* 							<a href="index.html@page=post_video.html" title="Struggling Nuremberg Sack Coach Verbeek">*/
 /* 								<span class="icon video"></span>*/
-/* 								<img src='https://humas.polri.go.id/wp-content/uploads/2020/07/SMDNG-768x576.jpg' alt='img'>*/
+/* 								<img src='{{baseURL}}/assets/users/images/samples/330x242/image_03.jpg' alt='img'>*/
 /* 							</a>*/
 /* 							<h2 class="with_number">*/
 /* 								<a href="index.html@page=post_video.html" title="Struggling Nuremberg Sack Coach Verbeek">Struggling Nuremberg Sack Coach Verbeek</a>*/
@@ -1140,7 +1156,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 /* 						<ul class="blog horizontal_carousel autoplay-1 scroll-1 navigation-1 easing-easeInOutQuint duration-750">*/
 /* 							<li class="post">*/
 /* 								<a href="index.html@page=post.html" title="New Painkiller Rekindles Addiction Concerns">*/
-/* 									<img src='https://humas.polri.go.id/wp-content/uploads/2020/06/IMG-20200611-WA0249-1024x682.jpg' alt='img'>*/
+/* 									<img src='{{baseURL}}/assets/users/images/samples/330x242/image_08.jpg' alt='img'>*/
 /* 								</a>*/
 /* 								<h5><a href="index.html@page=post.html" title="New Painkiller Rekindles Addiction Concerns">New Painkiller Rekindles Addiction Concerns</a></h5>*/
 /* 								<ul class="post_details simple">*/
@@ -1152,7 +1168,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 /* 							</li>*/
 /* 							<li class="post">*/
 /* 								<a href="index.html@page=post_soundcloud.html" title="High Altitudes May Aid Weight Control">*/
-/* 									<img src='https://humas.polri.go.id/wp-content/uploads/2020/06/IMG-20200603-WA0191-1024x498.jpg' alt='img'>*/
+/* 									<img src='{{baseURL}}/assets/users/images/samples/330x242/image_01.jpg' alt='img'>*/
 /* 								</a>*/
 /* 								<h5><a href="index.html@page=post_soundcloud.html" title="High Altitudes May Aid Weight Control">High Altitudes May Aid Weight Control</a></h5>*/
 /* 								<ul class="post_details simple">*/
@@ -1165,7 +1181,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 /* 							<li class="post">*/
 /* 								<a href="index.html@page=post_gallery.html" title="Built on Brotherhood, Club Lives Up to Name">*/
 /* 									<span class="icon gallery"><!--<span class="info">999</span>--></span>*/
-/* 									<img src='https://humas.polri.go.id/wp-content/uploads/2020/04/SMD-10-640x480.jpg' alt='img'>*/
+/* 									<img src='{{baseURL}}/assets/users/images/samples/330x242/image_03.jpg' alt='img'>*/
 /* 								</a>*/
 /* 								<h5><a href="index.html@page=post_gallery.html" title="Built on Brotherhood, Club Lives Up to Name">Built on Brotherhood, Club Lives Up to Name</a></h5>*/
 /* 								<ul class="post_details simple">*/
@@ -1177,7 +1193,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 /* 							</li>*/
 /* 							<li class="post first">*/
 /* 								<a href="index.html@page=post_small_image.html" title="Built on Brotherhood, Club Lives Up to Name">*/
-/* 									<img src='https://humas.polri.go.id/wp-content/uploads/2020/04/IMG-20200419-WA0428-1024x672.jpg' alt='img'>*/
+/* 									<img src='{{baseURL}}/assets/users/images/samples/330x242/image_09.jpg' alt='img'>*/
 /* 								</a>*/
 /* 								<h5><a href="index.html@page=post_small_image.html" title="Built on Brotherhood, Club Lives Up to Name">Built on Brotherhood, Club Lives Up to Name</a></h5>*/
 /* 								<ul class="post_details simple">*/
@@ -1197,7 +1213,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 /* 							<li class="post">*/
 /* 								<a href="index.html@page=post_gallery.html" title="High Altitudes May Aid Weight Control">*/
 /* 									<span class="icon gallery"></span>*/
-/* 									<img src='https://humas.polri.go.id/wp-content/uploads/2020/06/IMG-20200603-WA0191-1024x498.jpg' alt='img'>*/
+/* 									<img src='{{baseURL}}/assets/users/images/samples/330x242/image_05.jpg' alt='img'>*/
 /* 								</a>*/
 /* 								<h2 class="with_number">*/
 /* 									<a href="index.html@page=post_gallery.html" title="High Altitudes May Aid Weight Control">High Altitudes May Aid Weight Control</a>*/
@@ -1948,5 +1964,4 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 /* 			</div>*/
 /* 		</div>*/
 /* 	</div>*/
-/* {% endblock %}*/
 /* */

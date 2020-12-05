@@ -85,7 +85,10 @@ class __TwigTemplate_371a3b56611cf6e8fa78898212a587471c50d68a7f78d937d2c753c9305
 \t\t\t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post_gallery.html\" title=\"Study Linking Illnes and Salt Leaves Researchers Doubtful\">
 \t\t\t\t\t\t\t\t\t\t\t<span class=\"icon small gallery\"></span>
-\t\t\t\t\t\t\t\t\t\t\t<img src='assets/images/samples/100x100/image_06.jpg' alt='img'>
+\t\t\t\t\t\t\t\t\t\t\t<img src='";
+        // line 70
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/users/images/samples/100x100/image_06.jpg' alt='img'>
 \t\t\t\t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t\t\t\t\t<div class=\"post_content\">
 \t\t\t\t\t\t\t\t\t\t\t<h5>
@@ -101,7 +104,10 @@ class __TwigTemplate_371a3b56611cf6e8fa78898212a587471c50d68a7f78d937d2c753c9305
 \t\t\t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Syrian Civilians Trapped For Months Continue To Be Evacuated\">
-\t\t\t\t\t\t\t\t\t\t\t<img src='assets/images/samples/100x100/image_12.jpg' alt='img'>
+\t\t\t\t\t\t\t\t\t\t\t<img src='";
+        // line 86
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/users/images/samples/100x100/image_12.jpg' alt='img'>
 \t\t\t\t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t\t\t\t\t<div class=\"post_content\">
 \t\t\t\t\t\t\t\t\t\t\t<h5>
@@ -117,7 +123,10 @@ class __TwigTemplate_371a3b56611cf6e8fa78898212a587471c50d68a7f78d937d2c753c9305
 \t\t\t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">
-\t\t\t\t\t\t\t\t\t\t\t<img src='assets/images/samples/100x100/image_02.jpg' alt='img'>
+\t\t\t\t\t\t\t\t\t\t\t<img src='";
+        // line 102
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/users/images/samples/100x100/image_02.jpg' alt='img'>
 \t\t\t\t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t\t\t\t\t<div class=\"post_content\">
 \t\t\t\t\t\t\t\t\t\t\t<h5>
@@ -133,7 +142,10 @@ class __TwigTemplate_371a3b56611cf6e8fa78898212a587471c50d68a7f78d937d2c753c9305
 \t\t\t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Nuclear Fusion Closer to Becoming a Reality\">
-\t\t\t\t\t\t\t\t\t\t\t<img src='assets/images/samples/100x100/image_13.jpg' alt='img'>
+\t\t\t\t\t\t\t\t\t\t\t<img src='";
+        // line 118
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/users/images/samples/100x100/image_13.jpg' alt='img'>
 \t\t\t\t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t\t\t\t\t<div class=\"post_content\">
 \t\t\t\t\t\t\t\t\t\t\t<h5>
@@ -157,7 +169,10 @@ class __TwigTemplate_371a3b56611cf6e8fa78898212a587471c50d68a7f78d937d2c753c9305
 \t\t\t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post_gallery.html\" title=\"Struggling Nuremberg Sack Coach Verbeek\">
 \t\t\t\t\t\t\t\t\t\t\t<span class=\"icon gallery\"></span>
-\t\t\t\t\t\t\t\t\t\t\t<img src='assets/images/samples/330x242/image_03.jpg' alt='img'>
+\t\t\t\t\t\t\t\t\t\t\t<img src='";
+        // line 142
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/users/images/samples/330x242/image_03.jpg' alt='img'>
 \t\t\t\t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t\t\t\t\t<h5 class=\"with_number\">
 \t\t\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post_gallery.html\" title=\"Struggling Nuremberg Sack Coach Verbeek\">Struggling Nuremberg Sack Coach Verbeek</a>
@@ -173,7 +188,10 @@ class __TwigTemplate_371a3b56611cf6e8fa78898212a587471c50d68a7f78d937d2c753c9305
 \t\t\t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post_gallery.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">
 \t\t\t\t\t\t\t\t\t\t\t<span class=\"icon gallery\"></span>
-\t\t\t\t\t\t\t\t\t\t\t<img src='assets/images/samples/330x242/image_14.jpg' alt='img'>
+\t\t\t\t\t\t\t\t\t\t\t<img src='";
+        // line 158
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/users/images/samples/330x242/image_14.jpg' alt='img'>
 \t\t\t\t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t\t\t\t\t<h5 class=\"with_number\">
 \t\t\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post_gallery.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">Built on Brotherhood, Club Lives Up to Name</a>
@@ -189,7 +207,10 @@ class __TwigTemplate_371a3b56611cf6e8fa78898212a587471c50d68a7f78d937d2c753c9305
 \t\t\t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post_gallery.html\" title=\"New Painkiller Rekindles Addiction Concerns\">
 \t\t\t\t\t\t\t\t\t\t\t<span class=\"icon gallery\"></span>
-\t\t\t\t\t\t\t\t\t\t\t<img src='assets/images/samples/330x242/image_04.jpg' alt='img'>
+\t\t\t\t\t\t\t\t\t\t\t<img src='";
+        // line 174
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/users/images/samples/330x242/image_04.jpg' alt='img'>
 \t\t\t\t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t\t\t\t\t<h5 class=\"with_number\">
 \t\t\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post_gallery.html\" title=\"New Painkiller Rekindles Addiction Concerns\">New Painkiller Rekindles Addiction Concerns</a>
@@ -258,9 +279,14 @@ class __TwigTemplate_371a3b56611cf6e8fa78898212a587471c50d68a7f78d937d2c753c9305
         return "users/footer.html";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  19 => 1,);
+        return array (  212 => 174,  193 => 158,  174 => 142,  147 => 118,  128 => 102,  109 => 86,  90 => 70,  19 => 1,);
     }
 }
 /* <div class="footer_container">*/
@@ -332,7 +358,7 @@ class __TwigTemplate_371a3b56611cf6e8fa78898212a587471c50d68a7f78d937d2c753c9305
 /* 									<li class="post">*/
 /* 										<a href="index.html@page=post_gallery.html" title="Study Linking Illnes and Salt Leaves Researchers Doubtful">*/
 /* 											<span class="icon small gallery"></span>*/
-/* 											<img src='assets/images/samples/100x100/image_06.jpg' alt='img'>*/
+/* 											<img src='{{baseURL}}/assets/users/images/samples/100x100/image_06.jpg' alt='img'>*/
 /* 										</a>*/
 /* 										<div class="post_content">*/
 /* 											<h5>*/
@@ -348,7 +374,7 @@ class __TwigTemplate_371a3b56611cf6e8fa78898212a587471c50d68a7f78d937d2c753c9305
 /* 									</li>*/
 /* 									<li class="post">*/
 /* 										<a href="index.html@page=post.html" title="Syrian Civilians Trapped For Months Continue To Be Evacuated">*/
-/* 											<img src='assets/images/samples/100x100/image_12.jpg' alt='img'>*/
+/* 											<img src='{{baseURL}}/assets/users/images/samples/100x100/image_12.jpg' alt='img'>*/
 /* 										</a>*/
 /* 										<div class="post_content">*/
 /* 											<h5>*/
@@ -364,7 +390,7 @@ class __TwigTemplate_371a3b56611cf6e8fa78898212a587471c50d68a7f78d937d2c753c9305
 /* 									</li>*/
 /* 									<li class="post">*/
 /* 										<a href="index.html@page=post.html" title="Built on Brotherhood, Club Lives Up to Name">*/
-/* 											<img src='assets/images/samples/100x100/image_02.jpg' alt='img'>*/
+/* 											<img src='{{baseURL}}/assets/users/images/samples/100x100/image_02.jpg' alt='img'>*/
 /* 										</a>*/
 /* 										<div class="post_content">*/
 /* 											<h5>*/
@@ -380,7 +406,7 @@ class __TwigTemplate_371a3b56611cf6e8fa78898212a587471c50d68a7f78d937d2c753c9305
 /* 									</li>*/
 /* 									<li class="post">*/
 /* 										<a href="index.html@page=post.html" title="Nuclear Fusion Closer to Becoming a Reality">*/
-/* 											<img src='assets/images/samples/100x100/image_13.jpg' alt='img'>*/
+/* 											<img src='{{baseURL}}/assets/users/images/samples/100x100/image_13.jpg' alt='img'>*/
 /* 										</a>*/
 /* 										<div class="post_content">*/
 /* 											<h5>*/
@@ -404,7 +430,7 @@ class __TwigTemplate_371a3b56611cf6e8fa78898212a587471c50d68a7f78d937d2c753c9305
 /* 									<li class="post">*/
 /* 										<a href="index.html@page=post_gallery.html" title="Struggling Nuremberg Sack Coach Verbeek">*/
 /* 											<span class="icon gallery"></span>*/
-/* 											<img src='assets/images/samples/330x242/image_03.jpg' alt='img'>*/
+/* 											<img src='{{baseURL}}/assets/users/images/samples/330x242/image_03.jpg' alt='img'>*/
 /* 										</a>*/
 /* 										<h5 class="with_number">*/
 /* 											<a href="index.html@page=post_gallery.html" title="Struggling Nuremberg Sack Coach Verbeek">Struggling Nuremberg Sack Coach Verbeek</a>*/
@@ -420,7 +446,7 @@ class __TwigTemplate_371a3b56611cf6e8fa78898212a587471c50d68a7f78d937d2c753c9305
 /* 									<li class="post">*/
 /* 										<a href="index.html@page=post_gallery.html" title="Built on Brotherhood, Club Lives Up to Name">*/
 /* 											<span class="icon gallery"></span>*/
-/* 											<img src='assets/images/samples/330x242/image_14.jpg' alt='img'>*/
+/* 											<img src='{{baseURL}}/assets/users/images/samples/330x242/image_14.jpg' alt='img'>*/
 /* 										</a>*/
 /* 										<h5 class="with_number">*/
 /* 											<a href="index.html@page=post_gallery.html" title="Built on Brotherhood, Club Lives Up to Name">Built on Brotherhood, Club Lives Up to Name</a>*/
@@ -436,7 +462,7 @@ class __TwigTemplate_371a3b56611cf6e8fa78898212a587471c50d68a7f78d937d2c753c9305
 /* 									<li class="post">*/
 /* 										<a href="index.html@page=post_gallery.html" title="New Painkiller Rekindles Addiction Concerns">*/
 /* 											<span class="icon gallery"></span>*/
-/* 											<img src='assets/images/samples/330x242/image_04.jpg' alt='img'>*/
+/* 											<img src='{{baseURL}}/assets/users/images/samples/330x242/image_04.jpg' alt='img'>*/
 /* 										</a>*/
 /* 										<h5 class="with_number">*/
 /* 											<a href="index.html@page=post_gallery.html" title="New Painkiller Rekindles Addiction Concerns">New Painkiller Rekindles Addiction Concerns</a>*/

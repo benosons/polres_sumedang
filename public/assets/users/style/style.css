@@ -718,10 +718,10 @@ h6
 .sf-menu li a, .sf-menu li a:visited
 {
 	font-family: 'Roboto';
-	font-size: 18px;
+	font-size: 12px;
 	font-weight: 400;
 	color: #25282A;
-	padding: 10px 0 15px 15px;
+	padding: 15px 0 15px 15px;
 	border: none;
 }
 .sf-menu li.submenu

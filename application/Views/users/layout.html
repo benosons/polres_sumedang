@@ -51,9 +51,15 @@
 
 			{% include "users/menu.html" %}
 
+
 <div class="page">
+	{% include "users/carousel.html" %}
+	<div class='slider_posts_list_container'>
+	</div>
 	{% block content %} {% endblock %}
+
 </div>
+
 {% include "users/footer.html" %}
 
 </div>

@@ -15,6 +15,8 @@ class View extends \CodeIgniter\Controller
 				'version' => \CodeIgniter\CodeIgniter::CI_VERSION,
 				// 'baseURL' => BASE.'/public',
 				'baseURL' => BASE,
+				'username' => $this->session->get('user_name'),
+				'role' => $this->session->get('user_role'),
 			);
   }
 
