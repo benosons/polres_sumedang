@@ -98,6 +98,9 @@ class __TwigTemplate_f324fde1f267788f3024ccb8183b7eeff16d9e72aee0577b024b03a40a0
 \t\t</li>
 \t</ul>
 </div>
+
+<div class='slider_posts_list_container'>
+</div>
 ";
     }
 
@@ -192,5 +195,8 @@ class __TwigTemplate_f324fde1f267788f3024ccb8183b7eeff16d9e72aee0577b024b03a40a0
 /* 			</div>*/
 /* 		</li>*/
 /* 	</ul>*/
+/* </div>*/
+/* */
+/* <div class='slider_posts_list_container'>*/
 /* </div>*/
 /* */

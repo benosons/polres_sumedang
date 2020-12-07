@@ -20,7 +20,7 @@ class __TwigTemplate_9cf2be52d1d63f2267c6ebcea07046256903b856e14fcec907fb05033bf
 \t<nav>
 <ul class=\"sf-menu\">
 <li class=\"selected\">
-<a href=\"#\" title=\"Home\">
+<a href=\"/home\" title=\"Home\">
 HOME
 </a>
 <!-- <ul>
@@ -557,7 +557,7 @@ INFORMASI
 </ul>
 </li>
 <li class=\"\">
-\t<a href=\"index.html@page=home_3.html#\" title=\"Blog 2 columns\">
+\t<a href=\"/inputpengaduan\" title=\"Blog 2 columns\">
 \t\tPENGADUAN
 \t</a>
 </li>
@@ -898,7 +898,7 @@ HUBUNGI KAMI
 /* 	<nav>*/
 /* <ul class="sf-menu">*/
 /* <li class="selected">*/
-/* <a href="#" title="Home">*/
+/* <a href="/home" title="Home">*/
 /* HOME*/
 /* </a>*/
 /* <!-- <ul>*/
@@ -1435,7 +1435,7 @@ HUBUNGI KAMI
 /* </ul>*/
 /* </li>*/
 /* <li class="">*/
-/* 	<a href="index.html@page=home_3.html#" title="Blog 2 columns">*/
+/* 	<a href="/inputpengaduan" title="Blog 2 columns">*/
 /* 		PENGADUAN*/
 /* 	</a>*/
 /* </li>*/

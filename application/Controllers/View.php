@@ -30,6 +30,7 @@ class View extends \CodeIgniter\Controller
 	{
 
 			helper('form');
+			$this->data['page'] = 'home';
 			return \Twig::instance()->display('users/index.html', $this->data);
 	}
 
@@ -63,6 +64,12 @@ class View extends \CodeIgniter\Controller
 			}else{
 				return redirect('home');
 			}
+	}
+
+	public function pengaduanusers()
+	{
+				helper('form');
+				return \Twig::instance()->display('users/pengaduan/index.html', $this->data);
 	}
 
 }

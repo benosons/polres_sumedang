@@ -1,14 +1,14 @@
 <?php
 
-/* users/index.html */
-class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f4b6e3 extends Twig_Template
+/* users/pengaduan/index.html */
+class __TwigTemplate_cbc5f55c8ac1bff0082197492b03ba962b8a982951be12a23e5382e1cf827da6 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("users/layout.html", "users/index.html", 1);
+        $this->parent = $this->loadTemplate("users/layout.html", "users/pengaduan/index.html", 1);
         $this->blocks = array(
             'content' => array($this, 'block_content'),
         );
@@ -30,466 +30,69 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
         echo "<div class=\"page_layout page_margin_top clearfix\">
 \t\t<div class=\"row\">
 \t\t\t<div class=\"column column_2_3\">
-\t\t\t\t<h4 class=\"box_header\">Latest Posts</h4>
-\t\t\t\t<div class=\"row\">
-\t\t\t\t\t<ul class=\"blog column column_1_2\">
-\t\t\t\t\t\t<li class=\"post\">
-\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Nuclear Fusion Closer to Becoming a Reality\">
-\t\t\t\t\t\t\t\t<img src='https://humas.polri.go.id/wp-content/uploads/2020/06/IMG-20200601-WA0188.jpg' alt='img'>
-\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t<h2 class=\"with_number\">
-\t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Nuclear Fusion Closer to Becoming a Reality\">Nuclear Fusion Closer to Becoming a Reality</a>
-\t\t\t\t\t\t\t\t<a class=\"comments_number\" href=\"index.html@page=post.html#comments_list\" title=\"2 comments\">2<span class=\"arrow_comments\"></span></a>
-\t\t\t\t\t\t\t</h2>
-\t\t\t\t\t\t\t<ul class=\"post_details\">
-\t\t\t\t\t\t\t\t<li class=\"category\"><a href=\"index.html@page=category&amp;cat=world.html\" title=\"WORLD\">WORLD</a></li>
-\t\t\t\t\t\t\t\t<li class=\"date\">
-\t\t\t\t\t\t\t\t\t10:11 PM, Feb 02
-\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t<p>Maecenas mauris elementum, est morbi interdum cursus at elite imperdiet libero. Proin odios dapibus integer an nulla augue pharetra cursus.</p>
-\t\t\t\t\t\t\t<a class=\"read_more\" href=\"index.html@page=post.html\" title=\"Read more\"><span class=\"arrow\"></span><span>READ MORE</span></a>
-\t\t\t\t\t\t</li>
-\t\t\t\t\t\t<li class=\"post\">
-\t\t\t\t\t\t\t<a href=\"index.html@page=post_quote.html\" title=\"High Altitudes May Aid Weight Control\">
-\t\t\t\t\t\t\t\t<img src='https://humas.polri.go.id/wp-content/uploads/2020/12/10.jpeg' alt='img'>
-\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t<h2 class=\"with_number\">
-\t\t\t\t\t\t\t\t<a href=\"index.html@page=post_quote.html\" title=\"High Altitudes May Aid Weight Control\">High Altitudes May Aid Weight Control</a>
-\t\t\t\t\t\t\t\t<a class=\"comments_number\" href=\"index.html@page=post.html#comments_list\" title=\"2 comments\">2<span class=\"arrow_comments\"></span></a>
-\t\t\t\t\t\t\t</h2>
-\t\t\t\t\t\t\t<ul class=\"post_details\">
-\t\t\t\t\t\t\t\t<li class=\"category\"><a href=\"index.html@page=category&amp;cat=health.html\" title=\"HEALTH\">HEALTH</a></li>
-\t\t\t\t\t\t\t\t<li class=\"date\">
-\t\t\t\t\t\t\t\t\t10:11 PM, Feb 02
-\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t<p>Maecenas mauris elementum, est morbi interdum cursus at elite imperdiet libero. Proin odios dapibus integer an nulla augue pharetra cursus.</p>
-\t\t\t\t\t\t\t<a class=\"read_more\" href=\"index.html@page=post_quote.html\" title=\"Read more\"><span class=\"arrow\"></span><span>READ MORE</span></a>
-\t\t\t\t\t\t</li>
-\t\t\t\t\t</ul>
-\t\t\t\t\t<ul class=\"blog column column_1_2\">
-\t\t\t\t\t\t<li class=\"post\">
-\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">
-\t\t\t\t\t\t\t\t<img src='https://humas.polri.go.id/wp-content/uploads/2020/08/19-3.jpg' alt='img'>
-\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t<h2 class=\"with_number\">
-\t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">Built on Brotherhood, Club Lives Up to Name</a>
-\t\t\t\t\t\t\t\t<a class=\"comments_number\" href=\"index.html@page=post.html#comments_list\" title=\"2 comments\">2<span class=\"arrow_comments\"></span></a>
-\t\t\t\t\t\t\t</h2>
-\t\t\t\t\t\t\t<ul class=\"post_details\">
-\t\t\t\t\t\t\t\t<li class=\"category\"><a href=\"index.html@page=category&amp;cat=science.html\" title=\"SCIENCE\">SCIENCE</a></li>
-\t\t\t\t\t\t\t\t<li class=\"date\">
-\t\t\t\t\t\t\t\t\t10:11 PM, Feb 02
-\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t<p>Maecenas mauris elementum, est morbi interdum cursus at elite imperdiet libero. Proin odios dapibus integer an nulla augue pharetra cursus.</p>
-\t\t\t\t\t\t\t<a class=\"read_more\" href=\"index.html@page=post.html\" title=\"Read more\"><span class=\"arrow\"></span><span>READ MORE</span></a>
-\t\t\t\t\t\t</li>
-\t\t\t\t\t\t<li class=\"post\">
-\t\t\t\t\t\t\t<a href=\"index.html@page=post_video.html\" title=\"Struggling Nuremberg Sack Coach Verbeek\">
-\t\t\t\t\t\t\t\t<span class=\"icon video\"></span>
-\t\t\t\t\t\t\t\t<img src='https://humas.polri.go.id/wp-content/uploads/2020/07/SMDNG-768x576.jpg' alt='img'>
-\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t<h2 class=\"with_number\">
-\t\t\t\t\t\t\t\t<a href=\"index.html@page=post_video.html\" title=\"Struggling Nuremberg Sack Coach Verbeek\">Struggling Nuremberg Sack Coach Verbeek</a>
-\t\t\t\t\t\t\t\t<a class=\"comments_number\" href=\"index.html@page=post_video.html#comments_list\" title=\"2 comments\">2<span class=\"arrow_comments\"></span></a>
-\t\t\t\t\t\t\t</h2>
-\t\t\t\t\t\t\t<ul class=\"post_details\">
-\t\t\t\t\t\t\t\t<li class=\"category\"><a href=\"index.html@page=category&amp;cat=sports.html\" title=\"SPORTS\">SPORTS</a></li>
-\t\t\t\t\t\t\t\t<li class=\"date\">
-\t\t\t\t\t\t\t\t\t10:11 PM, Feb 02
-\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t<p>Maecenas mauris elementum, est morbi interdum cursus at elite imperdiet libero. Proin odios dapibus integer an nulla augue pharetra cursus.</p>
-\t\t\t\t\t\t\t<a class=\"read_more\" href=\"index.html@page=post_video.html\" title=\"Read more\"><span class=\"arrow\"></span><span>READ MORE</span></a>
-\t\t\t\t\t\t</li>
-\t\t\t\t\t</ul>
-\t\t\t\t</div>
-\t\t\t\t<div class=\"row page_margin_top_section\">
-\t\t\t\t\t<h4 class=\"box_header\">Posts Carousel</h4>
-\t\t\t\t\t<div class=\"horizontal_carousel_container page_margin_top\">
-\t\t\t\t\t\t<ul class=\"blog horizontal_carousel autoplay-1 scroll-1 navigation-1 easing-easeInOutQuint duration-750\">
-\t\t\t\t\t\t\t<li class=\"post\">
-\t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"New Painkiller Rekindles Addiction Concerns\">
-\t\t\t\t\t\t\t\t\t<img src='https://humas.polri.go.id/wp-content/uploads/2020/06/IMG-20200611-WA0249-1024x682.jpg' alt='img'>
-\t\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t\t<h5><a href=\"index.html@page=post.html\" title=\"New Painkiller Rekindles Addiction Concerns\">New Painkiller Rekindles Addiction Concerns</a></h5>
-\t\t\t\t\t\t\t\t<ul class=\"post_details simple\">
-\t\t\t\t\t\t\t\t\t<li class=\"category\"><a href=\"index.html@page=category&amp;cat=health.html\" title=\"HEALTH\">HEALTH</a></li>
-\t\t\t\t\t\t\t\t\t<li class=\"date\">
-\t\t\t\t\t\t\t\t\t\t10:11 PM, Feb 02
-\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t<li class=\"post\">
-\t\t\t\t\t\t\t\t<a href=\"index.html@page=post_soundcloud.html\" title=\"High Altitudes May Aid Weight Control\">
-\t\t\t\t\t\t\t\t\t<img src='https://humas.polri.go.id/wp-content/uploads/2020/06/IMG-20200603-WA0191-1024x498.jpg' alt='img'>
-\t\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t\t<h5><a href=\"index.html@page=post_soundcloud.html\" title=\"High Altitudes May Aid Weight Control\">High Altitudes May Aid Weight Control</a></h5>
-\t\t\t\t\t\t\t\t<ul class=\"post_details simple\">
-\t\t\t\t\t\t\t\t\t<li class=\"category\"><a href=\"index.html@page=category&amp;cat=health.html\" title=\"HEALTH\">HEALTH</a></li>
-\t\t\t\t\t\t\t\t\t<li class=\"date\">
-\t\t\t\t\t\t\t\t\t\t10:11 PM, Feb 02
-\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t<li class=\"post\">
-\t\t\t\t\t\t\t\t<a href=\"index.html@page=post_gallery.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">
-\t\t\t\t\t\t\t\t\t<span class=\"icon gallery\"><!--<span class=\"info\">999</span>--></span>
-\t\t\t\t\t\t\t\t\t<img src='https://humas.polri.go.id/wp-content/uploads/2020/04/SMD-10-640x480.jpg' alt='img'>
-\t\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t\t<h5><a href=\"index.html@page=post_gallery.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">Built on Brotherhood, Club Lives Up to Name</a></h5>
-\t\t\t\t\t\t\t\t<ul class=\"post_details simple\">
-\t\t\t\t\t\t\t\t\t<li class=\"category\"><a href=\"index.html@page=category&amp;cat=health.html\" title=\"HEALTH\">HEALTH</a></li>
-\t\t\t\t\t\t\t\t\t<li class=\"date\">
-\t\t\t\t\t\t\t\t\t\t10:11 PM, Feb 02
-\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t<li class=\"post first\">
-\t\t\t\t\t\t\t\t<a href=\"index.html@page=post_small_image.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">
-\t\t\t\t\t\t\t\t\t<img src='https://humas.polri.go.id/wp-content/uploads/2020/04/IMG-20200419-WA0428-1024x672.jpg' alt='img'>
-\t\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t\t<h5><a href=\"index.html@page=post_small_image.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">Built on Brotherhood, Club Lives Up to Name</a></h5>
-\t\t\t\t\t\t\t\t<ul class=\"post_details simple\">
-\t\t\t\t\t\t\t\t\t<li class=\"category\"><a href=\"index.html@page=category&amp;cat=health.html\" title=\"HEALTH\">HEALTH</a></li>
-\t\t\t\t\t\t\t\t\t<li class=\"date\">
-\t\t\t\t\t\t\t\t\t\t10:11 PM, Feb 02
-\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t</ul>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t\t<div class=\"row page_margin_top_section\">
-\t\t\t\t\t<h4 class=\"box_header\">Latest From Health</h4>
+\t\t\t\t<h4 class=\"box_header\">Isi Formulir Pengaduan</h4>
+\t\t\t\t<div class=\"card-block\">
 \t\t\t\t\t<div class=\"row\">
-\t\t\t\t\t\t<ul class=\"blog column column_1_2\">
-\t\t\t\t\t\t\t<li class=\"post\">
-\t\t\t\t\t\t\t\t<a href=\"index.html@page=post_gallery.html\" title=\"High Altitudes May Aid Weight Control\">
-\t\t\t\t\t\t\t\t\t<span class=\"icon gallery\"></span>
-\t\t\t\t\t\t\t\t\t<img src='https://humas.polri.go.id/wp-content/uploads/2020/06/IMG-20200603-WA0191-1024x498.jpg' alt='img'>
-\t\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t\t<h2 class=\"with_number\">
-\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post_gallery.html\" title=\"High Altitudes May Aid Weight Control\">High Altitudes May Aid Weight Control</a>
-\t\t\t\t\t\t\t\t\t<a class=\"comments_number\" href=\"index.html@page=post_gallery.html#comments_list\" title=\"2 comments\">2<span class=\"arrow_comments\"></span></a>
-\t\t\t\t\t\t\t\t</h2>
-\t\t\t\t\t\t\t\t<ul class=\"post_details\">
-\t\t\t\t\t\t\t\t\t<li class=\"category\"><a href=\"index.html@page=category&amp;cat=world.html\" title=\"WORLD\">WORLD</a></li>
-\t\t\t\t\t\t\t\t\t<li class=\"date\">
-\t\t\t\t\t\t\t\t\t\t10:11 PM, Feb 02
-\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t\t<p>Politicans have looked weak in the face of such natural disaster, with many facing criticism from local residents for doing little more than turning up as flood tourists at the side of disasters.</p>
-\t\t\t\t\t\t\t\t<a class=\"read_more\" href=\"index.html@page=post_gallery.html\" title=\"Read more\"><span class=\"arrow\"></span><span>READ MORE</span></a>
-\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t<div class=\"column column_1_2\">
-\t\t\t\t\t\t\t<ul class=\"blog small clearfix\">
-\t\t\t\t\t\t\t\t<li class=\"post\">
-\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Study Linking Illnes and Salt Leaves Researchers Doubtful\">
-\t\t\t\t\t\t\t\t\t\t<img src='";
-        // line 164
-        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "/assets/users/images/samples/100x100/image_02.jpg' alt='img'>
-\t\t\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t\t\t<div class=\"post_content\">
-\t\t\t\t\t\t\t\t\t\t<h5>
-\t\t\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Study Linking Illnes and Salt Leaves Researchers Doubtful\">Study Linking Illnes and Salt Leaves Researchers Doubtful</a>
-\t\t\t\t\t\t\t\t\t\t</h5>
-\t\t\t\t\t\t\t\t\t\t<ul class=\"post_details simple\">
-\t\t\t\t\t\t\t\t\t\t\t<li class=\"category\"><a href=\"index.html@page=category&amp;cat=health.html\" title=\"HEALTH\">HEALTH</a></li>
-\t\t\t\t\t\t\t\t\t\t\t<li class=\"date\">
-\t\t\t\t\t\t\t\t\t\t\t\t10:11 PM, Feb 02
-\t\t\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t\t\t</ul>
+\t\t\t\t\t\t<div class=\"col-md-12\">
+\t\t\t\t\t\t\t<div class=\"form-group row\">
+\t\t\t\t\t\t\t\t\t<label class=\"col-sm-3 col-form-label\">Nama</label>
+\t\t\t\t\t\t\t\t\t<div class=\"col-sm-9\">
+\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\">
 \t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t<li class=\"post\">
-\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Seeking the Right Chemistry, Drug Makers Hunt for Mergers\">
-\t\t\t\t\t\t\t\t\t\t<img src='";
-        // line 180
-        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "/assets/users/images/samples/100x100/image_13.jpg' alt='img'>
-\t\t\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t\t\t<div class=\"post_content\">
-\t\t\t\t\t\t\t\t\t\t<h5>
-\t\t\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Seeking the Right Chemistry, Drug Makers Hunt for Mergers\">Seeking the Right Chemistry, Drug Makers Hunt for Mergers</a>
-\t\t\t\t\t\t\t\t\t\t</h5>
-\t\t\t\t\t\t\t\t\t\t<ul class=\"post_details simple\">
-\t\t\t\t\t\t\t\t\t\t\t<li class=\"category\"><a href=\"index.html@page=category&amp;cat=health.html\" title=\"HEALTH\">HEALTH</a></li>
-\t\t\t\t\t\t\t\t\t\t\t<li class=\"date\">
-\t\t\t\t\t\t\t\t\t\t\t\t10:11 PM, Feb 02
-\t\t\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t<li class=\"post\">
-\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post_review.html\" title=\"Seeking the Right Chemistry, Drug Makers Hunt for Mergers\">
-\t\t\t\t\t\t\t\t\t\t<span class=\"icon small review\"></span>
-\t\t\t\t\t\t\t\t\t\t<img src='";
-        // line 197
-        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "/assets/users/images/samples/100x100/image_01.jpg' alt='img'>
-\t\t\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t\t\t<div class=\"post_content\">
-\t\t\t\t\t\t\t\t\t\t<h5>
-\t\t\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post_review.html\" title=\"Seeking the Right Chemistry, Drug Makers Hunt for Mergers\">The Public Health Crisis Hiding in Our Food</a>
-\t\t\t\t\t\t\t\t\t\t</h5>
-\t\t\t\t\t\t\t\t\t\t<ul class=\"post_details simple\">
-\t\t\t\t\t\t\t\t\t\t\t<li class=\"category\"><a href=\"index.html@page=category&amp;cat=health.html\" title=\"HEALTH\">HEALTH</a></li>
-\t\t\t\t\t\t\t\t\t\t\t<li class=\"date\">
-\t\t\t\t\t\t\t\t\t\t\t\t10:11 PM, Feb 02
-\t\t\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t<li class=\"post\">
-\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post_gallery.html\" title=\"New Painkiller Rekindles Addiction Concerns\">
-\t\t\t\t\t\t\t\t\t\t<span class=\"icon small gallery\"></span>
-\t\t\t\t\t\t\t\t\t\t<img src='";
-        // line 214
-        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "/assets/users/images/samples/100x100/image_03.jpg' alt='img'>
-\t\t\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t\t\t<div class=\"post_content\">
-\t\t\t\t\t\t\t\t\t\t<h5>
-\t\t\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post_gallery.html\" title=\"New Painkiller Rekindles Addiction Concerns\">New Painkiller Rekindles Addiction Concerns</a>
-\t\t\t\t\t\t\t\t\t\t</h5>
-\t\t\t\t\t\t\t\t\t\t<ul class=\"post_details simple\">
-\t\t\t\t\t\t\t\t\t\t\t<li class=\"category\"><a href=\"index.html@page=category&amp;cat=health.html\" title=\"HEALTH\">HEALTH</a></li>
-\t\t\t\t\t\t\t\t\t\t\t<li class=\"date\">
-\t\t\t\t\t\t\t\t\t\t\t\t10:11 PM, Feb 02
-\t\t\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t<a class=\"more page_margin_top\" href=\"index.html@page=home.html#\">MORE FROM HEALTH</a>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t\t<div class=\"row page_margin_top_section\">
-\t\t\t\t\t<h4 class=\"box_header\">Top Posts</h4>
-\t\t\t\t\t<div class=\"tabs no_scroll margin_top_10 clearfix\">
-\t\t\t\t\t\t<ul class=\"tabs_navigation small clearfix\">
-\t\t\t\t\t\t\t<li>
-\t\t\t\t\t\t\t\t<a href=\"index.html@page=home.html#most-recent\" title=\"Most Recent\">
-\t\t\t\t\t\t\t\t\tMost Recent
-\t\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t<li>
-\t\t\t\t\t\t\t\t<a href=\"index.html@page=home.html#most-read\" title=\"Most Read\">
-\t\t\t\t\t\t\t\t\tMost Read
-\t\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t<li>
-\t\t\t\t\t\t\t\t<a href=\"index.html@page=home.html#most-commented\" title=\"Most Commented\">
-\t\t\t\t\t\t\t\t\tMost Commented
-\t\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t<div id=\"most-recent\">
-\t\t\t\t\t\t\t<div class=\"horizontal_carousel_container page_margin_top\">
-\t\t\t\t\t\t\t\t<ul class=\"blog horizontal_carousel page_margin_top autoplay-0 scroll-1 navigation-1 easing-easeInOutQuint duration-750\">
-\t\t\t\t\t\t\t\t\t<li class=\"post\">
-\t\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"High Altitudes May Aid Weight Control\">
-\t\t\t\t\t\t\t\t\t\t\t<img src='";
-        // line 258
-        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "/assets/users/images/samples/330x242/image_11.jpg' alt='img'>
-\t\t\t\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t\t\t\t<h5><span class=\"number\">1.</span><a href=\"index.html@page=post.html\" title=\"High Altitudes May Aid Weight Control\">High Altitudes May Aid Weight Control</a></h5>
-\t\t\t\t\t\t\t\t\t\t<ul class=\"post_details simple\">
-\t\t\t\t\t\t\t\t\t\t\t<li class=\"category\"><a href=\"index.html@page=category&amp;cat=health.html\" title=\"HEALTH\">HEALTH</a></li>
-\t\t\t\t\t\t\t\t\t\t\t<li class=\"date\">
-\t\t\t\t\t\t\t\t\t\t\t\t10:11 PM, Feb 02
-\t\t\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t\t<li class=\"post\">
-\t\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Climate Change Debate While Britain Floods\">
-\t\t\t\t\t\t\t\t\t\t\t<img src='";
-        // line 270
-        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "/assets/users/images/samples/330x242/image_14.jpg' alt='img'>
-\t\t\t\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t\t\t\t<h5><span class=\"number\">2.</span><a href=\"index.html@page=post.html\" title=\"Climate Change Debate While Britain Floods\">Climate Change Debate While Britain Floods</a></h5>
-\t\t\t\t\t\t\t\t\t\t<ul class=\"post_details simple\">
-\t\t\t\t\t\t\t\t\t\t\t<li class=\"category\"><a href=\"index.html@page=category&amp;cat=world.html\" title=\"WORLD\">WORLD</a></li>
-\t\t\t\t\t\t\t\t\t\t\t<li class=\"date\">
-\t\t\t\t\t\t\t\t\t\t\t\t10:11 PM, Feb 02
-\t\t\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t\t<li class=\"post\">
-\t\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post_small_image.html\" title=\"Escape From Planet Earth: The Movie\">
-\t\t\t\t\t\t\t\t\t\t\t<img src='";
-        // line 282
-        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "/assets/users/images/samples/330x242/image_02.jpg' alt='img'>
-\t\t\t\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t\t\t\t<h5><span class=\"number\">3.</span><a href=\"index.html@page=post_small_image.html\" title=\"Escape From Planet Earth: The Movie\">Escape From Planet Earth: The Movie</a></h5>
-\t\t\t\t\t\t\t\t\t\t<ul class=\"post_details simple\">
-\t\t\t\t\t\t\t\t\t\t\t<li class=\"category\"><a href=\"index.html@page=category&amp;cat=lifestyle.html\" title=\"LIFESTYLE\">LIFESTYLE</a></li>
-\t\t\t\t\t\t\t\t\t\t\t<li class=\"date\">
-\t\t\t\t\t\t\t\t\t\t\t\t10:11 PM, Feb 02
-\t\t\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t\t<li class=\"post first\">
-\t\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">
-\t\t\t\t\t\t\t\t\t\t\t<img src='";
-        // line 294
-        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "/assets/users/images/samples/330x242/image_09.jpg' alt='img'>
-\t\t\t\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t\t\t\t<h5><span class=\"number\">4.</span><a href=\"index.html@page=post.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">Built on Brotherhood, Club Lives Up to Name</a></h5>
-\t\t\t\t\t\t\t\t\t\t<ul class=\"post_details simple\">
-\t\t\t\t\t\t\t\t\t\t\t<li class=\"category\"><a href=\"index.html@page=category&amp;cat=sports.html\" title=\"SPORTS\">SPORTS</a></li>
-\t\t\t\t\t\t\t\t\t\t\t<li class=\"date\">
-\t\t\t\t\t\t\t\t\t\t\t\t10:11 PM, Feb 02
-\t\t\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t</ul>
 \t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t</div>
-\t\t\t\t\t\t<div id=\"most-read\">
-\t\t\t\t\t\t\t<div class=\"horizontal_carousel_container page_margin_top\">
-\t\t\t\t\t\t\t\t<ul class=\"blog horizontal_carousel page_margin_top autoplay-0 scroll-1 navigation-1 easing-easeInOutQuint duration-750\">
-\t\t\t\t\t\t\t\t\t<li class=\"post\">
-\t\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"The Public Health Crisis Hiding in Our Food\">
-\t\t\t\t\t\t\t\t\t\t\t<img src='";
-        // line 312
-        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "/assets/users/images/samples/330x242/image_10.jpg' alt='img'>
-\t\t\t\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t\t\t\t<h5><span class=\"number\">1.</span><a href=\"index.html@page=post.html\" title=\"The Public Health Crisis Hiding in Our Food\">The Public Health Crisis Hiding in Our Food</a></h5>
-\t\t\t\t\t\t\t\t\t\t<ul class=\"post_details simple\">
-\t\t\t\t\t\t\t\t\t\t\t<li class=\"category\"><a href=\"index.html@page=category&amp;cat=health.html\" title=\"HEALTH\">HEALTH</a></li>
-\t\t\t\t\t\t\t\t\t\t\t<li class=\"date\">
-\t\t\t\t\t\t\t\t\t\t\t\t10:11 PM, Feb 02
-\t\t\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t\t<li class=\"post\">
-\t\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Drug Makers Hunt for Mergers\">
-\t\t\t\t\t\t\t\t\t\t\t<img src='";
-        // line 324
-        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "/assets/users/images/samples/330x242/image_07.jpg' alt='img'>
-\t\t\t\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t\t\t\t<h5><span class=\"number\">2.</span><a href=\"index.html@page=post.html\" title=\"Drug Makers Hunt for Mergers\">Drug Makers Hunt for Mergers</a></h5>
-\t\t\t\t\t\t\t\t\t\t<ul class=\"post_details simple\">
-\t\t\t\t\t\t\t\t\t\t\t<li class=\"category\"><a href=\"index.html@page=category&amp;cat=world.html\" title=\"WORLD\">WORLD</a></li>
-\t\t\t\t\t\t\t\t\t\t\t<li class=\"date\">
-\t\t\t\t\t\t\t\t\t\t\t\t10:11 PM, Feb 02
-\t\t\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t\t<li class=\"post\">
-\t\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Escape From Planet Earth: The Movie\">
-\t\t\t\t\t\t\t\t\t\t\t<img src='";
-        // line 336
-        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "/assets/users/images/samples/330x242/image_13.jpg' alt='img'>
-\t\t\t\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t\t\t\t<h5><span class=\"number\">3.</span><a href=\"index.html@page=post.html\" title=\"Escape From Planet Earth: The Movie\">Escape From Planet Earth: The Movie</a></h5>
-\t\t\t\t\t\t\t\t\t\t<ul class=\"post_details simple\">
-\t\t\t\t\t\t\t\t\t\t\t<li class=\"category\"><a href=\"index.html@page=category&amp;cat=lifestyle.html\" title=\"LIFESTYLE\">LIFESTYLE</a></li>
-\t\t\t\t\t\t\t\t\t\t\t<li class=\"date\">
-\t\t\t\t\t\t\t\t\t\t\t\t10:11 PM, Feb 02
-\t\t\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t\t<li class=\"post first\">
-\t\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post_soundcloud.html\" title=\"High Altitudes May Aid Weight Control\">
-\t\t\t\t\t\t\t\t\t\t\t<img src='";
-        // line 348
-        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "/assets/users/images/samples/330x242/image_05.jpg' alt='img'>
-\t\t\t\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t\t\t\t<h5><span class=\"number\">4.</span><a href=\"index.html@page=post_soundcloud.html\" title=\"High Altitudes May Aid Weight Control\">High Altitudes May Aid Weight Control</a></h5>
-\t\t\t\t\t\t\t\t\t\t<ul class=\"post_details simple\">
-\t\t\t\t\t\t\t\t\t\t\t<li class=\"category\"><a href=\"index.html@page=category&amp;cat=sports.html\" title=\"SPORTS\">SPORTS</a></li>
-\t\t\t\t\t\t\t\t\t\t\t<li class=\"date\">
-\t\t\t\t\t\t\t\t\t\t\t\t10:11 PM, Feb 02
-\t\t\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t</ul>
+\t\t\t\t\t\t<div class=\"col-md-12\">
+\t\t\t\t\t\t\t<div class=\"form-group row\">
+\t\t\t\t\t\t\t\t\t<label class=\"col-sm-3 col-form-label\">Pekerjaan</label>
+\t\t\t\t\t\t\t\t\t<div class=\"col-sm-9\">
+\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\">
+\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t</div>
-\t\t\t\t\t\t<div id=\"most-commented\">
-\t\t\t\t\t\t\t<div class=\"horizontal_carousel_container page_margin_top\">
-\t\t\t\t\t\t\t\t<ul class=\"blog horizontal_carousel page_margin_top autoplay-0 scroll-1 navigation-1 easing-easeInOutQuint duration-750\">
-\t\t\t\t\t\t\t\t\t<li class=\"post\">
-\t\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Escape From Planet Earth: The Movie\">
-\t\t\t\t\t\t\t\t\t\t\t<img src='";
-        // line 366
-        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "/assets/users/images/samples/330x242/image_13.jpg' alt='img'>
-\t\t\t\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t\t\t\t<h5><span class=\"number\">1.</span><a href=\"index.html@page=post.html\" title=\"Escape From Planet Earth: The Movie\">Escape From Planet Earth: The Movie</a></h5>
-\t\t\t\t\t\t\t\t\t\t<ul class=\"post_details simple\">
-\t\t\t\t\t\t\t\t\t\t\t<li class=\"category\"><a href=\"index.html@page=category&amp;cat=health.html\" title=\"HEALTH\">HEALTH</a></li>
-\t\t\t\t\t\t\t\t\t\t\t<li class=\"date\">
-\t\t\t\t\t\t\t\t\t\t\t\t10:11 PM, Feb 02
-\t\t\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t\t<li class=\"post\">
-\t\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Struggling Nuremberg Sack Coach Verbeek\">
-\t\t\t\t\t\t\t\t\t\t\t<img src='";
-        // line 378
-        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "/assets/users/images/samples/330x242/image_06.jpg' alt='img'>
-\t\t\t\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t\t\t\t<h5><span class=\"number\">2.</span><a href=\"index.html@page=post.html\" title=\"Struggling Nuremberg Sack Coach Verbeek\">Struggling Nuremberg Sack Coach Verbeek</a></h5>
-\t\t\t\t\t\t\t\t\t\t<ul class=\"post_details simple\">
-\t\t\t\t\t\t\t\t\t\t\t<li class=\"category\"><a href=\"index.html@page=category&amp;cat=world.html\" title=\"WORLD\">WORLD</a></li>
-\t\t\t\t\t\t\t\t\t\t\t<li class=\"date\">
-\t\t\t\t\t\t\t\t\t\t\t\t10:11 PM, Feb 02
-\t\t\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t\t<li class=\"post\">
-\t\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post_small_image.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">
-\t\t\t\t\t\t\t\t\t\t\t<img src='";
-        // line 390
-        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "/assets/users/images/samples/330x242/image_03.jpg' alt='img'>
-\t\t\t\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t\t\t\t<h5><span class=\"number\">3.</span><a href=\"index.html@page=post_small_image.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">Built on Brotherhood, Club Lives Up to Name</a></h5>
-\t\t\t\t\t\t\t\t\t\t<ul class=\"post_details simple\">
-\t\t\t\t\t\t\t\t\t\t\t<li class=\"category\"><a href=\"index.html@page=category&amp;cat=lifestyle.html\" title=\"LIFESTYLE\">LIFESTYLE</a></li>
-\t\t\t\t\t\t\t\t\t\t\t<li class=\"date\">
-\t\t\t\t\t\t\t\t\t\t\t\t10:11 PM, Feb 02
-\t\t\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t\t<li class=\"post first\">
-\t\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"High Altitudes May Aid Weight Control\">
-\t\t\t\t\t\t\t\t\t\t\t<img src='";
-        // line 402
-        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "/assets/users/images/samples/330x242/image_05.jpg' alt='img'>
-\t\t\t\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t\t\t\t<h5><span class=\"number\">4.</span><a href=\"index.html@page=post.html\" title=\"High Altitudes May Aid Weight Control\">High Altitudes May Aid Weight Control</a></h5>
-\t\t\t\t\t\t\t\t\t\t<ul class=\"post_details simple\">
-\t\t\t\t\t\t\t\t\t\t\t<li class=\"category\"><a href=\"index.html@page=category&amp;cat=sports.html\" title=\"SPORTS\">SPORTS</a></li>
-\t\t\t\t\t\t\t\t\t\t\t<li class=\"date\">
-\t\t\t\t\t\t\t\t\t\t\t\t10:11 PM, Feb 02
-\t\t\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t</ul>
+\t\t\t\t\t\t<div class=\"col-md-12\">
+\t\t\t\t\t\t\t<div class=\"form-group row\">
+\t\t\t\t\t\t\t\t\t<label class=\"col-sm-3 col-form-label\">Alamat</label>
+\t\t\t\t\t\t\t\t\t<div class=\"col-sm-9\">
+\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\">
+\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t<div class=\"col-md-12\">
+\t\t\t\t\t\t\t<div class=\"form-group row\">
+\t\t\t\t\t\t\t\t\t<label class=\"col-sm-3 col-form-label\">Email</label>
+\t\t\t\t\t\t\t\t\t<div class=\"col-sm-9\">
+\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\">
+\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t<div class=\"col-md-12\">
+\t\t\t\t\t\t\t<div class=\"form-group row\">
+\t\t\t\t\t\t\t\t\t<label class=\"col-sm-3 col-form-label\">Nomor Telepon</label>
+\t\t\t\t\t\t\t\t\t<div class=\"col-sm-9\">
+\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\">
+\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t<div class=\"col-md-12\">
+\t\t\t\t\t\t\t<div class=\"form-group row\">
+\t\t\t\t\t\t\t\t\t<label class=\"col-sm-3 col-form-label\">Isi Pengaduan</label>
+\t\t\t\t\t\t\t\t\t<div class=\"col-sm-9\">
+\t\t\t\t\t\t\t\t\t\t\t<textarea rows=\"5\" cols=\"5\" class=\"form-control\" placeholder=\"\"></textarea>
+\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t<div class=\"col-md-12\">
+\t\t\t\t\t\t\t<div class=\"form-group row\">
+\t\t\t\t\t\t\t\t\t<div class=\"col-sm-9\">
+\t\t\t\t\t\t\t\t\t\t<input type=\"submit\" value=\"Kirim Pengaduan\" class=\"more active\">
+\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t</div>
 \t\t\t\t\t</div>
+
 \t\t\t\t</div>
+\t\t\t
+
 \t\t\t\t<div class=\"row page_margin_top_section\">
 \t\t\t\t\t<div class=\"column column_1_2\">
 \t\t\t\t\t\t<h4 class=\"box_header\">Sports</h4>
@@ -497,7 +100,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Struggling Nuremberg Sack Coach Verbeek\">
 \t\t\t\t\t\t\t\t\t<img src='";
-        // line 423
+        // line 74
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/330x242/image_06.jpg' alt='img'>
 \t\t\t\t\t\t\t\t</a>
@@ -519,7 +122,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Bayern Says Ties With Rivals Dortmund Have Frozen\">
 \t\t\t\t\t\t\t\t\t<img src='";
-        // line 442
+        // line 93
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_14.jpg' alt='img'>
 \t\t\t\t\t\t\t\t</a>
@@ -538,7 +141,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">
 \t\t\t\t\t\t\t\t\t<img src='";
-        // line 458
+        // line 109
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_12.jpg' alt='img'>
 \t\t\t\t\t\t\t\t</a>
@@ -563,7 +166,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"High Altitudes May Aid Weight Control\">
 \t\t\t\t\t\t\t\t\t<img src='";
-        // line 480
+        // line 131
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/330x242/image_07.jpg' alt='img'>
 \t\t\t\t\t\t\t\t</a>
@@ -585,7 +188,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Bayern Says Ties With Rivals Dortmund Have Frozen\">
 \t\t\t\t\t\t\t\t\t<img src='";
-        // line 499
+        // line 150
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_01.jpg' alt='img'>
 \t\t\t\t\t\t\t\t</a>
@@ -605,7 +208,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t\t\t<a href=\"index.html@page=post_video.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">
 \t\t\t\t\t\t\t\t\t<span class=\"icon small video\"></span>
 \t\t\t\t\t\t\t\t\t<img src='";
-        // line 516
+        // line 167
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_03.jpg' alt='img'>
 \t\t\t\t\t\t\t\t</a>
@@ -627,16 +230,13 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t</div>
 \t\t\t</div>
 \t\t\t<div class=\"column column_1_3\">
-\t\t\t\t<ul class=\"blog small_margin clearfix\">
-\t\t\t\t\t<div id=\"kopi-covid\"> </div>
-\t\t\t\t</ul>
-\t\t\t\t<h4 class=\"box_header\">Informasi</h4>
+\t\t\t\t<h4 class=\"box_header\">Recommended</h4>
 \t\t\t\t<ul class=\"blog small_margin clearfix\">
 \t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t<a href=\"index.html@page=post_gallery.html\" title=\"The Public Health Crisis Hiding in Our Food\">
 \t\t\t\t\t\t\t<span class=\"icon gallery\"></span>
 \t\t\t\t\t\t\t<img src='";
-        // line 544
+        // line 192
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/510x187/image_12.jpg' alt='img'>
 \t\t\t\t\t\t</a>
@@ -655,7 +255,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"The Public Health Crisis Hiding in Our Food\">
 \t\t\t\t\t\t\t<img src='";
-        // line 560
+        // line 208
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/510x187/image_01.jpg' alt='img'>
 \t\t\t\t\t\t</a>
@@ -674,7 +274,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"New Painkiller Rekindles Addiction Concerns\">
 \t\t\t\t\t\t\t<img src='";
-        // line 576
+        // line 224
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/510x187/image_14.jpg' alt='img'>
 \t\t\t\t\t\t</a>
@@ -698,7 +298,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t\t<a href=\"index.html@page=post_gallery.html\" title=\"Study Linking Illnes and Salt Leaves Researchers Doubtful\">
 \t\t\t\t\t\t\t\t<span class=\"icon small gallery\"></span>
 \t\t\t\t\t\t\t\t<img src='";
-        // line 597
+        // line 245
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_06.jpg' alt='img'>
 \t\t\t\t\t\t\t</a>
@@ -717,7 +317,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Syrian Civilians Trapped For Months Continue To Be Evacuated\">
 \t\t\t\t\t\t\t\t<img src='";
-        // line 613
+        // line 261
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_12.jpg' alt='img'>
 \t\t\t\t\t\t\t</a>
@@ -736,7 +336,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">
 \t\t\t\t\t\t\t\t<img src='";
-        // line 629
+        // line 277
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_02.jpg' alt='img'>
 \t\t\t\t\t\t\t</a>
@@ -755,7 +355,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Nuclear Fusion Closer to Becoming a Reality\">
 \t\t\t\t\t\t\t\t<img src='";
-        // line 645
+        // line 293
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_13.jpg' alt='img'>
 \t\t\t\t\t\t\t</a>
@@ -793,7 +393,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t<a href=\"index.html@page=post_quote.html\" title=\"Nuclear Fusion Closer to Becoming a Reality\">
 \t\t\t\t\t\t\t\t\t<img src='";
-        // line 680
+        // line 328
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/510x187/image_12.jpg' alt='img'>
 \t\t\t\t\t\t\t\t</a>
@@ -849,7 +449,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Nuclear Fusion Closer to Becoming a Reality\">
 \t\t\t\t\t\t\t\t\t<img src='";
-        // line 733
+        // line 381
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/510x187/image_02.jpg' alt='img'>
 \t\t\t\t\t\t\t\t</a>
@@ -906,7 +506,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t<li class=\"author\">
 \t\t\t\t\t\t<a class=\"thumb\" href=\"index.html@page=author.html\" title=\"Debora Hilton\">
 \t\t\t\t\t\t\t<img src='";
-        // line 787
+        // line 435
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/Team_100x100/image_01.jpg' alt='img'>
 \t\t\t\t\t\t\t<span class=\"number animated_element\" data-value=\"34\"></span>
@@ -919,7 +519,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t<li class=\"author\">
 \t\t\t\t\t\t<a class=\"thumb\" href=\"index.html@page=author.html\" title=\"Anna Shubina\">
 \t\t\t\t\t\t\t<img src='";
-        // line 797
+        // line 445
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/Team_100x100/image_02.jpg' alt='img'>
 \t\t\t\t\t\t\t<span class=\"number animated_element\" data-value=\"25\"></span>
@@ -932,7 +532,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t<li class=\"author\">
 \t\t\t\t\t\t<a class=\"thumb\" href=\"index.html@page=author.html\" title=\"Liam Holden\">
 \t\t\t\t\t\t\t<img src='";
-        // line 807
+        // line 455
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/Team_100x100/image_03.jpg' alt='img'>
 \t\t\t\t\t\t\t<span class=\"number animated_element\" data-value=\"9\"></span>
@@ -945,7 +545,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t<li class=\"author\">
 \t\t\t\t\t\t<a class=\"thumb\" href=\"index.html@page=author.html\" title=\"Heather Dale\">
 \t\t\t\t\t\t\t<img src='";
-        // line 817
+        // line 465
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/Team_100x100/image_04.jpg' alt='img'>
 \t\t\t\t\t\t\t<span class=\"number animated_element\" data-value=\"2\"></span>
@@ -961,7 +561,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Study Linking Illnes and Salt Leaves Researchers Doubtful\">
 \t\t\t\t\t\t\t<img src='";
-        // line 830
+        // line 478
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_09.jpg' alt='img'>
 \t\t\t\t\t\t</a>
@@ -980,7 +580,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Syrian Civilians Trapped For Months Continue To Be Evacuated\">
 \t\t\t\t\t\t\t<img src='";
-        // line 846
+        // line 494
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_12.jpg' alt='img'>
 \t\t\t\t\t\t</a>
@@ -999,7 +599,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t<a href=\"index.html@page=post_quote.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">
 \t\t\t\t\t\t\t<img src='";
-        // line 862
+        // line 510
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_02.jpg' alt='img'>
 \t\t\t\t\t\t</a>
@@ -1019,7 +619,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t<a href=\"index.html@page=post_gallery.html\" title=\"Nuclear Fusion Closer to Becoming a Reality\">
 \t\t\t\t\t\t\t<span class=\"icon small gallery\"></span>
 \t\t\t\t\t\t\t<img src='";
-        // line 879
+        // line 527
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_01.jpg' alt='img'>
 \t\t\t\t\t\t</a>
@@ -1044,7 +644,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 
     public function getTemplateName()
     {
-        return "users/index.html";
+        return "users/pengaduan/index.html";
     }
 
     public function isTraitable()
@@ -1054,425 +654,76 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 
     public function getDebugInfo()
     {
-        return array (  1023 => 879,  1003 => 862,  984 => 846,  965 => 830,  949 => 817,  936 => 807,  923 => 797,  910 => 787,  853 => 733,  797 => 680,  759 => 645,  740 => 629,  721 => 613,  702 => 597,  678 => 576,  659 => 560,  640 => 544,  609 => 516,  589 => 499,  567 => 480,  542 => 458,  523 => 442,  501 => 423,  477 => 402,  462 => 390,  447 => 378,  432 => 366,  411 => 348,  396 => 336,  381 => 324,  366 => 312,  345 => 294,  330 => 282,  315 => 270,  300 => 258,  253 => 214,  233 => 197,  213 => 180,  194 => 164,  30 => 2,  11 => 1,);
+        return array (  623 => 527,  603 => 510,  584 => 494,  565 => 478,  549 => 465,  536 => 455,  523 => 445,  510 => 435,  453 => 381,  397 => 328,  359 => 293,  340 => 277,  321 => 261,  302 => 245,  278 => 224,  259 => 208,  240 => 192,  212 => 167,  192 => 150,  170 => 131,  145 => 109,  126 => 93,  104 => 74,  30 => 2,  11 => 1,);
     }
 }
 /* {% extends "users/layout.html" %} {% block content %}*/
 /* <div class="page_layout page_margin_top clearfix">*/
 /* 		<div class="row">*/
 /* 			<div class="column column_2_3">*/
-/* 				<h4 class="box_header">Latest Posts</h4>*/
-/* 				<div class="row">*/
-/* 					<ul class="blog column column_1_2">*/
-/* 						<li class="post">*/
-/* 							<a href="index.html@page=post.html" title="Nuclear Fusion Closer to Becoming a Reality">*/
-/* 								<img src='https://humas.polri.go.id/wp-content/uploads/2020/06/IMG-20200601-WA0188.jpg' alt='img'>*/
-/* 							</a>*/
-/* 							<h2 class="with_number">*/
-/* 								<a href="index.html@page=post.html" title="Nuclear Fusion Closer to Becoming a Reality">Nuclear Fusion Closer to Becoming a Reality</a>*/
-/* 								<a class="comments_number" href="index.html@page=post.html#comments_list" title="2 comments">2<span class="arrow_comments"></span></a>*/
-/* 							</h2>*/
-/* 							<ul class="post_details">*/
-/* 								<li class="category"><a href="index.html@page=category&amp;cat=world.html" title="WORLD">WORLD</a></li>*/
-/* 								<li class="date">*/
-/* 									10:11 PM, Feb 02*/
-/* 								</li>*/
-/* 							</ul>*/
-/* 							<p>Maecenas mauris elementum, est morbi interdum cursus at elite imperdiet libero. Proin odios dapibus integer an nulla augue pharetra cursus.</p>*/
-/* 							<a class="read_more" href="index.html@page=post.html" title="Read more"><span class="arrow"></span><span>READ MORE</span></a>*/
-/* 						</li>*/
-/* 						<li class="post">*/
-/* 							<a href="index.html@page=post_quote.html" title="High Altitudes May Aid Weight Control">*/
-/* 								<img src='https://humas.polri.go.id/wp-content/uploads/2020/12/10.jpeg' alt='img'>*/
-/* 							</a>*/
-/* 							<h2 class="with_number">*/
-/* 								<a href="index.html@page=post_quote.html" title="High Altitudes May Aid Weight Control">High Altitudes May Aid Weight Control</a>*/
-/* 								<a class="comments_number" href="index.html@page=post.html#comments_list" title="2 comments">2<span class="arrow_comments"></span></a>*/
-/* 							</h2>*/
-/* 							<ul class="post_details">*/
-/* 								<li class="category"><a href="index.html@page=category&amp;cat=health.html" title="HEALTH">HEALTH</a></li>*/
-/* 								<li class="date">*/
-/* 									10:11 PM, Feb 02*/
-/* 								</li>*/
-/* 							</ul>*/
-/* 							<p>Maecenas mauris elementum, est morbi interdum cursus at elite imperdiet libero. Proin odios dapibus integer an nulla augue pharetra cursus.</p>*/
-/* 							<a class="read_more" href="index.html@page=post_quote.html" title="Read more"><span class="arrow"></span><span>READ MORE</span></a>*/
-/* 						</li>*/
-/* 					</ul>*/
-/* 					<ul class="blog column column_1_2">*/
-/* 						<li class="post">*/
-/* 							<a href="index.html@page=post.html" title="Built on Brotherhood, Club Lives Up to Name">*/
-/* 								<img src='https://humas.polri.go.id/wp-content/uploads/2020/08/19-3.jpg' alt='img'>*/
-/* 							</a>*/
-/* 							<h2 class="with_number">*/
-/* 								<a href="index.html@page=post.html" title="Built on Brotherhood, Club Lives Up to Name">Built on Brotherhood, Club Lives Up to Name</a>*/
-/* 								<a class="comments_number" href="index.html@page=post.html#comments_list" title="2 comments">2<span class="arrow_comments"></span></a>*/
-/* 							</h2>*/
-/* 							<ul class="post_details">*/
-/* 								<li class="category"><a href="index.html@page=category&amp;cat=science.html" title="SCIENCE">SCIENCE</a></li>*/
-/* 								<li class="date">*/
-/* 									10:11 PM, Feb 02*/
-/* 								</li>*/
-/* 							</ul>*/
-/* 							<p>Maecenas mauris elementum, est morbi interdum cursus at elite imperdiet libero. Proin odios dapibus integer an nulla augue pharetra cursus.</p>*/
-/* 							<a class="read_more" href="index.html@page=post.html" title="Read more"><span class="arrow"></span><span>READ MORE</span></a>*/
-/* 						</li>*/
-/* 						<li class="post">*/
-/* 							<a href="index.html@page=post_video.html" title="Struggling Nuremberg Sack Coach Verbeek">*/
-/* 								<span class="icon video"></span>*/
-/* 								<img src='https://humas.polri.go.id/wp-content/uploads/2020/07/SMDNG-768x576.jpg' alt='img'>*/
-/* 							</a>*/
-/* 							<h2 class="with_number">*/
-/* 								<a href="index.html@page=post_video.html" title="Struggling Nuremberg Sack Coach Verbeek">Struggling Nuremberg Sack Coach Verbeek</a>*/
-/* 								<a class="comments_number" href="index.html@page=post_video.html#comments_list" title="2 comments">2<span class="arrow_comments"></span></a>*/
-/* 							</h2>*/
-/* 							<ul class="post_details">*/
-/* 								<li class="category"><a href="index.html@page=category&amp;cat=sports.html" title="SPORTS">SPORTS</a></li>*/
-/* 								<li class="date">*/
-/* 									10:11 PM, Feb 02*/
-/* 								</li>*/
-/* 							</ul>*/
-/* 							<p>Maecenas mauris elementum, est morbi interdum cursus at elite imperdiet libero. Proin odios dapibus integer an nulla augue pharetra cursus.</p>*/
-/* 							<a class="read_more" href="index.html@page=post_video.html" title="Read more"><span class="arrow"></span><span>READ MORE</span></a>*/
-/* 						</li>*/
-/* 					</ul>*/
-/* 				</div>*/
-/* 				<div class="row page_margin_top_section">*/
-/* 					<h4 class="box_header">Posts Carousel</h4>*/
-/* 					<div class="horizontal_carousel_container page_margin_top">*/
-/* 						<ul class="blog horizontal_carousel autoplay-1 scroll-1 navigation-1 easing-easeInOutQuint duration-750">*/
-/* 							<li class="post">*/
-/* 								<a href="index.html@page=post.html" title="New Painkiller Rekindles Addiction Concerns">*/
-/* 									<img src='https://humas.polri.go.id/wp-content/uploads/2020/06/IMG-20200611-WA0249-1024x682.jpg' alt='img'>*/
-/* 								</a>*/
-/* 								<h5><a href="index.html@page=post.html" title="New Painkiller Rekindles Addiction Concerns">New Painkiller Rekindles Addiction Concerns</a></h5>*/
-/* 								<ul class="post_details simple">*/
-/* 									<li class="category"><a href="index.html@page=category&amp;cat=health.html" title="HEALTH">HEALTH</a></li>*/
-/* 									<li class="date">*/
-/* 										10:11 PM, Feb 02*/
-/* 									</li>*/
-/* 								</ul>*/
-/* 							</li>*/
-/* 							<li class="post">*/
-/* 								<a href="index.html@page=post_soundcloud.html" title="High Altitudes May Aid Weight Control">*/
-/* 									<img src='https://humas.polri.go.id/wp-content/uploads/2020/06/IMG-20200603-WA0191-1024x498.jpg' alt='img'>*/
-/* 								</a>*/
-/* 								<h5><a href="index.html@page=post_soundcloud.html" title="High Altitudes May Aid Weight Control">High Altitudes May Aid Weight Control</a></h5>*/
-/* 								<ul class="post_details simple">*/
-/* 									<li class="category"><a href="index.html@page=category&amp;cat=health.html" title="HEALTH">HEALTH</a></li>*/
-/* 									<li class="date">*/
-/* 										10:11 PM, Feb 02*/
-/* 									</li>*/
-/* 								</ul>*/
-/* 							</li>*/
-/* 							<li class="post">*/
-/* 								<a href="index.html@page=post_gallery.html" title="Built on Brotherhood, Club Lives Up to Name">*/
-/* 									<span class="icon gallery"><!--<span class="info">999</span>--></span>*/
-/* 									<img src='https://humas.polri.go.id/wp-content/uploads/2020/04/SMD-10-640x480.jpg' alt='img'>*/
-/* 								</a>*/
-/* 								<h5><a href="index.html@page=post_gallery.html" title="Built on Brotherhood, Club Lives Up to Name">Built on Brotherhood, Club Lives Up to Name</a></h5>*/
-/* 								<ul class="post_details simple">*/
-/* 									<li class="category"><a href="index.html@page=category&amp;cat=health.html" title="HEALTH">HEALTH</a></li>*/
-/* 									<li class="date">*/
-/* 										10:11 PM, Feb 02*/
-/* 									</li>*/
-/* 								</ul>*/
-/* 							</li>*/
-/* 							<li class="post first">*/
-/* 								<a href="index.html@page=post_small_image.html" title="Built on Brotherhood, Club Lives Up to Name">*/
-/* 									<img src='https://humas.polri.go.id/wp-content/uploads/2020/04/IMG-20200419-WA0428-1024x672.jpg' alt='img'>*/
-/* 								</a>*/
-/* 								<h5><a href="index.html@page=post_small_image.html" title="Built on Brotherhood, Club Lives Up to Name">Built on Brotherhood, Club Lives Up to Name</a></h5>*/
-/* 								<ul class="post_details simple">*/
-/* 									<li class="category"><a href="index.html@page=category&amp;cat=health.html" title="HEALTH">HEALTH</a></li>*/
-/* 									<li class="date">*/
-/* 										10:11 PM, Feb 02*/
-/* 									</li>*/
-/* 								</ul>*/
-/* 							</li>*/
-/* 						</ul>*/
-/* 					</div>*/
-/* 				</div>*/
-/* 				<div class="row page_margin_top_section">*/
-/* 					<h4 class="box_header">Latest From Health</h4>*/
+/* 				<h4 class="box_header">Isi Formulir Pengaduan</h4>*/
+/* 				<div class="card-block">*/
 /* 					<div class="row">*/
-/* 						<ul class="blog column column_1_2">*/
-/* 							<li class="post">*/
-/* 								<a href="index.html@page=post_gallery.html" title="High Altitudes May Aid Weight Control">*/
-/* 									<span class="icon gallery"></span>*/
-/* 									<img src='https://humas.polri.go.id/wp-content/uploads/2020/06/IMG-20200603-WA0191-1024x498.jpg' alt='img'>*/
-/* 								</a>*/
-/* 								<h2 class="with_number">*/
-/* 									<a href="index.html@page=post_gallery.html" title="High Altitudes May Aid Weight Control">High Altitudes May Aid Weight Control</a>*/
-/* 									<a class="comments_number" href="index.html@page=post_gallery.html#comments_list" title="2 comments">2<span class="arrow_comments"></span></a>*/
-/* 								</h2>*/
-/* 								<ul class="post_details">*/
-/* 									<li class="category"><a href="index.html@page=category&amp;cat=world.html" title="WORLD">WORLD</a></li>*/
-/* 									<li class="date">*/
-/* 										10:11 PM, Feb 02*/
-/* 									</li>*/
-/* 								</ul>*/
-/* 								<p>Politicans have looked weak in the face of such natural disaster, with many facing criticism from local residents for doing little more than turning up as flood tourists at the side of disasters.</p>*/
-/* 								<a class="read_more" href="index.html@page=post_gallery.html" title="Read more"><span class="arrow"></span><span>READ MORE</span></a>*/
-/* 							</li>*/
-/* 						</ul>*/
-/* 						<div class="column column_1_2">*/
-/* 							<ul class="blog small clearfix">*/
-/* 								<li class="post">*/
-/* 									<a href="index.html@page=post.html" title="Study Linking Illnes and Salt Leaves Researchers Doubtful">*/
-/* 										<img src='{{baseURL}}/assets/users/images/samples/100x100/image_02.jpg' alt='img'>*/
-/* 									</a>*/
-/* 									<div class="post_content">*/
-/* 										<h5>*/
-/* 											<a href="index.html@page=post.html" title="Study Linking Illnes and Salt Leaves Researchers Doubtful">Study Linking Illnes and Salt Leaves Researchers Doubtful</a>*/
-/* 										</h5>*/
-/* 										<ul class="post_details simple">*/
-/* 											<li class="category"><a href="index.html@page=category&amp;cat=health.html" title="HEALTH">HEALTH</a></li>*/
-/* 											<li class="date">*/
-/* 												10:11 PM, Feb 02*/
-/* 											</li>*/
-/* 										</ul>*/
+/* 						<div class="col-md-12">*/
+/* 							<div class="form-group row">*/
+/* 									<label class="col-sm-3 col-form-label">Nama</label>*/
+/* 									<div class="col-sm-9">*/
+/* 											<input type="text" class="form-control">*/
 /* 									</div>*/
-/* 								</li>*/
-/* 								<li class="post">*/
-/* 									<a href="index.html@page=post.html" title="Seeking the Right Chemistry, Drug Makers Hunt for Mergers">*/
-/* 										<img src='{{baseURL}}/assets/users/images/samples/100x100/image_13.jpg' alt='img'>*/
-/* 									</a>*/
-/* 									<div class="post_content">*/
-/* 										<h5>*/
-/* 											<a href="index.html@page=post.html" title="Seeking the Right Chemistry, Drug Makers Hunt for Mergers">Seeking the Right Chemistry, Drug Makers Hunt for Mergers</a>*/
-/* 										</h5>*/
-/* 										<ul class="post_details simple">*/
-/* 											<li class="category"><a href="index.html@page=category&amp;cat=health.html" title="HEALTH">HEALTH</a></li>*/
-/* 											<li class="date">*/
-/* 												10:11 PM, Feb 02*/
-/* 											</li>*/
-/* 										</ul>*/
-/* 									</div>*/
-/* 								</li>*/
-/* 								<li class="post">*/
-/* 									<a href="index.html@page=post_review.html" title="Seeking the Right Chemistry, Drug Makers Hunt for Mergers">*/
-/* 										<span class="icon small review"></span>*/
-/* 										<img src='{{baseURL}}/assets/users/images/samples/100x100/image_01.jpg' alt='img'>*/
-/* 									</a>*/
-/* 									<div class="post_content">*/
-/* 										<h5>*/
-/* 											<a href="index.html@page=post_review.html" title="Seeking the Right Chemistry, Drug Makers Hunt for Mergers">The Public Health Crisis Hiding in Our Food</a>*/
-/* 										</h5>*/
-/* 										<ul class="post_details simple">*/
-/* 											<li class="category"><a href="index.html@page=category&amp;cat=health.html" title="HEALTH">HEALTH</a></li>*/
-/* 											<li class="date">*/
-/* 												10:11 PM, Feb 02*/
-/* 											</li>*/
-/* 										</ul>*/
-/* 									</div>*/
-/* 								</li>*/
-/* 								<li class="post">*/
-/* 									<a href="index.html@page=post_gallery.html" title="New Painkiller Rekindles Addiction Concerns">*/
-/* 										<span class="icon small gallery"></span>*/
-/* 										<img src='{{baseURL}}/assets/users/images/samples/100x100/image_03.jpg' alt='img'>*/
-/* 									</a>*/
-/* 									<div class="post_content">*/
-/* 										<h5>*/
-/* 											<a href="index.html@page=post_gallery.html" title="New Painkiller Rekindles Addiction Concerns">New Painkiller Rekindles Addiction Concerns</a>*/
-/* 										</h5>*/
-/* 										<ul class="post_details simple">*/
-/* 											<li class="category"><a href="index.html@page=category&amp;cat=health.html" title="HEALTH">HEALTH</a></li>*/
-/* 											<li class="date">*/
-/* 												10:11 PM, Feb 02*/
-/* 											</li>*/
-/* 										</ul>*/
-/* 									</div>*/
-/* 								</li>*/
-/* 							</ul>*/
-/* 							<a class="more page_margin_top" href="index.html@page=home.html#">MORE FROM HEALTH</a>*/
-/* 						</div>*/
-/* 					</div>*/
-/* 				</div>*/
-/* 				<div class="row page_margin_top_section">*/
-/* 					<h4 class="box_header">Top Posts</h4>*/
-/* 					<div class="tabs no_scroll margin_top_10 clearfix">*/
-/* 						<ul class="tabs_navigation small clearfix">*/
-/* 							<li>*/
-/* 								<a href="index.html@page=home.html#most-recent" title="Most Recent">*/
-/* 									Most Recent*/
-/* 								</a>*/
-/* 							</li>*/
-/* 							<li>*/
-/* 								<a href="index.html@page=home.html#most-read" title="Most Read">*/
-/* 									Most Read*/
-/* 								</a>*/
-/* 							</li>*/
-/* 							<li>*/
-/* 								<a href="index.html@page=home.html#most-commented" title="Most Commented">*/
-/* 									Most Commented*/
-/* 								</a>*/
-/* 							</li>*/
-/* 						</ul>*/
-/* 						<div id="most-recent">*/
-/* 							<div class="horizontal_carousel_container page_margin_top">*/
-/* 								<ul class="blog horizontal_carousel page_margin_top autoplay-0 scroll-1 navigation-1 easing-easeInOutQuint duration-750">*/
-/* 									<li class="post">*/
-/* 										<a href="index.html@page=post.html" title="High Altitudes May Aid Weight Control">*/
-/* 											<img src='{{baseURL}}/assets/users/images/samples/330x242/image_11.jpg' alt='img'>*/
-/* 										</a>*/
-/* 										<h5><span class="number">1.</span><a href="index.html@page=post.html" title="High Altitudes May Aid Weight Control">High Altitudes May Aid Weight Control</a></h5>*/
-/* 										<ul class="post_details simple">*/
-/* 											<li class="category"><a href="index.html@page=category&amp;cat=health.html" title="HEALTH">HEALTH</a></li>*/
-/* 											<li class="date">*/
-/* 												10:11 PM, Feb 02*/
-/* 											</li>*/
-/* 										</ul>*/
-/* 									</li>*/
-/* 									<li class="post">*/
-/* 										<a href="index.html@page=post.html" title="Climate Change Debate While Britain Floods">*/
-/* 											<img src='{{baseURL}}/assets/users/images/samples/330x242/image_14.jpg' alt='img'>*/
-/* 										</a>*/
-/* 										<h5><span class="number">2.</span><a href="index.html@page=post.html" title="Climate Change Debate While Britain Floods">Climate Change Debate While Britain Floods</a></h5>*/
-/* 										<ul class="post_details simple">*/
-/* 											<li class="category"><a href="index.html@page=category&amp;cat=world.html" title="WORLD">WORLD</a></li>*/
-/* 											<li class="date">*/
-/* 												10:11 PM, Feb 02*/
-/* 											</li>*/
-/* 										</ul>*/
-/* 									</li>*/
-/* 									<li class="post">*/
-/* 										<a href="index.html@page=post_small_image.html" title="Escape From Planet Earth: The Movie">*/
-/* 											<img src='{{baseURL}}/assets/users/images/samples/330x242/image_02.jpg' alt='img'>*/
-/* 										</a>*/
-/* 										<h5><span class="number">3.</span><a href="index.html@page=post_small_image.html" title="Escape From Planet Earth: The Movie">Escape From Planet Earth: The Movie</a></h5>*/
-/* 										<ul class="post_details simple">*/
-/* 											<li class="category"><a href="index.html@page=category&amp;cat=lifestyle.html" title="LIFESTYLE">LIFESTYLE</a></li>*/
-/* 											<li class="date">*/
-/* 												10:11 PM, Feb 02*/
-/* 											</li>*/
-/* 										</ul>*/
-/* 									</li>*/
-/* 									<li class="post first">*/
-/* 										<a href="index.html@page=post.html" title="Built on Brotherhood, Club Lives Up to Name">*/
-/* 											<img src='{{baseURL}}/assets/users/images/samples/330x242/image_09.jpg' alt='img'>*/
-/* 										</a>*/
-/* 										<h5><span class="number">4.</span><a href="index.html@page=post.html" title="Built on Brotherhood, Club Lives Up to Name">Built on Brotherhood, Club Lives Up to Name</a></h5>*/
-/* 										<ul class="post_details simple">*/
-/* 											<li class="category"><a href="index.html@page=category&amp;cat=sports.html" title="SPORTS">SPORTS</a></li>*/
-/* 											<li class="date">*/
-/* 												10:11 PM, Feb 02*/
-/* 											</li>*/
-/* 										</ul>*/
-/* 									</li>*/
-/* 								</ul>*/
 /* 							</div>*/
 /* 						</div>*/
-/* 						<div id="most-read">*/
-/* 							<div class="horizontal_carousel_container page_margin_top">*/
-/* 								<ul class="blog horizontal_carousel page_margin_top autoplay-0 scroll-1 navigation-1 easing-easeInOutQuint duration-750">*/
-/* 									<li class="post">*/
-/* 										<a href="index.html@page=post.html" title="The Public Health Crisis Hiding in Our Food">*/
-/* 											<img src='{{baseURL}}/assets/users/images/samples/330x242/image_10.jpg' alt='img'>*/
-/* 										</a>*/
-/* 										<h5><span class="number">1.</span><a href="index.html@page=post.html" title="The Public Health Crisis Hiding in Our Food">The Public Health Crisis Hiding in Our Food</a></h5>*/
-/* 										<ul class="post_details simple">*/
-/* 											<li class="category"><a href="index.html@page=category&amp;cat=health.html" title="HEALTH">HEALTH</a></li>*/
-/* 											<li class="date">*/
-/* 												10:11 PM, Feb 02*/
-/* 											</li>*/
-/* 										</ul>*/
-/* 									</li>*/
-/* 									<li class="post">*/
-/* 										<a href="index.html@page=post.html" title="Drug Makers Hunt for Mergers">*/
-/* 											<img src='{{baseURL}}/assets/users/images/samples/330x242/image_07.jpg' alt='img'>*/
-/* 										</a>*/
-/* 										<h5><span class="number">2.</span><a href="index.html@page=post.html" title="Drug Makers Hunt for Mergers">Drug Makers Hunt for Mergers</a></h5>*/
-/* 										<ul class="post_details simple">*/
-/* 											<li class="category"><a href="index.html@page=category&amp;cat=world.html" title="WORLD">WORLD</a></li>*/
-/* 											<li class="date">*/
-/* 												10:11 PM, Feb 02*/
-/* 											</li>*/
-/* 										</ul>*/
-/* 									</li>*/
-/* 									<li class="post">*/
-/* 										<a href="index.html@page=post.html" title="Escape From Planet Earth: The Movie">*/
-/* 											<img src='{{baseURL}}/assets/users/images/samples/330x242/image_13.jpg' alt='img'>*/
-/* 										</a>*/
-/* 										<h5><span class="number">3.</span><a href="index.html@page=post.html" title="Escape From Planet Earth: The Movie">Escape From Planet Earth: The Movie</a></h5>*/
-/* 										<ul class="post_details simple">*/
-/* 											<li class="category"><a href="index.html@page=category&amp;cat=lifestyle.html" title="LIFESTYLE">LIFESTYLE</a></li>*/
-/* 											<li class="date">*/
-/* 												10:11 PM, Feb 02*/
-/* 											</li>*/
-/* 										</ul>*/
-/* 									</li>*/
-/* 									<li class="post first">*/
-/* 										<a href="index.html@page=post_soundcloud.html" title="High Altitudes May Aid Weight Control">*/
-/* 											<img src='{{baseURL}}/assets/users/images/samples/330x242/image_05.jpg' alt='img'>*/
-/* 										</a>*/
-/* 										<h5><span class="number">4.</span><a href="index.html@page=post_soundcloud.html" title="High Altitudes May Aid Weight Control">High Altitudes May Aid Weight Control</a></h5>*/
-/* 										<ul class="post_details simple">*/
-/* 											<li class="category"><a href="index.html@page=category&amp;cat=sports.html" title="SPORTS">SPORTS</a></li>*/
-/* 											<li class="date">*/
-/* 												10:11 PM, Feb 02*/
-/* 											</li>*/
-/* 										</ul>*/
-/* 									</li>*/
-/* 								</ul>*/
+/* 						<div class="col-md-12">*/
+/* 							<div class="form-group row">*/
+/* 									<label class="col-sm-3 col-form-label">Pekerjaan</label>*/
+/* 									<div class="col-sm-9">*/
+/* 											<input type="text" class="form-control">*/
+/* 									</div>*/
 /* 							</div>*/
 /* 						</div>*/
-/* 						<div id="most-commented">*/
-/* 							<div class="horizontal_carousel_container page_margin_top">*/
-/* 								<ul class="blog horizontal_carousel page_margin_top autoplay-0 scroll-1 navigation-1 easing-easeInOutQuint duration-750">*/
-/* 									<li class="post">*/
-/* 										<a href="index.html@page=post.html" title="Escape From Planet Earth: The Movie">*/
-/* 											<img src='{{baseURL}}/assets/users/images/samples/330x242/image_13.jpg' alt='img'>*/
-/* 										</a>*/
-/* 										<h5><span class="number">1.</span><a href="index.html@page=post.html" title="Escape From Planet Earth: The Movie">Escape From Planet Earth: The Movie</a></h5>*/
-/* 										<ul class="post_details simple">*/
-/* 											<li class="category"><a href="index.html@page=category&amp;cat=health.html" title="HEALTH">HEALTH</a></li>*/
-/* 											<li class="date">*/
-/* 												10:11 PM, Feb 02*/
-/* 											</li>*/
-/* 										</ul>*/
-/* 									</li>*/
-/* 									<li class="post">*/
-/* 										<a href="index.html@page=post.html" title="Struggling Nuremberg Sack Coach Verbeek">*/
-/* 											<img src='{{baseURL}}/assets/users/images/samples/330x242/image_06.jpg' alt='img'>*/
-/* 										</a>*/
-/* 										<h5><span class="number">2.</span><a href="index.html@page=post.html" title="Struggling Nuremberg Sack Coach Verbeek">Struggling Nuremberg Sack Coach Verbeek</a></h5>*/
-/* 										<ul class="post_details simple">*/
-/* 											<li class="category"><a href="index.html@page=category&amp;cat=world.html" title="WORLD">WORLD</a></li>*/
-/* 											<li class="date">*/
-/* 												10:11 PM, Feb 02*/
-/* 											</li>*/
-/* 										</ul>*/
-/* 									</li>*/
-/* 									<li class="post">*/
-/* 										<a href="index.html@page=post_small_image.html" title="Built on Brotherhood, Club Lives Up to Name">*/
-/* 											<img src='{{baseURL}}/assets/users/images/samples/330x242/image_03.jpg' alt='img'>*/
-/* 										</a>*/
-/* 										<h5><span class="number">3.</span><a href="index.html@page=post_small_image.html" title="Built on Brotherhood, Club Lives Up to Name">Built on Brotherhood, Club Lives Up to Name</a></h5>*/
-/* 										<ul class="post_details simple">*/
-/* 											<li class="category"><a href="index.html@page=category&amp;cat=lifestyle.html" title="LIFESTYLE">LIFESTYLE</a></li>*/
-/* 											<li class="date">*/
-/* 												10:11 PM, Feb 02*/
-/* 											</li>*/
-/* 										</ul>*/
-/* 									</li>*/
-/* 									<li class="post first">*/
-/* 										<a href="index.html@page=post.html" title="High Altitudes May Aid Weight Control">*/
-/* 											<img src='{{baseURL}}/assets/users/images/samples/330x242/image_05.jpg' alt='img'>*/
-/* 										</a>*/
-/* 										<h5><span class="number">4.</span><a href="index.html@page=post.html" title="High Altitudes May Aid Weight Control">High Altitudes May Aid Weight Control</a></h5>*/
-/* 										<ul class="post_details simple">*/
-/* 											<li class="category"><a href="index.html@page=category&amp;cat=sports.html" title="SPORTS">SPORTS</a></li>*/
-/* 											<li class="date">*/
-/* 												10:11 PM, Feb 02*/
-/* 											</li>*/
-/* 										</ul>*/
-/* 									</li>*/
-/* 								</ul>*/
+/* 						<div class="col-md-12">*/
+/* 							<div class="form-group row">*/
+/* 									<label class="col-sm-3 col-form-label">Alamat</label>*/
+/* 									<div class="col-sm-9">*/
+/* 											<input type="text" class="form-control">*/
+/* 									</div>*/
+/* 							</div>*/
+/* 						</div>*/
+/* 						<div class="col-md-12">*/
+/* 							<div class="form-group row">*/
+/* 									<label class="col-sm-3 col-form-label">Email</label>*/
+/* 									<div class="col-sm-9">*/
+/* 											<input type="text" class="form-control">*/
+/* 									</div>*/
+/* 							</div>*/
+/* 						</div>*/
+/* 						<div class="col-md-12">*/
+/* 							<div class="form-group row">*/
+/* 									<label class="col-sm-3 col-form-label">Nomor Telepon</label>*/
+/* 									<div class="col-sm-9">*/
+/* 											<input type="text" class="form-control">*/
+/* 									</div>*/
+/* 							</div>*/
+/* 						</div>*/
+/* 						<div class="col-md-12">*/
+/* 							<div class="form-group row">*/
+/* 									<label class="col-sm-3 col-form-label">Isi Pengaduan</label>*/
+/* 									<div class="col-sm-9">*/
+/* 											<textarea rows="5" cols="5" class="form-control" placeholder=""></textarea>*/
+/* 									</div>*/
+/* 							</div>*/
+/* 						</div>*/
+/* 						<div class="col-md-12">*/
+/* 							<div class="form-group row">*/
+/* 									<div class="col-sm-9">*/
+/* 										<input type="submit" value="Kirim Pengaduan" class="more active">*/
+/* 									</div>*/
 /* 							</div>*/
 /* 						</div>*/
 /* 					</div>*/
+/* */
 /* 				</div>*/
+/* 			*/
+/* */
 /* 				<div class="row page_margin_top_section">*/
 /* 					<div class="column column_1_2">*/
 /* 						<h4 class="box_header">Sports</h4>*/
@@ -1592,10 +843,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 /* 				</div>*/
 /* 			</div>*/
 /* 			<div class="column column_1_3">*/
-/* 				<ul class="blog small_margin clearfix">*/
-/* 					<div id="kopi-covid"> </div>*/
-/* 				</ul>*/
-/* 				<h4 class="box_header">Informasi</h4>*/
+/* 				<h4 class="box_header">Recommended</h4>*/
 /* 				<ul class="blog small_margin clearfix">*/
 /* 					<li class="post">*/
 /* 						<a href="index.html@page=post_gallery.html" title="The Public Health Crisis Hiding in Our Food">*/

@@ -20,9 +20,22 @@
 		<link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/users/style/animations.css">
 		<link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/users/style/responsive.css">
 		<link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/users/style/odometer-theme-default.css">
+		<link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/users/style/custom.css">
 				<!--<link rel="stylesheet" type="text/css" href="style/dark_skin.css">-->
 		<!--<link rel="stylesheet" type="text/css" href="style/high_contrast_skin.css">-->
 		<link rel="shortcut icon" href="{{baseURL}}/assets/users/images/favicon.ico">
+
+		<style>
+		.col-form-label {
+		    font-size: 14px;
+		}
+		.form-control {
+		    font-size: 14px;
+		    border-radius: 2px;
+		    border-width: 2px;
+		}
+
+		</style>
 	</head>
 	<!--<body class="image_1">
 	<body class="image_1 overlay">
@@ -53,9 +66,9 @@
 
 
 <div class="page">
+	{% if page == "home" %}
 	{% include "users/carousel.html" %}
-	<div class='slider_posts_list_container'>
-	</div>
+	{% endif %}
 	{% block content %} {% endblock %}
 
 </div>
@@ -225,4 +238,15 @@
 	</div>
 </div>
 	</body>
+	<script>
+  var f = document.createElement("iframe");
+  f.src = "https://kopi.dev/widget-covid-19/";
+  f.width = "100%";
+  f.height = 380;
+  f.scrolling = "no";
+  f.frameBorder = 0;
+  var rootEl = document.getElementById("kopi-covid");
+  console.log(rootEl);
+  rootEl.appendChild(f);
+</script>
 </html>
