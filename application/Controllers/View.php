@@ -66,7 +66,7 @@ class View extends \CodeIgniter\Controller
 			}
 	}
 
-	public function pengaduanusers()
+	public function kirimpengaduan()
 	{
 				helper('form');
 				return \Twig::instance()->display('users/pengaduan/index.html', $this->data);

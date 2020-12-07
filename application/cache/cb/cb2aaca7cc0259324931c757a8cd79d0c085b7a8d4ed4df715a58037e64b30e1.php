@@ -436,7 +436,7 @@ Mega Menu
 </li> -->
 <li class=\"submenu\">
 <a href=\"index.html@page=home_3.html#\" title=\"Post Formats\">
-UNIT SATUAN
+SATUAN FUNGSI
 </a>
 <ul>
 <li>
@@ -557,7 +557,7 @@ INFORMASI
 </ul>
 </li>
 <li class=\"\">
-\t<a href=\"/inputpengaduan\" title=\"Blog 2 columns\">
+\t<a href=\"/kirimpengaduan\" title=\"Blog 2 columns\">
 \t\tPENGADUAN
 \t</a>
 </li>
@@ -1314,7 +1314,7 @@ HUBUNGI KAMI
 /* </li> -->*/
 /* <li class="submenu">*/
 /* <a href="index.html@page=home_3.html#" title="Post Formats">*/
-/* UNIT SATUAN*/
+/* SATUAN FUNGSI*/
 /* </a>*/
 /* <ul>*/
 /* <li>*/
@@ -1435,7 +1435,7 @@ HUBUNGI KAMI
 /* </ul>*/
 /* </li>*/
 /* <li class="">*/
-/* 	<a href="/inputpengaduan" title="Blog 2 columns">*/
+/* 	<a href="/kirimpengaduan" title="Blog 2 columns">*/
 /* 		PENGADUAN*/
 /* 	</a>*/
 /* </li>*/
