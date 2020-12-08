@@ -19,7 +19,7 @@ class __TwigTemplate_9cf2be52d1d63f2267c6ebcea07046256903b856e14fcec907fb05033bf
         echo "<div class=\"menu_container clearfix style_5 sticky\">
 \t<nav>
 <ul class=\"sf-menu\">
-<li class=\"selected\">
+<li class=\"selected\" id=\"menu-home\">
 <a href=\"/home\" title=\"Home\">
 HOME
 </a>
@@ -556,11 +556,11 @@ INFORMASI
 </li>
 </ul>
 </li>
-<li class=\"\">
+<li class=\"\" id=\"menu-pengaduan\">
 \t<a href=\"";
         // line 542
         echo twig_escape_filter($this->env, (isset($context["baseUrl"]) ? $context["baseUrl"] : null), "html", null, true);
-        echo "/kirimpengaduan\" title=\"Blog 2 columns\">
+        echo "kirimpengaduan\" title=\"Blog 2 columns\">
 \t\tPENGADUAN
 \t</a>
 </li>
@@ -900,7 +900,7 @@ HUBUNGI KAMI
 /* <div class="menu_container clearfix style_5 sticky">*/
 /* 	<nav>*/
 /* <ul class="sf-menu">*/
-/* <li class="selected">*/
+/* <li class="selected" id="menu-home">*/
 /* <a href="/home" title="Home">*/
 /* HOME*/
 /* </a>*/
@@ -1437,8 +1437,8 @@ HUBUNGI KAMI
 /* </li>*/
 /* </ul>*/
 /* </li>*/
-/* <li class="">*/
-/* 	<a href="{{baseUrl}}/kirimpengaduan" title="Blog 2 columns">*/
+/* <li class="" id="menu-pengaduan">*/
+/* 	<a href="{{baseUrl}}kirimpengaduan" title="Blog 2 columns">*/
 /* 		PENGADUAN*/
 /* 	</a>*/
 /* </li>*/

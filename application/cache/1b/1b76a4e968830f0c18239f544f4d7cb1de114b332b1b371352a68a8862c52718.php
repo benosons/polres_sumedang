@@ -627,16 +627,17 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t</div>
 \t\t\t</div>
 \t\t\t<div class=\"column column_1_3\">
+
+\t\t\t\t<h4 class=\"box_header\">Informasi</h4>
 \t\t\t\t<ul class=\"blog small_margin clearfix\">
 \t\t\t\t\t<div id=\"kopi-covid\"> </div>
 \t\t\t\t</ul>
-\t\t\t\t<h4 class=\"box_header\">Informasi</h4>
 \t\t\t\t<ul class=\"blog small_margin clearfix\">
 \t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t<a href=\"index.html@page=post_gallery.html\" title=\"The Public Health Crisis Hiding in Our Food\">
 \t\t\t\t\t\t\t<span class=\"icon gallery\"></span>
 \t\t\t\t\t\t\t<img src='";
-        // line 544
+        // line 545
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/510x187/image_12.jpg' alt='img'>
 \t\t\t\t\t\t</a>
@@ -655,7 +656,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"The Public Health Crisis Hiding in Our Food\">
 \t\t\t\t\t\t\t<img src='";
-        // line 560
+        // line 561
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/510x187/image_01.jpg' alt='img'>
 \t\t\t\t\t\t</a>
@@ -674,7 +675,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"New Painkiller Rekindles Addiction Concerns\">
 \t\t\t\t\t\t\t<img src='";
-        // line 576
+        // line 577
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/510x187/image_14.jpg' alt='img'>
 \t\t\t\t\t\t</a>
@@ -698,7 +699,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t\t<a href=\"index.html@page=post_gallery.html\" title=\"Study Linking Illnes and Salt Leaves Researchers Doubtful\">
 \t\t\t\t\t\t\t\t<span class=\"icon small gallery\"></span>
 \t\t\t\t\t\t\t\t<img src='";
-        // line 597
+        // line 598
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_06.jpg' alt='img'>
 \t\t\t\t\t\t\t</a>
@@ -717,7 +718,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Syrian Civilians Trapped For Months Continue To Be Evacuated\">
 \t\t\t\t\t\t\t\t<img src='";
-        // line 613
+        // line 614
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_12.jpg' alt='img'>
 \t\t\t\t\t\t\t</a>
@@ -736,7 +737,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">
 \t\t\t\t\t\t\t\t<img src='";
-        // line 629
+        // line 630
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_02.jpg' alt='img'>
 \t\t\t\t\t\t\t</a>
@@ -755,7 +756,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Nuclear Fusion Closer to Becoming a Reality\">
 \t\t\t\t\t\t\t\t<img src='";
-        // line 645
+        // line 646
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_13.jpg' alt='img'>
 \t\t\t\t\t\t\t</a>
@@ -793,7 +794,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t<a href=\"index.html@page=post_quote.html\" title=\"Nuclear Fusion Closer to Becoming a Reality\">
 \t\t\t\t\t\t\t\t\t<img src='";
-        // line 680
+        // line 681
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/510x187/image_12.jpg' alt='img'>
 \t\t\t\t\t\t\t\t</a>
@@ -849,7 +850,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Nuclear Fusion Closer to Becoming a Reality\">
 \t\t\t\t\t\t\t\t\t<img src='";
-        // line 733
+        // line 734
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/510x187/image_02.jpg' alt='img'>
 \t\t\t\t\t\t\t\t</a>
@@ -906,7 +907,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t<li class=\"author\">
 \t\t\t\t\t\t<a class=\"thumb\" href=\"index.html@page=author.html\" title=\"Debora Hilton\">
 \t\t\t\t\t\t\t<img src='";
-        // line 787
+        // line 788
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/Team_100x100/image_01.jpg' alt='img'>
 \t\t\t\t\t\t\t<span class=\"number animated_element\" data-value=\"34\"></span>
@@ -919,7 +920,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t<li class=\"author\">
 \t\t\t\t\t\t<a class=\"thumb\" href=\"index.html@page=author.html\" title=\"Anna Shubina\">
 \t\t\t\t\t\t\t<img src='";
-        // line 797
+        // line 798
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/Team_100x100/image_02.jpg' alt='img'>
 \t\t\t\t\t\t\t<span class=\"number animated_element\" data-value=\"25\"></span>
@@ -932,7 +933,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t<li class=\"author\">
 \t\t\t\t\t\t<a class=\"thumb\" href=\"index.html@page=author.html\" title=\"Liam Holden\">
 \t\t\t\t\t\t\t<img src='";
-        // line 807
+        // line 808
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/Team_100x100/image_03.jpg' alt='img'>
 \t\t\t\t\t\t\t<span class=\"number animated_element\" data-value=\"9\"></span>
@@ -945,7 +946,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t<li class=\"author\">
 \t\t\t\t\t\t<a class=\"thumb\" href=\"index.html@page=author.html\" title=\"Heather Dale\">
 \t\t\t\t\t\t\t<img src='";
-        // line 817
+        // line 818
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/Team_100x100/image_04.jpg' alt='img'>
 \t\t\t\t\t\t\t<span class=\"number animated_element\" data-value=\"2\"></span>
@@ -961,7 +962,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Study Linking Illnes and Salt Leaves Researchers Doubtful\">
 \t\t\t\t\t\t\t<img src='";
-        // line 830
+        // line 831
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_09.jpg' alt='img'>
 \t\t\t\t\t\t</a>
@@ -980,7 +981,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Syrian Civilians Trapped For Months Continue To Be Evacuated\">
 \t\t\t\t\t\t\t<img src='";
-        // line 846
+        // line 847
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_12.jpg' alt='img'>
 \t\t\t\t\t\t</a>
@@ -999,7 +1000,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t<a href=\"index.html@page=post_quote.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">
 \t\t\t\t\t\t\t<img src='";
-        // line 862
+        // line 863
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_02.jpg' alt='img'>
 \t\t\t\t\t\t</a>
@@ -1019,7 +1020,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t<a href=\"index.html@page=post_gallery.html\" title=\"Nuclear Fusion Closer to Becoming a Reality\">
 \t\t\t\t\t\t\t<span class=\"icon small gallery\"></span>
 \t\t\t\t\t\t\t<img src='";
-        // line 879
+        // line 880
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_01.jpg' alt='img'>
 \t\t\t\t\t\t</a>
@@ -1039,7 +1040,12 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t<a class=\"more page_margin_top\" href=\"index.html@page=home.html#\">MORE FROM SCIENCE</a>
 \t\t\t</div>
 \t\t</div>
-\t</div>";
+\t</div>
+
+\t<script src=\"";
+        // line 900
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/action-js/users/home.js\"></script>";
     }
 
     public function getTemplateName()
@@ -1054,7 +1060,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 
     public function getDebugInfo()
     {
-        return array (  1023 => 879,  1003 => 862,  984 => 846,  965 => 830,  949 => 817,  936 => 807,  923 => 797,  910 => 787,  853 => 733,  797 => 680,  759 => 645,  740 => 629,  721 => 613,  702 => 597,  678 => 576,  659 => 560,  640 => 544,  609 => 516,  589 => 499,  567 => 480,  542 => 458,  523 => 442,  501 => 423,  477 => 402,  462 => 390,  447 => 378,  432 => 366,  411 => 348,  396 => 336,  381 => 324,  366 => 312,  345 => 294,  330 => 282,  315 => 270,  300 => 258,  253 => 214,  233 => 197,  213 => 180,  194 => 164,  30 => 2,  11 => 1,);
+        return array (  1047 => 900,  1024 => 880,  1004 => 863,  985 => 847,  966 => 831,  950 => 818,  937 => 808,  924 => 798,  911 => 788,  854 => 734,  798 => 681,  760 => 646,  741 => 630,  722 => 614,  703 => 598,  679 => 577,  660 => 561,  641 => 545,  609 => 516,  589 => 499,  567 => 480,  542 => 458,  523 => 442,  501 => 423,  477 => 402,  462 => 390,  447 => 378,  432 => 366,  411 => 348,  396 => 336,  381 => 324,  366 => 312,  345 => 294,  330 => 282,  315 => 270,  300 => 258,  253 => 214,  233 => 197,  213 => 180,  194 => 164,  30 => 2,  11 => 1,);
     }
 }
 /* {% extends "users/layout.html" %} {% block content %}*/
@@ -1592,10 +1598,11 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 /* 				</div>*/
 /* 			</div>*/
 /* 			<div class="column column_1_3">*/
+/* */
+/* 				<h4 class="box_header">Informasi</h4>*/
 /* 				<ul class="blog small_margin clearfix">*/
 /* 					<div id="kopi-covid"> </div>*/
 /* 				</ul>*/
-/* 				<h4 class="box_header">Informasi</h4>*/
 /* 				<ul class="blog small_margin clearfix">*/
 /* 					<li class="post">*/
 /* 						<a href="index.html@page=post_gallery.html" title="The Public Health Crisis Hiding in Our Food">*/
@@ -1954,5 +1961,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 /* 			</div>*/
 /* 		</div>*/
 /* 	</div>*/
+/* */
+/* 	<script src="{{baseURL}}/assets/action-js/users/home.js"></script>*/
 /* {% endblock %}*/
 /* */

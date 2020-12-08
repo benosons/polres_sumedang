@@ -35,6 +35,34 @@ class __TwigTemplate_cbc5f55c8ac1bff0082197492b03ba962b8a982951be12a23e5382e1cf8
 \t\t\t\t\t<div class=\"row\">
 \t\t\t\t\t\t<div class=\"col-md-12\">
 \t\t\t\t\t\t\t<div class=\"form-group row\">
+\t\t\t\t\t\t\t\t\t<label class=\"col-sm-3 col-form-label\">Tujuan Laporan</label>
+\t\t\t\t\t\t\t\t\t<div class=\"col-sm-9\">
+\t\t\t\t\t\t\t\t\t\t<select name=\"select\" class=\"form-control\" id=\"tujuan-laporan\">
+\t\t\t\t\t\t\t\t\t\t\t\t\t<option>Pilih Layanan</option>
+\t\t\t\t\t\t\t\t\t\t\t\t\t<option value=\"https://humas.polri.go.id/pelayanan/formulir-permohonan-informasi/\">Formulir Permohonan Informasi</option>
+\t\t\t\t\t\t\t\t\t\t\t\t\t<option value=\"https://humas.polri.go.id/pelayanan/formulir-keberatan-informasi/\">Formulir Keberatan Informasi</option>
+\t\t\t\t\t\t\t\t\t\t\t\t\t<option value=\"https://humas.polri.go.id/pelayanan/pelayanan-sim/\">Pelayanan SIM</option>
+\t\t\t\t\t\t\t\t\t\t\t\t\t<option value=\"https://humas.polri.go.id/pelayanan/pelayanan-bpkb-stnk/\">Pelayanan BPKB &amp; STNK</option>
+\t\t\t\t\t\t\t\t\t\t\t\t\t<option value=\"https://humas.polri.go.id/pelayanan/pelayanan-skck/\">Pelayanan SKCK</option>
+\t\t\t\t\t\t\t\t\t\t\t\t\t<option value=\"https://humas.polri.go.id/pelayanan/pengaduan-propam/\">Pengaduan Propam</option>
+\t\t\t\t\t\t\t\t\t\t\t\t\t<option value=\"https://humas.polri.go.id/pelayanan/pengamanan-obyek-khusus/\">Pengamanan Obyek Khusus</option>
+\t\t\t\t\t\t\t\t\t\t\t\t\t<option value=\"http://layananpolri.com/pelayanan/sp2hp/\">Surat Pemberitahuan Perkembangan Hasil Penyelidikan (SP2HP)</option>
+\t\t\t\t\t\t\t\t\t\t\t\t\t<option value=\"http://layananpolri.com/pelayanan/ijin-keramaian/\">Ijin Keramaian</option>
+\t\t\t\t\t\t\t\t\t\t\t\t\t<option value=\"http://layananpolri.com/pelayanan/pengawalan-jalan/\">Pengawalan Jalan</option>
+\t\t\t\t\t\t\t\t\t\t\t\t\t</select>
+\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t<div class=\"col-md-12\">
+\t\t\t\t\t\t\t<div class=\"form-group row\">
+\t\t\t\t\t\t\t\t\t<label class=\"col-sm-3 col-form-label\">Judul Pengaduan</label>
+\t\t\t\t\t\t\t\t\t<div class=\"col-sm-9\">
+\t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\">
+\t\t\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t</div>
+\t\t\t\t\t\t<div class=\"col-md-12\">
+\t\t\t\t\t\t\t<div class=\"form-group row\">
 \t\t\t\t\t\t\t\t\t<label class=\"col-sm-3 col-form-label\">Nama</label>
 \t\t\t\t\t\t\t\t\t<div class=\"col-sm-9\">
 \t\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\">
@@ -84,14 +112,14 @@ class __TwigTemplate_cbc5f55c8ac1bff0082197492b03ba962b8a982951be12a23e5382e1cf8
 \t\t\t\t\t\t<div class=\"col-md-12\">
 \t\t\t\t\t\t\t<div class=\"form-group row\">
 \t\t\t\t\t\t\t\t\t<div class=\"col-sm-9\">
-\t\t\t\t\t\t\t\t\t\t<input type=\"submit\" value=\"Kirim Pengaduan\" class=\"more active\">
+\t\t\t\t\t\t\t\t\t\t<input type=\"submit\" id=\"kirim-pengaduan\" value=\"Kirim Pengaduan\" class=\"more active float-right\" style=\"margin-right: -25px;\">
 \t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t</div>
 \t\t\t\t\t</div>
 
 \t\t\t\t</div>
-\t\t\t
+
 
 \t\t\t\t<div class=\"row page_margin_top_section\">
 \t\t\t\t\t<div class=\"column column_1_2\">
@@ -100,7 +128,7 @@ class __TwigTemplate_cbc5f55c8ac1bff0082197492b03ba962b8a982951be12a23e5382e1cf8
 \t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Struggling Nuremberg Sack Coach Verbeek\">
 \t\t\t\t\t\t\t\t\t<img src='";
-        // line 74
+        // line 102
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/330x242/image_06.jpg' alt='img'>
 \t\t\t\t\t\t\t\t</a>
@@ -122,7 +150,7 @@ class __TwigTemplate_cbc5f55c8ac1bff0082197492b03ba962b8a982951be12a23e5382e1cf8
 \t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Bayern Says Ties With Rivals Dortmund Have Frozen\">
 \t\t\t\t\t\t\t\t\t<img src='";
-        // line 93
+        // line 121
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_14.jpg' alt='img'>
 \t\t\t\t\t\t\t\t</a>
@@ -141,7 +169,7 @@ class __TwigTemplate_cbc5f55c8ac1bff0082197492b03ba962b8a982951be12a23e5382e1cf8
 \t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">
 \t\t\t\t\t\t\t\t\t<img src='";
-        // line 109
+        // line 137
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_12.jpg' alt='img'>
 \t\t\t\t\t\t\t\t</a>
@@ -166,7 +194,7 @@ class __TwigTemplate_cbc5f55c8ac1bff0082197492b03ba962b8a982951be12a23e5382e1cf8
 \t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"High Altitudes May Aid Weight Control\">
 \t\t\t\t\t\t\t\t\t<img src='";
-        // line 131
+        // line 159
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/330x242/image_07.jpg' alt='img'>
 \t\t\t\t\t\t\t\t</a>
@@ -188,7 +216,7 @@ class __TwigTemplate_cbc5f55c8ac1bff0082197492b03ba962b8a982951be12a23e5382e1cf8
 \t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Bayern Says Ties With Rivals Dortmund Have Frozen\">
 \t\t\t\t\t\t\t\t\t<img src='";
-        // line 150
+        // line 178
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_01.jpg' alt='img'>
 \t\t\t\t\t\t\t\t</a>
@@ -208,7 +236,7 @@ class __TwigTemplate_cbc5f55c8ac1bff0082197492b03ba962b8a982951be12a23e5382e1cf8
 \t\t\t\t\t\t\t\t<a href=\"index.html@page=post_video.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">
 \t\t\t\t\t\t\t\t\t<span class=\"icon small video\"></span>
 \t\t\t\t\t\t\t\t\t<img src='";
-        // line 167
+        // line 195
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_03.jpg' alt='img'>
 \t\t\t\t\t\t\t\t</a>
@@ -232,11 +260,14 @@ class __TwigTemplate_cbc5f55c8ac1bff0082197492b03ba962b8a982951be12a23e5382e1cf8
 \t\t\t<div class=\"column column_1_3\">
 \t\t\t\t<h4 class=\"box_header\">Recommended</h4>
 \t\t\t\t<ul class=\"blog small_margin clearfix\">
+\t\t\t\t\t<div id=\"kopi-covid\"> </div>
+\t\t\t\t</ul>
+\t\t\t\t<ul class=\"blog small_margin clearfix\">
 \t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t<a href=\"index.html@page=post_gallery.html\" title=\"The Public Health Crisis Hiding in Our Food\">
 \t\t\t\t\t\t\t<span class=\"icon gallery\"></span>
 \t\t\t\t\t\t\t<img src='";
-        // line 192
+        // line 223
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/510x187/image_12.jpg' alt='img'>
 \t\t\t\t\t\t</a>
@@ -255,7 +286,7 @@ class __TwigTemplate_cbc5f55c8ac1bff0082197492b03ba962b8a982951be12a23e5382e1cf8
 \t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"The Public Health Crisis Hiding in Our Food\">
 \t\t\t\t\t\t\t<img src='";
-        // line 208
+        // line 239
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/510x187/image_01.jpg' alt='img'>
 \t\t\t\t\t\t</a>
@@ -274,7 +305,7 @@ class __TwigTemplate_cbc5f55c8ac1bff0082197492b03ba962b8a982951be12a23e5382e1cf8
 \t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"New Painkiller Rekindles Addiction Concerns\">
 \t\t\t\t\t\t\t<img src='";
-        // line 224
+        // line 255
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/510x187/image_14.jpg' alt='img'>
 \t\t\t\t\t\t</a>
@@ -298,7 +329,7 @@ class __TwigTemplate_cbc5f55c8ac1bff0082197492b03ba962b8a982951be12a23e5382e1cf8
 \t\t\t\t\t\t\t<a href=\"index.html@page=post_gallery.html\" title=\"Study Linking Illnes and Salt Leaves Researchers Doubtful\">
 \t\t\t\t\t\t\t\t<span class=\"icon small gallery\"></span>
 \t\t\t\t\t\t\t\t<img src='";
-        // line 245
+        // line 276
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_06.jpg' alt='img'>
 \t\t\t\t\t\t\t</a>
@@ -317,7 +348,7 @@ class __TwigTemplate_cbc5f55c8ac1bff0082197492b03ba962b8a982951be12a23e5382e1cf8
 \t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Syrian Civilians Trapped For Months Continue To Be Evacuated\">
 \t\t\t\t\t\t\t\t<img src='";
-        // line 261
+        // line 292
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_12.jpg' alt='img'>
 \t\t\t\t\t\t\t</a>
@@ -336,7 +367,7 @@ class __TwigTemplate_cbc5f55c8ac1bff0082197492b03ba962b8a982951be12a23e5382e1cf8
 \t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">
 \t\t\t\t\t\t\t\t<img src='";
-        // line 277
+        // line 308
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_02.jpg' alt='img'>
 \t\t\t\t\t\t\t</a>
@@ -355,7 +386,7 @@ class __TwigTemplate_cbc5f55c8ac1bff0082197492b03ba962b8a982951be12a23e5382e1cf8
 \t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Nuclear Fusion Closer to Becoming a Reality\">
 \t\t\t\t\t\t\t\t<img src='";
-        // line 293
+        // line 324
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_13.jpg' alt='img'>
 \t\t\t\t\t\t\t</a>
@@ -393,7 +424,7 @@ class __TwigTemplate_cbc5f55c8ac1bff0082197492b03ba962b8a982951be12a23e5382e1cf8
 \t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t<a href=\"index.html@page=post_quote.html\" title=\"Nuclear Fusion Closer to Becoming a Reality\">
 \t\t\t\t\t\t\t\t\t<img src='";
-        // line 328
+        // line 359
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/510x187/image_12.jpg' alt='img'>
 \t\t\t\t\t\t\t\t</a>
@@ -449,7 +480,7 @@ class __TwigTemplate_cbc5f55c8ac1bff0082197492b03ba962b8a982951be12a23e5382e1cf8
 \t\t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Nuclear Fusion Closer to Becoming a Reality\">
 \t\t\t\t\t\t\t\t\t<img src='";
-        // line 381
+        // line 412
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/510x187/image_02.jpg' alt='img'>
 \t\t\t\t\t\t\t\t</a>
@@ -506,7 +537,7 @@ class __TwigTemplate_cbc5f55c8ac1bff0082197492b03ba962b8a982951be12a23e5382e1cf8
 \t\t\t\t\t<li class=\"author\">
 \t\t\t\t\t\t<a class=\"thumb\" href=\"index.html@page=author.html\" title=\"Debora Hilton\">
 \t\t\t\t\t\t\t<img src='";
-        // line 435
+        // line 466
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/Team_100x100/image_01.jpg' alt='img'>
 \t\t\t\t\t\t\t<span class=\"number animated_element\" data-value=\"34\"></span>
@@ -519,7 +550,7 @@ class __TwigTemplate_cbc5f55c8ac1bff0082197492b03ba962b8a982951be12a23e5382e1cf8
 \t\t\t\t\t<li class=\"author\">
 \t\t\t\t\t\t<a class=\"thumb\" href=\"index.html@page=author.html\" title=\"Anna Shubina\">
 \t\t\t\t\t\t\t<img src='";
-        // line 445
+        // line 476
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/Team_100x100/image_02.jpg' alt='img'>
 \t\t\t\t\t\t\t<span class=\"number animated_element\" data-value=\"25\"></span>
@@ -532,7 +563,7 @@ class __TwigTemplate_cbc5f55c8ac1bff0082197492b03ba962b8a982951be12a23e5382e1cf8
 \t\t\t\t\t<li class=\"author\">
 \t\t\t\t\t\t<a class=\"thumb\" href=\"index.html@page=author.html\" title=\"Liam Holden\">
 \t\t\t\t\t\t\t<img src='";
-        // line 455
+        // line 486
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/Team_100x100/image_03.jpg' alt='img'>
 \t\t\t\t\t\t\t<span class=\"number animated_element\" data-value=\"9\"></span>
@@ -545,7 +576,7 @@ class __TwigTemplate_cbc5f55c8ac1bff0082197492b03ba962b8a982951be12a23e5382e1cf8
 \t\t\t\t\t<li class=\"author\">
 \t\t\t\t\t\t<a class=\"thumb\" href=\"index.html@page=author.html\" title=\"Heather Dale\">
 \t\t\t\t\t\t\t<img src='";
-        // line 465
+        // line 496
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/Team_100x100/image_04.jpg' alt='img'>
 \t\t\t\t\t\t\t<span class=\"number animated_element\" data-value=\"2\"></span>
@@ -561,7 +592,7 @@ class __TwigTemplate_cbc5f55c8ac1bff0082197492b03ba962b8a982951be12a23e5382e1cf8
 \t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Study Linking Illnes and Salt Leaves Researchers Doubtful\">
 \t\t\t\t\t\t\t<img src='";
-        // line 478
+        // line 509
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_09.jpg' alt='img'>
 \t\t\t\t\t\t</a>
@@ -580,7 +611,7 @@ class __TwigTemplate_cbc5f55c8ac1bff0082197492b03ba962b8a982951be12a23e5382e1cf8
 \t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Syrian Civilians Trapped For Months Continue To Be Evacuated\">
 \t\t\t\t\t\t\t<img src='";
-        // line 494
+        // line 525
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_12.jpg' alt='img'>
 \t\t\t\t\t\t</a>
@@ -599,7 +630,7 @@ class __TwigTemplate_cbc5f55c8ac1bff0082197492b03ba962b8a982951be12a23e5382e1cf8
 \t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t<a href=\"index.html@page=post_quote.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">
 \t\t\t\t\t\t\t<img src='";
-        // line 510
+        // line 541
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_02.jpg' alt='img'>
 \t\t\t\t\t\t</a>
@@ -619,7 +650,7 @@ class __TwigTemplate_cbc5f55c8ac1bff0082197492b03ba962b8a982951be12a23e5382e1cf8
 \t\t\t\t\t\t<a href=\"index.html@page=post_gallery.html\" title=\"Nuclear Fusion Closer to Becoming a Reality\">
 \t\t\t\t\t\t\t<span class=\"icon small gallery\"></span>
 \t\t\t\t\t\t\t<img src='";
-        // line 527
+        // line 558
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_01.jpg' alt='img'>
 \t\t\t\t\t\t</a>
@@ -639,7 +670,11 @@ class __TwigTemplate_cbc5f55c8ac1bff0082197492b03ba962b8a982951be12a23e5382e1cf8
 \t\t\t\t<a class=\"more page_margin_top\" href=\"index.html@page=home.html#\">MORE FROM SCIENCE</a>
 \t\t\t</div>
 \t\t</div>
-\t</div>";
+\t</div>
+\t<script src=\"";
+        // line 577
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/action-js/users/pengaduan.js\"></script>";
     }
 
     public function getTemplateName()
@@ -654,7 +689,7 @@ class __TwigTemplate_cbc5f55c8ac1bff0082197492b03ba962b8a982951be12a23e5382e1cf8
 
     public function getDebugInfo()
     {
-        return array (  623 => 527,  603 => 510,  584 => 494,  565 => 478,  549 => 465,  536 => 455,  523 => 445,  510 => 435,  453 => 381,  397 => 328,  359 => 293,  340 => 277,  321 => 261,  302 => 245,  278 => 224,  259 => 208,  240 => 192,  212 => 167,  192 => 150,  170 => 131,  145 => 109,  126 => 93,  104 => 74,  30 => 2,  11 => 1,);
+        return array (  676 => 577,  654 => 558,  634 => 541,  615 => 525,  596 => 509,  580 => 496,  567 => 486,  554 => 476,  541 => 466,  484 => 412,  428 => 359,  390 => 324,  371 => 308,  352 => 292,  333 => 276,  309 => 255,  290 => 239,  271 => 223,  240 => 195,  220 => 178,  198 => 159,  173 => 137,  154 => 121,  132 => 102,  30 => 2,  11 => 1,);
     }
 }
 /* {% extends "users/layout.html" %} {% block content %}*/
@@ -664,6 +699,34 @@ class __TwigTemplate_cbc5f55c8ac1bff0082197492b03ba962b8a982951be12a23e5382e1cf8
 /* 				<h4 class="box_header">Isi Formulir Pengaduan</h4>*/
 /* 				<div class="card-block">*/
 /* 					<div class="row">*/
+/* 						<div class="col-md-12">*/
+/* 							<div class="form-group row">*/
+/* 									<label class="col-sm-3 col-form-label">Tujuan Laporan</label>*/
+/* 									<div class="col-sm-9">*/
+/* 										<select name="select" class="form-control" id="tujuan-laporan">*/
+/* 													<option>Pilih Layanan</option>*/
+/* 													<option value="https://humas.polri.go.id/pelayanan/formulir-permohonan-informasi/">Formulir Permohonan Informasi</option>*/
+/* 													<option value="https://humas.polri.go.id/pelayanan/formulir-keberatan-informasi/">Formulir Keberatan Informasi</option>*/
+/* 													<option value="https://humas.polri.go.id/pelayanan/pelayanan-sim/">Pelayanan SIM</option>*/
+/* 													<option value="https://humas.polri.go.id/pelayanan/pelayanan-bpkb-stnk/">Pelayanan BPKB &amp; STNK</option>*/
+/* 													<option value="https://humas.polri.go.id/pelayanan/pelayanan-skck/">Pelayanan SKCK</option>*/
+/* 													<option value="https://humas.polri.go.id/pelayanan/pengaduan-propam/">Pengaduan Propam</option>*/
+/* 													<option value="https://humas.polri.go.id/pelayanan/pengamanan-obyek-khusus/">Pengamanan Obyek Khusus</option>*/
+/* 													<option value="http://layananpolri.com/pelayanan/sp2hp/">Surat Pemberitahuan Perkembangan Hasil Penyelidikan (SP2HP)</option>*/
+/* 													<option value="http://layananpolri.com/pelayanan/ijin-keramaian/">Ijin Keramaian</option>*/
+/* 													<option value="http://layananpolri.com/pelayanan/pengawalan-jalan/">Pengawalan Jalan</option>*/
+/* 													</select>*/
+/* 									</div>*/
+/* 							</div>*/
+/* 						</div>*/
+/* 						<div class="col-md-12">*/
+/* 							<div class="form-group row">*/
+/* 									<label class="col-sm-3 col-form-label">Judul Pengaduan</label>*/
+/* 									<div class="col-sm-9">*/
+/* 											<input type="text" class="form-control">*/
+/* 									</div>*/
+/* 							</div>*/
+/* 						</div>*/
 /* 						<div class="col-md-12">*/
 /* 							<div class="form-group row">*/
 /* 									<label class="col-sm-3 col-form-label">Nama</label>*/
@@ -715,14 +778,14 @@ class __TwigTemplate_cbc5f55c8ac1bff0082197492b03ba962b8a982951be12a23e5382e1cf8
 /* 						<div class="col-md-12">*/
 /* 							<div class="form-group row">*/
 /* 									<div class="col-sm-9">*/
-/* 										<input type="submit" value="Kirim Pengaduan" class="more active">*/
+/* 										<input type="submit" id="kirim-pengaduan" value="Kirim Pengaduan" class="more active float-right" style="margin-right: -25px;">*/
 /* 									</div>*/
 /* 							</div>*/
 /* 						</div>*/
 /* 					</div>*/
 /* */
 /* 				</div>*/
-/* 			*/
+/* */
 /* */
 /* 				<div class="row page_margin_top_section">*/
 /* 					<div class="column column_1_2">*/
@@ -844,6 +907,9 @@ class __TwigTemplate_cbc5f55c8ac1bff0082197492b03ba962b8a982951be12a23e5382e1cf8
 /* 			</div>*/
 /* 			<div class="column column_1_3">*/
 /* 				<h4 class="box_header">Recommended</h4>*/
+/* 				<ul class="blog small_margin clearfix">*/
+/* 					<div id="kopi-covid"> </div>*/
+/* 				</ul>*/
 /* 				<ul class="blog small_margin clearfix">*/
 /* 					<li class="post">*/
 /* 						<a href="index.html@page=post_gallery.html" title="The Public Health Crisis Hiding in Our Food">*/
@@ -1202,5 +1268,7 @@ class __TwigTemplate_cbc5f55c8ac1bff0082197492b03ba962b8a982951be12a23e5382e1cf8
 /* 			</div>*/
 /* 		</div>*/
 /* 	</div>*/
+/* 	<script src="{{baseURL}}/assets/action-js/users/pengaduan.js"></script>*/
+/* */
 /* {% endblock %}*/
 /* */

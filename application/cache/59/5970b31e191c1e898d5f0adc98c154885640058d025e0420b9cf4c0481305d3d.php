@@ -215,12 +215,12 @@ class __TwigTemplate_99e9b30407a6708f15165c9366909847839666526d602a4bfaaafe8fac1
 \t\t\t\t</a>
 \t\t\t</li>-->
 \t\t</ul>
-\t\t<div class=\"latest_news_scrolling_list_container\">
+\t\t<div class=\"latest_news_scrolling_list_container\" style=\"margin-top: -100px;\">
 \t\t\t<ul>
 \t\t\t\t<li class=\"category\">LATEST</li>
 \t\t\t\t<li class=\"left\"><a href=\"index.html@page=home_3.html#\"></a></li>
 \t\t\t\t<li class=\"right\"><a href=\"index.html@page=home_3.html#\"></a></li>
-\t\t\t\t<li class=\"posts\">
+\t\t\t\t<li class=\"posts\" style=\"margin-top: -5px;\">
 \t\t\t\t\t<ul class=\"latest_news_scrolling_list\">
 \t\t\t\t\t\t<li>
 \t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"\">Climate Change Debate While Britain Floods</a>
@@ -233,7 +233,7 @@ class __TwigTemplate_99e9b30407a6708f15165c9366909847839666526d602a4bfaaafe8fac1
 \t\t\t\t\t\t</li>
 \t\t\t\t\t</ul>
 \t\t\t\t</li>
-\t\t\t\t<li class=\"date\">
+\t\t\t\t<li class=\"date\" style=\"margin-top: -5px;\">
 \t\t\t\t\t<abbr title=\"04 Apr 2014\" class=\"timeago current\">04 Apr 2014</abbr>
 \t\t\t\t\t<abbr title=\"04 May 2014\" class=\"timeago\">04 May 2014</abbr>
 \t\t\t\t\t<abbr title=\"04 June 2014\" class=\"timeago\">04 June 2014</abbr>
@@ -473,12 +473,12 @@ class __TwigTemplate_99e9b30407a6708f15165c9366909847839666526d602a4bfaaafe8fac1
 /* 				</a>*/
 /* 			</li>-->*/
 /* 		</ul>*/
-/* 		<div class="latest_news_scrolling_list_container">*/
+/* 		<div class="latest_news_scrolling_list_container" style="margin-top: -100px;">*/
 /* 			<ul>*/
 /* 				<li class="category">LATEST</li>*/
 /* 				<li class="left"><a href="index.html@page=home_3.html#"></a></li>*/
 /* 				<li class="right"><a href="index.html@page=home_3.html#"></a></li>*/
-/* 				<li class="posts">*/
+/* 				<li class="posts" style="margin-top: -5px;">*/
 /* 					<ul class="latest_news_scrolling_list">*/
 /* 						<li>*/
 /* 							<a href="index.html@page=post.html" title="">Climate Change Debate While Britain Floods</a>*/
@@ -491,7 +491,7 @@ class __TwigTemplate_99e9b30407a6708f15165c9366909847839666526d602a4bfaaafe8fac1
 /* 						</li>*/
 /* 					</ul>*/
 /* 				</li>*/
-/* 				<li class="date">*/
+/* 				<li class="date" style="margin-top: -5px;">*/
 /* 					<abbr title="04 Apr 2014" class="timeago current">04 Apr 2014</abbr>*/
 /* 					<abbr title="04 May 2014" class="timeago">04 May 2014</abbr>*/
 /* 					<abbr title="04 June 2014" class="timeago">04 June 2014</abbr>*/

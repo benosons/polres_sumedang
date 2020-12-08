@@ -7,6 +7,34 @@
 					<div class="row">
 						<div class="col-md-12">
 							<div class="form-group row">
+									<label class="col-sm-3 col-form-label">Tujuan Laporan</label>
+									<div class="col-sm-9">
+										<select name="select" class="form-control" id="tujuan-laporan">
+													<option>Pilih Layanan</option>
+													<option value="https://humas.polri.go.id/pelayanan/formulir-permohonan-informasi/">Formulir Permohonan Informasi</option>
+													<option value="https://humas.polri.go.id/pelayanan/formulir-keberatan-informasi/">Formulir Keberatan Informasi</option>
+													<option value="https://humas.polri.go.id/pelayanan/pelayanan-sim/">Pelayanan SIM</option>
+													<option value="https://humas.polri.go.id/pelayanan/pelayanan-bpkb-stnk/">Pelayanan BPKB &amp; STNK</option>
+													<option value="https://humas.polri.go.id/pelayanan/pelayanan-skck/">Pelayanan SKCK</option>
+													<option value="https://humas.polri.go.id/pelayanan/pengaduan-propam/">Pengaduan Propam</option>
+													<option value="https://humas.polri.go.id/pelayanan/pengamanan-obyek-khusus/">Pengamanan Obyek Khusus</option>
+													<option value="http://layananpolri.com/pelayanan/sp2hp/">Surat Pemberitahuan Perkembangan Hasil Penyelidikan (SP2HP)</option>
+													<option value="http://layananpolri.com/pelayanan/ijin-keramaian/">Ijin Keramaian</option>
+													<option value="http://layananpolri.com/pelayanan/pengawalan-jalan/">Pengawalan Jalan</option>
+													</select>
+									</div>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group row">
+									<label class="col-sm-3 col-form-label">Judul Pengaduan</label>
+									<div class="col-sm-9">
+											<input type="text" class="form-control">
+									</div>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group row">
 									<label class="col-sm-3 col-form-label">Nama</label>
 									<div class="col-sm-9">
 											<input type="text" class="form-control">
@@ -56,14 +84,14 @@
 						<div class="col-md-12">
 							<div class="form-group row">
 									<div class="col-sm-9">
-										<input type="submit" value="Kirim Pengaduan" class="more active">
+										<input type="submit" id="kirim-pengaduan" value="Kirim Pengaduan" class="more active float-right" style="margin-right: -25px;">
 									</div>
 							</div>
 						</div>
 					</div>
 
 				</div>
-			
+
 
 				<div class="row page_margin_top_section">
 					<div class="column column_1_2">
@@ -185,6 +213,9 @@
 			</div>
 			<div class="column column_1_3">
 				<h4 class="box_header">Recommended</h4>
+				<ul class="blog small_margin clearfix">
+					<div id="kopi-covid"> </div>
+				</ul>
 				<ul class="blog small_margin clearfix">
 					<li class="post">
 						<a href="index.html@page=post_gallery.html" title="The Public Health Crisis Hiding in Our Food">
@@ -543,4 +574,6 @@
 			</div>
 		</div>
 	</div>
+	<script src="{{baseURL}}/assets/action-js/users/pengaduan.js"></script>
+
 {% endblock %}
