@@ -28,6 +28,12 @@
       <link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/admin/icon/icofont/css/icofont.css">
       <!-- flag icon framework css -->
       <link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/admin/pages/flag-icon/flag-icon.min.css">
+      <!-- Font Awesome -->
+      <link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/admin/icon/font-awesome/css/font-awesome.min.css">
+      <!-- Data Table Css -->
+      <link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/admin/bower_components/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
+      <link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/admin/pages/data-table/css/buttons.dataTables.min.css">
+      <link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/admin/bower_components/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css">
       <!-- Menu-Search css -->
       <link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/admin/pages/menu-search/css/component.css">
       <!-- Horizontal-Timeline css -->
@@ -36,6 +42,11 @@
       <link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/admin/pages/dashboard/amchart/css/amchart.css">
       <!-- flag icon framework css -->
       <link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/admin/pages/flag-icon/flag-icon.min.css">
+      <!-- Summernote css -->
+      <link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/admin/bower_components/summernote/dist/summernote.css">
+      <!-- jquery file upload Frame work -->
+      <link href="{{baseURL}}/assets/admin/bower_components/jquery.filer/css/jquery.filer.css" type="text/css" rel="stylesheet" />
+      <link href="{{baseURL}}/assets/admin/bower_components/jquery.filer/css/themes/jquery.filer-dragdropbox-theme.css" type="text/css" rel="stylesheet" />
       <!-- Style.css -->
       <link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/admin/css/style.css">
       <!--color css-->
@@ -45,7 +56,11 @@
       <link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/admin/css/simple-line-icons.css">
       <link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/admin/css/ionicons.css">
       <link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/admin/css/jquery.mCustomScrollbar.css">
-
+      <style>
+      .jFiler-theme-default .jFiler-input-button {
+          background-color: #f1c40f;
+      }
+      </style>
   </head>
 
   <body>
@@ -74,9 +89,9 @@
 
                         <div class="main-body">
                           {% block content %} {% endblock %}
-                            <div id="styleSelector">
+                            <!-- <div id="styleSelector">
 
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -153,6 +168,22 @@
 <script type="text/javascript" src="{{baseURL}}/assets/admin/pages/dashboard/amchart/js/serial.js"></script>
 <script type="text/javascript" src="{{baseURL}}/assets/admin/pages/dashboard/amchart/js/light.js"></script>
 <script type="text/javascript" src="{{baseURL}}/assets/admin/pages/dashboard/amchart/js/custom-amchart.js"></script>
+<!-- Summernote js -->
+<script type="text/javascript" src="{{baseURL}}/assets/admin/bower_components/summernote/dist/summernote.js"></script>
+<!-- jquery file upload js -->
+<script src="{{baseURL}}/assets/admin/bower_components/jquery.filer/js/jquery.filer.min.js"></script>
+<script src="{{baseURL}}/assets/admin/pages/filer/jquery.fileuploads.init.js" type="text/javascript"></script>
+<!-- data-table js -->
+   <script src="{{baseURL}}/assets/admin/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+   <script src="{{baseURL}}/assets/admin/bower_components/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+   <script src="{{baseURL}}/assets/admin/pages/data-table/js/jszip.min.js"></script>
+   <script src="{{baseURL}}/assets/admin/pages/data-table/js/pdfmake.min.js"></script>
+   <script src="{{baseURL}}/assets/admin/pages/data-table/js/vfs_fonts.js"></script>
+   <script src="{{baseURL}}/assets/admin/bower_components/datatables.net-buttons/js/buttons.print.min.js"></script>
+   <script src="{{baseURL}}/assets/admin/bower_components/datatables.net-buttons/js/buttons.html5.min.js"></script>
+   <script src="{{baseURL}}/assets/admin/bower_components/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+   <script src="{{baseURL}}/assets/admin/bower_components/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+   <script src="{{baseURL}}/assets/admin/bower_components/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
 <!-- i18next.min.js -->
 <script type="text/javascript" src="{{baseURL}}/assets/admin/bower_components/i18next/i18next.min.js"></script>
 <script type="text/javascript" src="{{baseURL}}/assets/admin/bower_components/i18next-xhr-backend/i18nextXHRBackend.min.js"></script>
@@ -161,12 +192,16 @@
 <!-- Custom js -->
 <script type="text/javascript" src="{{baseURL}}/assets/admin/pages/dashboard/custom-dashboard.js"></script>
 <script type="text/javascript" src="{{baseURL}}/assets/admin/js/script.js"></script>
+<script type="text/javascript" src="{{baseURL}}/assets/admin/pages/summernote/custom-note.js"></script>
 
 <!-- pcmenu js -->
 <script src="{{baseURL}}/assets/admin/js/pcoded.min.js"></script>
 <script src="{{baseURL}}/assets/admin/js/demo-12.js"></script>
 <script src="{{baseURL}}/assets/admin/js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="{{baseURL}}/assets/admin/js/jquery.mousewheel.min.js"></script>
+{% if script %}
+<script src = "{{script}}"></script>
+{% endif %}
 </body>
 
 </html>

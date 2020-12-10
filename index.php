@@ -33,7 +33,7 @@ unset($minPHPVersion);
 // running under Continuous Integration server?
 if (getenv('CI') !== false)
 {
-	define('ENVIRONMENT', 'testing');
+	define('ENVIRONMENT', 'development');
 }
 else
 {

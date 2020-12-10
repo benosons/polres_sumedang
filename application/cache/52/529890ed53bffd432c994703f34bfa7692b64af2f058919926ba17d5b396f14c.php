@@ -62,54 +62,90 @@ class __TwigTemplate_6fb10d80c68c7b0fe38d8e75904f2ec0da5848037fad63f9f4fffce08b6
         // line 30
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/pages/flag-icon/flag-icon.min.css\">
-      <!-- Menu-Search css -->
+      <!-- Font Awesome -->
       <link rel=\"stylesheet\" type=\"text/css\" href=\"";
         // line 32
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/admin/icon/font-awesome/css/font-awesome.min.css\">
+      <!-- Data Table Css -->
+      <link rel=\"stylesheet\" type=\"text/css\" href=\"";
+        // line 34
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/admin/bower_components/datatables.net-bs4/css/dataTables.bootstrap4.min.css\">
+      <link rel=\"stylesheet\" type=\"text/css\" href=\"";
+        // line 35
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/admin/pages/data-table/css/buttons.dataTables.min.css\">
+      <link rel=\"stylesheet\" type=\"text/css\" href=\"";
+        // line 36
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/admin/bower_components/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css\">
+      <!-- Menu-Search css -->
+      <link rel=\"stylesheet\" type=\"text/css\" href=\"";
+        // line 38
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/pages/menu-search/css/component.css\">
       <!-- Horizontal-Timeline css -->
       <link rel=\"stylesheet\" type=\"text/css\" href=\"";
-        // line 34
+        // line 40
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/pages/dashboard/horizontal-timeline/css/style.css\">
       <!-- amchart css -->
       <link rel=\"stylesheet\" type=\"text/css\" href=\"";
-        // line 36
+        // line 42
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/pages/dashboard/amchart/css/amchart.css\">
       <!-- flag icon framework css -->
       <link rel=\"stylesheet\" type=\"text/css\" href=\"";
-        // line 38
+        // line 44
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/pages/flag-icon/flag-icon.min.css\">
+      <!-- Summernote css -->
+      <link rel=\"stylesheet\" type=\"text/css\" href=\"";
+        // line 46
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/admin/bower_components/summernote/dist/summernote.css\">
+      <!-- jquery file upload Frame work -->
+      <link href=\"";
+        // line 48
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/admin/bower_components/jquery.filer/css/jquery.filer.css\" type=\"text/css\" rel=\"stylesheet\" />
+      <link href=\"";
+        // line 49
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/admin/bower_components/jquery.filer/css/themes/jquery.filer-dragdropbox-theme.css\" type=\"text/css\" rel=\"stylesheet\" />
       <!-- Style.css -->
       <link rel=\"stylesheet\" type=\"text/css\" href=\"";
-        // line 40
+        // line 51
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/css/style.css\">
       <!--color css-->
       <link rel=\"stylesheet\" type=\"text/css\" href=\"";
-        // line 42
+        // line 53
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/css/color/color-1.css\" id=\"color\" />
 
       <link rel=\"stylesheet\" type=\"text/css\" href=\"";
-        // line 44
+        // line 55
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/css/linearicons.css\">
       <link rel=\"stylesheet\" type=\"text/css\" href=\"";
-        // line 45
+        // line 56
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/css/simple-line-icons.css\">
       <link rel=\"stylesheet\" type=\"text/css\" href=\"";
-        // line 46
+        // line 57
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/css/ionicons.css\">
       <link rel=\"stylesheet\" type=\"text/css\" href=\"";
-        // line 47
+        // line 58
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/css/jquery.mCustomScrollbar.css\">
-
+      <style>
+      .jFiler-theme-default .jFiler-input-button {
+          background-color: #f1c40f;
+      }
+      </style>
   </head>
 
   <body>
@@ -125,26 +161,26 @@ class __TwigTemplate_6fb10d80c68c7b0fe38d8e75904f2ec0da5848037fad63f9f4fffce08b6
     <div id=\"pcoded\" class=\"pcoded\">
         <div class=\"pcoded-overlay-box\"></div>
         <div class=\"pcoded-container navbar-wrapper\">";
-        // line 65
-        $this->loadTemplate("admin/navbar.html", "admin/layout.html", 65)->display($context);
-        // line 66
+        // line 80
+        $this->loadTemplate("admin/navbar.html", "admin/layout.html", 80)->display($context);
+        // line 81
         echo "
             <div class=\"pcoded-main-container\" style=\"margin-top: 56px;\">
                 <div class=\"pcoded-wrapper\">";
-        // line 70
-        $this->loadTemplate("admin/sidebar.html", "admin/layout.html", 70)->display($context);
-        // line 71
+        // line 85
+        $this->loadTemplate("admin/sidebar.html", "admin/layout.html", 85)->display($context);
+        // line 86
         echo "
                     <div class=\"pcoded-content\">
                         <div class=\"pcoded-inner-content\">
 
                         <div class=\"main-body\">";
-        // line 76
+        // line 91
         $this->displayBlock('content', $context, $blocks);
-        // line 77
-        echo "                            <div id=\"styleSelector\">
+        // line 92
+        echo "                            <!-- <div id=\"styleSelector\">
 
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -198,131 +234,198 @@ class __TwigTemplate_6fb10d80c68c7b0fe38d8e75904f2ec0da5848037fad63f9f4fffce08b6
 <!-- Warning Section Ends -->
 <!-- Required Jqurey -->
 <script type=\"text/javascript\" src=\"";
-        // line 132
+        // line 147
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/jquery/dist/jquery.min.js\"></script>
 <script src=\"";
-        // line 133
+        // line 148
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/jquery-ui/jquery-ui.min.js\"></script>
 <script type=\"text/javascript\" src=\"";
-        // line 134
+        // line 149
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/tether/dist/js/tether.min.js\"></script>
 <script type=\"text/javascript\" src=\"";
-        // line 135
+        // line 150
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/bootstrap/dist/js/bootstrap.min.js\"></script>
 <!-- jquery slimscroll js -->
 <script type=\"text/javascript\" src=\"";
-        // line 137
+        // line 152
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/jquery-slimscroll/jquery.slimscroll.js\"></script>
 <!-- modernizr js -->
 <script type=\"text/javascript\" src=\"";
-        // line 139
+        // line 154
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/modernizr/modernizr.js\"></script>
 <script type=\"text/javascript\" src=\"";
-        // line 140
+        // line 155
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/modernizr/feature-detects/css-scrollbars.js\"></script>
 <!-- classie js -->
 <script type=\"text/javascript\" src=\"";
-        // line 142
+        // line 157
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/classie/classie.js\"></script>
 <!-- Rickshow Chart js -->
 <script src=\"";
-        // line 144
+        // line 159
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/d3/d3.js\"></script>
 <script src=\"";
-        // line 145
+        // line 160
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/rickshaw/rickshaw.js\"></script>
 <!-- Morris Chart js -->
 <script src=\"";
-        // line 147
+        // line 162
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/raphael/raphael.min.js\"></script>
 <script src=\"";
-        // line 148
+        // line 163
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/morris.js/morris.js\"></script>
 <!-- Horizontal-Timeline js -->
 <script type=\"text/javascript\" src=\"";
-        // line 150
+        // line 165
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/pages/dashboard/horizontal-timeline/js/main.js\"></script>
 <!-- amchart js -->
 <script type=\"text/javascript\" src=\"";
-        // line 152
+        // line 167
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/pages/dashboard/amchart/js/amcharts.js\"></script>
 <script type=\"text/javascript\" src=\"";
-        // line 153
+        // line 168
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/pages/dashboard/amchart/js/serial.js\"></script>
 <script type=\"text/javascript\" src=\"";
-        // line 154
+        // line 169
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/pages/dashboard/amchart/js/light.js\"></script>
 <script type=\"text/javascript\" src=\"";
-        // line 155
+        // line 170
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/pages/dashboard/amchart/js/custom-amchart.js\"></script>
+<!-- Summernote js -->
+<script type=\"text/javascript\" src=\"";
+        // line 172
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/admin/bower_components/summernote/dist/summernote.js\"></script>
+<!-- jquery file upload js -->
+<script src=\"";
+        // line 174
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/admin/bower_components/jquery.filer/js/jquery.filer.min.js\"></script>
+<script src=\"";
+        // line 175
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/admin/pages/filer/jquery.fileuploads.init.js\" type=\"text/javascript\"></script>
+<!-- data-table js -->
+   <script src=\"";
+        // line 177
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/admin/bower_components/datatables.net/js/jquery.dataTables.min.js\"></script>
+   <script src=\"";
+        // line 178
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/admin/bower_components/datatables.net-buttons/js/dataTables.buttons.min.js\"></script>
+   <script src=\"";
+        // line 179
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/admin/pages/data-table/js/jszip.min.js\"></script>
+   <script src=\"";
+        // line 180
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/admin/pages/data-table/js/pdfmake.min.js\"></script>
+   <script src=\"";
+        // line 181
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/admin/pages/data-table/js/vfs_fonts.js\"></script>
+   <script src=\"";
+        // line 182
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/admin/bower_components/datatables.net-buttons/js/buttons.print.min.js\"></script>
+   <script src=\"";
+        // line 183
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/admin/bower_components/datatables.net-buttons/js/buttons.html5.min.js\"></script>
+   <script src=\"";
+        // line 184
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/admin/bower_components/datatables.net-bs4/js/dataTables.bootstrap4.min.js\"></script>
+   <script src=\"";
+        // line 185
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/admin/bower_components/datatables.net-responsive/js/dataTables.responsive.min.js\"></script>
+   <script src=\"";
+        // line 186
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/admin/bower_components/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js\"></script>
 <!-- i18next.min.js -->
 <script type=\"text/javascript\" src=\"";
-        // line 157
+        // line 188
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/i18next/i18next.min.js\"></script>
 <script type=\"text/javascript\" src=\"";
-        // line 158
+        // line 189
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/i18next-xhr-backend/i18nextXHRBackend.min.js\"></script>
 <script type=\"text/javascript\" src=\"";
-        // line 159
+        // line 190
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js\"></script>
 <script type=\"text/javascript\" src=\"";
-        // line 160
+        // line 191
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/jquery-i18next/jquery-i18next.min.js\"></script>
 <!-- Custom js -->
 <script type=\"text/javascript\" src=\"";
-        // line 162
+        // line 193
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/pages/dashboard/custom-dashboard.js\"></script>
 <script type=\"text/javascript\" src=\"";
-        // line 163
+        // line 194
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/js/script.js\"></script>
+<script type=\"text/javascript\" src=\"";
+        // line 195
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/admin/pages/summernote/custom-note.js\"></script>
 
 <!-- pcmenu js -->
 <script src=\"";
-        // line 166
+        // line 198
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/js/pcoded.min.js\"></script>
 <script src=\"";
-        // line 167
+        // line 199
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/js/demo-12.js\"></script>
 <script src=\"";
-        // line 168
+        // line 200
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/js/jquery.mCustomScrollbar.concat.min.js\"></script>
 <script src=\"";
-        // line 169
+        // line 201
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "/assets/admin/js/jquery.mousewheel.min.js\"></script>
-</body>
+        echo "/assets/admin/js/jquery.mousewheel.min.js\"></script>";
+        // line 202
+        if ((isset($context["script"]) ? $context["script"] : null)) {
+            // line 203
+            echo "<script src = \"";
+            echo twig_escape_filter($this->env, (isset($context["script"]) ? $context["script"] : null), "html", null, true);
+            echo "\"></script>";
+        }
+        // line 205
+        echo "</body>
 
 </html>
 ";
     }
 
-    // line 76
+    // line 91
     public function block_content($context, array $blocks = array())
     {
     }
@@ -339,7 +442,7 @@ class __TwigTemplate_6fb10d80c68c7b0fe38d8e75904f2ec0da5848037fad63f9f4fffce08b6
 
     public function getDebugInfo()
     {
-        return array (  326 => 76,  317 => 169,  313 => 168,  309 => 167,  305 => 166,  299 => 163,  295 => 162,  290 => 160,  286 => 159,  282 => 158,  278 => 157,  273 => 155,  269 => 154,  265 => 153,  261 => 152,  256 => 150,  251 => 148,  247 => 147,  242 => 145,  238 => 144,  233 => 142,  228 => 140,  224 => 139,  219 => 137,  214 => 135,  210 => 134,  206 => 133,  202 => 132,  145 => 77,  143 => 76,  137 => 71,  135 => 70,  131 => 66,  129 => 65,  110 => 47,  106 => 46,  102 => 45,  98 => 44,  93 => 42,  88 => 40,  83 => 38,  78 => 36,  73 => 34,  68 => 32,  63 => 30,  58 => 28,  53 => 26,  48 => 24,  41 => 20,  20 => 1,);
+        return array (  429 => 91,  422 => 205,  417 => 203,  415 => 202,  412 => 201,  408 => 200,  404 => 199,  400 => 198,  394 => 195,  390 => 194,  386 => 193,  381 => 191,  377 => 190,  373 => 189,  369 => 188,  364 => 186,  360 => 185,  356 => 184,  352 => 183,  348 => 182,  344 => 181,  340 => 180,  336 => 179,  332 => 178,  328 => 177,  323 => 175,  319 => 174,  314 => 172,  309 => 170,  305 => 169,  301 => 168,  297 => 167,  292 => 165,  287 => 163,  283 => 162,  278 => 160,  274 => 159,  269 => 157,  264 => 155,  260 => 154,  255 => 152,  250 => 150,  246 => 149,  242 => 148,  238 => 147,  181 => 92,  179 => 91,  173 => 86,  171 => 85,  167 => 81,  165 => 80,  142 => 58,  138 => 57,  134 => 56,  130 => 55,  125 => 53,  120 => 51,  115 => 49,  111 => 48,  106 => 46,  101 => 44,  96 => 42,  91 => 40,  86 => 38,  81 => 36,  77 => 35,  73 => 34,  68 => 32,  63 => 30,  58 => 28,  53 => 26,  48 => 24,  41 => 20,  20 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -372,6 +475,12 @@ class __TwigTemplate_6fb10d80c68c7b0fe38d8e75904f2ec0da5848037fad63f9f4fffce08b6
 /*       <link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/admin/icon/icofont/css/icofont.css">*/
 /*       <!-- flag icon framework css -->*/
 /*       <link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/admin/pages/flag-icon/flag-icon.min.css">*/
+/*       <!-- Font Awesome -->*/
+/*       <link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/admin/icon/font-awesome/css/font-awesome.min.css">*/
+/*       <!-- Data Table Css -->*/
+/*       <link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/admin/bower_components/datatables.net-bs4/css/dataTables.bootstrap4.min.css">*/
+/*       <link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/admin/pages/data-table/css/buttons.dataTables.min.css">*/
+/*       <link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/admin/bower_components/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css">*/
 /*       <!-- Menu-Search css -->*/
 /*       <link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/admin/pages/menu-search/css/component.css">*/
 /*       <!-- Horizontal-Timeline css -->*/
@@ -380,6 +489,11 @@ class __TwigTemplate_6fb10d80c68c7b0fe38d8e75904f2ec0da5848037fad63f9f4fffce08b6
 /*       <link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/admin/pages/dashboard/amchart/css/amchart.css">*/
 /*       <!-- flag icon framework css -->*/
 /*       <link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/admin/pages/flag-icon/flag-icon.min.css">*/
+/*       <!-- Summernote css -->*/
+/*       <link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/admin/bower_components/summernote/dist/summernote.css">*/
+/*       <!-- jquery file upload Frame work -->*/
+/*       <link href="{{baseURL}}/assets/admin/bower_components/jquery.filer/css/jquery.filer.css" type="text/css" rel="stylesheet" />*/
+/*       <link href="{{baseURL}}/assets/admin/bower_components/jquery.filer/css/themes/jquery.filer-dragdropbox-theme.css" type="text/css" rel="stylesheet" />*/
 /*       <!-- Style.css -->*/
 /*       <link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/admin/css/style.css">*/
 /*       <!--color css-->*/
@@ -389,7 +503,11 @@ class __TwigTemplate_6fb10d80c68c7b0fe38d8e75904f2ec0da5848037fad63f9f4fffce08b6
 /*       <link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/admin/css/simple-line-icons.css">*/
 /*       <link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/admin/css/ionicons.css">*/
 /*       <link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/admin/css/jquery.mCustomScrollbar.css">*/
-/* */
+/*       <style>*/
+/*       .jFiler-theme-default .jFiler-input-button {*/
+/*           background-color: #f1c40f;*/
+/*       }*/
+/*       </style>*/
 /*   </head>*/
 /* */
 /*   <body>*/
@@ -418,9 +536,9 @@ class __TwigTemplate_6fb10d80c68c7b0fe38d8e75904f2ec0da5848037fad63f9f4fffce08b6
 /* */
 /*                         <div class="main-body">*/
 /*                           {% block content %} {% endblock %}*/
-/*                             <div id="styleSelector">*/
+/*                             <!-- <div id="styleSelector">*/
 /* */
-/*                             </div>*/
+/*                             </div> -->*/
 /*                         </div>*/
 /*                     </div>*/
 /*                 </div>*/
@@ -497,6 +615,22 @@ class __TwigTemplate_6fb10d80c68c7b0fe38d8e75904f2ec0da5848037fad63f9f4fffce08b6
 /* <script type="text/javascript" src="{{baseURL}}/assets/admin/pages/dashboard/amchart/js/serial.js"></script>*/
 /* <script type="text/javascript" src="{{baseURL}}/assets/admin/pages/dashboard/amchart/js/light.js"></script>*/
 /* <script type="text/javascript" src="{{baseURL}}/assets/admin/pages/dashboard/amchart/js/custom-amchart.js"></script>*/
+/* <!-- Summernote js -->*/
+/* <script type="text/javascript" src="{{baseURL}}/assets/admin/bower_components/summernote/dist/summernote.js"></script>*/
+/* <!-- jquery file upload js -->*/
+/* <script src="{{baseURL}}/assets/admin/bower_components/jquery.filer/js/jquery.filer.min.js"></script>*/
+/* <script src="{{baseURL}}/assets/admin/pages/filer/jquery.fileuploads.init.js" type="text/javascript"></script>*/
+/* <!-- data-table js -->*/
+/*    <script src="{{baseURL}}/assets/admin/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>*/
+/*    <script src="{{baseURL}}/assets/admin/bower_components/datatables.net-buttons/js/dataTables.buttons.min.js"></script>*/
+/*    <script src="{{baseURL}}/assets/admin/pages/data-table/js/jszip.min.js"></script>*/
+/*    <script src="{{baseURL}}/assets/admin/pages/data-table/js/pdfmake.min.js"></script>*/
+/*    <script src="{{baseURL}}/assets/admin/pages/data-table/js/vfs_fonts.js"></script>*/
+/*    <script src="{{baseURL}}/assets/admin/bower_components/datatables.net-buttons/js/buttons.print.min.js"></script>*/
+/*    <script src="{{baseURL}}/assets/admin/bower_components/datatables.net-buttons/js/buttons.html5.min.js"></script>*/
+/*    <script src="{{baseURL}}/assets/admin/bower_components/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>*/
+/*    <script src="{{baseURL}}/assets/admin/bower_components/datatables.net-responsive/js/dataTables.responsive.min.js"></script>*/
+/*    <script src="{{baseURL}}/assets/admin/bower_components/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>*/
 /* <!-- i18next.min.js -->*/
 /* <script type="text/javascript" src="{{baseURL}}/assets/admin/bower_components/i18next/i18next.min.js"></script>*/
 /* <script type="text/javascript" src="{{baseURL}}/assets/admin/bower_components/i18next-xhr-backend/i18nextXHRBackend.min.js"></script>*/
@@ -505,12 +639,16 @@ class __TwigTemplate_6fb10d80c68c7b0fe38d8e75904f2ec0da5848037fad63f9f4fffce08b6
 /* <!-- Custom js -->*/
 /* <script type="text/javascript" src="{{baseURL}}/assets/admin/pages/dashboard/custom-dashboard.js"></script>*/
 /* <script type="text/javascript" src="{{baseURL}}/assets/admin/js/script.js"></script>*/
+/* <script type="text/javascript" src="{{baseURL}}/assets/admin/pages/summernote/custom-note.js"></script>*/
 /* */
 /* <!-- pcmenu js -->*/
 /* <script src="{{baseURL}}/assets/admin/js/pcoded.min.js"></script>*/
 /* <script src="{{baseURL}}/assets/admin/js/demo-12.js"></script>*/
 /* <script src="{{baseURL}}/assets/admin/js/jquery.mCustomScrollbar.concat.min.js"></script>*/
 /* <script src="{{baseURL}}/assets/admin/js/jquery.mousewheel.min.js"></script>*/
+/* {% if script %}*/
+/* <script src = "{{script}}"></script>*/
+/* {% endif %}*/
 /* </body>*/
 /* */
 /* </html>*/

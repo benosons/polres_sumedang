@@ -82,9 +82,16 @@ $routes->add('dashboard', 'View::dashboard');
 $routes->add('login', 'View::login');
 $routes->add('register', 'View::register');
 $routes->add('kirimpengaduan', 'View::kirimpengaduan');
+$routes->add('datapengaduan', 'View::datapengaduan');
+$routes->add('inputpengaduan', 'View::inputpengaduan');
+$routes->add('userprofile', 'View::userprofile');
+
 $routes->add('auth', 'Auth::auth');
 $routes->add('reg', 'Auth::reg');
 $routes->add('logout', 'Auth::logout');
+
+$routes->post('getpengaduan', 'Jsondata::getpengaduan');
+$routes->post('save', 'Jsondata::save');
 
 /**
  * --------------------------------------------------------------------

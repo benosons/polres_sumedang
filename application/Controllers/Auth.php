@@ -1,6 +1,4 @@
-<?php
-
-namespace App\Controllers;
+<?php namespace App\Controllers;
 use App\Models\UserModel;
 use App\Controller\BaseController;
 
@@ -32,11 +30,11 @@ class Auth extends \CodeIgniter\Controller
 							$session->set($ses_data);
 							return redirect('dashboard');
 					}else{
-							$session->setFlashdata('msg', 'Wrong Password');
+							$session->setFlashdata('msg', 'Salah Password');
 							return redirect('login');
 					}
 			}else{
-					$session->setFlashdata('msg', 'Email not Found');
+					$session->setFlashdata('msg', 'User belum terdaftar');
 					return redirect('login');
 			}
 	}
@@ -58,7 +56,8 @@ class Auth extends \CodeIgniter\Controller
 			$data = [
 				'user_name' 	=> $this->request->getVar('name'),
 				'user_email' 	=> $this->request->getVar('email'),
-				'user_password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT)
+				'user_password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT),
+				'user_role' => '20'
 			];
 			// print_r($this->request->getVar('password'));die;
 			$model->save($data);

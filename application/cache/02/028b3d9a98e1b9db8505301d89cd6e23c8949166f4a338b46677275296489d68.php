@@ -670,11 +670,7 @@ class __TwigTemplate_cbc5f55c8ac1bff0082197492b03ba962b8a982951be12a23e5382e1cf8
 \t\t\t\t<a class=\"more page_margin_top\" href=\"index.html@page=home.html#\">MORE FROM SCIENCE</a>
 \t\t\t</div>
 \t\t</div>
-\t</div>
-\t<script src=\"";
-        // line 577
-        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "/assets/action-js/users/pengaduan.js\"></script>";
+\t</div>";
     }
 
     public function getTemplateName()
@@ -689,7 +685,7 @@ class __TwigTemplate_cbc5f55c8ac1bff0082197492b03ba962b8a982951be12a23e5382e1cf8
 
     public function getDebugInfo()
     {
-        return array (  676 => 577,  654 => 558,  634 => 541,  615 => 525,  596 => 509,  580 => 496,  567 => 486,  554 => 476,  541 => 466,  484 => 412,  428 => 359,  390 => 324,  371 => 308,  352 => 292,  333 => 276,  309 => 255,  290 => 239,  271 => 223,  240 => 195,  220 => 178,  198 => 159,  173 => 137,  154 => 121,  132 => 102,  30 => 2,  11 => 1,);
+        return array (  654 => 558,  634 => 541,  615 => 525,  596 => 509,  580 => 496,  567 => 486,  554 => 476,  541 => 466,  484 => 412,  428 => 359,  390 => 324,  371 => 308,  352 => 292,  333 => 276,  309 => 255,  290 => 239,  271 => 223,  240 => 195,  220 => 178,  198 => 159,  173 => 137,  154 => 121,  132 => 102,  30 => 2,  11 => 1,);
     }
 }
 /* {% extends "users/layout.html" %} {% block content %}*/
@@ -1268,7 +1264,6 @@ class __TwigTemplate_cbc5f55c8ac1bff0082197492b03ba962b8a982951be12a23e5382e1cf8
 /* 			</div>*/
 /* 		</div>*/
 /* 	</div>*/
-/* 	<script src="{{baseURL}}/assets/action-js/users/pengaduan.js"></script>*/
 /* */
 /* {% endblock %}*/
 /* */

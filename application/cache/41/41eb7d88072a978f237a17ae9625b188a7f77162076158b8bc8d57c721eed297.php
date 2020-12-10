@@ -26,14 +26,17 @@ class __TwigTemplate_65d39d51154dedace2a81a6ef745e3c2053b05338d4b8a56facc6d005c8
         </div>
         <!-- <div class=\"pcoded-navigatio-lavel\" data-i18n=\"nav.category.navigation\" menu-title-theme=\"theme5\">Navigation</div> -->
         <ul class=\"pcoded-item pcoded-left-item\">
-            <li class=\"active\">
+            <li id=\"menu-dash\">
                 <a href=\"dashboard\">
                     <span class=\"pcoded-micon\"><i class=\"ti-home\"></i></span>
                     <span class=\"pcoded-mtext\" data-i18n=\"nav.dash.main\">Dashboard</span>
                     <span class=\"pcoded-mcaret\"></span>
                 </a>
-            </li>
-            <li class=\"pcoded-hasmenu\">
+            </li>";
+        // line 18
+        if (((isset($context["role"]) ? $context["role"] : null) == "10")) {
+            // line 19
+            echo "            <li class=\"pcoded-hasmenu\">
                 <a href=\"javascript:void(0)\" data-i18n=\"nav.form-components.main\">
                     <span class=\"pcoded-micon\"><i class=\"ti-layers-alt\"></i></span>
                     <span class=\"pcoded-mtext\">Profile</span>
@@ -147,26 +150,33 @@ class __TwigTemplate_65d39d51154dedace2a81a6ef745e3c2053b05338d4b8a56facc6d005c8
                     </li>
 
                 </ul>
-            </li>
-            <li class=\"pcoded-hasmenu\">
+            </li>";
+        }
+        // line 135
+        echo "            <li class=\"pcoded-hasmenu\" id=\"menu-pengaduan\">
                 <a href=\"#\" data-i18n=\"nav.widget.main\">
                     <span class=\"pcoded-micon\"><i class=\"ti-comments\"></i></span>
-                    <span class=\"pcoded-mtext\">PENGADUAN</span>
+                    <span class=\"pcoded-mtext\">Pengaduan</span>
                     <span class=\"pcoded-badge label label-danger\">100+</span>
                     <span class=\"pcoded-mcaret\"></span>
                 </a>
-                <ul class=\"pcoded-submenu\">
-                    <li class=\" \">
-                        <a href=\"form-elements-component.html\" data-i18n=\"nav.form-components.form-components\">
+                <ul class=\"pcoded-submenu\">";
+        // line 143
+        if (((isset($context["role"]) ? $context["role"] : null) == 20)) {
+            // line 144
+            echo "                  <li class=\" \">
+                    <a href=\"/datapengaduan?par=users\" data-i18n=\"nav.form-components.form-elements-add-on\">
+                      <span class=\"pcoded-micon\"><i class=\"ti-angle-right\"></i></span>
+                      <span class=\"pcoded-mtext\">Users</span>
+                      <span class=\"pcoded-mcaret\"></span>
+                    </a>
+                  </li>";
+        } else {
+            // line 152
+            echo "                    <li class=\" \">
+                        <a href=\"/datapengaduan?par=lantas\" data-i18n=\"nav.form-components.form-components\">
                             <span class=\"pcoded-micon\"><i class=\"ti-angle-right\"></i></span>
-                            <span class=\"pcoded-mtext\">Form Components</span>
-                            <span class=\"pcoded-mcaret\"></span>
-                        </a>
-                    </li>
-                    <li class=\" \">
-                        <a href=\"form-elements-add-on.html\" data-i18n=\"nav.form-components.form-elements-add-on\">
-                            <span class=\"pcoded-micon\"><i class=\"ti-angle-right\"></i></span>
-                            <span class=\"pcoded-mtext\">Form-Elements-Add-On</span>
+                            <span class=\"pcoded-mtext\">Sat Lantas</span>
                             <span class=\"pcoded-mcaret\"></span>
                         </a>
                     </li>
@@ -183,13 +193,15 @@ class __TwigTemplate_65d39d51154dedace2a81a6ef745e3c2053b05338d4b8a56facc6d005c8
                             <span class=\"pcoded-mtext\">Form Validation</span>
                             <span class=\"pcoded-mcaret\"></span>
                         </a>
-                    </li>
-                </ul>
+                    </li>";
+        }
+        // line 174
+        echo "                </ul>
             </li>
             <li class=\"pcoded-hasmenu\">
                 <a href=\"#\" data-i18n=\"nav.widget.main\">
                     <span class=\"pcoded-micon\"><i class=\"ti-info-alt\"></i></span>
-                    <span class=\"pcoded-mtext\">INFORMASI</span>
+                    <span class=\"pcoded-mtext\">Informasi</span>
                     <span class=\"pcoded-mcaret\"></span>
                 </a>
                 <ul class=\"pcoded-submenu\">
@@ -234,9 +246,14 @@ class __TwigTemplate_65d39d51154dedace2a81a6ef745e3c2053b05338d4b8a56facc6d005c8
         return "admin/sidebar.html";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  19 => 1,);
+        return array (  199 => 174,  176 => 152,  167 => 144,  165 => 143,  156 => 135,  39 => 19,  37 => 18,  19 => 1,);
     }
 }
 /* <nav class="pcoded-navbar" pcoded-header-position="fixed" style="position: fixed;">*/
@@ -249,13 +266,14 @@ class __TwigTemplate_65d39d51154dedace2a81a6ef745e3c2053b05338d4b8a56facc6d005c8
 /*         </div>*/
 /*         <!-- <div class="pcoded-navigatio-lavel" data-i18n="nav.category.navigation" menu-title-theme="theme5">Navigation</div> -->*/
 /*         <ul class="pcoded-item pcoded-left-item">*/
-/*             <li class="active">*/
+/*             <li id="menu-dash">*/
 /*                 <a href="dashboard">*/
 /*                     <span class="pcoded-micon"><i class="ti-home"></i></span>*/
 /*                     <span class="pcoded-mtext" data-i18n="nav.dash.main">Dashboard</span>*/
 /*                     <span class="pcoded-mcaret"></span>*/
 /*                 </a>*/
 /*             </li>*/
+/*             {% if role == '10'%}*/
 /*             <li class="pcoded-hasmenu">*/
 /*                 <a href="javascript:void(0)" data-i18n="nav.form-components.main">*/
 /*                     <span class="pcoded-micon"><i class="ti-layers-alt"></i></span>*/
@@ -371,25 +389,28 @@ class __TwigTemplate_65d39d51154dedace2a81a6ef745e3c2053b05338d4b8a56facc6d005c8
 /* */
 /*                 </ul>*/
 /*             </li>*/
-/*             <li class="pcoded-hasmenu">*/
+/*             {% endif %}*/
+/*             <li class="pcoded-hasmenu" id="menu-pengaduan">*/
 /*                 <a href="#" data-i18n="nav.widget.main">*/
 /*                     <span class="pcoded-micon"><i class="ti-comments"></i></span>*/
-/*                     <span class="pcoded-mtext">PENGADUAN</span>*/
+/*                     <span class="pcoded-mtext">Pengaduan</span>*/
 /*                     <span class="pcoded-badge label label-danger">100+</span>*/
 /*                     <span class="pcoded-mcaret"></span>*/
 /*                 </a>*/
 /*                 <ul class="pcoded-submenu">*/
+/*                   {% if role == 20 %}*/
+/*                   <li class=" ">*/
+/*                     <a href="/datapengaduan?par=users" data-i18n="nav.form-components.form-elements-add-on">*/
+/*                       <span class="pcoded-micon"><i class="ti-angle-right"></i></span>*/
+/*                       <span class="pcoded-mtext">Users</span>*/
+/*                       <span class="pcoded-mcaret"></span>*/
+/*                     </a>*/
+/*                   </li>*/
+/*                   {% else %}*/
 /*                     <li class=" ">*/
-/*                         <a href="form-elements-component.html" data-i18n="nav.form-components.form-components">*/
+/*                         <a href="/datapengaduan?par=lantas" data-i18n="nav.form-components.form-components">*/
 /*                             <span class="pcoded-micon"><i class="ti-angle-right"></i></span>*/
-/*                             <span class="pcoded-mtext">Form Components</span>*/
-/*                             <span class="pcoded-mcaret"></span>*/
-/*                         </a>*/
-/*                     </li>*/
-/*                     <li class=" ">*/
-/*                         <a href="form-elements-add-on.html" data-i18n="nav.form-components.form-elements-add-on">*/
-/*                             <span class="pcoded-micon"><i class="ti-angle-right"></i></span>*/
-/*                             <span class="pcoded-mtext">Form-Elements-Add-On</span>*/
+/*                             <span class="pcoded-mtext">Sat Lantas</span>*/
 /*                             <span class="pcoded-mcaret"></span>*/
 /*                         </a>*/
 /*                     </li>*/
@@ -407,12 +428,13 @@ class __TwigTemplate_65d39d51154dedace2a81a6ef745e3c2053b05338d4b8a56facc6d005c8
 /*                             <span class="pcoded-mcaret"></span>*/
 /*                         </a>*/
 /*                     </li>*/
+/*                   {% endif %}*/
 /*                 </ul>*/
 /*             </li>*/
 /*             <li class="pcoded-hasmenu">*/
 /*                 <a href="#" data-i18n="nav.widget.main">*/
 /*                     <span class="pcoded-micon"><i class="ti-info-alt"></i></span>*/
-/*                     <span class="pcoded-mtext">INFORMASI</span>*/
+/*                     <span class="pcoded-mtext">Informasi</span>*/
 /*                     <span class="pcoded-mcaret"></span>*/
 /*                 </a>*/
 /*                 <ul class="pcoded-submenu">*/

@@ -48,7 +48,7 @@ p { font-size: 13px; }
 /**====== Main-body css end ======**/
 /**  ===================== Card-Layout css start
 ==========================  **/
-.card { border-radius: 2px; border-top: 4px solid #8CDDCD; box-shadow: 0 2px 1px rgba(0, 0, 0, 0.05); border-left: none; border-right: none; border-bottom: none; margin-bottom: 30px; }
+.card { border-radius: 2px; border-top: 4px solid #ffc301; box-shadow: 0 2px 1px rgba(0, 0, 0, 0.05); border-left: none; border-right: none; border-bottom: none; margin-bottom: 30px; }
 .card .card-footer { background-color: #fff; }
 .card .card-header { background-color: transparent; padding: 15px 20px; }
 .card .card-header .card-header-left { display: inline-block; }
@@ -5091,7 +5091,7 @@ tr:first-child > td > .fc-day-grid-event { margin-left: 0; }
 /**  ===================== Mail-pages css start
 ==========================  **/
 .email-card { padding: 0 15px; }
-.email-card .user-head { background-color: #1abc9c; padding: 10px; min-height: 80px; display: flex; align-items: center; }
+.email-card .user-head { background-color: #1b1b1b; padding: 10px; min-height: 80px; display: flex; align-items: center; }
 .email-card .user-head .user-name { margin-left: 10px; margin-bottom: 10px; }
 .email-card .user-head .user-name span { display: block; color: #fff; }
 .email-card .user-body { margin-left: -15px; margin-right: -15px; background-color: #fff; border-right: 1px solid #ddd; }
@@ -5107,7 +5107,7 @@ tr:first-child > td > .fc-day-grid-event { margin-left: 0; }
 .email-card .user-body .label-list a.mail-family:before { background-color: #2ecc71; }
 .email-card .user-body .label-list a.mail-friends:before { background-color: #f1c40f; }
 .email-card .user-body .label-list a.mail-office:before { background-color: #e74c3c; }
-.email-card .mail-box-head { background-color: #bdc3c7; min-height: 80px; padding: 20px 0; }
+.email-card .mail-box-head { background-color: #1b1b1b; min-height: 80px; padding: 20px 0; }
 .email-card .mail-box-head h3 { color: #fff; }
 .email-card .mail-box-head .input-group { margin-bottom: 0; }
 .email-card .mail-body { padding: 20px 0; }
@@ -6266,7 +6266,7 @@ body[themebg-pattern="pattern9"] { background-image: url("../images/pattern9.png
 .pcoded .pcoded-navbar[active-item-theme="theme4"] .pcoded-item > li.active > a:before { border-left-color: #0073aa !important; }
 .pcoded .pcoded-navbar[active-item-theme="theme4"] .pcoded-item > li.active > a:after { color: #FFF !important; }
 .pcoded .pcoded-navbar[active-item-theme="theme5"] .pcoded-item li .pcoded-submenu li.active > a { color: #1ABC9C !important; }
-.pcoded .pcoded-navbar[active-item-theme="theme5"] .pcoded-item li.pcoded-hasmenu.active > a { background: #1ABC9C !important; }
+.pcoded .pcoded-navbar[active-item-theme="theme5"] .pcoded-item li.pcoded-hasmenu.active > a { background: #514314 !important; }
 .pcoded .pcoded-navbar[active-item-theme="theme5"] .pcoded-item li.pcoded-hasmenu:hover > a { color: #FFF !important; }
 .pcoded .pcoded-navbar[active-item-theme="theme5"] .pcoded-item li:hover > a { color: #ffc301 !important; background: #1ABC9C; }
 .pcoded .pcoded-navbar[active-item-theme="theme5"] .pcoded-item li:hover > a:before { border-left-color: transparent !important; }

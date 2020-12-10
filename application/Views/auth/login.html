@@ -33,6 +33,11 @@
     <link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/admin/css/color/color-1.css" id="color"/>
 
     <link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/auth/css/particles.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
   <style>
     .login-mod {
         align-items: center;
@@ -46,12 +51,25 @@
     .form-control:focus {
         border-color: #f1c40f !important;
     }
+
+    .swal2-modal {
+			font-size: 85%;
+		}
+
+		.swal2-popup .swal2-styled.swal2-confirm {
+	    background-color: #ED1C24;
+		}
+
+		.swal2-popup .swal2-title {
+			font-size: 1.3em;
+		}
   </style>
 </head>
 
 <body class="fix-menu" id="particles-js">
     <section class="login-mod p-fixed d-flex text-center" style="background-color:none;">
         <!-- Container-fluid starts -->
+        <input hidden id="message" value="{{message}}"/>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12">
@@ -187,6 +205,31 @@
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
     <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
     <script src="{{baseURL}}/assets/auth/js/particles.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.js"></script>
+    <script>
+
+    if($('#message').val()){
+      const message = $('#message').val();
+      const code = $('#message').val();
+      Swal.fire({
+        type: 'error',
+        title:message,
+        showConfirmButton: true,
+        // showCancelButton: true,
+        confirmButtonText: `Ok`,
+      }).then((result) => {
+        console.log(result);
+        if (result.value) {
+          $('#message').val('');
+        }
+      })
+      // Swal.fire(
+      //   'Gagal',
+      //   message + '!',
+      //   'error'
+      // );
+    }
+    </script>
 </body>
 
 </html>

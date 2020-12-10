@@ -131,7 +131,7 @@ class __TwigTemplate_3b96aacfa4941bdc19f17e1b272618bfba30fcc2538054a33f93c0f5bbf
                                 </a>
                             </li>
                             <li>
-                                <a href=\"user-profile.html\">
+                                <a href=\"/userprofile\">
                                     <i class=\"ti-user\"></i> Profile
                                 </a>
                             </li>
@@ -576,7 +576,7 @@ class __TwigTemplate_3b96aacfa4941bdc19f17e1b272618bfba30fcc2538054a33f93c0f5bbf
 /*                                 </a>*/
 /*                             </li>*/
 /*                             <li>*/
-/*                                 <a href="user-profile.html">*/
+/*                                 <a href="/userprofile">*/
 /*                                     <i class="ti-user"></i> Profile*/
 /*                                 </a>*/
 /*                             </li>*/

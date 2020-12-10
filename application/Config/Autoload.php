@@ -28,6 +28,7 @@ class Autoload extends \CodeIgniter\Config\AutoloadConfig
 	{
 		parent::__construct();
 
+		date_default_timezone_set('Asia/Jakarta');
 		/**
 		 * -------------------------------------------------------------------
 		 * Namespaces
