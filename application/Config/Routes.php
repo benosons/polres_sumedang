@@ -81,13 +81,8 @@ $routes->add('home', 'View::home');
 $routes->add('dashboard', 'View::dashboard');
 $routes->add('login', 'View::login');
 $routes->add('register', 'View::register');
-$routes->add('kirimpengaduan', 'View::kirimpengaduan');
 $routes->add('datapengaduan', 'View::datapengaduan');
-$routes->add('userpengaduan', 'View::userpengaduan');
-$routes->add('inputpengaduan', 'View::inputpengaduan');
 $routes->add('userprofile', 'View::userprofile');
-$routes->add('bacapengaduan', 'View::bacapengaduan');
-$routes->add('terkirimpengaduan', 'View::terkirimpengaduan');
 
 $routes->add('auth', 'Auth::auth');
 $routes->add('reg', 'Auth::reg');
