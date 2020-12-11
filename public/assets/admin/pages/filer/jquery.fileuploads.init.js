@@ -38,6 +38,9 @@ $(document).ready(function(){
                 filesSize: "{{fi-name}} is too large! Please upload file up to {{fi-maxSize}} MB.",
                 filesSizeAll: "Files you've choosed are too large! Please upload files up to {{fi-maxSize}} MB."
             }
+        },
+        templates: {
+            removeConfirmation: false,
         }
     });
 

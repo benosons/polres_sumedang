@@ -23,6 +23,7 @@ class Auth extends \CodeIgniter\Controller
 							$ses_data = [
 									'user_id'       => $data->user_id,
 									'user_name'     => $data->user_name,
+									'user_fullname' => $data->user_fullname,
 									'user_email'    => $data->user_email,
 									'logged_in'     => TRUE,
 									'user_role'     => $data->user_role

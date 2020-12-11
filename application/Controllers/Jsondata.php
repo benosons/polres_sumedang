@@ -1,5 +1,6 @@
 <?php namespace App\Controllers;
 use CodeIgniter\HTTP\RequestInterface;
+use CodeIgniter\HTTP\Files\UploadedFile;
 
 class Jsondata extends \CodeIgniter\Controller
 {
@@ -26,13 +27,27 @@ class Jsondata extends \CodeIgniter\Controller
 	{
 		try
 		{
-				$role = $this->data['role'];
+				$request  = $this->request;
+				$param 	  = $request->getVar('param');
+				$id		 	  = $request->getVar('id');
+				$role 		= $this->data['role'];
+				$userid		= $this->data['userid'];
+
 				if($this->logged){
 					$model = new \App\Models\PengaduanModel();
+					$modelfiles = new \App\Models\FilesModel();
 					if($role == 10){
 						$data = $model->findAll();
 					}else{
-						$data = $model->getWhere(['role' => $role])->getResult();
+							$data['pengaduan'] = $model->getPengaduan($param, $role, $userid, '', $id);
+							$data['lampiran']  = $modelfiles->getWhere(['id_parent' => $id])->getResult();
+							$data['balasan']   = $model->getBalasan($id);
+							foreach ($data['balasan'] as $key => $value) {
+								unset($value->user_password);
+								unset($value->user_created_at);
+								unset($value->user_id);
+							}
+							
 					}
 
 					if($data){
@@ -69,13 +84,42 @@ class Jsondata extends \CodeIgniter\Controller
 
 	public function save(){
 
-		$request = $this->request;
-		$param 	 = $request->getVar('param');
-		$model = new \App\Models\PengaduanModel();
+		$request  = $this->request;
+		$param 	  = $request->getVar('param');
+		$mode 	  = $request->getVar('mode');
+		$model 	  = new \App\Models\PengaduanModel();
+		$modelfiles = new \App\Models\FilesModel();
+
+		if($mode == 'balasan'){
+			$data = [
+				'id_pengaduan'=> $request->getVar('id'),
+				'isi' 				=> $request->getVar('isi'),
+				'create_date' => $this->now,
+				'update_date' => $this->now,
+				'create_by' 	=> $this->data['userid']
+	    ];
+
+			$simpan = $model->saveBalasan($data);
+			$response = [
+					'status'   => 'sukses',
+					'code'     => '0',
+					'data' 		 => 'terkirim'
+			];
+			header('Content-Type: application/json');
+			echo json_encode($response);
+			exit;
+		}
+
+		$files	  = $request->getFiles()['lampiran'];
+		$path			= FCPATH.'public';
+		$tipe			= 'uploads/users/'.$request->getVar('param').'/lampiran';
+		$bagian 	= $request->getVar('nama_tujuan');
+		$date 		= date('Y/m/d');
+		$folder		= $path.'/'.$tipe.'/'.$bagian.'/'.$date.'/';
 
 		$data = [
-						'tujuan' 			=> $request->getVar('tujuan'),
-						'nama' 				=> '',
+						'kode_tujuan' => $request->getVar('kode_tujuan'),
+						'nama_tujuan'	=> $request->getVar('nama_tujuan'),
 						'judul' 			=> $request->getVar('judul'),
 						'isi' 				=> $request->getVar('isi'),
 						'create_date' => $this->now,
@@ -85,11 +129,65 @@ class Jsondata extends \CodeIgniter\Controller
 						'status' 			=> 0,
 						'role' 				=> $this->data['role']
         ];
-		$model->insert($data);
+		$res = $model->insert($data);
+		$id  = $model->insertID();
+
+		if (!is_dir($folder)) {
+		    mkdir($folder, 0777, TRUE);
+		}
+
+		if($id){
+			foreach($files as $idx => $img){
+
+				$stat = $img->move($folder, $img->getName());
+
+				$datalampiran = [
+					'id_parent' => $id,
+					'file_name' => $img->getName(),
+					'extention' => null,
+					'size' => $img->getSize('kb'),
+					'path' => $tipe.'/'.$bagian.'/'.$date.'/',
+					'type' => $request->getVar('param'),
+					'create_date' => $this->now,
+					'update_date' => $this->now,
+		    ];
+				$modelfiles->insert($datalampiran);
+				// $saveupload = $model->saveDataUpload($datalampiran);
+			}
+		}
+
 		$response = [
 				'status'   => 'sukses',
 				'code'     => '0',
 				'data' 		 => 'terkirim'
+		];
+		header('Content-Type: application/json');
+		echo json_encode($response);
+		exit;
+
+	}
+
+	public function update(){
+
+		$request  = $this->request;
+		$id 	  = $request->getVar('id');
+		$role 		= $this->data['role'];
+		$userid		= $this->data['userid'];
+
+		$model 	  = new \App\Models\PengaduanModel();
+
+		$data = [
+						'update_date' => $this->now,
+						'update_by' 	=> $userid,
+						'status' 			=> 1,
+        ];
+
+		$res = $model->update($id, $data);
+
+		$response = [
+				'status'   => 'sukses',
+				'code'     => '0',
+				'data' 		 => 'terupdate'
 		];
 		header('Content-Type: application/json');
 		echo json_encode($response);

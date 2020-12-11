@@ -6,26 +6,35 @@ $(document).ready(function(){
   $('.note-popover').remove();
 
   const urlParams = new URLSearchParams(window.location.search);
-  const myParam = urlParams.get('par');
+  // const myParam = urlParams.get('par');
   $('#kirim-pengaduan').on('click', function(){
       var tujuan = $('#tujuan').val();
+      var nama_tujuan = $('#tujuan option:selected').text();
       var judul = $('#judul').val();
       var isi = $('.email-summernote').summernote('code');
-      // alert(textareaValue);
-      save('data_pengaduan', tujuan, judul, isi);
+
+      var formData = new FormData();
+      formData.append('param', 'pengaduan');
+      formData.append('kode_tujuan', tujuan);
+      formData.append('nama_tujuan', nama_tujuan);
+      formData.append('judul', judul);
+      formData.append('isi', isi);
+      // Attach file
+      for (var i = 0; i < $('input[type=file]')[0].files.length; i++) {
+        formData.append('lampiran[]', $('input[type=file]')[0].files[i]);
+      }
+
+      save(formData);
   });
 
-  function save(param, tujuan, judul, isi){
+  function save(formData){
+
     $.ajax({
         type: 'post',
-        dataType: 'json',
+        processData: false,
+        contentType: false,
         url: 'save',
-        data : {
-                param      : param,
-                tujuan      : tujuan,
-                judul      : judul,
-                isi      : isi,
-         },
+        data : formData,
         success: function(result){
           console.log(result);
         }

@@ -165,7 +165,7 @@ class __TwigTemplate_65d39d51154dedace2a81a6ef745e3c2053b05338d4b8a56facc6d005c8
         if (((isset($context["role"]) ? $context["role"] : null) == 20)) {
             // line 144
             echo "                  <li class=\" \">
-                    <a href=\"/datapengaduan?par=users\" data-i18n=\"nav.form-components.form-elements-add-on\">
+                    <a href=\"datapengaduan\" data-i18n=\"nav.form-components.form-elements-add-on\">
                       <span class=\"pcoded-micon\"><i class=\"ti-angle-right\"></i></span>
                       <span class=\"pcoded-mtext\">Users</span>
                       <span class=\"pcoded-mcaret\"></span>
@@ -174,7 +174,7 @@ class __TwigTemplate_65d39d51154dedace2a81a6ef745e3c2053b05338d4b8a56facc6d005c8
         } else {
             // line 152
             echo "                    <li class=\" \">
-                        <a href=\"/datapengaduan?par=lantas\" data-i18n=\"nav.form-components.form-components\">
+                        <a href=\"datapengaduan\" data-i18n=\"nav.form-components.form-components\">
                             <span class=\"pcoded-micon\"><i class=\"ti-angle-right\"></i></span>
                             <span class=\"pcoded-mtext\">Sat Lantas</span>
                             <span class=\"pcoded-mcaret\"></span>
@@ -400,7 +400,7 @@ class __TwigTemplate_65d39d51154dedace2a81a6ef745e3c2053b05338d4b8a56facc6d005c8
 /*                 <ul class="pcoded-submenu">*/
 /*                   {% if role == 20 %}*/
 /*                   <li class=" ">*/
-/*                     <a href="/datapengaduan?par=users" data-i18n="nav.form-components.form-elements-add-on">*/
+/*                     <a href="datapengaduan" data-i18n="nav.form-components.form-elements-add-on">*/
 /*                       <span class="pcoded-micon"><i class="ti-angle-right"></i></span>*/
 /*                       <span class="pcoded-mtext">Users</span>*/
 /*                       <span class="pcoded-mcaret"></span>*/
@@ -408,7 +408,7 @@ class __TwigTemplate_65d39d51154dedace2a81a6ef745e3c2053b05338d4b8a56facc6d005c8
 /*                   </li>*/
 /*                   {% else %}*/
 /*                     <li class=" ">*/
-/*                         <a href="/datapengaduan?par=lantas" data-i18n="nav.form-components.form-components">*/
+/*                         <a href="datapengaduan" data-i18n="nav.form-components.form-components">*/
 /*                             <span class="pcoded-micon"><i class="ti-angle-right"></i></span>*/
 /*                             <span class="pcoded-mtext">Sat Lantas</span>*/
 /*                             <span class="pcoded-mcaret"></span>*/

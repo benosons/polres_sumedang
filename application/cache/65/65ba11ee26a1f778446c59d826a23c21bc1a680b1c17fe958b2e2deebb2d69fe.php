@@ -1,14 +1,14 @@
 <?php
 
-/* admin/pengaduan/input.html */
-class __TwigTemplate_2eda5ab5f9d547b9aa6052fab791fab2bbb0f1a44c0f6ad608dbe32eef5a4a92 extends Twig_Template
+/* admin/pengaduan/baca.html */
+class __TwigTemplate_d8d0fabebda4476caaf079822d435d06718f52e412b78ef6c97f82d7ec13e585 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("admin/layout.html", "admin/pengaduan/input.html", 1);
+        $this->parent = $this->loadTemplate("admin/layout.html", "admin/pengaduan/baca.html", 1);
         $this->blocks = array(
             'content' => array($this, 'block_content'),
         );
@@ -58,7 +58,7 @@ class __TwigTemplate_2eda5ab5f9d547b9aa6052fab791fab2bbb0f1a44c0f6ad608dbe32eef5
                     <div class=\"col-lg-12 col-xl-3\">
                         <div class=\"user-body\">
                             <div class=\"card-block\">
-                                <button id=\"kirim-pengaduan\" class=\"btn btn-success btn-block\"> <i class=\"fa fa-send\"></i> Kirim</button>
+                                <button id=\"input-pengaduan\" class=\"btn btn-danger btn-block\"><i class=\"icofont icofont-ui-text-chat\"></i> Tulis Pengaduan</button>
                             </div>
                             <ul class=\"page-list\">
                                 <li class=\"\">
@@ -78,7 +78,7 @@ class __TwigTemplate_2eda5ab5f9d547b9aa6052fab791fab2bbb0f1a44c0f6ad608dbe32eef5
                                 </li>
                                 <li>
                                     <div class=\"mail-section\">
-                                        <a href=\"/terkirimpengaduan\">
+                                        <a href=\"email-compose.html\">
                                             <i class=\"icofont icofont-paper-plane\"></i> Terkirim
                                         </a>
                                     </div>
@@ -160,38 +160,8 @@ class __TwigTemplate_2eda5ab5f9d547b9aa6052fab791fab2bbb0f1a44c0f6ad608dbe32eef5
                                     </div>
                                 </div> -->
                             </div>
-                            <div class=\"mail-body-content\">
-                                <form>
-                                    <div class=\"form-group row\">
-                                        <div class=\"col-sm-12\">
-                                            <select id=\"tujuan\" name=\"select\" class=\"form-control\">
-                                                <option value=\"0\">- Pilih tujuan pengaduan -</option>
-                                                <option value=\"lalulintas\">Lalu lintas</option>
-                                                <option value=\"reskrim\">Reskrim</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <!-- <div class=\"form-group\">
-                                        <input type=\"text\" class=\"form-control\" placeholder=\"To\">
-                                    </div>
-                                    <div class=\"form-group\">
-                                        <div class=\"row\">
-                                            <div class=\"col-md-6\">
-                                                <input type=\"email\" class=\"form-control\" placeholder=\"Cc\">
-                                            </div>
-                                            <div class=\"col-md-6\">
-                                                <input type=\"email\" class=\"form-control\" placeholder=\"Bcc\">
-                                            </div>
-                                        </div>
-                                    </div> -->
-                                    <div class=\"form-group\">
-                                        <input id=\"judul\" type=\"text\" class=\"form-control\" placeholder=\"Judul\">
-                                    </div>
-                                    <div class=\"form-group\">
-                                      <input type=\"file\" name=\"files[]\" id=\"filer_input\" multiple=\"multiple\">
-                                    </div>
-                                    <div class=\"summernote email-summernote\"></div>
-                                </form>
+                            <div class=\"mail-body-content email-read\">
+
                             </div>
                         </div>
                     </div>
@@ -203,14 +173,14 @@ class __TwigTemplate_2eda5ab5f9d547b9aa6052fab791fab2bbb0f1a44c0f6ad608dbe32eef5
     <!-- Page-body end -->
 </div>
 <!-- <script src=\"";
-        // line 177
+        // line 147
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/action-js/admin/datapengaduan.js\"></script> -->";
     }
 
     public function getTemplateName()
     {
-        return "admin/pengaduan/input.html";
+        return "admin/pengaduan/baca.html";
     }
 
     public function isTraitable()
@@ -220,7 +190,7 @@ class __TwigTemplate_2eda5ab5f9d547b9aa6052fab791fab2bbb0f1a44c0f6ad608dbe32eef5
 
     public function getDebugInfo()
     {
-        return array (  207 => 177,  30 => 2,  11 => 1,);
+        return array (  177 => 147,  30 => 2,  11 => 1,);
     }
 }
 /* {% extends "admin/layout.html" %} {% block content %}*/
@@ -255,7 +225,7 @@ class __TwigTemplate_2eda5ab5f9d547b9aa6052fab791fab2bbb0f1a44c0f6ad608dbe32eef5
 /*                     <div class="col-lg-12 col-xl-3">*/
 /*                         <div class="user-body">*/
 /*                             <div class="card-block">*/
-/*                                 <button id="kirim-pengaduan" class="btn btn-success btn-block"> <i class="fa fa-send"></i> Kirim</button>*/
+/*                                 <button id="input-pengaduan" class="btn btn-danger btn-block"><i class="icofont icofont-ui-text-chat"></i> Tulis Pengaduan</button>*/
 /*                             </div>*/
 /*                             <ul class="page-list">*/
 /*                                 <li class="">*/
@@ -275,7 +245,7 @@ class __TwigTemplate_2eda5ab5f9d547b9aa6052fab791fab2bbb0f1a44c0f6ad608dbe32eef5
 /*                                 </li>*/
 /*                                 <li>*/
 /*                                     <div class="mail-section">*/
-/*                                         <a href="/terkirimpengaduan">*/
+/*                                         <a href="email-compose.html">*/
 /*                                             <i class="icofont icofont-paper-plane"></i> Terkirim*/
 /*                                         </a>*/
 /*                                     </div>*/
@@ -357,38 +327,8 @@ class __TwigTemplate_2eda5ab5f9d547b9aa6052fab791fab2bbb0f1a44c0f6ad608dbe32eef5
 /*                                     </div>*/
 /*                                 </div> -->*/
 /*                             </div>*/
-/*                             <div class="mail-body-content">*/
-/*                                 <form>*/
-/*                                     <div class="form-group row">*/
-/*                                         <div class="col-sm-12">*/
-/*                                             <select id="tujuan" name="select" class="form-control">*/
-/*                                                 <option value="0">- Pilih tujuan pengaduan -</option>*/
-/*                                                 <option value="lalulintas">Lalu lintas</option>*/
-/*                                                 <option value="reskrim">Reskrim</option>*/
-/*                                             </select>*/
-/*                                         </div>*/
-/*                                     </div>*/
-/*                                     <!-- <div class="form-group">*/
-/*                                         <input type="text" class="form-control" placeholder="To">*/
-/*                                     </div>*/
-/*                                     <div class="form-group">*/
-/*                                         <div class="row">*/
-/*                                             <div class="col-md-6">*/
-/*                                                 <input type="email" class="form-control" placeholder="Cc">*/
-/*                                             </div>*/
-/*                                             <div class="col-md-6">*/
-/*                                                 <input type="email" class="form-control" placeholder="Bcc">*/
-/*                                             </div>*/
-/*                                         </div>*/
-/*                                     </div> -->*/
-/*                                     <div class="form-group">*/
-/*                                         <input id="judul" type="text" class="form-control" placeholder="Judul">*/
-/*                                     </div>*/
-/*                                     <div class="form-group">*/
-/*                                       <input type="file" name="files[]" id="filer_input" multiple="multiple">*/
-/*                                     </div>*/
-/*                                     <div class="summernote email-summernote"></div>*/
-/*                                 </form>*/
+/*                             <div class="mail-body-content email-read">*/
+/* */
 /*                             </div>*/
 /*                         </div>*/
 /*                     </div>*/

@@ -90,6 +90,17 @@ class View extends \CodeIgniter\Controller
 				}
 	}
 
+	public function userpengaduan()
+	{
+				if($this->logged){
+					helper('form');
+					$this->data['script'] = $this->data['baseURL'].'/assets/action-js/admin/pengaduan/user.js';
+					return \Twig::instance()->display('admin/pengaduan/user.html', $this->data);
+				}else{
+					return redirect('home');
+				}
+	}
+
 	public function inputpengaduan()
 	{
 				if($this->logged){
@@ -107,6 +118,27 @@ class View extends \CodeIgniter\Controller
 					helper('form');
 					$this->data['script'] = $this->data['baseURL'].'/assets/action-js/admin/users/profile.js';
 					return \Twig::instance()->display('admin/users/profile.html', $this->data);
+				}else{
+					return redirect('home');
+				}
+	}
+
+	public function bacapengaduan()
+	{
+				if($this->logged){
+					helper('form');
+					$this->data['script'] = $this->data['baseURL'].'/assets/action-js/admin/pengaduan/baca.js';
+					return \Twig::instance()->display('admin/pengaduan/baca.html', $this->data);
+				}else{
+					return redirect('home');
+				}
+	}
+	public function terkirimpengaduan()
+	{
+				if($this->logged){
+					helper('form');
+					$this->data['script'] = $this->data['baseURL'].'/assets/action-js/admin/pengaduan/terkirim.js';
+					return \Twig::instance()->display('admin/pengaduan/terkirim.html', $this->data);
 				}else{
 					return redirect('home');
 				}

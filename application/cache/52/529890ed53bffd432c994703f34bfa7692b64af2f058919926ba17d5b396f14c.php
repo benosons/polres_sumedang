@@ -141,10 +141,25 @@ class __TwigTemplate_6fb10d80c68c7b0fe38d8e75904f2ec0da5848037fad63f9f4fffce08b6
         // line 58
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/css/jquery.mCustomScrollbar.css\">
+
+      <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.css\">
+
       <style>
       .jFiler-theme-default .jFiler-input-button {
           background-color: #f1c40f;
       }
+
+      .swal2-modal {
+  \t\t\tfont-size: 85%;
+  \t\t}
+
+  \t\t.swal2-popup .swal2-styled.swal2-confirm {
+  \t    background-color: #ED1C24;
+  \t\t}
+
+  \t\t.swal2-popup .swal2-title {
+  \t\t\tfont-size: 1.3em;
+  \t\t}
       </style>
   </head>
 
@@ -161,23 +176,23 @@ class __TwigTemplate_6fb10d80c68c7b0fe38d8e75904f2ec0da5848037fad63f9f4fffce08b6
     <div id=\"pcoded\" class=\"pcoded\">
         <div class=\"pcoded-overlay-box\"></div>
         <div class=\"pcoded-container navbar-wrapper\">";
-        // line 80
-        $this->loadTemplate("admin/navbar.html", "admin/layout.html", 80)->display($context);
-        // line 81
+        // line 95
+        $this->loadTemplate("admin/navbar.html", "admin/layout.html", 95)->display($context);
+        // line 96
         echo "
             <div class=\"pcoded-main-container\" style=\"margin-top: 56px;\">
                 <div class=\"pcoded-wrapper\">";
-        // line 85
-        $this->loadTemplate("admin/sidebar.html", "admin/layout.html", 85)->display($context);
-        // line 86
+        // line 100
+        $this->loadTemplate("admin/sidebar.html", "admin/layout.html", 100)->display($context);
+        // line 101
         echo "
                     <div class=\"pcoded-content\">
                         <div class=\"pcoded-inner-content\">
 
                         <div class=\"main-body\">";
-        // line 91
+        // line 106
         $this->displayBlock('content', $context, $blocks);
-        // line 92
+        // line 107
         echo "                            <!-- <div id=\"styleSelector\">
 
                             </div> -->
@@ -234,198 +249,199 @@ class __TwigTemplate_6fb10d80c68c7b0fe38d8e75904f2ec0da5848037fad63f9f4fffce08b6
 <!-- Warning Section Ends -->
 <!-- Required Jqurey -->
 <script type=\"text/javascript\" src=\"";
-        // line 147
+        // line 162
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/jquery/dist/jquery.min.js\"></script>
 <script src=\"";
-        // line 148
+        // line 163
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/jquery-ui/jquery-ui.min.js\"></script>
 <script type=\"text/javascript\" src=\"";
-        // line 149
+        // line 164
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/tether/dist/js/tether.min.js\"></script>
 <script type=\"text/javascript\" src=\"";
-        // line 150
+        // line 165
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/bootstrap/dist/js/bootstrap.min.js\"></script>
 <!-- jquery slimscroll js -->
 <script type=\"text/javascript\" src=\"";
-        // line 152
+        // line 167
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/jquery-slimscroll/jquery.slimscroll.js\"></script>
 <!-- modernizr js -->
 <script type=\"text/javascript\" src=\"";
-        // line 154
+        // line 169
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/modernizr/modernizr.js\"></script>
 <script type=\"text/javascript\" src=\"";
-        // line 155
+        // line 170
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/modernizr/feature-detects/css-scrollbars.js\"></script>
 <!-- classie js -->
 <script type=\"text/javascript\" src=\"";
-        // line 157
+        // line 172
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/classie/classie.js\"></script>
 <!-- Rickshow Chart js -->
 <script src=\"";
-        // line 159
+        // line 174
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/d3/d3.js\"></script>
 <script src=\"";
-        // line 160
+        // line 175
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/rickshaw/rickshaw.js\"></script>
 <!-- Morris Chart js -->
 <script src=\"";
-        // line 162
+        // line 177
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/raphael/raphael.min.js\"></script>
 <script src=\"";
-        // line 163
+        // line 178
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/morris.js/morris.js\"></script>
 <!-- Horizontal-Timeline js -->
 <script type=\"text/javascript\" src=\"";
-        // line 165
+        // line 180
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/pages/dashboard/horizontal-timeline/js/main.js\"></script>
 <!-- amchart js -->
 <script type=\"text/javascript\" src=\"";
-        // line 167
+        // line 182
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/pages/dashboard/amchart/js/amcharts.js\"></script>
 <script type=\"text/javascript\" src=\"";
-        // line 168
+        // line 183
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/pages/dashboard/amchart/js/serial.js\"></script>
 <script type=\"text/javascript\" src=\"";
-        // line 169
+        // line 184
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/pages/dashboard/amchart/js/light.js\"></script>
 <script type=\"text/javascript\" src=\"";
-        // line 170
+        // line 185
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/pages/dashboard/amchart/js/custom-amchart.js\"></script>
 <!-- Summernote js -->
 <script type=\"text/javascript\" src=\"";
-        // line 172
+        // line 187
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/summernote/dist/summernote.js\"></script>
 <!-- jquery file upload js -->
 <script src=\"";
-        // line 174
+        // line 189
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/jquery.filer/js/jquery.filer.min.js\"></script>
 <script src=\"";
-        // line 175
+        // line 190
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/pages/filer/jquery.fileuploads.init.js\" type=\"text/javascript\"></script>
 <!-- data-table js -->
    <script src=\"";
-        // line 177
+        // line 192
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/datatables.net/js/jquery.dataTables.min.js\"></script>
    <script src=\"";
-        // line 178
+        // line 193
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/datatables.net-buttons/js/dataTables.buttons.min.js\"></script>
    <script src=\"";
-        // line 179
+        // line 194
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/pages/data-table/js/jszip.min.js\"></script>
    <script src=\"";
-        // line 180
+        // line 195
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/pages/data-table/js/pdfmake.min.js\"></script>
    <script src=\"";
-        // line 181
+        // line 196
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/pages/data-table/js/vfs_fonts.js\"></script>
    <script src=\"";
-        // line 182
+        // line 197
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/datatables.net-buttons/js/buttons.print.min.js\"></script>
    <script src=\"";
-        // line 183
+        // line 198
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/datatables.net-buttons/js/buttons.html5.min.js\"></script>
    <script src=\"";
-        // line 184
+        // line 199
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/datatables.net-bs4/js/dataTables.bootstrap4.min.js\"></script>
    <script src=\"";
-        // line 185
+        // line 200
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/datatables.net-responsive/js/dataTables.responsive.min.js\"></script>
    <script src=\"";
-        // line 186
+        // line 201
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js\"></script>
 <!-- i18next.min.js -->
 <script type=\"text/javascript\" src=\"";
-        // line 188
+        // line 203
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/i18next/i18next.min.js\"></script>
 <script type=\"text/javascript\" src=\"";
-        // line 189
+        // line 204
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/i18next-xhr-backend/i18nextXHRBackend.min.js\"></script>
 <script type=\"text/javascript\" src=\"";
-        // line 190
+        // line 205
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js\"></script>
 <script type=\"text/javascript\" src=\"";
-        // line 191
+        // line 206
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/jquery-i18next/jquery-i18next.min.js\"></script>
 <!-- Custom js -->
 <script type=\"text/javascript\" src=\"";
-        // line 193
+        // line 208
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/pages/dashboard/custom-dashboard.js\"></script>
 <script type=\"text/javascript\" src=\"";
-        // line 194
+        // line 209
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/js/script.js\"></script>
 <script type=\"text/javascript\" src=\"";
-        // line 195
+        // line 210
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/pages/summernote/custom-note.js\"></script>
 
 <!-- pcmenu js -->
 <script src=\"";
-        // line 198
+        // line 213
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/js/pcoded.min.js\"></script>
 <script src=\"";
-        // line 199
+        // line 214
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/js/demo-12.js\"></script>
 <script src=\"";
-        // line 200
+        // line 215
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/js/jquery.mCustomScrollbar.concat.min.js\"></script>
 <script src=\"";
-        // line 201
+        // line 216
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "/assets/admin/js/jquery.mousewheel.min.js\"></script>";
-        // line 202
+        echo "/assets/admin/js/jquery.mousewheel.min.js\"></script>
+<script src=\"https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.js\"></script>";
+        // line 219
         if ((isset($context["script"]) ? $context["script"] : null)) {
-            // line 203
+            // line 220
             echo "<script src = \"";
             echo twig_escape_filter($this->env, (isset($context["script"]) ? $context["script"] : null), "html", null, true);
             echo "\"></script>";
         }
-        // line 205
+        // line 222
         echo "</body>
 
 </html>
 ";
     }
 
-    // line 91
+    // line 106
     public function block_content($context, array $blocks = array())
     {
     }
@@ -442,7 +458,7 @@ class __TwigTemplate_6fb10d80c68c7b0fe38d8e75904f2ec0da5848037fad63f9f4fffce08b6
 
     public function getDebugInfo()
     {
-        return array (  429 => 91,  422 => 205,  417 => 203,  415 => 202,  412 => 201,  408 => 200,  404 => 199,  400 => 198,  394 => 195,  390 => 194,  386 => 193,  381 => 191,  377 => 190,  373 => 189,  369 => 188,  364 => 186,  360 => 185,  356 => 184,  352 => 183,  348 => 182,  344 => 181,  340 => 180,  336 => 179,  332 => 178,  328 => 177,  323 => 175,  319 => 174,  314 => 172,  309 => 170,  305 => 169,  301 => 168,  297 => 167,  292 => 165,  287 => 163,  283 => 162,  278 => 160,  274 => 159,  269 => 157,  264 => 155,  260 => 154,  255 => 152,  250 => 150,  246 => 149,  242 => 148,  238 => 147,  181 => 92,  179 => 91,  173 => 86,  171 => 85,  167 => 81,  165 => 80,  142 => 58,  138 => 57,  134 => 56,  130 => 55,  125 => 53,  120 => 51,  115 => 49,  111 => 48,  106 => 46,  101 => 44,  96 => 42,  91 => 40,  86 => 38,  81 => 36,  77 => 35,  73 => 34,  68 => 32,  63 => 30,  58 => 28,  53 => 26,  48 => 24,  41 => 20,  20 => 1,);
+        return array (  445 => 106,  438 => 222,  433 => 220,  431 => 219,  427 => 216,  423 => 215,  419 => 214,  415 => 213,  409 => 210,  405 => 209,  401 => 208,  396 => 206,  392 => 205,  388 => 204,  384 => 203,  379 => 201,  375 => 200,  371 => 199,  367 => 198,  363 => 197,  359 => 196,  355 => 195,  351 => 194,  347 => 193,  343 => 192,  338 => 190,  334 => 189,  329 => 187,  324 => 185,  320 => 184,  316 => 183,  312 => 182,  307 => 180,  302 => 178,  298 => 177,  293 => 175,  289 => 174,  284 => 172,  279 => 170,  275 => 169,  270 => 167,  265 => 165,  261 => 164,  257 => 163,  253 => 162,  196 => 107,  194 => 106,  188 => 101,  186 => 100,  182 => 96,  180 => 95,  142 => 58,  138 => 57,  134 => 56,  130 => 55,  125 => 53,  120 => 51,  115 => 49,  111 => 48,  106 => 46,  101 => 44,  96 => 42,  91 => 40,  86 => 38,  81 => 36,  77 => 35,  73 => 34,  68 => 32,  63 => 30,  58 => 28,  53 => 26,  48 => 24,  41 => 20,  20 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -503,10 +519,25 @@ class __TwigTemplate_6fb10d80c68c7b0fe38d8e75904f2ec0da5848037fad63f9f4fffce08b6
 /*       <link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/admin/css/simple-line-icons.css">*/
 /*       <link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/admin/css/ionicons.css">*/
 /*       <link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/admin/css/jquery.mCustomScrollbar.css">*/
+/* */
+/*       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.css">*/
+/* */
 /*       <style>*/
 /*       .jFiler-theme-default .jFiler-input-button {*/
 /*           background-color: #f1c40f;*/
 /*       }*/
+/* */
+/*       .swal2-modal {*/
+/*   			font-size: 85%;*/
+/*   		}*/
+/* */
+/*   		.swal2-popup .swal2-styled.swal2-confirm {*/
+/*   	    background-color: #ED1C24;*/
+/*   		}*/
+/* */
+/*   		.swal2-popup .swal2-title {*/
+/*   			font-size: 1.3em;*/
+/*   		}*/
 /*       </style>*/
 /*   </head>*/
 /* */
@@ -646,6 +677,8 @@ class __TwigTemplate_6fb10d80c68c7b0fe38d8e75904f2ec0da5848037fad63f9f4fffce08b6
 /* <script src="{{baseURL}}/assets/admin/js/demo-12.js"></script>*/
 /* <script src="{{baseURL}}/assets/admin/js/jquery.mCustomScrollbar.concat.min.js"></script>*/
 /* <script src="{{baseURL}}/assets/admin/js/jquery.mousewheel.min.js"></script>*/
+/* <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.js"></script>*/
+/* */
 /* {% if script %}*/
 /* <script src = "{{script}}"></script>*/
 /* {% endif %}*/
