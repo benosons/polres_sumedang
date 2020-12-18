@@ -9,6 +9,7 @@ $(document).ready(function(){
   $('.berita-tulis').hide();
   $('#post-berita').hide();
 
+  loadparam('satuan');
   loadberita('','');
 
   $('#post-berita').on('click', function(){
@@ -32,6 +33,26 @@ $(document).ready(function(){
   });
 
 });
+function loadparam(param){
+
+  $.ajax({
+      type: 'post',
+      dataType: 'json',
+      url: 'loadparam',
+      data : {
+              param      : param,
+      },
+      success: function(result){
+          let data = result.data;
+          var opt = '<option value="0">- Pilih Satuan -</option>';
+          for (var i = 0; i < data.length; i++) {
+            opt += '<option value="'+data[i].satuan_code+'">'+data[i].satuan_desc+'</option>';
+          }
+
+          $('#tujuan').append(opt);
+        }
+      })
+    }
 
 function onberita(type){
     $('.page-list > li').removeClass('active');

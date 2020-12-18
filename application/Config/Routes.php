@@ -96,6 +96,7 @@ $routes->add('logout', 'Auth::logout');
 $routes->post('getpengaduan', 'Jsondata::getpengaduan');
 $routes->post('getBerita', 'Jsondata::getBerita');
 $routes->post('loadBerita', 'Jsondata::loadBerita');
+$routes->post('loadparam', 'Jsondata::loadparam');
 $routes->post('save', 'Jsondata::save');
 $routes->post('saveBerita', 'Jsondata::saveBerita');
 $routes->post('update', 'Jsondata::update');

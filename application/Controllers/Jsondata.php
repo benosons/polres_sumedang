@@ -184,6 +184,45 @@ class Jsondata extends \CodeIgniter\Controller
 		}
 	}
 
+	public function loadparam()
+	{
+		try
+		{
+				$request  = $this->request;
+				$param 	  = $request->getVar('param');
+				$id		 	  = $request->getVar('id');
+				$role 		= $this->data['role'];
+				$userid		= $this->data['userid'];
+
+					$model = new \App\Models\ParamModel();
+					$modelfiles = new \App\Models\FilesModel();
+
+					$data = $model->getparam($param);
+
+					if($data){
+						$response = [
+							'status'   => 'sukses',
+							'code'     => '1',
+							'data' 		 => $data
+						];
+					}else{
+						$response = [
+						    'status'   => 'gagal',
+						    'code'     => '0',
+						    'data'     => 'tidak ada data',
+						];
+					}
+
+				header('Content-Type: application/json');
+				echo json_encode($response);
+				exit;
+			}
+		catch (\Exception $e)
+		{
+			die($e->getMessage());
+		}
+	}
+
 	public function save(){
 
 		$request  = $this->request;

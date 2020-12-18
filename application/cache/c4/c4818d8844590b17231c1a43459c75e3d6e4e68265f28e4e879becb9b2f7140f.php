@@ -98,10 +98,7 @@ class __TwigTemplate_eb220cae152954f990db1f225de0ec6376a212862b9e7e3c0a23945a64b
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/swal/fontawesome/v5.7.2/all.css\">
 \t\t<!-- <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.7.2/css/all.css\" integrity=\"sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr\" crossorigin=\"anonymous\"> -->
-\t\t<link href=\"";
-        // line 34
-        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "/assets/pagination/dist/pagination.css\" rel=\"stylesheet\" type=\"text/css\">
+
 \t\t<!-- <script type=\"text/javascript\" src=\"";
         // line 35
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
@@ -272,19 +269,15 @@ class __TwigTemplate_eb220cae152954f990db1f225de0ec6376a212862b9e7e3c0a23945a64b
 \t\t<script src=\"";
         // line 136
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "/assets/swal/limonte-sweetalert2/7.33.1/sweetalert2.min.js\"></script>
-\t\t<script src=\"";
+        echo "/assets/swal/limonte-sweetalert2/7.33.1/sweetalert2.min.js\"></script>";
         // line 137
-        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "/assets/pagination/src/pagination.js\"></script>";
-        // line 138
         if ((isset($context["script"]) ? $context["script"] : null)) {
-            // line 139
+            // line 138
             echo "\t\t<script src=\"";
             echo twig_escape_filter($this->env, (isset($context["script"]) ? $context["script"] : null), "html", null, true);
             echo "\"></script>";
         }
-        // line 141
+        // line 140
         echo "<div class=\"style_selector\">
 \t<div class=\"style_selector_icon\">
 \t\t&nbsp;
@@ -459,7 +452,7 @@ class __TwigTemplate_eb220cae152954f990db1f225de0ec6376a212862b9e7e3c0a23945a64b
 
     public function getDebugInfo()
     {
-        return array (  446 => 99,  288 => 141,  283 => 139,  281 => 138,  278 => 137,  274 => 136,  270 => 135,  266 => 134,  262 => 133,  258 => 132,  254 => 131,  250 => 130,  246 => 129,  242 => 128,  238 => 127,  234 => 126,  230 => 125,  226 => 124,  222 => 123,  218 => 122,  203 => 110,  199 => 109,  195 => 108,  189 => 104,  187 => 103,  184 => 100,  182 => 99,  179 => 97,  177 => 96,  173 => 93,  171 => 92,  169 => 90,  115 => 37,  111 => 36,  107 => 35,  103 => 34,  98 => 32,  94 => 31,  89 => 29,  85 => 28,  79 => 25,  75 => 24,  71 => 23,  67 => 22,  63 => 21,  59 => 20,  55 => 19,  51 => 18,  47 => 17,  43 => 16,  39 => 15,  34 => 13,  20 => 1,);
+        return array (  439 => 99,  281 => 140,  276 => 138,  274 => 137,  271 => 136,  267 => 135,  263 => 134,  259 => 133,  255 => 132,  251 => 131,  247 => 130,  243 => 129,  239 => 128,  235 => 127,  231 => 126,  227 => 125,  223 => 124,  219 => 123,  215 => 122,  200 => 110,  196 => 109,  192 => 108,  186 => 104,  184 => 103,  181 => 100,  179 => 99,  176 => 97,  174 => 96,  170 => 93,  168 => 92,  166 => 90,  112 => 37,  108 => 36,  104 => 35,  98 => 32,  94 => 31,  89 => 29,  85 => 28,  79 => 25,  75 => 24,  71 => 23,  67 => 22,  63 => 21,  59 => 20,  55 => 19,  51 => 18,  47 => 17,  43 => 16,  39 => 15,  34 => 13,  20 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -495,7 +488,7 @@ class __TwigTemplate_eb220cae152954f990db1f225de0ec6376a212862b9e7e3c0a23945a64b
 /* 		<link rel="stylesheet" href="{{baseURL}}/assets/swal/limonte-sweetalert2/7.33.1/sweetalert2.min.css">*/
 /* 		<link rel="stylesheet" href="{{baseURL}}/assets/swal/fontawesome/v5.7.2/all.css">*/
 /* 		<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->*/
-/* 		<link href="{{baseURL}}/assets/pagination/dist/pagination.css" rel="stylesheet" type="text/css">*/
+/* */
 /* 		<!-- <script type="text/javascript" src="{{baseURL}}/assets/users/js/jquery-1.12.4.min.js"></script>*/
 /* 		<script type="text/javascript" src="{{baseURL}}/assets/users/js/jquery-migrate-1.4.1.min.js"></script>*/
 /* 		<script type="text/javascript" src="{{baseURL}}/assets/users/js/jquery-ui-1.11.1.custom.min.js"></script> -->*/
@@ -598,7 +591,6 @@ class __TwigTemplate_eb220cae152954f990db1f225de0ec6376a212862b9e7e3c0a23945a64b
 /* 		<script type="text/javascript" src="{{baseURL}}/assets/users/js/odometer.min.js"></script>*/
 /* 		<script type="text/javascript" src="{{baseURL}}/assets/users/style_selector/style_selector.js"></script>*/
 /* 		<script src="{{baseURL}}/assets/swal/limonte-sweetalert2/7.33.1/sweetalert2.min.js"></script>*/
-/* 		<script src="{{baseURL}}/assets/pagination/src/pagination.js"></script>*/
 /* 		{% if script %}*/
 /* 		<script src="{{script}}"></script>*/
 /* 		{% endif %}*/

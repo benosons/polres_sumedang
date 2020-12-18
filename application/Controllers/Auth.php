@@ -58,7 +58,7 @@ class Auth extends \CodeIgniter\Controller
 				'user_name' 	=> $this->request->getVar('name'),
 				'user_email' 	=> $this->request->getVar('email'),
 				'user_password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT),
-				'user_role' => '20'
+				'user_role' => '200'
 			];
 			// print_r($this->request->getVar('password'));die;
 			$model->save($data);

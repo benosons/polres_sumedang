@@ -143,9 +143,9 @@ class __TwigTemplate_b39c7fe41ad261bf93ffcae9dbeccde241202026db2ff2f8c23ae821de7
                                     <div class=\"form-group row\">
                                         <div class=\"col-sm-12\">
                                             <select id=\"tujuan\" name=\"select\" class=\"form-control\">
-                                                <option value=\"0\">- Pilih tujuan pengaduan -</option>
+                                                <!-- <option value=\"0\">- Pilih Satuan -</option>
                                                 <option value=\"30\">Lalu lintas</option>
-                                                <option value=\"40\">Reskrim</option>
+                                                <option value=\"40\">Reskrim</option> -->
                                             </select>
                                         </div>
                                     </div>
@@ -298,9 +298,9 @@ class __TwigTemplate_b39c7fe41ad261bf93ffcae9dbeccde241202026db2ff2f8c23ae821de7
 /*                                     <div class="form-group row">*/
 /*                                         <div class="col-sm-12">*/
 /*                                             <select id="tujuan" name="select" class="form-control">*/
-/*                                                 <option value="0">- Pilih tujuan pengaduan -</option>*/
+/*                                                 <!-- <option value="0">- Pilih Satuan -</option>*/
 /*                                                 <option value="30">Lalu lintas</option>*/
-/*                                                 <option value="40">Reskrim</option>*/
+/*                                                 <option value="40">Reskrim</option> -->*/
 /*                                             </select>*/
 /*                                         </div>*/
 /*                                     </div>*/

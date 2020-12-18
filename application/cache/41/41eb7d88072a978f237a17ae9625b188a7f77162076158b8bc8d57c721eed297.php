@@ -34,7 +34,7 @@ class __TwigTemplate_65d39d51154dedace2a81a6ef745e3c2053b05338d4b8a56facc6d005c8
                 </a>
             </li>";
         // line 18
-        if (((isset($context["role"]) ? $context["role"] : null) == "10")) {
+        if (((isset($context["role"]) ? $context["role"] : null) == "100")) {
             // line 19
             echo "            <li class=\"pcoded-hasmenu\">
                 <a href=\"javascript:void(0)\" data-i18n=\"nav.form-components.main\">
@@ -265,7 +265,7 @@ class __TwigTemplate_65d39d51154dedace2a81a6ef745e3c2053b05338d4b8a56facc6d005c8
 /*                     <span class="pcoded-mcaret"></span>*/
 /*                 </a>*/
 /*             </li>*/
-/*             {% if role == '10'%}*/
+/*             {% if role == '100'%}*/
 /*             <li class="pcoded-hasmenu">*/
 /*                 <a href="javascript:void(0)" data-i18n="nav.form-components.main">*/
 /*                     <span class="pcoded-micon"><i class="ti-layers-alt"></i></span>*/
