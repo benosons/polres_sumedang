@@ -539,13 +539,16 @@ PELAYANAN
 </li>
 </ul>
 </li>
-<li class=\"submenu\">
+<li class=\"submenu\" id=\"menu-informasi\">
 <a href=\"index.html@page=authors.html\" title=\"Authors\">
 INFORMASI
 </a>
 <ul>
 <li>
-\t<a href=\"index.html@page=authors.html\" title=\"Authors List\">
+\t<a href=\"";
+        // line 530
+        echo twig_escape_filter($this->env, (isset($context["baseUrl"]) ? $context["baseUrl"] : null), "html", null, true);
+        echo "berita\" title=\"Authors List\">
 \t\tBerita
 \t</a>
 </li>
@@ -894,7 +897,7 @@ HUBUNGI KAMI
 
     public function getDebugInfo()
     {
-        return array (  612 => 589,  562 => 542,  19 => 1,);
+        return array (  615 => 589,  565 => 542,  550 => 530,  19 => 1,);
     }
 }
 /* <div class="menu_container clearfix style_5 sticky">*/
@@ -1420,13 +1423,13 @@ HUBUNGI KAMI
 /* </li>*/
 /* </ul>*/
 /* </li>*/
-/* <li class="submenu">*/
+/* <li class="submenu" id="menu-informasi">*/
 /* <a href="index.html@page=authors.html" title="Authors">*/
 /* INFORMASI*/
 /* </a>*/
 /* <ul>*/
 /* <li>*/
-/* 	<a href="index.html@page=authors.html" title="Authors List">*/
+/* 	<a href="{{baseUrl}}berita" title="Authors List">*/
 /* 		Berita*/
 /* 	</a>*/
 /* </li>*/

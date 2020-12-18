@@ -9,8 +9,10 @@
 		<meta name="keywords" content="Medic, Medical Center" />
 		<meta name="description" content="Responsive Medical Health Template" />
 		<!--style-->
-		<link href='http://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700' rel='stylesheet' type='text/css'>
+		<!-- <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'> -->
+		<link href='{{baseURL}}/assets/fonts/family=Roboto.css' rel='stylesheet' type='text/css'>
+		<!-- <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700' rel='stylesheet' type='text/css'> -->
+		<link href='{{baseURL}}/assets/fonts/family=Roboto+Condensed.css' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/users/style/reset.css">
 		<link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/users/style/superfish.css">
 		<link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/users/style/prettyPhoto.css">
@@ -24,9 +26,12 @@
 				<!--<link rel="stylesheet" type="text/css" href="style/dark_skin.css">-->
 		<!--<link rel="stylesheet" type="text/css" href="style/high_contrast_skin.css">-->
 		<link rel="shortcut icon" href="{{baseURL}}/assets/users/images/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/users/style_selector/style_selector.css">
 
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.css">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		<link rel="stylesheet" href="{{baseURL}}/assets/swal/limonte-sweetalert2/7.33.1/sweetalert2.min.css">
+		<link rel="stylesheet" href="{{baseURL}}/assets/swal/fontawesome/v5.7.2/all.css">
+		<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+		<link href="{{baseURL}}/assets/pagination/dist/pagination.css" rel="stylesheet" type="text/css">
 		<!-- <script type="text/javascript" src="{{baseURL}}/assets/users/js/jquery-1.12.4.min.js"></script>
 		<script type="text/javascript" src="{{baseURL}}/assets/users/js/jquery-migrate-1.4.1.min.js"></script>
 		<script type="text/javascript" src="{{baseURL}}/assets/users/js/jquery-ui-1.11.1.custom.min.js"></script> -->
@@ -51,6 +56,10 @@
 
 		.swal2-popup .swal2-title {
 			font-size: 1.3em;
+		}
+
+		.pull-right {
+			float: right;
 		}
 
 		</style>
@@ -96,9 +105,9 @@
 </div>
 		<div class="background_overlay"></div>
 		<!--js-->
-		<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-		<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"></script>
-		<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="{{baseURL}}/assets/js/jquery-3.5.1.min.js"></script>
+		<script type="text/javascript" src="{{baseURL}}/assets/js/jquery-migrate-3.3.2.min.js"></script>
+		<script type="text/javascript" src="{{baseURL}}/assets/js/ui/1.12.1/jquery-ui.min.js"></script>
 		<script type="text/javascript">
 		jQuery.browser = {};
 		(function () {
@@ -123,9 +132,9 @@
 		<script type="text/javascript" src="{{baseURL}}/assets/users/js/jquery.blockUI.js"></script>
 		<script type="text/javascript" src="{{baseURL}}/assets/users/js/main.js"></script>
 		<script type="text/javascript" src="{{baseURL}}/assets/users/js/odometer.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/users/style_selector/style_selector.css">
 		<script type="text/javascript" src="{{baseURL}}/assets/users/style_selector/style_selector.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.js"></script>
+		<script src="{{baseURL}}/assets/swal/limonte-sweetalert2/7.33.1/sweetalert2.min.js"></script>
+		<script src="{{baseURL}}/assets/pagination/src/pagination.js"></script>
 		{% if script %}
 		<script src="{{script}}"></script>
 		{% endif %}

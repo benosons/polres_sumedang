@@ -102,5 +102,23 @@ class View extends \CodeIgniter\Controller
 				}
 	}
 
+	public function inputberita()
+	{
+				if($this->logged){
+					helper('form');
+					$this->data['script'] = $this->data['baseURL'].'/assets/action-js/admin/informasi/inputberita.js';
+					return \Twig::instance()->display('admin/informasi/inputberita.html', $this->data);
+				}else{
+					return redirect('home');
+				}
+	}
+
+	public function berita()
+	{
+					helper('form');
+					$this->data['script'] = $this->data['baseURL'].'/assets/action-js/users/informasi/berita.js';
+					return \Twig::instance()->display('users/informasi/berita.html', $this->data);
+	}
+
 
 }

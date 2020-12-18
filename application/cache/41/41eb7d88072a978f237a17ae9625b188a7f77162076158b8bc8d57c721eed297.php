@@ -198,7 +198,7 @@ class __TwigTemplate_65d39d51154dedace2a81a6ef745e3c2053b05338d4b8a56facc6d005c8
         // line 174
         echo "                </ul>
             </li>
-            <li class=\"pcoded-hasmenu\">
+            <li class=\"pcoded-hasmenu\" id=\"menu-informasi\">
                 <a href=\"#\" data-i18n=\"nav.widget.main\">
                     <span class=\"pcoded-micon\"><i class=\"ti-info-alt\"></i></span>
                     <span class=\"pcoded-mtext\">Informasi</span>
@@ -206,34 +206,26 @@ class __TwigTemplate_65d39d51154dedace2a81a6ef745e3c2053b05338d4b8a56facc6d005c8
                 </a>
                 <ul class=\"pcoded-submenu\">
                     <li class=\" \">
-                        <a href=\"form-elements-component.html\" data-i18n=\"nav.form-components.form-components\">
+                        <a href=\"inputberita\" data-i18n=\"nav.form-components.form-components\">
                             <span class=\"pcoded-micon\"><i class=\"ti-angle-right\"></i></span>
-                            <span class=\"pcoded-mtext\">Form Components</span>
+                            <span class=\"pcoded-mtext\">Berita</span>
                             <span class=\"pcoded-mcaret\"></span>
                         </a>
                     </li>
                     <li class=\" \">
                         <a href=\"form-elements-add-on.html\" data-i18n=\"nav.form-components.form-elements-add-on\">
                             <span class=\"pcoded-micon\"><i class=\"ti-angle-right\"></i></span>
-                            <span class=\"pcoded-mtext\">Form-Elements-Add-On</span>
-                            <span class=\"pcoded-mcaret\"></span>
-                        </a>
-                    </li>
-                    <li class=\" \">
-                        <a href=\"form-elements-advance.html\" data-i18n=\"nav.form-components.form-elements-advance\">
-                            <span class=\"pcoded-micon\"><i class=\"ti-angle-right\"></i></span>
-                            <span class=\"pcoded-mtext\">Form-Elements-Advance</span>
-                            <span class=\"pcoded-mcaret\"></span>
-                        </a>
-                    </li>
-                    <li class=\" \">
-                        <a href=\"form-validation.html\" data-i18n=\"nav.form-components.form-validation\">
-                            <span class=\"pcoded-micon\"><i class=\"ti-angle-right\"></i></span>
-                            <span class=\"pcoded-mtext\">Form Validation</span>
+                            <span class=\"pcoded-mtext\">Kegiatan</span>
                             <span class=\"pcoded-mcaret\"></span>
                         </a>
                     </li>
                 </ul>
+            </li>
+            <li class=\"\" id=\"menu-user\">
+                <a href=\"#\" data-i18n=\"nav.widget.main\">
+                    <span class=\"pcoded-micon\"><i class=\"ti-user\"></i></span>
+                    <span class=\"pcoded-mtext\">User</span>
+                </a>
             </li>
         </ul>
     </div>
@@ -431,7 +423,7 @@ class __TwigTemplate_65d39d51154dedace2a81a6ef745e3c2053b05338d4b8a56facc6d005c8
 /*                   {% endif %}*/
 /*                 </ul>*/
 /*             </li>*/
-/*             <li class="pcoded-hasmenu">*/
+/*             <li class="pcoded-hasmenu" id="menu-informasi">*/
 /*                 <a href="#" data-i18n="nav.widget.main">*/
 /*                     <span class="pcoded-micon"><i class="ti-info-alt"></i></span>*/
 /*                     <span class="pcoded-mtext">Informasi</span>*/
@@ -439,34 +431,26 @@ class __TwigTemplate_65d39d51154dedace2a81a6ef745e3c2053b05338d4b8a56facc6d005c8
 /*                 </a>*/
 /*                 <ul class="pcoded-submenu">*/
 /*                     <li class=" ">*/
-/*                         <a href="form-elements-component.html" data-i18n="nav.form-components.form-components">*/
+/*                         <a href="inputberita" data-i18n="nav.form-components.form-components">*/
 /*                             <span class="pcoded-micon"><i class="ti-angle-right"></i></span>*/
-/*                             <span class="pcoded-mtext">Form Components</span>*/
+/*                             <span class="pcoded-mtext">Berita</span>*/
 /*                             <span class="pcoded-mcaret"></span>*/
 /*                         </a>*/
 /*                     </li>*/
 /*                     <li class=" ">*/
 /*                         <a href="form-elements-add-on.html" data-i18n="nav.form-components.form-elements-add-on">*/
 /*                             <span class="pcoded-micon"><i class="ti-angle-right"></i></span>*/
-/*                             <span class="pcoded-mtext">Form-Elements-Add-On</span>*/
-/*                             <span class="pcoded-mcaret"></span>*/
-/*                         </a>*/
-/*                     </li>*/
-/*                     <li class=" ">*/
-/*                         <a href="form-elements-advance.html" data-i18n="nav.form-components.form-elements-advance">*/
-/*                             <span class="pcoded-micon"><i class="ti-angle-right"></i></span>*/
-/*                             <span class="pcoded-mtext">Form-Elements-Advance</span>*/
-/*                             <span class="pcoded-mcaret"></span>*/
-/*                         </a>*/
-/*                     </li>*/
-/*                     <li class=" ">*/
-/*                         <a href="form-validation.html" data-i18n="nav.form-components.form-validation">*/
-/*                             <span class="pcoded-micon"><i class="ti-angle-right"></i></span>*/
-/*                             <span class="pcoded-mtext">Form Validation</span>*/
+/*                             <span class="pcoded-mtext">Kegiatan</span>*/
 /*                             <span class="pcoded-mcaret"></span>*/
 /*                         </a>*/
 /*                     </li>*/
 /*                 </ul>*/
+/*             </li>*/
+/*             <li class="" id="menu-user">*/
+/*                 <a href="#" data-i18n="nav.widget.main">*/
+/*                     <span class="pcoded-micon"><i class="ti-user"></i></span>*/
+/*                     <span class="pcoded-mtext">User</span>*/
+/*                 </a>*/
 /*             </li>*/
 /*         </ul>*/
 /*     </div>*/

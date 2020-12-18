@@ -41,41 +41,51 @@ class __TwigTemplate_12cc0647c2973c7e9d9d347380a5c601d1b2c3997475b121bf8b22efcec
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/favicon.ico\" type=\"image/x-icon\">
     <!-- Google font-->
-    <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800\" rel=\"stylesheet\">
+    <!-- <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800\" rel=\"stylesheet\"> -->
+    <link href=\"";
+        // line 24
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/fonts/family=Open+Sans.css\" rel=\"stylesheet\">
     <!-- Required Fremwork -->
     <link rel=\"stylesheet\" type=\"text/css\" href=\"";
-        // line 25
+        // line 26
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/bootstrap/dist/css/bootstrap.min.css\">
     <!-- themify-icons line icon -->
     <link rel=\"stylesheet\" type=\"text/css\" href=\"";
-        // line 27
+        // line 28
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/icon/themify-icons/themify-icons.css\">
     <!-- ico font -->
     <link rel=\"stylesheet\" type=\"text/css\" href=\"";
-        // line 29
+        // line 30
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/icon/icofont/css/icofont.css\">
     <!-- Style.css -->
     <link rel=\"stylesheet\" type=\"text/css\" href=\"";
-        // line 31
+        // line 32
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/css/style.css\">
     <!-- color .css -->
     <link rel=\"stylesheet\" type=\"text/css\" href=\"";
-        // line 33
+        // line 34
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/css/color/color-1.css\" id=\"color\"/>
 
     <link rel=\"stylesheet\" type=\"text/css\" href=\"";
-        // line 35
+        // line 36
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/auth/css/particles.css\" />
 
-    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.css\">
+    <link rel=\"stylesheet\" href=\"";
+        // line 38
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/swal/limonte-sweetalert2/7.33.1/sweetalert2.min.css\">
 
-    <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.7.2/css/all.css\" integrity=\"sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr\" crossorigin=\"anonymous\">
+\t\t<link rel=\"stylesheet\" href=\"";
+        // line 40
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/swal/fontawesome/v5.7.2/all.css\">
 
   <style>
     .login-mod {
@@ -109,7 +119,7 @@ class __TwigTemplate_12cc0647c2973c7e9d9d347380a5c601d1b2c3997475b121bf8b22efcec
     <section class=\"login-mod p-fixed d-flex text-center\" style=\"background-color:none;\">
         <!-- Container-fluid starts -->
         <input hidden id=\"message\" value=\"";
-        // line 72
+        // line 73
         echo twig_escape_filter($this->env, (isset($context["message"]) ? $context["message"] : null), "html", null, true);
         echo "\"/>
         <div class=\"container-fluid\">
@@ -120,7 +130,7 @@ class __TwigTemplate_12cc0647c2973c7e9d9d347380a5c601d1b2c3997475b121bf8b22efcec
                         <form class=\"md-float-material\" action=\"auth\" method=\"post\">
                             <div class=\"text-center\">
                                 <a href=\"home\"><img src=\"";
-        // line 80
+        // line 81
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/images/polri.png\" alt=\"logo.png\" style=\"width: 100px;\"></a>
                             </div>
@@ -229,70 +239,77 @@ class __TwigTemplate_12cc0647c2973c7e9d9d347380a5c601d1b2c3997475b121bf8b22efcec
     <!-- Warning Section Ends -->
     <!-- Required Jquery -->
     <script type=\"text/javascript\" src=\"";
-        // line 186
+        // line 187
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/jquery/dist/jquery.min.js\"></script>
     <script type=\"text/javascript\" src=\"";
-        // line 187
+        // line 188
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/jquery-ui/jquery-ui.min.js\"></script>
+    
     <script type=\"text/javascript\" src=\"";
-        // line 188
+        // line 190
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/tether/dist/js/tether.min.js\"></script>
     <script type=\"text/javascript\" src=\"";
-        // line 189
+        // line 191
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/bootstrap/dist/js/bootstrap.min.js\"></script>
     <!-- jquery slimscroll js -->
     <script type=\"text/javascript\" src=\"";
-        // line 191
+        // line 193
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/jquery-slimscroll/jquery.slimscroll.js\"></script>
     <!-- modernizr js -->
     <script type=\"text/javascript\" src=\"";
-        // line 193
+        // line 195
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/modernizr/modernizr.js\"></script>
     <script type=\"text/javascript\" src=\"";
-        // line 194
+        // line 196
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/modernizr/feature-detects/css-scrollbars.js\"></script>
     <!-- i18next.min.js -->
     <script type=\"text/javascript\" src=\"";
-        // line 196
+        // line 198
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/i18next/i18next.min.js\"></script>
     <script type=\"text/javascript\" src=\"";
-        // line 197
+        // line 199
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/i18next-xhr-backend/i18nextXHRBackend.min.js\"></script>
     <script type=\"text/javascript\" src=\"";
-        // line 198
+        // line 200
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js\"></script>
     <script type=\"text/javascript\" src=\"";
-        // line 199
+        // line 201
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/jquery-i18next/jquery-i18next.min.js\"></script>
     <!-- Custom js -->
     <script type=\"text/javascript\" src=\"";
-        // line 201
+        // line 203
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/js/script.js\"></script>
     <!-- color js --->
     <script type=\"text/javascript\" src=\"";
-        // line 203
+        // line 205
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/js/common-pages.js\"></script>
 
-    <script src=\"http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js\"></script> <!-- stats.js lib -->
-    <script src=\"http://threejs.org/examples/js/libs/stats.min.js\"></script>
     <script src=\"";
         // line 207
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/auth/particles/2.0.0/particles.min.js\"></script> <!-- stats.js lib -->
+    <script src=\"http://threejs.org/examples/js/libs/stats.min.js\"></script>
+    <script src=\"";
+        // line 209
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/auth/js/particles.js\"></script>
-    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.js\"></script>
+    <script src=\"";
+        // line 210
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/swal/limonte-sweetalert2/7.33.1/sweetalert2.min.js\"></script>
     <script>
 
     if(\$('#message').val()){
@@ -335,7 +352,7 @@ class __TwigTemplate_12cc0647c2973c7e9d9d347380a5c601d1b2c3997475b121bf8b22efcec
 
     public function getDebugInfo()
     {
-        return array (  293 => 207,  286 => 203,  281 => 201,  276 => 199,  272 => 198,  268 => 197,  264 => 196,  259 => 194,  255 => 193,  250 => 191,  245 => 189,  241 => 188,  237 => 187,  233 => 186,  124 => 80,  113 => 72,  73 => 35,  68 => 33,  63 => 31,  58 => 29,  53 => 27,  48 => 25,  41 => 21,  19 => 1,);
+        return array (  311 => 210,  307 => 209,  302 => 207,  297 => 205,  292 => 203,  287 => 201,  283 => 200,  279 => 199,  275 => 198,  270 => 196,  266 => 195,  261 => 193,  256 => 191,  252 => 190,  247 => 188,  243 => 187,  134 => 81,  123 => 73,  87 => 40,  82 => 38,  77 => 36,  72 => 34,  67 => 32,  62 => 30,  57 => 28,  52 => 26,  47 => 24,  41 => 21,  19 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -360,7 +377,8 @@ class __TwigTemplate_12cc0647c2973c7e9d9d347380a5c601d1b2c3997475b121bf8b22efcec
 /* */
 /*     <link rel="icon" href="{{baseURL}}/assets/users/images/favicon.ico" type="image/x-icon">*/
 /*     <!-- Google font-->*/
-/*     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">*/
+/*     <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet"> -->*/
+/*     <link href="{{baseURL}}/assets/fonts/family=Open+Sans.css" rel="stylesheet">*/
 /*     <!-- Required Fremwork -->*/
 /*     <link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/admin/bower_components/bootstrap/dist/css/bootstrap.min.css">*/
 /*     <!-- themify-icons line icon -->*/
@@ -374,9 +392,9 @@ class __TwigTemplate_12cc0647c2973c7e9d9d347380a5c601d1b2c3997475b121bf8b22efcec
 /* */
 /*     <link rel="stylesheet" type="text/css" href="{{baseURL}}/assets/auth/css/particles.css" />*/
 /* */
-/*     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.css">*/
+/*     <link rel="stylesheet" href="{{baseURL}}/assets/swal/limonte-sweetalert2/7.33.1/sweetalert2.min.css">*/
 /* */
-/*     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">*/
+/* 		<link rel="stylesheet" href="{{baseURL}}/assets/swal/fontawesome/v5.7.2/all.css">*/
 /* */
 /*   <style>*/
 /*     .login-mod {*/
@@ -525,6 +543,7 @@ class __TwigTemplate_12cc0647c2973c7e9d9d347380a5c601d1b2c3997475b121bf8b22efcec
 /*     <!-- Required Jquery -->*/
 /*     <script type="text/javascript" src="{{baseURL}}/assets/admin/bower_components/jquery/dist/jquery.min.js"></script>*/
 /*     <script type="text/javascript" src="{{baseURL}}/assets/admin/bower_components/jquery-ui/jquery-ui.min.js"></script>*/
+/*     */
 /*     <script type="text/javascript" src="{{baseURL}}/assets/admin/bower_components/tether/dist/js/tether.min.js"></script>*/
 /*     <script type="text/javascript" src="{{baseURL}}/assets/admin/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>*/
 /*     <!-- jquery slimscroll js -->*/
@@ -542,10 +561,10 @@ class __TwigTemplate_12cc0647c2973c7e9d9d347380a5c601d1b2c3997475b121bf8b22efcec
 /*     <!-- color js --->*/
 /*     <script type="text/javascript" src="{{baseURL}}/assets/admin/js/common-pages.js"></script>*/
 /* */
-/*     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->*/
+/*     <script src="{{baseURL}}/assets/auth/particles/2.0.0/particles.min.js"></script> <!-- stats.js lib -->*/
 /*     <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>*/
 /*     <script src="{{baseURL}}/assets/auth/js/particles.js"></script>*/
-/*     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.js"></script>*/
+/*     <script src="{{baseURL}}/assets/swal/limonte-sweetalert2/7.33.1/sweetalert2.min.js"></script>*/
 /*     <script>*/
 /* */
 /*     if($('#message').val()){*/
