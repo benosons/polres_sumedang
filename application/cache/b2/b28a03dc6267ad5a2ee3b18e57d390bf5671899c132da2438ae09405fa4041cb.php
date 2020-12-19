@@ -172,14 +172,14 @@ class __TwigTemplate_12cc0647c2973c7e9d9d347380a5c601d1b2c3997475b121bf8b22efcec
                                     </div>
                                 </div>
                                 <hr/>
-                                <div class=\"row\">
+                                <!-- <div class=\"row\">
                                     <div class=\"col-md-12\">
                                       <img src=\"http://bios-studio.com/wp-content/uploads/2020/07/bios-no-bg-1.png\" alt=\"small-logo.png\" style=\"width: 30px;\">
                                     </div>
                                     <div class=\"col-md-12\">
                                         <span class=\"text-inverse text-center\" style=\"font-size:9px;\" >&copy; Copyright <strong><span><a href=\"http://bios-studio.com/\" target=\"_blank\" style=\"font-size:9px;\">bios-studio</a></span></strong>. All Rights Reserved</span>
                                     </div>
-                                </div>
+                                </div> -->
 
                             </div>
                         </form>
@@ -246,7 +246,7 @@ class __TwigTemplate_12cc0647c2973c7e9d9d347380a5c601d1b2c3997475b121bf8b22efcec
         // line 188
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/admin/bower_components/jquery-ui/jquery-ui.min.js\"></script>
-    
+
     <script type=\"text/javascript\" src=\"";
         // line 190
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
@@ -475,14 +475,14 @@ class __TwigTemplate_12cc0647c2973c7e9d9d347380a5c601d1b2c3997475b121bf8b22efcec
 /*                                     </div>*/
 /*                                 </div>*/
 /*                                 <hr/>*/
-/*                                 <div class="row">*/
+/*                                 <!-- <div class="row">*/
 /*                                     <div class="col-md-12">*/
 /*                                       <img src="http://bios-studio.com/wp-content/uploads/2020/07/bios-no-bg-1.png" alt="small-logo.png" style="width: 30px;">*/
 /*                                     </div>*/
 /*                                     <div class="col-md-12">*/
 /*                                         <span class="text-inverse text-center" style="font-size:9px;" >&copy; Copyright <strong><span><a href="http://bios-studio.com/" target="_blank" style="font-size:9px;">bios-studio</a></span></strong>. All Rights Reserved</span>*/
 /*                                     </div>*/
-/*                                 </div>*/
+/*                                 </div> -->*/
 /* */
 /*                             </div>*/
 /*                         </form>*/
@@ -543,7 +543,7 @@ class __TwigTemplate_12cc0647c2973c7e9d9d347380a5c601d1b2c3997475b121bf8b22efcec
 /*     <!-- Required Jquery -->*/
 /*     <script type="text/javascript" src="{{baseURL}}/assets/admin/bower_components/jquery/dist/jquery.min.js"></script>*/
 /*     <script type="text/javascript" src="{{baseURL}}/assets/admin/bower_components/jquery-ui/jquery-ui.min.js"></script>*/
-/*     */
+/* */
 /*     <script type="text/javascript" src="{{baseURL}}/assets/admin/bower_components/tether/dist/js/tether.min.js"></script>*/
 /*     <script type="text/javascript" src="{{baseURL}}/assets/admin/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>*/
 /*     <!-- jquery slimscroll js -->*/

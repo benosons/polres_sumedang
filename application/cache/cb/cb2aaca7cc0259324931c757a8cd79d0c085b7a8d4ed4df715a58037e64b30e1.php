@@ -435,10 +435,10 @@ Mega Menu
 </ul>
 </li> -->
 <li class=\"submenu\">
-<a href=\"index.html@page=home_3.html#\" title=\"Post Formats\">
+<a href=\"#\" title=\"Post Formats\">
 SATUAN FUNGSI
 </a>
-<ul>
+<ul id=\"satuan-fungsi\">
 <li>
 \t<a href=\"index.html@page=post.html\" title=\"Post Default\">
 \t\tSat Intel
@@ -549,24 +549,24 @@ INFORMASI
         // line 530
         echo twig_escape_filter($this->env, (isset($context["baseUrl"]) ? $context["baseUrl"] : null), "html", null, true);
         echo "berita\" title=\"Authors List\">
-\t\tBerita
+\t\tBERITA
 \t</a>
 </li>
-<li>
+<!-- <li>
 \t<a href=\"index.html@page=author.html\" title=\"Author Single\">
 \t\tKegiatan
 \t</a>
-</li>
+</li> -->
 </ul>
 </li>
-<li class=\"\" id=\"menu-pengaduan\">
+<!-- <li class=\"\" id=\"menu-pengaduan\">
 \t<a href=\"";
         // line 542
         echo twig_escape_filter($this->env, (isset($context["baseUrl"]) ? $context["baseUrl"] : null), "html", null, true);
         echo "kirimpengaduan\" title=\"Blog 2 columns\">
 \t\tPENGADUAN
 \t</a>
-</li>
+</li> -->
 <li class=\"submenu\">
 <a href=\"index.html@page=home_3.html#\" title=\"Categories\">
 INOVASI
@@ -605,16 +605,11 @@ HUBUNGI KAMI
 </a>
 <ul class=\"expand_left_contact\">
 <li>
-\t<a href=\"index.html@page=contact.html\" title=\"Contact Style 1\">
-\t\tContact Style 1
-\t</a>
-</li>
-<li>
 \t<a href=\"";
-        // line 589
+        // line 584
         echo twig_escape_filter($this->env, (isset($context["baseUrl"]) ? $context["baseUrl"] : null), "html", null, true);
         echo "login\" title=\"Contact Style 2\">
-\t\t<i class=\"\" > </i> Login User
+\t\t<i class=\"\" > </i> LOGIN USER
 \t</a>
 </li>
 </ul>
@@ -897,7 +892,7 @@ HUBUNGI KAMI
 
     public function getDebugInfo()
     {
-        return array (  615 => 589,  565 => 542,  550 => 530,  19 => 1,);
+        return array (  610 => 584,  565 => 542,  550 => 530,  19 => 1,);
     }
 }
 /* <div class="menu_container clearfix style_5 sticky">*/
@@ -1319,10 +1314,10 @@ HUBUNGI KAMI
 /* </ul>*/
 /* </li> -->*/
 /* <li class="submenu">*/
-/* <a href="index.html@page=home_3.html#" title="Post Formats">*/
+/* <a href="#" title="Post Formats">*/
 /* SATUAN FUNGSI*/
 /* </a>*/
-/* <ul>*/
+/* <ul id="satuan-fungsi">*/
 /* <li>*/
 /* 	<a href="index.html@page=post.html" title="Post Default">*/
 /* 		Sat Intel*/
@@ -1430,21 +1425,21 @@ HUBUNGI KAMI
 /* <ul>*/
 /* <li>*/
 /* 	<a href="{{baseUrl}}berita" title="Authors List">*/
-/* 		Berita*/
+/* 		BERITA*/
 /* 	</a>*/
 /* </li>*/
-/* <li>*/
+/* <!-- <li>*/
 /* 	<a href="index.html@page=author.html" title="Author Single">*/
 /* 		Kegiatan*/
 /* 	</a>*/
-/* </li>*/
+/* </li> -->*/
 /* </ul>*/
 /* </li>*/
-/* <li class="" id="menu-pengaduan">*/
+/* <!-- <li class="" id="menu-pengaduan">*/
 /* 	<a href="{{baseUrl}}kirimpengaduan" title="Blog 2 columns">*/
 /* 		PENGADUAN*/
 /* 	</a>*/
-/* </li>*/
+/* </li> -->*/
 /* <li class="submenu">*/
 /* <a href="index.html@page=home_3.html#" title="Categories">*/
 /* INOVASI*/
@@ -1483,13 +1478,8 @@ HUBUNGI KAMI
 /* </a>*/
 /* <ul class="expand_left_contact">*/
 /* <li>*/
-/* 	<a href="index.html@page=contact.html" title="Contact Style 1">*/
-/* 		Contact Style 1*/
-/* 	</a>*/
-/* </li>*/
-/* <li>*/
 /* 	<a href="{{baseUrl}}login" title="Contact Style 2">*/
-/* 		<i class="" > </i> Login User*/
+/* 		<i class="" > </i> LOGIN USER*/
 /* 	</a>*/
 /* </li>*/
 /* </ul>*/

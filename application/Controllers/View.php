@@ -116,8 +116,49 @@ class View extends \CodeIgniter\Controller
 	public function berita()
 	{
 					helper('form');
+					helper('url');
+
+					$uri = current_url(true);
+
+					if($_SERVER['QUERY_STRING']){
+						parse_str($_SERVER['QUERY_STRING'], $get_array);
+						$params = isset ($get_array['params']) ? $get_array['params']:'';
+						$ids 		= isset ($get_array['ids']) ? $get_array['ids']:'';
+
+						if(!$params || !$ids){
+							$this->data['script'] = $this->data['baseURL'].'/assets/action-js/users/informasi/berita.js';
+							return \Twig::instance()->display('users/informasi/berita.html', $this->data);
+						}
+
+						$this->data['params'] = $params;
+						$this->data['ids'] = $ids;
+
+						if($params == 'satuan'){
+							$this->data['script'] = $this->data['baseURL'].'/assets/action-js/users/informasi/berita-satuan.js';
+							return \Twig::instance()->display('users/informasi/berita-satuan.html', $this->data);
+						}else if($params == 'post'){
+							$this->data['script'] = $this->data['baseURL'].'/assets/action-js/users/informasi/berita-post.js';
+							return \Twig::instance()->display('users/informasi/berita-post.html', $this->data);
+						}else{
+							$this->data['script'] = $this->data['baseURL'].'/assets/action-js/users/informasi/berita.js';
+							return \Twig::instance()->display('users/informasi/berita.html', $this->data);
+						}
+					}
+
 					$this->data['script'] = $this->data['baseURL'].'/assets/action-js/users/informasi/berita.js';
 					return \Twig::instance()->display('users/informasi/berita.html', $this->data);
+	}
+
+
+	public function satuan()
+	{
+				if($this->logged){
+					helper('form');
+					$this->data['script'] = $this->data['baseURL'].'/assets/action-js/admin/satuan/satuan-index.js';
+					return \Twig::instance()->display('admin/satuan/index.html', $this->data);
+				}else{
+					return redirect('home');
+				}
 	}
 
 

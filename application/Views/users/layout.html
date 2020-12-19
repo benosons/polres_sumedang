@@ -134,6 +134,7 @@
 		<script type="text/javascript" src="{{baseURL}}/assets/users/js/odometer.min.js"></script>
 		<script type="text/javascript" src="{{baseURL}}/assets/users/style_selector/style_selector.js"></script>
 		<script src="{{baseURL}}/assets/swal/limonte-sweetalert2/7.33.1/sweetalert2.min.js"></script>
+		<script src="{{baseURL}}/assets/action-js/global.js"></script>
 		{% if script %}
 		<script src="{{script}}"></script>
 		{% endif %}
@@ -279,15 +280,4 @@
 	</div>
 </div>
 	</body>
-	<script>
-  var f = document.createElement("iframe");
-  f.src = "https://kopi.dev/widget-covid-19/";
-  f.width = "100%";
-  f.height = 380;
-  f.scrolling = "no";
-  f.frameBorder = 0;
-  var rootEl = document.getElementById("kopi-covid");
-  console.log(rootEl);
-  rootEl.appendChild(f);
-</script>
 </html>

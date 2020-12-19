@@ -21,10 +21,24 @@ class BeritaModel extends Model{
           return  $query->getResult();
     }
 
+    public function getSatuanByCode($code)
+    {
+          $builder = $this->db->table('satuan');
+          $query   = $builder->getWhere(['satuan_code' => $code]);
+          return  $query->getRow();
+    }
+
     public function loadBerita($id)
     {
         $builder = $this->db->table('data_berita');
         $query   = $builder->getWhere(['satuan' => $id]);
+        return  $query->getResult();
+    }
+
+    public function getBeritaByid($id)
+    {
+        $builder = $this->db->table('data_berita');
+        $query   = $builder->getWhere(['id' => $id]);
         return  $query->getResult();
     }
 

@@ -269,15 +269,19 @@ class __TwigTemplate_eb220cae152954f990db1f225de0ec6376a212862b9e7e3c0a23945a64b
 \t\t<script src=\"";
         // line 136
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "/assets/swal/limonte-sweetalert2/7.33.1/sweetalert2.min.js\"></script>";
+        echo "/assets/swal/limonte-sweetalert2/7.33.1/sweetalert2.min.js\"></script>
+\t\t<script src=\"";
         // line 137
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/action-js/global.js\"></script>";
+        // line 138
         if ((isset($context["script"]) ? $context["script"] : null)) {
-            // line 138
+            // line 139
             echo "\t\t<script src=\"";
             echo twig_escape_filter($this->env, (isset($context["script"]) ? $context["script"] : null), "html", null, true);
             echo "\"></script>";
         }
-        // line 140
+        // line 141
         echo "<div class=\"style_selector\">
 \t<div class=\"style_selector_icon\">
 \t\t&nbsp;
@@ -420,17 +424,6 @@ class __TwigTemplate_eb220cae152954f990db1f225de0ec6376a212862b9e7e3c0a23945a64b
 \t</div>
 </div>
 \t</body>
-\t<script>
-  var f = document.createElement(\"iframe\");
-  f.src = \"https://kopi.dev/widget-covid-19/\";
-  f.width = \"100%\";
-  f.height = 380;
-  f.scrolling = \"no\";
-  f.frameBorder = 0;
-  var rootEl = document.getElementById(\"kopi-covid\");
-  console.log(rootEl);
-  rootEl.appendChild(f);
-</script>
 </html>
 ";
     }
@@ -452,7 +445,7 @@ class __TwigTemplate_eb220cae152954f990db1f225de0ec6376a212862b9e7e3c0a23945a64b
 
     public function getDebugInfo()
     {
-        return array (  439 => 99,  281 => 140,  276 => 138,  274 => 137,  271 => 136,  267 => 135,  263 => 134,  259 => 133,  255 => 132,  251 => 131,  247 => 130,  243 => 129,  239 => 128,  235 => 127,  231 => 126,  227 => 125,  223 => 124,  219 => 123,  215 => 122,  200 => 110,  196 => 109,  192 => 108,  186 => 104,  184 => 103,  181 => 100,  179 => 99,  176 => 97,  174 => 96,  170 => 93,  168 => 92,  166 => 90,  112 => 37,  108 => 36,  104 => 35,  98 => 32,  94 => 31,  89 => 29,  85 => 28,  79 => 25,  75 => 24,  71 => 23,  67 => 22,  63 => 21,  59 => 20,  55 => 19,  51 => 18,  47 => 17,  43 => 16,  39 => 15,  34 => 13,  20 => 1,);
+        return array (  432 => 99,  285 => 141,  280 => 139,  278 => 138,  275 => 137,  271 => 136,  267 => 135,  263 => 134,  259 => 133,  255 => 132,  251 => 131,  247 => 130,  243 => 129,  239 => 128,  235 => 127,  231 => 126,  227 => 125,  223 => 124,  219 => 123,  215 => 122,  200 => 110,  196 => 109,  192 => 108,  186 => 104,  184 => 103,  181 => 100,  179 => 99,  176 => 97,  174 => 96,  170 => 93,  168 => 92,  166 => 90,  112 => 37,  108 => 36,  104 => 35,  98 => 32,  94 => 31,  89 => 29,  85 => 28,  79 => 25,  75 => 24,  71 => 23,  67 => 22,  63 => 21,  59 => 20,  55 => 19,  51 => 18,  47 => 17,  43 => 16,  39 => 15,  34 => 13,  20 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -591,6 +584,7 @@ class __TwigTemplate_eb220cae152954f990db1f225de0ec6376a212862b9e7e3c0a23945a64b
 /* 		<script type="text/javascript" src="{{baseURL}}/assets/users/js/odometer.min.js"></script>*/
 /* 		<script type="text/javascript" src="{{baseURL}}/assets/users/style_selector/style_selector.js"></script>*/
 /* 		<script src="{{baseURL}}/assets/swal/limonte-sweetalert2/7.33.1/sweetalert2.min.js"></script>*/
+/* 		<script src="{{baseURL}}/assets/action-js/global.js"></script>*/
 /* 		{% if script %}*/
 /* 		<script src="{{script}}"></script>*/
 /* 		{% endif %}*/
@@ -736,16 +730,5 @@ class __TwigTemplate_eb220cae152954f990db1f225de0ec6376a212862b9e7e3c0a23945a64b
 /* 	</div>*/
 /* </div>*/
 /* 	</body>*/
-/* 	<script>*/
-/*   var f = document.createElement("iframe");*/
-/*   f.src = "https://kopi.dev/widget-covid-19/";*/
-/*   f.width = "100%";*/
-/*   f.height = 380;*/
-/*   f.scrolling = "no";*/
-/*   f.frameBorder = 0;*/
-/*   var rootEl = document.getElementById("kopi-covid");*/
-/*   console.log(rootEl);*/
-/*   rootEl.appendChild(f);*/
-/* </script>*/
 /* </html>*/
 /* */

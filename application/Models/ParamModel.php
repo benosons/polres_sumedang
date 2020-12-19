@@ -9,10 +9,14 @@ class ParamModel extends Model{
           return  $this->select(['data_berita.*', 'users.user_id', 'users.user_name', 'users.user_email', 'users.user_role', 'users.user_fullname'])->join('users','users.user_id = data_berita.create_by')->getWhere(['create_by' => $create_by])->getResult();
     }
 
-    public function getparam($table = null)
+    public function getparam($table = null, $id = null)
     {
           $builder = $this->db->table($table);
-          $query   = $builder->get();
+          if($id){
+            $query   = $builder->getWhere(['satuan_code' => $id]);
+          }else{
+            $query   = $builder->get();
+          }
           return  $query->getResult();
     }
 
@@ -23,9 +27,9 @@ class ParamModel extends Model{
         return  $query->getResult();
     }
 
-    public function saveBalasan($data)
+    public function saveParam($table = null, $data = null)
     {
-        return  $this->db->table('data_balasan')->insert($data);
+        return  $this->db->table($table)->insert($data);
     }
 
 }

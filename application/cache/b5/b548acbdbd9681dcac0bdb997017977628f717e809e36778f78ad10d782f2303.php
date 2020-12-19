@@ -150,14 +150,14 @@ class __TwigTemplate_14849da401759044f6f95c3daca24a41c87cdfbd9aa7eff34d84fd680ce
                                     </div>
                                 </div>
                                 <hr/>
-                                <div class=\"row\">
+                                <!-- <div class=\"row\">
                                     <div class=\"col-md-12\">
                                       <img src=\"http://bios-studio.com/wp-content/uploads/2020/07/bios-no-bg-1.png\" alt=\"small-logo.png\" style=\"width: 30px;\">
                                     </div>
                                     <div class=\"col-md-12\">
                                         <span class=\"text-inverse text-center\" style=\"font-size:9px;\" >&copy; Copyright <strong><span><a href=\"http://bios-studio.com/\" target=\"_blank\" style=\"font-size:9px;\">bios-studio</a></span></strong>. All Rights Reserved</span>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </form>
                         <!-- end of form -->
@@ -425,14 +425,14 @@ class __TwigTemplate_14849da401759044f6f95c3daca24a41c87cdfbd9aa7eff34d84fd680ce
 /*                                     </div>*/
 /*                                 </div>*/
 /*                                 <hr/>*/
-/*                                 <div class="row">*/
+/*                                 <!-- <div class="row">*/
 /*                                     <div class="col-md-12">*/
 /*                                       <img src="http://bios-studio.com/wp-content/uploads/2020/07/bios-no-bg-1.png" alt="small-logo.png" style="width: 30px;">*/
 /*                                     </div>*/
 /*                                     <div class="col-md-12">*/
 /*                                         <span class="text-inverse text-center" style="font-size:9px;" >&copy; Copyright <strong><span><a href="http://bios-studio.com/" target="_blank" style="font-size:9px;">bios-studio</a></span></strong>. All Rights Reserved</span>*/
 /*                                     </div>*/
-/*                                 </div>*/
+/*                                 </div> -->*/
 /*                             </div>*/
 /*                         </form>*/
 /*                         <!-- end of form -->*/

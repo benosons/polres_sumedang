@@ -74,13 +74,13 @@ class __TwigTemplate_65d39d51154dedace2a81a6ef745e3c2053b05338d4b8a56facc6d005c8
 
                 </ul>
             </li>
-            <li class=\"pcoded-hasmenu\">
-                <a href=\"javascript:void(0)\" data-i18n=\"nav.form-components.main\">
+            <li class=\"\" id=\"menu-satuan\">
+                <a href=\"satuan\" data-i18n=\"nav.form-components.main\">
                     <span class=\"pcoded-micon\"><i class=\"ti-bookmark-alt\"></i></span>
-                    <span class=\"pcoded-mtext\">Unit Satuan</span>
-                    <span class=\"pcoded-mcaret\"></span>
+                    <span class=\"pcoded-mtext\">Satuan Fungsi</span>
+                    <!-- <span class=\"pcoded-mcaret\"></span> -->
                 </a>
-                <ul class=\"pcoded-submenu\">
+                <!-- <ul class=\"pcoded-submenu\">
                     <li class=\" \">
                         <a href=\"form-elements-component.html\" data-i18n=\"nav.form-components.form-components\">
                             <span class=\"pcoded-micon\"><i class=\"ti-angle-right\"></i></span>
@@ -110,7 +110,7 @@ class __TwigTemplate_65d39d51154dedace2a81a6ef745e3c2053b05338d4b8a56facc6d005c8
                         </a>
                     </li>
 
-                </ul>
+                </ul> -->
             </li>
             <li class=\"pcoded-hasmenu\">
                 <a href=\"#\" data-i18n=\"nav.widget.main\">
@@ -304,13 +304,13 @@ class __TwigTemplate_65d39d51154dedace2a81a6ef745e3c2053b05338d4b8a56facc6d005c8
 /* */
 /*                 </ul>*/
 /*             </li>*/
-/*             <li class="pcoded-hasmenu">*/
-/*                 <a href="javascript:void(0)" data-i18n="nav.form-components.main">*/
+/*             <li class="" id="menu-satuan">*/
+/*                 <a href="satuan" data-i18n="nav.form-components.main">*/
 /*                     <span class="pcoded-micon"><i class="ti-bookmark-alt"></i></span>*/
-/*                     <span class="pcoded-mtext">Unit Satuan</span>*/
-/*                     <span class="pcoded-mcaret"></span>*/
+/*                     <span class="pcoded-mtext">Satuan Fungsi</span>*/
+/*                     <!-- <span class="pcoded-mcaret"></span> -->*/
 /*                 </a>*/
-/*                 <ul class="pcoded-submenu">*/
+/*                 <!-- <ul class="pcoded-submenu">*/
 /*                     <li class=" ">*/
 /*                         <a href="form-elements-component.html" data-i18n="nav.form-components.form-components">*/
 /*                             <span class="pcoded-micon"><i class="ti-angle-right"></i></span>*/
@@ -340,7 +340,7 @@ class __TwigTemplate_65d39d51154dedace2a81a6ef745e3c2053b05338d4b8a56facc6d005c8
 /*                         </a>*/
 /*                     </li>*/
 /* */
-/*                 </ul>*/
+/*                 </ul> -->*/
 /*             </li>*/
 /*             <li class="pcoded-hasmenu">*/
 /*                 <a href="#" data-i18n="nav.widget.main">*/

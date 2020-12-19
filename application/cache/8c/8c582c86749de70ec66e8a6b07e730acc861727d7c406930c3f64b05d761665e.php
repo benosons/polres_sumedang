@@ -1,14 +1,14 @@
 <?php
 
-/* users/informasi/berita.html */
-class __TwigTemplate_3c322760ba2ecf291324003b17b09a2584a4c479e325d532af3746f4cad3e983 extends Twig_Template
+/* users/informasi/berita-satuan.html */
+class __TwigTemplate_60d76fa1da541a89201da1cbae497ac1b3b8024c4ec4a9c5751b0d2c2867df5f extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("users/layout.html", "users/informasi/berita.html", 1);
+        $this->parent = $this->loadTemplate("users/layout.html", "users/informasi/berita-satuan.html", 1);
         $this->blocks = array(
             'content' => array($this, 'block_content'),
         );
@@ -30,9 +30,20 @@ class __TwigTemplate_3c322760ba2ecf291324003b17b09a2584a4c479e325d532af3746f4cad
         echo "<input id=\"baseUrl\" value=\"";
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "\" hidden>
+<input id=\"id_satuan\" value=\"";
+        // line 3
+        echo twig_escape_filter($this->env, (isset($context["ids"]) ? $context["ids"] : null), "html", null, true);
+        echo "\" hidden>
+<input id=\"param\" value=\"";
+        // line 4
+        echo twig_escape_filter($this->env, (isset($context["params"]) ? $context["params"] : null), "html", null, true);
+        echo "\" hidden>
 \t<div class=\"page_header clearfix page_margin_top\">
 \t\t<div class=\"page_header_left\">
-\t\t\t<h2 class=\"page_title\">Berita Polres Sumedang</h2>
+\t\t\t<h2 class=\"page_title\">Berita Satuan";
+        // line 7
+        echo twig_escape_filter($this->env, (isset($context["params"]) ? $context["params"] : null), "html", null, true);
+        echo "</h2>
 \t\t</div>
 \t\t<div class=\"page_header_right\">
 \t\t\t<ul class=\"bread_crumb\">
@@ -65,6 +76,7 @@ class __TwigTemplate_3c322760ba2ecf291324003b17b09a2584a4c479e325d532af3746f4cad
 \t\t\t<hr class=\"divider subheader_arrow\">
 \t\t\t<hr class=\"divider last\">
 \t\t</div>
+\t\t<br/>
     <div id=\"page-berita\">
 \t\t\t<!-- <div class=\"column column_1_3\">
 \t\t\t\t<h4 class=\"box_header page_margin_top_section\">Science</h4>
@@ -143,7 +155,7 @@ class __TwigTemplate_3c322760ba2ecf291324003b17b09a2584a4c479e325d532af3746f4cad
 
     public function getTemplateName()
     {
-        return "users/informasi/berita.html";
+        return "users/informasi/berita-satuan.html";
     }
 
     public function isTraitable()
@@ -153,14 +165,16 @@ class __TwigTemplate_3c322760ba2ecf291324003b17b09a2584a4c479e325d532af3746f4cad
 
     public function getDebugInfo()
     {
-        return array (  30 => 2,  11 => 1,);
+        return array (  45 => 7,  39 => 4,  35 => 3,  30 => 2,  11 => 1,);
     }
 }
 /* {% extends "users/layout.html" %} {% block content %}*/
 /* <input id="baseUrl" value="{{baseURL}}" hidden>*/
+/* <input id="id_satuan" value="{{ids}}" hidden>*/
+/* <input id="param" value="{{params}}" hidden>*/
 /* 	<div class="page_header clearfix page_margin_top">*/
 /* 		<div class="page_header_left">*/
-/* 			<h2 class="page_title">Berita Polres Sumedang</h2>*/
+/* 			<h2 class="page_title">Berita Satuan {{params}}</h2>*/
 /* 		</div>*/
 /* 		<div class="page_header_right">*/
 /* 			<ul class="bread_crumb">*/
@@ -193,6 +207,7 @@ class __TwigTemplate_3c322760ba2ecf291324003b17b09a2584a4c479e325d532af3746f4cad
 /* 			<hr class="divider subheader_arrow">*/
 /* 			<hr class="divider last">*/
 /* 		</div>*/
+/* 		<br/>*/
 /*     <div id="page-berita">*/
 /* 			<!-- <div class="column column_1_3">*/
 /* 				<h4 class="box_header page_margin_top_section">Science</h4>*/

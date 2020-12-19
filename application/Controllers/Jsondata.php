@@ -145,9 +145,28 @@ class Jsondata extends \CodeIgniter\Controller
 				$userid		= $this->data['userid'];
 
 					$model = new \App\Models\BeritaModel();
+					$modelparam = new \App\Models\ParamModel();
 					$modelfiles = new \App\Models\FilesModel();
 
-							$data = $model->getSatuan();
+					if($param == 'post'){
+						$fulldata = [];
+						$databerita = $model->getBeritaByid($id);
+
+						foreach ($databerita as $keyberita => $valueberita) {
+
+							$datafiles = $modelfiles->getWhere(['id_parent' => $valueberita->id])->getRow();
+							$datasatuan= $model->getSatuanByCode($valueberita->satuan);
+							$obj_merged = (object) array_merge((array) $valueberita, (array) $datafiles, (array) $datasatuan);
+							array_push($fulldata, $obj_merged);
+						}
+						$berita = $fulldata;
+					}else{
+							if($param && $id){
+								$data = $modelparam->getparam($param, $id);
+							}else{
+								$data = $model->getSatuan();
+							}
+
 							$berita = [];
 							foreach ($data as $key => $value) {
 								$fulldata = [];
@@ -159,6 +178,7 @@ class Jsondata extends \CodeIgniter\Controller
 								}
 								$berita[$value->satuan_name] = $fulldata;
 							}
+						}
 
 					if($berita){
 						$response = [
@@ -197,7 +217,7 @@ class Jsondata extends \CodeIgniter\Controller
 					$model = new \App\Models\ParamModel();
 					$modelfiles = new \App\Models\FilesModel();
 
-					$data = $model->getparam($param);
+					$data = $model->getparam($param, $id);
 
 					if($data){
 						$response = [
@@ -391,6 +411,32 @@ class Jsondata extends \CodeIgniter\Controller
 				'status'   => 'sukses',
 				'code'     => '0',
 				'data' 		 => 'terupdate'
+		];
+		header('Content-Type: application/json');
+		echo json_encode($response);
+		exit;
+
+	}
+
+	public function addParam(){
+
+		$request  = $this->request;
+		$param 	  = $request->getVar('param');
+		$model 	  = new \App\Models\ParamModel();
+
+		$data = [
+						'satuan_code' => $request->getVar('satuan_code'),
+						'satuan_name'	=> $request->getVar('satuan_name'),
+						'satuan_desc' => $request->getVar('satuan_desc'),
+        ];
+
+		$res = $model->saveParam($param, $data);
+		$id  = $model->insertID();
+
+		$response = [
+				'status'   => 'sukses',
+				'code'     => '0',
+				'data' 		 => 'terkirim'
 		];
 		header('Content-Type: application/json');
 		echo json_encode($response);

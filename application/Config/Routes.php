@@ -84,10 +84,10 @@ $routes->add('register', 'View::register');
 $routes->add('datapengaduan', 'View::datapengaduan');
 $routes->add('userprofile', 'View::userprofile');
 $routes->add('inputberita', 'View::inputberita');
+$routes->add('satuan', 'View::satuan');
 
 // User
-$routes->add('berita', 'View::berita');
-
+$routes->get('berita', 'View::berita');
 
 $routes->add('auth', 'Auth::auth');
 $routes->add('reg', 'Auth::reg');
@@ -100,6 +100,7 @@ $routes->post('loadparam', 'Jsondata::loadparam');
 $routes->post('save', 'Jsondata::save');
 $routes->post('saveBerita', 'Jsondata::saveBerita');
 $routes->post('update', 'Jsondata::update');
+$routes->post('addParam', 'Jsondata::addParam');
 
 /**
  * --------------------------------------------------------------------
