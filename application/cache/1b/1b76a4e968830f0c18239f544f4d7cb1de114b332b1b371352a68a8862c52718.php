@@ -30,7 +30,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
         echo "<div class=\"page_layout page_margin_top clearfix\">
 \t\t<div class=\"row\">
 \t\t\t<div class=\"column column_2_3\">
-\t\t\t\t<h4 class=\"box_header\">Latest Posts</h4>
+\t\t\t\t<h4 class=\"box_header\">Berita Terbaru</h4>
 \t\t\t\t<div class=\"row\">
 \t\t\t\t\t<ul class=\"blog column column_1_2\">
 \t\t\t\t\t\t<li class=\"post\">
@@ -500,8 +500,8 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t</li>
 \t\t\t\t\t</ul>
 \t\t\t\t</div>
-\t\t\t\t
-\t\t\t\t<h4 class=\"box_header page_margin_top_section\">Top Authors</h4>
+
+\t\t\t\t<!-- <h4 class=\"box_header page_margin_top_section\">Top Authors</h4>
 \t\t\t\t<ul class=\"authors rating clearfix\">
 \t\t\t\t\t<li class=\"author\">
 \t\t\t\t\t\t<a class=\"thumb\" href=\"index.html@page=author.html\" title=\"Debora Hilton\">
@@ -555,7 +555,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t\t\t\t\t<h6>ILLUSTRATOR</h6>
 \t\t\t\t\t\t</div>
 \t\t\t\t\t</li>
-\t\t\t\t</ul>
+\t\t\t\t</ul> -->
 \t\t\t\t<h4 class=\"box_header page_margin_top_section\">Science</h4>
 \t\t\t\t<ul class=\"blog small clearfix\">
 \t\t\t\t\t<li class=\"post\">
@@ -661,7 +661,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 /* <div class="page_layout page_margin_top clearfix">*/
 /* 		<div class="row">*/
 /* 			<div class="column column_2_3">*/
-/* 				<h4 class="box_header">Latest Posts</h4>*/
+/* 				<h4 class="box_header">Berita Terbaru</h4>*/
 /* 				<div class="row">*/
 /* 					<ul class="blog column column_1_2">*/
 /* 						<li class="post">*/
@@ -1080,8 +1080,8 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 /* 						</li>*/
 /* 					</ul>*/
 /* 				</div>*/
-/* 				*/
-/* 				<h4 class="box_header page_margin_top_section">Top Authors</h4>*/
+/* */
+/* 				<!-- <h4 class="box_header page_margin_top_section">Top Authors</h4>*/
 /* 				<ul class="authors rating clearfix">*/
 /* 					<li class="author">*/
 /* 						<a class="thumb" href="index.html@page=author.html" title="Debora Hilton">*/
@@ -1123,7 +1123,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 /* 							<h6>ILLUSTRATOR</h6>*/
 /* 						</div>*/
 /* 					</li>*/
-/* 				</ul>*/
+/* 				</ul> -->*/
 /* 				<h4 class="box_header page_margin_top_section">Science</h4>*/
 /* 				<ul class="blog small clearfix">*/
 /* 					<li class="post">*/

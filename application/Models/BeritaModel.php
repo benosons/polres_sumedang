@@ -35,6 +35,13 @@ class BeritaModel extends Model{
         return  $query->getResult();
     }
 
+    public function loadBeritaHeadline($id)
+    {
+        $builder = $this->db->table('data_berita');
+        $query   = $builder->getWhere(['satuan' => $id, 'status' => 1]);
+        return  $query->getResult();
+    }
+
     public function getBeritaByid($id)
     {
         $builder = $this->db->table('data_berita');
@@ -42,9 +49,34 @@ class BeritaModel extends Model{
         return  $query->getResult();
     }
 
-    public function saveBalasan($data)
+    public function getBeritaHeadline($id, $status)
     {
-        return  $this->db->table('data_balasan')->insert($data);
+        $builder = $this->db->table('data_berita');
+        $query   = $builder->getWhere(['id' => $id, 'status' => 1]);
+        return  $query->getResult();
+    }
+
+    public function countStatus()
+    {
+      $sql = "SELECT COUNT(*) as Count FROM data_berita where status = 1";
+      $result = $this->db->query($sql);
+      $row = $result->getRow();
+      return $row->Count;
+    }
+
+    public function getMaxId()
+    {
+      $sql = "SELECT * FROM `polres_sumedang`.`data_berita` ORDER BY create_date asc limit 1";
+      $result = $this->db->query($sql);
+      $row = $result->getRow();
+      return $row->id;
+    }
+
+    public function deleteData($id)
+    {
+        $builder = $this->db->table('data_berita');
+        $query   = $builder->where('id', $id);
+        return  $query->delete();
     }
 
 }

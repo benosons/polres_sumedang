@@ -101,6 +101,8 @@ $routes->post('save', 'Jsondata::save');
 $routes->post('saveBerita', 'Jsondata::saveBerita');
 $routes->post('update', 'Jsondata::update');
 $routes->post('addParam', 'Jsondata::addParam');
+$routes->post('actionBerita', 'Jsondata::actionBerita');
+$routes->post('loadBeritaHeadline', 'Jsondata::loadBeritaHeadline');
 
 /**
  * --------------------------------------------------------------------

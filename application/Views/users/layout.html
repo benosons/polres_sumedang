@@ -62,8 +62,17 @@
 			float: right;
 		}
 
+		.sf-menu {
+			padding-left: 20rem;
+		}
+
+		.slider li.slide img, .pr_preload {
+		    display: block;
+		}
+
 		</style>
 	</head>
+	<input type="text" id="baseURL" value="{{baseURL}}">
 	<!--<body class="image_1">
 	<body class="image_1 overlay">
 	<body class="image_2">
@@ -130,7 +139,7 @@
 		<script type="text/javascript" src="{{baseURL}}/assets/users/js/jquery.prettyPhoto.js"></script>
 		<script type="text/javascript" src="{{baseURL}}/assets/users/js/jquery.qtip.min.js"></script>
 		<script type="text/javascript" src="{{baseURL}}/assets/users/js/jquery.blockUI.js"></script>
-		<script type="text/javascript" src="{{baseURL}}/assets/users/js/main.js"></script>
+
 		<script type="text/javascript" src="{{baseURL}}/assets/users/js/odometer.min.js"></script>
 		<script type="text/javascript" src="{{baseURL}}/assets/users/style_selector/style_selector.js"></script>
 		<script src="{{baseURL}}/assets/swal/limonte-sweetalert2/7.33.1/sweetalert2.min.js"></script>
@@ -138,6 +147,7 @@
 		{% if script %}
 		<script src="{{script}}"></script>
 		{% endif %}
+		<script type="text/javascript" src="{{baseURL}}/assets/users/js/main.js"></script>
 <div class="style_selector">
 	<div class="style_selector_icon">
 		&nbsp;

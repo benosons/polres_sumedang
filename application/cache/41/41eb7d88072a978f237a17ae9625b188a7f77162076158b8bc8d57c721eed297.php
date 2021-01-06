@@ -205,7 +205,7 @@ class __TwigTemplate_65d39d51154dedace2a81a6ef745e3c2053b05338d4b8a56facc6d005c8
                     <span class=\"pcoded-mcaret\"></span>
                 </a>
                 <ul class=\"pcoded-submenu\">
-                    <li class=\" \">
+                    <li class=\" \" id=\"inputberita\">
                         <a href=\"inputberita\" data-i18n=\"nav.form-components.form-components\">
                             <span class=\"pcoded-micon\"><i class=\"ti-angle-right\"></i></span>
                             <span class=\"pcoded-mtext\">Berita</span>
@@ -430,7 +430,7 @@ class __TwigTemplate_65d39d51154dedace2a81a6ef745e3c2053b05338d4b8a56facc6d005c8
 /*                     <span class="pcoded-mcaret"></span>*/
 /*                 </a>*/
 /*                 <ul class="pcoded-submenu">*/
-/*                     <li class=" ">*/
+/*                     <li class=" " id="inputberita">*/
 /*                         <a href="inputberita" data-i18n="nav.form-components.form-components">*/
 /*                             <span class="pcoded-micon"><i class="ti-angle-right"></i></span>*/
 /*                             <span class="pcoded-mtext">Berita</span>*/

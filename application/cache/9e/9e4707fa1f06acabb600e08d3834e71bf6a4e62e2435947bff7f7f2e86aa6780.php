@@ -129,10 +129,10 @@ class __TwigTemplate_b39c7fe41ad261bf93ffcae9dbeccde241202026db2ff2f8c23ae821de7
                                     <thead>
                                         <tr>
                                             <th>No</th>
+                                            <th>Headline</th>
                                             <th>Judul</th>
                                             <th>Create By</th>
-                                            <th>Create Date</th>
-
+                                            <th colspan=2>Create Date</th>
                                         </tr>
                                     </thead>
                                 </table>
@@ -284,10 +284,10 @@ class __TwigTemplate_b39c7fe41ad261bf93ffcae9dbeccde241202026db2ff2f8c23ae821de7
 /*                                     <thead>*/
 /*                                         <tr>*/
 /*                                             <th>No</th>*/
+/*                                             <th>Headline</th>*/
 /*                                             <th>Judul</th>*/
 /*                                             <th>Create By</th>*/
-/*                                             <th>Create Date</th>*/
-/* */
+/*                                             <th colspan=2>Create Date</th>*/
 /*                                         </tr>*/
 /*                                     </thead>*/
 /*                                 </table>*/

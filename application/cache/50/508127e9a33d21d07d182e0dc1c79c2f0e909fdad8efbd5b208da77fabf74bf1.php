@@ -57,7 +57,7 @@ class __TwigTemplate_f324fde1f267788f3024ccb8183b7eeff16d9e72aee0577b024b03a40a0
 \t\t\t\t<p class=\"clearfix\">Maecenas mauris elementum, est morbi interdum cursus at elite imperdiet libero. Proin odios dapibus integer an nulla augue pharetra cursus.</p>
 \t\t\t</div>
 \t\t</li>
-\t\t<li class=\"slide\">
+\t\t<!-- <li class=\"slide\">
 \t\t\t<img src='https://humas.polri.go.id/wp-content/uploads/2020/07/SMDNG-768x576.jpg' alt='img'>
 \t\t\t<div class=\"slider_content_box\">
 \t\t\t\t<ul class=\"post_details simple\">
@@ -95,7 +95,7 @@ class __TwigTemplate_f324fde1f267788f3024ccb8183b7eeff16d9e72aee0577b024b03a40a0
 \t\t\t\t<h2><a href=\"index.html@page=post.html\" title=\"High Altitudes May Aid Weight Control\">High Altitudes May Aid Weight Control</a></h2>
 \t\t\t\t<p class=\"clearfix\">Maecenas mauris elementum, est morbi interdum cursus at elite imperdiet libero. Proin odios dapibus integer an nulla augue pharetra cursus.</p>
 \t\t\t</div>
-\t\t</li>
+\t\t</li> -->
 \t</ul>
 </div>
 
@@ -155,7 +155,7 @@ class __TwigTemplate_f324fde1f267788f3024ccb8183b7eeff16d9e72aee0577b024b03a40a0
 /* 				<p class="clearfix">Maecenas mauris elementum, est morbi interdum cursus at elite imperdiet libero. Proin odios dapibus integer an nulla augue pharetra cursus.</p>*/
 /* 			</div>*/
 /* 		</li>*/
-/* 		<li class="slide">*/
+/* 		<!-- <li class="slide">*/
 /* 			<img src='https://humas.polri.go.id/wp-content/uploads/2020/07/SMDNG-768x576.jpg' alt='img'>*/
 /* 			<div class="slider_content_box">*/
 /* 				<ul class="post_details simple">*/
@@ -193,7 +193,7 @@ class __TwigTemplate_f324fde1f267788f3024ccb8183b7eeff16d9e72aee0577b024b03a40a0
 /* 				<h2><a href="index.html@page=post.html" title="High Altitudes May Aid Weight Control">High Altitudes May Aid Weight Control</a></h2>*/
 /* 				<p class="clearfix">Maecenas mauris elementum, est morbi interdum cursus at elite imperdiet libero. Proin odios dapibus integer an nulla augue pharetra cursus.</p>*/
 /* 			</div>*/
-/* 		</li>*/
+/* 		</li> -->*/
 /* 	</ul>*/
 /* </div>*/
 /* */

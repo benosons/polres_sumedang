@@ -138,8 +138,20 @@ class __TwigTemplate_eb220cae152954f990db1f225de0ec6376a212862b9e7e3c0a23945a64b
 \t\t\tfloat: right;
 \t\t}
 
+\t\t.sf-menu {
+\t\t\tpadding-left: 20rem;
+\t\t}
+
+\t\t.slider li.slide img, .pr_preload {
+\t\t    display: block;
+\t\t}
+
 \t\t</style>
 \t</head>
+\t<input type=\"text\" id=\"baseURL\" value=\"";
+        // line 75
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "\">
 \t<!--<body class=\"image_1\">
 \t<body class=\"image_1 overlay\">
 \t<body class=\"image_2\">
@@ -162,41 +174,41 @@ class __TwigTemplate_eb220cae152954f990db1f225de0ec6376a212862b9e7e3c0a23945a64b
 \t<body class=\"pattern_10\">-->
 \t<body class=\"\">
 \t\t<div class=\"site_container\">";
-        // line 90
-        $this->loadTemplate("users/header.html", "users/layout.html", 90)->display($context);
-        // line 92
-        $this->loadTemplate("users/menu.html", "users/layout.html", 92)->display($context);
-        // line 93
+        // line 99
+        $this->loadTemplate("users/header.html", "users/layout.html", 99)->display($context);
+        // line 101
+        $this->loadTemplate("users/menu.html", "users/layout.html", 101)->display($context);
+        // line 102
         echo "
 
 <div class=\"page\">";
-        // line 96
+        // line 105
         if (((isset($context["page"]) ? $context["page"] : null) == "home")) {
-            // line 97
-            $this->loadTemplate("users/carousel.html", "users/layout.html", 97)->display($context);
+            // line 106
+            $this->loadTemplate("users/carousel.html", "users/layout.html", 106)->display($context);
         }
-        // line 99
+        // line 108
         $this->displayBlock('content', $context, $blocks);
-        // line 100
+        // line 109
         echo "
 </div>";
-        // line 103
-        $this->loadTemplate("users/footer.html", "users/layout.html", 103)->display($context);
-        // line 104
+        // line 112
+        $this->loadTemplate("users/footer.html", "users/layout.html", 112)->display($context);
+        // line 113
         echo "
 </div>
 \t\t<div class=\"background_overlay\"></div>
 \t\t<!--js-->
 \t\t<script type=\"text/javascript\" src=\"";
-        // line 108
+        // line 117
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/js/jquery-3.5.1.min.js\"></script>
 \t\t<script type=\"text/javascript\" src=\"";
-        // line 109
+        // line 118
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/js/jquery-migrate-3.3.2.min.js\"></script>
 \t\t<script type=\"text/javascript\" src=\"";
-        // line 110
+        // line 119
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/js/ui/1.12.1/jquery-ui.min.js\"></script>
 \t\t<script type=\"text/javascript\">
@@ -211,78 +223,78 @@ class __TwigTemplate_eb220cae152954f990db1f225de0ec6376a212862b9e7e3c0a23945a64b
 \t\t});
 \t\t</script>
 \t\t<script type=\"text/javascript\" src=\"";
-        // line 122
+        // line 131
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/js/jquery.ba-bbq.min.js\"></script>
 \t\t<script type=\"text/javascript\" src=\"";
-        // line 123
+        // line 132
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/js/jquery.easing.1.3.js\"></script>
 \t\t<script type=\"text/javascript\" src=\"";
-        // line 124
+        // line 133
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/js/jquery.carouFredSel-6.2.1-packed.js\"></script>
 \t\t<script type=\"text/javascript\" src=\"";
-        // line 125
+        // line 134
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/js/jquery.touchSwipe.min.js\"></script>
 \t\t<script type=\"text/javascript\" src=\"";
-        // line 126
+        // line 135
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/js/jquery.transit.min.js\"></script>
 \t\t<script type=\"text/javascript\" src=\"";
-        // line 127
+        // line 136
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/js/jquery.sliderControl.js\"></script>
 \t\t<script type=\"text/javascript\" src=\"";
-        // line 128
+        // line 137
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/js/jquery.timeago.js\"></script>
 \t\t<script type=\"text/javascript\" src=\"";
-        // line 129
+        // line 138
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/js/jquery.hint.js\"></script>
 \t\t<script type=\"text/javascript\" src=\"";
-        // line 130
+        // line 139
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/js/jquery.prettyPhoto.js\"></script>
 \t\t<script type=\"text/javascript\" src=\"";
-        // line 131
+        // line 140
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/js/jquery.qtip.min.js\"></script>
 \t\t<script type=\"text/javascript\" src=\"";
-        // line 132
+        // line 141
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/js/jquery.blockUI.js\"></script>
+
 \t\t<script type=\"text/javascript\" src=\"";
-        // line 133
-        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "/assets/users/js/main.js\"></script>
-\t\t<script type=\"text/javascript\" src=\"";
-        // line 134
+        // line 143
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/js/odometer.min.js\"></script>
 \t\t<script type=\"text/javascript\" src=\"";
-        // line 135
+        // line 144
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/style_selector/style_selector.js\"></script>
 \t\t<script src=\"";
-        // line 136
+        // line 145
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/swal/limonte-sweetalert2/7.33.1/sweetalert2.min.js\"></script>
 \t\t<script src=\"";
-        // line 137
+        // line 146
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/action-js/global.js\"></script>";
-        // line 138
+        // line 147
         if ((isset($context["script"]) ? $context["script"] : null)) {
-            // line 139
+            // line 148
             echo "\t\t<script src=\"";
             echo twig_escape_filter($this->env, (isset($context["script"]) ? $context["script"] : null), "html", null, true);
             echo "\"></script>";
         }
-        // line 141
-        echo "<div class=\"style_selector\">
+        // line 150
+        echo "\t\t<script type=\"text/javascript\" src=\"";
+        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
+        echo "/assets/users/js/main.js\"></script>
+<div class=\"style_selector\">
 \t<div class=\"style_selector_icon\">
 \t\t&nbsp;
 \t</div>
@@ -428,7 +440,7 @@ class __TwigTemplate_eb220cae152954f990db1f225de0ec6376a212862b9e7e3c0a23945a64b
 ";
     }
 
-    // line 99
+    // line 108
     public function block_content($context, array $blocks = array())
     {
     }
@@ -445,7 +457,7 @@ class __TwigTemplate_eb220cae152954f990db1f225de0ec6376a212862b9e7e3c0a23945a64b
 
     public function getDebugInfo()
     {
-        return array (  432 => 99,  285 => 141,  280 => 139,  278 => 138,  275 => 137,  271 => 136,  267 => 135,  263 => 134,  259 => 133,  255 => 132,  251 => 131,  247 => 130,  243 => 129,  239 => 128,  235 => 127,  231 => 126,  227 => 125,  223 => 124,  219 => 123,  215 => 122,  200 => 110,  196 => 109,  192 => 108,  186 => 104,  184 => 103,  181 => 100,  179 => 99,  176 => 97,  174 => 96,  170 => 93,  168 => 92,  166 => 90,  112 => 37,  108 => 36,  104 => 35,  98 => 32,  94 => 31,  89 => 29,  85 => 28,  79 => 25,  75 => 24,  71 => 23,  67 => 22,  63 => 21,  59 => 20,  55 => 19,  51 => 18,  47 => 17,  43 => 16,  39 => 15,  34 => 13,  20 => 1,);
+        return array (  444 => 108,  294 => 150,  289 => 148,  287 => 147,  284 => 146,  280 => 145,  276 => 144,  272 => 143,  267 => 141,  263 => 140,  259 => 139,  255 => 138,  251 => 137,  247 => 136,  243 => 135,  239 => 134,  235 => 133,  231 => 132,  227 => 131,  212 => 119,  208 => 118,  204 => 117,  198 => 113,  196 => 112,  193 => 109,  191 => 108,  188 => 106,  186 => 105,  182 => 102,  180 => 101,  178 => 99,  153 => 75,  112 => 37,  108 => 36,  104 => 35,  98 => 32,  94 => 31,  89 => 29,  85 => 28,  79 => 25,  75 => 24,  71 => 23,  67 => 22,  63 => 21,  59 => 20,  55 => 19,  51 => 18,  47 => 17,  43 => 16,  39 => 15,  34 => 13,  20 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -512,8 +524,17 @@ class __TwigTemplate_eb220cae152954f990db1f225de0ec6376a212862b9e7e3c0a23945a64b
 /* 			float: right;*/
 /* 		}*/
 /* */
+/* 		.sf-menu {*/
+/* 			padding-left: 20rem;*/
+/* 		}*/
+/* */
+/* 		.slider li.slide img, .pr_preload {*/
+/* 		    display: block;*/
+/* 		}*/
+/* */
 /* 		</style>*/
 /* 	</head>*/
+/* 	<input type="text" id="baseURL" value="{{baseURL}}">*/
 /* 	<!--<body class="image_1">*/
 /* 	<body class="image_1 overlay">*/
 /* 	<body class="image_2">*/
@@ -580,7 +601,7 @@ class __TwigTemplate_eb220cae152954f990db1f225de0ec6376a212862b9e7e3c0a23945a64b
 /* 		<script type="text/javascript" src="{{baseURL}}/assets/users/js/jquery.prettyPhoto.js"></script>*/
 /* 		<script type="text/javascript" src="{{baseURL}}/assets/users/js/jquery.qtip.min.js"></script>*/
 /* 		<script type="text/javascript" src="{{baseURL}}/assets/users/js/jquery.blockUI.js"></script>*/
-/* 		<script type="text/javascript" src="{{baseURL}}/assets/users/js/main.js"></script>*/
+/* */
 /* 		<script type="text/javascript" src="{{baseURL}}/assets/users/js/odometer.min.js"></script>*/
 /* 		<script type="text/javascript" src="{{baseURL}}/assets/users/style_selector/style_selector.js"></script>*/
 /* 		<script src="{{baseURL}}/assets/swal/limonte-sweetalert2/7.33.1/sweetalert2.min.js"></script>*/
@@ -588,6 +609,7 @@ class __TwigTemplate_eb220cae152954f990db1f225de0ec6376a212862b9e7e3c0a23945a64b
 /* 		{% if script %}*/
 /* 		<script src="{{script}}"></script>*/
 /* 		{% endif %}*/
+/* 		<script type="text/javascript" src="{{baseURL}}/assets/users/js/main.js"></script>*/
 /* <div class="style_selector">*/
 /* 	<div class="style_selector_icon">*/
 /* 		&nbsp;*/

@@ -1,6 +1,7 @@
 console.log('You are running jQuery version: ' + $.fn.jquery);
 $(document).ready(function(){
-  $('.pcoded-item li#menu-informasi').addClass('active');
+  $('.pcoded-item li#menu-informasi').addClass('active pcoded-trigger');
+  $('#inputberita').addClass('active');
   $('.note-toolbar .note-insert, .note-toolbar .note-table, .note-toolbar .note-style:first, .note-toolbar .note-para').remove();
   $('.note-toolbar.panel-heading').remove();
   $('.note-popover').remove();
@@ -139,8 +140,10 @@ function save(formData){
               aaData: result.data.berita,
               aoColumns: [
                   { 'mDataProp': 'id', 'width':'10%'},
+                  { 'mDataProp': 'status', 'width':'10%'},
                   { 'mDataProp': 'judul_berita'},
                   { 'mDataProp': 'user_fullname'},
+                  { 'mDataProp': 'create_date'},
                   { 'mDataProp': 'create_date'},
 
               ],
@@ -148,35 +151,34 @@ function save(formData){
               fixedColumns: true,
               aoColumnDefs:[
                 { width: 50, targets: 0 },
-                // {
-                //     mRender: function ( data, type, row ) {
-                //
-                //       var penting = '';
-                //       if(row.penting == '1'){
-                //         penting = '<i class="icofont icofont-star text-warning"></i>';
-                //       }
-                //       var el =
-                //       `<div class="check-star">
-                //           <div class="checkbox-fade fade-in-primary checkbox">
-                //               <label>
-                //                   <input type="checkbox" value="">
-                //                   <span class="cr"><i class="cr-icon icofont icofont-verification-check txt-primary"></i></span>
-                //               </label>
-                //           </div>
-                //           `+penting+`
-                //       </div>`;
-                //         return el;
-                //     },
-                //     aTargets: [ 0 ]
-                // },
-                // {
-                //   mRender: function ( data, type, row ) {
-                //     var el =
-                //     `<a href="#" onclick="loadpengaduan('read',`+row.id+`)" class="email-name"></a>`;
-                //     return el;
-                //   },
-                //   aTargets: [ 1 ]
-                // },
+                {
+                    mRender: function ( data, type, row ) {
+
+                        let el = '';
+                        let stt;
+                        if(row.status == 1){
+                          stt = '0';
+                        }else{
+                          stt = '1';
+                        }
+                          el +=        `<button class="btn btn-mini btn-info" onclick="action('headline', '`+row.id+`', '`+stt+`')"><i class="icofont icofont-medal-alt"></i></button>
+                                        <button class="btn btn-mini btn-warning" onclick="action('edit', '`+row.id+`')"><i class="ti-pencil-alt"></i></button>
+                                        <button class="btn btn-mini btn-danger" onclick="action('delete', '`+row.id+`')"><i class="icofont icofont-trash"></i></button>`;
+                        return el;
+                    },
+                    aTargets: [ 5 ]
+                },
+                {
+                  mRender: function ( data, type, row ) {
+                    let el = '';
+                    if(row.status == 1){
+                      el = `<center class="text-warning"><i class="icofont icofont-medal-alt"></i></center>`;
+                    }
+
+                    return el;
+                  },
+                  aTargets: [ 1 ]
+                },
                 // {
                 //   mRender: function ( data, type, row ) {
                 //     var el =
@@ -220,8 +222,31 @@ function save(formData){
               }
           });
 
-
-
         }
       });
   };
+
+  function action(mode, id, stat){
+
+    if(mode == 'edit'){
+      alert();
+      return true;
+    }
+
+    let isObject    = {};
+    isObject.mode   = mode;
+    isObject.id     = id;
+    isObject.stat   = stat;
+
+      $.ajax({
+          type: 'post',
+          dataType: 'json',
+          url: 'actionBerita',
+          data : {
+                  param      : isObject,
+          },
+          success: function(result){
+            loadberita('','');
+          }
+        });
+  }
