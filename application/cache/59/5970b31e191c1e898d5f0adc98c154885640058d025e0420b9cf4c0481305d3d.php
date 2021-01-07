@@ -217,26 +217,26 @@ class __TwigTemplate_99e9b30407a6708f15165c9366909847839666526d602a4bfaaafe8fac1
 \t\t</ul>
 \t\t<div class=\"latest_news_scrolling_list_container\" style=\"margin-top: -100px;\">
 \t\t\t<ul>
-\t\t\t\t<li class=\"category\">LATEST</li>
+\t\t\t\t<li class=\"category\">Pengumuman</li>
 \t\t\t\t<li class=\"left\"><a href=\"index.html@page=home_3.html#\"></a></li>
 \t\t\t\t<li class=\"right\"><a href=\"index.html@page=home_3.html#\"></a></li>
 \t\t\t\t<li class=\"posts\" style=\"margin-top: -5px;\">
 \t\t\t\t\t<ul class=\"latest_news_scrolling_list\">
 \t\t\t\t\t\t<li>
-\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"\">Climate Change Debate While Britain Floods</a>
+\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"\">Pengumuman 1</a>
 \t\t\t\t\t\t</li>
 \t\t\t\t\t\t<li>
-\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"\">The Public Health Crisis Hiding in Our Food</a>
+\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"\">Pengumuman 2</a>
 \t\t\t\t\t\t</li>
 \t\t\t\t\t\t<li>
-\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"\">Nuclear Fusion Closer to Becoming a Reality</a>
+\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"\">Pengumuman 3</a>
 \t\t\t\t\t\t</li>
 \t\t\t\t\t</ul>
 \t\t\t\t</li>
 \t\t\t\t<li class=\"date\" style=\"margin-top: -5px;\">
-\t\t\t\t\t<abbr title=\"04 Apr 2014\" class=\"timeago current\">04 Apr 2014</abbr>
-\t\t\t\t\t<abbr title=\"04 May 2014\" class=\"timeago\">04 May 2014</abbr>
-\t\t\t\t\t<abbr title=\"04 June 2014\" class=\"timeago\">04 June 2014</abbr>
+\t\t\t\t\t<abbr title=\"04 Apr 2020\" class=\"timeago current\">04 Apr 2020</abbr>
+\t\t\t\t\t<abbr title=\"04 May 2020\" class=\"timeago\">04 May 2020</abbr>
+\t\t\t\t\t<abbr title=\"04 June 2020\" class=\"timeago\">04 June 2020</abbr>
 \t\t\t\t</li>
 \t\t\t</ul>
 \t\t</div>
@@ -475,26 +475,26 @@ class __TwigTemplate_99e9b30407a6708f15165c9366909847839666526d602a4bfaaafe8fac1
 /* 		</ul>*/
 /* 		<div class="latest_news_scrolling_list_container" style="margin-top: -100px;">*/
 /* 			<ul>*/
-/* 				<li class="category">LATEST</li>*/
+/* 				<li class="category">Pengumuman</li>*/
 /* 				<li class="left"><a href="index.html@page=home_3.html#"></a></li>*/
 /* 				<li class="right"><a href="index.html@page=home_3.html#"></a></li>*/
 /* 				<li class="posts" style="margin-top: -5px;">*/
 /* 					<ul class="latest_news_scrolling_list">*/
 /* 						<li>*/
-/* 							<a href="index.html@page=post.html" title="">Climate Change Debate While Britain Floods</a>*/
+/* 							<a href="index.html@page=post.html" title="">Pengumuman 1</a>*/
 /* 						</li>*/
 /* 						<li>*/
-/* 							<a href="index.html@page=post.html" title="">The Public Health Crisis Hiding in Our Food</a>*/
+/* 							<a href="index.html@page=post.html" title="">Pengumuman 2</a>*/
 /* 						</li>*/
 /* 						<li>*/
-/* 							<a href="index.html@page=post.html" title="">Nuclear Fusion Closer to Becoming a Reality</a>*/
+/* 							<a href="index.html@page=post.html" title="">Pengumuman 3</a>*/
 /* 						</li>*/
 /* 					</ul>*/
 /* 				</li>*/
 /* 				<li class="date" style="margin-top: -5px;">*/
-/* 					<abbr title="04 Apr 2014" class="timeago current">04 Apr 2014</abbr>*/
-/* 					<abbr title="04 May 2014" class="timeago">04 May 2014</abbr>*/
-/* 					<abbr title="04 June 2014" class="timeago">04 June 2014</abbr>*/
+/* 					<abbr title="04 Apr 2020" class="timeago current">04 Apr 2020</abbr>*/
+/* 					<abbr title="04 May 2020" class="timeago">04 May 2020</abbr>*/
+/* 					<abbr title="04 June 2020" class="timeago">04 June 2020</abbr>*/
 /* 				</li>*/
 /* 			</ul>*/
 /* 		</div>*/

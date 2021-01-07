@@ -70,9 +70,18 @@
 		    display: block;
 		}
 
+		.features_icon {
+			background-size: 50px;
+		}
+
+		.item_content .features_icon {
+			width: 50px!important;
+    	height: 50px!important;
+		}
+
 		</style>
 	</head>
-	<input type="text" id="baseURL" value="{{baseURL}}">
+	<input type="hidden" id="baseURL" value="{{baseURL}}">
 	<!--<body class="image_1">
 	<body class="image_1 overlay">
 	<body class="image_2">
@@ -148,6 +157,15 @@
 		<script src="{{script}}"></script>
 		{% endif %}
 		<script type="text/javascript" src="{{baseURL}}/assets/users/js/main.js"></script>
+		<script>
+		$(window).scroll(function () {
+		  if($(window).scrollTop() > $('.header_container').height()) {
+		    $("#menu-bar").addClass('move');
+		  } else {
+		    $("#menu-bar").removeClass('move');
+		  }
+		});
+		</script>
 <div class="style_selector">
 	<div class="style_selector_icon">
 		&nbsp;

@@ -16,7 +16,7 @@ class __TwigTemplate_9cf2be52d1d63f2267c6ebcea07046256903b856e14fcec907fb05033bf
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "<div class=\"menu_container clearfix style_5 sticky\">
+        echo "<div id=\"menu-bar\" class=\"menu_container clearfix sticky style_5\">
 \t<nav>
 <ul class=\"sf-menu\">
 <li class=\"selected\" id=\"menu-home\">
@@ -895,7 +895,7 @@ HUBUNGI KAMI
         return array (  610 => 584,  565 => 542,  550 => 530,  19 => 1,);
     }
 }
-/* <div class="menu_container clearfix style_5 sticky">*/
+/* <div id="menu-bar" class="menu_container clearfix sticky style_5">*/
 /* 	<nav>*/
 /* <ul class="sf-menu">*/
 /* <li class="selected" id="menu-home">*/

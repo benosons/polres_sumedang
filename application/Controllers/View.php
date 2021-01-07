@@ -161,5 +161,16 @@ class View extends \CodeIgniter\Controller
 				}
 	}
 
+	public function satuan1()
+	{
+				if($this->logged){
+					helper('form');
+					$this->data['script'] = $this->data['baseURL'].'/assets/action-js/admin/satuan/satuan-index.js';
+					return \Twig::instance()->display('admin/satuan/index.html', $this->data);
+				}else{
+					return redirect('home');
+				}
+	}
+
 
 }
