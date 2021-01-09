@@ -88,6 +88,7 @@ $routes->add('satuan', 'View::satuan');
 
 // User
 $routes->get('berita', 'View::berita');
+$routes->get('profile', 'View::profile');
 
 $routes->add('auth', 'Auth::auth');
 $routes->add('reg', 'Auth::reg');

@@ -61,83 +61,78 @@ HOME
 </li>
 </ul> -->
 </li>
-<li class=\"submenu\">
-<a href=\"index.html@page=home_3.html#\" title=\"Pages\">
+<li class=\"submenu\" id=\"menu-profile\">
+<a href=\"#\" title=\"Pages\">
 PROFILE
 </a>
 <ul>
 <li>
-\t<a href=\"index.html@page=about.html\" title=\"About Style 1\">
-\t\tKapolres Sumedang
-\t</a>
-</li>
-<li>
-\t<a href=\"index.html@page=about.html\" title=\"About Style 1\">
-\t\tWakapolres Sumedang
+\t<a href=\"/profile?params=kapolres&ids=1\" title=\"About Style 1\">
+\t\tKAPOLRES SUMEDANG
 \t</a>
 </li>
 <li class=\"submenu\">
 \t<a href=\"index.html@page=about.html\" title=\"About Style 1\">
-\t\tBagian
+\t\tBAGIAN
 \t</a>
 \t<ul>
 \t\t<li>
 \t\t\t<a href=\"index.html@page=blog.html\" title=\"Blog With Right Sidebar\">
-\t\t\t\tBag Ops
+\t\t\t\tBAG OPS
 \t\t\t</a>
 \t\t</li>
 \t\t<li>
 \t\t\t<a href=\"index.html@page=blog_left_sidebar.html\" title=\"Blog With Left Sidebar\">
-\t\t\t\tBag Sumda
+\t\t\t\tBAG SUMDA
 \t\t\t</a>
 \t\t</li>
 \t\t<li>
 \t\t\t<a href=\"index.html@page=blog_left_sidebar.html\" title=\"Blog With Left Sidebar\">
-\t\t\t\tBag Ren
+\t\t\t\tBAG REN
 \t\t\t</a>
 \t\t</li>
 \t</ul>
 </li>
 <li class=\"submenu\">
 \t<a href=\"index.html@page=about.html\" title=\"About Style 1\">
-\t\tSeksi
+\t\tSEKSI
 \t</a>
 \t<ul>
 \t\t<li>
 \t\t\t<a href=\"index.html@page=blog.html\" title=\"Blog With Right Sidebar\">
-\t\t\t\tPropam
+\t\t\t\tPROPAM
 \t\t\t</a>
 \t\t</li>
 \t\t<li>
 \t\t\t<a href=\"index.html@page=blog_left_sidebar.html\" title=\"Blog With Left Sidebar\">
-\t\t\t\tPengawasan
+\t\t\t\tPENGAWASAN
 \t\t\t</a>
 \t\t</li>
 \t\t<li>
 \t\t\t<a href=\"index.html@page=blog_left_sidebar.html\" title=\"Blog With Left Sidebar\">
-\t\t\t\tKeuangan
+\t\t\t\tKEUANGAN
 \t\t\t</a>
 \t\t</li>
 \t\t<li>
 \t\t\t<a href=\"index.html@page=blog_left_sidebar.html\" title=\"Blog With Left Sidebar\">
-\t\t\t\tTipol
+\t\t\t\tTIPOL
 \t\t\t</a>
 \t\t</li>
 \t\t<li>
 \t\t\t<a href=\"index.html@page=blog_left_sidebar.html\" title=\"Blog With Left Sidebar\">
-\t\t\t\tUmum
+\t\t\t\tUMUM
 \t\t\t</a>
 \t\t</li>
 \t</ul>
 </li>
 <li>
-\t<a href=\"index.html@page=about_2.html\" title=\"About Style 2\">
-\t\tStruktur Organisasi
+\t<a href=\"/profile?params=struktur-organisasi&ids=1\" title=\"About Style 2\">
+\t\tSTRUKTUR ORGANISASI
 \t</a>
 </li>
 <li>
-\t<a href=\"index.html@page=default.html\" title=\"Default\">
-\t\tVisi dan Misi
+\t<a href=\"/profile?params=visi-misi&ids=1\" title=\"Default\">
+\t\tVISI DAN MISI
 \t</a>
 </li>
 </ul>
@@ -441,37 +436,37 @@ SATUAN FUNGSI
 <ul id=\"satuan-fungsi\">
 <li>
 \t<a href=\"index.html@page=post.html\" title=\"Post Default\">
-\t\tSat Intel
+\t\tSAT INTEL
 \t</a>
 </li>
 <li>
 \t<a href=\"index.html@page=post_gallery.html\" title=\"Post Gallery\">
-\t\tSat Reskrim
+\t\tSAT RESKRIM
 \t</a>
 </li>
 <li>
 \t<a href=\"index.html@page=post_small_image.html\" title=\"Post Small Image\">
-\t\tSat res narkoba
+\t\tSAT RES NARKOBA
 \t</a>
 </li>
 <li>
 \t<a href=\"index.html@page=post_video.html\" title=\"Post Video YouTube\">
-\t\tSat Lantas
+\t\tSAT LANTAS
 \t</a>
 </li>
 <li>
 \t<a href=\"index.html@page=post_video_2.html\" title=\"Post Video Vimeo\">
-\t\tSat sabhara
+\t\tSAT SABHARA
 \t</a>
 </li>
 <li>
 \t<a href=\"index.html@page=post_soundcloud.html\" title=\"Post Soundcloud\">
-\t\tSat Binmas
+\t\tSAT BINMAS
 \t</a>
 </li>
 <li>
 \t<a href=\"index.html@page=post_review.html\" title=\"Post Review Style 1\">
-\t\tSat Tahti
+\t\tSAT TAHTI
 \t</a>
 </li>
 </ul>
@@ -483,7 +478,7 @@ PELAYANAN
 <ul>
 <li class=\"submenu\">
 \t<a href=\"index.html@page=home_3.html#\" title=\"Blog 1 column\">
-\t\tLantas
+\t\tLANTAS
 \t</a>
 \t<ul>
 \t\t<li>
@@ -493,7 +488,7 @@ PELAYANAN
 \t\t</li>
 \t\t<li>
 \t\t\t<a href=\"index.html@page=blog_left_sidebar.html\" title=\"Blog With Left Sidebar\">
-\t\t\t\tTilang
+\t\t\t\tTILANG
 \t\t\t</a>
 \t\t</li>
 \t</ul>
@@ -505,17 +500,17 @@ PELAYANAN
 \t<ul>
 \t\t<li>
 \t\t\t<a href=\"index.html@page=blog_2_columns.html\" title=\"Right Sidebar\">
-\t\t\t\tGendong
+\t\t\t\tGENDONG
 \t\t\t</a>
 \t\t</li>
 \t\t<li>
 \t\t\t<a href=\"index.html@page=blog_2_columns_left_sidebar.html\" title=\"Left Sidebar\">
-\t\t\t\tSamades
+\t\t\t\tSAMADES
 \t\t\t</a>
 \t\t</li>
 \t\t<li>
 \t\t\t<a href=\"index.html@page=blog_2_columns_left_sidebar.html\" title=\"Left Sidebar\">
-\t\t\t\tKeliling
+\t\t\t\tKELILING
 \t\t\t</a>
 \t\t</li>
 \t</ul>
@@ -546,7 +541,7 @@ INFORMASI
 <ul>
 <li>
 \t<a href=\"";
-        // line 530
+        // line 525
         echo twig_escape_filter($this->env, (isset($context["baseUrl"]) ? $context["baseUrl"] : null), "html", null, true);
         echo "berita\" title=\"Authors List\">
 \t\tBERITA
@@ -561,7 +556,7 @@ INFORMASI
 </li>
 <!-- <li class=\"\" id=\"menu-pengaduan\">
 \t<a href=\"";
-        // line 542
+        // line 537
         echo twig_escape_filter($this->env, (isset($context["baseUrl"]) ? $context["baseUrl"] : null), "html", null, true);
         echo "kirimpengaduan\" title=\"Blog 2 columns\">
 \t\tPENGADUAN
@@ -606,7 +601,7 @@ HUBUNGI KAMI
 <ul class=\"expand_left_contact\">
 <li>
 \t<a href=\"";
-        // line 584
+        // line 579
         echo twig_escape_filter($this->env, (isset($context["baseUrl"]) ? $context["baseUrl"] : null), "html", null, true);
         echo "login\" title=\"Contact Style 2\">
 \t\t<i class=\"\" > </i> LOGIN USER
@@ -892,7 +887,7 @@ HUBUNGI KAMI
 
     public function getDebugInfo()
     {
-        return array (  610 => 584,  565 => 542,  550 => 530,  19 => 1,);
+        return array (  605 => 579,  560 => 537,  545 => 525,  19 => 1,);
     }
 }
 /* <div id="menu-bar" class="menu_container clearfix sticky style_5">*/
@@ -940,83 +935,78 @@ HUBUNGI KAMI
 /* </li>*/
 /* </ul> -->*/
 /* </li>*/
-/* <li class="submenu">*/
-/* <a href="index.html@page=home_3.html#" title="Pages">*/
+/* <li class="submenu" id="menu-profile">*/
+/* <a href="#" title="Pages">*/
 /* PROFILE*/
 /* </a>*/
 /* <ul>*/
 /* <li>*/
-/* 	<a href="index.html@page=about.html" title="About Style 1">*/
-/* 		Kapolres Sumedang*/
-/* 	</a>*/
-/* </li>*/
-/* <li>*/
-/* 	<a href="index.html@page=about.html" title="About Style 1">*/
-/* 		Wakapolres Sumedang*/
+/* 	<a href="/profile?params=kapolres&ids=1" title="About Style 1">*/
+/* 		KAPOLRES SUMEDANG*/
 /* 	</a>*/
 /* </li>*/
 /* <li class="submenu">*/
 /* 	<a href="index.html@page=about.html" title="About Style 1">*/
-/* 		Bagian*/
+/* 		BAGIAN*/
 /* 	</a>*/
 /* 	<ul>*/
 /* 		<li>*/
 /* 			<a href="index.html@page=blog.html" title="Blog With Right Sidebar">*/
-/* 				Bag Ops*/
+/* 				BAG OPS*/
 /* 			</a>*/
 /* 		</li>*/
 /* 		<li>*/
 /* 			<a href="index.html@page=blog_left_sidebar.html" title="Blog With Left Sidebar">*/
-/* 				Bag Sumda*/
+/* 				BAG SUMDA*/
 /* 			</a>*/
 /* 		</li>*/
 /* 		<li>*/
 /* 			<a href="index.html@page=blog_left_sidebar.html" title="Blog With Left Sidebar">*/
-/* 				Bag Ren*/
+/* 				BAG REN*/
 /* 			</a>*/
 /* 		</li>*/
 /* 	</ul>*/
 /* </li>*/
 /* <li class="submenu">*/
 /* 	<a href="index.html@page=about.html" title="About Style 1">*/
-/* 		Seksi*/
+/* 		SEKSI*/
 /* 	</a>*/
 /* 	<ul>*/
 /* 		<li>*/
 /* 			<a href="index.html@page=blog.html" title="Blog With Right Sidebar">*/
-/* 				Propam*/
+/* 				PROPAM*/
 /* 			</a>*/
 /* 		</li>*/
 /* 		<li>*/
 /* 			<a href="index.html@page=blog_left_sidebar.html" title="Blog With Left Sidebar">*/
-/* 				Pengawasan*/
+/* 				PENGAWASAN*/
 /* 			</a>*/
 /* 		</li>*/
 /* 		<li>*/
 /* 			<a href="index.html@page=blog_left_sidebar.html" title="Blog With Left Sidebar">*/
-/* 				Keuangan*/
+/* 				KEUANGAN*/
 /* 			</a>*/
 /* 		</li>*/
 /* 		<li>*/
 /* 			<a href="index.html@page=blog_left_sidebar.html" title="Blog With Left Sidebar">*/
-/* 				Tipol*/
+/* 				TIPOL*/
 /* 			</a>*/
 /* 		</li>*/
 /* 		<li>*/
 /* 			<a href="index.html@page=blog_left_sidebar.html" title="Blog With Left Sidebar">*/
-/* 				Umum*/
+/* 				UMUM*/
 /* 			</a>*/
 /* 		</li>*/
 /* 	</ul>*/
 /* </li>*/
 /* <li>*/
-/* 	<a href="index.html@page=about_2.html" title="About Style 2">*/
-/* 		Struktur Organisasi*/
+/* 	<a href="/profile?params=struktur-organisasi&ids=1" title="About Style 2">*/
+/* 		STRUKTUR ORGANISASI*/
 /* 	</a>*/
 /* </li>*/
 /* <li>*/
-/* 	<a href="index.html@page=default.html" title="Default">*/
-/* 		Visi dan Misi*/
+/* 	<a href="/profile?params=visi-misi&ids=1" title="Default">*/
+/* 		VISI DAN MISI*/
 /* 	</a>*/
 /* </li>*/
 /* </ul>*/
@@ -1320,37 +1310,37 @@ HUBUNGI KAMI
 /* <ul id="satuan-fungsi">*/
 /* <li>*/
 /* 	<a href="index.html@page=post.html" title="Post Default">*/
-/* 		Sat Intel*/
+/* 		SAT INTEL*/
 /* 	</a>*/
 /* </li>*/
 /* <li>*/
 /* 	<a href="index.html@page=post_gallery.html" title="Post Gallery">*/
-/* 		Sat Reskrim*/
+/* 		SAT RESKRIM*/
 /* 	</a>*/
 /* </li>*/
 /* <li>*/
 /* 	<a href="index.html@page=post_small_image.html" title="Post Small Image">*/
-/* 		Sat res narkoba*/
+/* 		SAT RES NARKOBA*/
 /* 	</a>*/
 /* </li>*/
 /* <li>*/
 /* 	<a href="index.html@page=post_video.html" title="Post Video YouTube">*/
-/* 		Sat Lantas*/
+/* 		SAT LANTAS*/
 /* 	</a>*/
 /* </li>*/
 /* <li>*/
 /* 	<a href="index.html@page=post_video_2.html" title="Post Video Vimeo">*/
-/* 		Sat sabhara*/
+/* 		SAT SABHARA*/
 /* 	</a>*/
 /* </li>*/
 /* <li>*/
 /* 	<a href="index.html@page=post_soundcloud.html" title="Post Soundcloud">*/
-/* 		Sat Binmas*/
+/* 		SAT BINMAS*/
 /* 	</a>*/
 /* </li>*/
 /* <li>*/
 /* 	<a href="index.html@page=post_review.html" title="Post Review Style 1">*/
-/* 		Sat Tahti*/
+/* 		SAT TAHTI*/
 /* 	</a>*/
 /* </li>*/
 /* </ul>*/
@@ -1362,7 +1352,7 @@ HUBUNGI KAMI
 /* <ul>*/
 /* <li class="submenu">*/
 /* 	<a href="index.html@page=home_3.html#" title="Blog 1 column">*/
-/* 		Lantas*/
+/* 		LANTAS*/
 /* 	</a>*/
 /* 	<ul>*/
 /* 		<li>*/
@@ -1372,7 +1362,7 @@ HUBUNGI KAMI
 /* 		</li>*/
 /* 		<li>*/
 /* 			<a href="index.html@page=blog_left_sidebar.html" title="Blog With Left Sidebar">*/
-/* 				Tilang*/
+/* 				TILANG*/
 /* 			</a>*/
 /* 		</li>*/
 /* 	</ul>*/
@@ -1384,17 +1374,17 @@ HUBUNGI KAMI
 /* 	<ul>*/
 /* 		<li>*/
 /* 			<a href="index.html@page=blog_2_columns.html" title="Right Sidebar">*/
-/* 				Gendong*/
+/* 				GENDONG*/
 /* 			</a>*/
 /* 		</li>*/
 /* 		<li>*/
 /* 			<a href="index.html@page=blog_2_columns_left_sidebar.html" title="Left Sidebar">*/
-/* 				Samades*/
+/* 				SAMADES*/
 /* 			</a>*/
 /* 		</li>*/
 /* 		<li>*/
 /* 			<a href="index.html@page=blog_2_columns_left_sidebar.html" title="Left Sidebar">*/
-/* 				Keliling*/
+/* 				KELILING*/
 /* 			</a>*/
 /* 		</li>*/
 /* 	</ul>*/

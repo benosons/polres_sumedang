@@ -79,6 +79,14 @@
     	height: 50px!important;
 		}
 
+		.blog .post > a > img {
+		    display: block;
+		}
+
+		@media only screen and (min-width: 600px) {
+
+		}
+
 		</style>
 	</head>
 	<input type="hidden" id="baseURL" value="{{baseURL}}">
@@ -158,12 +166,20 @@
 		{% endif %}
 		<script type="text/javascript" src="{{baseURL}}/assets/users/js/main.js"></script>
 		<script>
-		$(window).scroll(function () {
-		  if($(window).scrollTop() > $('.header_container').height()) {
-		    $("#menu-bar").addClass('move');
-		  } else {
-		    $("#menu-bar").removeClass('move');
-		  }
+		$(document).ready(function () {
+			$(window).scroll(function () {
+			  if($(window).scrollTop() > $('.header_container').height()) {
+			    $("#menu-bar").addClass('move');
+			  } else {
+			    $("#menu-bar").removeClass('move');
+			  }
+			});
+
+			if($( window ).width() < 700){
+				$("iframe").width(500);
+				$("iframe").height(250);
+			}
+
 		});
 		</script>
 <div class="style_selector">

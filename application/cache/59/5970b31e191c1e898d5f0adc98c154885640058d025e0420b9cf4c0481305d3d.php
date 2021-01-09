@@ -250,7 +250,7 @@ class __TwigTemplate_99e9b30407a6708f15165c9366909847839666526d602a4bfaaafe8fac1
 <div class=\"header_container\">
 \t<div class=\"header clearfix\">
 \t\t<div class=\"logo\">
-\t\t\t<h1><a href=\"#\" title=\"Pressroom\"><img src=\"https://www.polri.go.id/assets/image/icon_baru/kop_baru.gif\"></a></h1>
+\t\t\t<h1><a href=\"#\" title=\"Pressroom\"><img style=\"width:100%\" src=\"https://www.polri.go.id/assets/image/icon_baru/kop_baru.gif\"></a></h1>
 \t\t\t<!-- <h4>News and Magazine Template</h4> -->
 \t\t</div>
 \t\t<div class=\"placeholder\">728 x 90</div>
@@ -508,7 +508,7 @@ class __TwigTemplate_99e9b30407a6708f15165c9366909847839666526d602a4bfaaafe8fac1
 /* <div class="header_container">*/
 /* 	<div class="header clearfix">*/
 /* 		<div class="logo">*/
-/* 			<h1><a href="#" title="Pressroom"><img src="https://www.polri.go.id/assets/image/icon_baru/kop_baru.gif"></a></h1>*/
+/* 			<h1><a href="#" title="Pressroom"><img style="width:100%" src="https://www.polri.go.id/assets/image/icon_baru/kop_baru.gif"></a></h1>*/
 /* 			<!-- <h4>News and Magazine Template</h4> -->*/
 /* 		</div>*/
 /* 		<div class="placeholder">728 x 90</div>*/

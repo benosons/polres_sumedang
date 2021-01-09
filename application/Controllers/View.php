@@ -172,5 +172,42 @@ class View extends \CodeIgniter\Controller
 				}
 	}
 
+	public function profile()
+	{
+					helper('form');
+					helper('url');
+
+					$uri = current_url(true);
+
+					if($_SERVER['QUERY_STRING']){
+						parse_str($_SERVER['QUERY_STRING'], $get_array);
+						$params = isset ($get_array['params']) ? $get_array['params']:'';
+						$ids 		= isset ($get_array['ids']) ? $get_array['ids']:'';
+
+						if(!$params || !$ids){
+							return redirect('home');
+						}
+
+						$this->data['params'] = $params;
+						$this->data['ids'] = $ids;
+						if($params == 'kapolres'){
+							$this->data['script'] = $this->data['baseURL'].'/assets/action-js/users/profile/profile.js';
+							return \Twig::instance()->display('users/profile/kapolres.html', $this->data);
+						}else if($params == 'visi-misi'){
+							$this->data['script'] = $this->data['baseURL'].'/assets/action-js/users/profile/profile.js';
+							return \Twig::instance()->display('users/profile/visi-misi.html', $this->data);
+						}else if($params == 'struktur-organisasi'){
+							$this->data['script'] = $this->data['baseURL'].'/assets/action-js/users/profile/profile.js';
+							return \Twig::instance()->display('users/profile/struktur-organisasi.html', $this->data);
+						}
+					}
+
+					$this->data['script'] = $this->data['baseURL'].'/assets/action-js/users/home.js';
+					$this->data['page'] = 'home';
+					return \Twig::instance()->display('users/index.html', $this->data);
+
+	}
+
+
 
 }

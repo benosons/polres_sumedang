@@ -49,7 +49,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t<div class=\"row\">
 \t\t\t<div class=\"column column_2_3\">
 \t\t\t\t<h4 class=\"box_header\">Berita Terbaru</h4>
-\t\t\t\t<div class=\"row\">
+\t\t\t\t<div class=\"row\" id=\"berita-terbaru\">
 \t\t\t\t\t<ul class=\"blog column column_1_2\">
 \t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Nuclear Fusion Closer to Becoming a Reality\">
@@ -698,7 +698,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 /* 		<div class="row">*/
 /* 			<div class="column column_2_3">*/
 /* 				<h4 class="box_header">Berita Terbaru</h4>*/
-/* 				<div class="row">*/
+/* 				<div class="row" id="berita-terbaru">*/
 /* 					<ul class="blog column column_1_2">*/
 /* 						<li class="post">*/
 /* 							<a href="index.html@page=post.html" title="Nuclear Fusion Closer to Becoming a Reality">*/

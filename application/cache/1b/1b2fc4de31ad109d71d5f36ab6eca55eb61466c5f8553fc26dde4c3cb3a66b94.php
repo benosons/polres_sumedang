@@ -22,14 +22,14 @@ class __TwigTemplate_371a3b56611cf6e8fa78898212a587471c50d68a7f78d937d2c753c9305
 \t\t\t\t\t\t<div class=\"row page_margin_top_section\">
 \t\t\t\t\t\t\t<div class=\"column column_2_3\">
 \t\t\t\t\t\t\t\t<div class=\"row\">
-\t\t\t\t\t\t\t\t\t<h4 class=\"box_header\">On The Map</h4>
+\t\t\t\t\t\t\t\t\t<h4 class=\"box_header\" style=\"width:100%\">Lokasi</h4>
 \t\t\t\t\t\t\t\t\t<div class=\"contact_map margin_top_15\" id=\"map\">
-<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1967.8263843142345!2d107.91649034443597!3d-6.837321415789473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68d12d87a917d9%3A0xc6414ade35daaf1!2sPOLRES%20SUMEDANG!5e1!3m2!1sid!2sid!4v1610037027689!5m2!1sid!2sid\" width=\"650\" height=\"500\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\" aria-hidden=\"false\" tabindex=\"0\"></iframe>50\t\t\t\t\t\t\t\t\t</div>
+<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1967.8263843142345!2d107.91649034443597!3d-6.837321415789473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68d12d87a917d9%3A0xc6414ade35daaf1!2sPOLRES%20SUMEDANG!5e1!3m2!1sid!2sid!4v1610037027689!5m2!1sid!2sid\" width=\"705\" height=\"500\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\" aria-hidden=\"false\" tabindex=\"0\"></iframe>\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t<div class=\"column column_1_3\">
 \t\t\t\t\t\t\t\t<div class=\"row\">
-\t\t\t\t\t\t\t\t\t<h4 class=\"box_header\">Info Kontak</h4>
+\t\t\t\t\t\t\t\t\t<h4 class=\"box_header\" style=\"width:100%\">Info Kontak</h4>
 \t\t\t\t\t\t\t\t\t<ul class=\"page_margin_top\">
 \t\t\t\t\t\t\t\t\t\t<li class=\"item_content clearfix\">
 \t\t\t\t\t\t\t\t\t\t\t<span class=\"features_icon envelope animated_element animation-scale scale\" style=\"animation-duration: 600ms; animation-delay: 0ms; transition-delay: 0ms;\"></span>
@@ -97,14 +97,14 @@ class __TwigTemplate_371a3b56611cf6e8fa78898212a587471c50d68a7f78d937d2c753c9305
 /* 						<div class="row page_margin_top_section">*/
 /* 							<div class="column column_2_3">*/
 /* 								<div class="row">*/
-/* 									<h4 class="box_header">On The Map</h4>*/
+/* 									<h4 class="box_header" style="width:100%">Lokasi</h4>*/
 /* 									<div class="contact_map margin_top_15" id="map">*/
-/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1967.8263843142345!2d107.91649034443597!3d-6.837321415789473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68d12d87a917d9%3A0xc6414ade35daaf1!2sPOLRES%20SUMEDANG!5e1!3m2!1sid!2sid!4v1610037027689!5m2!1sid!2sid" width="650" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>50									</div>*/
+/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1967.8263843142345!2d107.91649034443597!3d-6.837321415789473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68d12d87a917d9%3A0xc6414ade35daaf1!2sPOLRES%20SUMEDANG!5e1!3m2!1sid!2sid!4v1610037027689!5m2!1sid!2sid" width="705" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>									</div>*/
 /* 								</div>*/
 /* 							</div>*/
 /* 							<div class="column column_1_3">*/
 /* 								<div class="row">*/
-/* 									<h4 class="box_header">Info Kontak</h4>*/
+/* 									<h4 class="box_header" style="width:100%">Info Kontak</h4>*/
 /* 									<ul class="page_margin_top">*/
 /* 										<li class="item_content clearfix">*/
 /* 											<span class="features_icon envelope animated_element animation-scale scale" style="animation-duration: 600ms; animation-delay: 0ms; transition-delay: 0ms;"></span>*/
