@@ -70,7 +70,7 @@ class __TwigTemplate_757dec32bff38d46d6f114ef9317cf3f05e106552626cc85232c64c4b12
 \t\t\t<h2 class=\"about_subtitle center_align\">POLRES SUMEDANG</h2>
 \t\t\t<br/>
 \t\t\t<div class=\"row\">
-\t\t\t\t<img src=\"https://d2slcw3kip6qmk.cloudfront.net/marketing/pages/chart/what-is-an-organizational-chart/org-chart-feature.svg\" alt=\"img\" style=\"display: block;\">
+\t\t\t\t<img src=\"https://slideplayer.info/slide/12525103/75/images/2/STRUKTUR+ORGANISASI+POLRES.jpg\" alt=\"img\" style=\"display: block;\">
 \t\t\t</div>
   \t</div>
 \t</div>";
@@ -133,7 +133,7 @@ class __TwigTemplate_757dec32bff38d46d6f114ef9317cf3f05e106552626cc85232c64c4b12
 /* 			<h2 class="about_subtitle center_align">POLRES SUMEDANG</h2>*/
 /* 			<br/>*/
 /* 			<div class="row">*/
-/* 				<img src="https://d2slcw3kip6qmk.cloudfront.net/marketing/pages/chart/what-is-an-organizational-chart/org-chart-feature.svg" alt="img" style="display: block;">*/
+/* 				<img src="https://slideplayer.info/slide/12525103/75/images/2/STRUKTUR+ORGANISASI+POLRES.jpg" alt="img" style="display: block;">*/
 /* 			</div>*/
 /*   	</div>*/
 /* 	</div>*/

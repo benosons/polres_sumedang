@@ -137,6 +137,11 @@ PROFILE
 </li>
 </ul>
 </li>
+<li class=\"\" id=\"menu-covid\">
+\t<a href=\"#\" title=\"Pages\">
+\tGIAT COVID-19
+\t</a>
+</li>
 <!-- <li class=\"submenu mega_menu_parent\">
 <a href=\"index.html@page=home_3.html#\" title=\"Mega Menu\">
 Mega Menu
@@ -541,10 +546,18 @@ INFORMASI
 <ul>
 <li>
 \t<a href=\"";
-        // line 525
+        // line 530
         echo twig_escape_filter($this->env, (isset($context["baseUrl"]) ? $context["baseUrl"] : null), "html", null, true);
         echo "berita\" title=\"Authors List\">
 \t\tBERITA
+\t</a>
+</li>
+<li>
+\t<a href=\"";
+        // line 535
+        echo twig_escape_filter($this->env, (isset($context["baseUrl"]) ? $context["baseUrl"] : null), "html", null, true);
+        echo "kegiatan\" title=\"Authors List\">
+\t\tKEGIATAN
 \t</a>
 </li>
 <!-- <li>
@@ -556,7 +569,7 @@ INFORMASI
 </li>
 <!-- <li class=\"\" id=\"menu-pengaduan\">
 \t<a href=\"";
-        // line 537
+        // line 547
         echo twig_escape_filter($this->env, (isset($context["baseUrl"]) ? $context["baseUrl"] : null), "html", null, true);
         echo "kirimpengaduan\" title=\"Blog 2 columns\">
 \t\tPENGADUAN
@@ -601,7 +614,7 @@ HUBUNGI KAMI
 <ul class=\"expand_left_contact\">
 <li>
 \t<a href=\"";
-        // line 579
+        // line 589
         echo twig_escape_filter($this->env, (isset($context["baseUrl"]) ? $context["baseUrl"] : null), "html", null, true);
         echo "login\" title=\"Contact Style 2\">
 \t\t<i class=\"\" > </i> LOGIN USER
@@ -887,7 +900,7 @@ HUBUNGI KAMI
 
     public function getDebugInfo()
     {
-        return array (  605 => 579,  560 => 537,  545 => 525,  19 => 1,);
+        return array (  618 => 589,  573 => 547,  558 => 535,  550 => 530,  19 => 1,);
     }
 }
 /* <div id="menu-bar" class="menu_container clearfix sticky style_5">*/
@@ -1010,6 +1023,11 @@ HUBUNGI KAMI
 /* 	</a>*/
 /* </li>*/
 /* </ul>*/
+/* </li>*/
+/* <li class="" id="menu-covid">*/
+/* 	<a href="#" title="Pages">*/
+/* 	GIAT COVID-19*/
+/* 	</a>*/
 /* </li>*/
 /* <!-- <li class="submenu mega_menu_parent">*/
 /* <a href="index.html@page=home_3.html#" title="Mega Menu">*/
@@ -1416,6 +1434,11 @@ HUBUNGI KAMI
 /* <li>*/
 /* 	<a href="{{baseUrl}}berita" title="Authors List">*/
 /* 		BERITA*/
+/* 	</a>*/
+/* </li>*/
+/* <li>*/
+/* 	<a href="{{baseUrl}}kegiatan" title="Authors List">*/
+/* 		KEGIATAN*/
 /* 	</a>*/
 /* </li>*/
 /* <!-- <li>*/

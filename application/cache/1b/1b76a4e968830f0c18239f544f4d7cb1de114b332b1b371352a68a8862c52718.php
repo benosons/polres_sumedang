@@ -372,7 +372,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 \t\t\t</div>
 \t\t\t<div class=\"column column_1_3\">
 
-\t\t\t\t<h4 class=\"box_header\">Informasi</h4>
+\t\t\t\t<h4 class=\"box_header\">Giat COVID-19</h4>
 \t\t\t\t<ul class=\"blog small_margin clearfix\">
 \t\t\t\t\t<div id=\"kopi-covid\"> </div>
 \t\t\t\t</ul>
@@ -991,7 +991,7 @@ class __TwigTemplate_5334762ecaa173c6527382219058f415b6d63d06d5bcf33a3c96685394f
 /* 			</div>*/
 /* 			<div class="column column_1_3">*/
 /* */
-/* 				<h4 class="box_header">Informasi</h4>*/
+/* 				<h4 class="box_header">Giat COVID-19</h4>*/
 /* 				<ul class="blog small_margin clearfix">*/
 /* 					<div id="kopi-covid"> </div>*/
 /* 				</ul>*/
