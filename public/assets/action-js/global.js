@@ -1,13 +1,13 @@
 $(document).ready(function(){
   loadmenu('satuan');
   var f = document.createElement("iframe");
-  f.src = "https://kopi.dev/widget-covid-19/";
+  f.src = "https://kopi.dev/widget-covid-19/?dark=true";
   f.width = "100%";
   f.height = 380;
   f.scrolling = "no";
   f.frameBorder = 0;
   var rootEl = document.getElementsByClassName("kopi-covid");
-  
+
   if(rootEl){
     rootEl[0].appendChild(f);
   }

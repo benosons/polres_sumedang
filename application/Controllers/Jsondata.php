@@ -358,6 +358,76 @@ class Jsondata extends \CodeIgniter\Controller
 		}
 	}
 
+	public function loadBeritaCovid()
+	{
+		try
+		{
+				$request  = $this->request;
+				$param 	  = $request->getVar('param');
+				$id		 	  = $request->getVar('id');
+				$role 		= $this->data['role'];
+				$userid		= $this->data['userid'];
+
+					$model = new \App\Models\BeritaModel();
+					$modelparam = new \App\Models\ParamModel();
+					$modelfiles = new \App\Models\FilesModel();
+
+					if($param == 'post'){
+						$fulldata = [];
+						$databerita = $model->getBeritaByidCovid($id);
+
+						foreach ($databerita as $keyberita => $valueberita) {
+
+							$datafiles = $modelfiles->getWhere(['id_parent' => $valueberita->id])->getRow();
+							$datasatuan= $model->getSatuanByCode($valueberita->satuan);
+							$obj_merged = (object) array_merge((array) $valueberita, (array) $datafiles, (array) $datasatuan);
+							array_push($fulldata, $obj_merged);
+						}
+						$berita = $fulldata;
+					}else{
+							if($param && $id){
+								$data = $modelparam->getparam($param, $id);
+							}else{
+								$data = $model->getSatuan();
+							}
+
+							$berita = [];
+							foreach ($data as $key => $value) {
+								$fulldata = [];
+								$databerita = $model->loadBeritaCovid($value->satuan_code);
+								foreach ($databerita as $keyberita => $valueberita) {
+									$datafiles = $modelfiles->getWhere(['id_parent' => $valueberita->id])->getRow();
+									$obj_merged = (object) array_merge((array) $valueberita, (array) $datafiles);
+									array_push($fulldata, $obj_merged);
+								}
+								$berita = $fulldata;
+							}
+						}
+
+					if($berita){
+						$response = [
+							'status'   => 'sukses',
+							'code'     => '1',
+							'data' 		 => $berita
+						];
+					}else{
+						$response = [
+						    'status'   => 'gagal',
+						    'code'     => '0',
+						    'data'     => 'tidak ada data',
+						];
+					}
+
+				header('Content-Type: application/json');
+				echo json_encode($response);
+				exit;
+			}
+		catch (\Exception $e)
+		{
+			die($e->getMessage());
+		}
+	}
+
 	public function loadKegiatan()
 	{
 		try
@@ -471,6 +541,77 @@ class Jsondata extends \CodeIgniter\Controller
 									array_push($fulldata, $obj_merged);
 								}
 								$berita[$value->satuan_name] = $fulldata;
+							}
+						}
+
+					if($berita){
+						$response = [
+							'status'   => 'sukses',
+							'code'     => '1',
+							'data' 		 => $berita
+						];
+					}else{
+						$response = [
+						    'status'   => 'gagal',
+						    'code'     => '0',
+						    'data'     => 'tidak ada data',
+						];
+					}
+
+				header('Content-Type: application/json');
+				echo json_encode($response);
+				exit;
+			}
+		catch (\Exception $e)
+		{
+			die($e->getMessage());
+		}
+	}
+
+	public function loadBeritaHeadlineCovid()
+	{
+		try
+		{
+				$request  = $this->request;
+				$param 	  = $request->getVar('param');
+				$id		 	  = $request->getVar('id');
+				$role 		= $this->data['role'];
+				$userid		= $this->data['userid'];
+
+					$model = new \App\Models\BeritaModel();
+					$modelparam = new \App\Models\ParamModel();
+					$modelfiles = new \App\Models\FilesModel();
+
+					if($param == 'post'){
+						$fulldata = [];
+						$databerita = $model->getBeritaHeadlineCovid($id, 1);
+
+						foreach ($databerita as $keyberita => $valueberita) {
+
+							$datafiles = $modelfiles->getWhere(['id_parent' => $valueberita->id])->getRow();
+							$datasatuan= $model->getSatuanByCode($valueberita->satuan);
+							$obj_merged = (object) array_merge((array) $valueberita, (array) $datafiles, (array) $datasatuan);
+							array_push($fulldata, $obj_merged);
+						}
+						$berita = $fulldata;
+					}else{
+							if($param && $id){
+								$data = $modelparam->getparam($param, $id);
+							}else{
+								$data = $model->getSatuan();
+							}
+
+							$berita = [];
+							foreach ($data as $key => $value) {
+								$fulldata = [];
+								$databerita = $model->loadBeritaHeadlineCovid($value->satuan_code);
+
+								foreach ($databerita as $keyberita => $valueberita) {
+									$datafiles = $modelfiles->getWhere(['id_parent' => $valueberita->id])->getRow();
+									$obj_merged = (object) array_merge((array) $valueberita, (array) $datafiles);
+									array_push($fulldata, $obj_merged);
+								}
+								$berita = $fulldata;
 							}
 						}
 

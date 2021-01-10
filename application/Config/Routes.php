@@ -104,6 +104,7 @@ $routes->post('getFiles', 'Jsondata::getFiles');
 $routes->post('getKegiatan', 'Jsondata::getKegiatan');
 $routes->post('getBeritaCovid', 'Jsondata::getBeritaCovid');
 $routes->post('loadBerita', 'Jsondata::loadBerita');
+$routes->post('loadBeritaCovid', 'Jsondata::loadBeritaCovid');
 $routes->post('loadKegiatan', 'Jsondata::loadKegiatan');
 $routes->post('loadparam', 'Jsondata::loadparam');
 $routes->post('save', 'Jsondata::save');
@@ -116,6 +117,7 @@ $routes->post('actionBerita', 'Jsondata::actionBerita');
 $routes->post('actionKegiatan', 'Jsondata::actionKegiatan');
 $routes->post('actionBeritaCovid', 'Jsondata::actionBeritaCovid');
 $routes->post('loadBeritaHeadline', 'Jsondata::loadBeritaHeadline');
+$routes->post('loadBeritaHeadlineCovid', 'Jsondata::loadBeritaHeadlineCovid');
 
 /**
  * --------------------------------------------------------------------

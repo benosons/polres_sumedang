@@ -35,6 +35,13 @@ class BeritaModel extends Model{
         return  $query->getResult();
     }
 
+    public function loadBeritaCovid($id)
+    {
+        $builder = $this->db->table('data_berita_covid');
+        $query   = $builder->getWhere(['status' => null, 'status' => 1]);
+        return  $query->getResult();
+    }
+
     public function loadBeritaHeadline($id)
     {
         $builder = $this->db->table('data_berita');
@@ -42,9 +49,23 @@ class BeritaModel extends Model{
         return  $query->getResult();
     }
 
+    public function loadBeritaHeadlineCovid($id)
+    {
+        $builder = $this->db->table('data_berita_covid');
+        $query   = $builder->getWhere(['status' => 1]);
+        return  $query->getResult();
+    }
+
     public function getBeritaByid($id)
     {
         $builder = $this->db->table('data_berita');
+        $query   = $builder->getWhere(['id' => $id]);
+        return  $query->getResult();
+    }
+
+    public function getBeritaByidCovid($id)
+    {
+        $builder = $this->db->table('data_berita_covid');
         $query   = $builder->getWhere(['id' => $id]);
         return  $query->getResult();
     }
