@@ -22,7 +22,7 @@ function loadberitaAll(param, id){
           var content = '';
             for (var i = 0; i < data.length; i ++) {
               var sliceIt = data.slice(i, i + 2);
-  
+
               if(sliceIt.length == 2){
                   content += '<ul class="blog column column_1_2">';
                   content += `<li class="post">
@@ -87,10 +87,9 @@ function loadberita(param, id){
       },
       success: function(result){
           let data = result.data;
-          console.log(data);
             var content = '';
             for (var i = 0;(i < 3 && i < data.length); i++) {
-              id_satuan = data[i].satuan;
+              console.log(data[i]);
               content += `<li class="slide">
           			<img src='`+$('#baseURL').val()+'/'+data[i].path+data[i].file_name+`' alt='img'>
           			<div class="slider_content_box">

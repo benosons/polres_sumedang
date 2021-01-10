@@ -63,78 +63,7 @@ class __TwigTemplate_956f8d2fac3b2707e1908167310a06759ac5410caf8b9569c913baee829
 \t\t\t<div class=\"column column_2_3\">
 \t\t\t\t<div class=\"caroufredsel_wrapper caroufredsel_wrapper_small_slider\">
 \t\t\t\t\t<ul class=\"small_slider id-small_slider\">
-\t\t\t\t\t\t<li class=\"slide\">
-\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Nuclear Fusion Closer to Becoming a Reality\">
-\t\t\t\t\t\t\t\t<img src='";
-        // line 38
-        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "/assets/users/images/samples/690x450/image_09.jpg' alt='img'>
-\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t<div class=\"slider_content_box\">
-\t\t\t\t\t\t\t\t<ul class=\"post_details simple\">
-\t\t\t\t\t\t\t\t\t<li class=\"category\"><a href=\"index.html@page=category&amp;cat=health.html\" title=\"HEALTH\">HEALTH</a></li>
-\t\t\t\t\t\t\t\t\t<li class=\"date\">
-\t\t\t\t\t\t\t\t\t\t10:11 PM, Feb 02
-\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t\t<h2><a href=\"index.html@page=post.html\" title=\"Nuclear Fusion Closer to Becoming a Reality\">Nuclear Fusion Closer to Becoming a Reality</a></h2>
-\t\t\t\t\t\t\t\t<p class=\"clearfix\">Maecenas mauris elementum, est morbi interdum cursus at elite imperdiet libero. Proin odios dapibus integer an nulla augue pharetra cursus.</p>
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t</li>
-\t\t\t\t\t\t<li class=\"slide\">
-\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Nuclear Fusion Closer to Becoming a Reality\">
-\t\t\t\t\t\t\t\t<img src='";
-        // line 53
-        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "/assets/users/images/samples/690x450/image_10.jpg' alt='img'>
-\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t<div class=\"slider_content_box\">
-\t\t\t\t\t\t\t\t<ul class=\"post_details simple\">
-\t\t\t\t\t\t\t\t\t<li class=\"category\"><a href=\"index.html@page=category&amp;cat=world.html\" title=\"WORLD\">WORLD</a></li>
-\t\t\t\t\t\t\t\t\t<li class=\"date\">
-\t\t\t\t\t\t\t\t\t\t18:25 PM, Feb 21
-\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t\t<h2><a href=\"index.html@page=post.html\" title=\"Nuclear Fusion Closer to Becoming a Reality\">Climate Change Debate While Britain Floods</a></h2>
-\t\t\t\t\t\t\t\t<p class=\"clearfix\">Maecenas mauris elementum, est morbi interdum cursus at elite imperdiet libero. Proin odios dapibus integer an nulla augue pharetra cursus.</p>
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t</li>
-\t\t\t\t\t\t<li class=\"slide\">
-\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Nuclear Fusion Closer to Becoming a Reality\">
-\t\t\t\t\t\t\t\t<img src='";
-        // line 68
-        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "/assets/users/images/samples/690x450/image_08.jpg' alt='img'>
-\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t<div class=\"slider_content_box\">
-\t\t\t\t\t\t\t\t<ul class=\"post_details simple\">
-\t\t\t\t\t\t\t\t\t<li class=\"category\"><a href=\"index.html@page=category&amp;cat=health.html\" title=\"HEALTH\">HEALTH</a></li>
-\t\t\t\t\t\t\t\t\t<li class=\"date\">
-\t\t\t\t\t\t\t\t\t\t10:11 PM, Feb 02
-\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t\t<h2><a href=\"index.html@page=post.html\" title=\"Nuclear Fusion Closer to Becoming a Reality\">The Public Health Crisis Hiding in Our Food</a></h2>
-\t\t\t\t\t\t\t\t<p class=\"clearfix\">Maecenas mauris elementum, est morbi interdum cursus at elite imperdiet libero. Proin odios dapibus integer an nulla augue pharetra cursus.</p>
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t</li>
-\t\t\t\t\t\t<li class=\"slide\">
-\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Nuclear Fusion Closer to Becoming a Reality\">
-\t\t\t\t\t\t\t\t<img src='";
-        // line 83
-        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "/assets/users/images/samples/690x450/image_02.jpg' alt='img'>
-\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t<div class=\"slider_content_box\">
-\t\t\t\t\t\t\t\t<ul class=\"post_details simple\">
-\t\t\t\t\t\t\t\t\t<li class=\"category\"><a href=\"index.html@page=category&amp;cat=world.html\" title=\"WORLD\">WORLD</a></li>
-\t\t\t\t\t\t\t\t\t<li class=\"date\">
-\t\t\t\t\t\t\t\t\t\t18:25 PM, Feb 21
-\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t\t<h2><a href=\"index.html@page=post.html\" title=\"Nuclear Fusion Closer to Becoming a Reality\">Built on Brotherhood, Club Lives Up to Name</a></h2>
-\t\t\t\t\t\t\t\t<p class=\"clearfix\">Maecenas mauris elementum, est morbi interdum cursus at elite imperdiet libero. Proin odios dapibus integer an nulla augue pharetra cursus.</p>
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t</li>
+
 \t\t\t\t\t</ul>
 \t\t\t\t</div>
 \t\t\t\t<div id=\"small_slider\" class='slider_posts_list_container small'>
@@ -145,7 +74,7 @@ class __TwigTemplate_956f8d2fac3b2707e1908167310a06759ac5410caf8b9569c913baee829
 \t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t<a href=\"index.html@page=post_small_image.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">
 \t\t\t\t\t\t\t\t<img src='";
-        // line 105
+        // line 46
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/330x242/image_10.jpg' alt='img'>
 \t\t\t\t\t\t\t</a>
@@ -167,7 +96,7 @@ class __TwigTemplate_956f8d2fac3b2707e1908167310a06759ac5410caf8b9569c913baee829
 \t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">
 \t\t\t\t\t\t\t\t<img src='";
-        // line 124
+        // line 65
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/330x242/image_05.jpg' alt='img'>
 \t\t\t\t\t\t\t</a>
@@ -190,7 +119,7 @@ class __TwigTemplate_956f8d2fac3b2707e1908167310a06759ac5410caf8b9569c913baee829
 \t\t\t\t\t\t\t<a href=\"index.html@page=post_gallery.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">
 \t\t\t\t\t\t\t\t<span class=\"icon gallery\"></span>
 \t\t\t\t\t\t\t\t<img src='";
-        // line 144
+        // line 85
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/330x242/image_03.jpg' alt='img'>
 \t\t\t\t\t\t\t</a>
@@ -214,7 +143,7 @@ class __TwigTemplate_956f8d2fac3b2707e1908167310a06759ac5410caf8b9569c913baee829
 \t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">
 \t\t\t\t\t\t\t\t<img src='";
-        // line 165
+        // line 106
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/330x242/image_04.jpg' alt='img'>
 \t\t\t\t\t\t\t</a>
@@ -236,7 +165,7 @@ class __TwigTemplate_956f8d2fac3b2707e1908167310a06759ac5410caf8b9569c913baee829
 \t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">
 \t\t\t\t\t\t\t\t<img src='";
-        // line 184
+        // line 125
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/330x242/image_12.jpg' alt='img'>
 \t\t\t\t\t\t\t</a>
@@ -259,7 +188,7 @@ class __TwigTemplate_956f8d2fac3b2707e1908167310a06759ac5410caf8b9569c913baee829
 \t\t\t\t\t\t\t<a href=\"index.html@page=post_gallery.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">
 \t\t\t\t\t\t\t\t<span class=\"icon gallery\"></span>
 \t\t\t\t\t\t\t\t<img src='";
-        // line 204
+        // line 145
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/330x242/image_13.jpg' alt='img'>
 \t\t\t\t\t\t\t</a>
@@ -378,7 +307,7 @@ class __TwigTemplate_956f8d2fac3b2707e1908167310a06759ac5410caf8b9569c913baee829
 \t\t\t\t\t<li class=\"author\">
 \t\t\t\t\t\t<a class=\"thumb\" href=\"index.html@page=author.html\" title=\"Debora Hilton\">
 \t\t\t\t\t\t\t<img src='";
-        // line 320
+        // line 261
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/Team_100x100/image_01.jpg' alt='img'>
 \t\t\t\t\t\t\t<span class=\"number animated_element\" data-value=\"34\"></span>
@@ -391,7 +320,7 @@ class __TwigTemplate_956f8d2fac3b2707e1908167310a06759ac5410caf8b9569c913baee829
 \t\t\t\t\t<li class=\"author\">
 \t\t\t\t\t\t<a class=\"thumb\" href=\"index.html@page=author.html\" title=\"Anna Shubina\">
 \t\t\t\t\t\t\t<img src='";
-        // line 330
+        // line 271
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/Team_100x100/image_02.jpg' alt='img'>
 \t\t\t\t\t\t\t<span class=\"number animated_element\" data-value=\"25\"></span>
@@ -404,7 +333,7 @@ class __TwigTemplate_956f8d2fac3b2707e1908167310a06759ac5410caf8b9569c913baee829
 \t\t\t\t\t<li class=\"author\">
 \t\t\t\t\t\t<a class=\"thumb\" href=\"index.html@page=author.html\" title=\"Liam Holden\">
 \t\t\t\t\t\t\t<img src='";
-        // line 340
+        // line 281
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/Team_100x100/image_03.jpg' alt='img'>
 \t\t\t\t\t\t\t<span class=\"number animated_element\" data-value=\"9\"></span>
@@ -417,7 +346,7 @@ class __TwigTemplate_956f8d2fac3b2707e1908167310a06759ac5410caf8b9569c913baee829
 \t\t\t\t\t<li class=\"author\">
 \t\t\t\t\t\t<a class=\"thumb\" href=\"index.html@page=author.html\" title=\"Heather Dale\">
 \t\t\t\t\t\t\t<img src='";
-        // line 350
+        // line 291
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/Team_100x100/image_04.jpg' alt='img'>
 \t\t\t\t\t\t\t<span class=\"number animated_element\" data-value=\"2\"></span>
@@ -445,7 +374,7 @@ class __TwigTemplate_956f8d2fac3b2707e1908167310a06759ac5410caf8b9569c913baee829
 
     public function getDebugInfo()
     {
-        return array (  421 => 350,  408 => 340,  395 => 330,  382 => 320,  263 => 204,  240 => 184,  218 => 165,  194 => 144,  171 => 124,  149 => 105,  124 => 83,  106 => 68,  88 => 53,  70 => 38,  30 => 2,  11 => 1,);
+        return array (  350 => 291,  337 => 281,  324 => 271,  311 => 261,  192 => 145,  169 => 125,  147 => 106,  123 => 85,  100 => 65,  78 => 46,  30 => 2,  11 => 1,);
     }
 }
 /* {% extends "users/layout.html" %} {% block content %}*/
@@ -483,66 +412,7 @@ class __TwigTemplate_956f8d2fac3b2707e1908167310a06759ac5410caf8b9569c913baee829
 /* 			<div class="column column_2_3">*/
 /* 				<div class="caroufredsel_wrapper caroufredsel_wrapper_small_slider">*/
 /* 					<ul class="small_slider id-small_slider">*/
-/* 						<li class="slide">*/
-/* 							<a href="index.html@page=post.html" title="Nuclear Fusion Closer to Becoming a Reality">*/
-/* 								<img src='{{baseURL}}/assets/users/images/samples/690x450/image_09.jpg' alt='img'>*/
-/* 							</a>*/
-/* 							<div class="slider_content_box">*/
-/* 								<ul class="post_details simple">*/
-/* 									<li class="category"><a href="index.html@page=category&amp;cat=health.html" title="HEALTH">HEALTH</a></li>*/
-/* 									<li class="date">*/
-/* 										10:11 PM, Feb 02*/
-/* 									</li>*/
-/* 								</ul>*/
-/* 								<h2><a href="index.html@page=post.html" title="Nuclear Fusion Closer to Becoming a Reality">Nuclear Fusion Closer to Becoming a Reality</a></h2>*/
-/* 								<p class="clearfix">Maecenas mauris elementum, est morbi interdum cursus at elite imperdiet libero. Proin odios dapibus integer an nulla augue pharetra cursus.</p>*/
-/* 							</div>*/
-/* 						</li>*/
-/* 						<li class="slide">*/
-/* 							<a href="index.html@page=post.html" title="Nuclear Fusion Closer to Becoming a Reality">*/
-/* 								<img src='{{baseURL}}/assets/users/images/samples/690x450/image_10.jpg' alt='img'>*/
-/* 							</a>*/
-/* 							<div class="slider_content_box">*/
-/* 								<ul class="post_details simple">*/
-/* 									<li class="category"><a href="index.html@page=category&amp;cat=world.html" title="WORLD">WORLD</a></li>*/
-/* 									<li class="date">*/
-/* 										18:25 PM, Feb 21*/
-/* 									</li>*/
-/* 								</ul>*/
-/* 								<h2><a href="index.html@page=post.html" title="Nuclear Fusion Closer to Becoming a Reality">Climate Change Debate While Britain Floods</a></h2>*/
-/* 								<p class="clearfix">Maecenas mauris elementum, est morbi interdum cursus at elite imperdiet libero. Proin odios dapibus integer an nulla augue pharetra cursus.</p>*/
-/* 							</div>*/
-/* 						</li>*/
-/* 						<li class="slide">*/
-/* 							<a href="index.html@page=post.html" title="Nuclear Fusion Closer to Becoming a Reality">*/
-/* 								<img src='{{baseURL}}/assets/users/images/samples/690x450/image_08.jpg' alt='img'>*/
-/* 							</a>*/
-/* 							<div class="slider_content_box">*/
-/* 								<ul class="post_details simple">*/
-/* 									<li class="category"><a href="index.html@page=category&amp;cat=health.html" title="HEALTH">HEALTH</a></li>*/
-/* 									<li class="date">*/
-/* 										10:11 PM, Feb 02*/
-/* 									</li>*/
-/* 								</ul>*/
-/* 								<h2><a href="index.html@page=post.html" title="Nuclear Fusion Closer to Becoming a Reality">The Public Health Crisis Hiding in Our Food</a></h2>*/
-/* 								<p class="clearfix">Maecenas mauris elementum, est morbi interdum cursus at elite imperdiet libero. Proin odios dapibus integer an nulla augue pharetra cursus.</p>*/
-/* 							</div>*/
-/* 						</li>*/
-/* 						<li class="slide">*/
-/* 							<a href="index.html@page=post.html" title="Nuclear Fusion Closer to Becoming a Reality">*/
-/* 								<img src='{{baseURL}}/assets/users/images/samples/690x450/image_02.jpg' alt='img'>*/
-/* 							</a>*/
-/* 							<div class="slider_content_box">*/
-/* 								<ul class="post_details simple">*/
-/* 									<li class="category"><a href="index.html@page=category&amp;cat=world.html" title="WORLD">WORLD</a></li>*/
-/* 									<li class="date">*/
-/* 										18:25 PM, Feb 21*/
-/* 									</li>*/
-/* 								</ul>*/
-/* 								<h2><a href="index.html@page=post.html" title="Nuclear Fusion Closer to Becoming a Reality">Built on Brotherhood, Club Lives Up to Name</a></h2>*/
-/* 								<p class="clearfix">Maecenas mauris elementum, est morbi interdum cursus at elite imperdiet libero. Proin odios dapibus integer an nulla augue pharetra cursus.</p>*/
-/* 							</div>*/
-/* 						</li>*/
+/* */
 /* 					</ul>*/
 /* 				</div>*/
 /* 				<div id="small_slider" class='slider_posts_list_container small'>*/
