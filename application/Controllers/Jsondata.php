@@ -380,7 +380,7 @@ class Jsondata extends \CodeIgniter\Controller
 
 							$datafiles = $modelfiles->getWhere(['id_parent' => $valueberita->id])->getResult();
 							$datasatuan= $model->getSatuanByCode($valueberita->satuan);
-							$obj_merged = (object) array_merge((array) $valueberita, (array) $datafiles, (array) $datasatuan);
+							$obj_merged = (object) array_merge((array) $valueberita, (array) $datafiles[0], (array) $datasatuan);
 							array_push($fulldata, $obj_merged);
 						}
 						$berita = $fulldata;
