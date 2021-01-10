@@ -147,7 +147,7 @@ class __TwigTemplate_3b96aacfa4941bdc19f17e1b272618bfba30fcc2538054a33f93c0f5bbf
                             </li>
                             <li>
                                 <a href=\"logout\">
-                                    <i class=\"ti-layout-sidebar-left\"></i> Logout
+                                    <i class=\"icon-logout\"></i> Logout
                                 </a>
                             </li>
                         </ul>
@@ -592,7 +592,7 @@ class __TwigTemplate_3b96aacfa4941bdc19f17e1b272618bfba30fcc2538054a33f93c0f5bbf
 /*                             </li>*/
 /*                             <li>*/
 /*                                 <a href="logout">*/
-/*                                     <i class="ti-layout-sidebar-left"></i> Logout*/
+/*                                     <i class="icon-logout"></i> Logout*/
 /*                                 </a>*/
 /*                             </li>*/
 /*                         </ul>*/

@@ -375,7 +375,7 @@ dengan memanfaatkan perkembangan teknologi dan informasi kepala polisi resor sum
 
 \t\t\t\t<h4 class=\"box_header\">Giat COVID-19</h4>
 \t\t\t\t<ul class=\"blog small_margin clearfix\">
-\t\t\t\t\t<div id=\"kopi-covid\"> </div>
+\t\t\t\t\t<div class=\"kopi-covid\"> </div>
 \t\t\t\t</ul>
 \t\t\t\t<ul class=\"blog small_margin clearfix\">
 \t\t\t\t\t<li class=\"post\">
@@ -995,7 +995,7 @@ dengan memanfaatkan perkembangan teknologi dan informasi kepala polisi resor sum
 /* */
 /* 				<h4 class="box_header">Giat COVID-19</h4>*/
 /* 				<ul class="blog small_margin clearfix">*/
-/* 					<div id="kopi-covid"> </div>*/
+/* 					<div class="kopi-covid"> </div>*/
 /* 				</ul>*/
 /* 				<ul class="blog small_margin clearfix">*/
 /* 					<li class="post">*/

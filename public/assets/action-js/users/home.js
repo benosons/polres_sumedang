@@ -43,7 +43,6 @@ function loadberitaAll(param, id){
                   									`+sliceIt[0]['create_date']+`
                   								</li>
                   							</ul>
-                  							<p>Maecenas mauris elementum, est morbi interdum cursus at elite imperdiet libero. Proin odios dapibus integer an nulla augue pharetra cursus.</p>
                   							<a class="read_more" href="/berita?params=post&ids=`+sliceIt[0]['id_parent']+`" title="Read more"><span class="arrow"></span><span>READ MORE</span></a>
                   						</li>`;
                   content += `<li class="post">
@@ -60,7 +59,6 @@ function loadberitaAll(param, id){
                   									`+sliceIt[1]['create_date']+`
                   								</li>
                   							</ul>
-                  							<p>Maecenas mauris elementum, est morbi interdum cursus at elite imperdiet libero. Proin odios dapibus integer an nulla augue pharetra cursus.</p>
                   							<a class="read_more" href="/berita?params=post&ids=`+sliceIt[1]['id_parent']+`" title="Read more"><span class="arrow"></span><span>READ MORE</span></a>
                   						</li>`;
                   content += '</ul>';

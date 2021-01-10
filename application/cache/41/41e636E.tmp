@@ -232,20 +232,20 @@ class __TwigTemplate_65d39d51154dedace2a81a6ef745e3c2053b05338d4b8a56facc6d005c8
             </li>
             <li class=\"pcoded-hasmenu\" id=\"menu-covid\">
                 <a href=\"#\" data-i18n=\"nav.widget.main\">
-                    <span class=\"pcoded-micon\"><i class=\"ti-world\"></i></span>
+                    <span class=\"pcoded-micon\"><i class=\"ti-info-alt\"></i></span>
                     <span class=\"pcoded-mtext\">Giat Covid-19</span>
                     <span class=\"pcoded-mcaret\"></span>
                 </a>
                 <ul class=\"pcoded-submenu\">
-                    <li class=\" \" id=\"beritacovid\">
-                        <a href=\"beritacovid\" data-i18n=\"nav.form-components.form-components\">
+                    <li class=\" \" id=\"inputberita\">
+                        <a href=\"inputberita\" data-i18n=\"nav.form-components.form-components\">
                             <span class=\"pcoded-micon\"><i class=\"ti-angle-right\"></i></span>
                             <span class=\"pcoded-mtext\">Berita</span>
                             <span class=\"pcoded-mcaret\"></span>
                         </a>
                     </li>
                     <li class=\" \">
-                        <a href=\"kegiatancovid\" data-i18n=\"nav.form-components.form-elements-add-on\">
+                        <a href=\"form-elements-add-on.html\" data-i18n=\"nav.form-components.form-elements-add-on\">
                             <span class=\"pcoded-micon\"><i class=\"ti-angle-right\"></i></span>
                             <span class=\"pcoded-mtext\">Kegiatan</span>
                             <span class=\"pcoded-mcaret\"></span>
@@ -483,20 +483,20 @@ class __TwigTemplate_65d39d51154dedace2a81a6ef745e3c2053b05338d4b8a56facc6d005c8
 /*             </li>*/
 /*             <li class="pcoded-hasmenu" id="menu-covid">*/
 /*                 <a href="#" data-i18n="nav.widget.main">*/
-/*                     <span class="pcoded-micon"><i class="ti-world"></i></span>*/
+/*                     <span class="pcoded-micon"><i class="ti-info-alt"></i></span>*/
 /*                     <span class="pcoded-mtext">Giat Covid-19</span>*/
 /*                     <span class="pcoded-mcaret"></span>*/
 /*                 </a>*/
 /*                 <ul class="pcoded-submenu">*/
-/*                     <li class=" " id="beritacovid">*/
-/*                         <a href="beritacovid" data-i18n="nav.form-components.form-components">*/
+/*                     <li class=" " id="inputberita">*/
+/*                         <a href="inputberita" data-i18n="nav.form-components.form-components">*/
 /*                             <span class="pcoded-micon"><i class="ti-angle-right"></i></span>*/
 /*                             <span class="pcoded-mtext">Berita</span>*/
 /*                             <span class="pcoded-mcaret"></span>*/
 /*                         </a>*/
 /*                     </li>*/
 /*                     <li class=" ">*/
-/*                         <a href="kegiatancovid" data-i18n="nav.form-components.form-elements-add-on">*/
+/*                         <a href="form-elements-add-on.html" data-i18n="nav.form-components.form-elements-add-on">*/
 /*                             <span class="pcoded-micon"><i class="ti-angle-right"></i></span>*/
 /*                             <span class="pcoded-mtext">Kegiatan</span>*/
 /*                             <span class="pcoded-mcaret"></span>*/

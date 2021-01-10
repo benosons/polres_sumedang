@@ -208,6 +208,22 @@ class View extends \CodeIgniter\Controller
 
 	}
 
+	public function covid()
+	{
+				helper('form');
+				$this->data['script'] = $this->data['baseURL'].'/assets/action-js/users/covid-19.js';
+				return \Twig::instance()->display('users/covid-19.html', $this->data);
+	}
 
+	public function beritacovid()
+	{
+				if($this->logged){
+					helper('form');
+					$this->data['script'] = $this->data['baseURL'].'/assets/action-js/admin/covid19/beritacovid.js';
+					return \Twig::instance()->display('admin/covid19/beritacovid.html', $this->data);
+				}else{
+					return redirect('home');
+				}
+	}
 
 }

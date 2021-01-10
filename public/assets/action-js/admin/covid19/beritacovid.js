@@ -1,7 +1,7 @@
 console.log('You are running jQuery version: ' + $.fn.jquery);
 $(document).ready(function(){
-  $('.pcoded-item li#menu-informasi').addClass('active pcoded-trigger');
-  $('#inputberita').addClass('active');
+  $('.pcoded-item li#menu-covid').addClass('active pcoded-trigger');
+  $('#beritacovid').addClass('active');
   $('.note-toolbar .note-insert, .note-toolbar .note-table, .note-toolbar .note-style:first, .note-toolbar .note-para').remove();
   $('.note-toolbar.panel-heading').remove();
   $('.note-popover').remove();
@@ -14,15 +14,11 @@ $(document).ready(function(){
   loadberita('','');
 
   $('#post-berita').on('click', function(){
-      var tujuan = $('#tujuan').val();
-      var nama_tujuan = $('#tujuan option:selected').text();
       var judul = $('#judul').val();
       var isi = $('.berita-summernote').summernote('code');
 
       var formData = new FormData();
       formData.append('param', 'berita');
-      formData.append('kode_tujuan', tujuan);
-      formData.append('nama_tujuan', nama_tujuan.toLowerCase().split(' ').join('_'));
       formData.append('judul', judul);
       formData.append('isi', isi);
       // Attach file
@@ -78,7 +74,7 @@ function save(formData){
       type: 'post',
       processData: false,
       contentType: false,
-      url: 'saveBerita',
+      url: 'saveBeritaCovid',
       data : formData,
       success: function(result){
         Swal.fire({
@@ -105,13 +101,13 @@ function save(formData){
     $.ajax({
         type: 'post',
         dataType: 'json',
-        url: 'getBerita',
+        url: 'getBeritaCovid',
         data : {
                 param      : param,
                 id         : id,
         },
         success: function(result){
-            console.log(result.data.berita);
+            console.log(result.data);
             // $('#balas-pengaduan').attr("disabled", true);
             // $('.email-content').show();
             // $('.email-read').hide();
@@ -137,7 +133,7 @@ function save(formData){
               autoWidth: false,
               responsive: false,
               pageLength: 10,
-              aaData: result.data.berita,
+              aaData: result.data,
               aoColumns: [
                   { 'mDataProp': 'id', 'width':'10%'},
                   { 'mDataProp': 'status', 'width':'10%'},
@@ -241,7 +237,7 @@ function save(formData){
       $.ajax({
           type: 'post',
           dataType: 'json',
-          url: 'actionBerita',
+          url: 'actionBeritaCovid',
           data : {
                   param      : isObject,
           },

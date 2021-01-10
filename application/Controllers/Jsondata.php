@@ -134,6 +134,60 @@ class Jsondata extends \CodeIgniter\Controller
 		}
 	}
 
+	public function getBeritaCovid()
+	{
+		try
+		{
+				$request  = $this->request;
+				$param 	  = $request->getVar('param');
+				$id		 	  = $request->getVar('id');
+				$role 		= $this->data['role'];
+				$userid		= $this->data['userid'];
+
+				if($this->logged){
+					$model = new \App\Models\BeritaModel();
+					$modelfiles = new \App\Models\FilesModel();
+					// if($role == 100){
+					// 		$data['berita'] = $model->join('users','users.user_id = data_berita.create_by')->findAll();
+					// }else{
+							$data = $model->getBeritaCovid($param, $role, $userid, '', $id);
+							foreach ($data as $key => $value) {
+								$data[$key]->lampiran  = $modelfiles->getWhere(['id_parent' => $value->id])->getResult();
+							}
+					// }
+
+					if($data){
+						$response = [
+							'status'   => 'sukses',
+							'code'     => '1',
+							'data' 		 => $data
+						];
+					}else{
+						$response = [
+						    'status'   => 'gagal',
+						    'code'     => '0',
+						    'data'     => 'tidak ada data',
+						];
+					}
+
+				}else{
+					$response = [
+							'status'   => 'gagal',
+							'code'     => '0',
+							'data' 		 => 'silahkan login'
+					];
+				}
+
+				header('Content-Type: application/json');
+				echo json_encode($response);
+				exit;
+			}
+		catch (\Exception $e)
+		{
+			die($e->getMessage());
+		}
+	}
+
 	public function loadBerita()
 	{
 		try
@@ -460,6 +514,68 @@ class Jsondata extends \CodeIgniter\Controller
 
 	}
 
+	public function saveBeritaCovid(){
+
+		$request  = $this->request;
+		$param 	  = $request->getVar('param');
+		$mode 	  = $request->getVar('mode');
+		$model 	  = new \App\Models\BeritaModel();
+		$modelfiles = new \App\Models\FilesModel();
+
+		$files	  = $request->getFiles()['lampiran'];
+		$path			= FCPATH.'public';
+		$tipe			= 'uploads/users/'.$request->getVar('param').'/lampiran';
+		$bagian 	= 'covid';
+		$date 		= date('Y/m/d');
+		$folder		= $path.'/'.$tipe.'/'.$bagian.'/'.$date.'/';
+
+		$data = [
+			'judul_berita' => $request->getVar('judul'),
+			'isi_berita' => $request->getVar('isi'),
+			'create_by' => $this->data['userid'],
+			'status' => 0,
+			'create_date' => $this->now,
+			'update_date' => $this->now
+    ];
+
+		$res = $model->insertBeritaCovid($data);
+		$id  = $res;
+
+		if (!is_dir($folder)) {
+		    mkdir($folder, 0777, TRUE);
+		}
+
+		if($id){
+			foreach($files as $idx => $img){
+
+				$stat = $img->move($folder, $img->getName());
+
+				$datalampiran = [
+					'id_parent' => $id,
+					'file_name' => $img->getName(),
+					'extention' => null,
+					'size' => $img->getSize('kb'),
+					'path' => $tipe.'/'.$bagian.'/'.$date.'/',
+					'type' => $request->getVar('param'),
+					'create_date' => $this->now,
+					'update_date' => $this->now,
+		    ];
+				$modelfiles->insert($datalampiran);
+				// $saveupload = $model->saveDataUpload($datalampiran);
+			}
+		}
+
+		$response = [
+				'status'   => 'sukses',
+				'code'     => '0',
+				'data' 		 => 'terkirim'
+		];
+		header('Content-Type: application/json');
+		echo json_encode($response);
+		exit;
+
+	}
+
 	public function update(){
 
 		$request  = $this->request;
@@ -542,6 +658,49 @@ class Jsondata extends \CodeIgniter\Controller
 			];
 
 			$res = $model->update($param['id'], $data);
+
+		}else if($param['mode'] == 'delete'){
+			$res = $model->delete($param['id']);
+		}
+
+
+		$response = [
+				'status'   => 'sukses',
+				'code'     => '0',
+				'data' 		 => 'terupdate'
+		];
+		header('Content-Type: application/json');
+		echo json_encode($response);
+		exit;
+
+	}
+
+	public function actionBeritaCovid(){
+
+		$request  = $this->request;
+		$role 		= $this->data['role'];
+		$userid		= $this->data['userid'];
+
+		$param 	  = $request->getVar('param');
+
+		$model 	  = new \App\Models\BeritaModel();
+		if($param['mode'] == 'headline'){
+			$count = $model->countStatus();
+			if($count >= 5){
+				$data = [
+					'update_date' => $this->now,
+					'update_by' 	=> $userid,
+					'status' 			=> 0,
+				];
+				$lastId = $model->getMaxIdCovid();
+				$model->updateBeritaCovid($lastId, $data);
+			}
+
+			$data = [
+				'update_date' => $this->now,
+				'status' 			=> $param['stat'],
+			];
+			$res = $model->updateBeritaCovid($param['id'], $data);
 
 		}else if($param['mode'] == 'delete'){
 			$res = $model->delete($param['id']);

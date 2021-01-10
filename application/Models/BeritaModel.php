@@ -56,6 +56,14 @@ class BeritaModel extends Model{
         return  $query->getResult();
     }
 
+    public function getBeritaCovid($id, $status)
+    {
+      $sql = "SELECT * FROM `data_berita_covid` cvd join users us on cvd.create_by = us.user_id  ORDER BY create_date asc";
+      $result = $this->db->query($sql);
+      $row = $result->getResult();
+      return $row;
+    }
+
     public function countStatus()
     {
       $sql = "SELECT COUNT(*) as Count FROM data_berita where status = 1";
@@ -72,11 +80,34 @@ class BeritaModel extends Model{
       return $row->id;
     }
 
+    public function getMaxIdCovid()
+    {
+      $sql = "SELECT * FROM `polres_sumedang`.`data_berita_covid` ORDER BY create_date asc limit 1";
+      $result = $this->db->query($sql);
+      $row = $result->getRow();
+      return $row->id;
+    }
+
     public function deleteData($id)
     {
         $builder = $this->db->table('data_berita');
         $query   = $builder->where('id', $id);
         return  $query->delete();
+    }
+
+    public function insertBeritaCovid($data)
+    {
+      $builder = $this->db->table('data_berita_covid');
+      $query   = $builder->insert($data);;
+      return  $this->db->insertID();
+    }
+
+    public function updateBeritaCovid($id, $data)
+    {
+      $builder = $this->db->table('data_berita_covid');
+      $query   = $builder->where('id', $id);
+      $query->update($data);
+      return true;
     }
 
 }

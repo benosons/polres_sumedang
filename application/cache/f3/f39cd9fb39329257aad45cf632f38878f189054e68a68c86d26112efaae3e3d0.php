@@ -32,7 +32,7 @@ class __TwigTemplate_3c322760ba2ecf291324003b17b09a2584a4c479e325d532af3746f4cad
         echo "\" hidden>
 \t<div class=\"page_header clearfix page_margin_top\">
 \t\t<div class=\"page_header_left\">
-\t\t\t<h2 class=\"page_title\">Berita Polres Sumedang</h2>
+\t\t\t<h2 class=\"page_title\">BERITA POLRES SUMEDANG</h2>
 \t\t</div>
 \t\t<div class=\"page_header_right\">
 \t\t\t<ul class=\"bread_crumb\">
@@ -160,7 +160,7 @@ class __TwigTemplate_3c322760ba2ecf291324003b17b09a2584a4c479e325d532af3746f4cad
 /* <input id="baseUrl" value="{{baseURL}}" hidden>*/
 /* 	<div class="page_header clearfix page_margin_top">*/
 /* 		<div class="page_header_left">*/
-/* 			<h2 class="page_title">Berita Polres Sumedang</h2>*/
+/* 			<h2 class="page_title">BERITA POLRES SUMEDANG</h2>*/
 /* 		</div>*/
 /* 		<div class="page_header_right">*/
 /* 			<ul class="bread_crumb">*/

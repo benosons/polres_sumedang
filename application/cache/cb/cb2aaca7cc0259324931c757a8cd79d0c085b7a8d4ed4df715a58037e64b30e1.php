@@ -138,7 +138,7 @@ PROFILE
 </ul>
 </li>
 <li class=\"\" id=\"menu-covid\">
-\t<a href=\"#\" title=\"Pages\">
+\t<a href=\"/covid\" title=\"Pages\">
 \tGIAT COVID-19
 \t</a>
 </li>
@@ -1025,7 +1025,7 @@ HUBUNGI KAMI
 /* </ul>*/
 /* </li>*/
 /* <li class="" id="menu-covid">*/
-/* 	<a href="#" title="Pages">*/
+/* 	<a href="/covid" title="Pages">*/
 /* 	GIAT COVID-19*/
 /* 	</a>*/
 /* </li>*/

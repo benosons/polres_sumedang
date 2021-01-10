@@ -6,10 +6,10 @@ $(document).ready(function(){
   f.height = 380;
   f.scrolling = "no";
   f.frameBorder = 0;
-  var rootEl = document.getElementById("kopi-covid");
-
+  var rootEl = document.getElementsByClassName("kopi-covid");
+  
   if(rootEl){
-    rootEl.appendChild(f);
+    rootEl[0].appendChild(f);
   }
 
 });
