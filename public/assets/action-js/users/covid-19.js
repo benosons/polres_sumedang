@@ -19,30 +19,55 @@ function loadberitaAll(param, id){
       success: function(result){
           let data = result.data;
 
-          var content = '<ul class="blog column column_1_2">';
+          var content = '';
             for (var i = 0; i < data.length; i ++) {
+              var sliceIt = data.slice(i, 2);
+              if(sliceIt.length == 2){
+                
+                  content += '<ul class="blog column column_1_2">';
                   content += `<li class="post">
                   							<a href="index.html@page=post_small_image.html" title="Built on Brotherhood, Club Lives Up to Name">
-                  								<img src='`+$('#baseURL').val()+`/`+data[i].path+data[i].file_name+`' alt='img'>
+                  								<img src='`+$('#baseURL').val()+`/`+sliceIt[0].lampiran[0].path+sliceIt[0].lampiran[0].file_name+`' alt='img'>
                   							</a>
                   							<div class="post_content">
                   								<h2 class="with_number">
-                  									<a href="/covid?params=post&ids=`+data[i].id_parent+`" title="">`+data[i].judul_berita+`</a>
+                  									<a href="/covid?params=post&ids=`+sliceIt[0].id_parent+`" title="">`+sliceIt[0].judul_berita+`</a>
                   									<a class="comments_number" href="index.html@page=post.html#comments_list" title="2 comments">2<span class="arrow_comments"></span></a>
                   								</h2>
                   								<ul class="post_details">
                   									<li class="category"><a href="covid" title="COVID-19">COVID-19</a></li>
                   									<li class="date">
-                  										`+data[i].create_date+`
+                  										`+sliceIt[0].create_date+`
                   									</li>
                   								</ul>
-                  								`+data[i].isi_berita.substring(0, 100)+`...
-                  								<a class="read_more" href="/covid?params=post&ids=`+data[i].id_parent+`" title="Read more"><span class="arrow"></span><span>READ MORE</span></a>
+                  								`+sliceIt[0].isi_berita.substring(0, 100)+`...
+                  								<a class="read_more" href="/covid?params=post&ids=`+sliceIt[0].id_parent+`" title="Read more"><span class="arrow"></span><span>READ MORE</span></a>
                   							</div>
                   						</li>`;
+                  content += `<li class="post">
+                  							<a href="index.html@page=post_small_image.html" title="Built on Brotherhood, Club Lives Up to Name">
+                  								<img src='`+$('#baseURL').val()+`/`+sliceIt[1].lampiran[0].path+sliceIt[1].lampiran[0].file_name+`' alt='img'>
+                  							</a>
+                  							<div class="post_content">
+                  								<h2 class="with_number">
+                  									<a href="/covid?params=post&ids=`+sliceIt[1].id_parent+`" title="">`+sliceIt[1].judul_berita+`</a>
+                  									<a class="comments_number" href="index.html@page=post.html#comments_list" title="2 comments">2<span class="arrow_comments"></span></a>
+                  								</h2>
+                  								<ul class="post_details">
+                  									<li class="category"><a href="covid" title="COVID-19">COVID-19</a></li>
+                  									<li class="date">
+                  										`+sliceIt[1].create_date+`
+                  									</li>
+                  								</ul>
+                  								`+sliceIt[1].isi_berita.substring(0, 100)+`...
+                  								<a class="read_more" href="/covid?params=post&ids=`+sliceIt[1].id_parent+`" title="Read more"><span class="arrow"></span><span>READ MORE</span></a>
+                  							</div>
+                  						</li>`;
+                    content += '</ul>';
+                            }
+
 
             }
-            content += '</ul>';
 
           $('#berita-covid-terbaru').html(content);
 

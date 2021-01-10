@@ -378,7 +378,7 @@ class Jsondata extends \CodeIgniter\Controller
 
 						foreach ($databerita as $keyberita => $valueberita) {
 
-							$datafiles = $modelfiles->getWhere(['id_parent' => $valueberita->id])->getRow();
+							$datafiles = $modelfiles->getWhere(['id_parent' => $valueberita->id])->getResult();
 							$datasatuan= $model->getSatuanByCode($valueberita->satuan);
 							$obj_merged = (object) array_merge((array) $valueberita, (array) $datafiles, (array) $datasatuan);
 							array_push($fulldata, $obj_merged);
@@ -396,8 +396,9 @@ class Jsondata extends \CodeIgniter\Controller
 								$fulldata = [];
 								$databerita = $model->loadBeritaCovid($value->satuan_code);
 								foreach ($databerita as $keyberita => $valueberita) {
-									$datafiles = $modelfiles->getWhere(['id_parent' => $valueberita->id])->getRow();
-									$obj_merged = (object) array_merge((array) $valueberita, (array) $datafiles);
+									$datafiles = $modelfiles->getWhere(['id_parent' => $valueberita->id])->getResult();
+									$obj_merged = (object) array_merge((array) $valueberita);
+									$obj_merged->lampiran = (array) $datafiles;
 									array_push($fulldata, $obj_merged);
 								}
 								$berita = $fulldata;

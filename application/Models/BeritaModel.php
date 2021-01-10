@@ -37,9 +37,10 @@ class BeritaModel extends Model{
 
     public function loadBeritaCovid($id)
     {
-        $builder = $this->db->table('data_berita_covid');
-        $query   = $builder->getWhere(['status' => null, 'status' => 1]);
-        return  $query->getResult();
+      $sql = "SELECT * FROM `data_berita_covid` cvd join users us on cvd.create_by = us.user_id  ORDER BY create_date asc";
+      $result = $this->db->query($sql);
+      $row = $result->getResult();
+      return $row;
     }
 
     public function loadBeritaHeadline($id)
