@@ -116,6 +116,13 @@ class BeritaModel extends Model{
         return  $query->delete();
     }
 
+    public function deleteDataCovid($id)
+    {
+        $builder = $this->db->table('data_berita_covid');
+        $query   = $builder->where('id', $id);
+        return  $query->delete();
+    }
+
     public function insertBeritaCovid($data)
     {
       $builder = $this->db->table('data_berita_covid');

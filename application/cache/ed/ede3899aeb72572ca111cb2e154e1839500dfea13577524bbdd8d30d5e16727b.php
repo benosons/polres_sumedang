@@ -309,94 +309,76 @@ class __TwigTemplate_956f8d2fac3b2707e1908167310a06759ac5410caf8b9569c913baee829
 \t\t\t\t<ul class=\"blog small_margin clearfix\">
 \t\t\t\t\t<div class=\"kopi-covid\"> </div>
 \t\t\t\t</ul>
-\t\t\t\t<h4 class=\"box_header page_margin_top_section\">Latest Posts</h4>
-\t\t\t\t<div class=\"vertical_carousel_container clearfix\">
-\t\t\t\t\t<ul class=\"blog small vertical_carousel autoplay-1 scroll-1 navigation-1 easing-easeInOutQuint duration-750\">
-\t\t\t\t\t\t<li class=\"post\">
-\t\t\t\t\t\t\t<a href=\"index.html@page=post_gallery.html\" title=\"Study Linking Illnes and Salt Leaves Researchers Doubtful\">
-\t\t\t\t\t\t\t\t<span class=\"icon small gallery\"></span>
-\t\t\t\t\t\t\t\t<img src='";
-        // line 258
-        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "/assets/users/images/samples/100x100/image_06.jpg' alt='img'>
-\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t<div class=\"post_content\">
-\t\t\t\t\t\t\t\t<h5>
-\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post_gallery.html\" title=\"Study Linking Illnes and Salt Leaves Researchers Doubtful\">Study Linking Illnes and Salt Leaves Researchers Doubtful</a>
-\t\t\t\t\t\t\t\t</h5>
-\t\t\t\t\t\t\t\t<ul class=\"post_details simple\">
-\t\t\t\t\t\t\t\t\t<li class=\"category\"><a href=\"index.html@page=category&amp;cat=health.html\" title=\"HEALTH\">HEALTH</a></li>
-\t\t\t\t\t\t\t\t\t<li class=\"date\">
-\t\t\t\t\t\t\t\t\t\t10:11 PM, Feb 02
-\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t</li>
-\t\t\t\t\t\t<li class=\"post\">
-\t\t\t\t\t\t\t<a href=\"index.html@page=post_quote_2.html\" title=\"Syrian Civilians Trapped For Months Continue To Be Evacuated\">
-\t\t\t\t\t\t\t\t<img src='";
-        // line 274
-        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "/assets/users/images/samples/100x100/image_12.jpg' alt='img'>
-\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t<div class=\"post_content\">
-\t\t\t\t\t\t\t\t<h5>
-\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post_quote_2.html\" title=\"Syrian Civilians Trapped For Months Continue To Be Evacuated\">Syrian Civilians Trapped For Months Continue To Be Evacuated</a>
-\t\t\t\t\t\t\t\t</h5>
-\t\t\t\t\t\t\t\t<ul class=\"post_details simple\">
-\t\t\t\t\t\t\t\t\t<li class=\"category\"><a href=\"index.html@page=category&amp;cat=world.html\" title=\"WORLD\">WORLD</a></li>
-\t\t\t\t\t\t\t\t\t<li class=\"date\">
-\t\t\t\t\t\t\t\t\t\t10:11 PM, Feb 02
-\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t</li>
-\t\t\t\t\t\t<li class=\"post\">
-\t\t\t\t\t\t\t<a href=\"index.html@page=post_soundcloud.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">
-\t\t\t\t\t\t\t\t<img src='";
-        // line 290
-        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "/assets/users/images/samples/100x100/image_02.jpg' alt='img'>
-\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t<div class=\"post_content\">
-\t\t\t\t\t\t\t\t<h5>
-\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post_soundcloud.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">Built on Brotherhood, Club Lives Up to Name</a>
-\t\t\t\t\t\t\t\t</h5>
-\t\t\t\t\t\t\t\t<ul class=\"post_details simple\">
-\t\t\t\t\t\t\t\t\t<li class=\"category\"><a href=\"index.html@page=category&amp;cat=sports.html\" title=\"SPORTS\">SPORTS</a></li>
-\t\t\t\t\t\t\t\t\t<li class=\"date\">
-\t\t\t\t\t\t\t\t\t\t10:11 PM, Feb 02
-\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t</li>
-\t\t\t\t\t\t<li class=\"post\">
-\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Nuclear Fusion Closer to Becoming a Reality\">
-\t\t\t\t\t\t\t\t<img src='";
-        // line 306
-        echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
-        echo "/assets/users/images/samples/100x100/image_13.jpg' alt='img'>
-\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t<div class=\"post_content\">
-\t\t\t\t\t\t\t\t<h5>
-\t\t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Nuclear Fusion Closer to Becoming a Reality\">Nuclear Fusion Closer to Becoming a Reality</a>
-\t\t\t\t\t\t\t\t</h5>
-\t\t\t\t\t\t\t\t<ul class=\"post_details simple\">
-\t\t\t\t\t\t\t\t\t<li class=\"category\"><a href=\"index.html@page=category&amp;cat=science.html\" title=\"SCIENCE\">SCIENCE</a></li>
-\t\t\t\t\t\t\t\t\t<li class=\"date\">
-\t\t\t\t\t\t\t\t\t\t10:11 PM, Feb 02
-\t\t\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t\t</ul>
-\t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t</li>
-\t\t\t\t\t</ul>
-\t\t\t\t</div>
-\t\t\t\t<h4 class=\"box_header page_margin_top_section\">Top Authors</h4>
+\t\t\t\t<h4 class=\"box_header page_margin_top_section\">Pengumuman</h4>
+\t\t\t\t<ul class=\"blog small clearfix\">
+\t\t\t\t\t<li class=\"post\">
+\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Study Linking Illnes and Salt Leaves Researchers Doubtful\">
+\t\t\t\t\t\t</a>
+\t\t\t\t\t\t<div class=\"\">
+\t\t\t\t\t\t\t<h5>
+\t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Study Linking Illnes and Salt Leaves Researchers Doubtful\">Study Linking Illnes and Salt Leaves Researchers Doubtful</a>
+\t\t\t\t\t\t\t</h5>
+\t\t\t\t\t\t\t<ul class=\"post_details simple\">
+\t\t\t\t\t\t\t\t<li class=\"category\"><a href=\"index.html@page=category&amp;cat=science.html\" title=\"SCIENCE\">SCIENCE</a></li>
+\t\t\t\t\t\t\t\t<li class=\"date\">
+\t\t\t\t\t\t\t\t\t10:11 PM, Feb 02
+\t\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t</ul>
+\t\t\t\t\t\t</div>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li class=\"post\">
+\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Syrian Civilians Trapped For Months Continue To Be Evacuated\">
+\t\t\t\t\t\t</a>
+\t\t\t\t\t\t<div class=\"\">
+\t\t\t\t\t\t\t<h5>
+\t\t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Syrian Civilians Trapped For Months Continue To Be Evacuated\">Syrian Civilians Trapped For Months Continue To Be Evacuated</a>
+\t\t\t\t\t\t\t</h5>
+\t\t\t\t\t\t\t<ul class=\"post_details simple\">
+\t\t\t\t\t\t\t\t<li class=\"category\"><a href=\"index.html@page=category&amp;cat=science.html\" title=\"SCIENCE\">SCIENCE</a></li>
+\t\t\t\t\t\t\t\t<li class=\"date\">
+\t\t\t\t\t\t\t\t\t10:11 PM, Feb 02
+\t\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t</ul>
+\t\t\t\t\t\t</div>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li class=\"post\">
+\t\t\t\t\t\t<a href=\"index.html@page=post_quote.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">
+\t\t\t\t\t\t</a>
+\t\t\t\t\t\t<div class=\"\">
+\t\t\t\t\t\t\t<h5>
+\t\t\t\t\t\t\t\t<a href=\"index.html@page=post_quote.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">Built on Brotherhood, Club Lives Up to Name</a>
+\t\t\t\t\t\t\t</h5>
+\t\t\t\t\t\t\t<ul class=\"post_details simple\">
+\t\t\t\t\t\t\t\t<li class=\"category\"><a href=\"index.html@page=category&amp;cat=science.html\" title=\"SCIENCE\">SCIENCE</a></li>
+\t\t\t\t\t\t\t\t<li class=\"date\">
+\t\t\t\t\t\t\t\t\t10:11 PM, Feb 02
+\t\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t</ul>
+\t\t\t\t\t\t</div>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li class=\"post\">
+\t\t\t\t\t\t<a href=\"index.html@page=post_gallery.html\" title=\"Nuclear Fusion Closer to Becoming a Reality\">
+\t\t\t\t\t\t</a>
+\t\t\t\t\t\t<div class=\"\">
+\t\t\t\t\t\t\t<h5>
+\t\t\t\t\t\t\t\t<a href=\"index.html@page=post_gallery.html\" title=\"Nuclear Fusion Closer to Becoming a Reality\">Nuclear Fusion Closer to Becoming a Reality</a>
+\t\t\t\t\t\t\t</h5>
+\t\t\t\t\t\t\t<ul class=\"post_details simple\">
+\t\t\t\t\t\t\t\t<li class=\"category\"><a href=\"index.html@page=category&amp;cat=science.html\" title=\"SCIENCE\">SCIENCE</a></li>
+\t\t\t\t\t\t\t\t<li class=\"date\">
+\t\t\t\t\t\t\t\t\t10:11 PM, Feb 02
+\t\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t</ul>
+\t\t\t\t\t\t</div>
+\t\t\t\t\t</li>
+\t\t\t\t</ul>
+\t\t\t\t<a class=\"more page_margin_top\" href=\"#\">LOAD MORE</a>
+\t\t\t\t<!-- <h4 class=\"box_header page_margin_top_section\">Top Authors</h4>
 \t\t\t\t<ul class=\"authors rating clearfix\">
 \t\t\t\t\t<li class=\"author\">
 \t\t\t\t\t\t<a class=\"thumb\" href=\"index.html@page=author.html\" title=\"Debora Hilton\">
 \t\t\t\t\t\t\t<img src='";
-        // line 326
+        // line 320
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/Team_100x100/image_01.jpg' alt='img'>
 \t\t\t\t\t\t\t<span class=\"number animated_element\" data-value=\"34\"></span>
@@ -409,7 +391,7 @@ class __TwigTemplate_956f8d2fac3b2707e1908167310a06759ac5410caf8b9569c913baee829
 \t\t\t\t\t<li class=\"author\">
 \t\t\t\t\t\t<a class=\"thumb\" href=\"index.html@page=author.html\" title=\"Anna Shubina\">
 \t\t\t\t\t\t\t<img src='";
-        // line 336
+        // line 330
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/Team_100x100/image_02.jpg' alt='img'>
 \t\t\t\t\t\t\t<span class=\"number animated_element\" data-value=\"25\"></span>
@@ -422,7 +404,7 @@ class __TwigTemplate_956f8d2fac3b2707e1908167310a06759ac5410caf8b9569c913baee829
 \t\t\t\t\t<li class=\"author\">
 \t\t\t\t\t\t<a class=\"thumb\" href=\"index.html@page=author.html\" title=\"Liam Holden\">
 \t\t\t\t\t\t\t<img src='";
-        // line 346
+        // line 340
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/Team_100x100/image_03.jpg' alt='img'>
 \t\t\t\t\t\t\t<span class=\"number animated_element\" data-value=\"9\"></span>
@@ -435,7 +417,7 @@ class __TwigTemplate_956f8d2fac3b2707e1908167310a06759ac5410caf8b9569c913baee829
 \t\t\t\t\t<li class=\"author\">
 \t\t\t\t\t\t<a class=\"thumb\" href=\"index.html@page=author.html\" title=\"Heather Dale\">
 \t\t\t\t\t\t\t<img src='";
-        // line 356
+        // line 350
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/Team_100x100/image_04.jpg' alt='img'>
 \t\t\t\t\t\t\t<span class=\"number animated_element\" data-value=\"2\"></span>
@@ -445,7 +427,7 @@ class __TwigTemplate_956f8d2fac3b2707e1908167310a06759ac5410caf8b9569c913baee829
 \t\t\t\t\t\t\t<h6>ILLUSTRATOR</h6>
 \t\t\t\t\t\t</div>
 \t\t\t\t\t</li>
-\t\t\t\t</ul>
+\t\t\t\t</ul> -->
 \t\t\t</div>
 \t\t</div>
 \t</div>";
@@ -463,7 +445,7 @@ class __TwigTemplate_956f8d2fac3b2707e1908167310a06759ac5410caf8b9569c913baee829
 
     public function getDebugInfo()
     {
-        return array (  439 => 356,  426 => 346,  413 => 336,  400 => 326,  377 => 306,  358 => 290,  339 => 274,  320 => 258,  263 => 204,  240 => 184,  218 => 165,  194 => 144,  171 => 124,  149 => 105,  124 => 83,  106 => 68,  88 => 53,  70 => 38,  30 => 2,  11 => 1,);
+        return array (  421 => 350,  408 => 340,  395 => 330,  382 => 320,  263 => 204,  240 => 184,  218 => 165,  194 => 144,  171 => 124,  149 => 105,  124 => 83,  106 => 68,  88 => 53,  70 => 38,  30 => 2,  11 => 1,);
     }
 }
 /* {% extends "users/layout.html" %} {% block content %}*/
@@ -717,77 +699,71 @@ class __TwigTemplate_956f8d2fac3b2707e1908167310a06759ac5410caf8b9569c913baee829
 /* 				<ul class="blog small_margin clearfix">*/
 /* 					<div class="kopi-covid"> </div>*/
 /* 				</ul>*/
-/* 				<h4 class="box_header page_margin_top_section">Latest Posts</h4>*/
-/* 				<div class="vertical_carousel_container clearfix">*/
-/* 					<ul class="blog small vertical_carousel autoplay-1 scroll-1 navigation-1 easing-easeInOutQuint duration-750">*/
-/* 						<li class="post">*/
-/* 							<a href="index.html@page=post_gallery.html" title="Study Linking Illnes and Salt Leaves Researchers Doubtful">*/
-/* 								<span class="icon small gallery"></span>*/
-/* 								<img src='{{baseURL}}/assets/users/images/samples/100x100/image_06.jpg' alt='img'>*/
-/* 							</a>*/
-/* 							<div class="post_content">*/
-/* 								<h5>*/
-/* 									<a href="index.html@page=post_gallery.html" title="Study Linking Illnes and Salt Leaves Researchers Doubtful">Study Linking Illnes and Salt Leaves Researchers Doubtful</a>*/
-/* 								</h5>*/
-/* 								<ul class="post_details simple">*/
-/* 									<li class="category"><a href="index.html@page=category&amp;cat=health.html" title="HEALTH">HEALTH</a></li>*/
-/* 									<li class="date">*/
-/* 										10:11 PM, Feb 02*/
-/* 									</li>*/
-/* 								</ul>*/
-/* 							</div>*/
-/* 						</li>*/
-/* 						<li class="post">*/
-/* 							<a href="index.html@page=post_quote_2.html" title="Syrian Civilians Trapped For Months Continue To Be Evacuated">*/
-/* 								<img src='{{baseURL}}/assets/users/images/samples/100x100/image_12.jpg' alt='img'>*/
-/* 							</a>*/
-/* 							<div class="post_content">*/
-/* 								<h5>*/
-/* 									<a href="index.html@page=post_quote_2.html" title="Syrian Civilians Trapped For Months Continue To Be Evacuated">Syrian Civilians Trapped For Months Continue To Be Evacuated</a>*/
-/* 								</h5>*/
-/* 								<ul class="post_details simple">*/
-/* 									<li class="category"><a href="index.html@page=category&amp;cat=world.html" title="WORLD">WORLD</a></li>*/
-/* 									<li class="date">*/
-/* 										10:11 PM, Feb 02*/
-/* 									</li>*/
-/* 								</ul>*/
-/* 							</div>*/
-/* 						</li>*/
-/* 						<li class="post">*/
-/* 							<a href="index.html@page=post_soundcloud.html" title="Built on Brotherhood, Club Lives Up to Name">*/
-/* 								<img src='{{baseURL}}/assets/users/images/samples/100x100/image_02.jpg' alt='img'>*/
-/* 							</a>*/
-/* 							<div class="post_content">*/
-/* 								<h5>*/
-/* 									<a href="index.html@page=post_soundcloud.html" title="Built on Brotherhood, Club Lives Up to Name">Built on Brotherhood, Club Lives Up to Name</a>*/
-/* 								</h5>*/
-/* 								<ul class="post_details simple">*/
-/* 									<li class="category"><a href="index.html@page=category&amp;cat=sports.html" title="SPORTS">SPORTS</a></li>*/
-/* 									<li class="date">*/
-/* 										10:11 PM, Feb 02*/
-/* 									</li>*/
-/* 								</ul>*/
-/* 							</div>*/
-/* 						</li>*/
-/* 						<li class="post">*/
-/* 							<a href="index.html@page=post.html" title="Nuclear Fusion Closer to Becoming a Reality">*/
-/* 								<img src='{{baseURL}}/assets/users/images/samples/100x100/image_13.jpg' alt='img'>*/
-/* 							</a>*/
-/* 							<div class="post_content">*/
-/* 								<h5>*/
-/* 									<a href="index.html@page=post.html" title="Nuclear Fusion Closer to Becoming a Reality">Nuclear Fusion Closer to Becoming a Reality</a>*/
-/* 								</h5>*/
-/* 								<ul class="post_details simple">*/
-/* 									<li class="category"><a href="index.html@page=category&amp;cat=science.html" title="SCIENCE">SCIENCE</a></li>*/
-/* 									<li class="date">*/
-/* 										10:11 PM, Feb 02*/
-/* 									</li>*/
-/* 								</ul>*/
-/* 							</div>*/
-/* 						</li>*/
-/* 					</ul>*/
-/* 				</div>*/
-/* 				<h4 class="box_header page_margin_top_section">Top Authors</h4>*/
+/* 				<h4 class="box_header page_margin_top_section">Pengumuman</h4>*/
+/* 				<ul class="blog small clearfix">*/
+/* 					<li class="post">*/
+/* 						<a href="index.html@page=post.html" title="Study Linking Illnes and Salt Leaves Researchers Doubtful">*/
+/* 						</a>*/
+/* 						<div class="">*/
+/* 							<h5>*/
+/* 								<a href="index.html@page=post.html" title="Study Linking Illnes and Salt Leaves Researchers Doubtful">Study Linking Illnes and Salt Leaves Researchers Doubtful</a>*/
+/* 							</h5>*/
+/* 							<ul class="post_details simple">*/
+/* 								<li class="category"><a href="index.html@page=category&amp;cat=science.html" title="SCIENCE">SCIENCE</a></li>*/
+/* 								<li class="date">*/
+/* 									10:11 PM, Feb 02*/
+/* 								</li>*/
+/* 							</ul>*/
+/* 						</div>*/
+/* 					</li>*/
+/* 					<li class="post">*/
+/* 						<a href="index.html@page=post.html" title="Syrian Civilians Trapped For Months Continue To Be Evacuated">*/
+/* 						</a>*/
+/* 						<div class="">*/
+/* 							<h5>*/
+/* 								<a href="index.html@page=post.html" title="Syrian Civilians Trapped For Months Continue To Be Evacuated">Syrian Civilians Trapped For Months Continue To Be Evacuated</a>*/
+/* 							</h5>*/
+/* 							<ul class="post_details simple">*/
+/* 								<li class="category"><a href="index.html@page=category&amp;cat=science.html" title="SCIENCE">SCIENCE</a></li>*/
+/* 								<li class="date">*/
+/* 									10:11 PM, Feb 02*/
+/* 								</li>*/
+/* 							</ul>*/
+/* 						</div>*/
+/* 					</li>*/
+/* 					<li class="post">*/
+/* 						<a href="index.html@page=post_quote.html" title="Built on Brotherhood, Club Lives Up to Name">*/
+/* 						</a>*/
+/* 						<div class="">*/
+/* 							<h5>*/
+/* 								<a href="index.html@page=post_quote.html" title="Built on Brotherhood, Club Lives Up to Name">Built on Brotherhood, Club Lives Up to Name</a>*/
+/* 							</h5>*/
+/* 							<ul class="post_details simple">*/
+/* 								<li class="category"><a href="index.html@page=category&amp;cat=science.html" title="SCIENCE">SCIENCE</a></li>*/
+/* 								<li class="date">*/
+/* 									10:11 PM, Feb 02*/
+/* 								</li>*/
+/* 							</ul>*/
+/* 						</div>*/
+/* 					</li>*/
+/* 					<li class="post">*/
+/* 						<a href="index.html@page=post_gallery.html" title="Nuclear Fusion Closer to Becoming a Reality">*/
+/* 						</a>*/
+/* 						<div class="">*/
+/* 							<h5>*/
+/* 								<a href="index.html@page=post_gallery.html" title="Nuclear Fusion Closer to Becoming a Reality">Nuclear Fusion Closer to Becoming a Reality</a>*/
+/* 							</h5>*/
+/* 							<ul class="post_details simple">*/
+/* 								<li class="category"><a href="index.html@page=category&amp;cat=science.html" title="SCIENCE">SCIENCE</a></li>*/
+/* 								<li class="date">*/
+/* 									10:11 PM, Feb 02*/
+/* 								</li>*/
+/* 							</ul>*/
+/* 						</div>*/
+/* 					</li>*/
+/* 				</ul>*/
+/* 				<a class="more page_margin_top" href="#">LOAD MORE</a>*/
+/* 				<!-- <h4 class="box_header page_margin_top_section">Top Authors</h4>*/
 /* 				<ul class="authors rating clearfix">*/
 /* 					<li class="author">*/
 /* 						<a class="thumb" href="index.html@page=author.html" title="Debora Hilton">*/
@@ -829,7 +805,7 @@ class __TwigTemplate_956f8d2fac3b2707e1908167310a06759ac5410caf8b9569c913baee829
 /* 							<h6>ILLUSTRATOR</h6>*/
 /* 						</div>*/
 /* 					</li>*/
-/* 				</ul>*/
+/* 				</ul> -->*/
 /* 			</div>*/
 /* 		</div>*/
 /* 	</div>*/

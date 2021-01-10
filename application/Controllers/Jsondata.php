@@ -1122,7 +1122,7 @@ class Jsondata extends \CodeIgniter\Controller
 			$res = $model->updateBeritaCovid($param['id'], $data);
 
 		}else if($param['mode'] == 'delete'){
-			$res = $model->delete($param['id']);
+			$res = $model->deleteDataCovid($param['id']);
 		}
 
 
