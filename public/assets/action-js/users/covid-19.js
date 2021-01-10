@@ -21,9 +21,9 @@ function loadberitaAll(param, id){
 
           var content = '';
             for (var i = 0; i < data.length; i ++) {
-              var sliceIt = data.slice(i, 2);
+              var sliceIt = data.slice(i, i + 2);
+  
               if(sliceIt.length == 2){
-                console.log(sliceIt);
                   content += '<ul class="blog column column_1_2">';
                   content += `<li class="post">
                   							<a href="index.html@page=post_small_image.html" title="Built on Brotherhood, Club Lives Up to Name">
