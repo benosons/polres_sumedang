@@ -80,12 +80,12 @@ class __TwigTemplate_216d7fe86a9a644423c79bc1bf2f1d3566e58d613ebeba1d40b33e84d65
                         <div class=\"user-body\">
                             <div class=\"card-block\">";
         // line 45
-        if ((((isset($context["role"]) ? $context["role"] : null) == 10) || ((isset($context["role"]) ? $context["role"] : null) == 20))) {
+        if ((((isset($context["role"]) ? $context["role"] : null) == 100) || ((isset($context["role"]) ? $context["role"] : null) == 200))) {
             // line 46
             echo "                                <button onclick=\"compose()\" id=\"input-pengaduan\" class=\"btn btn-danger btn-block\"><i class=\"icofont icofont-ui-text-chat\"></i> Tulis Pengaduan</button>
                                 <button style=\"display:none;\" id=\"kirim-pengaduan\" class=\"btn btn-success btn-block\"> <i class=\"fa fa-send\"></i> Kirim</button>";
         } elseif (((        // line 48
-(isset($context["role"]) ? $context["role"] : null) == 10) || ((isset($context["role"]) ? $context["role"] : null) != 20))) {
+(isset($context["role"]) ? $context["role"] : null) == 100) || ((isset($context["role"]) ? $context["role"] : null) != 200))) {
             // line 49
             echo "                                <button id=\"balas-pengaduan\" class=\"btn btn-success btn-block\" disabled><i class=\"fa fa-send\" ></i> Kirim Balasan</button>";
         }
@@ -300,10 +300,10 @@ class __TwigTemplate_216d7fe86a9a644423c79bc1bf2f1d3566e58d613ebeba1d40b33e84d65
 /*                         </div>*/
 /*                         <div class="user-body">*/
 /*                             <div class="card-block">*/
-/*                               {% if role == 10 or role == 20 %}*/
+/*                               {% if role == 100 or role == 200 %}*/
 /*                                 <button onclick="compose()" id="input-pengaduan" class="btn btn-danger btn-block"><i class="icofont icofont-ui-text-chat"></i> Tulis Pengaduan</button>*/
 /*                                 <button style="display:none;" id="kirim-pengaduan" class="btn btn-success btn-block"> <i class="fa fa-send"></i> Kirim</button>*/
-/*                               {% elseif role == 10 or role != 20 %}*/
+/*                               {% elseif role == 100 or role != 200 %}*/
 /*                                 <button id="balas-pengaduan" class="btn btn-success btn-block" disabled><i class="fa fa-send" ></i> Kirim Balasan</button>*/
 /*                               {% endif%}*/
 /*                             </div>*/

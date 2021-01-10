@@ -139,7 +139,7 @@ class __TwigTemplate_eb220cae152954f990db1f225de0ec6376a212862b9e7e3c0a23945a64b
 \t\t}
 
 \t\t.sf-menu {
-\t\t\tpadding-left: 20rem;
+\t\t\tpadding-left: 15rem;
 \t\t}
 
 \t\t.slider li.slide img, .pr_preload {
@@ -559,7 +559,7 @@ class __TwigTemplate_eb220cae152954f990db1f225de0ec6376a212862b9e7e3c0a23945a64b
 /* 		}*/
 /* */
 /* 		.sf-menu {*/
-/* 			padding-left: 20rem;*/
+/* 			padding-left: 15rem;*/
 /* 		}*/
 /* */
 /* 		.slider li.slide img, .pr_preload {*/

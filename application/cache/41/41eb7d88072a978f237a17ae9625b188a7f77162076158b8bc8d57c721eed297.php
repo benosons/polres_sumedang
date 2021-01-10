@@ -162,7 +162,7 @@ class __TwigTemplate_65d39d51154dedace2a81a6ef745e3c2053b05338d4b8a56facc6d005c8
                 </a>
                 <ul class=\"pcoded-submenu\">";
         // line 143
-        if (((isset($context["role"]) ? $context["role"] : null) == 20)) {
+        if (((isset($context["role"]) ? $context["role"] : null) == 200)) {
             // line 144
             echo "                  <li class=\" \">
                     <a href=\"datapengaduan\" data-i18n=\"nav.form-components.form-elements-add-on\">
@@ -220,14 +220,19 @@ class __TwigTemplate_65d39d51154dedace2a81a6ef745e3c2053b05338d4b8a56facc6d005c8
                         </a>
                     </li>
                 </ul>
-            </li>
-            <li class=\"\" id=\"menu-user\">
+            </li>";
+        // line 199
+        if (((isset($context["role"]) ? $context["role"] : null) != 200)) {
+            // line 200
+            echo "            <li class=\"\" id=\"menu-user\">
                 <a href=\"#\" data-i18n=\"nav.widget.main\">
                     <span class=\"pcoded-micon\"><i class=\"ti-user\"></i></span>
                     <span class=\"pcoded-mtext\">User</span>
                 </a>
-            </li>
-        </ul>
+            </li>";
+        }
+        // line 207
+        echo "        </ul>
     </div>
 </nav>
 ";
@@ -245,7 +250,7 @@ class __TwigTemplate_65d39d51154dedace2a81a6ef745e3c2053b05338d4b8a56facc6d005c8
 
     public function getDebugInfo()
     {
-        return array (  199 => 174,  176 => 152,  167 => 144,  165 => 143,  156 => 135,  39 => 19,  37 => 18,  19 => 1,);
+        return array (  235 => 207,  227 => 200,  225 => 199,  199 => 174,  176 => 152,  167 => 144,  165 => 143,  156 => 135,  39 => 19,  37 => 18,  19 => 1,);
     }
 }
 /* <nav class="pcoded-navbar" pcoded-header-position="fixed" style="position: fixed;">*/
@@ -390,7 +395,7 @@ class __TwigTemplate_65d39d51154dedace2a81a6ef745e3c2053b05338d4b8a56facc6d005c8
 /*                     <span class="pcoded-mcaret"></span>*/
 /*                 </a>*/
 /*                 <ul class="pcoded-submenu">*/
-/*                   {% if role == 20 %}*/
+/*                   {% if role == 200 %}*/
 /*                   <li class=" ">*/
 /*                     <a href="datapengaduan" data-i18n="nav.form-components.form-elements-add-on">*/
 /*                       <span class="pcoded-micon"><i class="ti-angle-right"></i></span>*/
@@ -446,12 +451,14 @@ class __TwigTemplate_65d39d51154dedace2a81a6ef745e3c2053b05338d4b8a56facc6d005c8
 /*                     </li>*/
 /*                 </ul>*/
 /*             </li>*/
+/*             {% if role != 200 %}*/
 /*             <li class="" id="menu-user">*/
 /*                 <a href="#" data-i18n="nav.widget.main">*/
 /*                     <span class="pcoded-micon"><i class="ti-user"></i></span>*/
 /*                     <span class="pcoded-mtext">User</span>*/
 /*                 </a>*/
 /*             </li>*/
+/*             {% endif %}*/
 /*         </ul>*/
 /*     </div>*/
 /* </nav>*/

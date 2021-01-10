@@ -140,7 +140,7 @@
                     <span class="pcoded-mcaret"></span>
                 </a>
                 <ul class="pcoded-submenu">
-                  {% if role == 20 %}
+                  {% if role == 200 %}
                   <li class=" ">
                     <a href="datapengaduan" data-i18n="nav.form-components.form-elements-add-on">
                       <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
@@ -173,6 +173,7 @@
                   {% endif %}
                 </ul>
             </li>
+            {% if role != 200 %}
             <li class="pcoded-hasmenu" id="menu-informasi">
                 <a href="#" data-i18n="nav.widget.main">
                     <span class="pcoded-micon"><i class="ti-info-alt"></i></span>
@@ -202,6 +203,7 @@
                     <span class="pcoded-mtext">User</span>
                 </a>
             </li>
+            {% endif %}
         </ul>
     </div>
 </nav>
