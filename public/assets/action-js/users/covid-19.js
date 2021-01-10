@@ -89,22 +89,23 @@ function loadberita(param, id){
           let data = result.data;
             var content = '';
             for (var i = 0;(i < 3 && i < data.length); i++) {
-              console.log(data[i]);
+
               content += `<li class="slide">
-          			<img src='`+$('#baseURL').val()+'/'+data[i].path+data[i].file_name+`' alt='img'>
-          			<div class="slider_content_box">
-          				<ul class="post_details simple">
-          					<li class="category"><a href="covid" title="">COVID-19</a></li>
-          					<li class="date">
-          						`+data[i].create_date+`
-          					</li>
-          				</ul>
-          				<h2><a href="/covid?params=post&ids=`+data[i].id_parent+`" title="High Altitudes May Aid Weight Control">`+data[i].judul_berita+`</a></h2>
-          				<p class="clearfix">`+data[i].isi_berita.substring(0, 100)+`.</p>
-          			</div>
-          		</li>`;
+                      			<img src='`+$('#baseURL').val()+'/'+data[i].path+data[i].file_name+`' alt='img'>
+                      			<div class="slider_content_box">
+                      				<ul class="post_details simple">
+                      					<li class="category"><a href="covid" title="">COVID-19</a></li>
+                      					<li class="date">
+                      						`+data[i].create_date+`
+                      					</li>
+                      				</ul>
+                      				<h2><a href="/covid?params=post&ids=`+data[i].id_parent+`" title="High Altitudes May Aid Weight Control">`+data[i].judul_berita+`</a></h2>
+                      				<p class="clearfix">`+data[i].isi_berita.substring(0, 100)+`.</p>
+                      			</div>
+                      		</li>`;
             }
 
+          console.log(content);
           $('.small_slider').html(content);
 
           $(".small_slider").each(function(index){
@@ -181,6 +182,30 @@ function loadberita(param, id){
         		listContainer: $(".slider_posts_list_container"),
         		listItems: ($(".page").width()>462 ? 4 : 2)
         	});
+
+          if($(".small_slider").length)
+      		{
+      			$(".small_slider").each(function(){
+      				if($(this).hasClass("pr_initialized"))
+      				{
+      					$(this).sliderControl("destroy");
+      					var id = "small_slider";
+      					var elementClasses = $(this).attr('class').split(' ');
+      					for(var i=0; i<elementClasses.length; i++)
+      					{
+      						if(elementClasses[i].indexOf('id-')!=-1)
+      							id = elementClasses[i].replace('id-', '');
+      					}
+      					$(this).sliderControl({
+      						type: "small",
+      						appendTo: $(".slider_content_box"),
+      						listContainer: $("#" + id + ".slider_posts_list_container.small"),
+      						listItems: ($(".page").width()>462 ? 3 : 2)
+
+      					});
+      				}
+      			});
+      		}
 
 
       }
