@@ -134,6 +134,106 @@ class Jsondata extends \CodeIgniter\Controller
 		}
 	}
 
+	public function getKegiatan()
+	{
+		try
+		{
+				$request  = $this->request;
+				$param 	  = $request->getVar('param');
+				$id		 	  = $request->getVar('id');
+				$role 		= $this->data['role'];
+				$userid		= $this->data['userid'];
+
+				if($this->logged){
+					$model = new \App\Models\KegiatanModel();
+					$modelfiles = new \App\Models\FilesModel();
+
+					$data = $model->getKegiatan($param, $role, $userid, '', $id);
+
+					foreach ($data as $key => $value) {
+						$data[$key]->lampiran  = $modelfiles->getWhere(['id_parent' => $value->id])->getResult();
+					}
+
+					if($data){
+						$response = [
+							'status'   => 'sukses',
+							'code'     => '1',
+							'data' 		 => $data
+						];
+					}else{
+						$response = [
+						    'status'   => 'gagal',
+						    'code'     => '0',
+						    'data'     => 'tidak ada data',
+						];
+					}
+
+				}else{
+					$response = [
+							'status'   => 'gagal',
+							'code'     => '0',
+							'data' 		 => 'silahkan login'
+					];
+				}
+
+				header('Content-Type: application/json');
+				echo json_encode($response);
+				exit;
+			}
+		catch (\Exception $e)
+		{
+			die($e->getMessage());
+		}
+	}
+
+	public function getFiles()
+	{
+		try
+		{
+				$request  = $this->request;
+				$param 	  = $request->getVar('param');
+				$id		 	  = $request->getVar('id');
+				$role 		= $this->data['role'];
+				$userid		= $this->data['userid'];
+
+				if($this->logged){
+					$model = new \App\Models\KegiatanModel();
+					$modelfiles = new \App\Models\FilesModel();
+
+					$data = $modelfiles->getWhere(['id_parent' => $param['id']])->getResult();
+
+					if($data){
+						$response = [
+							'status'   => 'sukses',
+							'code'     => '1',
+							'data' 		 => $data
+						];
+					}else{
+						$response = [
+						    'status'   => 'gagal',
+						    'code'     => '0',
+						    'data'     => 'tidak ada data',
+						];
+					}
+
+				}else{
+					$response = [
+							'status'   => 'gagal',
+							'code'     => '0',
+							'data' 		 => 'silahkan login'
+					];
+				}
+
+				header('Content-Type: application/json');
+				echo json_encode($response);
+				exit;
+			}
+		catch (\Exception $e)
+		{
+			die($e->getMessage());
+		}
+	}
+
 	public function getBeritaCovid()
 	{
 		try
@@ -225,6 +325,76 @@ class Jsondata extends \CodeIgniter\Controller
 							foreach ($data as $key => $value) {
 								$fulldata = [];
 								$databerita = $model->loadBerita($value->satuan_code);
+								foreach ($databerita as $keyberita => $valueberita) {
+									$datafiles = $modelfiles->getWhere(['id_parent' => $valueberita->id])->getRow();
+									$obj_merged = (object) array_merge((array) $valueberita, (array) $datafiles);
+									array_push($fulldata, $obj_merged);
+								}
+								$berita[$value->satuan_name] = $fulldata;
+							}
+						}
+
+					if($berita){
+						$response = [
+							'status'   => 'sukses',
+							'code'     => '1',
+							'data' 		 => $berita
+						];
+					}else{
+						$response = [
+						    'status'   => 'gagal',
+						    'code'     => '0',
+						    'data'     => 'tidak ada data',
+						];
+					}
+
+				header('Content-Type: application/json');
+				echo json_encode($response);
+				exit;
+			}
+		catch (\Exception $e)
+		{
+			die($e->getMessage());
+		}
+	}
+
+	public function loadKegiatan()
+	{
+		try
+		{
+				$request  = $this->request;
+				$param 	  = $request->getVar('param');
+				$id		 	  = $request->getVar('id');
+				$role 		= $this->data['role'];
+				$userid		= $this->data['userid'];
+
+					$model = new \App\Models\KegiatanModel();
+					$modelparam = new \App\Models\ParamModel();
+					$modelfiles = new \App\Models\FilesModel();
+
+					if($param == 'post'){
+						$fulldata = [];
+						$databerita = $model->getKegiatanByid($id);
+						foreach ($databerita as $keyberita => $valueberita) {
+
+							$datafiles = $modelfiles->getWhere(['id_parent' => $valueberita->id])->getResult();
+							$datasatuan= $model->getSatuanByCode($valueberita->satuan);
+							$obj_merged = (object) array_merge((array) $valueberita, (array) $datasatuan);
+							$obj_merged->lampiran = (array) $datafiles;
+							array_push($fulldata, $obj_merged);
+						}
+						$berita = $fulldata;
+					}else{
+							if($param && $id){
+								$data = $modelparam->getparam($param, $id);
+							}else{
+								$data = $model->getSatuan();
+							}
+
+							$berita = [];
+							foreach ($data as $key => $value) {
+								$fulldata = [];
+								$databerita = $model->loadKegiatan($value->satuan_code);
 								foreach ($databerita as $keyberita => $valueberita) {
 									$datafiles = $modelfiles->getWhere(['id_parent' => $valueberita->id])->getRow();
 									$obj_merged = (object) array_merge((array) $valueberita, (array) $datafiles);
@@ -451,6 +621,7 @@ class Jsondata extends \CodeIgniter\Controller
 		exit;
 
 	}
+
 	public function saveBerita(){
 
 		$request  = $this->request;
@@ -469,6 +640,68 @@ class Jsondata extends \CodeIgniter\Controller
 		$data = [
 			'judul_berita' => $request->getVar('judul'),
 			'isi_berita' => $request->getVar('isi'),
+			'satuan' => $request->getVar('kode_tujuan'),
+			'create_by' => $this->data['userid'],
+			'status' => 0,
+			'create_date' => $this->now,
+			'update_date' => $this->now
+    ];
+
+		$res = $model->insert($data);
+		$id  = $model->insertID();
+
+		if (!is_dir($folder)) {
+		    mkdir($folder, 0777, TRUE);
+		}
+
+		if($id){
+			foreach($files as $idx => $img){
+
+				$stat = $img->move($folder, $img->getName());
+
+				$datalampiran = [
+					'id_parent' => $id,
+					'file_name' => $img->getName(),
+					'extention' => null,
+					'size' => $img->getSize('kb'),
+					'path' => $tipe.'/'.$bagian.'/'.$date.'/',
+					'type' => $request->getVar('param'),
+					'create_date' => $this->now,
+					'update_date' => $this->now,
+		    ];
+				$modelfiles->insert($datalampiran);
+				// $saveupload = $model->saveDataUpload($datalampiran);
+			}
+		}
+
+		$response = [
+				'status'   => 'sukses',
+				'code'     => '0',
+				'data' 		 => 'terkirim'
+		];
+		header('Content-Type: application/json');
+		echo json_encode($response);
+		exit;
+
+	}
+
+	public function saveKegiatan(){
+
+		$request  = $this->request;
+		$param 	  = $request->getVar('param');
+		$mode 	  = $request->getVar('mode');
+		$model 	  = new \App\Models\KegiatanModel();
+		$modelfiles = new \App\Models\FilesModel();
+
+		$files	  = $request->getFiles()['lampiran'];
+		$path			= FCPATH.'public';
+		$tipe			= 'uploads/users/'.$request->getVar('param').'/lampiran';
+		$bagian 	= $request->getVar('nama_tujuan');
+		$date 		= date('Y/m/d');
+		$folder		= $path.'/'.$tipe.'/'.$bagian.'/'.$date.'/';
+
+		$data = [
+			'judul_kegiatan' => $request->getVar('judul'),
 			'satuan' => $request->getVar('kode_tujuan'),
 			'create_by' => $this->data['userid'],
 			'status' => 0,
@@ -639,6 +872,51 @@ class Jsondata extends \CodeIgniter\Controller
 		$param 	  = $request->getVar('param');
 
 		$model 	  = new \App\Models\BeritaModel();
+		if($param['mode'] == 'headline'){
+			$count = $model->countStatus();
+			if($count >= 5){
+				$data = [
+					'update_date' => $this->now,
+					'update_by' 	=> $userid,
+					'status' 			=> 0,
+				];
+				$lastId = $model->getMaxId();
+				$model->update($lastId, $data);
+			}
+
+			$data = [
+				'update_date' => $this->now,
+				'update_by' 	=> $userid,
+				'status' 			=> $param['stat'],
+			];
+
+			$res = $model->update($param['id'], $data);
+
+		}else if($param['mode'] == 'delete'){
+			$res = $model->delete($param['id']);
+		}
+
+
+		$response = [
+				'status'   => 'sukses',
+				'code'     => '0',
+				'data' 		 => 'terupdate'
+		];
+		header('Content-Type: application/json');
+		echo json_encode($response);
+		exit;
+
+	}
+
+	public function actionKegiatan(){
+
+		$request  = $this->request;
+		$role 		= $this->data['role'];
+		$userid		= $this->data['userid'];
+
+		$param 	  = $request->getVar('param');
+
+		$model 	  = new \App\Models\KegiatanModel();
 		if($param['mode'] == 'headline'){
 			$count = $model->countStatus();
 			if($count >= 5){

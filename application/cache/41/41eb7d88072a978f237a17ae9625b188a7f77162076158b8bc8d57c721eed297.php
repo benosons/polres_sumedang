@@ -215,8 +215,8 @@ class __TwigTemplate_65d39d51154dedace2a81a6ef745e3c2053b05338d4b8a56facc6d005c8
                             <span class=\"pcoded-mcaret\"></span>
                         </a>
                     </li>
-                    <li class=\" \">
-                        <a href=\"form-elements-add-on.html\" data-i18n=\"nav.form-components.form-elements-add-on\">
+                    <li class=\" \" id=\"inputkegiatan\">
+                        <a href=\"inputkegiatan\" data-i18n=\"nav.form-components.form-elements-add-on\">
                             <span class=\"pcoded-micon\"><i class=\"ti-angle-right\"></i></span>
                             <span class=\"pcoded-mtext\">Kegiatan</span>
                             <span class=\"pcoded-mcaret\"></span>
@@ -466,8 +466,8 @@ class __TwigTemplate_65d39d51154dedace2a81a6ef745e3c2053b05338d4b8a56facc6d005c8
 /*                             <span class="pcoded-mcaret"></span>*/
 /*                         </a>*/
 /*                     </li>*/
-/*                     <li class=" ">*/
-/*                         <a href="form-elements-add-on.html" data-i18n="nav.form-components.form-elements-add-on">*/
+/*                     <li class=" " id="inputkegiatan">*/
+/*                         <a href="inputkegiatan" data-i18n="nav.form-components.form-elements-add-on">*/
 /*                             <span class="pcoded-micon"><i class="ti-angle-right"></i></span>*/
 /*                             <span class="pcoded-mtext">Kegiatan</span>*/
 /*                             <span class="pcoded-mcaret"></span>*/

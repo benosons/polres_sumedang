@@ -113,6 +113,17 @@ class View extends \CodeIgniter\Controller
 				}
 	}
 
+	public function inputkegiatan()
+	{
+				if($this->logged){
+					helper('form');
+					$this->data['script'] = $this->data['baseURL'].'/assets/action-js/admin/informasi/inputkegiatan.js';
+					return \Twig::instance()->display('admin/informasi/inputkegiatan.html', $this->data);
+				}else{
+					return redirect('home');
+				}
+	}
+
 	public function berita()
 	{
 					helper('form');
@@ -147,6 +158,42 @@ class View extends \CodeIgniter\Controller
 
 					$this->data['script'] = $this->data['baseURL'].'/assets/action-js/users/informasi/berita.js';
 					return \Twig::instance()->display('users/informasi/berita.html', $this->data);
+	}
+
+	public function kegiatan()
+	{
+					helper('form');
+					helper('url');
+
+					$uri = current_url(true);
+
+					if($_SERVER['QUERY_STRING']){
+						parse_str($_SERVER['QUERY_STRING'], $get_array);
+						$params = isset ($get_array['params']) ? $get_array['params']:'';
+						$ids 		= isset ($get_array['ids']) ? $get_array['ids']:'';
+
+						if(!$params || !$ids){
+							$this->data['script'] = $this->data['baseURL'].'/assets/action-js/users/informasi/kegiatan.js';
+							return \Twig::instance()->display('users/informasi/kegiatan.html', $this->data);
+						}
+
+						$this->data['params'] = $params;
+						$this->data['ids'] = $ids;
+
+						if($params == 'satuan'){
+							$this->data['script'] = $this->data['baseURL'].'/assets/action-js/users/informasi/kegiatan-satuan.js';
+							return \Twig::instance()->display('users/informasi/kegiatan-satuan.html', $this->data);
+						}else if($params == 'post'){
+							$this->data['script'] = $this->data['baseURL'].'/assets/action-js/users/informasi/kegiatan-post.js';
+							return \Twig::instance()->display('users/informasi/kegiatan-post.html', $this->data);
+						}else{
+							$this->data['script'] = $this->data['baseURL'].'/assets/action-js/users/informasi/kegiatan.js';
+							return \Twig::instance()->display('users/informasi/kegiatan.html', $this->data);
+						}
+					}
+
+					$this->data['script'] = $this->data['baseURL'].'/assets/action-js/users/informasi/kegiatan.js';
+					return \Twig::instance()->display('users/informasi/kegiatan.html', $this->data);
 	}
 
 
