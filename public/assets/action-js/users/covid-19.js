@@ -23,7 +23,7 @@ function loadberitaAll(param, id){
             for (var i = 0; i < data.length; i ++) {
               var sliceIt = data.slice(i, 2);
               if(sliceIt.length == 2){
-                
+                console.log(sliceIt);
                   content += '<ul class="blog column column_1_2">';
                   content += `<li class="post">
                   							<a href="index.html@page=post_small_image.html" title="Built on Brotherhood, Club Lives Up to Name">
@@ -31,7 +31,7 @@ function loadberitaAll(param, id){
                   							</a>
                   							<div class="post_content">
                   								<h2 class="with_number">
-                  									<a href="/covid?params=post&ids=`+sliceIt[0].id_parent+`" title="">`+sliceIt[0].judul_berita+`</a>
+                  									<a href="/covid?params=post&ids=`+sliceIt[0].id+`" title="">`+sliceIt[0].judul_berita+`</a>
                   									<a class="comments_number" href="index.html@page=post.html#comments_list" title="2 comments">2<span class="arrow_comments"></span></a>
                   								</h2>
                   								<ul class="post_details">
@@ -41,7 +41,7 @@ function loadberitaAll(param, id){
                   									</li>
                   								</ul>
                   								`+sliceIt[0].isi_berita.substring(0, 100)+`...
-                  								<a class="read_more" href="/covid?params=post&ids=`+sliceIt[0].id_parent+`" title="Read more"><span class="arrow"></span><span>READ MORE</span></a>
+                  								<a class="read_more" href="/covid?params=post&ids=`+sliceIt[0].id+`" title="Read more"><span class="arrow"></span><span>READ MORE</span></a>
                   							</div>
                   						</li>`;
                   content += `<li class="post">
@@ -50,7 +50,7 @@ function loadberitaAll(param, id){
                   							</a>
                   							<div class="post_content">
                   								<h2 class="with_number">
-                  									<a href="/covid?params=post&ids=`+sliceIt[1].id_parent+`" title="">`+sliceIt[1].judul_berita+`</a>
+                  									<a href="/covid?params=post&ids=`+sliceIt[1].id+`" title="">`+sliceIt[1].judul_berita+`</a>
                   									<a class="comments_number" href="index.html@page=post.html#comments_list" title="2 comments">2<span class="arrow_comments"></span></a>
                   								</h2>
                   								<ul class="post_details">
@@ -60,7 +60,7 @@ function loadberitaAll(param, id){
                   									</li>
                   								</ul>
                   								`+sliceIt[1].isi_berita.substring(0, 100)+`...
-                  								<a class="read_more" href="/covid?params=post&ids=`+sliceIt[1].id_parent+`" title="Read more"><span class="arrow"></span><span>READ MORE</span></a>
+                  								<a class="read_more" href="/covid?params=post&ids=`+sliceIt[1].id+`" title="Read more"><span class="arrow"></span><span>READ MORE</span></a>
                   							</div>
                   						</li>`;
                     content += '</ul>';
