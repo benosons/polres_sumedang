@@ -105,107 +105,108 @@ function loadberita(param, id){
                       		</li>`;
             }
 
-          console.log(content);
-          $('.small_slider').html(content);
+          $('.small_slider').html(content).ready(function () {
+            $(".small_slider").each(function(index){
+              $(this).addClass("pr_preloader_ss_" + index);
+              //$(".pr_preloader_ss_" + index + " img:first").attr('src',$(".pr_preloader_ss_" + index + " img:first").attr('src') + '?i='+getRandom(1,100000));
+              //$(".pr_preloader_ss_" + index + " img:first").before("<span class='pr_preloader'></span>");
+              $(".pr_preloader_ss_" + index).before("<span class='pr_preloader'></span>");
+              $(".pr_preloader_ss_" + index + " img:first").one("load", function(){
+                $(".pr_preloader_ss_" + index).prev(".pr_preloader").remove();
+                $(".pr_preloader_ss_" + index).fadeTo("slow", 1, function(){
+                  $(this).css("opacity", "");
+                });
 
-          $(".small_slider").each(function(index){
-        		$(this).addClass("pr_preloader_ss_" + index);
-        		//$(".pr_preloader_ss_" + index + " img:first").attr('src',$(".pr_preloader_ss_" + index + " img:first").attr('src') + '?i='+getRandom(1,100000));
-        		//$(".pr_preloader_ss_" + index + " img:first").before("<span class='pr_preloader'></span>");
-        		$(".pr_preloader_ss_" + index).before("<span class='pr_preloader'></span>");
-        		$(".pr_preloader_ss_" + index + " img:first").one("load", function(){
-        			$(".pr_preloader_ss_" + index).prev(".pr_preloader").remove();
-        			$(".pr_preloader_ss_" + index).fadeTo("slow", 1, function(){
-        				$(this).css("opacity", "");
-        			});
+                /*$(this).prev(".pr_preloader").remove();
+                $(this).fadeTo("slow", 1, function(){
+                  $(this).css("opacity", "");
+                });*/
 
-        			/*$(this).prev(".pr_preloader").remove();
-        			$(this).fadeTo("slow", 1, function(){
-        				$(this).css("opacity", "");
-        			});*/
+                var id = "small_slider";
+                var elementClasses = $(".pr_preloader_ss_" + index).attr('class').split(' ');
+                for(var i=0; i<elementClasses.length; i++)
+                {
+                  if(elementClasses[i].indexOf('id-')!=-1)
+                    id = elementClasses[i].replace('id-', '');
+                }
+                $(".pr_preloader_ss_" + index).carouFredSel({
+                  items: {
+                    visible: 1,
+                    minimum: 1
+                  },
+                  scroll: {
+                    items: 1,
+                    easing: "easeInOutQuint",
+                    duration: 750
+                  },
+                  auto: {
+                    play: false,
+                    timeoutDuration: 500,
+                    duration: 5000
+                  }/*,
+                  swipe: {
+                    items: 1,
+                    easing: "easeInOutQuint",
+                    onTouch: true,
+                    onMouse: false,
+                    options: {
+                      allowPageScroll: "vertical",
+                      excludedElements:"button, input, select, textarea, .noSwipe"
+                    },
+                    duration: 750
+                  }*/
+                }/*,
+                {
+                  wrapper: {
+                    classname: "caroufredsel_wrapper caroufredsel_wrapper_small_slider"
+                  }
+                }*/);
+                $(".pr_preloader_ss_" + index + " li img").css("display", "block");
+                $(".pr_preloader_ss_" + index + " li .icon").css("display", "block");
+                $(".pr_preloader_ss_" + index).sliderControl({
+                  type: "small",
+                  appendTo: $(".slider_content_box"),
+                  listContainer: $("#" + id + ".slider_posts_list_container.small"),
+                  listItems: ($(".page").width()>462 ? 3 : 2)
+                });
+              }).each(function(){
+                if(this.complete)
+                  $(this).load();
+              });
+            });
 
-        			var id = "small_slider";
-        			var elementClasses = $(".pr_preloader_ss_" + index).attr('class').split(' ');
-        			for(var i=0; i<elementClasses.length; i++)
-        			{
-        				if(elementClasses[i].indexOf('id-')!=-1)
-        					id = elementClasses[i].replace('id-', '');
-        			}
-        			$(".pr_preloader_ss_" + index).carouFredSel({
-        				items: {
-        					visible: 1,
-        					minimum: 1
-        				},
-        				scroll: {
-        					items: 1,
-        					easing: "easeInOutQuint",
-        					duration: 750
-        				},
-        				auto: {
-        					play: false,
-        					timeoutDuration: 500,
-        					duration: 5000
-        				}/*,
-        				swipe: {
-        					items: 1,
-        					easing: "easeInOutQuint",
-        					onTouch: true,
-        					onMouse: false,
-        					options: {
-        						allowPageScroll: "vertical",
-        						excludedElements:"button, input, select, textarea, .noSwipe"
-        					},
-        					duration: 750
-        				}*/
-        			}/*,
-        			{
-        				wrapper: {
-        					classname: "caroufredsel_wrapper caroufredsel_wrapper_small_slider"
-        				}
-        			}*/);
-        			$(".pr_preloader_ss_" + index + " li img").css("display", "block");
-        			$(".pr_preloader_ss_" + index + " li .icon").css("display", "block");
-        			$(".pr_preloader_ss_" + index).sliderControl({
-        				type: "small",
-        				appendTo: $(".slider_content_box"),
-        				listContainer: $("#" + id + ".slider_posts_list_container.small"),
-        				listItems: ($(".page").width()>462 ? 3 : 2)
-        			});
-        		}).each(function(){
-        			if(this.complete)
-        				$(this).load();
-        		});
-        	});
+            $(".slider").sliderControl({
+              appendTo: $(".slider_content_box"),
+              listContainer: $(".slider_posts_list_container"),
+              listItems: ($(".page").width()>462 ? 4 : 2)
+            });
 
-        	$(".slider").sliderControl({
-        		appendTo: $(".slider_content_box"),
-        		listContainer: $(".slider_posts_list_container"),
-        		listItems: ($(".page").width()>462 ? 4 : 2)
-        	});
+            if($(".small_slider").length)
+            {
+              $(".small_slider").each(function(){
+                if($(this).hasClass("pr_initialized"))
+                {
+                  $(this).sliderControl("destroy");
+                  var id = "small_slider";
+                  var elementClasses = $(this).attr('class').split(' ');
+                  for(var i=0; i<elementClasses.length; i++)
+                  {
+                    if(elementClasses[i].indexOf('id-')!=-1)
+                      id = elementClasses[i].replace('id-', '');
+                  }
+                  $(this).sliderControl({
+                    type: "small",
+                    appendTo: $(".slider_content_box"),
+                    listContainer: $("#" + id + ".slider_posts_list_container.small"),
+                    listItems: ($(".page").width()>462 ? 3 : 2)
 
-          if($(".small_slider").length)
-      		{
-      			$(".small_slider").each(function(){
-      				if($(this).hasClass("pr_initialized"))
-      				{
-      					$(this).sliderControl("destroy");
-      					var id = "small_slider";
-      					var elementClasses = $(this).attr('class').split(' ');
-      					for(var i=0; i<elementClasses.length; i++)
-      					{
-      						if(elementClasses[i].indexOf('id-')!=-1)
-      							id = elementClasses[i].replace('id-', '');
-      					}
-      					$(this).sliderControl({
-      						type: "small",
-      						appendTo: $(".slider_content_box"),
-      						listContainer: $("#" + id + ".slider_posts_list_container.small"),
-      						listItems: ($(".page").width()>462 ? 3 : 2)
+                  });
+                }
+              });
+            }
+          });
 
-      					});
-      				}
-      			});
-      		}
+
 
 
       }
