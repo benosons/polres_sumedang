@@ -100,7 +100,7 @@ function loadberita(param, id){
                       					</li>
                       				</ul>
                       				<h2><a href="/covid?params=post&ids=`+data[i].id_parent+`" title="High Altitudes May Aid Weight Control">`+data[i].judul_berita+`</a></h2>
-                      				<p class="clearfix">`+data[i].isi_berita.substring(0, 100)+`.</p>
+                      				
                       			</div>
                       		</li>`;
             }
