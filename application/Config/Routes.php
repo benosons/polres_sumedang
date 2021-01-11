@@ -87,12 +87,14 @@ $routes->add('inputberita', 'View::inputberita');
 $routes->add('satuan', 'View::satuan');
 $routes->add('beritacovid', 'View::beritacovid');
 $routes->add('inputkegiatan', 'View::inputkegiatan');
+$routes->add('listpelayanan', 'View::listpelayanan');
 
 // User
 $routes->get('berita', 'View::berita');
 $routes->get('kegiatan', 'View::kegiatan');
 $routes->get('profile', 'View::profile');
 $routes->add('covid', 'View::covid');
+$routes->add('pelayanan', 'View::pelayanan');
 
 $routes->add('auth', 'Auth::auth');
 $routes->add('reg', 'Auth::reg');
@@ -118,6 +120,8 @@ $routes->post('actionKegiatan', 'Jsondata::actionKegiatan');
 $routes->post('actionBeritaCovid', 'Jsondata::actionBeritaCovid');
 $routes->post('loadBeritaHeadline', 'Jsondata::loadBeritaHeadline');
 $routes->post('loadBeritaHeadlineCovid', 'Jsondata::loadBeritaHeadlineCovid');
+$routes->post('addKonten', 'Jsondata::addKonten');
+$routes->post('loadKonten', 'Jsondata::loadKonten');
 
 /**
  * --------------------------------------------------------------------

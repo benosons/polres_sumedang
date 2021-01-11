@@ -476,23 +476,23 @@ SATUAN FUNGSI
 </li>
 </ul>
 </li>
-<li class=\"submenu\">
-<a href=\"index.html@page=blog.html\" title=\"Blog\">
+<li class=\"submenu\" id=\"menu-pelayanan\">
+<a href=\"#\" title=\"Blog\">
 PELAYANAN
 </a>
 <ul>
 <li class=\"submenu\">
-\t<a href=\"index.html@page=home_3.html#\" title=\"Blog 1 column\">
+\t<a href=\"#\" title=\"Blog 1 column\">
 \t\tLANTAS
 \t</a>
 \t<ul>
 \t\t<li>
-\t\t\t<a href=\"index.html@page=blog.html\" title=\"Blog With Right Sidebar\">
+\t\t\t<a href=\"/pelayanan?params=sim\" title=\"Blog With Right Sidebar\">
 \t\t\t\tSIM
 \t\t\t</a>
 \t\t</li>
 \t\t<li>
-\t\t\t<a href=\"index.html@page=blog_left_sidebar.html\" title=\"Blog With Left Sidebar\">
+\t\t\t<a href=\"/pelayanan?params=tilang\" title=\"Blog With Left Sidebar\">
 \t\t\t\tTILANG
 \t\t\t</a>
 \t\t</li>
@@ -582,27 +582,17 @@ INOVASI
 <ul>
 <li>
 \t<a href=\"index.html@page=category&amp;cat=health.html\" title=\"Health\">
-\t\tHealth
+\t\tinovasi #1
 \t</a>
 </li>
 <li>
 \t<a href=\"index.html@page=category&amp;cat=science.html\" title=\"Science\">
-\t\tScience
+\t\tinovasi #2
 \t</a>
 </li>
 <li>
 \t<a href=\"index.html@page=category&amp;cat=sports.html\" title=\"Sports\">
-\t\tSports
-\t</a>
-</li>
-<li>
-\t<a href=\"index.html@page=category&amp;cat=world.html\" title=\"World\">
-\t\tWorld
-\t</a>
-</li>
-<li>
-\t<a href=\"index.html@page=category&amp;cat=lifestyle.html\" title=\"Lifestyle\">
-\t\tLifestyle
+\t\tinovasi #3
 \t</a>
 </li>
 </ul>
@@ -614,7 +604,7 @@ HUBUNGI KAMI
 <ul class=\"expand_left_contact\">
 <li>
 \t<a href=\"";
-        // line 589
+        // line 579
         echo twig_escape_filter($this->env, (isset($context["baseUrl"]) ? $context["baseUrl"] : null), "html", null, true);
         echo "login\" title=\"Contact Style 2\">
 \t\t<i class=\"\" > </i> LOGIN USER
@@ -900,7 +890,7 @@ HUBUNGI KAMI
 
     public function getDebugInfo()
     {
-        return array (  618 => 589,  573 => 547,  558 => 535,  550 => 530,  19 => 1,);
+        return array (  608 => 579,  573 => 547,  558 => 535,  550 => 530,  19 => 1,);
     }
 }
 /* <div id="menu-bar" class="menu_container clearfix sticky style_5">*/
@@ -1363,23 +1353,23 @@ HUBUNGI KAMI
 /* </li>*/
 /* </ul>*/
 /* </li>*/
-/* <li class="submenu">*/
-/* <a href="index.html@page=blog.html" title="Blog">*/
+/* <li class="submenu" id="menu-pelayanan">*/
+/* <a href="#" title="Blog">*/
 /* PELAYANAN*/
 /* </a>*/
 /* <ul>*/
 /* <li class="submenu">*/
-/* 	<a href="index.html@page=home_3.html#" title="Blog 1 column">*/
+/* 	<a href="#" title="Blog 1 column">*/
 /* 		LANTAS*/
 /* 	</a>*/
 /* 	<ul>*/
 /* 		<li>*/
-/* 			<a href="index.html@page=blog.html" title="Blog With Right Sidebar">*/
+/* 			<a href="/pelayanan?params=sim" title="Blog With Right Sidebar">*/
 /* 				SIM*/
 /* 			</a>*/
 /* 		</li>*/
 /* 		<li>*/
-/* 			<a href="index.html@page=blog_left_sidebar.html" title="Blog With Left Sidebar">*/
+/* 			<a href="/pelayanan?params=tilang" title="Blog With Left Sidebar">*/
 /* 				TILANG*/
 /* 			</a>*/
 /* 		</li>*/
@@ -1460,27 +1450,17 @@ HUBUNGI KAMI
 /* <ul>*/
 /* <li>*/
 /* 	<a href="index.html@page=category&amp;cat=health.html" title="Health">*/
-/* 		Health*/
+/* 		inovasi #1*/
 /* 	</a>*/
 /* </li>*/
 /* <li>*/
 /* 	<a href="index.html@page=category&amp;cat=science.html" title="Science">*/
-/* 		Science*/
+/* 		inovasi #2*/
 /* 	</a>*/
 /* </li>*/
 /* <li>*/
 /* 	<a href="index.html@page=category&amp;cat=sports.html" title="Sports">*/
-/* 		Sports*/
-/* 	</a>*/
-/* </li>*/
-/* <li>*/
-/* 	<a href="index.html@page=category&amp;cat=world.html" title="World">*/
-/* 		World*/
-/* 	</a>*/
-/* </li>*/
-/* <li>*/
-/* 	<a href="index.html@page=category&amp;cat=lifestyle.html" title="Lifestyle">*/
-/* 		Lifestyle*/
+/* 		inovasi #3*/
 /* 	</a>*/
 /* </li>*/
 /* </ul>*/

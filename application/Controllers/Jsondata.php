@@ -1138,4 +1138,136 @@ class Jsondata extends \CodeIgniter\Controller
 
 	}
 
+	public function addKonten(){
+
+		$request  = $this->request;
+		$param 	  = $request->getVar('param');
+		$mode 	  = $request->getVar('mode');
+		$model 	  = new \App\Models\KontenModel();
+		$modelfiles = new \App\Models\FilesModel();
+
+		$files	  = $request->getFiles()['img'];
+		$path			= FCPATH.'public';
+		$tipe			= 'uploads/users/pelayanan/img';
+		// $bagian 	= $request->getVar('nama_tujuan');
+		$date 		= date('Y/m/d');
+		$folder		= $path.'/'.$tipe.'/'.$date.'/';
+
+		$data = [
+			'satuan_pelayanan' => $request->getVar('satuan'),
+			'jenis_pelayanan' => $request->getVar('jenis'),
+			'konten' => $request->getVar('konten'),
+			'banner' => null,
+			'create_by' => $this->data['userid'],
+			'create_date' => $this->now,
+    ];
+
+		$res = $model->insert($data);
+		$id  = $model->insertID();
+
+		if (!is_dir($folder)) {
+		    mkdir($folder, 0777, TRUE);
+		}
+		// print_r($id);die;
+		if($id){
+			foreach($files as $idx => $img){
+
+				$stat = $img->move($folder, $img->getName());
+
+				$datalampiran = [
+					'id_parent' => $id,
+					'file_name' => $img->getName(),
+					'extention' => null,
+					'size' => $img->getSize('kb'),
+					'path' => $tipe.'/'.$date.'/',
+					'type' => 'pelayanan',
+					'create_date' => $this->now,
+					'update_date' => $this->now,
+		    ];
+				$modelfiles->insert($datalampiran);
+				// $saveupload = $model->saveDataUpload($datalampiran);
+			}
+		}
+
+		$response = [
+				'status'   => 'sukses',
+				'code'     => '0',
+				'data' 		 => 'terkirim'
+		];
+		header('Content-Type: application/json');
+		echo json_encode($response);
+		exit;
+
+	}
+
+	public function loadKonten()
+	{
+		try
+		{
+				$request  = $this->request;
+				$param 	  = $request->getVar('param');
+				$id		 	  = $request->getVar('id');
+				$role 		= $this->data['role'];
+				$userid		= $this->data['userid'];
+
+					$model = new \App\Models\KontenModel();
+					$modelparam = new \App\Models\ParamModel();
+					$modelfiles = new \App\Models\FilesModel();
+
+					if($param == 'post'){
+						$fulldata = [];
+						$databerita = $model->getKontenByid($id);
+						foreach ($databerita as $keyberita => $valueberita) {
+
+							$datafiles = $modelfiles->getWhere(['id_parent' => $valueberita->id])->getResult();
+							$datasatuan= $model->getSatuanByCode($valueberita->satuan_pelayanan);
+							$obj_merged = (object) array_merge((array) $valueberita, (array) $datasatuan);
+							$obj_merged->lampiran = (array) $datafiles;
+							array_push($fulldata, $obj_merged);
+						}
+						$berita = $fulldata;
+					}else{
+							if($param && $id){
+								$data = $modelparam->getparam($param, $id);
+							}else{
+								$data = $model->getSatuan();
+							}
+
+							$berita = [];
+							foreach ($data as $key => $value) {
+								$fulldata = [];
+								$databerita = $model->loadKegiatan($value->satuan_code);
+								foreach ($databerita as $keyberita => $valueberita) {
+									$datafiles = $modelfiles->getWhere(['id_parent' => $valueberita->id])->getRow();
+									$obj_merged = (object) array_merge((array) $valueberita, (array) $datafiles);
+									array_push($fulldata, $obj_merged);
+								}
+								$berita[$value->satuan_name] = $fulldata;
+							}
+						}
+
+					if($berita){
+						$response = [
+							'status'   => 'sukses',
+							'code'     => '1',
+							'data' 		 => $berita
+						];
+					}else{
+						$response = [
+						    'status'   => 'gagal',
+						    'code'     => '0',
+						    'data'     => 'tidak ada data',
+						];
+					}
+
+				header('Content-Type: application/json');
+				echo json_encode($response);
+				exit;
+			}
+		catch (\Exception $e)
+		{
+			die($e->getMessage());
+		}
+	}
+
 }
