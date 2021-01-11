@@ -36,7 +36,7 @@ class __TwigTemplate_65d39d51154dedace2a81a6ef745e3c2053b05338d4b8a56facc6d005c8
         // line 18
         if (((isset($context["role"]) ? $context["role"] : null) == "100")) {
             // line 19
-            echo "            <li class=\"pcoded-hasmenu\">
+            echo "            <!-- <li class=\"pcoded-hasmenu\">
                 <a href=\"javascript:void(0)\" data-i18n=\"nav.form-components.main\">
                     <span class=\"pcoded-micon\"><i class=\"ti-layers-alt\"></i></span>
                     <span class=\"pcoded-mtext\">Profile</span>
@@ -73,7 +73,7 @@ class __TwigTemplate_65d39d51154dedace2a81a6ef745e3c2053b05338d4b8a56facc6d005c8
                     </li>
 
                 </ul>
-            </li>
+            </li> -->
             <li class=\"\" id=\"menu-satuan\">
                 <a href=\"satuan\" data-i18n=\"nav.form-components.main\">
                     <span class=\"pcoded-micon\"><i class=\"ti-bookmark-alt\"></i></span>
@@ -271,7 +271,7 @@ class __TwigTemplate_65d39d51154dedace2a81a6ef745e3c2053b05338d4b8a56facc6d005c8
 /*                 </a>*/
 /*             </li>*/
 /*             {% if role == '100'%}*/
-/*             <li class="pcoded-hasmenu">*/
+/*             <!-- <li class="pcoded-hasmenu">*/
 /*                 <a href="javascript:void(0)" data-i18n="nav.form-components.main">*/
 /*                     <span class="pcoded-micon"><i class="ti-layers-alt"></i></span>*/
 /*                     <span class="pcoded-mtext">Profile</span>*/
@@ -308,7 +308,7 @@ class __TwigTemplate_65d39d51154dedace2a81a6ef745e3c2053b05338d4b8a56facc6d005c8
 /*                     </li>*/
 /* */
 /*                 </ul>*/
-/*             </li>*/
+/*             </li> -->*/
 /*             <li class="" id="menu-satuan">*/
 /*                 <a href="satuan" data-i18n="nav.form-components.main">*/
 /*                     <span class="pcoded-micon"><i class="ti-bookmark-alt"></i></span>*/
