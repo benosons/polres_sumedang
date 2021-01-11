@@ -29,8 +29,13 @@ $.ajax({
         let data = result.data;
         var li = '';
         for (var i = 0; i < data.length; i++) {
+            if(data[i].satuan_name == 'lantas'){
+              var href = 'https://korlantas.polri.go.id/';
+            }else{
+              var href = '#';
+            }
             li += `<li>
-                  	<a href="#" title="Post Default">
+                  	<a href="`+href+`" target="_blank" title="Post Default">
                   		SAT `+data[i].satuan_name.toUpperCase()+`
                   	</a>
                   </li>`;
