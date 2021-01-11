@@ -581,8 +581,8 @@ INOVASI
 </a>
 <ul>
 <li>
-\t<a href=\"index.html@page=category&amp;cat=health.html\" title=\"Health\">
-\t\tinovasi #1
+\t<a href=\"https://drive.google.com/file/d/1Eon4mv5UAHXfwWy7fas2hqmZUsYPR7li/view?usp=sharing\" target=\"_blank\" title=\"Health\">
+\t\tINFOPAKSIN
 \t</a>
 </li>
 <li>
@@ -1449,8 +1449,8 @@ HUBUNGI KAMI
 /* </a>*/
 /* <ul>*/
 /* <li>*/
-/* 	<a href="index.html@page=category&amp;cat=health.html" title="Health">*/
-/* 		inovasi #1*/
+/* 	<a href="https://drive.google.com/file/d/1Eon4mv5UAHXfwWy7fas2hqmZUsYPR7li/view?usp=sharing" target="_blank" title="Health">*/
+/* 		INFOPAKSIN*/
 /* 	</a>*/
 /* </li>*/
 /* <li>*/
