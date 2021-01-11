@@ -182,7 +182,7 @@ class __TwigTemplate_a4d789e0726c1eb85a72d708dfcf9f6595c63c6091e395aeba8569b2f68
 \t\t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t</li></ul></div><a class=\"slider_control down slider_control_0\" href=\"#\" title=\"next\" style=\"display: block;\"></a>
 \t\t\t\t\t\t\t</div>
-\t\t\t\t\t\t\t<h4 class=\"box_header page_margin_top_section\">Videos</h4>
+\t\t\t\t\t\t\t<!-- <h4 class=\"box_header page_margin_top_section\">Videos</h4>
 \t\t\t\t\t\t\t<div class=\"horizontal_carousel_container big page_margin_top\">
 \t\t\t\t\t\t\t\t<a class=\"slider_control left slider_control_2\" href=\"#\" title=\"prev\" style=\"display: block;\"></a><div class=\"caroufredsel_wrapper caroufredsel_wrapper_hortizontal_carousel\" style=\"display: block; text-align: start; float: none; position: relative; inset: auto; z-index: auto; width: 360px; height: 329px; margin: 0px; overflow: hidden;\"><ul class=\"blog horizontal_carousel visible-1 autoplay-0 scroll-1 navigation-1 easing-easeInOutQuint duration-750 pr_preloader_2\" style=\"display: block; text-align: left; float: none; position: absolute; inset: 0px auto auto 0px; margin: 0px; width: 2520px; height: 329px;\">
 \t\t\t\t\t\t\t\t\t<li class=\"post\">
@@ -234,7 +234,7 @@ class __TwigTemplate_a4d789e0726c1eb85a72d708dfcf9f6595c63c6091e395aeba8569b2f68
 \t\t\t\t\t\t\t\t\t\t</ul>
 \t\t\t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t\t\t</ul></div><a class=\"slider_control right slider_control_2\" href=\"#\" title=\"next\" style=\"display: block;\"></a>
-\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t\t</div> -->
 \t\t\t\t\t\t</div>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
@@ -407,7 +407,7 @@ class __TwigTemplate_a4d789e0726c1eb85a72d708dfcf9f6595c63c6091e395aeba8569b2f68
 /* 										</div>*/
 /* 									</li></ul></div><a class="slider_control down slider_control_0" href="#" title="next" style="display: block;"></a>*/
 /* 							</div>*/
-/* 							<h4 class="box_header page_margin_top_section">Videos</h4>*/
+/* 							<!-- <h4 class="box_header page_margin_top_section">Videos</h4>*/
 /* 							<div class="horizontal_carousel_container big page_margin_top">*/
 /* 								<a class="slider_control left slider_control_2" href="#" title="prev" style="display: block;"></a><div class="caroufredsel_wrapper caroufredsel_wrapper_hortizontal_carousel" style="display: block; text-align: start; float: none; position: relative; inset: auto; z-index: auto; width: 360px; height: 329px; margin: 0px; overflow: hidden;"><ul class="blog horizontal_carousel visible-1 autoplay-0 scroll-1 navigation-1 easing-easeInOutQuint duration-750 pr_preloader_2" style="display: block; text-align: left; float: none; position: absolute; inset: 0px auto auto 0px; margin: 0px; width: 2520px; height: 329px;">*/
 /* 									<li class="post">*/
@@ -459,7 +459,7 @@ class __TwigTemplate_a4d789e0726c1eb85a72d708dfcf9f6595c63c6091e395aeba8569b2f68
 /* 										</ul>*/
 /* 									</li>*/
 /* 								</ul></div><a class="slider_control right slider_control_2" href="#" title="next" style="display: block;"></a>*/
-/* 							</div>*/
+/* 							</div> -->*/
 /* 						</div>*/
 /* 					</div>*/
 /* 				</div>*/
