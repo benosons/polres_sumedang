@@ -236,6 +236,7 @@ class __TwigTemplate_956f8d2fac3b2707e1908167310a06759ac5410caf8b9569c913baee829
 \t\t\t<div class=\"column column_1_3\">
 \t\t\t\t<h4 class=\"box_header\">Informasi COVID-19</h4>
 \t\t\t\t<ul class=\"blog small_margin clearfix\">
+\t\t\t\t\t<iframe src=\"kawalcovid\" width=\"100%\" height=\"380\" scrolling=\"no\" frameborder=\"0\"></iframe>
 \t\t\t\t\t<div class=\"kopi-covid\"> </div>
 \t\t\t\t</ul>
 \t\t\t\t<h4 class=\"box_header page_margin_top_section\">Pengumuman COVID-19</h4>
@@ -307,7 +308,7 @@ class __TwigTemplate_956f8d2fac3b2707e1908167310a06759ac5410caf8b9569c913baee829
 \t\t\t\t\t<li class=\"author\">
 \t\t\t\t\t\t<a class=\"thumb\" href=\"index.html@page=author.html\" title=\"Debora Hilton\">
 \t\t\t\t\t\t\t<img src='";
-        // line 261
+        // line 262
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/Team_100x100/image_01.jpg' alt='img'>
 \t\t\t\t\t\t\t<span class=\"number animated_element\" data-value=\"34\"></span>
@@ -320,7 +321,7 @@ class __TwigTemplate_956f8d2fac3b2707e1908167310a06759ac5410caf8b9569c913baee829
 \t\t\t\t\t<li class=\"author\">
 \t\t\t\t\t\t<a class=\"thumb\" href=\"index.html@page=author.html\" title=\"Anna Shubina\">
 \t\t\t\t\t\t\t<img src='";
-        // line 271
+        // line 272
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/Team_100x100/image_02.jpg' alt='img'>
 \t\t\t\t\t\t\t<span class=\"number animated_element\" data-value=\"25\"></span>
@@ -333,7 +334,7 @@ class __TwigTemplate_956f8d2fac3b2707e1908167310a06759ac5410caf8b9569c913baee829
 \t\t\t\t\t<li class=\"author\">
 \t\t\t\t\t\t<a class=\"thumb\" href=\"index.html@page=author.html\" title=\"Liam Holden\">
 \t\t\t\t\t\t\t<img src='";
-        // line 281
+        // line 282
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/Team_100x100/image_03.jpg' alt='img'>
 \t\t\t\t\t\t\t<span class=\"number animated_element\" data-value=\"9\"></span>
@@ -346,7 +347,7 @@ class __TwigTemplate_956f8d2fac3b2707e1908167310a06759ac5410caf8b9569c913baee829
 \t\t\t\t\t<li class=\"author\">
 \t\t\t\t\t\t<a class=\"thumb\" href=\"index.html@page=author.html\" title=\"Heather Dale\">
 \t\t\t\t\t\t\t<img src='";
-        // line 291
+        // line 292
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/Team_100x100/image_04.jpg' alt='img'>
 \t\t\t\t\t\t\t<span class=\"number animated_element\" data-value=\"2\"></span>
@@ -374,7 +375,7 @@ class __TwigTemplate_956f8d2fac3b2707e1908167310a06759ac5410caf8b9569c913baee829
 
     public function getDebugInfo()
     {
-        return array (  350 => 291,  337 => 281,  324 => 271,  311 => 261,  192 => 145,  169 => 125,  147 => 106,  123 => 85,  100 => 65,  78 => 46,  30 => 2,  11 => 1,);
+        return array (  351 => 292,  338 => 282,  325 => 272,  312 => 262,  192 => 145,  169 => 125,  147 => 106,  123 => 85,  100 => 65,  78 => 46,  30 => 2,  11 => 1,);
     }
 }
 /* {% extends "users/layout.html" %} {% block content %}*/
@@ -567,6 +568,7 @@ class __TwigTemplate_956f8d2fac3b2707e1908167310a06759ac5410caf8b9569c913baee829
 /* 			<div class="column column_1_3">*/
 /* 				<h4 class="box_header">Informasi COVID-19</h4>*/
 /* 				<ul class="blog small_margin clearfix">*/
+/* 					<iframe src="kawalcovid" width="100%" height="380" scrolling="no" frameborder="0"></iframe>*/
 /* 					<div class="kopi-covid"> </div>*/
 /* 				</ul>*/
 /* 				<h4 class="box_header page_margin_top_section">Pengumuman COVID-19</h4>*/

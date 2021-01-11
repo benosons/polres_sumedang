@@ -1270,4 +1270,60 @@ class Jsondata extends \CodeIgniter\Controller
 		}
 	}
 
+	function kawalcorona(){
+
+		$curl = curl_init();
+
+		curl_setopt_array($curl, array(
+		  CURLOPT_URL => "https://api.kawalcorona.com/indonesia/provinsi/",
+		  CURLOPT_RETURNTRANSFER => true,
+		  CURLOPT_ENCODING => "",
+		  CURLOPT_MAXREDIRS => 10,
+		  CURLOPT_TIMEOUT => 0,
+		  CURLOPT_FOLLOWLOCATION => true,
+		  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+		  CURLOPT_CUSTOMREQUEST => "GET",
+		  CURLOPT_HTTPHEADER => array(
+		    "Cookie: __cfduid=d9578df7ba02ceb3ed84751b41a36c0391610346454"
+		  ),
+		));
+
+		$response = curl_exec($curl);
+
+		curl_close($curl);
+		$result = [
+			'status'   => 'sukses',
+			'code'     => $this->now,
+			'data' 		 => json_decode($response, true)
+		];
+
+		header('Content-Type: application/json');
+		echo json_encode($result);
+		exit;
+	}
+
+	function coronas(){
+		$curl = curl_init();
+
+		curl_setopt_array($curl, array(
+		  CURLOPT_URL => "https://dashboard-pikobar-api.digitalservice.id/v2/kasus/harian?wilayah=kota&kode_kab=3211",
+		  CURLOPT_RETURNTRANSFER => true,
+		  CURLOPT_ENCODING => "",
+		  CURLOPT_MAXREDIRS => 10,
+		  CURLOPT_TIMEOUT => 0,
+		  CURLOPT_FOLLOWLOCATION => true,
+		  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+		  CURLOPT_CUSTOMREQUEST => "GET",
+		  CURLOPT_HTTPHEADER => array(
+		    "api-key: 480d0aeb78bd0064d45ef6b2254be9b3"
+		  ),
+		));
+
+		$response = curl_exec($curl);
+
+		curl_close($curl);
+		// echo $response;
+		print_r($response);die;
+	}
+
 }

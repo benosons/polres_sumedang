@@ -375,6 +375,7 @@ dengan memanfaatkan perkembangan teknologi dan informasi kepala polisi resor sum
 
 \t\t\t\t<h4 class=\"box_header\">Giat COVID-19</h4>
 \t\t\t\t<ul class=\"blog small_margin clearfix\">
+\t\t\t\t\t<iframe src=\"kawalcovid\" width=\"100%\" height=\"380\" scrolling=\"no\" frameborder=\"0\"></iframe>
 \t\t\t\t\t<div class=\"kopi-covid\"> </div>
 \t\t\t\t</ul>
 \t\t\t\t<ul class=\"blog small_margin clearfix\">
@@ -382,7 +383,7 @@ dengan memanfaatkan perkembangan teknologi dan informasi kepala polisi resor sum
 \t\t\t\t\t\t<a href=\"index.html@page=post_gallery.html\" title=\"The Public Health Crisis Hiding in Our Food\">
 \t\t\t\t\t\t\t<span class=\"icon gallery\"></span>
 \t\t\t\t\t\t\t<img src='";
-        // line 326
+        // line 327
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/510x187/image_12.jpg' alt='img'>
 \t\t\t\t\t\t</a>
@@ -401,7 +402,7 @@ dengan memanfaatkan perkembangan teknologi dan informasi kepala polisi resor sum
 \t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"The Public Health Crisis Hiding in Our Food\">
 \t\t\t\t\t\t\t<img src='";
-        // line 342
+        // line 343
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/510x187/image_01.jpg' alt='img'>
 \t\t\t\t\t\t</a>
@@ -420,7 +421,7 @@ dengan memanfaatkan perkembangan teknologi dan informasi kepala polisi resor sum
 \t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"New Painkiller Rekindles Addiction Concerns\">
 \t\t\t\t\t\t\t<img src='";
-        // line 358
+        // line 359
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/510x187/image_14.jpg' alt='img'>
 \t\t\t\t\t\t</a>
@@ -444,7 +445,7 @@ dengan memanfaatkan perkembangan teknologi dan informasi kepala polisi resor sum
 \t\t\t\t\t\t\t<a href=\"index.html@page=post_gallery.html\" title=\"Study Linking Illnes and Salt Leaves Researchers Doubtful\">
 \t\t\t\t\t\t\t\t<span class=\"icon small gallery\"></span>
 \t\t\t\t\t\t\t\t<img src='";
-        // line 379
+        // line 380
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_06.jpg' alt='img'>
 \t\t\t\t\t\t\t</a>
@@ -463,7 +464,7 @@ dengan memanfaatkan perkembangan teknologi dan informasi kepala polisi resor sum
 \t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Syrian Civilians Trapped For Months Continue To Be Evacuated\">
 \t\t\t\t\t\t\t\t<img src='";
-        // line 395
+        // line 396
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_12.jpg' alt='img'>
 \t\t\t\t\t\t\t</a>
@@ -482,7 +483,7 @@ dengan memanfaatkan perkembangan teknologi dan informasi kepala polisi resor sum
 \t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">
 \t\t\t\t\t\t\t\t<img src='";
-        // line 411
+        // line 412
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_02.jpg' alt='img'>
 \t\t\t\t\t\t\t</a>
@@ -501,7 +502,7 @@ dengan memanfaatkan perkembangan teknologi dan informasi kepala polisi resor sum
 \t\t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Nuclear Fusion Closer to Becoming a Reality\">
 \t\t\t\t\t\t\t\t<img src='";
-        // line 427
+        // line 428
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_13.jpg' alt='img'>
 \t\t\t\t\t\t\t</a>
@@ -525,7 +526,7 @@ dengan memanfaatkan perkembangan teknologi dan informasi kepala polisi resor sum
 \t\t\t\t\t<li class=\"author\">
 \t\t\t\t\t\t<a class=\"thumb\" href=\"index.html@page=author.html\" title=\"Debora Hilton\">
 \t\t\t\t\t\t\t<img src='";
-        // line 448
+        // line 449
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/Team_100x100/image_01.jpg' alt='img'>
 \t\t\t\t\t\t\t<span class=\"number animated_element\" data-value=\"34\"></span>
@@ -538,7 +539,7 @@ dengan memanfaatkan perkembangan teknologi dan informasi kepala polisi resor sum
 \t\t\t\t\t<li class=\"author\">
 \t\t\t\t\t\t<a class=\"thumb\" href=\"index.html@page=author.html\" title=\"Anna Shubina\">
 \t\t\t\t\t\t\t<img src='";
-        // line 458
+        // line 459
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/Team_100x100/image_02.jpg' alt='img'>
 \t\t\t\t\t\t\t<span class=\"number animated_element\" data-value=\"25\"></span>
@@ -551,7 +552,7 @@ dengan memanfaatkan perkembangan teknologi dan informasi kepala polisi resor sum
 \t\t\t\t\t<li class=\"author\">
 \t\t\t\t\t\t<a class=\"thumb\" href=\"index.html@page=author.html\" title=\"Liam Holden\">
 \t\t\t\t\t\t\t<img src='";
-        // line 468
+        // line 469
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/Team_100x100/image_03.jpg' alt='img'>
 \t\t\t\t\t\t\t<span class=\"number animated_element\" data-value=\"9\"></span>
@@ -564,7 +565,7 @@ dengan memanfaatkan perkembangan teknologi dan informasi kepala polisi resor sum
 \t\t\t\t\t<li class=\"author\">
 \t\t\t\t\t\t<a class=\"thumb\" href=\"index.html@page=author.html\" title=\"Heather Dale\">
 \t\t\t\t\t\t\t<img src='";
-        // line 478
+        // line 479
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/Team_100x100/image_04.jpg' alt='img'>
 \t\t\t\t\t\t\t<span class=\"number animated_element\" data-value=\"2\"></span>
@@ -580,7 +581,7 @@ dengan memanfaatkan perkembangan teknologi dan informasi kepala polisi resor sum
 \t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Study Linking Illnes and Salt Leaves Researchers Doubtful\">
 \t\t\t\t\t\t\t<img src='";
-        // line 491
+        // line 492
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_09.jpg' alt='img'>
 \t\t\t\t\t\t</a>
@@ -599,7 +600,7 @@ dengan memanfaatkan perkembangan teknologi dan informasi kepala polisi resor sum
 \t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t<a href=\"index.html@page=post.html\" title=\"Syrian Civilians Trapped For Months Continue To Be Evacuated\">
 \t\t\t\t\t\t\t<img src='";
-        // line 507
+        // line 508
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_12.jpg' alt='img'>
 \t\t\t\t\t\t</a>
@@ -618,7 +619,7 @@ dengan memanfaatkan perkembangan teknologi dan informasi kepala polisi resor sum
 \t\t\t\t\t<li class=\"post\">
 \t\t\t\t\t\t<a href=\"index.html@page=post_quote.html\" title=\"Built on Brotherhood, Club Lives Up to Name\">
 \t\t\t\t\t\t\t<img src='";
-        // line 523
+        // line 524
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_02.jpg' alt='img'>
 \t\t\t\t\t\t</a>
@@ -638,7 +639,7 @@ dengan memanfaatkan perkembangan teknologi dan informasi kepala polisi resor sum
 \t\t\t\t\t\t<a href=\"index.html@page=post_gallery.html\" title=\"Nuclear Fusion Closer to Becoming a Reality\">
 \t\t\t\t\t\t\t<span class=\"icon small gallery\"></span>
 \t\t\t\t\t\t\t<img src='";
-        // line 540
+        // line 541
         echo twig_escape_filter($this->env, (isset($context["baseURL"]) ? $context["baseURL"] : null), "html", null, true);
         echo "/assets/users/images/samples/100x100/image_01.jpg' alt='img'>
 \t\t\t\t\t\t</a>
@@ -673,7 +674,7 @@ dengan memanfaatkan perkembangan teknologi dan informasi kepala polisi resor sum
 
     public function getDebugInfo()
     {
-        return array (  642 => 540,  622 => 523,  603 => 507,  584 => 491,  568 => 478,  555 => 468,  542 => 458,  529 => 448,  505 => 427,  486 => 411,  467 => 395,  448 => 379,  424 => 358,  405 => 342,  386 => 326,  354 => 297,  334 => 280,  312 => 261,  287 => 239,  268 => 223,  246 => 204,  217 => 178,  197 => 161,  177 => 144,  158 => 128,  30 => 2,  11 => 1,);
+        return array (  643 => 541,  623 => 524,  604 => 508,  585 => 492,  569 => 479,  556 => 469,  543 => 459,  530 => 449,  506 => 428,  487 => 412,  468 => 396,  449 => 380,  425 => 359,  406 => 343,  387 => 327,  354 => 297,  334 => 280,  312 => 261,  287 => 239,  268 => 223,  246 => 204,  217 => 178,  197 => 161,  177 => 144,  158 => 128,  30 => 2,  11 => 1,);
     }
 }
 /* {% extends "users/layout.html" %} {% block content %}*/
@@ -995,6 +996,7 @@ dengan memanfaatkan perkembangan teknologi dan informasi kepala polisi resor sum
 /* */
 /* 				<h4 class="box_header">Giat COVID-19</h4>*/
 /* 				<ul class="blog small_margin clearfix">*/
+/* 					<iframe src="kawalcovid" width="100%" height="380" scrolling="no" frameborder="0"></iframe>*/
 /* 					<div class="kopi-covid"> </div>*/
 /* 				</ul>*/
 /* 				<ul class="blog small_margin clearfix">*/

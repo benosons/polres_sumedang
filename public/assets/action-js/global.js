@@ -46,3 +46,16 @@ $.ajax({
     });
 
   }
+
+  coronas();
+  function coronas(){
+    $.ajax({
+      type: 'post',
+      dataType: 'json',
+      url: "coronas",
+      success: function(result){
+        console.log(result);
+      }
+    });
+  }
+  console.log(result);

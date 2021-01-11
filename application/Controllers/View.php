@@ -349,5 +349,12 @@ class View extends \CodeIgniter\Controller
 				}
 	}
 
+	public function kawalcovid()
+	{
+				helper('form');
+				return \Twig::instance()->display('kawalcovid.html', $this->data);
+
+	}
+
 
 }
