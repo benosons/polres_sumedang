@@ -81,6 +81,7 @@ $routes->add('home', 'View::home');
 $routes->add('dashboard', 'View::dashboard');
 $routes->add('login', 'View::login');
 $routes->add('register', 'View::register');
+$routes->add('users', 'View::users');
 $routes->add('datapengaduan', 'View::datapengaduan');
 $routes->add('userprofile', 'View::userprofile');
 $routes->add('inputberita', 'View::inputberita');
@@ -124,6 +125,8 @@ $routes->post('loadBeritaHeadline', 'Jsondata::loadBeritaHeadline');
 $routes->post('loadBeritaHeadlineCovid', 'Jsondata::loadBeritaHeadlineCovid');
 $routes->post('addKonten', 'Jsondata::addKonten');
 $routes->post('loadKonten', 'Jsondata::loadKonten');
+$routes->post('loadusers', 'Jsondata::loadusers');
+$routes->post('actionUsers', 'Jsondata::actionUsers');
 
 $routes->post('kawalcorona', 'Jsondata::kawalcorona');
 $routes->post('coronas', 'Jsondata::coronas');

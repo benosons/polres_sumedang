@@ -10,6 +10,7 @@ class Auth extends \CodeIgniter\Controller
 
 			$session = session();
 			$model = new UserModel();
+			$userModel = new \App\Models\UserModel();
 
 			$email = $this->request->getVar('username');
 			$password = $this->request->getVar('password');
@@ -29,6 +30,8 @@ class Auth extends \CodeIgniter\Controller
 									'user_role'     => $data->user_role
 							];
 							$session->set($ses_data);
+
+							$userModel->updateIsLogin($data->user_id, ['isLogin' => 1]);
 							return redirect('dashboard');
 					}else{
 							$session->setFlashdata('msg', 'Salah Password');

@@ -1326,4 +1326,96 @@ class Jsondata extends \CodeIgniter\Controller
 		print_r($response);die;
 	}
 
+	public function loadusers()
+	{
+		try
+		{
+				$request  = $this->request;
+				$param 	  = $request->getVar('param');
+				$id		 	  = $request->getVar('id');
+				$role 		= $this->data['role'];
+				$userid		= $this->data['userid'];
+
+					$model = new \App\Models\UserModel();
+					$modelparam = new \App\Models\ParamModel();
+					$modelfiles = new \App\Models\FilesModel();
+
+						$fulldata = [];
+						$datauser = $model->getUsers($userid);
+
+						foreach ($datauser as $keyuser => $valueuser) {
+							$datafiles = $modelfiles->getWhere(['id_parent' => $valueuser['user_id']])->getRow();
+							$datasatuan= $model->getSatuanByCode($valueuser['user_role']);
+							$obj_merged = (object) array_merge((array) $valueuser, (array) $datafiles, (array) $datasatuan);
+							array_push($fulldata, $obj_merged);
+						}
+						$users = $fulldata;
+
+					if($users){
+						$response = [
+							'status'   => 'sukses',
+							'code'     => '1',
+							'data' 		 => $users
+						];
+					}else{
+						$response = [
+						    'status'   => 'gagal',
+						    'code'     => '0',
+						    'data'     => 'tidak ada data',
+						];
+					}
+
+				header('Content-Type: application/json');
+				echo json_encode($response);
+				exit;
+			}
+		catch (\Exception $e)
+		{
+			die($e->getMessage());
+		}
+	}
+
+	public function actionUsers(){
+
+		$request  = $this->request;
+		$mode 	  = $request->getVar('mode');
+		$id 	  	= $request->getVar('id');
+		$status 	= $request->getVar('status');
+		$role 		= $this->data['role'];
+		$userid		= $this->data['userid'];
+		
+		switch ($status) {
+			case 'false':
+					$status = 0;
+				break;
+
+			default:
+					$status = 1;
+				break;
+		}
+		$model 	  = new \App\Models\UserModel();
+
+		$data = [
+						'update_date' => $this->now,
+						'update_by' 	=> $userid,
+						'user_status' => $status,
+        ];
+		if($mode == 'update'){
+			$res = $model->update($id, $data);
+
+		}else{
+
+			$res = $model->delete($param['id']);
+		}
+		$response = [
+				'status'   => 'sukses',
+				'code'     => '0',
+				'data' 		 => 'terupdate'
+		];
+		header('Content-Type: application/json');
+		echo json_encode($response);
+		exit;
+
+	}
+
 }

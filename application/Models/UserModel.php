@@ -5,4 +5,43 @@ use CodeIgniter\Model;
 class UserModel extends Model{
     protected $table = 'users';
     protected $allowedFields = ['user_name','user_email','user_password','user_created_at'];
+
+    public function getUsers($id = null)
+    {
+      $this->join('users_role', 'users_role.role_id = users.user_role', 'LEFT');
+      $this->select('*');
+      $this->whereNotIn('user_id', $id);
+      $result = $this->findAll();
+
+      // echo $this->db->getLastQuery();
+
+      return $result;
+    }
+
+    public function getSatuanByCode($code)
+    {
+          $builder = $this->db->table('satuan');
+          $query   = $builder->getWhere(['satuan_code' => $code]);
+          return  $query->getRow();
+    }
+
+    public function updateIsLogin($id, $data)
+    {
+      $builder = $this->db->table('users');
+      $query   = $builder->where('user_id', $id);
+      $query->update($data);
+      echo $this->db->getLastQuery();
+
+      return true;
+    }
+
+    public function update($id, $data)
+    {
+      $builder = $this->db->table('users');
+      $query   = $builder->where('user_id', $id);
+      $query->update($data);
+      // echo $this->db->getLastQuery();
+
+      return true;
+    }
 }

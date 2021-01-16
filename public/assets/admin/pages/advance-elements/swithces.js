@@ -7,9 +7,9 @@ $(document).ready(function() {
 	// Multiple swithces
 	var elem = Array.prototype.slice.call(document.querySelectorAll('.js-switch'));
 
-	elem.forEach(function(html) {		
-		var switchery = new Switchery(html, { color: '#1abc9c', jackColor: '#fff' });		
-	});		
+	elem.forEach(function(html) {
+		var switchery = new Switchery(html, { color: '#1abc9c', jackColor: '#fff' });
+	});
 
 	// Disable enable swithces
 	var elemstate = document.querySelector('.js-dynamic-state');
@@ -55,7 +55,7 @@ $(document).ready(function() {
 	var elemsmall = document.querySelector('.js-small');
 	var switchery = new Switchery(elemsmall, { color: '#1abc9c', jackColor: '#fff', size: 'small' });
 
-	
+
 
 	// var elemdisable = document.querySelector('.js-disable');
 	// var switchery = new Switchery(elemdisable, { color: '#1abc9c', jackColor: '#fff', disabled: true });
