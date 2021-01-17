@@ -315,6 +315,7 @@ class Jsondata extends \CodeIgniter\Controller
 						}
 						$berita = $fulldata;
 					}else{
+					
 							if($param && $id){
 								$data = $modelparam->getparam($param, $id);
 							}else{
@@ -1036,8 +1037,23 @@ class Jsondata extends \CodeIgniter\Controller
 
 		}else if($param['mode'] == 'delete'){
 			$res = $model->delete($param['id']);
-		}
+		}else if($param['mode'] == 'update'){
+			switch ($param['stat']) {
+				case 'false':
+						$status = 0;
+					break;
 
+				default:
+						$status = 2;
+					break;
+			}
+			$data = [
+									'update_date' => $this->now,
+									'update_by' 	=> $userid,
+									'status' => $status,
+			        ];
+				$res = $model->update($param['id'], $data);
+		}
 
 		$response = [
 				'status'   => 'sukses',
@@ -1383,7 +1399,7 @@ class Jsondata extends \CodeIgniter\Controller
 		$status 	= $request->getVar('status');
 		$role 		= $this->data['role'];
 		$userid		= $this->data['userid'];
-		
+		print_r($status);die;
 		switch ($status) {
 			case 'false':
 					$status = 0;

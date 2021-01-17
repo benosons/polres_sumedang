@@ -5,7 +5,7 @@ use CodeIgniter\Model;
 class BeritaModel extends Model{
     protected $table = 'data_berita';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['judul_berita','isi_berita','satuan','create_by','status','create_date','update_date'];
+    protected $allowedFields = ['judul_berita','isi_berita','satuan','create_by','status','create_date','update_date', 'update_by'];
     protected $createdField  = 'create_date';
     protected $updatedField  = 'update_date';
 
@@ -31,7 +31,8 @@ class BeritaModel extends Model{
     public function loadBerita($id)
     {
         $builder = $this->db->table('data_berita');
-        $query   = $builder->getWhere(['satuan' => $id]);
+        $query   = $builder->getWhere(['satuan' => $id, 'status != ' => 0]);
+        // echo $this->db->getLastQuery();
         return  $query->getResult();
     }
 

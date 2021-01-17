@@ -30,7 +30,7 @@ class UserModel extends Model{
       $builder = $this->db->table('users');
       $query   = $builder->where('user_id', $id);
       $query->update($data);
-      echo $this->db->getLastQuery();
+      // echo $this->db->getLastQuery();
 
       return true;
     }
