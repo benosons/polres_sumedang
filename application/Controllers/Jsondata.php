@@ -315,7 +315,7 @@ class Jsondata extends \CodeIgniter\Controller
 						}
 						$berita = $fulldata;
 					}else{
-					
+
 							if($param && $id){
 								$data = $modelparam->getparam($param, $id);
 							}else{
@@ -1021,9 +1021,13 @@ class Jsondata extends \CodeIgniter\Controller
 				$data = [
 					'update_date' => $this->now,
 					'update_by' 	=> $userid,
-					'status' 			=> 0,
+					'status' 			=> 2,
 				];
 				$lastId = $model->getMaxId();
+
+				if($param['id'] == $lastId){
+					$lastId = $param['id'];
+				}
 				$model->update($lastId, $data);
 			}
 
@@ -1097,6 +1101,22 @@ class Jsondata extends \CodeIgniter\Controller
 
 		}else if($param['mode'] == 'delete'){
 			$res = $model->delete($param['id']);
+		}else if($param['mode'] == 'update'){
+			switch ($param['stat']) {
+				case 'false':
+						$status = 0;
+					break;
+
+				default:
+						$status = 1;
+					break;
+			}
+			$data = [
+									'update_date' => $this->now,
+									'update_by' 	=> $userid,
+									'status' => $status,
+			        ];
+				$res = $model->update($param['id'], $data);
 		}
 
 
@@ -1121,12 +1141,12 @@ class Jsondata extends \CodeIgniter\Controller
 
 		$model 	  = new \App\Models\BeritaModel();
 		if($param['mode'] == 'headline'){
-			$count = $model->countStatus();
+			$count = $model->countStatusCovid();
 			if($count >= 5){
 				$data = [
 					'update_date' => $this->now,
 					'update_by' 	=> $userid,
-					'status' 			=> 0,
+					'status' 			=> 2,
 				];
 				$lastId = $model->getMaxIdCovid();
 				$model->updateBeritaCovid($lastId, $data);
@@ -1140,6 +1160,22 @@ class Jsondata extends \CodeIgniter\Controller
 
 		}else if($param['mode'] == 'delete'){
 			$res = $model->deleteDataCovid($param['id']);
+		}else if($param['mode'] == 'update'){
+			switch ($param['stat']) {
+				case 'false':
+						$status = 0;
+					break;
+
+				default:
+						$status = 2;
+					break;
+			}
+			$data = [
+									'update_date' => $this->now,
+									'update_by' 	=> $userid,
+									'status' => $status,
+			        ];
+				$res = $model->updateBeritaCovid($param['id'], $data);
 		}
 
 

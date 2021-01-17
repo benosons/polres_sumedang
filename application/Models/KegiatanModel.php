@@ -31,7 +31,7 @@ class KegiatanModel extends Model{
     public function loadKegiatan($id)
     {
         $builder = $this->db->table('data_kegiatan');
-        $query   = $builder->getWhere(['satuan' => $id]);
+        $query   = $builder->getWhere(['satuan' => $id, 'status !=' => 0]);
         return  $query->getResult();
     }
 

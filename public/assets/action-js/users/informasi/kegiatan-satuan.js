@@ -1,5 +1,6 @@
 console.log('You are running jQuery version: ' + $.fn.jquery);
 $(document).ready(function(){
+
   window.baseURL = $('#baseUrl').val();
   $('ul.sf-menu > li.selected').removeClass('selected');
   $('#menu-informasi').addClass('selected');
@@ -12,7 +13,7 @@ function loadberita(param, id){
   $.ajax({
       type: 'post',
       dataType: 'json',
-      url: 'loadBerita',
+      url: 'loadKegiatan',
       data : {
               param      : param,
               id         : id,
@@ -30,22 +31,22 @@ function loadberita(param, id){
               id_satuan = value[i].satuan;
               content += `<ul class="blog column column_1_3">
                     				<li class="post">
-                    					<a href="index.html@page=post.html" title="Built on Brotherhood, Club Lives Up to Name">
-                    						<img style="display: block;" src='`+window.baseURL+'/'+value[i].path+value[i].file_name+`' alt='img'>
+                    					<a href="/kegiatan?params=post&ids=`+value[i].id_parent+`" title="Built on Brotherhood, Club Lives Up to Name">
+                              <span class="icon gallery" style="display: block;"></span>
+                              <img style="display: block;" src='`+window.baseURL+'/'+value[i].path+value[i].file_name+`' alt='img'>
                     					</a>
                     					<div class="post_content">
                     						<h2 class="with_number">
-                    							<a href="/berita?params=post&ids=`+value[i].id_parent+`" title="`+value[i].judul_berita+`">`+value[i].judul_berita+`</a>
+                    							<a href="/kegiatan?params=post&ids=`+value[i].id_parent+`" title="`+value[i].judul_kegiatan+`">`+value[i].judul_kegiatan+`</a>
                     							<a class="comments_number" href="index.html@page=post.html#comments_list" title="2 comments">2<span class="arrow_comments"></span></a>
                     						</h2>
                     						<ul class="post_details">
-                    							<li class="category"><a href="/berita?params=satuan&ids=`+id_satuan+`" title="`+key.toUpperCase()+`">`+key.toUpperCase()+`</a></li>
+                    							<li class="category"><a href="/kegiatan?params=satuan&ids=`+id_satuan+`" title="`+key.toUpperCase()+`">`+key.toUpperCase()+`</a></li>
                     							<li class="date">
                     								10:11 PM, Feb 02
                     							</li>
                     						</ul>
-                    						`+value[i].isi_berita+`
-                    						<a class="read_more" href="/berita?params=post&ids=`+value[i].id_parent+`" title="Read more"><span class="arrow"></span><span>READ MORE</span></a>
+                    						<a class="read_more" href="/kegiatan?params=post&ids=`+value[i].id_parent+`" title="Read more"><span class="arrow"></span><span>READ MORE</span></a>
                     					</div>
                     				</li>
                     			</ul>`;

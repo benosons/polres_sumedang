@@ -137,6 +137,7 @@ function save(formData){
               aoColumns: [
                   { 'mDataProp': 'id', 'width':'10%'},
                   { 'mDataProp': 'status', 'width':'10%'},
+                  { 'mDataProp': 'status', 'width':'10%'},
                   { 'mDataProp': 'judul_berita'},
                   { 'mDataProp': 'user_fullname'},
                   { 'mDataProp': 'create_date'},
@@ -152,17 +153,24 @@ function save(formData){
 
                         let el = '';
                         let stt;
+                        let dis;
                         if(row.status == 1){
-                          stt = '0';
+                          stt = '2';
                         }else{
-                          stt = '1';
+                          if(row.status == 0){
+                            stt = '1';
+                            dis = 'disabled';
+                          }else{
+                            stt = '1';
+
+                          }
                         }
-                          el +=        `<button class="btn btn-mini btn-info" onclick="action('headline', '`+row.id+`', '`+stt+`')"><i class="icofont icofont-medal-alt"></i></button>
+                          el +=        `<button `+dis+` class="btn btn-mini btn-info" onclick="action('headline', '`+row.id+`', '`+stt+`')"><i class="icofont icofont-medal-alt"></i></button>
                                         <button class="btn btn-mini btn-warning" onclick="action('edit', '`+row.id+`')"><i class="ti-pencil-alt"></i></button>
                                         <button class="btn btn-mini btn-danger" onclick="action('delete', '`+row.id+`')"><i class="icofont icofont-trash"></i></button>`;
                         return el;
                     },
-                    aTargets: [ 5 ]
+                    aTargets: [ 6 ]
                 },
                 {
                   mRender: function ( data, type, row ) {
@@ -174,6 +182,22 @@ function save(formData){
                     return el;
                   },
                   aTargets: [ 1 ]
+                },
+                {
+                  mRender: function ( data, type, row ) {
+
+                    var stt = '';
+
+                      if(row.status == 1 || row.status == 2){
+                        stt = 'checked'
+                      }else{
+                        stt ='';
+                      }
+                      var el ='<input value="'+row.id+'" type="checkbox" class="js-primary" '+stt+' />';
+
+                      return el;
+                  },
+                  aTargets: [ 2 ]
                 },
                 // {
                 //   mRender: function ( data, type, row ) {
@@ -206,6 +230,13 @@ function save(formData){
                   return  index;
               },
               fnInitComplete: function () {
+                var elemprimary = $('.js-primary');
+                for (var i = 0; i < elemprimary.length; i++) {
+                  var switchery = new Switchery(elemprimary[i], { color: '#1abc9c', jackColor: '#fff', size: 'small', className : 'switchery status' });
+                  elemprimary[i].onchange = function() {
+                    action('update',this.value, this.checked)
+                  }
+                }
                   var that = this;
                   var td ;
                   var tr ;
@@ -225,7 +256,6 @@ function save(formData){
   function action(mode, id, stat){
 
     if(mode == 'edit'){
-      alert();
       return true;
     }
 

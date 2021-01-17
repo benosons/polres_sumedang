@@ -95,9 +95,17 @@ class BeritaModel extends Model{
       return $row->Count;
     }
 
+    public function countStatusCovid()
+    {
+      $sql = "SELECT COUNT(*) as Count FROM data_berita_covid where status = 1";
+      $result = $this->db->query($sql);
+      $row = $result->getRow();
+      return $row->Count;
+    }
+
     public function getMaxId()
     {
-      $sql = "SELECT * FROM `polres_sumedang`.`data_berita` ORDER BY create_date asc limit 1";
+      $sql = "SELECT * FROM `polres_sumedang`.`data_berita` where status = '1' ORDER BY create_date asc";
       $result = $this->db->query($sql);
       $row = $result->getRow();
       return $row->id;
@@ -105,7 +113,7 @@ class BeritaModel extends Model{
 
     public function getMaxIdCovid()
     {
-      $sql = "SELECT * FROM `polres_sumedang`.`data_berita_covid` ORDER BY create_date asc limit 1";
+      $sql = "SELECT * FROM `polres_sumedang`.`data_berita_covid` where status = '1' ORDER BY create_date asc limit 1";
       $result = $this->db->query($sql);
       $row = $result->getRow();
       return $row->id;

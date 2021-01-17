@@ -157,9 +157,9 @@ function save(formData){
 
                         let el = '';
                         let stt;
-                        let dis;
+                        let dis = '';
                         if(row.status == 1){
-                          stt = '0';
+                          stt = '2';
                         }else{
                           if(row.status == 0){
                             stt = '1';
