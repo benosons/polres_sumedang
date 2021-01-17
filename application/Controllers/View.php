@@ -293,6 +293,9 @@ class View extends \CodeIgniter\Controller
 						}else if($params == 'struktur-organisasi'){
 							$this->data['script'] = $this->data['baseURL'].'/assets/action-js/users/profile/profile.js';
 							return \Twig::instance()->display('users/profile/struktur-organisasi.html', $this->data);
+						}else if($params == 'tentang'){
+							$this->data['script'] = $this->data['baseURL'].'/assets/action-js/users/profile/profile.js';
+							return \Twig::instance()->display('users/profile/tentang.html', $this->data);
 						}
 					}
 
