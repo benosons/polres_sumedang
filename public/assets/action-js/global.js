@@ -6,12 +6,21 @@ $(document).ready(function(){
   f.height = 380;
   f.scrolling = "no";
   f.frameBorder = 0;
+  f.id = 'covid-kopi';
   var rootEl = document.getElementsByClassName("kopi-covid");
 
   if(rootEl){
     rootEl[0].appendChild(f);
   }
 
+  if($(window).width() < 800){
+    setTimeout(function(){
+       $("#covid-jabar").attr('style', 'height:500px;');
+       $("#covid-kopi").attr('style', 'height:500px;');
+
+     }, 2000);
+
+  }
 });
 
 function loadmenu(param){
