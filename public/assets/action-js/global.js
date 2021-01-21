@@ -8,8 +8,8 @@ $(document).ready(function(){
   f.frameBorder = 0;
   f.id = 'covid-kopi';
   var rootEl = document.getElementsByClassName("kopi-covid");
-
-  if(rootEl){
+  
+  if(rootEl != 0){
     rootEl[0].appendChild(f);
   }
 

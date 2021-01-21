@@ -3,6 +3,7 @@ $(document).ready(function(){
   $('ul.sf-menu > li.selected').removeClass('selected');
   $('#menu-home').addClass('selected');
   loadberitaAll('','');
+  loadkegiatanAll('','');
   loadberita('','');
 
 });
@@ -25,7 +26,7 @@ function loadberitaAll(param, id){
           $.each(data, function(key, value) {
             let id_satuan;
             for (var i = 0; i < value.length; i += 2) {
-                console.log(value);
+                // console.log(value);
                 var sliceIt = value.slice(i, 2);
                 if(sliceIt.length == 2){
                   content += `<ul class="blog column column_1_2">`;
@@ -86,7 +87,14 @@ function loadberitaAll(param, id){
           });
 
           $('#berita-terbaru').html(content);
-          $('#berita-terbaru > ul')[2].remove();
+          let child = $('#berita-terbaru').children();
+          for (var i = 0; i < child.length; i++) {
+
+            if (i > 1){
+              $(child[i]).remove();
+             }
+
+          }
 
 
       }
@@ -184,3 +192,82 @@ function loadberita(param, id){
       }
     });
   }
+
+function loadkegiatanAll(param, id){
+
+    $.ajax({
+        type: 'post',
+        dataType: 'json',
+        url: 'loadKegiatan',
+        data : {
+                param      : param,
+                id         : id,
+        },
+        success: function(result){
+
+            let data = result.data;
+
+            var content = '';
+
+            $.each(data, function(key, value) {
+              let id_satuan;
+              for (var i = 0; i < value.length; i += 2) {
+                  console.log(value);
+                  var sliceIt = value.slice(i, 2);
+                  if(sliceIt.length == 2){
+                    content += `<ul class="blog column column_1_2">`;
+                    content += `<li class="post">
+                    							<a href="/kegiatan?params=post&ids=`+sliceIt[0]['id_parent']+`" title="Nuclear Fusion Closer to Becoming a Reality">
+                    								<span class="icon gallery" style="display: block;"></span>
+                                    <img src='`+$('#baseURL').val()+'/'+sliceIt[0]['path']+sliceIt[0]['file_name']+`' alt='img'>
+                    							</a>
+                    							<h2 class="with_number">
+                    								<a href="/kegiatan?params=post&ids=`+sliceIt[0]['id_parent']+`" title="Nuclear Fusion Closer to Becoming a Reality">`+sliceIt[0]['judul_kegiatan']+`</a>
+                    								<a class="comments_number" href="index.html@page=post.html#comments_list" title="2 comments">2<span class="arrow_comments"></span></a>
+                    							</h2>
+                    							<ul class="post_details">
+                    								<li class="category"><a href="/kegiatan?params=satuan&ids=`+sliceIt[0]['satuan']+`" title="`+key.toUpperCase()+`">`+key.toUpperCase()+`</a></li>
+                    								<li class="date">
+                    									`+sliceIt[0]['create_date']+`
+                    								</li>
+                    							</ul>
+                    							<a class="read_more" href="/kegiatan?params=post&ids=`+sliceIt[0]['id_parent']+`" title="Read more"><span class="arrow"></span><span>READ MORE</span></a>
+                    						</li>`;
+                    content += `<li class="post">
+                    							<a href="/kegiatan?params=post&ids=`+sliceIt[1]['id_parent']+`" title="Nuclear Fusion Closer to Becoming a Reality">
+                    								<span class="icon gallery" style="display: block;"></span>
+                                    <img src='`+$('#baseURL').val()+'/'+sliceIt[1]['path']+sliceIt[1]['file_name']+`' alt='img'>
+                    							</a>
+                    							<h2 class="with_number">
+                    								<a href="/kegiatan?params=post&ids=`+sliceIt[1]['id_parent']+`" title="Nuclear Fusion Closer to Becoming a Reality">`+sliceIt[1]['judul_kegiatan']+`</a>
+                    								<a class="comments_number" href="index.html@page=post.html#comments_list" title="2 comments">2<span class="arrow_comments"></span></a>
+                    							</h2>
+                    							<ul class="post_details">
+                    								<li class="category"><a href="/kegiatan?params=satuan&ids=`+sliceIt[0]['satuan']+`" title="`+key.toUpperCase()+`">`+key.toUpperCase()+`</a></li>
+                    								<li class="date">
+                    									`+sliceIt[1]['create_date']+`
+                    								</li>
+                    							</ul>
+                    							<a class="read_more" href="/kegiatan?params=post&ids=`+sliceIt[1]['id_parent']+`" title="Read more"><span class="arrow"></span><span>READ MORE</span></a>
+                    						</li>`;
+                    content += '</ul>';
+
+                  }
+              }
+
+            });
+
+            $('#kegiatan-terbaru').html(content);
+            let child = $('#kegiatan-terbaru').children();
+            for (var i = 0; i < child.length; i++) {
+
+              if (i > 1){
+                $(child[i]).remove();
+               }
+
+            }
+
+
+        }
+      });
+    }
