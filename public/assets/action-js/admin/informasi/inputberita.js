@@ -9,6 +9,7 @@ $(document).ready(function(){
   $('#setting-default').DataTable();
   $('.berita-tulis').hide();
   $('#post-berita').hide();
+  $('#block-post').hide();
 
   loadparam('satuan');
   loadberita('','');
@@ -62,13 +63,17 @@ function onberita(type){
       $('.berita-tulis').show();
       $('.berita-list').hide();
       $('#post-berita').show();
+      $('#block-post').show();
       $('#tambah-berita').hide();
+      $('#block-tambah').hide();
     }else if(type == 'list'){
       $('#list-berita').addClass('active');
       $('.berita-tulis').hide();
       $('.berita-list').show();
       $('#post-berita').hide();
+      $('#block-post').hide();
       $('#tambah-berita').show();
+      $('#block-tambah').show();
     }
 };
 

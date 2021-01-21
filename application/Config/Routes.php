@@ -118,6 +118,7 @@ $routes->post('saveKegiatan', 'Jsondata::saveKegiatan');
 $routes->post('saveBeritaCovid', 'Jsondata::saveBeritaCovid');
 $routes->post('update', 'Jsondata::update');
 $routes->post('addParam', 'Jsondata::addParam');
+$routes->post('addUser', 'Jsondata::addUser');
 $routes->post('actionBerita', 'Jsondata::actionBerita');
 $routes->post('actionKegiatan', 'Jsondata::actionKegiatan');
 $routes->post('actionBeritaCovid', 'Jsondata::actionBeritaCovid');

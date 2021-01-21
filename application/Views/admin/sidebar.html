@@ -129,7 +129,7 @@
                     <li class=" ">
                         <a href="datapengaduan" data-i18n="nav.form-components.form-components">
                             <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                            <span class="pcoded-mtext">Sat Lantas</span>
+                            <span class="pcoded-mtext" id="nama-pengaduan">Sat Lantas</span>
                             <span class="pcoded-mcaret"></span>
                         </a>
                     </li>
@@ -197,11 +197,13 @@
                     </li>
                 </ul>
             </li>
+            {% endif %}
+            {% if role == 100 %}
             <li class="" id="menu-user">
-                <a href="users" data-i18n="nav.widget.main">
-                    <span class="pcoded-micon"><i class="ti-user"></i></span>
-                    <span class="pcoded-mtext">User</span>
-                </a>
+              <a href="users" data-i18n="nav.widget.main">
+                <span class="pcoded-micon"><i class="ti-user"></i></span>
+                <span class="pcoded-mtext">User</span>
+              </a>
             </li>
             {% endif %}
         </ul>

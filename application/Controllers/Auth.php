@@ -27,7 +27,8 @@ class Auth extends \CodeIgniter\Controller
 									'user_fullname' => $data->user_fullname,
 									'user_email'    => $data->user_email,
 									'logged_in'     => TRUE,
-									'user_role'     => $data->user_role
+									'user_role'     => $data->user_role,
+									'user_satuan'   => $data->user_satuan
 							];
 							$session->set($ses_data);
 
@@ -77,6 +78,8 @@ class Auth extends \CodeIgniter\Controller
 	public function logout()
 	{
 			$session = session();
+			$userModel = new \App\Models\UserModel();
+			$userModel->updateIsLogin($session->get('user_id'), ['isLogin' => null]);
 			$session->destroy();
 			return redirect('home');
 	}

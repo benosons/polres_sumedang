@@ -20,6 +20,7 @@ class Jsondata extends \CodeIgniter\Controller
 				'userid' => $this->session->get('user_id'),
 				'username' => $this->session->get('user_name'),
 				'role' => $this->session->get('user_role'),
+				'satuan' => $this->session->get('user_satuan'),
 			);
   }
 
@@ -653,7 +654,7 @@ class Jsondata extends \CodeIgniter\Controller
 
 					$model = new \App\Models\ParamModel();
 					$modelfiles = new \App\Models\FilesModel();
-
+					
 					$data = $model->getparam($param, $id);
 
 					if($data){
@@ -994,6 +995,38 @@ class Jsondata extends \CodeIgniter\Controller
 
 		$res = $model->saveParam($param, $data);
 		$id  = $model->insertID();
+
+		$response = [
+				'status'   => 'sukses',
+				'code'     => '0',
+				'data' 		 => 'terkirim'
+		];
+		header('Content-Type: application/json');
+		echo json_encode($response);
+		exit;
+
+	}
+
+	public function addUser(){
+
+		$request  = $this->request;
+		$param 	  = $request->getVar('param');
+		$model 	  = new \App\Models\UserModel();
+
+		$data = [
+			'user_name' 		=> $request->getVar('user_name'),
+			'user_email' 		=> $request->getVar('user_email'),
+			'user_password' => password_hash($request->getVar('user_password'), PASSWORD_DEFAULT),
+			'user_role' 		=> $request->getVar('user_role'),
+			'user_fullname' => $request->getVar('user_fullname'),
+			'user_satuan' 	=> $request->getVar('user_satuan'),
+			'user_status' 	=> 1,
+			'create_by' 		=> $this->data['userid'],
+			'user_created_at'=> $this->now,
+		];
+
+		$model->save($data);
+		// $id  = $model->insertID();
 
 		$response = [
 				'status'   => 'sukses',
@@ -1397,7 +1430,7 @@ class Jsondata extends \CodeIgniter\Controller
 
 						foreach ($datauser as $keyuser => $valueuser) {
 							$datafiles = $modelfiles->getWhere(['id_parent' => $valueuser['user_id']])->getRow();
-							$datasatuan= $model->getSatuanByCode($valueuser['user_role']);
+							$datasatuan= $model->getSatuanByCode($valueuser['user_satuan']);
 							$obj_merged = (object) array_merge((array) $valueuser, (array) $datafiles, (array) $datasatuan);
 							array_push($fulldata, $obj_merged);
 						}
@@ -1435,7 +1468,7 @@ class Jsondata extends \CodeIgniter\Controller
 		$status 	= $request->getVar('status');
 		$role 		= $this->data['role'];
 		$userid		= $this->data['userid'];
-		print_r($status);die;
+
 		switch ($status) {
 			case 'false':
 					$status = 0;
@@ -1456,8 +1489,7 @@ class Jsondata extends \CodeIgniter\Controller
 			$res = $model->update($id, $data);
 
 		}else{
-
-			$res = $model->delete($param['id']);
+			$res = $model->delete(['user_id' => $id]);
 		}
 		$response = [
 				'status'   => 'sukses',

@@ -30,25 +30,27 @@
             <div class="card-block email-card">
                 <div class="row">
                     <!-- Left-side section start -->
-                    <div class="col-lg-12 col-xl-2">
+                    <div class="col-lg-12 col-xl-3">
                         <div class="user-head row">
                             <div class="user-face">
                                 <img src="{{baseURL}}/assets/admin/images/user.png" class="img-60" alt="User-Profile-Image">
                             </div>
                             <div class="user-name">
-                                <span>BAG ...</span>
-                                <span>Sat Lantas</span>
+                                <span>SUPERADMIN</span>
+                                <span id="head-sat">Data All</span>
                             </div>
                         </div>
                         <div class="user-body">
-                            <div class="card-block">
-                                <button onclick="onberita('input')" id="tambah-satuan" class="btn btn-danger btn-block"><i class="icofont icofont-edit"></i> Tambah User</button>
-                                <button onclick="" id="save-satuan" class="btn btn-success btn-block"><i class="fa fa-send"></i> Simpan User</button>
+                            <div class="card-block" id="tambah-user">
+                                <button onclick="onusers('input')" class="btn btn-danger btn-block"><i class="icofont icofont-edit"></i> Tambah User</button>
+                            </div>
+                            <div class="card-block" id="save-user">
+                                <button onclick="" class="btn btn-success btn-block"><i class="fa fa-send"></i> Simpan User</button>
                             </div>
                             <ul class="page-list">
-                                <li id="list-satuan" class="active">
+                                <li id="list-user" class="active">
                                     <div class="mail-section">
-                                        <a href="#!" onclick="onberita('list')">
+                                        <a href="#!" onclick="onusers('list')">
                                             <i class="ti-bookmark-alt"></i> Data User
                                         </a>
                                         <label class="label label-primary f-right">6</label>
@@ -59,7 +61,7 @@
                     </div>
                     <!-- Left-side section end -->
                     <!-- Right-side section start -->
-                    <div class="col-lg-12 col-xl-10">
+                    <div class="col-lg-12 col-xl-9">
                         <div class="mail-box-head row">
                             <div class="col-sm-3">
                                 <h3></h3>
@@ -86,7 +88,7 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="mail-body-content satuan-list">
+                            <div class="mail-body-content user-list">
                               <div class="table-responsive">
                                 <table id="setting-users" class="table table-striped table-bordered nowrap">
                                     <thead>
@@ -96,6 +98,7 @@
                                             <th>Nama</th>
                                             <th>Email</th>
                                             <th>Role</th>
+                                            <th>Satuan</th>
                                             <th>Status</th>
                                             <th>Login</th>
                                             <th>Action</th>
@@ -104,16 +107,34 @@
                                 </table>
                               </div>
                             </div>
-                            <div class="mail-body-content satuan-tambah">
+                            <div class="mail-body-content user-tambah">
                                 <form>
                                     <div class="form-group">
-                                        <input id="satuan_code" type="text" class="form-control" placeholder="Kode Satuan" disabled>
+                                        <div class="row">
+                                          <div class="col-md-6">
+                                            <input name="user" id="user_name" type="text" class="form-control" placeholder="Username Login">
+                                          </div>
+                                          <div class="col-md-6">
+                                            <code>*(Username tidak boleh menggunakan spasi dan karakter)</code>
+                                          </div>
+                                        </div>
                                     </div>
                                     <div class="form-group">
-                                        <input id="satuan_name" type="text" class="form-control" placeholder="Nama Satuan">
+                                        <input name="user" id="user_fullname" type="text" class="form-control" placeholder="Nama Lengkap">
                                     </div>
                                     <div class="form-group">
-                                        <input id="satuan_desc" type="text" class="form-control" placeholder="Deskripsi Satuan">
+                                        <input name="user" id="user_email" type="text" class="form-control" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                      <select id="user_role" name="select" class="form-control">
+                                          <option value="0">- Pilih Role -</option>
+                                          <option value="100">Superadmin</option>
+                                          <option value="10">Admin</option>
+                                      </select>
+                                    </div>
+                                    <div class="form-group">
+                                      <select id="user_satuan" name="select" class="form-control">
+                                      </select>
                                     </div>
 
                                 </form>

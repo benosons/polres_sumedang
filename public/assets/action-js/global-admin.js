@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-  loadmenu('satuan');
   var f = document.createElement("iframe");
   f.src = "https://kopi.dev/widget-covid-19/?dark=true";
   f.width = "100%";
@@ -23,9 +22,12 @@ $(document).ready(function(){
 
   }
 
+  if($('#session_satuan').val()){
+    loadmenu('satuan', $('#session_satuan').val());
+  }
 });
 
-function loadmenu(param){
+function loadmenu(param, id){
 
 $.ajax({
     type: 'post',
@@ -33,11 +35,12 @@ $.ajax({
     url: 'loadparam',
     data : {
             param      : param,
-            id         : '',
+            id         : id,
     },
     success: function(result){
 
         let data = result.data;
+        $('#nama-pengaduan, #head-sat').text('Satuan '+data[0].satuan_desc);
         var li = '';
         for (var i = 0; i < data.length; i++) {
             if(data[i].satuan_name == 'lantas'){
@@ -52,7 +55,7 @@ $.ajax({
                   </li>`;
         }
 
-        $('#satuan-fungsi').html(li);
+        // $('#satuan-fungsi').html(li);
       }
     });
 
