@@ -36,8 +36,8 @@
                                 <img src="{{baseURL}}/assets/admin/images/user.png" class="img-60" alt="User-Profile-Image">
                             </div>
                             <div class="user-name">
-                                <span>BAG ...</span>
-                                <span id="head-sat">Sat Lantas</span>
+                                <span>Pengaduan</span>
+                                <span id="head-sat"></span>
                             </div>
                         </div>
                         <div class="user-body">
@@ -45,7 +45,7 @@
                               {% if role == 100 or role == 200 %}
                                 <button onclick="compose()" id="input-pengaduan" class="btn btn-danger btn-block"><i class="icofont icofont-ui-text-chat"></i> Tulis Pengaduan</button>
                                 <button style="display:none;" id="kirim-pengaduan" class="btn btn-success btn-block"> <i class="fa fa-send"></i> Kirim</button>
-                              {% elseif role == 100 or role != 200 %}
+                              {% elseif role == 100 %}
                                 <button id="balas-pengaduan" class="btn btn-success btn-block" disabled><i class="fa fa-send" ></i> Kirim Balasan</button>
                               {% endif%}
                             </div>
@@ -136,9 +136,7 @@
                                     <div class="form-group row">
                                         <div class="col-sm-12">
                                             <select id="tujuan" name="select" class="form-control">
-                                                <option value="0">- Pilih tujuan pengaduan -</option>
-                                                <option value="30">Lalu lintas</option>
-                                                <option value="40">Reskrim</option>
+
                                             </select>
                                         </div>
                                     </div>

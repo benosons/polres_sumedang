@@ -43,7 +43,8 @@ class View extends \CodeIgniter\Controller
 			return redirect('dashboard');
 		}else{
 			helper('form');
-			$message = $this->session->get('msg');
+			$message = $this->session->getFlashdata('msg');
+
 			if($message){
 				$this->data['message'] = $message;
 			}

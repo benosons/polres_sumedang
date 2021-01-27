@@ -6,6 +6,8 @@ $(document).ready(function(){
   $('.note-toolbar.panel-heading').remove();
   $('.note-popover').remove();
 
+  loadparam('satuan');
+
   var icons = {
       header: "zmdi zmdi-chevron-down",
       activeHeader: "zmdi zmdi-chevron-up"
@@ -127,7 +129,7 @@ function loadpengaduan(param, id){
                       <div class="media-body">
                               <div class="">
                                   <textarea id="isi-balasan" rows="5" cols="5" class="form-control" placeholder="isi balasan pengaduan..."></textarea>
-                                  <div class="text-right m-t-20"><a href="#!" onclick="kirimbalasan()" class="btn btn-success waves-effect waves-light"><i class="fa fa-send"></i> Balas</a></div>
+                                  <div class="text-right m-t-20"><a href="#!" id="button-kirimbalasan" onclick="kirimbalasan()" class="btn btn-success waves-effect waves-light"><i class="fa fa-send"></i> Balas</a></div>
                               </div>
                       </div>
                   </div>
@@ -241,7 +243,12 @@ function loadpengaduan(param, id){
               icons: icons
           });
 
-
+          console.log(balasan[balasan.length - 1]['create_by']);
+          console.log($('#userid').val());
+          if(balasan[balasan.length - 1]['create_by'] == $('#userid').val()){
+            $('#button-kirimbalasan').hide();
+            $('#isi-balasan').hide();
+          }
         }else{
           $('#balas-pengaduan').attr("disabled", true);
           $('.email-content').show();
@@ -461,21 +468,15 @@ function savebalasan(formData){
       url: 'save',
       data : formData,
       success: function(result){
-        // Swal.fire({
-        //   type: 'success',
-        //   title: 'Pengaduan Berhasil Terkirim !',
-        //   showConfirmButton: true,
-        //   // showCancelButton: true,
-        //   confirmButtonText: `Ok`,
-        // }).then((result) => {
-        //   $(document).ready(function(){
-        //       $("#sent > div > a").trigger("click");
-        //       $('#tujuan').prop("selectedIndex", 0).val();
-        //       $('#judul').val('');
-        //       $('#filer_input').val('');
-        //       $('.email-summernote').summernote('reset');
-        //   });
-        // })
+        Swal.fire({
+          type: 'success',
+          title: 'Balasan Terkirim !',
+          showConfirmButton: true,
+          // showCancelButton: true,
+          confirmButtonText: `Ok`,
+        }).then((result) => {
+            loadpengaduan('inbox');
+        })
       }
     });
   };
@@ -492,3 +493,26 @@ function updatepengaduan(formData){
       }
     });
   };
+
+  function loadparam(param){
+
+    $.ajax({
+        type: 'post',
+        dataType: 'json',
+        url: 'loadparam',
+        data : {
+                param      : param,
+        },
+        success: function(result){
+            let data = result.data;
+            console.log(data);
+            let opt = '<option value="0">- Pilih tujuan pengaduan -</option>';
+            for (var i = 0; i < data.length; i++) {
+              data[i]
+              opt += '<option value="'+data[i].satuan_code+'">'+data[i].satuan_desc+'</option>'
+            }
+
+            $('#tujuan').html(opt);
+          }
+        })
+      }

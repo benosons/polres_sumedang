@@ -33,14 +33,15 @@ class Jsondata extends \CodeIgniter\Controller
 				$id		 	  = $request->getVar('id');
 				$role 		= $this->data['role'];
 				$userid		= $this->data['userid'];
-
+				$user_satuan		= $this->data['satuan'];
+				
 				if($this->logged){
 					$model = new \App\Models\PengaduanModel();
 					$modelfiles = new \App\Models\FilesModel();
-					if($role == 10){
+					if($role == 100){
 						$data = $model->findAll();
 					}else{
-							$data['pengaduan'] = $model->getPengaduan($param, $role, $userid, '', $id);
+							$data['pengaduan'] = $model->getPengaduan($param, $role, $userid, '', $id, $user_satuan);
 							$data['lampiran']  = $modelfiles->getWhere(['id_parent' => $id])->getResult();
 							$data['balasan']   = $model->getBalasan($id);
 							foreach ($data['balasan'] as $key => $value) {
@@ -654,7 +655,7 @@ class Jsondata extends \CodeIgniter\Controller
 
 					$model = new \App\Models\ParamModel();
 					$modelfiles = new \App\Models\FilesModel();
-					
+
 					$data = $model->getparam($param, $id);
 
 					if($data){

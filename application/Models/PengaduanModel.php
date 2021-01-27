@@ -9,23 +9,24 @@ class PengaduanModel extends Model{
     protected $createdField  = 'create_date';
     protected $updatedField  = 'update_date';
 
-    public function getPengaduan($param = null, $role = null, $create_by = null, $update_by = null, $id = null)
+    public function getPengaduan($param = null, $role = null, $create_by = null, $update_by = null, $id = null, $satuan = null)
     {
 
       if($param == 'inbox'){
-        if($role == 20){
+        if($role == 200){
           return  $this->select(['data_pengaduan.*', 'users.user_id', 'users.user_name', 'users.user_email', 'users.user_role', 'users.user_fullname'])->join('users','users.user_id = data_pengaduan.create_by')->getWhere(['create_by' => $create_by, 'status' => 1])->getResult();
         }else{
-          return  $this->select(['data_pengaduan.*', 'users.user_id', 'users.user_name', 'users.user_email', 'users.user_role', 'users.user_fullname'])->join('users','users.user_id = data_pengaduan.create_by')->getWhere('status in (0,1)')->getResult();
+          // echo $this->db->getLastQuery();
+          return  $this->select(['data_pengaduan.*', 'users.user_id', 'users.user_name', 'users.user_email', 'users.user_role', 'users.user_fullname'])->join('users','users.user_id = data_pengaduan.create_by')->getWhere(['kode_tujuan' => $satuan], 'status in (0,1)')->getResult();
         }
       }else if($param == 'sent'){
-        if($role == 20){
+        if($role == 200){
           return  $this->select(['data_pengaduan.*', 'users.user_id', 'users.user_name', 'users.user_email', 'users.user_role', 'users.user_fullname'])->join('users','users.user_id = data_pengaduan.create_by')->getWhere(['create_by' => $create_by, 'status' => 0])->getResult();
         }else{
-          return  $this->select(['data_pengaduan.*', 'users.user_id', 'users.user_name', 'users.user_email', 'users.user_role', 'users.user_fullname'])->join('users','users.user_id = data_pengaduan.create_by')->getWhere(['status' => 1])->getResult();
+          return  $this->select(['data_pengaduan.*', 'users.user_id', 'users.user_name', 'users.user_email', 'users.user_role', 'users.user_fullname'])->join('users','users.user_id = data_pengaduan.create_by')->getWhere(['kode_tujuan' => $satuan, 'status' => 1])->getResult();
         }
       }else if($param == 'read'){
-        if($role == 20){
+        if($role == 200){
           return  $this->select(['data_pengaduan.*', 'users.user_id', 'users.user_name', 'users.user_email', 'users.user_role', 'users.user_fullname'])->join('users','users.user_id = data_pengaduan.create_by')->getWhere(['id' => $id])->getResult();
         }else{
           return  $this->select(['data_pengaduan.*', 'users.user_id', 'users.user_name', 'users.user_email', 'users.user_role', 'users.user_fullname'])->join('users','users.user_id = data_pengaduan.create_by')->getWhere(['id' => $id])->getResult();
@@ -37,6 +38,7 @@ class PengaduanModel extends Model{
       // }else if($param == 'inbox' && $role == 20){
       //   return  $this->select(['data_pengaduan.*', 'users.user_id', 'users.user_name', 'users.user_email', 'users.user_role', 'users.user_fullname'])->join('users','users.user_id = data_pengaduan.create_by')->getWhere(['tujuan' => $role])->getResult();
       // }
+      // echo $this->db->getLastQuery();
     }
 
     public function getBalasan($id)
