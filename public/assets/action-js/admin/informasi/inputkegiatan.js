@@ -54,6 +54,8 @@ function loadparam(param){
           }
 
           $('#tujuan').append(opt);
+          $('#tujuan').val($('#user_satuan').val());
+          $('#tujuan').prop('disabled', true);
         }
       })
     }
@@ -75,6 +77,7 @@ function onberita(type){
       $('#block-post').hide();
       $('#tambah-berita').show();
       $('#block-tambah').show();
+      loadkegiatan('','');
     }
 };
 
@@ -100,6 +103,7 @@ function save(formData){
               $('#judul').val('');
               $('#filer_input').val('');
               $('.berita-summernote').summernote('reset');
+              loadkegiatan('','');
           });
         })
       }

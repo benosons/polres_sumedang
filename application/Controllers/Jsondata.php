@@ -34,7 +34,7 @@ class Jsondata extends \CodeIgniter\Controller
 				$role 		= $this->data['role'];
 				$userid		= $this->data['userid'];
 				$user_satuan		= $this->data['satuan'];
-				
+
 				if($this->logged){
 					$model = new \App\Models\PengaduanModel();
 					$modelfiles = new \App\Models\FilesModel();
@@ -93,11 +93,12 @@ class Jsondata extends \CodeIgniter\Controller
 				$id		 	  = $request->getVar('id');
 				$role 		= $this->data['role'];
 				$userid		= $this->data['userid'];
+				$user_satuan		= $this->data['satuan'];
 
 				if($this->logged){
 					$model = new \App\Models\BeritaModel();
 					$modelfiles = new \App\Models\FilesModel();
-					if($role == 10){
+					if($role == 100){
 							$data['berita'] = $model->join('users','users.user_id = data_berita.create_by')->findAll();
 					}else{
 							$data['berita'] = $model->getBerita($param, $role, $userid, '', $id);

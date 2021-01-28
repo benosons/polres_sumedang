@@ -53,11 +53,14 @@ function loadparam(param){
           }
 
           $('#tujuan').append(opt);
+          $('#tujuan').val($('#user_satuan').val());
+          $('#tujuan').prop('disabled', true);
         }
       })
     }
 
 function onberita(type){
+
     $('.page-list > li').removeClass('active');
     if(type == 'input'){
       $('.berita-tulis').show();
@@ -74,6 +77,8 @@ function onberita(type){
       $('#block-post').hide();
       $('#tambah-berita').show();
       $('#block-tambah').show();
+
+      loadberita('','');
     }
 };
 
@@ -99,6 +104,8 @@ function save(formData){
               $('#judul').val('');
               $('#filer_input').val('');
               $('.berita-summernote').summernote('reset');
+
+              loadberita('','');
           });
         })
       }
