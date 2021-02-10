@@ -32,4 +32,17 @@ class ParamModel extends Model{
         return  $this->db->table($table)->insert($data);
     }
 
+    public function getkota($param = null, $id = null )
+    {
+        if($param == 'kecamatan'){
+          $sql = "select * from districts where regency_id = 3211";
+        }else if($param == 'desa'){
+          $sql = "select * from villages where district_id = $id";
+        }
+        
+        $result = $this->db->query($sql);
+        $row = $result->getResult();
+        return $row;
+    }
+
 }

@@ -955,6 +955,66 @@ class Jsondata extends \CodeIgniter\Controller
 
 	}
 
+	public function saveLapor(){
+		$request  = $this->request;
+		$param 	  = $request->getVar('param');
+		$mode 	  = $request->getVar('mode');
+		$model 	  = new \App\Models\PengaduanModel();
+		$modelfiles = new \App\Models\FilesModel();
+
+		$files	  = $request->getFiles()['lampiran'];
+		$path			= FCPATH.'public';
+		$tipe			= 'uploads/users/'.$request->getVar('param').'/lampiran';
+		$bagian 	= 'covid';
+		$date 		= date('Y/m/d');
+		$folder		= $path.'/'.$tipe.'/'.$bagian.'/'.$date.'/';
+
+		$data = [
+			'nama' => $request->getVar('input-name'),
+			'no_telepon' => $request->getVar('input-notelp'),
+			'alamat' => $request->getVar('input-kecamatan'),
+			'id_kecamatan' => $request->getVar('input-desa'),
+			'id_desa' => $request->getVar('input-alamat'),
+			'create_date' => $this->now
+    ];
+		$res = $model->saveLaporan($data);
+		$id  = $res;
+
+		if (!is_dir($folder)) {
+		    mkdir($folder, 0777, TRUE);
+		}
+
+		if($id){
+			foreach($files as $idx => $img){
+
+				$stat = $img->move($folder, $img->getName());
+
+				$datalampiran = [
+					'id_parent' => $id,
+					'file_name' => $img->getName(),
+					'extention' => null,
+					'size' => $img->getSize('kb'),
+					'path' => $tipe.'/'.$bagian.'/'.$date.'/',
+					'type' => 'kerumunan',
+					'create_date' => $this->now,
+					'update_date' => $this->now,
+		    ];
+				$modelfiles->insert($datalampiran);
+				// $saveupload = $model->saveDataUpload($datalampiran);
+			}
+		}
+
+		$response = [
+				'status'   => 'sukses',
+				'code'     => '0',
+				'data' 		 => 'terkirim'
+		];
+		header('Content-Type: application/json');
+		echo json_encode($response);
+		exit;
+
+	}
+
 	public function update(){
 
 		$request  = $this->request;
@@ -1502,6 +1562,44 @@ class Jsondata extends \CodeIgniter\Controller
 		echo json_encode($response);
 		exit;
 
+	}
+
+	public function loadkota(){
+		try
+		{
+				$request  = $this->request;
+				$param 	  = $request->getVar('param');
+				$id		 	  = $request->getVar('id');
+				$role 		= $this->data['role'];
+				$userid		= $this->data['userid'];
+
+					$model = new \App\Models\ParamModel();
+					$modelfiles = new \App\Models\FilesModel();
+
+					$data = $model->getkota($param, $id);
+
+					if($data){
+						$response = [
+							'status'   => 'sukses',
+							'code'     => '1',
+							'data' 		 => $data
+						];
+					}else{
+						$response = [
+						    'status'   => 'gagal',
+						    'code'     => '0',
+						    'data'     => 'tidak ada data',
+						];
+					}
+
+				header('Content-Type: application/json');
+				echo json_encode($response);
+				exit;
+			}
+		catch (\Exception $e)
+		{
+			die($e->getMessage());
+		}
 	}
 
 }

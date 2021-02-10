@@ -365,6 +365,13 @@ class View extends \CodeIgniter\Controller
 				}
 	}
 
+	public function lapor()
+	{
+			helper('form');
+			$this->data['script'] = $this->data['baseURL'].'/assets/action-js/users/lapor.js';
+			return \Twig::instance()->display('users/lapor.html', $this->data);
+	}
+
 	public function kawalcovid()
 	{
 				helper('form');

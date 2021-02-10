@@ -51,4 +51,10 @@ class PengaduanModel extends Model{
         return  $this->db->table('data_balasan')->insert($data);
     }
 
+    public function saveLaporan($data)
+    {
+        $this->db->table('data_lapor_covid')->insert($data);
+        return $this->db->insertID();
+    }
+
 }
