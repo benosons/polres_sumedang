@@ -53,8 +53,24 @@ class PengaduanModel extends Model{
 
     public function saveLaporan($data)
     {
+      // print_r($data);die;
         $this->db->table('data_lapor_covid')->insert($data);
         return $this->db->insertID();
+    }
+
+    public function getLaporCovid($id = null, $status = null)
+    {
+      $sql = "SELECT cvd.*, dis.name as nama_kecamatan, vil.name as nama_desa FROM `data_lapor_covid` cvd
+              inner join districts dis on dis.id = cvd.id_kecamatan
+              inner join villages vil on vil.id = cvd.id_desa";
+      if($id){
+        $sql .=" where cvd.id = $id";
+      }
+      $sql .=" ORDER BY create_date asc";
+
+      $result = $this->db->query($sql);
+      $row = $result->getResult();
+      return $row;
     }
 
 }

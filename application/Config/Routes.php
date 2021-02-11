@@ -89,6 +89,7 @@ $routes->add('satuan', 'View::satuan');
 $routes->add('beritacovid', 'View::beritacovid');
 $routes->add('inputkegiatan', 'View::inputkegiatan');
 $routes->add('listpelayanan', 'View::listpelayanan');
+$routes->add('laporkerumunan', 'View::laporkerumunan');
 
 // User
 $routes->get('berita', 'View::berita');
@@ -109,6 +110,7 @@ $routes->post('getBerita', 'Jsondata::getBerita');
 $routes->post('getFiles', 'Jsondata::getFiles');
 $routes->post('getKegiatan', 'Jsondata::getKegiatan');
 $routes->post('getBeritaCovid', 'Jsondata::getBeritaCovid');
+$routes->post('getLaporCovid', 'Jsondata::getLaporCovid');
 $routes->post('loadBerita', 'Jsondata::loadBerita');
 $routes->post('loadBeritaCovid', 'Jsondata::loadBeritaCovid');
 $routes->post('loadKegiatan', 'Jsondata::loadKegiatan');
@@ -125,6 +127,7 @@ $routes->post('addUser', 'Jsondata::addUser');
 $routes->post('actionBerita', 'Jsondata::actionBerita');
 $routes->post('actionKegiatan', 'Jsondata::actionKegiatan');
 $routes->post('actionBeritaCovid', 'Jsondata::actionBeritaCovid');
+$routes->post('actionLaporCovid', 'Jsondata::actionLaporCovid');
 $routes->post('loadBeritaHeadline', 'Jsondata::loadBeritaHeadline');
 $routes->post('loadBeritaHeadlineCovid', 'Jsondata::loadBeritaHeadlineCovid');
 $routes->post('addKonten', 'Jsondata::addKonten');

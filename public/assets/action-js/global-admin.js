@@ -71,3 +71,10 @@ $.ajax({
       }
     });
   }
+
+  function animate(elem, type) {
+    $(elem).addClass(type + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(e){
+        e.preventDefault();
+        $(this).removeClass(type + ' animated');
+    });
+  };

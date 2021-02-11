@@ -379,5 +379,15 @@ class View extends \CodeIgniter\Controller
 
 	}
 
+	public function laporkerumunan()
+	{
+		if($this->logged){
+			helper('form');
+			$this->data['script'] = $this->data['baseURL'].'/assets/action-js/admin/covid19/laporkerumunan.js';
+			return \Twig::instance()->display('admin/covid19/laporkerumunan.html', $this->data);
+		}else{
+			return redirect('home');
+		}
+	}
 
 }

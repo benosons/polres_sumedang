@@ -291,6 +291,60 @@ class Jsondata extends \CodeIgniter\Controller
 		}
 	}
 
+	public function getLaporCovid()
+	{
+		try
+		{
+				$request  = $this->request;
+				$param 	  = $request->getVar('param');
+				$id		 	  = $request->getVar('id');
+				$role 		= $this->data['role'];
+				$userid		= $this->data['userid'];
+
+				if($this->logged){
+					$model = new \App\Models\PengaduanModel();
+					$modelfiles = new \App\Models\FilesModel();
+					// if($role == 100){
+					// 		$data['berita'] = $model->join('users','users.user_id = data_berita.create_by')->findAll();
+					// }else{
+							$data = $model->getLaporCovid($param, $role, $userid, '', $id);
+							foreach ($data as $key => $value) {
+								$data[$key]->lampiran  = $modelfiles->getWhere(['id_parent' => $value->id])->getResult();
+							}
+					// }
+
+					if($data){
+						$response = [
+							'status'   => 'sukses',
+							'code'     => '1',
+							'data' 		 => $data
+						];
+					}else{
+						$response = [
+						    'status'   => 'gagal',
+						    'code'     => '0',
+						    'data'     => 'tidak ada data',
+						];
+					}
+
+				}else{
+					$response = [
+							'status'   => 'gagal',
+							'code'     => '0',
+							'data' 		 => 'silahkan login'
+					];
+				}
+
+				header('Content-Type: application/json');
+				echo json_encode($response);
+				exit;
+			}
+		catch (\Exception $e)
+		{
+			die($e->getMessage());
+		}
+	}
+
 	public function loadBerita()
 	{
 		try
@@ -972,11 +1026,12 @@ class Jsondata extends \CodeIgniter\Controller
 		$data = [
 			'nama' => $request->getVar('input-name'),
 			'no_telepon' => $request->getVar('input-notelp'),
-			'alamat' => $request->getVar('input-kecamatan'),
-			'id_kecamatan' => $request->getVar('input-desa'),
-			'id_desa' => $request->getVar('input-alamat'),
+			'alamat' => $request->getVar('input-alamat'),
+			'id_kecamatan' => $request->getVar('input-kecamatan'),
+			'id_desa' => $request->getVar('input-desa'),
 			'create_date' => $this->now
     ];
+
 		$res = $model->saveLaporan($data);
 		$id  = $res;
 
@@ -1278,6 +1333,57 @@ class Jsondata extends \CodeIgniter\Controller
 				'status'   => 'sukses',
 				'code'     => '0',
 				'data' 		 => 'terupdate'
+		];
+		header('Content-Type: application/json');
+		echo json_encode($response);
+		exit;
+
+	}
+
+	public function actionLaporCovid(){
+
+		$request  = $this->request;
+		$role 		= $this->data['role'];
+		$userid		= $this->data['userid'];
+
+		$param 	  = $request->getVar('param');
+		$id				= $param['id'];
+
+		$model 	  = new \App\Models\PengaduanModel();
+		$modelfiles = new \App\Models\FilesModel();
+
+		if($param['mode'] == 'view'){
+			$data = $model->getLaporCovid($id);
+
+			foreach ($data as $key => $value) {
+				$data[$key]->lampiran  = $modelfiles->getWhere(['id_parent' => $value->id])->getResult();
+			}
+
+		}else if($param['mode'] == 'delete'){
+			$res = $model->deleteDataCovid($param['id']);
+		}else if($param['mode'] == 'update'){
+			switch ($param['stat']) {
+				case 'false':
+						$status = 0;
+					break;
+
+				default:
+						$status = 2;
+					break;
+			}
+			$data = [
+									'update_date' => $this->now,
+									'update_by' 	=> $userid,
+									'status' => $status,
+			        ];
+				$res = $model->updateBeritaCovid($param['id'], $data);
+		}
+
+
+		$response = [
+				'status'   => 'sukses',
+				'code'     => '0',
+				'data' 		 => @$data
 		];
 		header('Content-Type: application/json');
 		echo json_encode($response);
