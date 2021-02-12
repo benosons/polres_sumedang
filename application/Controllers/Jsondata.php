@@ -1356,7 +1356,7 @@ class Jsondata extends \CodeIgniter\Controller
 			$data = $model->getLaporCovid($id);
 
 			foreach ($data as $key => $value) {
-				$data[$key]->lampiran  = $modelfiles->getWhere(['id_parent' => $value->id])->getResult();
+				$data[$key]->lampiran  = $modelfiles->getWhere(['id_parent' => $value->id, 'type' => 'kerumunan'])->getResult();
 			}
 
 		}else if($param['mode'] == 'delete'){
