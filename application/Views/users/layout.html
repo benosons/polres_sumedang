@@ -83,8 +83,13 @@
 		    display: block;
 		}
 
-		@media only screen and (min-width: 600px) {
-
+		@media only screen and (max-width: 700px) {
+			.presentation {
+				right: 10em!important;
+			}
+			nav.float-action-button {
+			  margin-right: 10em!important;
+			}
 		}
 
 		html:hover .presentation,
@@ -93,10 +98,10 @@
 		}
 
 		.presentation {
-		position: fixed;
-		right: 88px;
-		bottom: 34px;
-		text-shadow: 1px 1px 1px #000;
+			position: fixed;
+			right: 88px;
+			bottom: 34px;
+			text-shadow: 1px 1px 1px #000;
 		}
 
 		nav.float-action-button {
@@ -578,7 +583,7 @@ input[type=submit]:hover {
 				<i class="fa fa-camera"></i>
 				<span class="tooltiptext">Lapor Kerumunan</span>
 			</a>
-<a href="#!" class="buttons main-button pulse" title="Share" data-toggle="tooltip" data-placement="left">
+<a href="#!" class="buttons main-button pulse" title="Share" data-toggle="tooltip" data-placement="left" style="z-index: 10000;">
 				<i class="fa fa-times"></i>
 				<i class="fa fa-bullhorn"></i>
 			</a>
