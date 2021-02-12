@@ -78,7 +78,7 @@ function loadkota(param, id){
             // showCancelButton: true,
             confirmButtonText: `Ok`,
           }).then((result) => {
-              window.location.href = window.baseURL+'/home';
+              window.location.href = '/home';
           });
         }
       });
