@@ -1,5 +1,6 @@
 console.log('You are running jQuery version: ' + $.fn.jquery);
 $(document).ready(function(){
+  window.baseURL = $('#baseURL').val();
   $('ul.sf-menu > li.selected').removeClass('selected');
 
   loadkota('kecamatan');
@@ -70,7 +71,15 @@ function loadkota(param, id){
         url: 'saveLapor',
         data : formData,
         success: function(result){
-
+          Swal.fire({
+            type: 'success',
+            title: 'Laporan Kerumuman Anda Berhasil dikirm !',
+            showConfirmButton: true,
+            // showCancelButton: true,
+            confirmButtonText: `Ok`,
+          }).then((result) => {
+              window.location.href = window.baseURL+'/home';
+          });
         }
       });
     }
