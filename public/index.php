@@ -23,7 +23,7 @@ $useKint = false;
  *
  * NOTE: If you change these, also change the error_reporting() code below
  */
-
+print_r('adas');die;
 // running under Continuous Integration server?
 if (getenv('CI') !== false)
 {
@@ -268,5 +268,9 @@ if ($composer_autoload = $config->composerAutoload)
  *
  * And away we go...
  */
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 $codeigniter = new CodeIgniter\CodeIgniter($startMemory, $startTime, $config);
 $codeigniter->run();
