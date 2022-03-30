@@ -23,7 +23,7 @@ $useKint = false;
  *
  * NOTE: If you change these, also change the error_reporting() code below
  */
-print_r('adas');die;
+
 // running under Continuous Integration server?
 if (getenv('CI') !== false)
 {
