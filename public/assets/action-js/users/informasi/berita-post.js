@@ -125,7 +125,7 @@ function loadberita(param, id){
                   					</fieldset>
                   				</form>
                   			</div>`;
-          content += `<div class="row page_margin_top_section">
+          let contents = `<div class="row page_margin_top_section">
                 				<h4 class="box_header">6 Comments</h4>
                 				<ul id="comments_list">
                 					<li class="comment clearfix" id="comment-1">

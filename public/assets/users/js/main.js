@@ -1096,21 +1096,24 @@ jQuery(document).ready(function($){
 	if($("#map").length)
 	{
 		//google map
-		var coordinate = new google.maps.LatLng(45.358887,-75.702429);
-		var mapOptions = {
-			zoom: 15,
-			center: coordinate,
-			mapTypeId: google.maps.MapTypeId.ROADMAP,
-			streetViewControl: false,
-			mapTypeControl: false
-		};
+		function initialize() {
+			
+			var coordinate = new google.maps.LatLng(45.358887,-75.702429);
+			var mapOptions = {
+				zoom: 15,
+				center: coordinate,
+				mapTypeId: google.maps.MapTypeId.ROADMAP,
+				streetViewControl: false,
+				mapTypeControl: false
+			};
 
-		map = new google.maps.Map(document.getElementById("map"),mapOptions);
-		marker = new google.maps.Marker({
-			position: new google.maps.LatLng(45.358887,-75.702429),
-			map: map,
-			icon: new google.maps.MarkerImage("images/icons/other/map_pointer.png", new google.maps.Size(38, 45), null, new google.maps.Point(18, 44))
-		});
+			map = new google.maps.Map(document.getElementById("map"),mapOptions);
+			marker = new google.maps.Marker({
+				position: new google.maps.LatLng(45.358887,-75.702429),
+				map: map,
+				icon: new google.maps.MarkerImage("images/icons/other/map_pointer.png", new google.maps.Size(38, 45), null, new google.maps.Point(18, 44))
+			});
+		}
 	}
 
 	//window resize
