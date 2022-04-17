@@ -121,7 +121,7 @@ function save(formData){
                 id         : id,
         },
         success: function(result){
-            console.log(result.data.berita);
+            if(result.code != 0){
             // $('#balas-pengaduan').attr("disabled", true);
             // $('.email-content').show();
             // $('.email-read').hide();
@@ -250,6 +250,12 @@ function save(formData){
                   });
               }
           });
+        }else{
+          var dt = $('#setting-default').DataTable()
+          //clear datatable
+          dt.clear().draw();
+
+        }
 
         }
       });
@@ -258,7 +264,6 @@ function save(formData){
   function action(mode, id, stat){
 
     if(mode == 'edit'){
-      alert();
       return true;
     }
 
