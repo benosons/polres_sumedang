@@ -58,9 +58,29 @@ class ParamModel extends Model{
       return $row;
     }
 
+    public function getCctv($id = null, $role = null)
+    {
+      if($role != 300){
+        $sql = "select * from data_cctv";
+      }else{
+        $sql = "select * from data_cctv where create_by = '$id'";
+      }
+
+      $result = $this->db->query($sql);
+      $row = $result->getResult();
+      return $row;
+    }
+
     public function deleteMutasi($id)
     {
         $builder = $this->db->table('data_mutasi');
+        $query   = $builder->where('id', $id);
+        return  $query->delete();
+    }
+
+    public function deleteCctv($id)
+    {
+        $builder = $this->db->table('data_cctv');
         $query   = $builder->where('id', $id);
         return  $query->delete();
     }

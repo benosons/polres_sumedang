@@ -6,30 +6,20 @@ $(document).ready(function(){
   $('.note-toolbar.panel-heading').remove();
   $('.note-popover').remove();
 
-  $('#setting-user').DataTable();
+  $('#data-cctv').DataTable();
   $('.user-tambah').hide();
   $('#save-user').hide();
 
-  loadmutasi('');
+  loadcctv('');
 
   $('#save-user').on('click', function(){
-      let nama = $('#nama').val();
-      let nrp = $('#nrp').val();
-      let jabatan = $('#jabatan').val();
-      let date = $('#date').val();
-      let uraian = $('#uraian').val();
       let lokasi = $('#lokasi').val();
-      let keterangan = $('#keterangan').val();
+      let url = $('#url').val();
 
       var formData = new FormData();
-      formData.append('param', 'data_mutasi');
-      formData.append('nama', nama);
-      formData.append('nrp', nrp);
-      formData.append('jabatan', jabatan);
-      formData.append('date', date);
-      formData.append('uraian', uraian);
+      formData.append('param', 'data_cctv');
       formData.append('lokasi', lokasi);
-      formData.append('keterangan', keterangan);
+      formData.append('url', url);
 
       save(formData);
 
@@ -46,12 +36,12 @@ $(document).ready(function(){
 
 });
 
-function loadmutasi(param){
+function loadcctv(param){
 
   $.ajax({
       type: 'post',
       dataType: 'json',
-      url: 'loadmutasi',
+      url: 'loadcctv',
       data : {
               param      : param,
       },
@@ -59,7 +49,7 @@ function loadmutasi(param){
           let data = result.data;
           let code = result.code;
           if(code == 1){
-            var dt = $('#data-mutasi').DataTable({
+            var dt = $('#data-cctv').DataTable({
               destroy: true,
               paging: true,
               lengthChange: false,
@@ -72,13 +62,8 @@ function loadmutasi(param){
               aaData: result.data,
               aoColumns: [
                   { 'mDataProp': 'id', 'width':'10%'},
-                  { 'mDataProp': 'nama'},
-                  { 'mDataProp': 'nrp'},
-                  { 'mDataProp': 'jabatan'},
-                  { 'mDataProp': 'tanggal'},
-                  { 'mDataProp': 'uraian'},
                   { 'mDataProp': 'lokasi'},
-                  { 'mDataProp': 'keterangan'},
+                  { 'mDataProp': 'url'},
                   { 'mDataProp': 'id'},
               ],
               order: [[0, 'ASC']],
@@ -88,11 +73,19 @@ function loadmutasi(param){
                 {
                     mRender: function ( data, type, row ) {
 
+                      var el = '<a target="_blank" href="'+row.url+'" >'+row.url+'</a>'
+                        return el;
+                    },
+                    aTargets: [ 2 ]
+                },
+                {
+                    mRender: function ( data, type, row ) {
+
                       var el = '<button class="btn btn-mini btn-danger" onclick="action(\'delete\','+row.id+',\'\')"><i class="icofont icofont-trash"></i>Hapus</button>';
 
                         return el;
                     },
-                    aTargets: [ 8 ]
+                    aTargets: [ 3 ]
                 },
               ],
               fnRowCallback: function(nRow, aData, iDisplayIndex, iDisplayIndexFull){
@@ -122,7 +115,7 @@ function loadmutasi(param){
               }
             });
           }else{
-            var dt = $('#data-mutasi').DataTable()
+            var dt = $('#data-cctv').DataTable()
             dt.clear().draw();
           }
         }
@@ -138,7 +131,7 @@ function onusers(type){
       $('#save-user').show();
       $('#tambah-user').hide();
     }else if(type == 'list'){
-      loadmutasi('');
+      loadcctv('');
       $('#list-user').addClass('active');
       $('.user-tambah').hide();
       $('.user-list').show();
@@ -153,12 +146,12 @@ function save(formData){
       type: 'post',
       processData: false,
       contentType: false,
-      url: 'addMutasi',
+      url: 'addcctv',
       data : formData,
       success: function(result){
         Swal.fire({
           type: 'success',
-          title: 'Berhasil Tambah Mutasi !',
+          title: 'Berhasil Tambah CCTV !',
           showConfirmButton: true,
           // showCancelButton: true,
           confirmButtonText: `Ok`,
@@ -181,10 +174,10 @@ function save(formData){
         type: 'post',
         processData: false,
         contentType: false,
-        url: 'actionMutasi',
+        url: 'actionCctv',
         data : formData,
         success: function(result){
-          loadmutasi('');
+          loadcctv('');
         }
       });
   }
