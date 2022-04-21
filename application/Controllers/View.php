@@ -269,6 +269,17 @@ class View extends \CodeIgniter\Controller
 				}
 	}
 
+	public function cctv()
+	{
+				if($this->logged){
+					helper('form');
+					$this->data['script'] = $this->data['baseURL'].'/assets/action-js/admin/cctv/cctv-index.js';
+					return \Twig::instance()->display('admin/cctv/index.html', $this->data);
+				}else{
+					return redirect('home');
+				}
+	}
+
 	public function satuan1()
 	{
 				if($this->logged){

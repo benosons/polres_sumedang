@@ -1677,7 +1677,7 @@ class Jsondata extends \CodeIgniter\Controller
 					$modelparam = new \App\Models\ParamModel();
 
 						$fulldata = [];
-						$datamutasi = $modelparam->getMutasi($userid);
+						$datamutasi = $modelparam->getMutasi($userid, $role);
 
 						$mutasi = $datamutasi;
 

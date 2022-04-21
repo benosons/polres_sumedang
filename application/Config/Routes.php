@@ -91,6 +91,7 @@ $routes->add('inputkegiatan', 'View::inputkegiatan');
 $routes->add('listpelayanan', 'View::listpelayanan');
 $routes->add('laporkerumunan', 'View::laporkerumunan');
 $routes->add('mutasi', 'View::mutasi');
+$routes->add('cctv', 'View::cctv');
 
 // User
 $routes->get('berita', 'View::berita');

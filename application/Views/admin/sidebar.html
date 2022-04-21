@@ -207,11 +207,17 @@
                 </ul>
             </li>
             {% endif %}
-            {% if role == 300 %}
-            <li class="" id="menu-user">
+            {% if role == 300 or role == 100 %}
+            <li class="" id="menu-mutasi">
               <a href="mutasi" data-i18n="nav.widget.main">
-                <span class="pcoded-micon"><i class="ti-user"></i></span>
+                <span class="pcoded-micon"><i class="ti-layout-tab-window"></i></span>
                 <span class="pcoded-mtext">Data Mutasi Digital</span>
+              </a>
+            </li>
+            <li class="" id="menu-cctv">
+              <a href="cctv" data-i18n="nav.widget.main">
+                <span class="pcoded-micon"><i class="ti-video-camera"></i></span>
+                <span class="pcoded-mtext">CCTV Pantau </span>
               </a>
             </li>
             {% endif %}

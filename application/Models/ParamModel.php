@@ -45,9 +45,13 @@ class ParamModel extends Model{
         return $row;
     }
 
-    public function getMutasi($id = null)
+    public function getMutasi($id = null, $role = null)
     {
-      $sql = "select * from data_mutasi where create_by = '$id'";
+      if($role != 300){
+        $sql = "select * from data_mutasi";
+      }else{
+        $sql = "select * from data_mutasi where create_by = '$id'";
+      }
 
       $result = $this->db->query($sql);
       $row = $result->getResult();
