@@ -1124,6 +1124,42 @@ class Jsondata extends \CodeIgniter\Controller
 
 	}
 
+	public function addMutasi(){
+
+		$request  = $this->request;
+		$param 	  = $request->getVar('param');
+		$model 	  = new \App\Models\ParamModel();
+
+		$data = [
+				'nama' => $request->getVar('nama'),
+				'nrp' => $request->getVar('nrp'),
+				'jabatan' => $request->getVar('jabatan'),
+				'tanggal' => $request->getVar('date'),
+				'uraian' => $request->getVar('uraian'),
+				'lokasi' => $request->getVar('lokasi'),
+				'keterangan' => $request->getVar('keterangan'),
+				'create_by' 		=> $this->data['userid'],
+				'update_by' 		=> $this->data['userid'],
+				'create_date' => $this->now,
+				'update_date' => $this->now,
+
+
+        ];
+
+		$res = $model->saveParam($param, $data);
+		$id  = $model->insertID();
+
+		$response = [
+				'status'   => 'sukses',
+				'code'     => '0',
+				'data' 		 => 'terkirim'
+		];
+		header('Content-Type: application/json');
+		echo json_encode($response);
+		exit;
+
+	}
+
 	public function addUser(){
 
 		$request  = $this->request;
@@ -1628,6 +1664,47 @@ class Jsondata extends \CodeIgniter\Controller
 		}
 	}
 
+	public function loadmutasi()
+	{
+		try
+		{
+				$request  = $this->request;
+				$param 	  = $request->getVar('param');
+				$id		 	  = $request->getVar('id');
+				$role 		= $this->data['role'];
+				$userid		= $this->data['userid'];
+
+					$modelparam = new \App\Models\ParamModel();
+
+						$fulldata = [];
+						$datamutasi = $modelparam->getMutasi($userid);
+
+						$mutasi = $datamutasi;
+
+					if($mutasi){
+						$response = [
+							'status'   => 'sukses',
+							'code'     => '1',
+							'data' 		 => $mutasi
+						];
+					}else{
+						$response = [
+						    'status'   => 'gagal',
+						    'code'     => '0',
+						    'data'     => 'tidak ada data',
+						];
+					}
+
+				header('Content-Type: application/json');
+				echo json_encode($response);
+				exit;
+			}
+		catch (\Exception $e)
+		{
+			die($e->getMessage());
+		}
+	}
+
 	public function actionUsers(){
 
 		$request  = $this->request;
@@ -1658,6 +1735,38 @@ class Jsondata extends \CodeIgniter\Controller
 
 		}else{
 			$res = $model->delete(['user_id' => $id]);
+		}
+		$response = [
+				'status'   => 'sukses',
+				'code'     => '0',
+				'data' 		 => 'terupdate'
+		];
+		header('Content-Type: application/json');
+		echo json_encode($response);
+		exit;
+
+	}
+
+	public function actionMutasi(){
+
+		$request  = $this->request;
+		$mode 	  = $request->getVar('mode');
+		$id 	  	= $request->getVar('id');
+
+		$role 		= $this->data['role'];
+		$userid		= $this->data['userid'];
+
+		$model 	  = new \App\Models\ParamModel();
+
+		$data = [
+						'update_date' => $this->now,
+						'update_by' 	=> $userid,
+        ];
+		if($mode == 'update'){
+			$res = $model->update($id, $data);
+
+		}else{
+			$res = $model->deleteMutasi($id);
 		}
 		$response = [
 				'status'   => 'sukses',

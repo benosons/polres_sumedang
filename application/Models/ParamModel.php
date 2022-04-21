@@ -45,4 +45,20 @@ class ParamModel extends Model{
         return $row;
     }
 
+    public function getMutasi($id = null)
+    {
+      $sql = "select * from data_mutasi where create_by = '$id'";
+
+      $result = $this->db->query($sql);
+      $row = $result->getResult();
+      return $row;
+    }
+
+    public function deleteMutasi($id)
+    {
+        $builder = $this->db->table('data_mutasi');
+        $query   = $builder->where('id', $id);
+        return  $query->delete();
+    }
+
 }

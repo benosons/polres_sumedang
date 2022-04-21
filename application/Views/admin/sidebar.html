@@ -109,6 +109,7 @@
                 </ul>
             </li>
             {% endif %}
+            {% if role != 300 %}
             <li class="pcoded-hasmenu" id="menu-pengaduan">
                 <a href="#" data-i18n="nav.widget.main">
                     <span class="pcoded-micon"><i class="ti-comments"></i></span>
@@ -150,7 +151,8 @@
                   {% endif %}
                 </ul>
             </li>
-            {% if role != 200 %}
+            {% endif %}
+            {% if role != 200 and role != 300 %}
             <li class="pcoded-hasmenu" id="menu-informasi">
                 <a href="#" data-i18n="nav.widget.main">
                     <span class="pcoded-micon"><i class="ti-info-alt"></i></span>
@@ -203,6 +205,14 @@
                         </a>
                     </li>
                 </ul>
+            </li>
+            {% endif %}
+            {% if role == 300 %}
+            <li class="" id="menu-user">
+              <a href="mutasi" data-i18n="nav.widget.main">
+                <span class="pcoded-micon"><i class="ti-user"></i></span>
+                <span class="pcoded-mtext">Data Mutasi Digital</span>
+              </a>
             </li>
             {% endif %}
             {% if role == 100 %}

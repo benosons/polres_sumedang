@@ -18,6 +18,7 @@ class View extends \CodeIgniter\Controller
 				'username' => $this->session->get('user_name'),
 				'role' => $this->session->get('user_role'),
 				'satuan' => $this->session->get('user_satuan'),
+				'fullname' => $this->session->get('user_fullname'),
 			);
   }
 
@@ -252,6 +253,17 @@ class View extends \CodeIgniter\Controller
 					helper('form');
 					$this->data['script'] = $this->data['baseURL'].'/assets/action-js/admin/satuan/satuan-index.js';
 					return \Twig::instance()->display('admin/satuan/index.html', $this->data);
+				}else{
+					return redirect('home');
+				}
+	}
+
+	public function mutasi()
+	{
+				if($this->logged){
+					helper('form');
+					$this->data['script'] = $this->data['baseURL'].'/assets/action-js/admin/mutasi/mutasi-index.js';
+					return \Twig::instance()->display('admin/mutasi/index.html', $this->data);
 				}else{
 					return redirect('home');
 				}
