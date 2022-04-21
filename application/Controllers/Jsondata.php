@@ -1190,6 +1190,37 @@ class Jsondata extends \CodeIgniter\Controller
 
 	}
 
+	public function addSupervisi(){
+
+		$request  = $this->request;
+		$param 	  = $request->getVar('param');
+		$model 	  = new \App\Models\ParamModel();
+
+		$data = [
+				'tanggal' => $request->getVar('tanggal'),
+				'pelaksana' => $request->getVar('pelaksana'),
+				'arahan' => $request->getVar('arahan'),
+				'create_by' 		=> $this->data['userid'],
+				'update_by' 		=> $this->data['userid'],
+				'create_date' => $this->now,
+				'update_date' => $this->now,
+
+        ];
+
+		$res = $model->saveParam($param, $data);
+		$id  = $model->insertID();
+
+		$response = [
+				'status'   => 'sukses',
+				'code'     => '0',
+				'data' 		 => 'terkirim'
+		];
+		header('Content-Type: application/json');
+		echo json_encode($response);
+		exit;
+
+	}
+
 	public function addcctv(){
 
 		$request  = $this->request;
@@ -1807,6 +1838,47 @@ class Jsondata extends \CodeIgniter\Controller
 		}
 	}
 
+	public function loadsupervisi()
+	{
+		try
+		{
+				$request  = $this->request;
+				$param 	  = $request->getVar('param');
+				$id		 	  = $request->getVar('id');
+				$role 		= $this->data['role'];
+				$userid		= $this->data['userid'];
+
+					$modelparam = new \App\Models\ParamModel();
+
+						$fulldata = [];
+						$datamutasi = $modelparam->getSupervisi($userid, $role);
+
+						$mutasi = $datamutasi;
+
+					if($mutasi){
+						$response = [
+							'status'   => 'sukses',
+							'code'     => '1',
+							'data' 		 => $mutasi
+						];
+					}else{
+						$response = [
+						    'status'   => 'gagal',
+						    'code'     => '0',
+						    'data'     => 'tidak ada data',
+						];
+					}
+
+				header('Content-Type: application/json');
+				echo json_encode($response);
+				exit;
+			}
+		catch (\Exception $e)
+		{
+			die($e->getMessage());
+		}
+	}
+
 	public function loadcctv()
 	{
 		try
@@ -1942,6 +2014,38 @@ class Jsondata extends \CodeIgniter\Controller
 
 		}else{
 			$res = $model->deleteTabulasi($id);
+		}
+		$response = [
+				'status'   => 'sukses',
+				'code'     => '0',
+				'data' 		 => 'terupdate'
+		];
+		header('Content-Type: application/json');
+		echo json_encode($response);
+		exit;
+
+	}
+
+	public function actionSupervisi(){
+
+		$request  = $this->request;
+		$mode 	  = $request->getVar('mode');
+		$id 	  	= $request->getVar('id');
+
+		$role 		= $this->data['role'];
+		$userid		= $this->data['userid'];
+
+		$model 	  = new \App\Models\ParamModel();
+
+		$data = [
+						'update_date' => $this->now,
+						'update_by' 	=> $userid,
+        ];
+		if($mode == 'update'){
+			$res = $model->update($id, $data);
+
+		}else{
+			$res = $model->deleteSupervisi($id);
 		}
 		$response = [
 				'status'   => 'sukses',

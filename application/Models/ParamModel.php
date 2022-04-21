@@ -71,6 +71,19 @@ class ParamModel extends Model{
       return $row;
     }
 
+    public function getSupervisi($id = null, $role = null)
+    {
+      if($role != 300){
+        $sql = "select * from data_supervisi";
+      }else{
+        $sql = "select * from data_supervisiwhere create_by = '$id'";
+      }
+
+      $result = $this->db->query($sql);
+      $row = $result->getResult();
+      return $row;
+    }
+
     public function getCctv($id = null, $role = null)
     {
       if($role != 300){
@@ -94,6 +107,13 @@ class ParamModel extends Model{
     public function deleteTabulasi($id)
     {
         $builder = $this->db->table('data_tabulasi');
+        $query   = $builder->where('id', $id);
+        return  $query->delete();
+    }
+
+    public function deleteSupervisi($id)
+    {
+        $builder = $this->db->table('data_supervisi');
         $query   = $builder->where('id', $id);
         return  $query->delete();
     }

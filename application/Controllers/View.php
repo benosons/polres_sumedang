@@ -281,6 +281,17 @@ class View extends \CodeIgniter\Controller
 				}
 	}
 
+	public function supervisi()
+	{
+				if($this->logged){
+					helper('form');
+					$this->data['script'] = $this->data['baseURL'].'/assets/action-js/admin/supervisi/supervisi-index.js';
+					return \Twig::instance()->display('admin/supervisi/index.html', $this->data);
+				}else{
+					return redirect('home');
+				}
+	}
+
 	public function cctv()
 	{
 				if($this->logged){
