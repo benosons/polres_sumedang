@@ -1132,17 +1132,47 @@ class Jsondata extends \CodeIgniter\Controller
 
 		$data = [
 				'nama' => $request->getVar('nama'),
-				'nrp' => $request->getVar('nrp'),
+				'pangkat' => $request->getVar('pangkat'),
 				'jabatan' => $request->getVar('jabatan'),
-				'tanggal' => $request->getVar('date'),
-				'uraian' => $request->getVar('uraian'),
-				'lokasi' => $request->getVar('lokasi'),
 				'keterangan' => $request->getVar('keterangan'),
 				'create_by' 		=> $this->data['userid'],
 				'update_by' 		=> $this->data['userid'],
 				'create_date' => $this->now,
 				'update_date' => $this->now,
 
+
+        ];
+
+		$res = $model->saveParam($param, $data);
+		$id  = $model->insertID();
+
+		$response = [
+				'status'   => 'sukses',
+				'code'     => '0',
+				'data' 		 => 'terkirim'
+		];
+		header('Content-Type: application/json');
+		echo json_encode($response);
+		exit;
+
+	}
+
+	public function addTabulasi(){
+
+		$request  = $this->request;
+		$param 	  = $request->getVar('param');
+		$model 	  = new \App\Models\ParamModel();
+
+		$data = [
+				'tanggal' => $request->getVar('hari'),
+				'waktu' => $request->getVar('waktu'),
+				'kegiatan' => $request->getVar('kegiatan'),
+				'kejadian' => $request->getVar('kejadian'),
+				'keterangan' => $request->getVar('keterangan'),
+				'create_by' 		=> $this->data['userid'],
+				'update_by' 		=> $this->data['userid'],
+				'create_date' => $this->now,
+				'update_date' => $this->now,
 
         ];
 
@@ -1736,6 +1766,47 @@ class Jsondata extends \CodeIgniter\Controller
 		}
 	}
 
+	public function loadtabulasi()
+	{
+		try
+		{
+				$request  = $this->request;
+				$param 	  = $request->getVar('param');
+				$id		 	  = $request->getVar('id');
+				$role 		= $this->data['role'];
+				$userid		= $this->data['userid'];
+
+					$modelparam = new \App\Models\ParamModel();
+
+						$fulldata = [];
+						$datamutasi = $modelparam->getTabulasi($userid, $role);
+
+						$mutasi = $datamutasi;
+
+					if($mutasi){
+						$response = [
+							'status'   => 'sukses',
+							'code'     => '1',
+							'data' 		 => $mutasi
+						];
+					}else{
+						$response = [
+						    'status'   => 'gagal',
+						    'code'     => '0',
+						    'data'     => 'tidak ada data',
+						];
+					}
+
+				header('Content-Type: application/json');
+				echo json_encode($response);
+				exit;
+			}
+		catch (\Exception $e)
+		{
+			die($e->getMessage());
+		}
+	}
+
 	public function loadcctv()
 	{
 		try
@@ -1839,6 +1910,38 @@ class Jsondata extends \CodeIgniter\Controller
 
 		}else{
 			$res = $model->deleteMutasi($id);
+		}
+		$response = [
+				'status'   => 'sukses',
+				'code'     => '0',
+				'data' 		 => 'terupdate'
+		];
+		header('Content-Type: application/json');
+		echo json_encode($response);
+		exit;
+
+	}
+
+	public function actionTabulasi(){
+
+		$request  = $this->request;
+		$mode 	  = $request->getVar('mode');
+		$id 	  	= $request->getVar('id');
+
+		$role 		= $this->data['role'];
+		$userid		= $this->data['userid'];
+
+		$model 	  = new \App\Models\ParamModel();
+
+		$data = [
+						'update_date' => $this->now,
+						'update_by' 	=> $userid,
+        ];
+		if($mode == 'update'){
+			$res = $model->update($id, $data);
+
+		}else{
+			$res = $model->deleteTabulasi($id);
 		}
 		$response = [
 				'status'   => 'sukses',

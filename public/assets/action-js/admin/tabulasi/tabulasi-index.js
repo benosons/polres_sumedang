@@ -1,28 +1,30 @@
 "use strict";
 console.log('You are running jQuery version: ' + $.fn.jquery);
 $(document).ready(function(){
-  $('.pcoded-item li#menu-mutasi').addClass('active');
+  $('.pcoded-item li#menu-tabulasi').addClass('active');
   $('.note-toolbar .note-insert, .note-toolbar .note-table, .note-toolbar .note-style:first, .note-toolbar .note-para').remove();
   $('.note-toolbar.panel-heading').remove();
   $('.note-popover').remove();
 
-  $('#setting-user').DataTable();
+  $('#data-tabulasi').DataTable();
   $('.user-tambah').hide();
   $('#save-user').hide();
 
-  loadmutasi('');
+  loadtabulasi('');
 
   $('#save-user').on('click', function(){
-      let nama = $('#nama').val();
-      let pangkat = $('#pangkat').val();
-      let jabatan = $('#jabatan').val();
+      let hari = $('#hari').val();
+      let waktu = $('#waktu').val();
+      let kegiatan = $('#kegiatan').val();
+      let kejadian = $('#kejadian').val();
       let keterangan = $('#keterangan').val();
 
       var formData = new FormData();
-      formData.append('param', 'data_mutasi');
-      formData.append('nama', nama);
-      formData.append('pangkat', pangkat);
-      formData.append('jabatan', jabatan);
+      formData.append('param', 'data_tabulasi');
+      formData.append('hari', hari);
+      formData.append('waktu', waktu);
+      formData.append('kegiatan', kegiatan);
+      formData.append('kejadian', kejadian);
       formData.append('keterangan', keterangan);
 
       save(formData);
@@ -40,12 +42,12 @@ $(document).ready(function(){
 
 });
 
-function loadmutasi(param){
+function loadtabulasi(param){
 
   $.ajax({
       type: 'post',
       dataType: 'json',
-      url: 'loadmutasi',
+      url: 'loadtabulasi',
       data : {
               param      : param,
       },
@@ -53,7 +55,7 @@ function loadmutasi(param){
           let data = result.data;
           let code = result.code;
           if(code == 1){
-            var dt = $('#data-mutasi').DataTable({
+            var dt = $('#data-tabulasi').DataTable({
               destroy: true,
               paging: true,
               lengthChange: false,
@@ -66,9 +68,10 @@ function loadmutasi(param){
               aaData: result.data,
               aoColumns: [
                   { 'mDataProp': 'id', 'width':'10%'},
-                  { 'mDataProp': 'nama'},
-                  { 'mDataProp': 'pangkat'},
-                  { 'mDataProp': 'jabatan'},
+                  { 'mDataProp': 'tanggal'},
+                  { 'mDataProp': 'waktu'},
+                  { 'mDataProp': 'kegiatan'},
+                  { 'mDataProp': 'kejadian'},
                   { 'mDataProp': 'keterangan'},
                   { 'mDataProp': 'id'},
               ],
@@ -93,7 +96,7 @@ function loadmutasi(param){
 
                         return el;
                     },
-                    aTargets: [ 5 ]
+                    aTargets: [ 6 ]
                 },
               ],
               fnRowCallback: function(nRow, aData, iDisplayIndex, iDisplayIndexFull){
@@ -123,7 +126,7 @@ function loadmutasi(param){
               }
             });
           }else{
-            var dt = $('#data-mutasi').DataTable()
+            var dt = $('#data-tabulasi').DataTable()
             dt.clear().draw();
           }
         }
@@ -139,7 +142,7 @@ function onusers(type){
       $('#save-user').show();
       $('#tambah-user').hide();
     }else if(type == 'list'){
-      loadmutasi('');
+      loadtabulasi('');
       $('#list-user').addClass('active');
       $('.user-tambah').hide();
       $('.user-list').show();
@@ -154,12 +157,12 @@ function save(formData){
       type: 'post',
       processData: false,
       contentType: false,
-      url: 'addMutasi',
+      url: 'addTabulasi',
       data : formData,
       success: function(result){
         Swal.fire({
           type: 'success',
-          title: 'Berhasil Tambah Mutasi !',
+          title: 'Berhasil Tambah Data !',
           showConfirmButton: true,
           // showCancelButton: true,
           confirmButtonText: `Ok`,
@@ -182,10 +185,10 @@ function save(formData){
         type: 'post',
         processData: false,
         contentType: false,
-        url: 'actionMutasi',
+        url: 'actionTabulasi',
         data : formData,
         success: function(result){
-          loadmutasi('');
+          loadtabulasi('');
         }
       });
   }

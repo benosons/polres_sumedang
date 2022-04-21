@@ -19,6 +19,7 @@ class View extends \CodeIgniter\Controller
 				'role' => $this->session->get('user_role'),
 				'satuan' => $this->session->get('user_satuan'),
 				'fullname' => $this->session->get('user_fullname'),
+				'tahun' => date("Y"),
 			);
   }
 
@@ -264,6 +265,17 @@ class View extends \CodeIgniter\Controller
 					helper('form');
 					$this->data['script'] = $this->data['baseURL'].'/assets/action-js/admin/mutasi/mutasi-index.js';
 					return \Twig::instance()->display('admin/mutasi/index.html', $this->data);
+				}else{
+					return redirect('home');
+				}
+	}
+
+	public function tabulasi()
+	{
+				if($this->logged){
+					helper('form');
+					$this->data['script'] = $this->data['baseURL'].'/assets/action-js/admin/tabulasi/tabulasi-index.js';
+					return \Twig::instance()->display('admin/tabulasi/index.html', $this->data);
 				}else{
 					return redirect('home');
 				}
