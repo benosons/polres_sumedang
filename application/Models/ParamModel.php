@@ -76,7 +76,7 @@ class ParamModel extends Model{
       if($role != 300){
         $sql = "select * from data_supervisi";
       }else{
-        $sql = "select * from data_supervisiwhere create_by = '$id'";
+        $sql = "select * from data_supervisi where create_by = '$id'";
       }
 
       $result = $this->db->query($sql);
