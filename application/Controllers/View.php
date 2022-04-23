@@ -50,6 +50,9 @@ class View extends \CodeIgniter\Controller
 			if($message){
 				$this->data['message'] = $message;
 			}
+			
+			$this->data['pos'] = $_SERVER['QUERY_STRING'];
+			
 			return \Twig::instance()->display('auth/login.html', $this->data);
 		}
 	}
