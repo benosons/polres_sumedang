@@ -10,13 +10,37 @@ $(document).ready(function(){
   $('.user-tambah').hide();
   $('#save-user').hide();
 
-  loadmutasi('');
+  $("#filter-tanggal").val(formatDate(new Date()));
+  $('#cari-mutasi').on('click', function(){
+    loadmutasi('', formatDate($("#filter-tanggal").val()));
+  })
+
+  $('#save-user').prop('disabled', true)
+  $('#save-user button').prop('disabled', true)
+  $('[name="user"]').on('keyup', function(){
+    if($('#nama').val() && 
+    $('#pangkat').val() && 
+    $('#jabatan').val() && 
+    $('#keterangan').val() && 
+    $('#penerimaan').val() && 
+    $('#uraian').val() ){
+      $('#save-user').prop('disabled', false)
+      $('#save-user button').prop('disabled', false)
+    }else{
+      $('#save-user').prop('disabled', true)
+      $('#save-user button').prop('disabled', true)
+    }
+  })
+
+  loadmutasi('', formatDate(new Date()));
 
   $('#save-user').on('click', function(){
       let nama = $('#nama').val();
       let pangkat = $('#pangkat').val();
       let jabatan = $('#jabatan').val();
       let keterangan = $('#keterangan').val();
+      let penerimaan = $('#penerimaan').val();
+      let uraian = $('#uraian').val();
 
       var formData = new FormData();
       formData.append('param', 'data_mutasi');
@@ -24,6 +48,8 @@ $(document).ready(function(){
       formData.append('pangkat', pangkat);
       formData.append('jabatan', jabatan);
       formData.append('keterangan', keterangan);
+      formData.append('penerimaan', penerimaan);
+      formData.append('uraian', uraian);
 
       save(formData);
 
@@ -40,7 +66,7 @@ $(document).ready(function(){
 
 });
 
-function loadmutasi(param){
+function loadmutasi(param, date){
 
   $.ajax({
       type: 'post',
@@ -48,6 +74,7 @@ function loadmutasi(param){
       url: 'loadmutasi',
       data : {
               param      : param,
+              date      : date,
       },
       success: function(result){
           let data = result.data;
@@ -70,6 +97,8 @@ function loadmutasi(param){
                   { 'mDataProp': 'pangkat'},
                   { 'mDataProp': 'jabatan'},
                   { 'mDataProp': 'keterangan'},
+                  { 'mDataProp': 'penerimaan'},
+                  { 'mDataProp': 'uraian'},
                   { 'mDataProp': 'id'},
               ],
               order: [[0, 'ASC']],
@@ -93,7 +122,7 @@ function loadmutasi(param){
 
                         return el;
                     },
-                    aTargets: [ 5 ]
+                    aTargets: [ 7 ]
                 },
               ],
               fnRowCallback: function(nRow, aData, iDisplayIndex, iDisplayIndexFull){
@@ -139,7 +168,7 @@ function onusers(type){
       $('#save-user').show();
       $('#tambah-user').hide();
     }else if(type == 'list'){
-      loadmutasi('');
+      loadmutasi('', formatDate($("#filter-tanggal").val()));
       $('#list-user').addClass('active');
       $('.user-tambah').hide();
       $('.user-list').show();
@@ -185,7 +214,7 @@ function save(formData){
         url: 'actionMutasi',
         data : formData,
         success: function(result){
-          loadmutasi('');
+          loadmutasi('', formatDate($("#filter-tanggal").val()));
         }
       });
   }
@@ -210,3 +239,18 @@ function save(formData){
           }
         })
       }
+
+
+      function formatDate(date) {
+        var d = new Date(date),
+            month = '' + (d.getMonth() + 1),
+            day = '' + d.getDate(),
+            year = d.getFullYear();
+    
+        if (month.length < 2) 
+            month = '0' + month;
+        if (day.length < 2) 
+            day = '0' + day;
+    
+        return [year, month, day].join('-');
+      }    

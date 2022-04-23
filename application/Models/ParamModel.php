@@ -45,25 +45,25 @@ class ParamModel extends Model{
         return $row;
     }
 
-    public function getMutasi($id = null, $role = null)
+    public function getMutasi($id = null, $role = null, $date = null)
     {
       if($role != 300){
-        $sql = "select * from data_mutasi";
+        $sql = "select * from data_mutasi where DATE_FORMAT(create_date,'%Y-%m-%d') = '$date'";
       }else{
-        $sql = "select * from data_mutasi where create_by = '$id'";
+        $sql = "select * from data_mutasi where create_by = '$id' and DATE_FORMAT(create_date,'%Y-%m-%d') = '$date'";
       }
-
+      
       $result = $this->db->query($sql);
       $row = $result->getResult();
       return $row;
     }
 
-    public function getTabulasi($id = null, $role = null)
+    public function getTabulasi($id = null, $role = null, $type = null)
     {
       if($role != 300){
-        $sql = "select * from data_tabulasi";
+        $sql = "select * from data_tabulasi where type = '$type'";
       }else{
-        $sql = "select * from data_tabulasi where create_by = '$id'";
+        $sql = "select * from data_tabulasi where create_by = '$id' and type = '$type'";
       }
 
       $result = $this->db->query($sql);

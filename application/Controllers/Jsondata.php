@@ -1135,6 +1135,8 @@ class Jsondata extends \CodeIgniter\Controller
 				'pangkat' => $request->getVar('pangkat'),
 				'jabatan' => $request->getVar('jabatan'),
 				'keterangan' => $request->getVar('keterangan'),
+				'penerimaan' => $request->getVar('penerimaan'),
+				'uraian' => $request->getVar('uraian'),
 				'create_by' 		=> $this->data['userid'],
 				'update_by' 		=> $this->data['userid'],
 				'create_date' => $this->now,
@@ -1164,11 +1166,13 @@ class Jsondata extends \CodeIgniter\Controller
 		$model 	  = new \App\Models\ParamModel();
 
 		$data = [
-				'tanggal' => $request->getVar('hari'),
 				'waktu' => $request->getVar('waktu'),
+				'hari' => $request->getVar('hari'),
+				'tanggal' => $request->getVar('tanggal'),
 				'kegiatan' => $request->getVar('kegiatan'),
 				'kejadian' => $request->getVar('kejadian'),
 				'keterangan' => $request->getVar('keterangan'),
+				'type' => $request->getVar('type'),
 				'create_by' 		=> $this->data['userid'],
 				'update_by' 		=> $this->data['userid'],
 				'create_date' => $this->now,
@@ -1763,13 +1767,14 @@ class Jsondata extends \CodeIgniter\Controller
 				$request  = $this->request;
 				$param 	  = $request->getVar('param');
 				$id		 	  = $request->getVar('id');
+				$date		 	  = $request->getVar('date');
 				$role 		= $this->data['role'];
 				$userid		= $this->data['userid'];
 
 					$modelparam = new \App\Models\ParamModel();
 
 						$fulldata = [];
-						$datamutasi = $modelparam->getMutasi($userid, $role);
+						$datamutasi = $modelparam->getMutasi($userid, $role, $date);
 
 						$mutasi = $datamutasi;
 
@@ -1810,9 +1815,11 @@ class Jsondata extends \CodeIgniter\Controller
 					$modelparam = new \App\Models\ParamModel();
 
 						$fulldata = [];
-						$datamutasi = $modelparam->getTabulasi($userid, $role);
+						$datakegiatan = $modelparam->getTabulasi($userid, $role, 0);
+						$datakejadian = $modelparam->getTabulasi($userid, $role, 1);
 
-						$mutasi = $datamutasi;
+						$mutasi['kegiatan'] = $datakegiatan;
+						$mutasi['kejadian'] = $datakejadian;
 
 					if($mutasi){
 						$response = [
