@@ -37,12 +37,22 @@ class Pdfview extends \CodeIgniter\Controller {
             $uraian[$i]->no = $i + 1;
         }
 
+        $hari = ['','Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu', 'Minggu'];
+        $bulan = ['', 'Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+
+        $day = date('N', strtotime(date("l")));
+        $tgl = (int) date('d');
+        $month = (int) date('m');
+        $year = (int) date('Y');
+
         $this->data = array(
             'baseURL' => BASE.'/public',
             'title_pdf' => $title,
             'anggota' => $anggota,
             'penerimaan' => $penerimaan,
-            'uraian' => $uraian
+            'uraian' => $uraian,
+            'hari' => $hari[$day],
+            'tanggal' => $tgl.' '.$bulan[$month].' '.$year,
         );
         
         // filename dari pdf ketika didownload
