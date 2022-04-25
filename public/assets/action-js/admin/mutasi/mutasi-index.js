@@ -58,7 +58,7 @@ $(document).ready(function(){
   
   $( "#myModal" ).on('shown.bs.modal', function(){
     generatepdf(formatDate(new Date()))
-    PDFObject.embed("http://localhost/polres_sumedang/public/uploads/dummy.pdf", "#example1");
+    PDFObject.embed("public/uploads/dummy.pdf", "#example1");
   });
 
 
