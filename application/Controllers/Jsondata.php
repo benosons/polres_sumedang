@@ -1129,22 +1129,37 @@ class Jsondata extends \CodeIgniter\Controller
 		$request  = $this->request;
 		$param 	  = $request->getVar('param');
 		$model 	  = new \App\Models\ParamModel();
-
-		$data = [
-				'nama' => $request->getVar('nama'),
-				'pangkat' => $request->getVar('pangkat'),
-				'jabatan' => $request->getVar('jabatan'),
-				'keterangan' => $request->getVar('keterangan'),
-				'penerimaan' => $request->getVar('penerimaan'),
-				'uraian' => $request->getVar('uraian'),
-				'create_by' 		=> $this->data['userid'],
-				'update_by' 		=> $this->data['userid'],
-				'create_date' => $this->now,
-				'update_date' => $this->now,
-
-
-        ];
-
+		
+		if($param == 'data_anggota'){
+			$data = [
+					'nama' => $request->getVar('nama'),
+					'pangkat' => $request->getVar('pangkat'),
+					'jabatan' => $request->getVar('jabatan'),
+					'keterangan' => $request->getVar('keterangan'),
+					'create_by' 		=> $this->data['userid'],
+					'update_by' 		=> $this->data['userid'],
+					'create_date' => $this->now,
+					'update_date' => $this->now,
+			];
+		}else if($param == 'data_penerimaan'){
+			$data = [
+					'penerimaan' => $request->getVar('penerimaan'),
+					'create_by' 		=> $this->data['userid'],
+					'update_by' 		=> $this->data['userid'],
+					'create_date' => $this->now,
+					'update_date' => $this->now,
+			];
+		}else if($param == 'data_uraian'){
+			$data = [
+					'waktu' => $request->getVar('waktu'),
+					'uraian' => $request->getVar('uraian'),
+					'keterangan' => $request->getVar('keterangan'),
+					'create_by' 		=> $this->data['userid'],
+					'update_by' 		=> $this->data['userid'],
+					'create_date' => $this->now,
+					'update_date' => $this->now,
+			];
+		}
 		$res = $model->saveParam($param, $data);
 		$id  = $model->insertID();
 
@@ -1771,12 +1786,11 @@ class Jsondata extends \CodeIgniter\Controller
 				$role 		= $this->data['role'];
 				$userid		= $this->data['userid'];
 
-					$modelparam = new \App\Models\ParamModel();
+				$modelparam = new \App\Models\ParamModel();
 
-						$fulldata = [];
-						$datamutasi = $modelparam->getMutasi($userid, $role, $date);
-
-						$mutasi = $datamutasi;
+				$fulldata = [];
+				$datamutasi = $modelparam->getMutasi($param, $userid, $role, $date);
+				$mutasi = $datamutasi;
 
 					if($mutasi){
 						$response = [
