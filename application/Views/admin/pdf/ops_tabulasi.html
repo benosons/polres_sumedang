@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{title_pdf}}</title>
+        <style>
+
+            @font-face {
+                font-family: "Calibri", Arial, Helvetica, sans-serif;  
+                src: url("{{baseURL}}assets/fonts.ttf");
+            }
+
+            h2, h3, h5, h6 {
+                margin: 0 0 0 0;
+            }
+
+            #tabulasi { 
+                font-family: "Calibri", Arial, Helvetica, sans-serif;  
+            } 
+
+            #table {
+                font-family: "Calibri", Arial, Helvetica, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+                font-size: 12px;
+            }
+
+            #table td, #table th {
+                border: 1px solid #000;
+                padding: 8px;
+            }
+
+            #table tr:hover {background-color: #ddd;}
+
+            #table th {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                text-align: left;
+            }
+
+            .floatLeft {
+                width: 50%;
+                float: left;
+            }
+        </style>
+    </head>
+    <body id="tabulasi">
+        
+        <table id="" style="width: 100%;">
+            <thead>
+                <tr>
+                    <th><img src="{{ polda_logo }}" width="20%"></th>
+                    <th style="white-space: nowrap;">
+                        <div style="text-align:center;">
+                            <h5> PAPAN TABULASI OPERASI KEPOLISIAN TERPUSAT </h5>
+                            <h5> KETUPAT LODAYA - 2022 POLRES SUMEDANG </h5>
+                            <h5> TERHITUNG MULAI TANGGAL 28 APRIL SAMPAI DENGAN 09 MEI 2022 </h5>
+                            <h5> –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––</h5>
+                        </div>
+                    </th>
+                    <th><img src="{{ ops_logo }}" width="20%"></th>
+                </tr>
+            </thead>
+            
+        </table>
+
+        <br/>
+        <br/>
+        <div class="floatLeft">
+            <table id="table">
+                <thead>
+                    <tr >
+                        <th colspan="5" style="text-align:center;border-top: none;border-left: none;border-right: none;"><h2>KEGIATAN</h2></th>
+                    </tr>
+                    <tr>
+                        <th style="text-align:center">NO</th>
+                        <th style="text-align:center">HARI/TGL</th>
+                        <th style="text-align:center">WAKTU</th>
+                        <th style="text-align:center">KEGIATAN</th>
+                        <th style="text-align:center">KET</th>
+                    </tr>
+                    <tr>
+                        <th style="text-align:center">1</th>
+                        <th style="text-align:center">2</th>
+                        <th style="text-align:center">3</th>
+                        <th style="text-align:center">4</th>
+                        <th style="text-align:center">5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for value in kegiatan %}  
+                    <tr>
+                        <td style="text-align:center" scope="row">{{ value.no }}</td>
+                        <td>{{ value.hari }} &nbsp; {{ value.tanggal }}</td>
+                        <td>{{ value.waktu }}</td>
+                        <td>{{ value.kegiatan }}</td>
+                        <td>{{ value.keterangan }}</td>
+                    </tr>
+                    {% endfor %}
+                    <tr>
+                        <td scope="row">&nbsp; </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">&nbsp; </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">&nbsp; </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">&nbsp; </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">&nbsp; </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+                    </tr>
+                    <tr>
+                        <td scope="row">&nbsp; </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">&nbsp; </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">&nbsp; </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="floatLeft">
+            <table id="table">
+                <thead>
+                    <tr >
+                        <th colspan="5" style="text-align:center;border-top: none;border-left: none;border-right: none;"><h2>KEJADIAN</h2></th>
+                    </tr>
+                    <tr>
+                        <th style="text-align:center;border-left-width: medium;">NO</th>
+                        <th style="text-align:center">HARI/TGL</th>
+                        <th style="text-align:center">WAKTU</th>
+                        <th style="text-align:center">KEGIATAN</th>
+                        <th style="text-align:center">KET</th>
+                    </tr>
+                    <tr>
+                        <th style="text-align:center;border-left-width: medium;">1</th>
+                        <th style="text-align:center">2</th>
+                        <th style="text-align:center">3</th>
+                        <th style="text-align:center">4</th>
+                        <th style="text-align:center">5</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    {% for value in kejadian %}  
+                    <tr>
+                        <td scope="row" style="text-align:center;border-left-width: medium;">{{ value.no }}</td>
+                        <td>{{ value.hari }} &nbsp; {{ value.tanggal }}</td>
+                        <td>{{ value.waktu }}</td>
+                        <td>{{ value.kejadian }}</td>
+                        <td>{{ value.keterangan }}</td>
+                    </tr>
+                    {% endfor %}
+                    <tr>
+
+                        <td scope="row" style="text-align:center;border-left-width: medium;">&nbsp; </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+
+                        <td scope="row" style="text-align:center;border-left-width: medium;">&nbsp; </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+
+                        <td scope="row" style="text-align:center;border-left-width: medium;">&nbsp; </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+
+                        <td scope="row" style="text-align:center;border-left-width: medium;">&nbsp; </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+
+                        <td scope="row" style="text-align:center;border-left-width: medium;">&nbsp; </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" style="text-align:center;border-left-width: medium;">&nbsp; </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" style="text-align:center;border-left-width: medium;">&nbsp; </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" style="text-align:center;border-left-width: medium;">&nbsp; </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

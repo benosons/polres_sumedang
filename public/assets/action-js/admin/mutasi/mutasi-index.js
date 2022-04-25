@@ -360,8 +360,9 @@ function generatepdf(date){
       url: 'generatePdf',
       data : {
               title     : 'BUKU MUTASI OPS KETUPAT',
-              template     : 'laporan_pdf',
+              template  : 'ops_mutasi',
               date      : date,
+              mode      : 1,
       },
       success: function(result){
           let data = result.data;
@@ -485,7 +486,6 @@ function save(formData){
           }
         })
       }
-
 
       function formatDate(date) {
         var d = new Date(date),

@@ -58,12 +58,12 @@ class ParamModel extends Model{
       return $row;
     }
 
-    public function getTabulasi($id = null, $role = null, $type = null)
+    public function getTabulasi($id = null, $role = null, $type = null, $date = null)
     {
       if($role != 300){
-        $sql = "select * from data_tabulasi where type = '$type'";
+        $sql = "select * from data_tabulasi where type = '$type' and DATE_FORMAT(create_date,'%Y-%m-%d') = '$date'";
       }else{
-        $sql = "select * from data_tabulasi where create_by = '$id' and type = '$type'";
+        $sql = "select * from data_tabulasi where create_by = '$id' and type = '$type' and DATE_FORMAT(create_date,'%Y-%m-%d') = '$date'";
       }
 
       $result = $this->db->query($sql);

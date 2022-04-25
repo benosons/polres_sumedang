@@ -12,7 +12,12 @@ $(document).ready(function(){
   $('#save-user').hide();
   $('#save-user-1').hide();
 
-  loadtabulasi('');
+  $("#filter-tanggal").val(formatDate(new Date()));
+  $('#cari-mutasi').on('click', function(){
+    loadtabulasi('data_tabulasi', formatDate($("#filter-tanggal").val()));
+  })
+
+  loadtabulasi('data_tabulasi', formatDate(new Date()));
 
   $('#save-user').on('click', function(){
 
@@ -58,18 +63,13 @@ $(document).ready(function(){
 
   });
 
-  $('#user_role').on('change', function(){
-    if(this.value == 100){
-      $('#user_satuan').val(0);
-      $('#user_satuan').prop('disabled', true);
-    }else{
-      $('#user_satuan').prop('disabled', false);
-    }
+  $( "#myModal" ).on('shown.bs.modal', function(){
+    generatepdf(formatDate($("#filter-tanggal").val()))
   });
 
 });
 
-function loadtabulasi(param){
+function loadtabulasi(param, date){
 
   $.ajax({
       type: 'post',
@@ -77,6 +77,7 @@ function loadtabulasi(param){
       url: 'loadtabulasi',
       data : {
               param      : param,
+              date       : date,
       },
       success: function(result){
           let data = result.data;
@@ -262,7 +263,7 @@ function onusers(type){
       $('#save-user-1').show();
       $('#tambah-user').hide();
     }else if(type == 'list'){
-      loadtabulasi('');
+      loadtabulasi('', formatDate($("#filter-tanggal").val()));
       $('#list-user').addClass('active');
       $('.user-tambah').hide();
       $('.user-tambah-1').hide();
@@ -272,6 +273,30 @@ function onusers(type){
       $('#tambah-user').show();
     }
 };
+
+function generatepdf(date){
+
+  $.ajax({
+      type: 'post',
+      dataType: 'json',
+      url: 'generatePdf',
+      data : {
+              title     : 'PAPAN TABULASI OPERASI',
+              template  : 'ops_tabulasi',
+              date      : date,
+              mode      : 2,
+      },
+      success: function(result){
+          let data = result.data;
+          let code = result.code;
+
+          PDFObject.embed(result.data, "#example1");
+
+
+        }
+
+      })
+    }
 
 function save(formData){
 
@@ -310,7 +335,7 @@ function save(formData){
         url: 'actionTabulasi',
         data : formData,
         success: function(result){
-          loadtabulasi('');
+          loadtabulasi('', formatDate($("#filter-tanggal").val()));
         }
       });
   }
@@ -349,3 +374,4 @@ function save(formData){
     
         return [year, month, day].join('-');
       }  
+      
