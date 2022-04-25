@@ -97,9 +97,23 @@ class ParamModel extends Model{
       return $row;
     }
 
-    public function deleteMutasi($id)
+    public function deleteMutasi($id, $type)
     {
-        $builder = $this->db->table('data_mutasi');
+
+        switch ($type) {
+          case '1':
+              $table = 'data_penerimaan';
+            break;
+          case '2':
+              $table = 'data_uraian';
+            break;
+          
+          default:
+              $table = 'data_anggota';
+            break;
+        }
+
+        $builder = $this->db->table($table);
         $query   = $builder->where('id', $id);
         return  $query->delete();
     }

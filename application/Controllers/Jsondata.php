@@ -1989,6 +1989,7 @@ class Jsondata extends \CodeIgniter\Controller
 		$request  = $this->request;
 		$mode 	  = $request->getVar('mode');
 		$id 	  	= $request->getVar('id');
+		$type 	  	= $request->getVar('type');
 
 		$role 		= $this->data['role'];
 		$userid		= $this->data['userid'];
@@ -2003,7 +2004,7 @@ class Jsondata extends \CodeIgniter\Controller
 			$res = $model->update($id, $data);
 
 		}else{
-			$res = $model->deleteMutasi($id);
+			$res = $model->deleteMutasi($id, $type);
 		}
 		$response = [
 				'status'   => 'sukses',

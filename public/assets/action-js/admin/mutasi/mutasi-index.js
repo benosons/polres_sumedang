@@ -163,7 +163,7 @@ function loadmutasi(param, date){
                         </button>
                         <div class="dropdown-menu">
                             <a class="dropdown-item waves-effect waves-light btn-success btn-mini" href="#"><i class="icofont icofont-print"></i> Print</a>
-                            <a class="dropdown-item waves-effect waves-light btn-danger btn-mini" href="#" onclick="action('delete','${row.id}')"><i class="icofont icofont-trash"></i> Hapus </a>
+                            <a class="dropdown-item waves-effect waves-light btn-danger btn-mini" href="#" onclick="action('delete','${row.id}', 0)"><i class="icofont icofont-trash"></i> Hapus </a>
                         </div>
                     </div>`
 
@@ -230,7 +230,7 @@ function loadmutasi(param, date){
                         </button>
                         <div class="dropdown-menu">
                             <a class="dropdown-item waves-effect waves-light btn-success btn-mini" href="#"><i class="icofont icofont-print"></i> Print</a>
-                            <a class="dropdown-item waves-effect waves-light btn-danger btn-mini" href="#" onclick="action('delete','${row.id}')"><i class="icofont icofont-trash"></i> Hapus </a>
+                            <a class="dropdown-item waves-effect waves-light btn-danger btn-mini" href="#" onclick="action('delete','${row.id}', 1)"><i class="icofont icofont-trash"></i> Hapus </a>
                         </div>
                     </div>`
 
@@ -299,7 +299,7 @@ function loadmutasi(param, date){
                         </button>
                         <div class="dropdown-menu">
                             <a class="dropdown-item waves-effect waves-light btn-success btn-mini" href="#"><i class="icofont icofont-print"></i> Print</a>
-                            <a class="dropdown-item waves-effect waves-light btn-danger btn-mini" href="#" onclick="action('delete','${row.id}')"><i class="icofont icofont-trash"></i> Hapus </a>
+                            <a class="dropdown-item waves-effect waves-light btn-danger btn-mini" href="#" onclick="action('delete','${row.id}', 2)"><i class="icofont icofont-trash"></i> Hapus </a>
                         </div>
                     </div>`
 
@@ -447,10 +447,11 @@ function save(formData){
     });
   };
 
-  function action(mode, id, status){
+  function action(mode, id, type){
     var formData = new FormData();
     formData.append('mode', mode);
     formData.append('id', id);
+    formData.append('type', type);
 
     $.ajax({
         type: 'post',
@@ -459,9 +460,18 @@ function save(formData){
         url: 'actionMutasi',
         data : formData,
         success: function(result){
-          loadmutasi('data_anggota', formatDate($("#filter-tanggal").val()));
-          loadmutasi('data_penerimaan', formatDate($("#filter-tanggal").val()));
-          loadmutasi('data_uraian', formatDate($("#filter-tanggal").val()));
+          // if(mode == '0'){
+          //   loadmutasi('data_anggota', formatDate($("#filter-tanggal").val()));
+
+          // }else if(mode == '1'){
+          //   loadmutasi('data_penerimaan', formatDate($("#filter-tanggal").val()));
+
+          // }else if (mode == '2'){
+          //   loadmutasi('data_uraian', formatDate($("#filter-tanggal").val()));
+
+          // }
+
+          window.location.reload()
         }
       });
   }
