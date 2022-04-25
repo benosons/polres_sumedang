@@ -76,7 +76,6 @@ class Autoload extends \CodeIgniter\Config\AutoloadConfig
 		$classmap = [
 			'Render' => 'Libraries/Twig.php',
 			'Client' => APPPATH . 'Libraries/Mongo/Client.php',
-			'Pdfgenerator' => APPPATH . 'Libraries/Pdfgenerator.php'
 		];
 
 		//--------------------------------------------------------------------

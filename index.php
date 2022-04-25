@@ -1,5 +1,4 @@
 <?php
-ob_start();
 session_start();
 // Used by the debug toolbar. Do not remove.
 $startMemory = memory_get_usage();
