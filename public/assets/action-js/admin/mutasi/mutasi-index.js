@@ -108,8 +108,7 @@ $('#save-user-2').on('click', function(){
 
   
   $( "#myModal" ).on('shown.bs.modal', function(){
-    generatepdf(formatDate(new Date()))
-    PDFObject.embed("public/uploads/dummy.pdf", "#example1");
+    generatepdf(formatDate($("#filter-tanggal").val()))
   });
 
 
@@ -367,6 +366,9 @@ function generatepdf(date){
       success: function(result){
           let data = result.data;
           let code = result.code;
+
+          PDFObject.embed(result.data, "#example1");
+
 
         }
 

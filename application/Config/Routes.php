@@ -154,6 +154,8 @@ $routes->post('actionUsers', 'Jsondata::actionUsers');
 $routes->post('kawalcorona', 'Jsondata::kawalcorona');
 $routes->post('coronas', 'Jsondata::coronas');
 
+$routes->post('generatePdf', 'Pdfview::index');
+
 /**
  * --------------------------------------------------------------------
  * Additional Routing

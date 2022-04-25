@@ -2,18 +2,48 @@
 namespace App\Controllers;
 
 class Pdfview extends \CodeIgniter\Controller {
+    protected $session;
+
     public function index()
     {
-        // panggil library yang kita buat sebelumnya yang bernama pdfgenerator
-        // $this->load->library('pdfgenerator');
+        $this->session = session();
+        helper('form');
         $request  = $this->request;
+        
         $title 	  = $request->getVar('title');
         $template 	  = $request->getVar('template');
+        $isdate 	  = $request->getVar('date');
+        $userid 	  = $this->session->get('user_id');
+        $role 	  = $this->session->get('role');
         
         $pdf = new \App\Libraries\Pdfgenerator();
-        
-        // title dari pdf
-        $this->data['title_pdf'] = $title;
+        $date 		= date('Y/m/d');        
+
+        $modelparam = new \App\Models\ParamModel();
+
+        $anggota = $modelparam->getMutasi('data_anggota', $userid, $role, $isdate);
+        $penerimaan = $modelparam->getMutasi('data_penerimaan', $userid, $role, $isdate);
+        $uraian = $modelparam->getMutasi('data_uraian', $userid, $role, $isdate);
+
+        for ($i=0; $i < count($anggota); $i++) { 
+            $anggota[$i]->no = $i + 1;
+        }
+
+        for ($i=0; $i < count($penerimaan); $i++) { 
+            $penerimaan[$i]->no = $i + 1;
+        }
+
+        for ($i=0; $i < count($uraian); $i++) { 
+            $uraian[$i]->no = $i + 1;
+        }
+
+        $this->data = array(
+            'baseURL' => BASE.'/public',
+            'title_pdf' => $title,
+            'anggota' => $anggota,
+            'penerimaan' => $penerimaan,
+            'uraian' => $uraian
+        );
         
         // filename dari pdf ketika didownload
         $file_pdf = $title;
@@ -25,8 +55,20 @@ class Pdfview extends \CodeIgniter\Controller {
         $html = \Twig::instance()->display('admin/pdf/'.$template.'.html', $this->data);
         // run dompdf
         // $pdf->generate($html, $file_pdf,$paper,$orientation);
+        if (!is_dir("public/uploads/".$date."/")) {
+		    mkdir("public/uploads/".$date."/", 0777, TRUE);
+		}
 
-        file_put_contents("public/uploads/".$title.".pdf", $pdf->generate($html, $file_pdf, $paper, $orientation, false));
-        exit;
+        file_put_contents("public/uploads/".$date."/".$title.".pdf", $pdf->generate($html, $file_pdf, $paper, $orientation, false));
+
+        $response = [
+            'status'   => 'success',
+            'code'     => '1',
+            'data' 	   => "public/uploads/".$date."/".$title.".pdf"
+        ];
+
+        header('Content-Type: application/json');
+		echo json_encode($response);
+		exit;
     }
 }
