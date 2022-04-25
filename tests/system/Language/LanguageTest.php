@@ -1,4 +1,5 @@
-<?php namespace CodeIgniter\Language;
+<?php
+namespace CodeIgniter\Language;
 
 class LanguageTest extends \CIUnitTestCase
 {

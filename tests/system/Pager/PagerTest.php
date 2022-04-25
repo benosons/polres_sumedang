@@ -1,4 +1,5 @@
-<?php namespace CodeIgniter\Pager;
+<?php
+namespace CodeIgniter\Pager;
 
 use Config\Pager;
 use Config\Services;

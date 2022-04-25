@@ -169,8 +169,10 @@ For instance, the following code:
 
 is compiled to something like the following::
 
-    <?php echo strtolower('TWIG') ?>
-    <?php echo twig_date_format_filter($now, 'd/m/Y') ?>
+    <?php
+echo strtolower('TWIG') ?>
+    <?php
+echo twig_date_format_filter($now, 'd/m/Y') ?>
 
 The ``Twig_SimpleFilter`` class takes an array of options as its last
 argument::

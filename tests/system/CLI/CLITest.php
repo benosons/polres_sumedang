@@ -1,4 +1,5 @@
-<?php namespace CodeIgniter\CLI;
+<?php
+namespace CodeIgniter\CLI;
 
 class CLITest extends \CIUnitTestCase
 {

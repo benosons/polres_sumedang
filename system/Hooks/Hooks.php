@@ -1,4 +1,5 @@
-<?php namespace CodeIgniter\Hooks;
+<?php
+namespace CodeIgniter\Hooks;
 
 /**
  * CodeIgniter

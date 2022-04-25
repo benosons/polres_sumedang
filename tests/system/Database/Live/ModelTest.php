@@ -1,4 +1,5 @@
-<?php namespace CodeIgniter\Database\Live;
+<?php
+namespace CodeIgniter\Database\Live;
 
 use CodeIgniter\Model;
 use Tests\Support\Models\JobModel;

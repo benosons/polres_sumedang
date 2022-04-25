@@ -1,4 +1,5 @@
-<?php namespace CodeIgniter\View;
+<?php
+namespace CodeIgniter\View;
 
 /**
  * Class SampleClass

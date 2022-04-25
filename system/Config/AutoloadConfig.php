@@ -1,4 +1,5 @@
-<?php namespace CodeIgniter\Config;
+<?php
+namespace CodeIgniter\Config;
 
 /**
  * CodeIgniter

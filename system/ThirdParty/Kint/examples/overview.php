@@ -153,12 +153,18 @@ for ( $i = 1; $i < 6; $i++ ) {
 <div>
 	<label style="float: right">Switch theme:
 		<select onchange="window.location = '?theme=' + this.value">
-			<?php $chosen = isset( $_GET['theme'] ) ? $_GET['theme'] : 'original' ?>
-			<?php foreach ( $allowedThemes as $theme ) : ?>
-				<option value="<?php echo $theme ?>"<?php echo $theme === $chosen ? ' selected' : '' ?>>
-					<?php echo ucfirst( str_replace( '-', ' ', $theme ) ) ?>
+			<?php
+$chosen = isset( $_GET['theme'] ) ? $_GET['theme'] : 'original' ?>
+			<?php
+foreach ( $allowedThemes as $theme ) : ?>
+				<option value="<?php
+echo $theme ?>"<?php
+echo $theme === $chosen ? ' selected' : '' ?>>
+					<?php
+echo ucfirst( str_replace( '-', ' ', $theme ) ) ?>
 				</option>
-			<?php endforeach ?>
+			<?php
+endforeach ?>
 		</select>
 	</label>
 
@@ -171,6 +177,7 @@ d( $userManager, $tabularData );
 d( $nestedArray );
 ?>
 <h3>Trace</h3>
-<?php $userManager->ensureUser(); ?>
+<?php
+$userManager->ensureUser(); ?>
 </body>
 </html>

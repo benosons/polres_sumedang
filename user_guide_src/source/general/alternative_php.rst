@@ -15,7 +15,8 @@ Alternative Echos
 
 Normally to echo, or print out a variable you would do this::
 
-	<?php echo $variable; ?>
+	<?php
+echo $variable; ?>
 
 With the alternative syntax you can instead do it this way::
 
@@ -29,11 +30,13 @@ a simplified format as well. Here is an example using ``foreach``::
 
 	<ul>
 
-	<?php foreach ($todo as $item) : ?>
+	<?php
+foreach ($todo as $item) : ?>
 
 		<li><?= $item ?></li>
 
-	<?php endforeach ?>
+	<?php
+endforeach ?>
 
 	</ul>
 
@@ -46,16 +49,20 @@ Also notice that instead of using a semicolon after each structure
 
 Here is another example, using ``if``/``elseif``/``else``. Notice the colons::
 
-	<?php if ($username === 'sally') : ?>
+	<?php
+if ($username === 'sally') : ?>
 
 		<h3>Hi Sally</h3>
 
-	<?php elseif ($username === 'joe') : ?>
+	<?php
+elseif ($username === 'joe') : ?>
 
 		<h3>Hi Joe</h3>
 
-	<?php else : ?>
+	<?php
+else : ?>
 
 		<h3>Hi unknown user</h3>
 
-	<?php endif ?>
+	<?php
+endif ?>

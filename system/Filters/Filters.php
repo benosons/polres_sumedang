@@ -1,4 +1,5 @@
-<?php namespace CodeIgniter\Filters;
+<?php
+namespace CodeIgniter\Filters;
 
 use CodeIgniter\Config\BaseConfig;
 use CodeIgniter\HTTP\RequestInterface;

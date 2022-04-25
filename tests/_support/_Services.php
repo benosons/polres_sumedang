@@ -1,4 +1,5 @@
-<?php namespace CodeIgniter;
+<?php
+namespace CodeIgniter;
 
 /**
  * Class Services

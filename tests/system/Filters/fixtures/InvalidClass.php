@@ -1,4 +1,5 @@
-<?php namespace CodeIgniter\Filters\fixtures;
+<?php
+namespace CodeIgniter\Filters\fixtures;
 
 class InvalidClass
 {

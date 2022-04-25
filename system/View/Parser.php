@@ -537,12 +537,16 @@ class Parser extends View
 			// Build the string to replace the `if` statement with.
 			$condition = $match[2];
 
-			$statement = $match[1] === 'elseif' ? '<?php elseif (' . $condition . '): ?>' : '<?php if (' . $condition . '): ?>';
+			$statement = $match[1] === 'elseif' ? '<?php
+elseif (' . $condition . '): ?>' : '<?php
+if (' . $condition . '): ?>';
 			$template  = str_replace($match[0], $statement, $template);
 		}
 
-		$template = preg_replace('/\{\s*else\s*\}/ms', '<?php else: ?>', $template);
-		$template = preg_replace('/\{\s*endif\s*\}/ms', '<?php endif; ?>', $template);
+		$template = preg_replace('/\{\s*else\s*\}/ms', '<?php
+else: ?>', $template);
+		$template = preg_replace('/\{\s*endif\s*\}/ms', '<?php
+endif; ?>', $template);
 
 		// Parse the PHP itself, or insert an error so they can debug
 		ob_start();
@@ -556,12 +560,14 @@ class Parser extends View
 
 		try
 		{
-			eval('?>' . $template . '<?php ');
+			eval('?>' . $template . '<?php
+');
 		}
 		catch (\ParseError $e)
 		{
 			ob_end_clean();
-			throw ViewException::forTagSyntaxError(str_replace(['?>', '<?php '], '', $template));
+			throw ViewException::forTagSyntaxError(str_replace(['?>', '<?php
+'], '', $template));
 		}
 
 		return ob_get_clean();

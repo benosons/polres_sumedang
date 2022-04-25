@@ -1,4 +1,5 @@
-<?php $error_id = uniqid('error'); ?>
+<?php
+$error_id = uniqid('error'); ?>
 <!doctype html>
 <html>
 <head>
@@ -32,11 +33,13 @@
 	<div class="container">
 		<p><b><?= self::cleanPath($file, $line) ?></b> at line <b><?= $line ?></b></p>
 
-		<?php if (is_file($file)) : ?>
+		<?php
+if (is_file($file)) : ?>
 			<div class="source">
 				<?= self::highlightFile($file, $line, 15); ?>
 			</div>
-		<?php endif; ?>
+		<?php
+endif; ?>
 	</div>
 
 	<div class="container">
@@ -57,12 +60,14 @@
 			<div class="content" id="backtrace">
 
 				<ol class="trace">
-				<?php foreach ($trace as $index => $row) : ?>
+				<?php
+foreach ($trace as $index => $row) : ?>
 
 					<li>
 						<p>
 							<!-- Trace info -->
-							<?php if (isset($row['file']) && is_file($row['file'])) :?>
+							<?php
+if (isset($row['file']) && is_file($row['file'])) :?>
 								<?php
 									if (isset($row['function']) && in_array($row['function'], ['include', 'include_once', 'require', 'require_once']))
 									{
@@ -73,20 +78,26 @@
 										echo self::cleanPath($row['file']).' : '.$row['line'];
 									}
 								?>
-							<?php else : ?>
+							<?php
+else : ?>
 								{PHP internal code}
-							<?php endif; ?>
+							<?php
+endif; ?>
 
 							<!-- Class/Method -->
-							<?php if (isset($row['class'])) : ?>
+							<?php
+if (isset($row['class'])) : ?>
 								&nbsp;&nbsp;&mdash;&nbsp;&nbsp;<?= $row['class'].$row['type'].$row['function'] ?>
-								<?php if (! empty($row['args'])) : ?>
-									<?php $args_id = $error_id.'args'.$index ?>
+								<?php
+if (! empty($row['args'])) : ?>
+									<?php
+$args_id = $error_id.'args'.$index ?>
 									( <a href="#" onclick="return toggle('<?= $args_id ?>');">arguments</a> )
 									<div class="args" id="<?= $args_id ?>">
 										<table cellspacing="0">
 
-										<?php foreach ($row['args'] as $key => $value) : ?>
+										<?php
+foreach ($row['args'] as $key => $value) : ?>
 											<?php
 												$mirror = isset($row['class']) ? new \ReflectionMethod($row['class'], $row['function']) :
 													new \ReflectionFunction($row['function']);
@@ -96,37 +107,48 @@
 												<td><code><?= htmlspecialchars(isset($params[$key]) ? '$'.$params[$key]->name : "#$key", ENT_SUBSTITUTE, 'UTF-8') ?></code></td>
 												<td><pre><?= print_r($value, true) ?></pre></td>
 											</tr>
-										<?php endforeach ?>
+										<?php
+endforeach ?>
 
 										</table>
 									</div>
-								<?php else : ?>
+								<?php
+else : ?>
 									()
-								<?php endif; ?>
-							<?php endif; ?>
+								<?php
+endif; ?>
+							<?php
+endif; ?>
 
-							<?php if (! isset($row['class']) && isset($row['function'])) : ?>
+							<?php
+if (! isset($row['class']) && isset($row['function'])) : ?>
 								&nbsp;&nbsp;&mdash;&nbsp;&nbsp;	<?= $row['function'] ?>()
-							<?php endif; ?>
+							<?php
+endif; ?>
 						</p>
 
 						<!-- Source? -->
-						<?php if (isset($row['file']) && is_file($row['file']) &&  isset($row['class'])) : ?>
+						<?php
+if (isset($row['file']) && is_file($row['file']) &&  isset($row['class'])) : ?>
 							<div class="source">
 								<?= self::highlightFile($row['file'], $row['line']) ?>
 							</div>
-						<?php endif; ?>
+						<?php
+endif; ?>
 					</li>
 
-				<?php endforeach; ?>
+				<?php
+endforeach; ?>
 				</ol>
 
 			</div>
 
 			<!-- Server -->
 			<div class="content" id="server">
-				<?php foreach (['_SERVER', '_SESSION'] as $var) : ?>
-					<?php if (empty($GLOBALS[$var]) || ! is_array($GLOBALS[$var])) continue; ?>
+				<?php
+foreach (['_SERVER', '_SESSION'] as $var) : ?>
+					<?php
+if (empty($GLOBALS[$var]) || ! is_array($GLOBALS[$var])) continue; ?>
 
 					<h3>$<?= $var ?></h3>
 
@@ -138,26 +160,34 @@
 							</tr>
 						</thead>
 						<tbody>
-						<?php foreach ($GLOBALS[$var] as $key => $value) : ?>
+						<?php
+foreach ($GLOBALS[$var] as $key => $value) : ?>
 							<tr>
 								<td><?= htmlspecialchars($key, ENT_IGNORE, 'UTF-8') ?></td>
 								<td>
-									<?php if (! is_array($value) && ! is_object($value)) : ?>
+									<?php
+if (! is_array($value) && ! is_object($value)) : ?>
 										<?= htmlspecialchars($value, ENT_SUBSTITUTE, 'UTF-8') ?>
-									<?php else: ?>
+									<?php
+else: ?>
 										<?= '<pre>'.print_r($value, true) ?>
-									<?php endif; ?>
+									<?php
+endif; ?>
 								</td>
 							</tr>
-						<?php endforeach; ?>
+						<?php
+endforeach; ?>
 						</tbody>
 					</table>
 
-				<?php endforeach ?>
+				<?php
+endforeach ?>
 
 				<!-- Constants -->
-				<?php $constants = get_defined_constants(true); ?>
-				<?php if (! empty($constants['user'])) : ?>
+				<?php
+$constants = get_defined_constants(true); ?>
+				<?php
+if (! empty($constants['user'])) : ?>
 					<h3>Constants</h3>
 
 					<table>
@@ -168,26 +198,33 @@
 							</tr>
 						</thead>
 						<tbody>
-						<?php foreach ($constants['user'] as $key => $value) : ?>
+						<?php
+foreach ($constants['user'] as $key => $value) : ?>
 							<tr>
 								<td><?= htmlspecialchars($key, ENT_IGNORE, 'UTF-8') ?></td>
 								<td>
-									<?php if (!is_array($value) && ! is_object($value)) : ?>
+									<?php
+if (!is_array($value) && ! is_object($value)) : ?>
 										<?= htmlspecialchars($value, ENT_SUBSTITUTE, 'UTF-8') ?>
-									<?php else: ?>
+									<?php
+else: ?>
 										<?= '<pre>'.print_r($value, true) ?>
-									<?php endif; ?>
+									<?php
+endif; ?>
 								</td>
 							</tr>
-						<?php endforeach; ?>
+						<?php
+endforeach; ?>
 						</tbody>
 					</table>
-				<?php endif; ?>
+				<?php
+endif; ?>
 			</div>
 
 			<!-- Request -->
 			<div class="content" id="request">
-				<?php $request = \CodeIgniter\Services::request(null, true); ?>
+				<?php
+$request = \CodeIgniter\Services::request(null, true); ?>
 
 				<table>
 					<tbody>
@@ -224,11 +261,15 @@
 				</table>
 
 
-				<?php $empty = true; ?>
-				<?php foreach (['_GET', '_POST', '_COOKIE'] as $var) : ?>
-					<?php if (empty($GLOBALS[$var]) || ! is_array($GLOBALS[$var])) continue; ?>
+				<?php
+$empty = true; ?>
+				<?php
+foreach (['_GET', '_POST', '_COOKIE'] as $var) : ?>
+					<?php
+if (empty($GLOBALS[$var]) || ! is_array($GLOBALS[$var])) continue; ?>
 
-					<?php $empty = false; ?>
+					<?php
+$empty = false; ?>
 
 					<h3>$<?= $var ?></h3>
 
@@ -240,34 +281,45 @@
 							</tr>
 						</thead>
 						<tbody>
-						<?php foreach ($GLOBALS[$var] as $key => $value) : ?>
+						<?php
+foreach ($GLOBALS[$var] as $key => $value) : ?>
 							<tr>
 								<td><?= htmlspecialchars($key, ENT_IGNORE, 'UTF-8') ?></td>
 								<td>
-									<?php if (!is_array($value) && ! is_object($value)) : ?>
+									<?php
+if (!is_array($value) && ! is_object($value)) : ?>
 										<?= htmlspecialchars($value, ENT_SUBSTITUTE, 'UTF-8') ?>
-									<?php else: ?>
+									<?php
+else: ?>
 										<?= '<pre>'.print_r($value, true) ?>
-									<?php endif; ?>
+									<?php
+endif; ?>
 								</td>
 							</tr>
-						<?php endforeach; ?>
+						<?php
+endforeach; ?>
 						</tbody>
 					</table>
 
-				<?php endforeach ?>
+				<?php
+endforeach ?>
 
-				<?php if ($empty) : ?>
+				<?php
+if ($empty) : ?>
 
 					<div class="alert">
 						No $_GET, $_POST, or $_COOKIE Information to show.
 					</div>
 
-				<?php endif; ?>
+				<?php
+endif; ?>
 
-				<?php $headers = $request->getHeaders(); ?>
-				<?php if (! empty($headers)) : ?>
-					<?php natsort($headers) ?>
+				<?php
+$headers = $request->getHeaders(); ?>
+				<?php
+if (! empty($headers)) : ?>
+					<?php
+natsort($headers) ?>
 
 					<h3>Headers</h3>
 
@@ -279,16 +331,19 @@
 							</tr>
 						</thead>
 						<tbody>
-						<?php foreach ($headers as $name => $value) : ?>
+						<?php
+foreach ($headers as $name => $value) : ?>
 							<tr>
 								<td><?= esc($name, 'html') ?></td>
 								<td><?= esc($request->getHeaderLine($name), 'html') ?></td>
 							</tr>
-						<?php endforeach; ?>
+						<?php
+endforeach; ?>
 						</tbody>
 					</table>
 
-				<?php endif; ?>
+				<?php
+endif; ?>
 			</div>
 
 			<!-- Response -->
@@ -304,9 +359,12 @@
 					</tr>
 				</table>
 
-				<?php $headers = $response->getHeaders(); ?>
-				<?php if (! empty($headers)) : ?>
-					<?php natsort($headers) ?>
+				<?php
+$headers = $response->getHeaders(); ?>
+				<?php
+if (! empty($headers)) : ?>
+					<?php
+natsort($headers) ?>
 
 					<h3>Headers</h3>
 
@@ -318,26 +376,32 @@
 							</tr>
 						</thead>
 						<tbody>
-						<?php foreach ($headers as $name => $value) : ?>
+						<?php
+foreach ($headers as $name => $value) : ?>
 							<tr>
 								<td><?= esc($name, 'html') ?></td>
 								<td><?= esc($request->getHeaderLine($name), 'html') ?></td>
 							</tr>
-						<?php endforeach; ?>
+						<?php
+endforeach; ?>
 						</tbody>
 					</table>
 
-				<?php endif; ?>
+				<?php
+endif; ?>
 			</div>
 
 			<!-- Files -->
 			<div class="content" id="files">
-				<?php $files = get_included_files(); ?>
+				<?php
+$files = get_included_files(); ?>
 
 				<ol>
-				<?php foreach ($files as $file) :?>
+				<?php
+foreach ($files as $file) :?>
 					<li><?= htmlspecialchars( self::cleanPath($file), ENT_SUBSTITUTE, 'UTF-8') ?></li>
-				<?php endforeach ?>
+				<?php
+endforeach ?>
 				</ol>
 			</div>
 

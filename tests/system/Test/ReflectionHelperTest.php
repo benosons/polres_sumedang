@@ -1,4 +1,5 @@
-<?php namespace CodeIgniter\Test;
+<?php
+namespace CodeIgniter\Test;
 
 class ReflectionHelperTest extends \CIUnitTestCase
 {

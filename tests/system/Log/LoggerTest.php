@@ -1,4 +1,5 @@
-<?php namespace CodeIgniter\Log;
+<?php
+namespace CodeIgniter\Log;
 
 use Config\MockLogger as LoggerConfig;
 use Psr\Log\LogLevel;

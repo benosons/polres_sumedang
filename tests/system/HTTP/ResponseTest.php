@@ -1,4 +1,5 @@
-<?php namespace CodeIgniter\HTTP;
+<?php
+namespace CodeIgniter\HTTP;
 
 use Config\App;
 use DateTime;

@@ -1,4 +1,5 @@
-<?php namespace CodeIgniter\Log;
+<?php
+namespace CodeIgniter\Log;
 
 class TestLogger extends Logger
 {

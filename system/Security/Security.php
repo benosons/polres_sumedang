@@ -1,4 +1,5 @@
-<?php namespace CodeIgniter\Security;
+<?php
+namespace CodeIgniter\Security;
 
 /**
  * CodeIgniter

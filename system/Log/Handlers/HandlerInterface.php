@@ -1,4 +1,5 @@
-<?php namespace CodeIgniter\Log\Handlers;
+<?php
+namespace CodeIgniter\Log\Handlers;
 
 /**
  * CodeIgniter

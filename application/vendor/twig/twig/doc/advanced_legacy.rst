@@ -145,7 +145,8 @@ compilation, the generated PHP code is roughly equivalent to:
 
 .. code-block:: html+php
 
-    <?php echo strtolower('TWIG') ?>
+    <?php
+echo strtolower('TWIG') ?>
 
 As you can see, the ``'TWIG'`` string is passed as a first argument to the PHP
 function.
@@ -161,7 +162,8 @@ argument, and the compiled code is equivalent to:
 
 .. code-block:: html+php
 
-    <?php echo twig_date_format_filter($now, 'd/m/Y') ?>
+    <?php
+echo twig_date_format_filter($now, 'd/m/Y') ?>
 
 Let's see how to create a new filter.
 
@@ -308,7 +310,8 @@ compilation, the generated PHP code is roughly equivalent to:
 
 .. code-block:: html+php
 
-    <?php echo constant('DATE_W3C') ?>
+    <?php
+echo constant('DATE_W3C') ?>
 
 Adding a function is similar to adding a filter. This can be done by calling the
 ``addFunction()`` method on the ``Twig_Environment`` instance::

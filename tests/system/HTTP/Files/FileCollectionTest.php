@@ -1,4 +1,5 @@
-<?php namespace CodeIgniter\HTTP\Files;
+<?php
+namespace CodeIgniter\HTTP\Files;
 
 class FileCollectionTest extends \CIUnitTestCase
 {

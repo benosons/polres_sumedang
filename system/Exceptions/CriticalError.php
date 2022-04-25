@@ -1,4 +1,5 @@
-<?php namespace CodeIgniter\Exceptions;
+<?php
+namespace CodeIgniter\Exceptions;
 
 /**
  * Error: Critical conditions, like component unavailble, etc.

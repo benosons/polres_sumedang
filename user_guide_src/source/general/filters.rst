@@ -22,7 +22,8 @@ Filters are simple classes that implement ``CodeIgniter\Filters\FilterInterface`
 and ``after()``, which contain the code that will be ran before and after the controller, respectively. Your class
 must contain both methods, but may leave the methods empty if they are not needed. A skeleton filter class looks like::
 
-    <?php namespace App\Filters;
+    <?php
+namespace App\Filters;
 
     use CodeIgniter\HTTP\RequestInterface;
     use CodeIgniter\HTTP\ResponseInterface;

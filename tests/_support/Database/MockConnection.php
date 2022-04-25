@@ -1,4 +1,5 @@
-<?php namespace CodeIgniter\Database;
+<?php
+namespace CodeIgniter\Database;
 
 class MockConnection extends BaseConnection
 {

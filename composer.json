@@ -12,12 +12,15 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"CodeIgniter\\": "system/"
+			"CodeIgniter\\": "system/",
+			"App\\": "application/",
+            "Lib\\": "Libraries"
 		}
 	},
 	"require": {
 		"php": ">=7.0",
-		"zendframework/zend-escaper": "^2.5"
+		"zendframework/zend-escaper": "^2.5",
+		"dompdf/dompdf": "^1.2"
 	},
 	"require-dev": {
 		"phpunit/phpunit": "5.3.*",

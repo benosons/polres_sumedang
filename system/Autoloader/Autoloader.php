@@ -1,4 +1,5 @@
-<?php namespace CodeIgniter\Autoloader;
+<?php
+namespace CodeIgniter\Autoloader;
 
 /**
  * CodeIgniter

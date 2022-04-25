@@ -1,4 +1,5 @@
-<?php namespace CodeIgniter\Cache;
+<?php
+namespace CodeIgniter\Cache;
 
 interface CacheInterface
 {
