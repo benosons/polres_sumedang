@@ -10,6 +10,8 @@ $(document).ready(function(){
   $('.user-tambah').hide();
   $('#save-user').hide();
 
+  $("#filter-tanggal").val(formatDate(new Date()));
+  
   loadsupervisi('');
 
   $('#save-user').on('click', function(){
@@ -27,13 +29,8 @@ $(document).ready(function(){
 
   });
 
-  $('#user_role').on('change', function(){
-    if(this.value == 100){
-      $('#user_satuan').val(0);
-      $('#user_satuan').prop('disabled', true);
-    }else{
-      $('#user_satuan').prop('disabled', false);
-    }
+  $( "#myModal" ).on('shown.bs.modal', function(){
+    generatepdf(formatDate($("#filter-tanggal").val()))
   });
 
 });
@@ -187,6 +184,30 @@ function save(formData){
       });
   }
 
+  function generatepdf(date){
+
+    $.ajax({
+        type: 'post',
+        dataType: 'json',
+        url: 'generatePdf',
+        data : {
+                title     : 'BUKU SUPERVISI & ASISTENSI OPS KETUPAT LODAYA',
+                template  : 'ops_supervisi',
+                date      : date,
+                mode      : 3,
+        },
+        success: function(result){
+            let data = result.data;
+            let code = result.code;
+  
+            PDFObject.embed(result.data, "#example1");
+  
+  
+          }
+  
+        })
+      }
+
   function loadparam(param){
 
     $.ajax({
@@ -207,3 +228,17 @@ function save(formData){
           }
         })
       }
+
+      function formatDate(date) {
+        var d = new Date(date),
+            month = '' + (d.getMonth() + 1),
+            day = '' + d.getDate(),
+            year = d.getFullYear();
+    
+        if (month.length < 2) 
+            month = '0' + month;
+        if (day.length < 2) 
+            day = '0' + day;
+    
+        return [year, month, day].join('-');
+      } 

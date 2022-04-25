@@ -108,6 +108,13 @@ class Pdfview extends \CodeIgniter\Controller {
             );
 
             $orientation = "landscape";
+        }else if($mode == 3){
+
+            $this->data = array(
+                'baseURL' => BASE.'/public',
+                'title_pdf' => $title,
+            );
+            $orientation = "potrait";
         }
         
         // filename dari pdf ketika didownload

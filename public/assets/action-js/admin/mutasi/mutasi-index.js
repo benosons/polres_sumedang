@@ -359,7 +359,7 @@ function generatepdf(date){
       dataType: 'json',
       url: 'generatePdf',
       data : {
-              title     : 'BUKU MUTASI OPS KETUPAT',
+              title     : 'BUKU MUTASI OPS KETUPAT LODAYA',
               template  : 'ops_mutasi',
               date      : date,
               mode      : 1,
