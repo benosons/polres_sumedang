@@ -1,5 +1,4 @@
-<?php
-namespace CodeIgniter\Database\MySQLi;
+<?php namespace CodeIgniter\Database\MySQLi;
 
 use CodeIgniter\Database\PreparedQueryInterface;
 use \CodeIgniter\Database\BasePreparedQuery;

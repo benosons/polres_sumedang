@@ -115,8 +115,7 @@ that you can override, and has four required class properties that you must corr
 the Collector to work
 ::
 
-	<?php
-namespace MyNamespace;
+	<?php namespace MyNamespace;
 
 	use CodeIgniter\Debug\Toolbar\Collectors\BaseCollector;
 

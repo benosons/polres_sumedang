@@ -1,5 +1,4 @@
-<?php
-namespace Tests\Support\Models;
+<?php namespace Tests\Support\Models;
 
 use CodeIgniter\Model;
 

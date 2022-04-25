@@ -1,5 +1,4 @@
-<?php
-namespace CodeIgniter\HTTP;
+<?php namespace CodeIgniter\HTTP;
 
 class HeaderTest extends \CIUnitTestCase
 {

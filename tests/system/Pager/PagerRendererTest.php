@@ -1,5 +1,4 @@
-<?php
-namespace CodeIgniter\Pager;
+<?php namespace CodeIgniter\Pager;
 
 use CodeIgniter\HTTP\URI;
 

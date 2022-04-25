@@ -37,8 +37,7 @@ If you need to create a new configuration file you would create a new file at yo
 **/application/Config** by default. Then create the class and fill it with public properties that
 represent your settings::
 
-	<?php
-namespace Config;
+	<?php namespace Config;
 	
 	class App extends \CodeIgniter\Config\BaseConfig {
 	

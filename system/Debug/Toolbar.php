@@ -1,5 +1,4 @@
-<?php
-namespace CodeIgniter\Debug;
+<?php namespace CodeIgniter\Debug;
 
 use CodeIgniter\Config\BaseConfig;
 

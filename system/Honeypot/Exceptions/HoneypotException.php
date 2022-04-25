@@ -1,5 +1,4 @@
-<?php
-namespace CodeIgniter\Honeypot\Exceptions;
+<?php namespace CodeIgniter\Honeypot\Exceptions;
 
 use CodeIgniter\Exceptions\ConfigException;
 use CodeIgniter\Exceptions\ExceptionInterface;

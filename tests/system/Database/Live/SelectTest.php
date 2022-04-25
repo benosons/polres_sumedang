@@ -1,5 +1,4 @@
-<?php
-namespace CodeIgniter\Database\Live;
+<?php namespace CodeIgniter\Database\Live;
 
 use CodeIgniter\Database\BaseResult;
 

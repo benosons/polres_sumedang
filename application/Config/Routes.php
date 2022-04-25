@@ -1,5 +1,4 @@
-<?php
-namespace Config;
+<?php namespace Config;
 
 /**
  * --------------------------------------------------------------------
@@ -151,8 +150,6 @@ $routes->post('addKonten', 'Jsondata::addKonten');
 $routes->post('loadKonten', 'Jsondata::loadKonten');
 $routes->post('loadusers', 'Jsondata::loadusers');
 $routes->post('actionUsers', 'Jsondata::actionUsers');
-
-$routes->add('generatePdf', 'Pdfview::index');
 
 $routes->post('kawalcorona', 'Jsondata::kawalcorona');
 $routes->post('coronas', 'Jsondata::coronas');

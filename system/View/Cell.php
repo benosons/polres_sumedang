@@ -1,5 +1,4 @@
-<?php
-namespace CodeIgniter\View;
+<?php namespace CodeIgniter\View;
 
 use CodeIgniter\Cache\CacheInterface;
 

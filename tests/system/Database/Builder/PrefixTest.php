@@ -1,5 +1,4 @@
-<?php
-namespace CodeIgniter\Database\Builder;
+<?php namespace CodeIgniter\Database\Builder;
 
 use CodeIgniter\Database\BaseBuilder;
 use CodeIgniter\Database\MockConnection;

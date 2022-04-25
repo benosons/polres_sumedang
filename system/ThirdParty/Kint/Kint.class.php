@@ -556,8 +556,7 @@ class Kint
 	}
 
 	/**
-	 * removes comments and zaps whitespace & <?php
-tags from php code, makes for easier further parsing
+	 * removes comments and zaps whitespace & <?php tags from php code, makes for easier further parsing
 	 *
 	 * @param string $source
 	 *

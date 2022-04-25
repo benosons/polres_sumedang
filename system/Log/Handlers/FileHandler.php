@@ -1,5 +1,4 @@
-<?php
-namespace CodeIgniter\Log\Handlers;
+<?php namespace CodeIgniter\Log\Handlers;
 
 /**
  * CodeIgniter
@@ -108,8 +107,7 @@ class FileHandler extends BaseHandler implements HandlerInterface
 			// Only add protection to php files
 			if ($this->fileExtension === 'php')
 			{
-				$msg .= "<?php
-defined('BASEPATH') OR exit('No direct script access allowed'); ?>\n\n";
+				$msg .= "<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>\n\n";
 			}
 		}
 

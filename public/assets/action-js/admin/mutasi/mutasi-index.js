@@ -55,12 +55,14 @@ $(document).ready(function(){
 
   });
 
-  
-  $( "#myModal" ).on('shown.bs.modal', function(){
-    generatepdf(formatDate(new Date()))
-    PDFObject.embed("public/uploads/dummy.pdf", "#example1");
+  $('#user_role').on('change', function(){
+    if(this.value == 100){
+      $('#user_satuan').val(0);
+      $('#user_satuan').prop('disabled', true);
+    }else{
+      $('#user_satuan').prop('disabled', false);
+    }
   });
-
 
 });
 
@@ -153,26 +155,6 @@ function loadmutasi(param, date){
             var dt = $('#data-mutasi').DataTable()
             dt.clear().draw();
           }
-        }
-
-      })
-    }
-
-function generatepdf(date){
-
-  $.ajax({
-      type: 'post',
-      dataType: 'json',
-      url: 'generatePdf',
-      data : {
-              title     : 'BUKU MUTASI OPS KETUPAT',
-              template     : 'laporan_pdf',
-              date      : date,
-      },
-      success: function(result){
-          let data = result.data;
-          let code = result.code;
-
         }
 
       })

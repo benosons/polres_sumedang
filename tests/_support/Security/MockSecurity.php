@@ -1,5 +1,4 @@
-<?php
-namespace CodeIgniter\Security;
+<?php namespace CodeIgniter\Security;
 
 use CodeIgniter\HTTP\RequestInterface;
 

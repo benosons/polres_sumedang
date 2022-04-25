@@ -1,5 +1,4 @@
-<?php
-namespace CodeIgniter\Database\Exceptions;
+<?php namespace CodeIgniter\Database\Exceptions;
 
 /**
  * Provides a domain-level interface for broad capture

@@ -1,5 +1,4 @@
-<?php
-namespace CodeIgniter\Language;
+<?php namespace CodeIgniter\Language;
 
 use Config\Services;
 

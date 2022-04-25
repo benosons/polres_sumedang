@@ -1,5 +1,4 @@
-<?php
-namespace CodeIgniter\Autoloader;
+<?php namespace CodeIgniter\Autoloader;
 
 class MockAutoloader extends Autoloader
 {

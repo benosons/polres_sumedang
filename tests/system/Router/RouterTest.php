@@ -1,5 +1,4 @@
-<?php
-namespace CodeIgniter\Router;
+<?php namespace CodeIgniter\Router;
 
 class RouterTest extends \CIUnitTestCase
 {

@@ -1,5 +1,4 @@
-<?php
-namespace CodeIgniter\Database\Postgre;
+<?php namespace CodeIgniter\Database\Postgre;
 
 use CodeIgniter\Database\PreparedQueryInterface;
 use \CodeIgniter\Database\BasePreparedQuery;

@@ -1,5 +1,4 @@
-<?php
-namespace CodeIgniter\Cache\Handlers;
+<?php namespace CodeIgniter\Cache\Handlers;
 
 use CodeIgniter\Cache\CacheInterface;
 

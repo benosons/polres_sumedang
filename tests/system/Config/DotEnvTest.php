@@ -1,5 +1,4 @@
-<?php
-namespace CodeIgniter\Config;
+<?php namespace CodeIgniter\Config;
 
 //require_once 'system/Benchmark/Timer.php';
 

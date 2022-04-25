@@ -1,5 +1,4 @@
-<?php
-namespace CodeIgniter\Database;
+<?php namespace CodeIgniter\Database;
 
 abstract class BasePreparedQuery implements PreparedQueryInterface
 {

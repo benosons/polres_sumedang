@@ -1,5 +1,4 @@
-<?php
-namespace Config;
+<?php namespace Config;
 
 require BASEPATH.'Config/AutoloadConfig.php';
 
@@ -75,7 +74,7 @@ class Autoload extends \CodeIgniter\Config\AutoloadConfig
 		 */
 		$classmap = [
 			'Render' => 'Libraries/Twig.php',
-			'Client' => APPPATH . 'Libraries/Mongo/Client.php',
+			'Client' => APPPATH . 'Libraries/Mongo/Client.php'
 		];
 
 		//--------------------------------------------------------------------

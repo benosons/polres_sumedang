@@ -1,5 +1,4 @@
-<?php
-namespace Config;
+<?php namespace Config;
 
 class MimesTest extends \CIUnitTestCase
 {

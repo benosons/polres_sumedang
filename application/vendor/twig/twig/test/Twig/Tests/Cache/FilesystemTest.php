@@ -186,8 +186,7 @@ class Twig_Tests_Cache_FilesystemTest extends PHPUnit_Framework_TestCase
 
     private function generateSource()
     {
-        return strtr('<?php
-class {{classname}} {}', array(
+        return strtr('<?php class {{classname}} {}', array(
             '{{classname}}' => $this->classname,
         ));
     }

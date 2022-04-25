@@ -1,5 +1,4 @@
-<?php
-namespace CodeIgniter\Exceptions;
+<?php namespace CodeIgniter\Exceptions;
 
 /**
  * Cast Exceptions.

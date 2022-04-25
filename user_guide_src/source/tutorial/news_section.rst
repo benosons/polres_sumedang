@@ -153,11 +153,9 @@ and add the next piece of code.
 
 	<h2><?= $title ?></h2>
 
-	<?php
-if (! empty($news) && is_array($news)) : ?>
+	<?php if (! empty($news) && is_array($news)) : ?>
 
-		<?php
-foreach ($news as $news_item): ?>
+		<?php foreach ($news as $news_item): ?>
 
 			<h3><?= $news_item['title'] ?></h3>
 
@@ -166,18 +164,15 @@ foreach ($news as $news_item): ?>
 			</div>
 			<p><a href="<?= '/news/'.$news_item['slug'] ?>">View article</a></p>
 
-		<?php
-endforeach; ?>
+		<?php endforeach; ?>
 
-	<?php
-else : ?>
+	<?php else : ?>
 
 		<h3>No News</h3>
 
 		<p>Unable to find any news for you.</p>
 
-	<?php
-endif ?>
+	<?php endif ?>
 
 Here, each news item is looped and displayed to the user. You can see we
 wrote our template in PHP mixed with HTML. If you prefer to use a template

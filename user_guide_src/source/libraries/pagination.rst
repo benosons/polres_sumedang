@@ -160,13 +160,11 @@ When you create a new view, you only need to create the code that is needed for 
 You should never create unneccessary wrapping divs since it might be used in multiple places and you only limit their
 usefullness. It is easiest to demonstrate creating a new view by showing you the existing default_full template::
 
-    <?php
-$pager->setSurroundCount(2) ?>
+    <?php $pager->setSurroundCount(2) ?>
 
     <nav aria-label="Page navigation">
         <ul class="pagination">
-            <?php
-if ($pager->hasPrevious()) : ?>
+            <?php if ($pager->hasPrevious()) : ?>
             <li>
 				<a href="<?= $pager->getFirst() ?>" aria-label="First">
 					<span aria-hidden="true">First</span>
@@ -177,21 +175,17 @@ if ($pager->hasPrevious()) : ?>
                     <span aria-hidden="true">&laquo;</span>
                 </a>
             </li>
-            <?php
-endif ?>
+            <?php endif ?>
 
-            <?php
-foreach ($pager->links() as $link) : ?>
+            <?php foreach ($pager->links() as $link) : ?>
                 <li <?= $link['active'] ? 'class="active"' : '' ?>>
                     <a href="<?= $link['uri'] ?>">
                         <?= $link['title'] ?>
                     </a>
                 </li>
-            <?php
-endforeach ?>
+            <?php endforeach ?>
 
-            <?php
-if ($pager->hasNext()) : ?>
+            <?php if ($pager->hasNext()) : ?>
                 <li>
                     <a href="<?= $pager->getNext() ?>" aria-label="Previous">
                         <span aria-hidden="true">&raquo;</span>
@@ -202,8 +196,7 @@ if ($pager->hasNext()) : ?>
 						<span aria-hidden="true">Last</span>
 					</a>
 				</li>
-            <?php
-endif ?>
+            <?php endif ?>
         </ul>
     </nav>
 

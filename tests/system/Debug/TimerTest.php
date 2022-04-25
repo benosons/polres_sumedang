@@ -1,5 +1,4 @@
-<?php
-namespace CodeIgniter\Debug;
+<?php namespace CodeIgniter\Debug;
 
 class TimerTest extends \CIUnitTestCase
 {
