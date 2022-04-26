@@ -163,7 +163,6 @@ function loadmutasi(param, date, pos){
                             <span class="sr-only">Toggle primary</span>
                         </button>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item waves-effect waves-light btn-success btn-mini" href="#"><i class="icofont icofont-print"></i> Print</a>
                             <a class="dropdown-item waves-effect waves-light btn-danger btn-mini" href="#" onclick="action('delete','${row.id}', 0)"><i class="icofont icofont-trash"></i> Hapus </a>
                         </div>
                     </div>`
@@ -230,7 +229,6 @@ function loadmutasi(param, date, pos){
                             <span class="sr-only">Toggle primary</span>
                         </button>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item waves-effect waves-light btn-success btn-mini" href="#"><i class="icofont icofont-print"></i> Print</a>
                             <a class="dropdown-item waves-effect waves-light btn-danger btn-mini" href="#" onclick="action('delete','${row.id}', 1)"><i class="icofont icofont-trash"></i> Hapus </a>
                         </div>
                     </div>`
@@ -299,7 +297,6 @@ function loadmutasi(param, date, pos){
                             <span class="sr-only">Toggle primary</span>
                         </button>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item waves-effect waves-light btn-success btn-mini" href="#"><i class="icofont icofont-print"></i> Print</a>
                             <a class="dropdown-item waves-effect waves-light btn-danger btn-mini" href="#" onclick="action('delete','${row.id}', 2)"><i class="icofont icofont-trash"></i> Hapus </a>
                         </div>
                     </div>`
