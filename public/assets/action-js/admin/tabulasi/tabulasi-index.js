@@ -14,10 +14,10 @@ $(document).ready(function(){
 
   $("#filter-tanggal").val(formatDate(new Date()));
   $('#cari-mutasi').on('click', function(){
-    loadtabulasi('data_tabulasi', formatDate($("#filter-tanggal").val()));
+    loadtabulasi('data_tabulasi', formatDate($("#filter-tanggal").val()), $('#fitler-pos').val());
   })
 
-  loadtabulasi('data_tabulasi', formatDate(new Date()));
+  loadtabulasi('data_tabulasi', formatDate(new Date()), $('#fitler-pos').val());
 
   $('#save-user').on('click', function(){
 
@@ -64,12 +64,12 @@ $(document).ready(function(){
   });
 
   $( "#myModal" ).on('shown.bs.modal', function(){
-    generatepdf(formatDate($("#filter-tanggal").val()))
+    generatepdf(formatDate($("#filter-tanggal").val()), $('#fitler-pos').val())
   });
 
 });
 
-function loadtabulasi(param, date){
+function loadtabulasi(param, date, pos){
 
   $.ajax({
       type: 'post',
@@ -78,13 +78,14 @@ function loadtabulasi(param, date){
       data : {
               param      : param,
               date       : date,
+              pos       : pos,
       },
       success: function(result){
           let data = result.data;
           let code = result.code;
           let kegiatan = data.kegiatan;
           let kejadian = data.kejadian;
-          if(code == 1){
+          if(kegiatan){
             var dt = $('#data-tabulasi').DataTable({
               destroy: true,
               paging: true,
@@ -118,7 +119,6 @@ function loadtabulasi(param, date){
                           <span class="sr-only">Toggle primary</span>
                       </button>
                       <div class="dropdown-menu">
-                          <a class="dropdown-item waves-effect waves-light btn-success btn-mini" href="#"><i class="icofont icofont-print"></i> Print</a>
                           <a class="dropdown-item waves-effect waves-light btn-danger btn-mini" href="#" onclick="action('delete','${row.id}')"><i class="icofont icofont-trash"></i> Hapus </a>
                       </div>
                   </div>`
@@ -154,6 +154,12 @@ function loadtabulasi(param, date){
                   });
               }
             });
+          }else{
+            var dt = $('#data-tabulasi').DataTable()
+            dt.clear().draw();
+          }
+          
+          if(kejadian){
             var dt1 = $('#data-tabulasi-1').DataTable({
               destroy: true,
               paging: true,
@@ -224,8 +230,6 @@ function loadtabulasi(param, date){
               }
             });
           }else{
-            var dt = $('#data-tabulasi').DataTable()
-            dt.clear().draw();
             var dt1 = $('#data-tabulasi-1').DataTable()
             dt1.clear().draw();
           }
@@ -263,7 +267,7 @@ function onusers(type){
       $('#save-user-1').show();
       $('#tambah-user').hide();
     }else if(type == 'list'){
-      loadtabulasi('', formatDate($("#filter-tanggal").val()));
+      loadtabulasi('', formatDate($("#filter-tanggal").val()), $('#fitler-pos').val());
       $('#list-user').addClass('active');
       $('.user-tambah').hide();
       $('.user-tambah-1').hide();
@@ -274,7 +278,7 @@ function onusers(type){
     }
 };
 
-function generatepdf(date){
+function generatepdf(date, pos){
 
   $.ajax({
       type: 'post',
@@ -285,6 +289,7 @@ function generatepdf(date){
               template  : 'ops_tabulasi',
               date      : date,
               mode      : 2,
+              pos       : pos,
       },
       success: function(result){
           let data = result.data;
@@ -335,7 +340,7 @@ function save(formData){
         url: 'actionTabulasi',
         data : formData,
         success: function(result){
-          loadtabulasi('', formatDate($("#filter-tanggal").val()));
+          loadtabulasi('', formatDate($("#filter-tanggal").val()), $('#fitler-pos').val());
         }
       });
   }

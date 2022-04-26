@@ -92,6 +92,24 @@
                             </div>
                             <div class="mail-body-content user-list">
                                 <div class="form-group row">
+                                    {% if role  == 100 %}
+                                    <div class="col-sm-3">
+                                        <select id="fitler-pos" name="select" class="form-control">
+                                            <option value="0">Pilih POS</option>
+                                            <option value="92">POS 1</option>
+                                            <option value="93">POS 2</option>
+                                            <option value="94">POS 3</option>
+                                            <option value="95">POS 4</option>
+                                            <option value="96">POS 5</option>
+                                            <option value="97">POS 6</option>
+                                            <option value="98">POS 7</option>
+                                            <option value="99">POS 8</option>
+                                            <option value="100">POS 9</option>
+                                            <option value="101">POS 10</option>
+                                            <option value="102">POS 11</option>
+                                        </select>
+                                    </div>
+                                    {% endif %}
                                     <label class="col-sm-1 col-form-label">Tanggal</label>
                                     <div class="col-sm-4">
                                         <div class="input-group input-group-button">

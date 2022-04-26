@@ -1824,6 +1824,7 @@ class Jsondata extends \CodeIgniter\Controller
 				$request  = $this->request;
 				$param 	  = $request->getVar('param');
 				$date 	  = $request->getVar('date');
+				$pos 	  = $request->getVar('pos');
 				$id		 	  = $request->getVar('id');
 				$role 		= $this->data['role'];
 				$userid		= $this->data['userid'];
@@ -1831,8 +1832,8 @@ class Jsondata extends \CodeIgniter\Controller
 					$modelparam = new \App\Models\ParamModel();
 
 						$fulldata = [];
-						$datakegiatan = $modelparam->getTabulasi($userid, $role, 0, $date);
-						$datakejadian = $modelparam->getTabulasi($userid, $role, 1, $date);
+						$datakegiatan = $modelparam->getTabulasi($userid, $role, 0, $date, $pos);
+						$datakejadian = $modelparam->getTabulasi($userid, $role, 1, $date, $pos);
 
 						$mutasi['kegiatan'] = $datakegiatan;
 						$mutasi['kejadian'] = $datakejadian;
@@ -1868,6 +1869,7 @@ class Jsondata extends \CodeIgniter\Controller
 				$request  = $this->request;
 				$param 	  = $request->getVar('param');
 				$date 	  = $request->getVar('date');
+				$pos 	  = $request->getVar('pos');
 				$id		 	  = $request->getVar('id');
 				$role 		= $this->data['role'];
 				$userid		= $this->data['userid'];
@@ -1875,7 +1877,7 @@ class Jsondata extends \CodeIgniter\Controller
 					$modelparam = new \App\Models\ParamModel();
 
 						$fulldata = [];
-						$datamutasi = $modelparam->getSupervisi($userid, $role, $date);
+						$datamutasi = $modelparam->getSupervisi($userid, $role, $date, $pos);
 
 						$mutasi = $datamutasi;
 

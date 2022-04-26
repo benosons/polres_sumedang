@@ -62,8 +62,8 @@ class Pdfview extends \CodeIgniter\Controller {
 
         }else if($mode == 2){
 
-            $kegiatan = $modelparam->getTabulasi($userid, $role, 0, $isdate);
-            $kejadian = $modelparam->getTabulasi($userid, $role, 1, $isdate);
+            $kegiatan = $modelparam->getTabulasi($userid, $role, 0, $isdate, $pos);
+            $kejadian = $modelparam->getTabulasi($userid, $role, 1, $isdate, $pos);
 
             for ($i=0; $i < count($kegiatan); $i++) { 
                 $kegiatan[$i]->no = $i + 1;
@@ -111,7 +111,7 @@ class Pdfview extends \CodeIgniter\Controller {
             $orientation = "landscape";
         }else if($mode == 3){
 
-            $supervisi = $modelparam->getSupervisi($userid, $role, $isdate);
+            $supervisi = $modelparam->getSupervisi($userid, $role, $isdate, $pos);
 
             for ($i=0; $i < count($supervisi); $i++) { 
                 $supervisi[$i]->no = $i + 1;

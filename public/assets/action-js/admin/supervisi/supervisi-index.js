@@ -12,10 +12,10 @@ $(document).ready(function(){
 
   $("#filter-tanggal").val(formatDate(new Date()));
   $('#cari-mutasi').on('click', function(){
-    loadsupervisi('data_anggota', formatDate($("#filter-tanggal").val()));
+    loadsupervisi('data_anggota', formatDate($("#filter-tanggal").val()), $('#fitler-pos').val());
   })
 
-  loadsupervisi('', formatDate(new Date()));
+  loadsupervisi('', formatDate(new Date()), $('#fitler-pos').val());
 
   $('#save-user').on('click', function(){
       let tanggal = $('#tanggal').val();
@@ -38,7 +38,7 @@ $(document).ready(function(){
 
 });
 
-function loadsupervisi(param, date){
+function loadsupervisi(param, date, pos){
 
   $.ajax({
       type: 'post',
@@ -47,6 +47,7 @@ function loadsupervisi(param, date){
       data : {
               param      : param,
               date      : date,
+              pos      : pos,
       },
       success: function(result){
           let data = result.data;
@@ -84,7 +85,6 @@ function loadsupervisi(param, date){
                           <span class="sr-only">Toggle primary</span>
                       </button>
                       <div class="dropdown-menu">
-                          <a class="dropdown-item waves-effect waves-light btn-success btn-mini" href="#"><i class="icofont icofont-print"></i> Print</a>
                           <a class="dropdown-item waves-effect waves-light btn-danger btn-mini" href="#" onclick="action('delete','${row.id}')"><i class="icofont icofont-trash"></i> Hapus </a>
                       </div>
                   </div>`
@@ -137,7 +137,7 @@ function onusers(type){
       $('#save-user').show();
       $('#tambah-user').hide();
     }else if(type == 'list'){
-      loadsupervisi('', formatDate($("#filter-tanggal").val()));
+      loadsupervisi('', formatDate($("#filter-tanggal").val()), $('#fitler-pos').val());
       $('#list-user').addClass('active');
       $('.user-tambah').hide();
       $('.user-list').show();
@@ -183,7 +183,7 @@ function save(formData){
         url: 'actionSupervisi',
         data : formData,
         success: function(result){
-          loadsupervisi('');
+          loadsupervisi('', formatDate($("#filter-tanggal").val()), $('#fitler-pos').val());
         }
       });
   }

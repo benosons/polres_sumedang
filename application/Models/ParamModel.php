@@ -62,10 +62,14 @@ class ParamModel extends Model{
       return $row;
     }
 
-    public function getTabulasi($id = null, $role = null, $type = null, $date = null)
+    public function getTabulasi($id = null, $role = null, $type = null, $date = null, $pos = null)
     {
       if($role != 300){
-        $sql = "select * from data_tabulasi where type = '$type' and DATE_FORMAT(create_date,'%Y-%m-%d') = '$date'";
+        $wherePos = '';
+        if($pos != 0){
+          $wherePos = " and create_by = '$pos'";
+        }
+        $sql = "select * from data_tabulasi where type = '$type' and DATE_FORMAT(create_date,'%Y-%m-%d') = '$date' $wherePos";
       }else{
         $sql = "select * from data_tabulasi where create_by = '$id' and type = '$type' and DATE_FORMAT(create_date,'%Y-%m-%d') = '$date'";
       }
@@ -75,10 +79,14 @@ class ParamModel extends Model{
       return $row;
     }
 
-    public function getSupervisi($id = null, $role = null, $date = null)
+    public function getSupervisi($id = null, $role = null, $date = null, $pos = null)
     {
       if($role != 300){
-        $sql = "select * from data_supervisi where DATE_FORMAT(create_date,'%Y-%m-%d') = '$date'";
+        $wherePos = '';
+        if($pos != 0){
+          $wherePos = " and create_by = '$pos'";
+        }
+        $sql = "select * from data_supervisi where DATE_FORMAT(create_date,'%Y-%m-%d') = '$date' $wherePos";
       }else{
         $sql = "select * from data_supervisi where create_by = '$id' and type = '$type' and DATE_FORMAT(create_date,'%Y-%m-%d') = '$date'";
       }
