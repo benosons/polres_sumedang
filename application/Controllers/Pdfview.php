@@ -14,6 +14,7 @@ class Pdfview extends \CodeIgniter\Controller {
         $template 	  = $request->getVar('template');
         $mode 	  = $request->getVar('mode');
         $isdate 	  = $request->getVar('date');
+        $pos 	  = $request->getVar('pos');
         $userid 	  = $this->session->get('user_id');
         $role 	  = $this->session->get('role');
         
@@ -23,9 +24,9 @@ class Pdfview extends \CodeIgniter\Controller {
         $modelparam = new \App\Models\ParamModel();
 
         if($mode == 1){
-            $anggota = $modelparam->getMutasi('data_anggota', $userid, $role, $isdate);
-            $penerimaan = $modelparam->getMutasi('data_penerimaan', $userid, $role, $isdate);
-            $uraian = $modelparam->getMutasi('data_uraian', $userid, $role, $isdate);
+            $anggota = $modelparam->getMutasi('data_anggota', $userid, $role, $isdate, $pos);
+            $penerimaan = $modelparam->getMutasi('data_penerimaan', $userid, $role, $isdate, $pos);
+            $uraian = $modelparam->getMutasi('data_uraian', $userid, $role, $isdate, $pos);
 
             for ($i=0; $i < count($anggota); $i++) { 
                 $anggota[$i]->no = $i + 1;

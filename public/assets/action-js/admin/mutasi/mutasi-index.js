@@ -16,9 +16,9 @@ $(document).ready(function(){
 
   $("#filter-tanggal").val(formatDate(new Date()));
   $('#cari-mutasi').on('click', function(){
-    loadmutasi('data_anggota', formatDate($("#filter-tanggal").val()));
-    loadmutasi('data_penerimaan', formatDate($("#filter-tanggal").val()));
-    loadmutasi('data_uraian', formatDate($("#filter-tanggal").val()));
+    loadmutasi('data_anggota', formatDate($("#filter-tanggal").val()), $('#fitler-pos').val());
+    loadmutasi('data_penerimaan', formatDate($("#filter-tanggal").val()), $('#fitler-pos').val());
+    loadmutasi('data_uraian', formatDate($("#filter-tanggal").val()), $('#fitler-pos').val());
   })
 
   $('#save-user').prop('disabled', true)
@@ -60,9 +60,9 @@ $(document).ready(function(){
     }
   })
 
-  loadmutasi('data_anggota', formatDate(new Date()));
-  loadmutasi('data_penerimaan', formatDate(new Date()));
-  loadmutasi('data_uraian', formatDate(new Date()));
+  loadmutasi('data_anggota', formatDate(new Date()), $('#fitler-pos').val());
+  loadmutasi('data_penerimaan', formatDate(new Date()), $('#fitler-pos').val());
+  loadmutasi('data_uraian', formatDate(new Date()), $('#fitler-pos').val());
 
   $('#save-user').on('click', function(){
       let nama = $('#nama').val();
@@ -108,13 +108,13 @@ $('#save-user-2').on('click', function(){
 
   
   $( "#myModal" ).on('shown.bs.modal', function(){
-    generatepdf(formatDate($("#filter-tanggal").val()))
+    generatepdf(formatDate($("#filter-tanggal").val()), $('#fitler-pos').val())
   });
 
 
 });
 
-function loadmutasi(param, date){
+function loadmutasi(param, date, pos){
 
   $.ajax({
       type: 'post',
@@ -122,7 +122,8 @@ function loadmutasi(param, date){
       url: 'loadmutasi',
       data : {
               param      : param,
-              date      : date,
+              date        : date,
+              pos         : pos,
       },
       success: function(result){
           let data = result.data;
@@ -352,7 +353,7 @@ function loadmutasi(param, date){
       })
     }
 
-function generatepdf(date){
+function generatepdf(date, pos){
 
   $.ajax({
       type: 'post',
@@ -363,6 +364,7 @@ function generatepdf(date){
               template  : 'ops_mutasi',
               date      : date,
               mode      : 1,
+              pos      : pos,
       },
       success: function(result){
           let data = result.data;
@@ -407,9 +409,9 @@ function onusers(type){
       $('#save-user-2').show();
       $('#tambah-user').hide();
     }else if(type == 'list'){
-      loadmutasi('data_anggota', formatDate($("#filter-tanggal").val()));
-      loadmutasi('data_penerimaan', formatDate($("#filter-tanggal").val()));
-      loadmutasi('data_uraian', formatDate($("#filter-tanggal").val()));
+      loadmutasi('data_anggota', formatDate($("#filter-tanggal").val()), $('#fitler-pos').val());
+      loadmutasi('data_penerimaan', formatDate($("#filter-tanggal").val()), $('#fitler-pos').val());
+      loadmutasi('data_uraian', formatDate($("#filter-tanggal").val()), $('#fitler-pos').val());
       $('#list-user').addClass('active');
       $('.user-tambah').hide();
       $('.user-tambah-1').hide();

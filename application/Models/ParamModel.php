@@ -45,10 +45,14 @@ class ParamModel extends Model{
         return $row;
     }
 
-    public function getMutasi($table = null, $id = null, $role = null, $date = null)
+    public function getMutasi($table = null, $id = null, $role = null, $date = null, $pos = null)
     {
       if($role != 300){
-        $sql = "select * from $table where DATE_FORMAT(create_date,'%Y-%m-%d') = '$date'";
+        $wherePos = '';
+        if($pos != 0){
+          $wherePos = " and create_by = '$pos'";
+        }
+        $sql = "select * from $table where DATE_FORMAT(create_date,'%Y-%m-%d') = '$date' $wherePos";
       }else{
         $sql = "select * from $table where create_by = '$id' and DATE_FORMAT(create_date,'%Y-%m-%d') = '$date'";
       }

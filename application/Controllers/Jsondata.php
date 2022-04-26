@@ -1783,13 +1783,14 @@ class Jsondata extends \CodeIgniter\Controller
 				$param 	  = $request->getVar('param');
 				$id		 	  = $request->getVar('id');
 				$date		 	  = $request->getVar('date');
+				$pos		 	  = $request->getVar('pos');
 				$role 		= $this->data['role'];
 				$userid		= $this->data['userid'];
 
 				$modelparam = new \App\Models\ParamModel();
 
 				$fulldata = [];
-				$datamutasi = $modelparam->getMutasi($param, $userid, $role, $date);
+				$datamutasi = $modelparam->getMutasi($param, $userid, $role, $date, $pos);
 				$mutasi = $datamutasi;
 
 					if($mutasi){
