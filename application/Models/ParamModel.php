@@ -71,14 +71,14 @@ class ParamModel extends Model{
       return $row;
     }
 
-    public function getSupervisi($id = null, $role = null)
+    public function getSupervisi($id = null, $role = null, $date = null)
     {
       if($role != 300){
-        $sql = "select * from data_supervisi";
+        $sql = "select * from data_supervisi where DATE_FORMAT(create_date,'%Y-%m-%d') = '$date'";
       }else{
-        $sql = "select * from data_supervisi where create_by = '$id'";
+        $sql = "select * from data_supervisi where create_by = '$id' and type = '$type' and DATE_FORMAT(create_date,'%Y-%m-%d') = '$date'";
       }
-
+      
       $result = $this->db->query($sql);
       $row = $result->getResult();
       return $row;

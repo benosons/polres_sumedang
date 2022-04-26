@@ -11,8 +11,11 @@ $(document).ready(function(){
   $('#save-user').hide();
 
   $("#filter-tanggal").val(formatDate(new Date()));
-  
-  loadsupervisi('');
+  $('#cari-mutasi').on('click', function(){
+    loadsupervisi('data_anggota', formatDate($("#filter-tanggal").val()));
+  })
+
+  loadsupervisi('', formatDate(new Date()));
 
   $('#save-user').on('click', function(){
       let tanggal = $('#tanggal').val();
@@ -35,7 +38,7 @@ $(document).ready(function(){
 
 });
 
-function loadsupervisi(param){
+function loadsupervisi(param, date){
 
   $.ajax({
       type: 'post',
@@ -43,6 +46,7 @@ function loadsupervisi(param){
       url: 'loadsupervisi',
       data : {
               param      : param,
+              date      : date,
       },
       success: function(result){
           let data = result.data;
@@ -133,7 +137,7 @@ function onusers(type){
       $('#save-user').show();
       $('#tambah-user').hide();
     }else if(type == 'list'){
-      loadsupervisi('');
+      loadsupervisi('', formatDate($("#filter-tanggal").val()));
       $('#list-user').addClass('active');
       $('.user-tambah').hide();
       $('.user-list').show();

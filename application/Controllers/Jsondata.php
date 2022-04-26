@@ -1866,6 +1866,7 @@ class Jsondata extends \CodeIgniter\Controller
 		{
 				$request  = $this->request;
 				$param 	  = $request->getVar('param');
+				$date 	  = $request->getVar('date');
 				$id		 	  = $request->getVar('id');
 				$role 		= $this->data['role'];
 				$userid		= $this->data['userid'];
@@ -1873,7 +1874,7 @@ class Jsondata extends \CodeIgniter\Controller
 					$modelparam = new \App\Models\ParamModel();
 
 						$fulldata = [];
-						$datamutasi = $modelparam->getSupervisi($userid, $role);
+						$datamutasi = $modelparam->getSupervisi($userid, $role, $date);
 
 						$mutasi = $datamutasi;
 

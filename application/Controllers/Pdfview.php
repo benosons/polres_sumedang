@@ -110,10 +110,18 @@ class Pdfview extends \CodeIgniter\Controller {
             $orientation = "landscape";
         }else if($mode == 3){
 
+            $supervisi = $modelparam->getSupervisi($userid, $role, $isdate);
+
+            for ($i=0; $i < count($supervisi); $i++) { 
+                $supervisi[$i]->no = $i + 1;
+            }
+
             $this->data = array(
                 'baseURL' => BASE.'/public',
                 'title_pdf' => $title,
+                'supervisi' => $supervisi,
             );
+            
             $orientation = "potrait";
         }
         

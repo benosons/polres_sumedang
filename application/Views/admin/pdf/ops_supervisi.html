@@ -70,6 +70,16 @@
                 </tr>
             </thead>
             <tbody>
+                {% for value in supervisi %}     
+                <tr>
+                    <td scope="row" style="text-align:center">{{ value.no }}</td>
+                    <td>{{ value.tanggal }}</td>
+                    <td>{{ value.pelaksana }}</td>
+                    <td>{{ value.arahan }}</td>
+                    <td>&nbsp; </td>
+                </tr>
+                {% endfor %}
+                
                 <tr>
                     <td scope="row">&nbsp; </td>
                     <td></td>
@@ -78,7 +88,35 @@
                     <td></td>
                 </tr>
                 <tr>
-                    <td scope="row">&nbsp; </td>
+                    <td scope="row">&nbsp;</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td scope="row">&nbsp;</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td scope="row">&nbsp;</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td scope="row">&nbsp;</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td scope="row">&nbsp;</td>
                     <td></td>
                     <td></td>
                     <td></td>
