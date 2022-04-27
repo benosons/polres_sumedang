@@ -69,6 +69,7 @@ $(document).ready(function(){
       let pangkat = $('#pangkat').val();
       let jabatan = $('#jabatan').val();
       let keterangan = $('#keterangan').val();
+      let tanggal = $('#tanggal-input').val();
 
       var formData = new FormData();
       formData.append('param', 'data_anggota');
@@ -76,6 +77,7 @@ $(document).ready(function(){
       formData.append('pangkat', pangkat);
       formData.append('jabatan', jabatan);
       formData.append('keterangan', keterangan);
+      formData.append('tanggal', tanggal);
 
       save(formData);
 
@@ -83,10 +85,13 @@ $(document).ready(function(){
 
   $('#save-user-1').on('click', function(){
     let penerimaan = $('#penerimaan').val();
+    let tanggal = $('#tanggal-input').val();
 
     var formData = new FormData();
     formData.append('param', 'data_penerimaan');
     formData.append('penerimaan', penerimaan);
+    formData.append('tanggal', tanggal);
+
     save(formData);
 
 });
@@ -95,12 +100,14 @@ $('#save-user-2').on('click', function(){
   let waktu = $('#waktu').val();
   let uraian = $('#uraian').val();
   let keterangan = $('#keterangan-1').val();
+  let tanggal = $('#tanggal-input').val();
 
   var formData = new FormData();
   formData.append('param', 'data_uraian');
   formData.append('waktu', waktu);
   formData.append('uraian', uraian);
   formData.append('keterangan', keterangan);
+  formData.append('tanggal', tanggal);
 
   save(formData);
 

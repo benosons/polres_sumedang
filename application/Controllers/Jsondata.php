@@ -1129,37 +1129,46 @@ class Jsondata extends \CodeIgniter\Controller
 		$request  = $this->request;
 		$param 	  = $request->getVar('param');
 		$model 	  = new \App\Models\ParamModel();
-		
+
+		$time = strtotime($request->getVar('tanggal'));
+
+		$tgl = date('Y-m-d H:i:s',$time);
+
 		if($param == 'data_anggota'){
 			$data = [
-					'nama' => $request->getVar('nama'),
-					'pangkat' => $request->getVar('pangkat'),
-					'jabatan' => $request->getVar('jabatan'),
-					'keterangan' => $request->getVar('keterangan'),
-					'create_by' 		=> $this->data['userid'],
-					'update_by' 		=> $this->data['userid'],
-					'create_date' => $this->now,
-					'update_date' => $this->now,
+					'nama'			=> $request->getVar('nama'),
+					'pangkat'		=> $request->getVar('pangkat'),
+					'jabatan'		=> $request->getVar('jabatan'),
+					'keterangan'	=> $request->getVar('keterangan'),
+					'tanggal'		=> $tgl,
+					'create_by' 	=> $this->data['userid'],
+					'update_by' 	=> $this->data['userid'],
+					'create_date'	=> $this->now,
+					'update_date'	=> $this->now,
 			];
 		}else if($param == 'data_penerimaan'){
 			$data = [
-					'penerimaan' => $request->getVar('penerimaan'),
-					'create_by' 		=> $this->data['userid'],
-					'update_by' 		=> $this->data['userid'],
-					'create_date' => $this->now,
-					'update_date' => $this->now,
+					'penerimaan'	=> $request->getVar('penerimaan'),
+					'tanggal'		=> $tgl,
+					'create_by' 	=> $this->data['userid'],
+					'update_by' 	=> $this->data['userid'],
+					'create_date'	=> $this->now,
+					'update_date'	=> $this->now,
 			];
 		}else if($param == 'data_uraian'){
 			$data = [
-					'waktu' => $request->getVar('waktu'),
-					'uraian' => $request->getVar('uraian'),
-					'keterangan' => $request->getVar('keterangan'),
-					'create_by' 		=> $this->data['userid'],
-					'update_by' 		=> $this->data['userid'],
-					'create_date' => $this->now,
-					'update_date' => $this->now,
+					'waktu'			=> $request->getVar('waktu'),
+					'uraian'		=> $request->getVar('uraian'),
+					'keterangan'	=> $request->getVar('keterangan'),
+					'tanggal'		=> $tgl,
+					'create_by'		=> $this->data['userid'],
+					'update_by'		=> $this->data['userid'],
+					'create_date'	=> $this->now,
+					'update_date'	=> $this->now,
 			];
 		}
+
+		
 		$res = $model->saveParam($param, $data);
 		$id  = $model->insertID();
 
