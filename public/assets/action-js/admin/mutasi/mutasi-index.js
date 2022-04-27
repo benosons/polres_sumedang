@@ -85,7 +85,7 @@ $(document).ready(function(){
 
   $('#save-user-1').on('click', function(){
     let penerimaan = $('#penerimaan').val();
-    let tanggal = $('#tanggal-input').val();
+    let tanggal = $('#tanggal-input-1').val();
 
     var formData = new FormData();
     formData.append('param', 'data_penerimaan');
@@ -100,7 +100,7 @@ $('#save-user-2').on('click', function(){
   let waktu = $('#waktu').val();
   let uraian = $('#uraian').val();
   let keterangan = $('#keterangan-1').val();
-  let tanggal = $('#tanggal-input').val();
+  let tanggal = $('#tanggal-input-2').val();
 
   var formData = new FormData();
   formData.append('param', 'data_uraian');
