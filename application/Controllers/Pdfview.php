@@ -139,6 +139,10 @@ class Pdfview extends \CodeIgniter\Controller {
 		    mkdir("public/uploads/".$date."/", 0777, TRUE);
 		}
 
+        if (file_exists("public/uploads/".$date."/".$title.".pdf")) {
+            unlink("public/uploads/".$date."/".$title.".pdf");
+        }
+        
         file_put_contents("public/uploads/".$date."/".$title.".pdf", $pdf->generate($html, $file_pdf, $paper, $orientation, false));
 
         $response = [
