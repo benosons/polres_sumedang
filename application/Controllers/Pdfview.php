@@ -2,7 +2,6 @@
 namespace App\Controllers;
 
 class Pdfview extends \CodeIgniter\Controller {
-    protected $session;
 
     public function index()
     {
@@ -16,7 +15,7 @@ class Pdfview extends \CodeIgniter\Controller {
         $isdate 	  = $request->getVar('date');
         $pos 	  = $request->getVar('pos');
         $userid 	  = $this->session->get('user_id');
-        $role 	  = $this->session->get('role');
+        $role 	  = $this->session->get('user_role');
         
         $pdf = new \App\Libraries\Pdfgenerator();
         $date 		= date('Y/m/d');        

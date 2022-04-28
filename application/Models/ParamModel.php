@@ -47,6 +47,7 @@ class ParamModel extends Model{
 
     public function getMutasi($table = null, $id = null, $role = null, $date = null, $pos = null)
     {
+    
       if($role != 300){
         $wherePos = '';
         if($pos != 0){
