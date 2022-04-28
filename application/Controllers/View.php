@@ -7,9 +7,9 @@ class View extends \CodeIgniter\Controller
 
   function __construct()
   {
-      		$this->session = session();
+      $this->session = session();
 			$this->now = date('Y-m-d H:i:s');
-      		$this->logged = $this->session->get('logged_in');
+      $this->logged = $this->session->get('logged_in');
 			$this->data = array(
 				'version' => \CodeIgniter\CodeIgniter::CI_VERSION,
 				'baseURL' => BASE.'/public',
@@ -21,11 +21,6 @@ class View extends \CodeIgniter\Controller
 				'fullname' => $this->session->get('user_fullname'),
 				'tahun' => date("Y"),
 			);
-
-			header("Cache-control: no-store, no-cache, must-revalidate");
-			header("Expires: Mon, 26 Jun 1997 05:00:00 GMT");
-			header("Pragma: no-cache");
-			header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
   }
 
 	public function index()

@@ -22,11 +22,6 @@ class Jsondata extends \CodeIgniter\Controller
 				'role' => $this->session->get('user_role'),
 				'satuan' => $this->session->get('user_satuan'),
 			);
-
-			header("Cache-control: no-store, no-cache, must-revalidate");
-			header("Expires: Mon, 26 Jun 1997 05:00:00 GMT");
-			header("Pragma: no-cache");
-			header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
   }
 
 	public function getpengaduan()
