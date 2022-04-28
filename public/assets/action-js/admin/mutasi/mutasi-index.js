@@ -374,9 +374,8 @@ function generatepdf(date, pos){
       success: function(result){
           let data = result.data;
           let code = result.code;
-          
-          var t = new Date().getTime();
-          PDFObject.embed(result.data+'?'+t, "#example1");
+
+          PDFObject.embed(result.data, "#example1");
 
 
         }

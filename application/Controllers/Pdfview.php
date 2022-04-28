@@ -144,16 +144,17 @@ class Pdfview extends \CodeIgniter\Controller {
 		    mkdir("public/uploads/".$date."/", 0777, TRUE);
 		}
 
-        if (file_exists("public/uploads/".$date."/".$title.".pdf")) {
-            unlink("public/uploads/".$date."/".$title.".pdf");
-        }
+        // if (file_exists("public/uploads/".$date."/".$title.".pdf")) {
+        //     unlink("public/uploads/".$date."/".$title.".pdf");
+        // }
+        $randomNumber = rand();
         
-        file_put_contents("public/uploads/".$date."/".$title.".pdf", $pdf->generate($html, $file_pdf, $paper, $orientation, false));
+        file_put_contents("public/uploads/".$date."/".$randomNumber.".pdf", $pdf->generate($html, $file_pdf, $paper, $orientation, false));
 
         $response = [
             'status'   => 'success',
             'code'     => '1',
-            'data' 	   => "public/uploads/".$date."/".$title.".pdf"
+            'data' 	   => "public/uploads/".$date."/".$randomNumber.".pdf"
         ];
 
         header('Content-Type: application/json');
