@@ -154,6 +154,7 @@ function loadmutasi(param, date, pos){
                     { 'mDataProp': 'pangkat'},
                     { 'mDataProp': 'jabatan'},
                     { 'mDataProp': 'keterangan'},
+                    { 'mDataProp': 'user_fullname'},
                     { 'mDataProp': 'id'},
                 ],
                 order: [[0, 'ASC']],
@@ -176,7 +177,7 @@ function loadmutasi(param, date, pos){
 
                           return el;
                       },
-                      aTargets: [ 5 ]
+                      aTargets: [ 6 ]
                   },
                 ],
                 fnRowCallback: function(nRow, aData, iDisplayIndex, iDisplayIndexFull){
