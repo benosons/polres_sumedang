@@ -147,6 +147,13 @@ class Pdfview extends \CodeIgniter\Controller {
         // if (file_exists("public/uploads/".$date."/".$title.".pdf")) {
         //     unlink("public/uploads/".$date."/".$title.".pdf");
         // }
+
+        $files = glob("public/uploads/".$date."/*"); // get all file names
+            foreach($files as $file){ // iterate files
+            if(is_file($file)) {
+                unlink($file); // delete file
+            }
+        }
         $randomNumber = rand();
         
         file_put_contents("public/uploads/".$date."/".$randomNumber.".pdf", $pdf->generate($html, $file_pdf, $paper, $orientation, false));
