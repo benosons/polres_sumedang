@@ -89,7 +89,7 @@ class ParamModel extends Model{
         }
         $sql = "select * from data_supervisi where DATE_FORMAT(create_date,'%Y-%m-%d') = '$date' $wherePos";
       }else{
-        $sql = "select * from data_supervisi where create_by = '$id' and type = '$type' and DATE_FORMAT(create_date,'%Y-%m-%d') = '$date'";
+        $sql = "select * from data_supervisi where create_by = '$id' and DATE_FORMAT(create_date,'%Y-%m-%d') = '$date'";
       }
       
       $result = $this->db->query($sql);
