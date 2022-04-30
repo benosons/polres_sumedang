@@ -21,6 +21,7 @@ class Pdfview extends \CodeIgniter\Controller {
         $pos 	  = $request->getVar('pos');
         $userid 	  = $this->session->get('user_id');
         $role 	  = $this->session->get('user_role');
+        $fullname 	  = $this->session->get('user_fullname');
         
         $pdf = new \App\Libraries\Pdfgenerator();
         $date 		= date('Y/m/d');        
@@ -64,6 +65,7 @@ class Pdfview extends \CodeIgniter\Controller {
                 'uraian' => $uraian,
                 'hari' => $hari[$day],
                 'tanggal' => $tgl.' '.$bulan[$month].' '.$year,
+                'fullname' => $fullname
             );
 
             $orientation = "portrait";
