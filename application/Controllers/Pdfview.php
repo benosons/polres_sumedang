@@ -46,11 +46,15 @@ class Pdfview extends \CodeIgniter\Controller {
 
             $hari = ['','Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu', 'Minggu'];
             $bulan = ['', 'Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+            $newDate = date("d-m-Y", strtotime($isdate));
 
-            $day = date('N', strtotime(date("l")));
-            $tgl = (int) date('d');
-            $month = (int) date('m');
-            $year = (int) date('Y');
+            $dateing = strtotime($newDate);
+
+            $day = date('N', strtotime($newDate));
+
+            $tgl = (int) date('d', $dateing);
+            $month = (int) date('m', $dateing);
+            $year = (int) date('Y', $dateing);
 
             $this->data = array(
                 'baseURL' => BASE.'/public',
