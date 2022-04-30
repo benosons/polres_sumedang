@@ -1138,6 +1138,7 @@ class Jsondata extends \CodeIgniter\Controller
 			$data = [
 					'nama'			=> $request->getVar('nama'),
 					'pangkat'		=> $request->getVar('pangkat'),
+					'kode_pangkat'	=> $request->getVar('kode_pangkat'),
 					'jabatan'		=> $request->getVar('jabatan'),
 					'keterangan'	=> $request->getVar('keterangan'),
 					'tanggal'		=> $tgl,

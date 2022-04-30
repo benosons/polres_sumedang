@@ -28,7 +28,7 @@ class Pdfview extends \CodeIgniter\Controller {
         $modelparam = new \App\Models\ParamModel();
 
         if($mode == 1){
-            $anggota = $modelparam->getMutasi('data_anggota', $userid, $role, $isdate, $pos);
+            $anggota = $modelparam->getMutasi('data_anggota', $userid, $role, $isdate, $pos, 1);
             $penerimaan = $modelparam->getMutasi('data_penerimaan', $userid, $role, $isdate, $pos);
             $uraian = $modelparam->getMutasi('data_uraian', $userid, $role, $isdate, $pos);
 

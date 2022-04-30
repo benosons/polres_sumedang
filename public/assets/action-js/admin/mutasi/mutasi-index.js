@@ -67,6 +67,7 @@ $(document).ready(function(){
   $('#save-user').on('click', function(){
       let nama = $('#nama').val();
       let pangkat = $('#pangkat').val();
+      let nama_pangkat = $("#pangkat option:selected").text();
       let jabatan = $('#jabatan').val();
       let keterangan = $('#keterangan').val();
       let tanggal = $('#tanggal-input').val();
@@ -74,10 +75,11 @@ $(document).ready(function(){
       var formData = new FormData();
       formData.append('param', 'data_anggota');
       formData.append('nama', nama);
-      formData.append('pangkat', pangkat);
+      formData.append('kode_pangkat', pangkat);
       formData.append('jabatan', jabatan);
       formData.append('keterangan', keterangan);
       formData.append('tanggal', tanggal);
+      formData.append('pangkat', nama_pangkat);
 
       save(formData);
 
