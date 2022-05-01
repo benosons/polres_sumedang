@@ -5,6 +5,17 @@ $(document).ready(function(){
   $('.note-toolbar .note-insert, .note-toolbar .note-table, .note-toolbar .note-style:first, .note-toolbar .note-para').remove();
   $('.note-toolbar.panel-heading').remove();
   $('.note-popover').remove();
+  
+  var timepicker = new TimePicker('waktu', {
+    lang: 'en',
+    theme: 'dark'
+  });
+  timepicker.on('change', function(evt) {
+    
+    var value = (evt.hour || '00') + ':' + (evt.minute || '00');
+    evt.element.value = value;
+  
+  });
 
   $('#setting-user').DataTable();
   $('.user-tambah').hide();
@@ -287,7 +298,7 @@ function loadmutasi(param, date, pos){
                 pageLength: 10,
                 aaData: result.data,
                 aoColumns: [
-                    { 'mDataProp': 'id', 'width':'10%'},
+                    { 'mDataProp': 'sort', 'width':'10%'},
                     { 'mDataProp': 'waktu'},
                     { 'mDataProp': 'uraian'},
                     { 'mDataProp': 'keterangan'},

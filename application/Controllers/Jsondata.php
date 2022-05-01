@@ -1802,6 +1802,13 @@ class Jsondata extends \CodeIgniter\Controller
 				$fulldata = [];
 				$datamutasi = $modelparam->getMutasi($param, $userid, $role, $date, $pos);
 				$mutasi = $datamutasi;
+				// if($param == 'data_uraian'){
+					
+				// 	foreach ($mutasi as $key => $value) {
+				// 		$mutasi[$key]->waktu = str_replace(".",":", trim(trim(strtoupper($mutasi[$key]->waktu), " "),"WIB"));
+				// 		$mutasi[$key]->sort = strtotime(str_replace(".",":", trim(trim(strtoupper($mutasi[$key]->waktu), " "),"WIB")));
+				// 	}
+				// }
 
 					if($mutasi){
 						$response = [

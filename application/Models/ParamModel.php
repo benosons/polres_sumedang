@@ -48,21 +48,29 @@ class ParamModel extends Model{
     public function getMutasi($table = null, $id = null, $role = null, $date = null, $pos = null, $print = null)
     {
     
+      $isSort = '';
       $order = '';
+
+      if($table == 'data_uraian'){
+        $isSort = ", STR_TO_DATE(REPLACE(REPLACE(TRIM(UPPER($table.waktu)), 'WIB', ''), '.', ':'), '%H:%i') as sort ";
+        $order = " order by sort desc";
+      }
+
       if($print){
         $order = " order by kode_pangkat desc";
       }
+      
 
       if($role != 300){
         $wherePos = '';
         if($pos != 0){
           $wherePos = " and create_by = '$pos' ";
         }
-        $sql = "select $table.*, users.user_fullname from $table inner join users on users.user_id = $table.create_by where DATE_FORMAT(tanggal,'%Y-%m-%d') = '$date' $wherePos $order";
+        $sql = "select $table.* $isSort, users.user_fullname from $table inner join users on users.user_id = $table.create_by where DATE_FORMAT(tanggal,'%Y-%m-%d') = '$date' $wherePos $order";
       }else{
-        $sql = "select $table.*, users.user_fullname from $table inner join users on users.user_id = $table.create_by where create_by = '$id' and DATE_FORMAT(tanggal,'%Y-%m-%d') = '$date' $order";
+        $sql = "select $table.* $isSort, users.user_fullname from $table inner join users on users.user_id = $table.create_by where create_by = '$id' and DATE_FORMAT(tanggal,'%Y-%m-%d') = '$date' $order";
       }
-      
+
       $result = $this->db->query($sql);
       $row = $result->getResult();
       return $row;
