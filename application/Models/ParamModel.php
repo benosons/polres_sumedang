@@ -53,7 +53,7 @@ class ParamModel extends Model{
 
       if($table == 'data_uraian'){
         $isSort = ", STR_TO_DATE(REPLACE(REPLACE(TRIM(UPPER($table.waktu)), 'WIB', ''), '.', ':'), '%H:%i') as sort ";
-        $order = " order by sort desc";
+        $order = " order by sort asc";
       }
 
       if($print){
