@@ -302,9 +302,8 @@ function loadmutasi(param, date, pos){
                     { 'mDataProp': 'waktu'},
                     { 'mDataProp': 'uraian'},
                     { 'mDataProp': 'keterangan'},
-                    { 'mDataProp': 'id'},
+                    { 'mDataProp': 'sort'},
                 ],
-                order: [[0, 'ASC']],
                 fixedColumns: true,
                 aoColumnDefs:[
                   { width: 50, targets: 0 },

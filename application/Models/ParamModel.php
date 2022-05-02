@@ -52,7 +52,7 @@ class ParamModel extends Model{
       $order = '';
 
       if($table == 'data_uraian'){
-        $isSort = ", STR_TO_DATE(REPLACE(REPLACE(TRIM(UPPER($table.waktu)), 'WIB', ''), '.', ':'), '%H:%i') as sort ";
+        $isSort = ", REPLACE(REPLACE(TRIM(UPPER($table.waktu)), 'WIB', ''), '.', ':') as sort ";
         $order = " order by sort asc";
       }
 
@@ -70,7 +70,7 @@ class ParamModel extends Model{
       }else{
         $sql = "select $table.* $isSort, users.user_fullname from $table inner join users on users.user_id = $table.create_by where create_by = '$id' and DATE_FORMAT(tanggal,'%Y-%m-%d') = '$date' $order";
       }
-
+      // print_r($sql);die;
       $result = $this->db->query($sql);
       $row = $result->getResult();
       return $row;
