@@ -6,6 +6,17 @@ $(document).ready(function(){
   $('.note-toolbar.panel-heading').remove();
   $('.note-popover').remove();
 
+  var timepicker = new TimePicker('waktu', {
+    lang: 'en',
+    theme: 'dark'
+  });
+  timepicker.on('change', function(evt) {
+    
+    var value = (evt.hour || '00') + ':' + (evt.minute || '00');
+    evt.element.value = value;
+  
+  });
+
   $('#data-supervisi').DataTable();
   $('.user-tambah').hide();
   $('#save-user').hide();
@@ -19,12 +30,16 @@ $(document).ready(function(){
 
   $('#save-user').on('click', function(){
       let tanggal = $('#tanggal').val();
+      let hari = $('#hari').val();
+      let waktu = $('#waktu').val();
       let pelaksana = $('#pelaksana').val();
       let arahan = $('#arahan').val();
 
       var formData = new FormData();
       formData.append('param', 'data_supervisi');
       formData.append('tanggal', tanggal);
+      formData.append('hari', hari);
+      formData.append('waktu', waktu);
       formData.append('pelaksana', pelaksana);
       formData.append('arahan', arahan);
 
@@ -34,6 +49,23 @@ $(document).ready(function(){
 
   $( "#myModal" ).on('shown.bs.modal', function(){
     generatepdf(formatDate($("#filter-tanggal").val()))
+  });
+
+  $("#tanggal").on('change', function(){
+    var a = new Date(this.value);
+    // alert(a.getDay());
+    $('#hari').val(a.getDay())
+  })
+
+  var regExp = /[a-z]/i;
+  $('#waktu').on('keydown keyup', function(e) {
+    var value = String.fromCharCode(e.which) || e.key;
+
+    // No letters
+    if (regExp.test(value)) {
+      e.preventDefault();
+      return false;
+    }
   });
 
 });
@@ -67,6 +99,8 @@ function loadsupervisi(param, date, pos){
               aoColumns: [
                   { 'mDataProp': 'id', 'width':'10%'},
                   { 'mDataProp': 'tanggal'},
+                  { 'mDataProp': 'hari'},
+                  { 'mDataProp': 'waktu'},
                   { 'mDataProp': 'pelaksana'},
                   { 'mDataProp': 'arahan'},
                   { 'mDataProp': 'id'},
@@ -75,6 +109,17 @@ function loadsupervisi(param, date, pos){
               fixedColumns: true,
               aoColumnDefs:[
                 { width: 50, targets: 0 },
+                {
+                  mRender: function ( data, type, row ) {
+                      var ishari = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu']
+                      var values = '--';
+                      if(row.hari){
+                        values = ishari[row.hari];
+                      }
+                      return values ;
+                  },
+                  aTargets: [ 2 ]
+              },
                 {
                     mRender: function ( data, type, row ) {
 
@@ -91,7 +136,7 @@ function loadsupervisi(param, date, pos){
 
                         return el;
                     },
-                    aTargets: [ 4 ]
+                    aTargets: [ 6 ]
                 },
               ],
               fnRowCallback: function(nRow, aData, iDisplayIndex, iDisplayIndexFull){

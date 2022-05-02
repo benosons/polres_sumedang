@@ -100,9 +100,9 @@ class ParamModel extends Model{
         if($pos != 0){
           $wherePos = " and create_by = '$pos'";
         }
-        $sql = "select * from data_supervisi where DATE_FORMAT(create_date,'%Y-%m-%d') = '$date' $wherePos";
+        $sql = "select * from data_supervisi where DATE_FORMAT(create_date,'%Y-%m-%d') = '$date' $wherePos order by waktu asc";
       }else{
-        $sql = "select * from data_supervisi where create_by = '$id' and DATE_FORMAT(create_date,'%Y-%m-%d') = '$date'";
+        $sql = "select * from data_supervisi where create_by = '$id' and DATE_FORMAT(create_date,'%Y-%m-%d') = '$date' order by waktu asc";
       }
       
       $result = $this->db->query($sql);

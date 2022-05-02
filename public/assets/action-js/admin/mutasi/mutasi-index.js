@@ -17,6 +17,17 @@ $(document).ready(function(){
   
   });
 
+  var regExp = /[a-z]/i;
+  $('#waktu').on('keydown keyup', function(e) {
+    var value = String.fromCharCode(e.which) || e.key;
+
+    // No letters
+    if (regExp.test(value)) {
+      e.preventDefault();
+      return false;
+    }
+  });
+
   $('#setting-user').DataTable();
   $('.user-tambah').hide();
   $('.user-tambah-1').hide();

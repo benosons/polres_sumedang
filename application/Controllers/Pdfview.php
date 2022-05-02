@@ -125,8 +125,17 @@ class Pdfview extends \CodeIgniter\Controller {
 
             for ($i=0; $i < count($supervisi); $i++) { 
                 $supervisi[$i]->no = $i + 1;
+                if(!$supervisi[$i]->waktu){
+                    $supervisi[$i]->waktu = '-';
+                }
+                if($supervisi[$i]->hari == null){
+                    $supervisi[$i]->hari = '-';
+                }else{
+                    $inihari = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
+                    $supervisi[$i]->hari = $inihari[$supervisi[$i]->hari];
+                }
             }
-
+            
             $this->data = array(
                 'baseURL' => BASE.'/public',
                 'title_pdf' => $title,
