@@ -12,12 +12,12 @@ $(document).ready(function(){
   });
   timepicker.on('change', function(evt) {
     
-    var value = (evt.hour || '00') + ':' + (evt.minute || '00');
+    var value = (evt.hour.length == 1 ? '0' + evt.hour : evt.hour || '00') + ':' + (evt.minute || '00');
     evt.element.value = value;
   
   });
 
-  var regExp = /[a-z]/i;
+  var regExp = /^[A-Za-z\s]+$/;
   $('#waktu').on('keydown keyup', function(e) {
     var value = String.fromCharCode(e.which) || e.key;
 
