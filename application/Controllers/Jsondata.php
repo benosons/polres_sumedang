@@ -1798,11 +1798,13 @@ class Jsondata extends \CodeIgniter\Controller
 				$pos		 	  = $request->getVar('pos');
 				$role 		= $this->data['role'];
 				$userid		= $this->data['userid'];
+				
+				$date_end = date('Y-m-d', strtotime('-1 day', strtotime($date)));
 
 				$modelparam = new \App\Models\ParamModel();
 
 				$fulldata = [];
-				$datamutasi = $modelparam->getMutasi($param, $userid, $role, $date, $pos);
+				$datamutasi = $modelparam->getMutasi($param, $userid, $role, $date, $pos, null, $date_end);
 				$mutasi = $datamutasi;
 				// if($param == 'data_uraian'){
 					

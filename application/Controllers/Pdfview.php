@@ -22,6 +22,9 @@ class Pdfview extends \CodeIgniter\Controller {
         $userid 	  = $this->session->get('user_id');
         $role 	  = $this->session->get('user_role');
         $fullname 	  = $this->session->get('user_fullname');
+
+        $date_end = date('Y-m-d', strtotime('-1 day', strtotime($isdate)));
+
         
         $pdf = new \App\Libraries\Pdfgenerator();
         $date 		= date('Y/m/d');        
@@ -29,9 +32,9 @@ class Pdfview extends \CodeIgniter\Controller {
         $modelparam = new \App\Models\ParamModel();
 
         if($mode == 1){
-            $anggota = $modelparam->getMutasi('data_anggota', $userid, $role, $isdate, $pos, 1);
-            $penerimaan = $modelparam->getMutasi('data_penerimaan', $userid, $role, $isdate, $pos);
-            $uraian = $modelparam->getMutasi('data_uraian', $userid, $role, $isdate, $pos);
+            $anggota = $modelparam->getMutasi('data_anggota', $userid, $role, $isdate, $pos, 1, $date_end );
+            $penerimaan = $modelparam->getMutasi('data_penerimaan', $userid, $role, $isdate, $pos, null, $date_end);
+            $uraian = $modelparam->getMutasi('data_uraian', $userid, $role, $isdate, $pos, null, $date_end);
 
             for ($i=0; $i < count($anggota); $i++) { 
                 $anggota[$i]->no = $i + 1;

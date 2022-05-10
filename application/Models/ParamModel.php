@@ -45,15 +45,20 @@ class ParamModel extends Model{
         return $row;
     }
 
-    public function getMutasi($table = null, $id = null, $role = null, $date = null, $pos = null, $print = null)
+    public function getMutasi($table = null, $id = null, $role = null, $date = null, $pos = null, $print = null, $date2 = null)
     {
     
       $isSort = '';
       $order = '';
+      // $whereis = " DATE_FORMAT(tanggal,'%Y-%m-%d') = '$date'";
+      $whereis = " DATE_FORMAT(tanggal,'%Y-%m-%d') <= '$date' and DATE_FORMAT(tanggal,'%Y-%m-%d') >= '$date2'";
+
 
       if($table == 'data_uraian'){
         $isSort = ", REPLACE(REPLACE(TRIM(UPPER($table.waktu)), 'WIB', ''), '.', ':') as sort ";
         $order = " order by sort asc";
+        $whereis = " DATE_FORMAT(tanggal,'%Y-%m-%d') <= '$date' and DATE_FORMAT(tanggal,'%Y-%m-%d') >= '$date2'";
+
       }
 
       if($print){
@@ -66,11 +71,11 @@ class ParamModel extends Model{
         if($pos != 0){
           $wherePos = " and create_by = '$pos' ";
         }
-        $sql = "select $table.* $isSort, users.user_fullname from $table inner join users on users.user_id = $table.create_by where DATE_FORMAT(tanggal,'%Y-%m-%d') = '$date' $wherePos $order";
+        $sql = "select $table.* $isSort, users.user_fullname from $table inner join users on users.user_id = $table.create_by where $whereis $wherePos $order";
       }else{
-        $sql = "select $table.* $isSort, users.user_fullname from $table inner join users on users.user_id = $table.create_by where create_by = '$id' and DATE_FORMAT(tanggal,'%Y-%m-%d') = '$date' $order";
+        $sql = "select $table.* $isSort, users.user_fullname from $table inner join users on users.user_id = $table.create_by where create_by = '$id' and $whereis $order";
       }
-      // print_r($sql);die;
+      
       $result = $this->db->query($sql);
       $row = $result->getResult();
       return $row;
